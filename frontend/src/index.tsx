@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { Hello } from './Hello';
 
 ReactDOM.hydrate(
-    <Hello compiler='TypeScriptt' framework='React' />,
+    <Hello compiler='TypeScript' framework='React' />,
     document.getElementById('app')
 );
 
