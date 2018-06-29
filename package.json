@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "export NODE_ENV=DEVELOPMENT && forever stopall && forever --minUptime 1000 --spinSleepTime 1000 -c \"nodemon --exitcrash\" bin/www.js",
-    "build-ts": "tsc",
-    "watch-ts": "tsc -w"
+    "prod": "export NODE_ENV=PRODUCTION && forever stopall && forever --minUptime 1000 --spinSleepTime 1000 -c \"nodemon --exitcrash\" bin/www.js",
+    "transpile:ts": "tsc",
+    "watch:ts": "tsc -w"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
