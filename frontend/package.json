@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "webpack:bundle": "webpack",
+    "webpack:bundle": "webpack -p",
     "webpack:watch": "webpack --watch"
   },
   "dependencies": {
