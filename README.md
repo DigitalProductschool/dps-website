@@ -12,7 +12,7 @@ TODO: Rewrite .js files in .ts files
 # Production
 
 Order of steps is important
-- Run `yarn webpack:build` to bundle the frontend for production
+- Run `yarn webpack:bundle` to bundle the frontend for production
 - Transpile backend's typescript via running `yarn transpile:ts` in root dir 
 - Start production server via `yarn prod` in root dir, it would run on port 5000
 
