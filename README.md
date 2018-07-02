@@ -2,6 +2,28 @@
 
 TODO: Rewrite .js files in .ts files
 
+# Prerequesites
+
+## Node and npm
+
+`Google install node and npm for your system (windows, mac, linux)`
+
+## Typescript
+
+`npm install -g typescript`
+
+## Webpack
+
+`npm install -g webpack`
+
+## Yarn
+
+`npm install -g yarn`
+
+## Project's Dependencies
+
+Run `yarn install` in root and `yarn install` in `frontend/`
+
 # Development
 
 - Run typescript watcher via `yarn watch:ts` in root dir to transpile ts files under `src/` on each change
