@@ -15,6 +15,10 @@ body {
 
 #app {
   margin: 0 auto; /* center content */
-  position: relative; /* every child with position: absolute (the video tag) will be positioned according to #app */
+   /* every child with position: absolute (the video tag) will be positioned according to #app
+      This is important, because #app defines the basic container for the content and we want to
+      position everything in relation to this container
+   */
+  position: relative;
   max-width: var(--max-width);
 }

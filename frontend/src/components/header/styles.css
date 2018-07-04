@@ -4,5 +4,9 @@
   top: 0; /* in respect to #app */
   left: 0;
   right: 0;
-  max-width: 100%; /* 100% of #app element, because #app is with position: relative */
+  /* 100% of #app element, because #app is with position: relative 
+    This implies as we decrease the browser's window, the video will 
+    get resized instead of overflowing out of the container
+  */
+  max-width: 100%; 
 }
