@@ -28,6 +28,14 @@ function createConfig(type) {
             rules: [
                 // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
                 { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+                {
+                    test: /\.css$/,
+                    use: [
+                      'style-loader',
+                      { loader: 'css-loader', options: { importLoaders: 1 } },
+                      { loader: 'postcss-loader', options: { config: { path: './postcss.config.js' } } }
+                    ]
+                }
             ]
         },
     };
