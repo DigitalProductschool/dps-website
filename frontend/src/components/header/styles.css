@@ -1,12 +1,9 @@
 .header__video {
-  z-index: -1; /* Hide behind the "nav" component */
-  position: absolute; /* positioned in respect to #app, because position: relative there */
-  top: 0; /* in respect to #app */
+  z-index: -1;
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  /* 100% of #app element, because #app is with position: relative 
-    This implies as we decrease the browser's window, the video will 
-    get resized instead of overflowing out of the container
-  */
-  max-width: 100%; 
+  width: 100%;
+  max-height: 680px;
+  object-fit: cover;
 }

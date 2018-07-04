@@ -4,11 +4,11 @@ class Nav extends React.Component {
   render() {
     return (
       <nav className="nav">
-        <p> Here is our Nav </p>
-        <ul className="nav__items">
-          <li className="nav__item"> Home </li>
-          <li className="nav__item"> Our Program </li>
-          <li className="nav__item"> Apply </li>
+        <p className="nav__logo"> Here is our Logo </p>
+        <ul className="nav__menu">
+          <li className="nav__menu__item"> Home </li>
+          <li className="nav__menu__item"> Our Program </li>
+          <li className="nav__menu__item"> Apply </li>
         </ul>
       </nav>
     );

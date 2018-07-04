@@ -12,7 +12,7 @@ class Header extends React.Component {
           <source src="assets/headervideo-1680-758.mp4" type="video/mp4" />
         </video>
       </React.Fragment>
-    )
+    );
   }
 }
 
