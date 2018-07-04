@@ -8,11 +8,7 @@ export interface AppProps {
   framework: string; 
 }
 
-export interface AppState {
-  title: string;
-}
-
-export class App extends React.Component<AppProps, AppState> {
+export class App extends React.Component<AppProps, {}> {
   render() {
     return (
       <React.Fragment>

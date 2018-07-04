@@ -1,5 +1,20 @@
-@import url("./test/test.css");
+@import url('./variables.css');
+
+@import url("./components/header/styles.css");
+@import url("./components/nav/styles.css");
+
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
 
 body {
-  background-color: red;
+  margin: 0;
+}
+
+#app {
+  margin: 0 auto; /* center content */
+  position: relative; /* every child with position: absolute (the video tag) will be positioned according to #app */
+  max-width: var(--max-width);
 }

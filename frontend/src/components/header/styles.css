@@ -1,0 +1,8 @@
+.header__video {
+  z-index: -1; /* Hide behind the "nav" component */
+  position: absolute; /* positioned in respect to #app, because position: relative there */
+  top: 0; /* in respect to #app */
+  left: 0;
+  right: 0;
+  max-width: 100%; /* 100% of #app element, because #app is with position: relative */
+}
