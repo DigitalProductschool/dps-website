@@ -1,12 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import './styles.css';
 
-import { Hello } from './Hello';
+import { App } from './App';
 
 ReactDOM.hydrate(
-    <Hello compiler='TypeScript' framework='React' />,
+    <App compiler='TypeScript' framework='React' />,
     document.getElementById('app')
 );
 
-export { Hello };
+export { App };

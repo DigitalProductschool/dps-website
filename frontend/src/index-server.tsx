@@ -1,3 +1,5 @@
-import { Hello } from './Hello';
+const css = require('./styles.css').toString();
 
-export { Hello };
+import { App } from './App';
+
+export { App, css };
