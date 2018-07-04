@@ -1,3 +1,3 @@
-import { Hello } from './Hello';
+import { App } from './App';
 
-export { Hello };
+export { App };

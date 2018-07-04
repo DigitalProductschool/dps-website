@@ -9,7 +9,7 @@ const buildhash = require('./frontend/dist/buildhash');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  const element = React.createElement(frontend.Hello, { compiler: 'TypeScript', framework: 'React' }, null);
+  const element = React.createElement(frontend.App, { compiler: 'TypeScript', framework: 'React' }, null);
   const reactDOM = ReactDOMServer.renderToString(element);
   
   res.writeHead(200, { 'Content-Type': 'text/html' });
