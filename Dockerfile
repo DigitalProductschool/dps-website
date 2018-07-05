@@ -2,8 +2,6 @@
 FROM node:9.11-alpine
 MAINTAINER stockerl@unternehmertum.de
 
-RUN npm install webpack webpack-cli
-
 RUN mkdir -p /var/www/dpschool
 WORKDIR /var/www/dpschool
 
