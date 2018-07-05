@@ -4,12 +4,14 @@ class Nav extends React.Component {
   render() {
     return (
       <nav className="nav">
-        <p className="nav__logo"> Here is our Logo </p>
-        <ul className="nav__menu">
-          <li className="nav__menu__item"> Home </li>
-          <li className="nav__menu__item"> Our Program </li>
-          <li className="nav__menu__item"> Apply </li>
-        </ul>
+        <div className="nav__content u-content">
+          <img className="nav__logo" src="/assets/dps-logo-white.svg" />
+          <ul className="nav__menu">
+            <li className="nav__menu__item"> Home </li>
+            <li className="nav__menu__item"> Our Program </li>
+            <li className="nav__menu__item"> Apply </li>
+          </ul>
+        </div>
       </nav>
     );
   }
