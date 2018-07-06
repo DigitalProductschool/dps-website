@@ -1,0 +1,10 @@
+.u-outline {
+  -webkit-text-stroke: 3px white;
+  -webkit-text-fill-color: transparent;
+}
+
+.u-content {
+  max-width: var(--max-width);
+  width: 90%;
+  margin: 0 5%;
+}
