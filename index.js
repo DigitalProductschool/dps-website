@@ -22,7 +22,8 @@ function htmlTemplate(reactDom, css) {
   <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Hello React!</title>
+            <title>Digital Product School</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <style> ${css} </style>
         </head>
         <body>

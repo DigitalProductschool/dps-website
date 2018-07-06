@@ -10,7 +10,7 @@ class Content extends React.Component<IContentProps, {}> {
     const { className } = this.props;
 
     return (
-      <div className={className}>
+      <div className={`${className} content`}>
           <h1 className="content__title content__title--first">
             Master your project.
           </h1>

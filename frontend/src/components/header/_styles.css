@@ -1,31 +1,17 @@
 .header {
   position: relative;
+  overflow: hidden;
   display: grid;
   justify-items: center;
-  max-height: var(--max-header-height);
-  overflow: hidden;
   width: 100%;
-}
+  height: 780px;
 
-.header__more-icon {
-  width: 70px;
-  margin-top: 75px;
-  color: var(--gallery);
-  cursor: pointer;
-
-  & svg g path {
-    fill: var(--gallery) !important;
-    transition: fill 0.1s;
-  }
-
-  &:hover {
-    & svg g path {
-      fill: white !important;
-      transition: fill 0.1s;
-    }
-  }
-
-  @media (max-width: 1640px) {
-    visibility: hidden;
+  @media (max-width: 620px) {
+    height: 450px;
+    background-image: url('/assets/header-image.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
   }
 }
+

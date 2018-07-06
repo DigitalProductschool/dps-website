@@ -1,4 +1,5 @@
 .nav {
+  position: absolute;
   background-color: transparent;
   border-bottom: solid var(--gallery) 2px;
   display: grid;
@@ -16,13 +17,34 @@
   height: 131px;
   height: var(--nav-height);
   justify-content: space-between;
+
+  @media (max-width: 620px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 620px) {
+    height: 64px;
+  }
+}
+
+.nav__menu {
+  padding: 0;
+
+  @media (max-width: 620px) {
+    font-size: 16px;
+  }
 }
 
 .nav__menu__item {
   display: inline;
-  margin-left: 36px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .nav__logo {
   height: 49px;
+
+  @media (max-width: 620px) {
+    display: none;
+  }
 }

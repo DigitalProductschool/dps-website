@@ -1,6 +1,10 @@
 .u-outline {
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 620px) {
+    -webkit-text-stroke: 2px
+  }
 }
 
 .u-content {
