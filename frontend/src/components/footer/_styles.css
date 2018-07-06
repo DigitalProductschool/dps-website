@@ -1,0 +1,27 @@
+.footer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-height: var(--max-footer-height);
+    background-color: var(--bigstone);
+}
+
+.footer__content {
+  align-items: center;
+  color: white;
+  display: grid;
+}
+
+.footer__content__runby {
+  width: 366px;
+  height: 54px;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  line-height: 27px;
+}
+
+.footer__logo {
+  height: 49px;
+}
