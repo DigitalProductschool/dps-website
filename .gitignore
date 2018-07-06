@@ -12,6 +12,8 @@ Desktop.ini
 .directory
 *~
 
+# Intellij 
+.idea
 
 # npm
 node_modules
