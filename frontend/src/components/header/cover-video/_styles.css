@@ -1,0 +1,8 @@
+.cover__video {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  max-height: var(--max-header-height);
+  object-fit: cover;
+  min-height: 550px;
+}
