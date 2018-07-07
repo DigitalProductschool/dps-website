@@ -6,9 +6,6 @@
 .header {
   position: relative;
   overflow: hidden;
-  display: grid;
-  justify-items: center;
-  width: 100%;
   height: 780px;
 
   @media (max-width: 620px) {

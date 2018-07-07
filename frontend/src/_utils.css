@@ -12,3 +12,9 @@
   width: 90%;
   margin: 0 5%;
 }
+
+.u-content-wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
