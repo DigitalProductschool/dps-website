@@ -3,10 +3,7 @@
 @import url('./_colors.css');
 
 @import url("./components/header/_styles.css");
-@import url("./components/header/header-content/_styles.css");
-@import url("./components/header/cover/_styles.css");
-@import url("./components/header/nav/_styles.css");
-
+@import url("./components/pitch/_styles.css");
 
 html, body, #app {
   font-family: Montserrat;
