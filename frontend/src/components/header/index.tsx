@@ -1,9 +1,8 @@
 import * as React from 'react';
-import SVG from 'react-inlinesvg';
 
 import Nav from './nav/index';
 import Cover from './cover/index';
-import Content from './content/index';
+import HeaderContent from './header-content/index';
 
 
 class Header extends React.Component {
@@ -13,7 +12,7 @@ class Header extends React.Component {
         <Nav />
         <section className="header">
           <Cover />
-          <Content className="u-content" />
+          <HeaderContent className="u-content" />
         </section>
       </React.Fragment>
     );

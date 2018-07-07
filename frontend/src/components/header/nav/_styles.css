@@ -4,7 +4,12 @@
   border-bottom: solid var(--gallery) 2px;
   display: grid;
   justify-items: center;
+  height: var(--nav-height-desktop);
   width: 100%;
+
+  @media (max-width: 620px) {
+    height: var(--nav-height-mobile);
+  }
 }
 
 .nav__content {
@@ -14,16 +19,10 @@
   font-size: 14px;
   font-weight: 700;
   grid-auto-flow: column;
-  height: 131px;
-  height: var(--nav-height);
   justify-content: space-between;
 
   @media (max-width: 620px) {
     justify-content: center;
-  }
-
-  @media (max-width: 620px) {
-    height: 64px;
   }
 }
 
