@@ -4,6 +4,7 @@
 
 @import url("./components/header/_styles.css");
 @import url("./components/pitch/_styles.css");
+@import url("./components/diverse-teams/_styles.css");
 
 html, body, #app {
   font-family: Montserrat;
