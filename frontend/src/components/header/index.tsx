@@ -9,8 +9,8 @@ class Header extends React.Component {
   render() {
     return  (
       <React.Fragment>
-        <Nav />
         <section className="header u-content-wrapper">
+          <Nav />
           <Cover />
           <HeaderContent className="u-content" />
         </section>
