@@ -13,7 +13,8 @@
 
   @media (max-width: 950px) {
     grid-template-columns: auto;
-    grid-gap: 50px;
+    grid-gap: 0;
+    margin-top: 0;
   }
 
 

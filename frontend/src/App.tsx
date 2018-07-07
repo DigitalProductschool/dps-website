@@ -4,6 +4,7 @@ import Header from './components/header/index';
 import Pitch from './components/pitch/index';
 import DiverseTeams from './components/diverse-teams';
 import ExperienceMatter from './components/experience-matters';
+import UserFirst from './components/user-first';
 
 
 export interface AppProps { 
@@ -19,6 +20,7 @@ export class App extends React.Component<AppProps, {}> {
         <Pitch />
         <DiverseTeams />
         <ExperienceMatter />
+        <UserFirst />
       </React.Fragment>
     );
   }

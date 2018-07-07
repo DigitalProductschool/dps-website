@@ -5,6 +5,10 @@
   @media (max-width: 620px) {
     -webkit-text-stroke: 2px
   }
+
+  &--reversed {
+    -webkit-text-stroke: 3px black;
+  }
 }
 
 .u-content {

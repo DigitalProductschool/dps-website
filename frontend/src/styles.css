@@ -6,6 +6,7 @@
 @import url("./components/pitch/_styles.css");
 @import url("./components/diverse-teams/_styles.css");
 @import url("./components/experience-matters/_styles.css");
+@import url("./components/user-first/_styles.css");
 
 
 html, body, #app {

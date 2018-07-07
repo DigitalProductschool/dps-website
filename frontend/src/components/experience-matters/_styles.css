@@ -1,11 +1,15 @@
+.experience-matters {
+  margin-top: 150px;
+}
+
 .experience-matters__content {
   display: grid;
   grid-template-columns: 5fr 4fr;
   grid-gap: 50px;
-  margin-top: 131px;
 
   @media (max-width: 950px) {
     grid-template-columns: auto;
+    grid-gap: 0;
   }
 }
 
