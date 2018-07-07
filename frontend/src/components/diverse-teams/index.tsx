@@ -13,7 +13,7 @@ class DiverseTeams extends React.Component {
             software engineers, data scientists and product managers from all over the world are working together across disciplines 
             to create great products in a lean and agile way.
           </p>
-          <div className="diverse-teams__image" />
+          <div className="diverse-teams__content__image" />
         </div>
       </div>
     );

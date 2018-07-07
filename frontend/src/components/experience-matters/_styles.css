@@ -1,0 +1,53 @@
+.experience-matters__content {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-gap: 50px;
+  margin-top: 131px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+  }
+}
+
+.experience-matters__content__image {
+  background-image: url('/assets/experience-matters.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 367px;
+  margin-left: -118px;
+
+  @media (max-width: 950px) {
+    margin-left: 0;
+  }
+}
+
+.experience-matters__content__description {
+  font-size: 18px;
+  color: var(--cod-gray);
+  margin-top: 0;
+  line-height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+
+  & img {
+    min-width: 100px;
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  & li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

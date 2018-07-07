@@ -5,6 +5,8 @@
 @import url("./components/header/_styles.css");
 @import url("./components/pitch/_styles.css");
 @import url("./components/diverse-teams/_styles.css");
+@import url("./components/experience-matters/_styles.css");
+
 
 html, body, #app {
   font-family: Montserrat;
@@ -16,4 +18,8 @@ html, body, #app {
 
 body {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
 }

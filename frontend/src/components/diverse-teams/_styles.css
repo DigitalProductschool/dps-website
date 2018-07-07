@@ -7,17 +7,19 @@
 
 .diverse-teams__content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 70px;
+  margin-top: 50px;
 
   @media (max-width: 950px) {
     grid-template-columns: auto;
+    grid-gap: 50px;
   }
 
-  grid-gap: 50px;
-  margin-top: 50px;
+
 }
 
-.diverse-teams__image {
+.diverse-teams__content__image {
   background-image: url('/assets/diverse-teams.jpg');
   background-position: center center;
   background-size: cover;
@@ -29,8 +31,4 @@
   color: var(--cod-gray);
   margin-top: 0;
   line-height: 34px;
-
-  /* & span {
-    max-width: 470px;
-  } */
 }
