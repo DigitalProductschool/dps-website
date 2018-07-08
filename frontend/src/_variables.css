@@ -3,4 +3,6 @@
   --max-header-height: 1000px;
   --max-footer-height: 527px;
   --nav-height: 131px;
+  --nav-height-desktop: 131px;
+  --nav-height-mobile: 64px;
 }

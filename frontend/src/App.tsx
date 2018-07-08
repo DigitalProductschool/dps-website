@@ -1,7 +1,10 @@
 import * as React from 'react';
 
 import Header from './components/header/index';
-import Footer from './components/footer/index';
+import Pitch from './components/pitch/index';
+import DiverseTeams from './components/diverse-teams';
+import ExperienceMatter from './components/experience-matters';
+import UserFirst from './components/user-first';
 
 
 export interface AppProps {
@@ -14,7 +17,10 @@ export class App extends React.Component<AppProps, {}> {
     return (
       <React.Fragment>
         <Header />
-        <Footer />
+        <Pitch />
+        <DiverseTeams />
+        <ExperienceMatter />
+        <UserFirst />
       </React.Fragment>
     );
   }

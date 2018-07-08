@@ -11,7 +11,7 @@ const buildhash = require('./frontend/dist/buildhash');
 router.get('/', function(req, res, next) {
   const element = React.createElement(frontend.App, { compiler: 'TypeScript', framework: 'React' }, null);
   const reactDOM = ReactDOMServer.renderToString(element);
-  
+
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.end(htmlTemplate(reactDOM, frontend.css));
 });
@@ -22,7 +22,8 @@ function htmlTemplate(reactDom, css) {
   <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Hello React!</title>
+            <title>Digital Product School</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <style> ${css} </style>
         </head>
         <body>
