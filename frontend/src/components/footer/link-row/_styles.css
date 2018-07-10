@@ -13,3 +13,7 @@
   fill: #ffffff;
   float: right;
 }
+
+.link_row__social__media__link svg:hover g path {
+  fill: rgb(3, 184, 229) !important;
+}
