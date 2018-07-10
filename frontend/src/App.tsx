@@ -6,6 +6,7 @@ import DiverseTeams from './components/diverse-teams';
 import ExperienceMatter from './components/experience-matters';
 import UserFirst from './components/user-first';
 import Stripes from './components/stripes';
+import OurProgram from './components/our-program';
 
 
 export interface AppProps { 
@@ -23,6 +24,7 @@ export class App extends React.Component<AppProps, {}> {
         <DiverseTeams />
         <ExperienceMatter />
         <UserFirst />
+        <OurProgram />
       </React.Fragment>
     );
   }

@@ -3,7 +3,7 @@ import * as React from 'react';
 class UserFirst extends React.Component {
   render() {
     return (
-      <div className="user-first u-content-wrapper">
+      <section className="user-first u-content-wrapper">
         <div className="user-first__content u-content">
           <h3 className="user-first__content__title">
             User first. <span className="u-outline u-outline--reversed"> Always! </span>
@@ -19,7 +19,7 @@ class UserFirst extends React.Component {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

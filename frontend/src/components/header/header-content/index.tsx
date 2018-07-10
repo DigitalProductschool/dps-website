@@ -22,7 +22,7 @@ class HeaderContent extends React.Component<IHeaderContentProps, {}> {
             build digital products that solve real-world problems.
           </p>
           <div className="header-content__buttons">
-            <button className="header-content__buttons__apply"> 
+            <button className="u-button header-content__buttons__apply"> 
               Apply now
             </button>
             <button className="header-content__buttons__more">
