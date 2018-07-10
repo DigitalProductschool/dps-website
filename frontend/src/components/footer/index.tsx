@@ -1,15 +1,18 @@
 import * as React from 'react';
 
+import About from './about/index';
+import Contact from './contact/index';
+import LinkRow from './link-row/index';
+
 class Footer extends React.Component {
     render() {
         return (
             <section className="footer">
               <div className="footer__content u-content">
-                <img className="footer__logo" src="/assets/dps-logo-white.svg" />
-                <div className="footer__content__runby">
-                  DPS is a program run by 
-                </div>
+                <About />
+                <Contact />
               </div>
+              <LinkRow />
             </section>
         );
     }
