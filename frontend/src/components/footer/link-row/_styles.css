@@ -1,5 +1,15 @@
-.link_row__social__media {
+.link_row {
+  margin-top: 52px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 70px;
+}
+
+.link_row__social__media__link {
   width: 40px;
   height: 40px;
+  margin-left: 30px;
   fill: #ffffff;
+  float: right;
 }

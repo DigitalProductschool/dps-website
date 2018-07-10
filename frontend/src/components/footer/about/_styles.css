@@ -6,13 +6,16 @@
   line-height: 27px;
 }
 
+.about__logo {
+  height: 49px;
+  margin-top: 60px;
+}
+
 .about__runby {
   width: 366px;
   height: 54px;
-}
-
-.about__logo {
-  height: 49px;
+  margin-top: 50px;
+  margin-left: 15px;
 }
 
 .about__link {
@@ -26,6 +29,11 @@
 
 a.about__link:hover {
   color: rgb(3, 184, 229);
+}
+
+.about__address {
+  margin-top: 19px;
+  margin-left: 15px;
 }
 
 .about__address__title {
