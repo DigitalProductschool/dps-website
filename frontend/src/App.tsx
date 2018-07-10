@@ -1,11 +1,16 @@
 import * as React from 'react';
 
 import Header from './components/header/index';
+import Pitch from './components/pitch/index';
+import DiverseTeams from './components/diverse-teams';
+import ExperienceMatter from './components/experience-matters';
+import UserFirst from './components/user-first';
+import Footer from './components/footer'
 
 
-export interface AppProps { 
-  compiler: string; 
-  framework: string; 
+export interface AppProps {
+  compiler: string;
+  framework: string;
 }
 
 export class App extends React.Component<AppProps, {}> {
@@ -13,6 +18,12 @@ export class App extends React.Component<AppProps, {}> {
     return (
       <React.Fragment>
         <Header />
+        <Pitch />
+        <DiverseTeams />
+        <ExperienceMatter />
+        <UserFirst />
+
+        <Footer />
       </React.Fragment>
     );
   }

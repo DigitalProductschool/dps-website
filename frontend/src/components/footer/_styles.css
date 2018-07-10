@@ -1,0 +1,20 @@
+@import url("./about/_styles.css");
+@import url("./contact/_styles.css");
+@import url("./link-row/_styles.css");
+
+.footer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-height: var(--max-footer-height);
+    background-color: var(--bigstone);
+    justify-items: center;
+}
+
+.footer__content {
+  align-items: center;
+  color: white;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 70px;
+}

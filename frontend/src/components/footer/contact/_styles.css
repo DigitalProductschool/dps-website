@@ -1,0 +1,20 @@
+.contact {
+  height: 96px;
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none solid rgba(255, 255, 255, 0.7);
+  line-height: 48px;
+  text-align: right;
+}
+
+.contact__email {
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none solid rgb(255, 255, 255);
+  line-height: 27px;
+}

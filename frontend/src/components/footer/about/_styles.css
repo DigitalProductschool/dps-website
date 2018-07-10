@@ -1,0 +1,41 @@
+.about {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  line-height: 27px;
+}
+
+.about__runby {
+  width: 366px;
+  height: 54px;
+}
+
+.about__logo {
+  height: 49px;
+}
+
+.about__link {
+  height: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+a.about__link:hover {
+  color: rgb(3, 184, 229);
+}
+
+.about__address__title {
+  height: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.about__address__content {
+  height: 140px;
+  line-height: 28px;
+}
