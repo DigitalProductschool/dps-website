@@ -7,11 +7,12 @@ import ExperienceMatter from './components/experience-matters';
 import UserFirst from './components/user-first';
 import Stripes from './components/stripes';
 import OurProgram from './components/our-program';
+import Footer from './components/footer/index';
 
 
-export interface AppProps { 
-  compiler: string; 
-  framework: string; 
+export interface AppProps {
+  compiler: string;
+  framework: string;
 }
 
 export class App extends React.Component<AppProps, {}> {
@@ -25,6 +26,7 @@ export class App extends React.Component<AppProps, {}> {
         <ExperienceMatter />
         <UserFirst />
         <OurProgram />
+        <Footer />
       </React.Fragment>
     );
   }

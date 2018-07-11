@@ -11,7 +11,7 @@ const buildhash = require('./frontend/dist/buildhash');
 router.get('/', function(req, res, next) {
   const element = React.createElement(frontend.App, { compiler: 'TypeScript', framework: 'React' }, null);
   const reactDOM = ReactDOMServer.renderToString(element);
-  
+
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.end(htmlTemplate(reactDOM, frontend.css));
 });

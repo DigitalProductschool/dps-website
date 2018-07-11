@@ -1,0 +1,67 @@
+.about {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  line-height: 27px;
+
+  @media (max-width: 950px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.about__logo {
+  height: 49px;
+  margin-top: 60px;
+
+  @media (max-width: 950px) {
+    height: 31px;
+    margin-top: 28px;
+  }
+}
+
+.about__runby {
+  height: 54px;
+  margin-top: 50px;
+  margin-left: 15px;
+
+  @media (max-width: 950px) {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+.about__link {
+  height: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+a.about__link:hover {
+  color: rgb(3, 184, 229);
+}
+
+.about__address {
+  margin-top: 19px;
+  margin-left: 15px;
+
+  @media (max-width: 950px) {
+    margin-left: 0;
+  }
+}
+
+.about__address__title {
+  height: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.about__address__content {
+  height: 140px;
+  line-height: 28px;
+}

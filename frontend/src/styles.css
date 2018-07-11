@@ -9,7 +9,7 @@
 @import url("./components/user-first/_styles.css");
 @import url("./components/stripes/_styles.css");
 @import url('./components/our-program/_styles.css');
-
+@import url("./components/footer/_styles.css");
 
 html, body, #app {
   font-family: Montserrat;
