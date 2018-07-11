@@ -6,8 +6,8 @@ class LinkRow extends React.Component {
     return (
       <div className="link_row u-content">
         <div className="link_row__legal">
-          <a href="/legal_disclosure">Impressum – Legal Disclosure</a>
-          <a href="/privacy_policy">Privacy Policy</a>
+          <a href="/legal-disclosure">Impressum – Legal Disclosure</a>
+          <a href="/privacy-policy">Privacy Policy</a>
         </div>
         <div className="link_row__social__media">
           <a href="https://www.youtube.com/channel/UCvmerSnTMl2ZeoLtuKoONJQ/videos">

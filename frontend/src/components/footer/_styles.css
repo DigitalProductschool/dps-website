@@ -17,4 +17,9 @@
   display: grid;
   grid-template-columns: 5fr 5fr;
   grid-gap: 70px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
 }
