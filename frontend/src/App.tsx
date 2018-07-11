@@ -11,6 +11,7 @@ import Adac from './components/adac';
 import ToolPartner from './components/tool-partner'
 import Footer from './components/footer/index';
 import IndustryPartners from './components/industry-partners';
+import PickTrack from './components/pick-track';
 
 
 export interface AppProps {
@@ -30,6 +31,7 @@ export class App extends React.Component<AppProps, {}> {
         <UserFirst />
         <OurProgram />
         <IndustryPartners />
+        <PickTrack />
         <Adac />
         <ToolPartner />
         <Footer />

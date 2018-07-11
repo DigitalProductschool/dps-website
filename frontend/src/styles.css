@@ -13,6 +13,8 @@
 @import url("./components/tool-partner/_styles.css");
 @import url("./components/footer/_styles.css");
 @import url('./components/industry-partners/_styles.css');
+@import url('./components/pick-track/_styles.css');
+
 
 html, body, #app {
   font-family: Montserrat;

@@ -1,0 +1,61 @@
+.pick-track__tracks {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pick-track__description {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.pick-track__track__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pick-tracks__track__image {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 100%;
+  width: 100%;
+
+  &--pm {
+    background: linear-gradient(rgba(3, 184, 229, 0.8), rgba(3, 184, 229, 0.8)),
+    url(/assets/pm-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--se {
+    background: linear-gradient(rgba(221, 4, 165, 0.8), rgba(221, 4, 165, 0.8)),
+    url(/assets/se-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--ixd {
+    background: linear-gradient(rgba(255, 167, 14, 0.8), rgba(255, 167, 14, 0.8)),
+    url(/assets/ixd-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--ai {
+    background: linear-gradient(rgba(124, 26, 117, 0.8), rgba(124, 26, 117, 0.8)),
+    url(/assets/ai-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+}
+
+.pick-tracks__track__image__wrapper {
+  
+  &--pm {
+    background-color: rgb(3, 184, 229);
+    mix-blend-mode: multiply;
+  }
+}
+
+.pick-track__track__button {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
