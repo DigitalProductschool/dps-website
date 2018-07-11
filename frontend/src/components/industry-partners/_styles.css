@@ -1,0 +1,30 @@
+.industry-partners__title {
+  margin-top: 110px;
+  margin-bottom: 10px;
+}
+
+.industry-partners__description {
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.industry-partners__logos {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.industry-partners__logo {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  position: relative;
+
+  & img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

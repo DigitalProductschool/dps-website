@@ -10,6 +10,7 @@
 @import url("./components/stripes/_styles.css");
 @import url('./components/our-program/_styles.css');
 @import url("./components/footer/_styles.css");
+@import url('./components/industry-partners/_styles.css');
 
 html, body, #app {
   font-family: Montserrat;
@@ -26,4 +27,5 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }

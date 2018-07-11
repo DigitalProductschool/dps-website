@@ -8,6 +8,7 @@ import UserFirst from './components/user-first';
 import Stripes from './components/stripes';
 import OurProgram from './components/our-program';
 import Footer from './components/footer/index';
+import IndustryPartners from './components/industry-partners';
 
 
 export interface AppProps {
@@ -26,6 +27,7 @@ export class App extends React.Component<AppProps, {}> {
         <ExperienceMatter />
         <UserFirst />
         <OurProgram />
+        <IndustryPartners />
         <Footer />
       </React.Fragment>
     );
