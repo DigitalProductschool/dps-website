@@ -8,13 +8,21 @@
   font-size: 18px;
 }
 
+.industry-partners__logos {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .industry-partners__logo {
   text-align: center;
   position: relative;
+  float: left;
+  width: 20%;
 
   & img {
-    float: left;
-    width: 20%;
+    width: 100%;
     height: auto;
     display: block;
     filter: grayscale(100%);
