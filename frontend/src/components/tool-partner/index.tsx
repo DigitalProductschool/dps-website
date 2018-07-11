@@ -14,7 +14,7 @@ class ToolPartner extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
