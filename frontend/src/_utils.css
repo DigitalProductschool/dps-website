@@ -20,7 +20,9 @@
 .u-content-wrapper {
   width: 100%;
   display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
+  justify-items: center;
 }
 
 .u-button {

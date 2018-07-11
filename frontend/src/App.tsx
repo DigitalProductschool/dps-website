@@ -7,6 +7,7 @@ import ExperienceMatter from './components/experience-matters';
 import UserFirst from './components/user-first';
 import Stripes from './components/stripes';
 import OurProgram from './components/our-program';
+import ToolPartner from './components/tool-partner'
 import Footer from './components/footer/index';
 import IndustryPartners from './components/industry-partners';
 
@@ -28,6 +29,7 @@ export class App extends React.Component<AppProps, {}> {
         <UserFirst />
         <OurProgram />
         <IndustryPartners />
+        <ToolPartner />
         <Footer />
       </React.Fragment>
     );

@@ -1,0 +1,18 @@
+.tool-partner {
+  margin-bottom: 82px;
+}
+
+.tool-partner__content__logo {
+  width: 63px;
+}
+
+.tool-partner__content__logos {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+
+  @media (max-width: 430px) {
+    grid-template-columns: 5fr 5fr;
+  }
+}
