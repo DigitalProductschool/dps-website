@@ -14,7 +14,7 @@ class ExperienceMatter extends React.Component {
             <ul>
               <li> <img src="/assets/designit.png" /> </li>
               <li> <img src="/assets/dalabs.png" /> </li>
-              <li> <img src="/assets/produktmacher.svg" /> </li>
+              <li> <img src="/assets/produktmacher.png" /> </li>
             </ul>
           </div>
         </div>

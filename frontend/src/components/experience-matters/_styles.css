@@ -35,12 +35,6 @@
   align-items: center;  
   flex-direction: column;
 
-  & img {
-    min-width: 100px;
-    max-width: 150px;
-    max-height: 50px;
-  }
-
   & ul {
     display: flex;
     justify-content: center;
