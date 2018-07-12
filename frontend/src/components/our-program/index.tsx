@@ -44,9 +44,9 @@ class OurProgram extends React.Component {
             </li>
           </ul>
 
-          <button className="our-program__button u-button"> 
+          <a className="our-program__button u-button" href="/assets/program-info.pdf">   
             Learn more
-          </button>
+          </a>
         </div>
       </section>
     );

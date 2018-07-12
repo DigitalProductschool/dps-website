@@ -59,6 +59,10 @@
   width: 214px;
   height: 50px;
   margin: 50px auto;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
