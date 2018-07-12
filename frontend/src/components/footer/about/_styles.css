@@ -54,13 +54,6 @@ a.about__link:hover {
   }
 }
 
-.about__address__title {
-  height: 28px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
 .about__address__content {
   height: 140px;
   line-height: 28px;
