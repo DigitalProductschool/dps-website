@@ -14,7 +14,7 @@
 @import url("./components/footer/_styles.css");
 @import url('./components/industry-partners/_styles.css');
 @import url('./components/pick-track/_styles.css');
-
+@import url('./components/whats-new/_styles.css');
 
 html, body, #app {
   font-family: Montserrat;

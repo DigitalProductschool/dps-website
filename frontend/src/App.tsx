@@ -12,7 +12,7 @@ import ToolPartner from './components/tool-partner'
 import Footer from './components/footer/index';
 import IndustryPartners from './components/industry-partners';
 import PickTrack from './components/pick-track';
-
+import WhatsNew from './components/whats-new';
 
 export interface AppProps {
   compiler: string;
@@ -32,6 +32,7 @@ export class App extends React.Component<AppProps, {}> {
         <OurProgram />
         <IndustryPartners />
         <PickTrack />
+        <WhatsNew />
         <Adac />
         <ToolPartner />
         <Footer />

@@ -7,9 +7,9 @@ class ToolPartner extends React.Component {
         <div className="tool-partner__content u-content">
           <h3 className="u-title">OUR TOOL PARTNER</h3>
           <div className="tool-partner__content__logos">
-            <img className="tool-partner__content__logo" src="/assets/github.png" />
-            <img className="tool-partner__content__logo" src="/assets/github.png" />
-            <img className="tool-partner__content__logo" src="/assets/github.png" />
+            <img className="tool-partner__content__logo" src="/assets/eyequant.jpg" />
+            <img className="tool-partner__content__logo" src="/assets/invision.png" />
+            <img className="tool-partner__content__logo" src="/assets/uxpin.png" />
             <img className="tool-partner__content__logo" src="/assets/github.png" />
           </div>
         </div>
