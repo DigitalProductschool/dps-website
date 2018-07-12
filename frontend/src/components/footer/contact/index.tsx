@@ -6,7 +6,7 @@ class Contact extends React.Component {
       <div className="contact">
         Questions? <br/>
         Contact us, we are friendly:<br />
-        <span className="contact__email">hello@dpschool.io</span>
+        <a href="mailto:hello@dpschool.io" className="contact__email">hello@dpschool.io</a>
       </div>
     )
   }

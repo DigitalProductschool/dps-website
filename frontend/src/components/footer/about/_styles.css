@@ -42,7 +42,7 @@
 }
 
 a.about__link:hover {
-  color: rgb(3, 184, 229);
+  color: var(--cerulean);
 }
 
 .about__address {

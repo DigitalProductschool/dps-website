@@ -3,7 +3,6 @@
 }
 
 .adac__content__desc {
-  height: 24px;
   font-family: Montserrat;
   font-size: 18px;
   color: #000000;
@@ -11,7 +10,7 @@
   line-height: 24px;
   margin-bottom: 22px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 620px) {
     margin-bottom: 26px;
     font-size: 14px;
     line-height: 18px;

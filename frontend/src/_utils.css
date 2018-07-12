@@ -15,6 +15,10 @@
   max-width: var(--max-width);
   width: 90%;
   margin: 0 5%;
+
+  @media (max-width: 620px) {
+    text-align: center;
+  }
 }
 
 .u-content-wrapper {
@@ -52,6 +56,10 @@
   font-size: 36px;
   text-transform: uppercase;
   color: black;
+
+  @media (max-width: 620px) {
+    font-size: 24px;
+  }
 }
 
 .u-youtube {

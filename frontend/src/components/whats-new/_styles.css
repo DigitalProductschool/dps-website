@@ -10,8 +10,9 @@
     justify-items: center;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 620px) {
     grid-template-columns: repeat(1, minmax(282px, 400px));
+    text-align: left;
   }
 }
 
