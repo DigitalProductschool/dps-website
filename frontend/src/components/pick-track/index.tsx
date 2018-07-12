@@ -14,7 +14,10 @@ class PickTrack extends React.Component {
           </p>
           <ul className="pick-track__tracks">
             <li className="pick-track__track">
-              <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
+              <div className="pick-tracks__track__image-wrapper">
+                <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
+                <img className="pick-tracks__track__icon" src="/assets/pm-icon.png" />
+              </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
                 and driving decision-making. They also take care of the team's ressources.
@@ -22,7 +25,10 @@ class PickTrack extends React.Component {
               <button className="pick-track__track__button u-button u-button--reversed"> APPLY AS PM </button>
             </li>
             <li className="pick-track__track">
-              <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
+              <div className="pick-tracks__track__image-wrapper">
+                <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
+                <img className="pick-tracks__track__icon" src="/assets/ixd-icon.png" />
+              </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
                 and driving decision-making. They also take care of the team's ressources.
@@ -30,7 +36,10 @@ class PickTrack extends React.Component {
               <button className="pick-track__track__button u-button u-button--reversed"> APPLY AS IxD </button>
             </li>
             <li className="pick-track__track">
-              <div className="pick-tracks__track__image pick-tracks__track__image--se" />
+              <div className="pick-tracks__track__image-wrapper">
+                <div className="pick-tracks__track__image pick-tracks__track__image--se" />
+                <img className="pick-tracks__track__icon" src="/assets/se-icon.png" />
+              </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
                 and driving decision-making. They also take care of the team's ressources.
@@ -38,7 +47,10 @@ class PickTrack extends React.Component {
               <button className="pick-track__track__button u-button u-button--reversed"> APPLY AS SE </button>
             </li>
             <li className="pick-track__track">
-              <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
+              <div className="pick-tracks__track__image-wrapper">
+                <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
+                <img className="pick-tracks__track__icon" src="/assets/ai-icon.png" />
+              </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
                 and driving decision-making. They also take care of the team's ressources.
