@@ -7,9 +7,19 @@ class Nav extends React.Component {
         <div className="nav__content u-content">
           <img className="nav__logo" src="/assets/dps-logo-white.svg" />
           <ul className="nav__menu">
-            <li className="nav__menu__item"> Home </li>
-            <li className="nav__menu__item"> Our Program </li>
-            <li className="nav__menu__item"> Apply </li>
+            <li className="nav__menu__item"> 
+              <a href="/"> Home </a>
+            </li>
+            <li className="nav__menu__item">
+              <a href="/assets/program-info.pdf">
+                Our Program
+              </a>
+            </li>
+            <li className="nav__menu__item"> 
+              <a href="https://utum.typeform.com/to/qkkFHF">
+                Apply
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

@@ -34,6 +34,11 @@
   display: inline;
   margin-left: 18px;
   margin-right: 18px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .nav__logo {
