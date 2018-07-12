@@ -9,6 +9,10 @@
     justify-content: center;
     justify-items: center;
   }
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, minmax(282px, 400px));
+  }
 }
 
 .whats-new__content__tile {
