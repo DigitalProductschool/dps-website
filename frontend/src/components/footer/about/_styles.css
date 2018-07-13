@@ -4,6 +4,7 @@
   color: #ffffff;
   text-decoration: none solid rgb(255, 255, 255);
   line-height: 27px;
+  text-align: left;
 
   @media (max-width: 950px) {
     font-size: 12px;

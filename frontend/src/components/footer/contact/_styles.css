@@ -30,6 +30,6 @@
   }
 }
 
-a.contact_email {
+a.contact__email:hover {
   color: var(--cerulean);
 }
