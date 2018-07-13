@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: 5fr 5fr;
   grid-gap: 50px;
-  margin-left: 15px;
   justify-items: left;
 
   @media (max-width: 950px) {
@@ -25,7 +24,6 @@
     margin-top: 45px;
     grid-template-columns: auto;
     grid-gap: 0;
-    margin-left: 0;
   }
 }
 

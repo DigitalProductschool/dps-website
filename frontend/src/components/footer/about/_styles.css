@@ -24,11 +24,9 @@
 .about__runby {
   height: 54px;
   margin-top: 50px;
-  margin-left: 15px;
 
   @media (max-width: 950px) {
     margin-top: 15px;
-    margin-left: 0;
   }
 }
 
@@ -47,7 +45,6 @@ a.about__link:hover {
 
 .about__address {
   margin-top: 19px;
-  margin-left: 15px;
 
   @media (max-width: 950px) {
     margin-left: 0;
