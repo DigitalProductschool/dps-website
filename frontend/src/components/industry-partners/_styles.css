@@ -1,0 +1,31 @@
+.industry-partners__title {
+  margin-top: 110px;
+  margin-bottom: 10px;
+}
+
+.industry-partners__description {
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.industry-partners__logos {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.industry-partners__logo {
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 20%;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+  }
+}

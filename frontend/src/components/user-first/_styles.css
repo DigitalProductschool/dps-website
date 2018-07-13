@@ -1,0 +1,37 @@
+.user-first {
+  margin-top: 170px;
+}
+
+.user-first__content {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-gap: 70px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
+}
+
+.user-first__content__title {
+  font-size: 72px;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @media (max-width: 950px) {
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
+.user-first__content__description {
+  font-size: 18px;
+  color: var(--cod-gray);
+  margin-top: 0;
+  line-height: 34px;
+}

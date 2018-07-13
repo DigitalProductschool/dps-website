@@ -38,6 +38,15 @@ Order of steps is important
 - Transpile backend's typescript via running `yarn transpile:ts` in root dir 
 - Start production server via `yarn prod` in root dir, it would run on port 5000
 
+## Container
+
+We use Docker in Production as Container Engine. You can find the Dockerfile in the root-Directory.
+If you want to run the production Container locally, run:
+- `docker build -t <image_name>:<tag> .`
+- `docker run -it -p <local_port>:5000 <image_name>:<tag>`
+- The application is reachable under `localhost:<local_port>`
+- To stop the container simply use `Ctrl-C`
+
 # How it works
 
 #### Backend

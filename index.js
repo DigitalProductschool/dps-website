@@ -9,20 +9,23 @@ const buildhash = require('./frontend/dist/buildhash');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  const element = React.createElement(frontend.Hello, { compiler: 'TypeScript', framework: 'React' }, null);
+  const element = React.createElement(frontend.App, { compiler: 'TypeScript', framework: 'React' }, null);
   const reactDOM = ReactDOMServer.renderToString(element);
-  
+
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end(htmlTemplate( reactDOM ));
+  res.end(htmlTemplate(reactDOM, frontend.css));
 });
 
-function htmlTemplate(reactDom) {
+function htmlTemplate(reactDom, css) {
   return `
   <!DOCTYPE html>
   <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Hello React!</title>
+            <title>Digital Product School</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+            <style> ${css} </style>
         </head>
         <body>
         <div id="app"> ${reactDom} </div>

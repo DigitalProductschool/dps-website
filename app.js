@@ -17,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/dist', express.static(path.join(__dirname, 'frontend/dist')));
+app.use('/assets', express.static(path.join(__dirname, 'frontend/assets')));
 
 app.use('/', indexRouter);
 
@@ -27,6 +28,7 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
+  console.log(err);
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

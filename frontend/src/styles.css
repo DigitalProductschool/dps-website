@@ -1,5 +1,39 @@
-@import url("./test/test.css");
+@import url('./_variables.css');
+@import url('./_utils.css');
+@import url('./_colors.css');
+
+@import url("./components/header/_styles.css");
+@import url("./components/pitch/_styles.css");
+@import url("./components/diverse-teams/_styles.css");
+@import url("./components/experience-matters/_styles.css");
+@import url("./components/user-first/_styles.css");
+@import url("./components/stripes/_styles.css");
+@import url('./components/our-program/_styles.css');
+@import url('./components/adac/_styles.css');
+@import url("./components/tool-partner/_styles.css");
+@import url("./components/footer/_styles.css");
+@import url('./components/industry-partners/_styles.css');
+@import url('./components/pick-track/_styles.css');
+@import url('./components/whats-new/_styles.css');
+
+html, body, #app {
+  font-family: Montserrat;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
-  background-color: red;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.a {
+  cursor: pointer;
 }

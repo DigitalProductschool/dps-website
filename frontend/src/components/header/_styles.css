@@ -1,0 +1,17 @@
+@import url("./header-content/_styles.css");
+@import url("./cover/_styles.css");
+@import url("./nav/_styles.css");
+
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 780px;
+
+  @media (max-width: 620px) {
+    height: 500px;
+    background-image: url('/assets/header-image.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+  }
+}

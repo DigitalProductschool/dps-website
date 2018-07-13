@@ -1,0 +1,35 @@
+.contact {
+  height: 96px;
+  font-family: Montserrat;
+  font-size: 32px;
+  color: rgba(255,255,255, 0.7);
+  font-weight: 700;
+  text-decoration: none solid rgba(255, 255, 255, 0.7);
+  line-height: 48px;
+  text-align: right;
+
+  @media (max-width: 950px) {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 34px;
+  }
+}
+
+.contact__email {
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none solid rgb(255, 255, 255);
+  line-height: 27px;
+
+  @media (max-width: 950px) {
+    font-size: 20px;
+  }
+}
+
+a.contact__email:hover {
+  color: var(--cerulean);
+}

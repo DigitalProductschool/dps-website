@@ -1,0 +1,122 @@
+.whats-new {
+  margin-top: 130px;
+}
+
+.whats-new__content__tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(282px, 400px));
+  padding-left: 0;
+  grid-gap: 40px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(2, minmax(282px, 400px));
+    justify-content: center;
+    justify-items: center;
+  }
+
+  @media (max-width: 620px) {
+    grid-template-columns: repeat(1, minmax(282px, 400px));
+    text-align: left;
+  }
+}
+
+.whats-new__content__tile {
+  height: 424px;
+  background: white;
+  filter: drop-shadow(0px 8px 5px rgba(204,202,202,0.5));
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+
+  article {
+    padding: 12px;
+    display: inline-block;
+
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  h4 {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 30px;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none solid rgb(0, 0, 0);
+    line-height: 30px;
+    margin-bottom: 8px;
+    cursor: text;
+    pointer-events: none;
+  }
+
+  span {
+    position: absolute;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(0, 0, 0);
+    transition: background-color 200ms;
+    display: inline-block;
+  }
+
+  span::before {
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 11px;
+    top: 2px;
+    color: var(--cerulean);
+    content: "";
+    display: inline-block;
+    z-index: -1;
+  }
+
+  span:hover::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 11px;
+    top: 2px;
+    background-color: rgba(3, 184, 229);
+    color: var(--cerulean);
+    content: "";
+    display: inline-block;
+  }
+
+  span::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    bottom: 1px;
+    background-color: rgba(3, 184, 229);
+    color: var(--cerulean);
+    content: "";
+    display: inline-block;
+    z-index: -1;
+  }
+}
+
+.whats-new__content__tile__thumb {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0;
+  height: 201px;
+
+  img {
+    width: 100%;
+    height: 201px;
+  }
+}
