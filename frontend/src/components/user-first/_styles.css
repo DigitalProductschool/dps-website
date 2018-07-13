@@ -1,9 +1,5 @@
 .user-first {
-  margin-top: 150px;
-
-  @media (max-width: 950px) {
-    margin-top: 100px;
-  }
+  margin-top: 170px;
 }
 
 .user-first__content {
