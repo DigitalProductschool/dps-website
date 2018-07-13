@@ -54,6 +54,38 @@
   width: 100%;
   height: 50px;
   margin-top: 10px;
+  
+  &:hover {
+    background-color: white;
+  }
+
+  &--pm {
+    &:hover {
+      color: var(--cerulean);
+      border-color: var(--cerulean);
+    }
+  }
+
+  &--se {
+    &:hover {
+      color: var(--hollywoord-cerise);
+      border-color: var(--hollywoord-cerise);
+    }
+  }
+
+  &--ixd {
+    &:hover {
+      color: var(--yellow-sea);
+      border-color: var(--yellow-sea);
+    }
+  }
+
+  &--ai {
+    &:hover {
+      color: var(--wisteria);
+      border-color: var(--wisteria);
+    }
+  }
 }
 
 .pick-tracks__track__image-wrapper {
@@ -66,4 +98,6 @@
   left: 50%;
   width: 25%;
   transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.3s;
 }
