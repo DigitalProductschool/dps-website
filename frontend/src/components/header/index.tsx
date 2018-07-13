@@ -4,15 +4,20 @@ import Nav from './nav/index';
 import Cover from './cover/index';
 import HeaderContent from './header-content/index';
 
+interface IHeaderProps {
+  onContentButtonClick: () => void;
+}
 
-class Header extends React.Component {
+class Header extends React.Component<IHeaderProps, {}> {
   render() {
+    const { onContentButtonClick } = this.props;
+
     return  (
       <React.Fragment>
         <section className="header u-content-wrapper">
           <Nav />
           <Cover />
-          <HeaderContent className="u-content" />
+          <HeaderContent onContentButtonClick={onContentButtonClick} className="u-content" />
         </section>
       </React.Fragment>
     );

@@ -56,7 +56,11 @@
 
 .header-content__buttons__apply {
   width: 214px;
-  height: 50px;
+  height: 42px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 620px) {
     width: 100%;

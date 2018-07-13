@@ -14,18 +14,20 @@ import IndustryPartners from './components/industry-partners';
 import PickTrack from './components/pick-track';
 import WhatsNew from './components/whats-new';
 
-export interface AppProps {
+export interface IAppProps {
   compiler: string;
   framework: string;
 }
 
-export class App extends React.Component<AppProps, {}> {
+export class App extends React.Component<IAppProps, {}> {
+  private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
+
   render() {
     return (
       <React.Fragment>
         <Stripes />
-        <Header />
-        <Pitch />
+        <Header onContentButtonClick={() => this.forwardedRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} />
+        <Pitch forwardedRef={this.forwardedRef} />
         <DiverseTeams />
         <ExperienceMatter />
         <UserFirst />
