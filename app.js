@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./index');
 
 var app = express();
+app.enable('strict routing');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,7 +20,19 @@ app.use(cookieParser());
 app.use('/dist', express.static(path.join(__dirname, 'frontend/dist')));
 app.use('/assets', express.static(path.join(__dirname, 'frontend/assets')));
 
-app.use('/', indexRouter);
+// I think this strict routing for the case "/" is broken, cause should match only "/", 
+// but it matches everything, so this if check is needed
+app.use('/', (req, res, next) => {
+  if (req.url === '/') {
+    return res.redirect(301, '/index');
+  }
+
+  next();
+});
+app.use('/index', indexRouter);
+app.use('/legal-disclosure', indexRouter);
+app.use('/privacy-policy', indexRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

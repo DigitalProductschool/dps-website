@@ -1,43 +1,20 @@
 import * as React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-import Header from './components/header/index';
-import Pitch from './components/pitch/index';
-import DiverseTeams from './components/diverse-teams';
-import ExperienceMatter from './components/experience-matters';
-import UserFirst from './components/user-first';
-import Stripes from './components/stripes';
-import OurProgram from './components/our-program';
-import Adac from './components/adac';
-import ToolPartner from './components/tool-partner'
-import Footer from './components/footer/index';
-import IndustryPartners from './components/industry-partners';
-import PickTrack from './components/pick-track';
-import WhatsNew from './components/whats-new';
+import Home from './components/home/index';
+import Legal from './components/legal/index';
+import Privacy from './components/privacy/index';
 
-export interface IAppProps {
-  compiler: string;
-  framework: string;
-}
 
-export class App extends React.Component<IAppProps, {}> {
-  private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
-
+export class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Stripes />
-        <Header onContentButtonClick={() => this.forwardedRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} />
-        <Pitch forwardedRef={this.forwardedRef} />
-        <DiverseTeams />
-        <ExperienceMatter />
-        <UserFirst />
-        <OurProgram />
-        <IndustryPartners />
-        <PickTrack />
-        <WhatsNew />
-        <Adac />
-        <ToolPartner />
-        <Footer />
+        <Switch>
+          <Route path="/index" component={Home} />
+          <Route path="/legal-disclosure" component={Legal} />
+          <Route path="/privacy-policy" component={Privacy} />
+        </Switch>
       </React.Fragment>
     );
   }
