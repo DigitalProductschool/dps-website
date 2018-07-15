@@ -14,6 +14,7 @@ import IndustryPartners from '../industry-partners';
 import PickTrack from '../pick-track';
 import WhatsNew from '../whats-new';
 
+
 class Home extends React.Component {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
 
@@ -33,7 +34,7 @@ class Home extends React.Component {
         <Adac />
         <ToolPartner />
         <Footer />
-    </React.Fragment>
+      </React.Fragment>
     )
   }
 }
