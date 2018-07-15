@@ -1,13 +1,14 @@
 import * as React from 'react';
 import SVG from 'react-inlinesvg'
+import { Link } from 'react-router-dom';
 
 class LinkRow extends React.Component {
   render() {
     return (
       <div className="link_row u-content">
         <div className="link_row__legal">
-          <a href="/legal-disclosure">Impressum – Legal Disclosure</a>
-          <a href="/privacy-policy">Privacy Policy</a>
+          <Link to="/legal-disclosure"> Impressum – Legal Disclosure </Link>
+          <Link to="/privacy-policy"> Privacy Policy </Link>
         </div>
         <div className="link_row__social__media">
           <a href="https://www.facebook.com/digitalproductschool">

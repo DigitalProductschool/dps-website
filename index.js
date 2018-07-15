@@ -5,11 +5,12 @@ const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const frontend = require('./frontend/dist/bundle-server');
 const buildhash = require('./frontend/dist/buildhash');
+const StaticRouter = require('react-router-dom').StaticRouter;
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  const element = React.createElement(frontend.App, { compiler: 'TypeScript', framework: 'React' }, null);
+  const element = React.createElement(StaticRouter, { location: req.url, context: {} }, React.createElement(frontend.App));
   const reactDOM = ReactDOMServer.renderToString(element);
 
   res.writeHead(200, { 'Content-Type': 'text/html' });

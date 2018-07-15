@@ -8,7 +8,7 @@ class Nav extends React.Component {
           <img className="nav__logo" src="/assets/dps-logo-white.svg" />
           <ul className="nav__menu">
             <li className="nav__menu__item"> 
-              <a href="/"> Home </a>
+              <a href="/index"> Home </a>
             </li>
             <li className="nav__menu__item">
               <a href="/assets/program-info.pdf">
