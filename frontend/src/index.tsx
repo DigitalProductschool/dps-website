@@ -14,7 +14,6 @@ class Index extends React.Component {
   }
 }
 
-
 ReactDOM.hydrate(
   <Index />,
   document.getElementById('app')

@@ -1,13 +1,21 @@
 import * as React from 'react';
 
-class Nav extends React.Component {
+interface INavProps {
+  addClass?: string;
+  logo?: string;
+}
+
+class Nav extends React.Component <INavProps, {}>{
   render() {
+    const addClass = this.props.addClass || '';
+    const logo = this.props.logo || "/assets/dps-logo-white.svg";
+
     return (
-      <nav className="nav">
-        <div className="nav__content u-content">
-          <img className="nav__logo" src="/assets/dps-logo-white.svg" />
+      <nav className={`nav ${addClass}`}>
+        <div className={`nav__content u-content ${addClass}`}>
+          <img className="nav__logo" src={`${logo}`} />
           <ul className="nav__menu">
-            <li className="nav__menu__item"> 
+            <li className="nav__menu__item">
               <a href="/index"> Home </a>
             </li>
             <li className="nav__menu__item">
@@ -15,7 +23,7 @@ class Nav extends React.Component {
                 Our Program
               </a>
             </li>
-            <li className="nav__menu__item"> 
+            <li className="nav__menu__item">
               <a href="https://utum.typeform.com/to/qkkFHF">
                 Apply
               </a>
