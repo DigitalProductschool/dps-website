@@ -1,11 +1,17 @@
 import * as React from 'react';
 
+import Nav from '../header/nav/index';
+import LegalContent from './legal-content/index';
+import Footer from '../footer/index';
+
 class Legal extends React.Component {
   render() {
     return (
-      <p> 
-        This site is very legal
-      </p>
+      <React.Fragment>
+        <Nav />
+        <LegalContent />
+        <Footer />
+      </React.Fragment>
     );
   }
 }

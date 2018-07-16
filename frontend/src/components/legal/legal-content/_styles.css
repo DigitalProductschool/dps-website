@@ -1,0 +1,43 @@
+.legal {
+  margin-top: 240px;
+  margin-bottom: 150px;
+
+  @media (max-width: 620px) {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
+}
+
+.legal__content {
+  font-family: Montserrat;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none solid rgb(0, 0, 0);
+  line-height: 28px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
+
+.legal__content__mail {
+  color: #000000;
+  font-weight: 800;
+  text-decoration: none solid rgb(0, 0, 0);
+}
+
+a.legal__content__mail:hover {
+  color: var(--cerulean);
+}
