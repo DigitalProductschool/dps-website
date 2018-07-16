@@ -1,11 +1,11 @@
 .privacy {
-  margin-top: 240px;
-  margin-bottom: 150px;
+  padding-top: 240px;
+  padding-bottom: 150px;
 
   @media (max-width: 620px) {
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 80px;
+    padding-top: 150px;
+    padding-bottom: 80px;
   }
 }
 
