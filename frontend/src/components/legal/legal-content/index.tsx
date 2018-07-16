@@ -27,7 +27,7 @@ class LegalContent extends React.Component {
           <h3>CONTACT INFORMATION</h3>
           <p>+49 89-18 94 69-0<br />
           +49 89-18 94 69-1199<br />
-          <a href="mailto:hello@dpschool.io" className="legal__content__mail">info@unternehmertum.de</a></p>
+          <a href="mailto:hello@dpschool.io" className="u-link"><span>info@unternehmertum.de</span></a></p>
 
           <h3>REGISTER ENTRY</h3>
           <p>Entry in: Handelsregister<br />

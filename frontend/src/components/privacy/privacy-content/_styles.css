@@ -1,4 +1,4 @@
-.legal {
+.privacy {
   margin-top: 240px;
   margin-bottom: 150px;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.legal__content {
+.privacy__content {
   font-family: Montserrat;
   color: #000000;
   font-size: 15px;
@@ -31,7 +31,12 @@
     font-weight: 800;
   }
 
-  span {
-    line-height: 18px;
+  p {
+    margin-bottom: 20px;
   }
+}
+
+.u-link span {
+  font-size: 15px;
+  line-height: 17px;
 }
