@@ -62,50 +62,8 @@
   span {
     position: absolute;
     bottom: 13px;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none solid rgb(0, 0, 0);
-    transition: background-color 200ms;
-    display: inline-block;
-  }
-
-  span::before {
-    transition: background-color 0.3s;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 11px;
-    top: 2px;
-    color: var(--cerulean);
-    content: "";
-    display: inline-block;
-    z-index: -1;
-  }
-
-  span:hover::before {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 11px;
-    top: 2px;
-    background-color: rgba(3, 184, 229);
-    color: var(--cerulean);
-    content: "";
-    display: inline-block;
-  }
-
-  span::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 5px;
-    bottom: 1px;
-    background-color: rgba(3, 184, 229);
-    color: var(--cerulean);
-    content: "";
-    display: inline-block;
-    z-index: -1;
+    font-size: 16px !important;
+    line-height: 18px !important;
   }
 }
 
