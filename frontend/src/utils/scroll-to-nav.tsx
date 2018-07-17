@@ -3,10 +3,14 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { StaticContext } from '../../node_modules/@types/react-router';
 
 
-class ScrollToTop extends React.Component<RouteComponentProps<any, StaticContext>, {}> {
+class ScrollToNav extends React.Component<RouteComponentProps<any, StaticContext>, {}> {
   componentDidUpdate(prevProps: RouteComponentProps<any, StaticContext>) {
     if (this.props.location !== prevProps.location) {
-      setTimeout(() => window.scrollTo(0, 0), 0);
+      const nav = document.getElementsByClassName('nav');
+
+      if (nav.length > 0) {
+        setTimeout(() => nav[0].scrollIntoView(), 0);
+      }   
     }
   }
 
@@ -15,4 +19,5 @@ class ScrollToTop extends React.Component<RouteComponentProps<any, StaticContext
   }
 }
 
-export default withRouter(ScrollToTop)
+export default withRouter(ScrollToNav)
+
