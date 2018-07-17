@@ -47,7 +47,12 @@
   a {
     color: white;
     text-decoration: none;
+
+    &:hover {
+      color: var(--picton-blue);
+    }
   }
+
 }
 
 .nav__content.nav--black .nav__menu__item {

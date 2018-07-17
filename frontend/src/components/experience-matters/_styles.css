@@ -19,9 +19,60 @@
   background-size: cover;
   height: 367px;
   margin-left: -118px;
+  display: flex;
+  align-items: center;
+  position: relative;
 
   @media (max-width: 950px) {
     margin-left: 0;
+  }
+}
+
+.experience-matters__content__image__text {
+  font-size: 84px;
+  font-weight: 800;
+  color: white;
+  display: inline;
+  display: inline-block;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (max-width: 620px) {
+    font-size: 48px;
+  }
+
+  &--stroked {
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    @media (max-width: 620px) {
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+
+    & span {
+      visibility: hidden;
+    }
+  }
+}
+
+.experience-matters__content__image-dotted {
+  background-image: url('/assets/points-pattern.png');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: -1;
+
+  @media (max-width: 950px) {
+    display: none;
   }
 }
 

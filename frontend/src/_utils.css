@@ -56,6 +56,7 @@
   font-size: 36px;
   text-transform: uppercase;
   color: black;
+  font-weight: 800;
 
   @media (max-width: 620px) {
     font-size: 24px;

@@ -65,4 +65,30 @@
   justify-content: center;
 }
 
+.our-program__perks__item__icon-wrapper {
+  position: relative;
+  text-align: center;
+  padding-right: 20%;
 
+  @media (max-width: 620px) {
+    padding-right: 0;
+  }
+
+  height: 87px;
+}
+
+.our-program__perks__item__icon-wrapper__img {
+  width: auto;
+
+  &--first {
+    height: 71px;
+  }
+
+  &--second {
+    height: 82px;
+  }
+
+  &--third {
+    height: 87px;
+  }
+}

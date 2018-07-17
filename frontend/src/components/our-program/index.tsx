@@ -17,6 +17,9 @@ class OurProgram extends React.Component {
 
           <ul className="our-program__perks">
             <li className="our-program__perks__item">
+              <div className="our-program__perks__item__icon-wrapper"> 
+              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--first" src="/assets/calendar-icon.png" />
+              </div>
               <h4 className="our-program__perks__title">
                 3 Months full-time
               </h4>
@@ -26,6 +29,9 @@ class OurProgram extends React.Component {
               </p>
             </li>
             <li className="our-program__perks__item">
+              <div className="our-program__perks__item__icon-wrapper"> 
+                <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/scholar-icon.svg" />
+              </div>
               <h4 className="our-program__perks__title">
                 2,250 EUR SCHOLARSHIP
               </h4>
@@ -34,6 +40,9 @@ class OurProgram extends React.Component {
               </p>
             </li>
             <li className="our-program__perks__item">
+              <div className="our-program__perks__item__icon-wrapper"> 
+              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--third" src="/assets/network-icon.svg" />
+              </div>
               <h4 className="our-program__perks__title">
                 expand your NETWORK
               </h4>
