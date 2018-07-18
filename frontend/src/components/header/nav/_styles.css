@@ -37,6 +37,14 @@
   @media (max-width: 620px) {
     font-size: 12px;
   }
+
+  @media (max-width: 360px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 310px) {
+    font-size: 12px;
+  }
 }
 
 .nav__menu__item {
@@ -71,5 +79,13 @@
 
   @media (max-width: 620px) {
     height: 25px;
+  }
+
+  @media (max-width: 360px) {
+    height: 20px;
+  }
+
+  @media (max-width: 310px) {
+    display: none;
   }
 }

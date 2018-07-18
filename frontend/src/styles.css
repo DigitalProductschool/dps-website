@@ -40,3 +40,12 @@ ul {
 .a {
   cursor: pointer;
 }
+
+h3 {
+  font-weight: 800;
+  font-size: 72px;
+
+  @media (max-width: 620px) {
+    font-size: 52px;
+  }
+}

@@ -5,6 +5,14 @@
 
 .tool-partner__content__logo {
   width: 220px;
+
+  @media (max-width: 620px) {
+    width: 150px;
+  }
+
+  @media (max-width: 400px) {
+    width: 100px;
+  }
 }
 
 .tool-partner__content__logos {

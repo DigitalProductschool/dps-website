@@ -42,7 +42,7 @@
   text-transform: uppercase;
 
   @media (max-width: 620px) {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   &--stroked {

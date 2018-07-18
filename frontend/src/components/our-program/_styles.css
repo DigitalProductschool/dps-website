@@ -13,13 +13,6 @@
 }
 
 .our-program__title {
-  font-size: 84px;
-
-  @media (max-width: 620px) {
-    font-size: 58px;
-  }
-
-  font-weight: 800;
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -36,7 +29,7 @@
   display: grid;
   grid-gap: 20px;
   padding-left: 0;
-  grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .our-program__perks__title {

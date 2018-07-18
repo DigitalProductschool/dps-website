@@ -17,7 +17,7 @@
   margin: 0 5%;
 
   @media (max-width: 620px) {
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
