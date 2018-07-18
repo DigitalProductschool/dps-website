@@ -18,9 +18,9 @@ class ExperienceMatter extends React.Component {
               Learn from experts with years of experience. Our mentors, coaches and workshop facilitators come from great companies like … 
             </p>
             <ul>
-              <li> <img src="/assets/designit.png" /> </li>
-              <li> <img src="/assets/dalabs.png" /> </li>
-              <li> <img src="/assets/produktmacher.png" /> </li>
+              <li> <a href="https://www.designit.com/"> <img src="/assets/designit.png" /> </a> </li>
+              <li> <a href="http://www.dalabs.de/"> <img src="/assets/dalabs.png" /> </a> </li>
+              <li> <a href="https://www.dieproduktmacher.com/"> <img src="/assets/produktmacher.png" /> </a> </li>
             </ul>
           </div>
         </div>

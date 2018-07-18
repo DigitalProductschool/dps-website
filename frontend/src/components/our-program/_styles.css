@@ -28,6 +28,12 @@
 .our-program__perks {
   display: grid;
   grid-gap: 20px;
+
+  @media (max-width: 620px) {
+    grid-gap: 80px;
+    margin-top: 80px;
+  }
+
   padding-left: 0;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
