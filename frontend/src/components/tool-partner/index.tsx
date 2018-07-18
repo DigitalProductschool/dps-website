@@ -11,6 +11,10 @@ class ToolPartner extends React.Component {
             <a href="https://www.invisionapp.com/lp/signup-1?utm_source=digitalproductschoolmunich"><img className="tool-partner__content__logo" src="/assets/invision.png" /></a>
             <a href="https://www.uxpin.com/?utm_source=digitalproductschoolmunich"><img className="tool-partner__content__logo" src="/assets/uxpin.png" /></a>
             <a href="https://github.com/"><img className="tool-partner__content__logo" src="/assets/github.png" /></a>
+            <div>
+              <p> funded by </p>
+              <img className="tool-partner__content__logo" src="/assets/staatsministerium-logo.png" />
+            </div>
           </div>
         </div>
       </section>
