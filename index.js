@@ -23,8 +23,26 @@ function htmlTemplate(reactDom, css) {
   <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Digital Product School</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Digital Product School</title>
+            <meta name="description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products.">
+            <meta property="og:title" content="Digital Product School - Master your project. Become experienced." />
+            <meta property="og:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products."/>
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://digitalproductschool.io" />
+            <meta property="og:site_name" content="dp.school" />
+            <meta property="og:image" content="https://digitalproductschool.io/assets/dps.png" />
+            <meta property="og:image:secure_url" content="https://digitalproductschool.io/assets/dps.png" />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="Digital Product School - Master your project. Become experienced." />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@dpschool_io" />
+            <meta name="twitter:title" content="Digital Product School - Master your project. Become experienced." />
+            <meta name="twitter:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products." />
+            <meta name="twitter:image" content="https://digitalproductschool.io/assets/link_dps_logo.jpg" />
+            <meta name="twitter:creator" content="@dpschool_io" />
             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
             <style> ${css} </style>
         </head>
