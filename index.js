@@ -48,8 +48,12 @@ function htmlTemplate(reactDom, css) {
             <meta name="twitter:site" content="@dpschool_io" />
             <meta name="twitter:title" content="Digital Product School - Master your project. Become experienced." />
             <meta name="twitter:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products." />
-            <meta name="twitter:image" content="https://digitalproductschool.io/assets/link_dps_logo.jpg" />
+            <meta name="twitter:image" content="https://digitalproductschool.io/assets/link_dps.png" />
             <meta name="twitter:creator" content="@dpschool_io" />
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel=“canonical” href=“https://digitalproductschool.io/” />
             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
             <link rel="icon" type="image/png" href="/assets/favicon.png" />
             <style> ${css} </style>
