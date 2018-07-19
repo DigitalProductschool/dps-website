@@ -20,6 +20,7 @@ app.use(cookieParser());
 app.use('/dist', express.static(path.join(__dirname, 'frontend/dist')));
 app.use('/assets', express.static(path.join(__dirname, 'frontend/assets')));
 
+
 // I think this strict routing for the case "/" is broken, cause should match only "/", 
 // but it matches everything, so this if check is needed
 app.use('/', (req, res, next) => {

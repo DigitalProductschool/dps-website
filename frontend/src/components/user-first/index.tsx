@@ -6,7 +6,7 @@ class UserFirst extends React.Component {
       <section className="user-first u-content-wrapper">
         <div className="user-first__content u-content">
           <h3 className="user-first__content__title">
-            User first. <span className="u-outline u-outline--reversed"> Always! </span>
+            Users first. <span className="u-outline u-outline--reversed"> Always! </span>
           </h3>
           <div className="user-first__content__description">
             <p>

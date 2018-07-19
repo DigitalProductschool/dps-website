@@ -6,15 +6,21 @@ class ExperienceMatter extends React.Component {
     return (
       <div className="experience-matters u-content-wrapper">
         <div className="experience-matters__content u-content">
-          <div className="experience-matters__content__image" />
+          <div className="experience-matters__content__image">
+            <div className="experience-matters__content__image-dotted" />
+            <p className="experience-matters__content__image__text"> Experience matters </p>
+            <p className="experience-matters__content__image__text experience-matters__content__image__text--stroked u-outline"> 
+              <span> Experience </span> matters 
+            </p>
+          </div>
           <div className="experience-matters__content__description">
             <p> 
               Learn from experts with years of experience. Our mentors, coaches and workshop facilitators come from great companies like … 
             </p>
             <ul>
-              <li> <img src="/assets/designit.png" /> </li>
-              <li> <img src="/assets/dalabs.png" /> </li>
-              <li> <img src="/assets/produktmacher.png" /> </li>
+              <li> <a href="https://www.designit.com/"> <img src="/assets/designit.png" /> </a> </li>
+              <li> <a href="http://www.dalabs.de/"> <img src="/assets/dalabs.png" /> </a> </li>
+              <li> <a href="https://www.dieproduktmacher.com/"> <img src="/assets/produktmacher.png" /> </a> </li>
             </ul>
           </div>
         </div>

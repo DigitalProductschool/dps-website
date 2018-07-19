@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: var(--nav-height-desktop);
+  height: calc(100% - var(--nav-height-desktop));
+  padding-bottom: 35px;
 
   @media (max-width: 620px) {
-    padding-top: var(--nav-height-mobile);
+    padding-bottom: 20px;
   }
 }
 
@@ -39,7 +40,7 @@
 }
 
 .header-content__buttons {
-  margin-top: 65px;
+  margin-top: 50px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 214px auto;
@@ -79,6 +80,7 @@
   text-align: center;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
   width: 329px;
+  text-transform: uppercase;
 
   @media (max-width: 620px) {
     width: 100%;

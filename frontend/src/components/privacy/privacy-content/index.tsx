@@ -66,7 +66,7 @@ class PrivacyContent extends React.Component {
             85748 Garching bei München<br />
             Deutschland<br />
             +49 89 18 94 69 0<br />
-            <a href="mailto:hello@dpschool.io" className="u-link"><span>info@unternehmertum.de</span></a><br />
+            <a href="mailto:info@unternehmertum.de" className="u-link"><span>info@unternehmertum.de</span></a><br />
             www.unternehmertum.de<br />
             Website: <a href="https://unternehmertum.de" className="u-link"><span>www.unternehmertum.de</span></a>
           </p>

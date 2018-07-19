@@ -1,5 +1,4 @@
 .nav {
-  position: absolute;
   background-color: transparent;
   border-bottom: solid var(--gallery) 2px;
   display: grid;
@@ -38,6 +37,14 @@
   @media (max-width: 620px) {
     font-size: 12px;
   }
+
+  @media (max-width: 360px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 310px) {
+    font-size: 12px;
+  }
 }
 
 .nav__menu__item {
@@ -48,7 +55,12 @@
   a {
     color: white;
     text-decoration: none;
+
+    &:hover {
+      color: var(--picton-blue);
+    }
   }
+
 }
 
 .nav__content.nav--black .nav__menu__item {
@@ -67,5 +79,13 @@
 
   @media (max-width: 620px) {
     height: 25px;
+  }
+
+  @media (max-width: 360px) {
+    height: 20px;
+  }
+
+  @media (max-width: 310px) {
+    display: none;
   }
 }

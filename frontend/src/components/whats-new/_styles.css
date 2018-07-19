@@ -46,6 +46,10 @@
     font-weight: 700;
     text-decoration: none solid rgb(0, 0, 0);
     line-height: 30px;
+
+    &:hover {
+      color: var(--picton-blue);
+    }
   }
 
   p {
