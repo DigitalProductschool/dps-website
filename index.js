@@ -44,6 +44,7 @@ function htmlTemplate(reactDom, css) {
             <meta name="twitter:image" content="https://digitalproductschool.io/assets/link_dps_logo.jpg" />
             <meta name="twitter:creator" content="@dpschool_io" />
             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+            <link rel="icon" type="image/png" href="/assets/favicon.png" />
             <style> ${css} </style>
         </head>
         <body>
