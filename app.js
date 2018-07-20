@@ -30,6 +30,11 @@ app.use('/', (req, res, next) => {
 
   next();
 });
+
+app.use('/images/DigitalProductSchool.pdf', (req, res, next) => {
+  return res.redirect(301, '/assets/program-info.pdf');
+});
+
 app.use('/index', indexRouter);
 app.use('/legal-disclosure', indexRouter);
 app.use('/privacy-policy', indexRouter);
