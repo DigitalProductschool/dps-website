@@ -5,7 +5,6 @@ import Pitch from '../pitch/index';
 import DiverseTeams from '../diverse-teams';
 import ExperienceMatter from '../experience-matters';
 import UserFirst from '../user-first';
-import Stripes from '../stripes';
 import OurProgram from '../our-program';
 import Adac from '../adac';
 import ToolPartner from '../tool-partner'
@@ -21,7 +20,6 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Stripes />
         <Header onContentButtonClick={() => this.forwardedRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} />
         <Pitch forwardedRef={this.forwardedRef} />
         <DiverseTeams />
