@@ -52,10 +52,19 @@
   }
 }
 
-.u-title {
+h2.u-title {
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  @media (max-width: 620px) {
+    font-size: 32px;
+  }
+}
+
+h3.u-title {
   font-size: 36px;
   text-transform: uppercase;
-  color: black;
   font-weight: 800;
 
   @media (max-width: 620px) {
@@ -128,4 +137,28 @@
     display: inline-block;
     z-index: -1;
   }
+}
+
+.u-text {
+  line-height: 34px;
+  font-size: 18px;
+
+  @media (max-width: 620px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--bold {
+    font-size: 20px;
+    font-weight: 700;
+
+    @media (max-width: 620px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.u-image {
+  max-width: 100%;
+  height: auto;
 }

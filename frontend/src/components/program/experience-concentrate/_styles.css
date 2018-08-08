@@ -1,0 +1,35 @@
+.experience-concentrate {
+  color: white;
+  margin-top: 560px;
+  padding-bottom: 120px;
+  background-color: var(--deep-cove);
+
+  @media(max-width: 620px) {
+    margin-top: 300px;
+    padding-bottom: 60px;
+  }
+}
+
+.experience-concentrate__content__description {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 20px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin-top: 0;
+  }
+}
+
+.experience-concentrate__content__description__image {
+  margin-top: 18px;
+}
+
+.experience-concentrate__title__image {
+  margin-top: -450px;
+
+  @media(max-width: 620px) {
+    margin-top: -225px;
+  }
+}

@@ -1,0 +1,10 @@
+.who-should-apply__content__description {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-gap: 10px;
+
+  @media (max-width: 920px) {
+    grid-gap: 0;
+    grid-template-columns: auto;
+  }
+}

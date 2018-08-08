@@ -1,0 +1,53 @@
+.after-dps {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.after-dps__content__companies {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-gap: 10%;
+
+  @media (max-width: 920px) {
+    grid-gap: 20px;
+    grid-template-columns: 5fr 5fr;
+  }
+
+  @media (max-width: 620px) {
+    grid-gap: 0px;
+    grid-template-columns: auto;
+  }
+}
+
+.after-dps__content__companies__image {
+  margin-top: 18px;
+
+  @media (max-width: 920px) {
+    margin-top: 0;
+  }
+}
+
+.after-dps__content__wild {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-gap: 20px;
+  margin-top: 90px;
+
+  @media (max-width: 920px) {
+    margin-top: 30px;
+    grid-template-columns: 5fr 5fr;
+  }
+
+  @media (max-width: 620px) {
+    grid-gap: 0px;
+    grid-template-columns: auto;
+  }
+}
+
+.after-dps__content__wild__image {
+  margin-top: -40%;
+
+  @media (max-width: 920px) {
+    margin-top: 0;
+  }
+}

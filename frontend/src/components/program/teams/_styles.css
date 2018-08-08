@@ -1,0 +1,30 @@
+.teams {
+  margin-top: 100px;
+}
+
+.teams__content__companies {
+  padding-left: 120px;
+
+  @media (max-width: 620px) {
+    padding-left: 60px;
+  }
+}
+
+.teams__wild {
+  .margin-top: 100px;
+}
+
+.teams__content__wild {
+  display: grid;
+  grid-template-columns:4fr 6fr;
+  grid-gap: 20px;
+
+  @media (max-width: 620px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
+}
+
+.teams__content__wild__image {
+  margin-top: 18px;
+}

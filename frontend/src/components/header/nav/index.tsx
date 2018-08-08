@@ -21,7 +21,7 @@ class Nav extends React.Component <INavProps, {}>{
               <a href="/index"> Home </a>
             </li>
             <li className="nav__menu__item">
-              <a href="/assets/program-info.pdf">
+              <a href="/our-program">
                 Our Program
               </a>
             </li>
