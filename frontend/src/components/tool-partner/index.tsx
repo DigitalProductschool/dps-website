@@ -7,10 +7,10 @@ class ToolPartner extends React.Component {
         <div className="tool-partner__content u-content">
           <h3 className="u-title">OUR TOOL PARTNERS</h3>
           <div className="tool-partner__content__logos">
-            <a href="http://www.eyequant.com/?utm_source=digitalproductschoolmunich"><img className="tool-partner__content__logo" src="/assets/eyequant.jpg" /></a>
-            <a href="https://www.invisionapp.com/lp/signup-1?utm_source=digitalproductschoolmunich"><img className="tool-partner__content__logo" src="/assets/invision.png" /></a>
-            <a href="https://www.uxpin.com/?utm_source=digitalproductschoolmunich"><img className="tool-partner__content__logo" src="/assets/uxpin.png" /></a>
-            <a href="https://github.com/"><img className="tool-partner__content__logo" src="/assets/github.png" /></a>
+            <img className="tool-partner__content__logo" src="/assets/eyequant.jpg" />
+            <img className="tool-partner__content__logo" src="/assets/invision.png" />
+            <img className="tool-partner__content__logo" src="/assets/uxpin.png" />
+            <img className="tool-partner__content__logo" src="/assets/github.png" />
             <div>
               <p> funded by </p>
               <img className="tool-partner__content__logo" src="/assets/staatsministerium-logo.png" />
