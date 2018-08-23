@@ -14,7 +14,7 @@
 }
 
 .experience-matters__content__image {
-  background-image: url('/assets/experience-matters.jpg');
+  background-image: url('/assets/home/experience-matters/experience-matters.jpg');
   background-position: center center;
   background-size: cover;
   height: 367px;
@@ -61,7 +61,7 @@
 }
 
 .experience-matters__content__image-dotted {
-  background-image: url('/assets/points-pattern.png');
+  background-image: url('/assets/home/experience-matters/points-pattern.png');
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -83,7 +83,7 @@
   line-height: 34px;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   flex-direction: column;
 
   & ul {

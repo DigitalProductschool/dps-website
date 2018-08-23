@@ -8,7 +8,7 @@ class OurProgram extends React.Component {
           <h3 className="our-program__title">
             Our Program
           </h3>
-          <p className="our-program__description"> 
+          <p className="our-program__description">
             The Digital Product School is a full-time program lasting 3 months in Munich.
             It's your chance to build digital products in a diverse team – to solve real-world
             problems around mobility and transportation. In a realistic start-up environment,
@@ -17,8 +17,8 @@ class OurProgram extends React.Component {
 
           <ul className="our-program__perks">
             <li className="our-program__perks__item">
-              <div className="our-program__perks__item__icon-wrapper"> 
-              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--first" src="/assets/calendar-icon.png" />
+              <div className="our-program__perks__item__icon-wrapper">
+              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--first" src="/assets/home/our-program/calendar-icon.png" />
               </div>
               <h4 className="our-program__perks__title">
                 3 Months full-time
@@ -29,8 +29,8 @@ class OurProgram extends React.Component {
               </p>
             </li>
             <li className="our-program__perks__item">
-              <div className="our-program__perks__item__icon-wrapper"> 
-                <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/scholar-icon.svg" />
+              <div className="our-program__perks__item__icon-wrapper">
+                <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/home/our-program/scholar-icon.svg" />
               </div>
               <h4 className="our-program__perks__title">
                 2,250 EUR SCHOLARSHIP
@@ -40,8 +40,8 @@ class OurProgram extends React.Component {
               </p>
             </li>
             <li className="our-program__perks__item">
-              <div className="our-program__perks__item__icon-wrapper"> 
-              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--third" src="/assets/network-icon.svg" />
+              <div className="our-program__perks__item__icon-wrapper">
+              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--third" src="/assets/home/our-program/network-icon.svg" />
               </div>
               <h4 className="our-program__perks__title">
                 expand your NETWORK
@@ -53,7 +53,7 @@ class OurProgram extends React.Component {
             </li>
           </ul>
 
-          <a className="our-program__button u-button" href="/assets/program-info.pdf">   
+          <a className="our-program__button u-button" href="/our-program">
             Learn more
           </a>
         </div>

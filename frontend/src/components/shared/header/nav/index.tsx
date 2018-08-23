@@ -8,7 +8,7 @@ interface INavProps {
 class Nav extends React.Component <INavProps, {}>{
   render() {
     const addClass = this.props.addClass || '';
-    const logo = this.props.logo || "/assets/dps-logo-white.svg";
+    const logo = this.props.logo || "/assets/shared/dps-logo-white.svg";
 
     return (
       <nav className={`nav ${addClass}`}>

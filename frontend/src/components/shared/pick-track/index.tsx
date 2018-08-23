@@ -26,7 +26,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             <li className="pick-track__track">
               <div className="pick-tracks__track__image-wrapper">
                 <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
-                <img className="pick-tracks__track__icon" src="/assets/pm-icon.png" style={active === 'pm' ? { opacity: 0.1 } : {}} />
+                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/pm-icon.png" style={active === 'pm' ? { opacity: 0.1 } : {}} />
               </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
@@ -44,7 +44,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             <li className="pick-track__track">
               <div className="pick-tracks__track__image-wrapper">
                 <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
-                <img className="pick-tracks__track__icon" src="/assets/ixd-icon.png" style={active === 'ixd' ? { opacity: 0.1 } : {}} />
+                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ixd-icon.png" style={active === 'ixd' ? { opacity: 0.1 } : {}} />
               </div>
               <p className="pick-track__track__description">
                 <b> Interaction Designers </b> understand how users and technology communicate with each other and focus
@@ -62,7 +62,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             <li className="pick-track__track">
               <div className="pick-tracks__track__image-wrapper">
                 <div className="pick-tracks__track__image pick-tracks__track__image--se" />
-                <img className="pick-tracks__track__icon" src="/assets/se-icon.png" style={active === 'se' ? { opacity: 0.1 } : {}} />
+                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/se-icon.png" style={active === 'se' ? { opacity: 0.1 } : {}} />
               </div>
               <p className="pick-track__track__description">
                 <b> Software Engineers </b> bring ideas to life through coding. They engineer systems that are scalable, secure and usable.
@@ -80,7 +80,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             <li className="pick-track__track">
               <div className="pick-tracks__track__image-wrapper">
                 <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
-                <img className="pick-tracks__track__icon" src="/assets/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}} />
+                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}} />
               </div>
               <p className="pick-track__track__description">
                 <b> Artificial Intelligence Engineers </b> use technology to identify data patterns, build self-learning systems and automate repetitive work.

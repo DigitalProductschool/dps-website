@@ -13,7 +13,7 @@
 
   @media (max-width: 620px) {
     height: 500px;
-    background-image: url('/assets/header-image.jpg') !important;
+    background-image: url('/assets/home/header/header-image.jpg') !important;
     background-size: cover;
     background-position: center center;
   }

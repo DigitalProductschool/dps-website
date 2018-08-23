@@ -1,7 +1,3 @@
-.user-first {
-  margin-top: 170px;
-}
-
 .user-first__content {
   display: grid;
   grid-template-columns: 5fr 4fr;

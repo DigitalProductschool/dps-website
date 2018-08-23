@@ -12,16 +12,16 @@ class LinkRow extends React.Component {
         </div>
         <div className="link_row__social__media">
           <a href="https://www.facebook.com/digitalproductschool">
-            <SVG className="link_row__social__media__link" src="/assets/facebook.svg"></SVG>
+            <SVG className="link_row__social__media__link" src="/assets/shared/footer/link-row/facebook.svg"></SVG>
           </a>
           <a href="https://twitter.com/dpschool_io">
-            <SVG className="link_row__social__media__link" src="/assets/twitter.svg"></SVG>
+            <SVG className="link_row__social__media__link" src="/assets/shared/footer/link-row/twitter.svg"></SVG>
           </a>
           <a href="https://www.instagram.com/digitalproductschool/">
-            <SVG className="link_row__social__media__link" src="/assets/instagram.svg"></SVG>
+            <SVG className="link_row__social__media__link" src="/assets/shared/footer/link-row/instagram.svg"></SVG>
           </a>
           <a href="https://www.youtube.com/channel/UCvmerSnTMl2ZeoLtuKoONJQ/videos">
-            <SVG className="link_row__social__media__link" src="/assets/youtube.svg"></SVG>
+            <SVG className="link_row__social__media__link" src="/assets/shared/footer/link-row/youtube.svg"></SVG>
           </a>
         </div>
       </div>

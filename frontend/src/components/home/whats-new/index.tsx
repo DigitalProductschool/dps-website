@@ -3,14 +3,14 @@ import * as React from 'react';
 class WhatsNew extends React.Component {
   render() {
     return (
-      <section className="whats-new u-content-wrapper">
+      <section className="whats-new u-content-wrapper u-section-margin-top">
         <div className="whats-new__content u-content">
           <h3 className="u-title">WHAT'S NEW</h3>
           <div className="whats-new__content__tiles">
             <div className="item-1">
               <a href="https://leaks.digitalproductschool.io/design-thinking-a-creative-way-to-foster-innovation-ab9ef97cd884" className="whats-new__content__tile u-link">
                 <div className="whats-new__content__tile__thumb">
-                  <img src="/assets/design-thinking.gif" />
+                  <img src="/assets/home/whats-new/design-thinking.gif" />
                 </div>
                 <article>
                   <h4>Design Thinking - a creative way to foster innovation</h4>
@@ -22,7 +22,7 @@ class WhatsNew extends React.Component {
             <div className="item-2">
               <a href="https://leaks.digitalproductschool.io/digital-product-school-dps-86f48a7d4d69" className="whats-new__content__tile u-link">
                 <div className="whats-new__content__tile__thumb">
-                  <img src="/assets/review.jpg" />
+                  <img src="/assets/home/whats-new/review.jpg" />
                 </div>
                 <article>
                   <h4>Digital Product School – An Honest Review</h4>

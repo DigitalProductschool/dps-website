@@ -13,7 +13,7 @@ class Legal extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav addClass={"nav--black"} logo={"/assets/dps-logo-black.svg"} />
+        <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
         <LegalContent />
         <Footer />
       </React.Fragment>

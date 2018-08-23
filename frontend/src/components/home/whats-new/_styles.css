@@ -1,7 +1,3 @@
-.whats-new {
-  margin-top: 130px;
-}
-
 .whats-new__content__tiles {
   display: grid;
   grid-template-columns: repeat(3, minmax(282px, 400px));
