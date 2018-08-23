@@ -6,7 +6,7 @@ class ExperienceConcentrate extends React.Component {
     return (
       <section className="experience-concentrate u-content-wrapper">
         <div className="experience-concentrate__content u-content">
-          <img className="experience-concentrate__title__image u-image" src="/assets/experience-concentrate-title.jpg" />
+          <img className="experience-concentrate__title__image u-image" src="/assets/program/experience-concentrate/title.jpg" />
           <h2 className="u-title">TAKING IN THE EXPERIENCE CONCENTRATE</h2>
           <p className="u-text u-text--bold">
             In just 3 months the participants undergo a highly intensive experience. The idea is to let the students live the life of an agile team player while gaining the knowledge and confidence they would usually collect within one or two years working in a cross-functional team or a lean start-up.
@@ -22,7 +22,7 @@ class ExperienceConcentrate extends React.Component {
                 Apply Now
               </a>
             </div>
-            <img className="experience-concentrate__content__description__image u-image" src="/assets/experience-concentrate-desc.jpg" />
+            <img className="experience-concentrate__content__description__image u-image" src="/assets/program/experience-concentrate/desc.jpg" />
           </div>
         </div>
       </section>

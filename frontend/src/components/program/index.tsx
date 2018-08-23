@@ -9,8 +9,8 @@ import OurApproach from './our-approach/index'
 import Roles from './roles/index'
 import TeamAssignment from './team-assignment/index'
 import WhoShouldApply from './who-should-apply/index'
-import PickTrack from '../pick-track/index'
-import Footer from '../footer/index'
+import PickTrack from '../shared/pick-track/index'
+import Footer from '../shared/footer/index'
 
 class Program extends React.Component {
 

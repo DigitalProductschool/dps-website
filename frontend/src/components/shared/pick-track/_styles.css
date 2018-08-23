@@ -1,0 +1,116 @@
+.pick-track {
+  margin-top: 120px;
+}
+
+.pick-track__tracks {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  @media (max-width: 620px) {
+    grid-gap: 100px;
+  }
+}
+
+.pick-track__track {
+  display: grid;
+  align-content: space-between;
+}
+
+.pick-track__description {
+  font-size: 18px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+.pick-track__track__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pick-tracks__track__image {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 100%;
+  width: 100%;
+
+  &--pm {
+    background: linear-gradient(rgba(3, 184, 229, 0.8), rgba(3, 184, 229, 0.8)),
+    url(/assets/shared/pick-track/pm-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--se {
+    background: linear-gradient(rgba(221, 4, 165, 0.8), rgba(221, 4, 165, 0.8)),
+    url(/assets/shared/pick-track/se-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--ixd {
+    background: linear-gradient(rgba(255, 167, 14, 0.8), rgba(255, 167, 14, 0.8)),
+    url(/assets/shared/pick-track/ixd-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--ai {
+    background: linear-gradient(rgba(124, 26, 117, 0.8), rgba(124, 26, 117, 0.8)),
+    url(/assets/shared/pick-track/ai-track-background.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+  }
+}
+
+.pick-track__track__button {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &--pm {
+    &:hover {
+      color: var(--cerulean);
+      border-color: var(--cerulean);
+    }
+  }
+
+  &--se {
+    &:hover {
+      color: var(--hollywoord-cerise);
+      border-color: var(--hollywoord-cerise);
+    }
+  }
+
+  &--ixd {
+    &:hover {
+      color: var(--yellow-sea);
+      border-color: var(--yellow-sea);
+    }
+  }
+
+  &--ai {
+    &:hover {
+      color: var(--wisteria);
+      border-color: var(--wisteria);
+    }
+  }
+}
+
+.pick-tracks__track__image-wrapper {
+  position: relative;
+}
+
+.pick-tracks__track__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.3s;
+}

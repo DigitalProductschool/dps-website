@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import Nav from '../header/nav/index';
+import Nav from '../shared/header/nav/index';
 import LegalContent from './legal-content/index';
-import Footer from '../footer/index';
+import Footer from '../shared/footer/index';
 
 class Legal extends React.Component {
 
@@ -13,7 +13,7 @@ class Legal extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav addClass={"nav--black"} logo={"/assets/dps-logo-black.svg"} />
+        <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
         <LegalContent />
         <Footer />
       </React.Fragment>

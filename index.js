@@ -38,8 +38,8 @@ function htmlTemplate(reactDom, css) {
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://digitalproductschool.io" />
             <meta property="og:site_name" content="dp.school" />
-            <meta property="og:image" content="https://digitalproductschool.io/assets/link_dps.png" />
-            <meta property="og:image:secure_url" content="https://digitalproductschool.io/assets/link_dps.png" />
+            <meta property="og:image" content="https://digitalproductschool.io/assets/shared/link_dps.png" />
+            <meta property="og:image:secure_url" content="https://digitalproductschool.io/assets/shared/link_dps.png" />
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
@@ -48,7 +48,7 @@ function htmlTemplate(reactDom, css) {
             <meta name="twitter:site" content="@dpschool_io" />
             <meta name="twitter:title" content="Digital Product School - Master your project. Become experienced." />
             <meta name="twitter:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products." />
-            <meta name="twitter:image" content="https://digitalproductschool.io/assets/dps-square.png" />
+            <meta name="twitter:image" content="https://digitalproductschool.io/assets/shared/dps-square.png" />
             <meta name="twitter:creator" content="@dpschool_io" />
 
             <meta name="viewport" content="width=device-width, initial-scale=1">

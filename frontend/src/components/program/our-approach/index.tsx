@@ -9,7 +9,7 @@ class OurApproach extends React.Component {
           <p className="u-text u-text--bold">
             According to the Design Thinking Model of the Double Diamond our teams discover and validate problems before they search for a solution and develop it by permanently testing it.
           </p>
-          <img className="u-image" src="/assets/our-approach-double-diamond.png" />
+          <img className="u-image" src="/assets/program/our-approach/double-diamond.png" />
           <ul className="our-approach__process">
             <li className="our-approach__process__step">
               <h4 className="our-approach__process__step__title">1. Discover</h4>

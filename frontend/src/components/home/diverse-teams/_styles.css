@@ -1,0 +1,33 @@
+.diverse-teams__title {
+  color: black;
+  text-transform: uppercase;
+}
+
+.diverse-teams__content {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 70px;
+  margin-top: 50px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin-top: 0;
+  }
+
+
+}
+
+.diverse-teams__content__image {
+  background-image: url('/assets/home/diverse-teams/diverse-teams.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 367px;
+}
+
+.diverse-teams__content__description {
+  font-size: 18px;
+  color: var(--cod-gray);
+  margin-top: 0;
+  line-height: 34px;
+}
