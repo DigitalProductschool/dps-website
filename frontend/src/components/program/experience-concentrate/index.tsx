@@ -18,7 +18,7 @@ class ExperienceConcentrate extends React.Component {
                 <br /><br />
                 During the whole Program the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.
               </p>
-              <a className="u-button u-button__apply" href="https://utum.typeform.com/to/qkkFHF">
+              <a className="experience-concentrate__content__apply-button u-button u-button__apply" href="https://utum.typeform.com/to/qkkFHF">
                 Apply Now
               </a>
             </div>
