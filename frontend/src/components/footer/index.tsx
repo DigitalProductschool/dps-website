@@ -4,10 +4,16 @@ import About from './about/index';
 import Contact from './contact/index';
 import LinkRow from './link-row/index';
 
-class Footer extends React.Component {
+interface IFooterProps {
+  addSectionClass?: string;
+}
+
+class Footer extends React.Component<IFooterProps, {}> {
     render() {
+      const sectionClass = this.props.addSectionClass || '';
+
         return (
-            <section className="footer">
+            <section className={`footer ${sectionClass}`}>
               <div className="footer__content u-content">
                 <About />
                 <Contact />
