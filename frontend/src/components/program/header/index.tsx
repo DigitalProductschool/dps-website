@@ -13,7 +13,7 @@ class Header extends React.Component {
               OUR PROGRAM
             </h1>
             <p className="our-program__header-content__description">
-              You may be skilled  in your field, but when you start your career, <br />
+              You may be skilled in your field, but when you start your career, <br />
               there's one thing you lack:
             </p>
             <p className="our-program__header-content__description">

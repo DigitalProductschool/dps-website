@@ -1,15 +1,16 @@
 import * as React from 'react';
 
 import Header from './header/index'
-import FaceIt from './face-it/index'
+import TakeOpportunity from './take-opportunity/index'
 import ExperienceConcentrate from './experience-concentrate/index'
 import Teams from './teams/index'
-import AfterDps from './after-dps/index'
 import Pillars from './pillars/index'
 import OurApproach from './our-approach/index'
 import Roles from './roles/index'
 import TeamAssignment from './team-assignment/index'
 import WhoShouldApply from './who-should-apply/index'
+import PickTrack from '../pick-track/index'
+import Footer from '../footer/index'
 
 class Program extends React.Component {
 
@@ -17,15 +18,14 @@ class Program extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <FaceIt />
+        <TakeOpportunity />
         <ExperienceConcentrate />
         <Teams />
-        <AfterDps />
-        <Pillars />
         <OurApproach />
-        <Roles />
-        <TeamAssignment />
+        <Pillars />
         <WhoShouldApply />
+        <PickTrack />
+        <Footer />
       </React.Fragment>
     )
   }

@@ -1,5 +1,6 @@
 .pillars {
-  background-color: var(--gallery);
+  background-color: var(--black-pearl);
+  color: white;
 }
 
 .pillars__list {
@@ -21,10 +22,6 @@
 .pillars__list__item__icon-wrapper__img {
   width: auto;
   height: 71px;
-
-  &--rotate {
-    transform: rotate(45deg);
-  }
 }
 
 .pillars__list__item__title {

@@ -52,6 +52,19 @@
   }
 }
 
+.u-button__apply {
+  width: 214px;
+  height: 42px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+}
+
 h2.u-title {
   font-size: 72px;
   text-transform: uppercase;
