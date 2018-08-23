@@ -25,7 +25,7 @@ class Program extends React.Component {
         <Pillars />
         <WhoShouldApply />
         <PickTrack isApplyNowVersion={true} />
-        <Footer />
+        <Footer addSectionClass={'u-section-margin-top'} />
       </React.Fragment>
     )
   }
