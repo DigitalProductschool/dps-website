@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import Nav from '../header/nav/index';
+import Nav from '../shared/header/nav/index';
 import PrivacyContent from './privacy-content/index';
-import Footer from '../footer/index';
+import Footer from '../shared/footer/index';
 
 class Privacy extends React.Component {
   render() {

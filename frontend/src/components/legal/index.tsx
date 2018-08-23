@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import Nav from '../header/nav/index';
+import Nav from '../shared/header/nav/index';
 import LegalContent from './legal-content/index';
-import Footer from '../footer/index';
+import Footer from '../shared/footer/index';
 
 class Legal extends React.Component {
 

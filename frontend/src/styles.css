@@ -2,18 +2,21 @@
 @import url('./_utils.css');
 @import url('./_colors.css');
 
-@import url("./components/header/_styles.css");
-@import url("./components/pitch/_styles.css");
-@import url("./components/diverse-teams/_styles.css");
-@import url("./components/experience-matters/_styles.css");
-@import url("./components/user-first/_styles.css");
-@import url('./components/our-program/_styles.css');
-@import url('./components/adac/_styles.css');
-@import url("./components/tool-partner/_styles.css");
-@import url("./components/footer/_styles.css");
-@import url('./components/industry-partners/_styles.css');
-@import url('./components/pick-track/_styles.css');
-@import url('./components/whats-new/_styles.css');
+@import url("./components/shared/header/nav/_styles.css");
+@import url('./components/shared/pick-track/_styles.css');
+@import url("./components/shared/footer/_styles.css");
+
+@import url("./components/home/header/_styles.css");
+@import url("./components/home/pitch/_styles.css");
+@import url("./components/home/diverse-teams/_styles.css");
+@import url("./components/home/experience-matters/_styles.css");
+@import url("./components/home/user-first/_styles.css");
+@import url('./components/home/our-program/_styles.css');
+@import url('./components/home/adac/_styles.css');
+@import url("./components/home/tool-partner/_styles.css");
+@import url('./components/home/industry-partners/_styles.css');
+@import url('./components/home/whats-new/_styles.css');
+
 @import url('./components/legal/legal-content/_styles.css');
 @import url('./components/privacy/privacy-content/_styles.css');
 

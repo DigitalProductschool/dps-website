@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Nav from './nav/index';
+import Nav from '../../shared/header/nav/index';
 import Cover from './cover/index';
 import HeaderContent from './header-content/index';
 

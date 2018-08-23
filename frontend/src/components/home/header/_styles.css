@@ -1,7 +1,5 @@
 @import url("./header-content/_styles.css");
 @import url("./cover/_styles.css");
-@import url("./nav/_styles.css");
-
 
 .header {
   position: relative;
