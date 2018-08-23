@@ -4,7 +4,7 @@ class Pillars extends React.Component {
 
   render() {
     return (
-      <section className="pillars u-content-wrapper">
+      <section className="pillars u-section-margin-top u-content-wrapper">
         <div className="pillars__content u-content">
           <h2 className="u-title">Key facts &amp; benefits</h2>
           <ul className="pillars__list">

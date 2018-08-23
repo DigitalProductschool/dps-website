@@ -3,7 +3,7 @@ import * as React from 'react';
 class OurApproach extends React.Component {
   render() {
     return (
-      <section className="our-approach u-content-wrapper">
+      <section className="our-approach u-section-margin-top u-content-wrapper">
         <div className="our-approach__content u-content">
           <h2 className="u-title">Our approach</h2>
           <p className="u-text u-text--bold">

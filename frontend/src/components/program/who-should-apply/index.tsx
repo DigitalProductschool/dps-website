@@ -3,7 +3,7 @@ import * as React from 'react';
 class WhoShouldApply extends React.Component {
   render() {
     return (
-      <section className="who-should-apply u-content-wrapper">
+      <section className="who-should-apply u-section-margin-top u-content-wrapper">
         <div className="who-should-apply__content u-content">
           <h2 className="u-title">Who should apply</h2>
           <div className="who-should-apply__content__description">

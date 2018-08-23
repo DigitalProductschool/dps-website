@@ -175,3 +175,7 @@ h3.u-title {
   max-width: 100%;
   height: auto;
 }
+
+.u-section-margin-top {
+  margin-top: 150px;
+}

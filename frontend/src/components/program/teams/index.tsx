@@ -4,7 +4,7 @@ class Teams extends React.Component {
 
   render() {
     return (
-      <section className="teams u-content-wrapper">
+      <section className="teams u-section-margin-top u-content-wrapper">
         <div className="teams__content u-content">
           <img className="teams__title__image u-image" src="/assets/teams-title.jpg" />
           <h2 className="u-title">Autonomous &amp; Agile teams</h2>
