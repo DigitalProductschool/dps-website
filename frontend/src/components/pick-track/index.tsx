@@ -9,7 +9,7 @@ interface IPickTrackState {
 }
 
 class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
-  constructor(props: { isApplyNowVersion: false }) {
+  constructor(props: IPickTrackProps) {
     super(props);
     this.state = { active: null };
   }
@@ -20,8 +20,8 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
     return (
       <section className="pick-track u-content-wrapper">
         <div className="pick-track__content u-content">
-          <h3 className="pick-track__title u-title"> { this.renderTitle() } </h3>
-          { this.renderDescription() }
+          <h3 className="pick-track__title u-title"> {this.renderTitle()} </h3>
+          {this.renderDescription()}
           <ul className="pick-track__tracks">
             <li className="pick-track__track">
               <div className="pick-tracks__track__image-wrapper">
