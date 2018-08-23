@@ -27,7 +27,7 @@ class Home extends React.Component {
         <UserFirst />
         <OurProgram />
         <IndustryPartners />
-        <PickTrack />
+        <PickTrack isApplyNowVersion={false} />
         <WhatsNew />
         <Adac />
         <ToolPartner />

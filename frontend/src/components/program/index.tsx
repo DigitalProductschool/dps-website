@@ -24,7 +24,7 @@ class Program extends React.Component {
         <OurApproach />
         <Pillars />
         <WhoShouldApply />
-        <PickTrack />
+        <PickTrack isApplyNowVersion={true} />
         <Footer />
       </React.Fragment>
     )
