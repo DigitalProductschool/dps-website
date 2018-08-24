@@ -11,7 +11,7 @@ spec:
         app: dpschool-pod
     spec:
       containers:
-      - image: registry.eu-de.bluemix.net/digital_product_school/dpschool-react:wip
+      - image: gcr.io/dps-website-staging/github-digitalproductschool-website:2ef90024c53380a977766ef9bec0c8461408995b
         name: dpschool-pod
         ports:
           - containerPort: 5000
