@@ -35,7 +35,7 @@ pipeline {
       when { branch 'stage' }
       steps {
         container('gcloud') {
-          sh "PYTHONUNBUFFERED=1 gcloud container builds submit -t ${imageTag} ."
+          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${imageTag} ."
         }
       }
     }
