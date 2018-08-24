@@ -32,9 +32,9 @@ function htmlTemplate(reactDom, css) {
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Digital Product School</title>
-            <meta name="description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products.">
+            <meta name="description" content="DPS is a 3 months training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products.">
             <meta property="og:title" content="Digital Product School - Master your project. Become experienced." />
-            <meta property="og:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products."/>
+            <meta property="og:description" content="DPS is a 3 months training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products."/>
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://digitalproductschool.io" />
             <meta property="og:site_name" content="dp.school" />
@@ -47,7 +47,7 @@ function htmlTemplate(reactDom, css) {
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content="@dpschool_io" />
             <meta name="twitter:title" content="Digital Product School - Master your project. Become experienced." />
-            <meta name="twitter:description" content="DPS is a 3 month training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products." />
+            <meta name="twitter:description" content="DPS is a 3 months training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products." />
             <meta name="twitter:image" content="https://digitalproductschool.io/assets/shared/dps-square.png" />
             <meta name="twitter:creator" content="@dpschool_io" />
 

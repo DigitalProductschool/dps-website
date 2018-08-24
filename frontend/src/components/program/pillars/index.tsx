@@ -11,7 +11,7 @@ class Pillars extends React.Component {
             <li className="pillars__list__item">
               <div className="pillars__list__item__icon-wrapper"><img className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img" src="assets/program/pillars/calendar.png" /></div>
               <h4 className="pillars__list__item__title">3 Months full-time</h4>
-              <p className="pillars__list__item__description">Be part of a unique 3-month full-time training program by UnternehmerTUM, Europe's biggest Entrepreneurship Center.</p>
+              <p className="pillars__list__item__description">Be part of a unique 3-months full-time training program by UnternehmerTUM, Europe's biggest Entrepreneurship Center.</p>
             </li>
             <li className="pillars__list__item">
               <div className="pillars__list__item__icon-wrapper"><img className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img" src="assets/program/pillars/scholarship.png" /></div>
