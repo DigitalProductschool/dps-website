@@ -47,7 +47,7 @@ pipeline {
           // Change deployed image in canary to the one we just built
           sh("sed -i.bak 's#gcr.io/dps-website-staging/github-digitalproductschool-website:0.0.1#${imageTag}#' ./kubernetes-deployment.yaml")
           sh("kubectl --namespace=staging apply -f kubernetes-deployment.yaml")
-          # Block until rollout complete
+          // Block until rollout complete
           sh("kubectl rollout status deployment/dpschool-deployment -n staging")
         }
       }
