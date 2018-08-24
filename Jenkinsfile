@@ -45,7 +45,7 @@ pipeline {
       steps {
         container('kubectl') {
           // Change deployed image in canary to the one we just built
-          sh("sed -i.bak 's#gcr.io/dps-website-staging/github-digitalproductschool-website:2ef90024c53380a977766ef9bec0c8461408995b#${imageTag}#' ./kubernetes-deployment.yaml")
+          sh("sed -i.bak 's#gcr.io/dps-website-staging/github-digitalproductschool-website:0.0.1#${imageTag}#' ./kubernetes-deployment.yaml")
           sh("kubectl --namespace=staging apply -f kubernetes-deployment.yaml")
         }
       }
