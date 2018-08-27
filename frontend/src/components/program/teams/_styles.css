@@ -8,6 +8,10 @@
 
 .teams__content__wild, .teams__content__companies {
   margin-top: 100px;
+
+  @media (max-width: 620px) {
+    margin-top: 50px;
+  }
 }
 
 .teams__content__wild__desc {

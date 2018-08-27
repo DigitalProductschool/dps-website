@@ -178,4 +178,8 @@ h3.u-title {
 
 .u-section-margin-top {
   margin-top: 150px;
+
+  @media (max-width: 620px) {
+    margin-top: 90px;
+  }
 }

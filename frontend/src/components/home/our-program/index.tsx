@@ -24,7 +24,7 @@ class OurProgram extends React.Component {
                 3 Months full-time
               </h4>
               <p className="our-program__perks__description">
-                Be part of a unique 3-month full-time training
+                Be part of a unique 3 months full-time training
                 program by UnternehmerTUM, Europe's biggest Entrepreneurship Center
               </p>
             </li>

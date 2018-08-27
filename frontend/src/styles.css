@@ -26,8 +26,6 @@
 @import url('./components/program/teams/_styles.css');
 @import url('./components/program/pillars/_styles.css');
 @import url('./components/program/our-approach/_styles.css');
-@import url('./components/program/roles/_styles.css');
-@import url('./components/program/team-assignment/_styles.css');
 @import url('./components/program/who-should-apply/_styles.css');
 
 html, body, #app {

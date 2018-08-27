@@ -1,7 +1,0 @@
-.team-assignment__content_img {
-  margin-top: 90px;
-
-  @media (max-width: 620px) {
-    margin-top: 45px;
-  }
-}
