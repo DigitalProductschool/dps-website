@@ -21,7 +21,7 @@ app.use('/dist', express.static(path.join(__dirname, 'frontend/dist')));
 app.use('/assets', express.static(path.join(__dirname, 'frontend/assets')));
 
 
-// I think this strict routing for the case "/" is broken, cause should match only "/", 
+// I think this strict routing for the case "/" is broken, cause should match only "/",
 // but it matches everything, so this if check is needed
 app.use('/', (req, res, next) => {
   if (req.url === '/') {
@@ -36,6 +36,7 @@ app.use('/images/DigitalProductSchool.pdf', (req, res, next) => {
 });
 
 app.use('/index', indexRouter);
+app.use('/our-program', indexRouter);
 app.use('/legal-disclosure', indexRouter);
 app.use('/privacy-policy', indexRouter);
 

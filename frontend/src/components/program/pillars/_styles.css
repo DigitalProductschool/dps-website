@@ -1,0 +1,36 @@
+.pillars {
+  background-color: var(--black-pearl);
+  color: white;
+}
+
+.pillars__list {
+  display: grid;
+  grid-gap: 20px;
+  padding-left: 0;
+  grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.pillars__list__item__icon-wrapper {
+  position: relative;
+  text-align: center;
+  padding-right: 20%;
+  height: 87px;
+}
+
+.pillars__list__item__icon-wrapper__img {
+  width: auto;
+  height: 71px;
+}
+
+.pillars__list__item__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.pillars__list__item__description {
+  font-size: 14px;
+  line-height: 24px;
+}
