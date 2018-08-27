@@ -52,5 +52,15 @@ pipeline {
         }
       }
     }
+    stage('Clean up Container Registry') {
+        // Canary branch
+      when { branch 'stage' }
+      steps {
+        container('gcloud') {
+          // Clean up GCloud container registry
+          sh("sh clean-up-images.sh")
+        }
+      }
+    }
   }
 }
