@@ -37,6 +37,7 @@ app.use('/images/DigitalProductSchool.pdf', (req, res, next) => {
 
 app.use('/index', indexRouter);
 app.use('/our-program', indexRouter);
+app.use('/apply', indexRouter);
 app.use('/legal-disclosure', indexRouter);
 app.use('/privacy-policy', indexRouter);
 

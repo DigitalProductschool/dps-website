@@ -28,6 +28,8 @@
 @import url('./components/program/our-approach/_styles.css');
 @import url('./components/program/who-should-apply/_styles.css');
 
+@import url('./components/apply/dps-pitch/_styles.css');
+
 html, body, #app {
   font-family: Montserrat;
   width: 100%;

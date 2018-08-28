@@ -26,7 +26,7 @@ class Nav extends React.Component <INavProps, {}>{
               </a>
             </li>
             <li className="nav__menu__item">
-              <a href="https://utum.typeform.com/to/qkkFHF">
+              <a href="/apply">
                 Apply
               </a>
             </li>
