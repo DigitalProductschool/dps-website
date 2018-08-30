@@ -30,7 +30,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </div>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
-                and driving decision-making. They also take care of the team's ressources.
+                and driving decision-making. They also take care of the team's resources.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--pm u-button u-button--reversed"
@@ -48,7 +48,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </div>
               <p className="pick-track__track__description">
                 <b> Interaction Designers </b> understand how users and technology communicate with each other and focus
-                on designing engaging interfaces with well thought out behaviors.
+                on designing engaging interfaces with well thought out behaviours.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ixd u-button u-button--reversed"
@@ -114,8 +114,8 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
       return null;
     } else {
       return <p className="pick-track__description">
-        Our teams are »cross-functional«. This means that Product Managers, Interaction Designers,
-        Software Engineers and Artificial Intelligence Engineers work together to find out what the
+        Our teams are »cross-functional«. This means that product managers, interaction designers,
+        software engineers and artificial intelligence engineers work together to find out what the
         user needs and to build the product.
       </p>;
     }
