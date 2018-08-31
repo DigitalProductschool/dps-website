@@ -16,7 +16,6 @@ class TeamsAndRoles extends React.Component {
                 Currently you can apply for the following batches:
                 <ul>
                   <li>- Batch #6: January 7 to March 29, 2019</li>
-                  <li>- Batch #7: May 2 to July 26, 2019</li>
                 </ul>
               </p>
             </div>
