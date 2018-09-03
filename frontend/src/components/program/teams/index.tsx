@@ -27,7 +27,7 @@ class Teams extends React.Component {
           </div>
           <div className="teams__content__wild">
             <h3 className="u-title">Wild Teams</h3>
-            <div className="teams__content__wild__desc">
+            <div className="u-grid-4-6">
               <p className="u-text">
                 Besides the company teams we have teams that consists of graduates only. They are not bound by a problem space set by a partner. Rather, they decide for themselves where they want to look for user problems. The only constraint for them is to solve a problem regarding either mobility or any topic with social impact.
               </p>

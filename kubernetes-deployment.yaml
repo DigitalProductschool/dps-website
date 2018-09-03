@@ -12,6 +12,7 @@ spec:
     spec:
       containers:
       - image: gcr.io/dps-website-staging/github-digitalproductschool-website:0.0.1
+        imagePullPolicy: Always
         name: dpschool-pod
         ports:
           - containerPort: 5000

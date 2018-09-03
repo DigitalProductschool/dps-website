@@ -183,3 +183,33 @@ h3.u-title {
     margin-top: 90px;
   }
 }
+
+.u-grid-4-6 {
+  display: grid;
+  grid-template-columns:4fr 6fr;
+  grid-gap: 20px;
+
+  @media (max-width: 620px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
+
+  img {
+    margin-top: 18px;
+  }
+}
+
+.u-grid-6-4 {
+  display: grid;
+  grid-template-columns:6fr 4fr;
+  grid-gap: 20px;
+
+  @media (max-width: 620px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
+
+  img {
+    margin-top: 18px;
+  }
+}

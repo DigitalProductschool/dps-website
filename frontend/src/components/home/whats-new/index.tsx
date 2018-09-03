@@ -39,7 +39,7 @@ class WhatsNew extends React.Component {
                 <article>
                   <h4>Beergarden Chat with Nathalie Nahai</h4>
                   <p>
-                    Are tech companies shifting from making people addictive towards serving users in a positive way?
+                    Are tech companies shifting from making people addicted to using their product to serving users in a positive way?
                   </p>
                   <span>Watch on our YouTube channel</span>
                 </article>

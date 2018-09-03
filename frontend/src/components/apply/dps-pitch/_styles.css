@@ -1,0 +1,17 @@
+.dps-pitch__content {
+  font-family: Montserrat;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  line-height: 34px;
+  margin: 0;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--small {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+}
