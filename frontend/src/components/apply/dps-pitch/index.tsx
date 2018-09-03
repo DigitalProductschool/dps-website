@@ -11,7 +11,7 @@ class DPSPitch extends React.Component {
             You will experience how it is to work with real start-up flair and how to develop digital products that solve real user problems in a lean way.
           </p>
           <p className="dps-pitch__content dps-pitch__content--small">
-            Find out more about <a href="/our-program" className="u-link"><span>our program</span></a> or apply now in one of our roles below!
+            Find out more about <a href="/our-program" className="u-link"><span>our program</span></a> or apply now for one of our roles below!
           </p>
         </div>
       </section>
