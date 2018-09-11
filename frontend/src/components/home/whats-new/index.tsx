@@ -10,7 +10,7 @@ class WhatsNew extends React.Component {
             <div className="item-1">
               <a href="https://leaks.digitalproductschool.io/design-thinking-a-creative-way-to-foster-innovation-ab9ef97cd884" className="whats-new__content__tile u-link">
                 <div className="whats-new__content__tile__thumb">
-                  <img src="/assets/home/whats-new/design-thinking.gif" />
+                  <img src="/assets/home/whats-new/design-thinking.jpg" />
                 </div>
                 <article>
                   <h4>Design Thinking - a creative way to foster innovation</h4>
