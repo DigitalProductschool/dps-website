@@ -15,7 +15,7 @@ pipeline {
         component: ci
       spec:
         # Use service account that can deploy to all namespaces
-        serviceAccountName: staging-218117
+        serviceAccountName: cd-jenkins
         containers:
         - name: gcloud
           image: gcr.io/cloud-builders/gcloud
