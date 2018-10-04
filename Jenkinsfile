@@ -1,4 +1,4 @@
-def project = 'staging'
+def project = 'staging-218117'
 def appName = 'dpschool-website'
 def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 
