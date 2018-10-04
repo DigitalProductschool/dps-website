@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-IMAGE=gcr.io/dps-website-staging/dpschool-website
+IMAGE=gcr.io/staging-218117/dpschool-website
 
 # Count total amount of images to delete
 IMAGE_COUNT=$(gcloud container images list-tags ${IMAGE} --limit=999999 --sort-by=TIMESTAMP | grep -v DIGEST | wc -l)
