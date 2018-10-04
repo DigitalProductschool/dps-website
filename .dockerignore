@@ -17,7 +17,6 @@ Desktop.ini
 node_modules/
 *.log
 *.gz
-yarn.lock
 
 # Intellij
 .idea
