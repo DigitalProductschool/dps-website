@@ -9,6 +9,7 @@
     "watch:ts": "tsc -w"
   },
   "dependencies": {
+    "webpack": "4.19.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
