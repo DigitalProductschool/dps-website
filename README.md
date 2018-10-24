@@ -15,6 +15,7 @@ TODO: Rewrite .js files in .ts files
 ## Webpack
 
 `npm install -g webpack`
+`npm install -g webpack-cli` (not sure if we need that or webpack includes it already)
 
 ## Yarn
 
@@ -26,9 +27,9 @@ Run `yarn install` in root and `yarn install` in `frontend/`
 
 # Development
 
+- Go to `frontend/` folder and run `yarn webpack:watch` to create a bundle on each change
 - Run typescript watcher via `yarn watch:ts` in root dir to transpile ts files under `src/` on each change
 - Start development server via `yarn dev` in root dir
-- Go to `frontend/` folder and run `yarn webpack:watch` to create a bundle on each change
 
 
 # Production
