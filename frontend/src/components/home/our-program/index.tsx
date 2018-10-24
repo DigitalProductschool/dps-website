@@ -25,7 +25,7 @@ class OurProgram extends React.Component {
               </h4>
               <p className="our-program__perks__description">
                 Be part of a unique 3 months full-time training
-                program by UnternehmerTUM, Europe's biggest Entrepreneurship Center
+                program by UnternehmerTUM, Europe's biggest Entrepreneurship Center. There are three batches per year, usually starting in January, May, and September.
               </p>
             </li>
             <li className="our-program__perks__item">
