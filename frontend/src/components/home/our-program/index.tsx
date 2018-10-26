@@ -47,8 +47,7 @@ class OurProgram extends React.Component {
                 expand your NETWORK
               </h4>
               <p className="our-program__perks__description">
-                Work on our modern campus located in the IBM Watson IoT Center in
-                Munich and get in touch with Germany's start-up and tech scene.
+                Visit the various other programs of UnternehmerTUM, take part in our or other meetups and get in touch with Munich's start-up and tech scene.
               </p>
             </li>
           </ul>
