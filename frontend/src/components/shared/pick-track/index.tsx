@@ -111,7 +111,11 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
   renderDescription() {
     if (this.props.isApplyNowVersion) {
-      return null;
+      return <p className="pick-track__description">
+          There are three batches per year, usually starting in January, May, and September. The application process is ongoing.<br />
+          <b>Currently, you can apply for the following batches: <br />
+          - Batch #6: January 7 to March 29, 2019</b>
+        </p>;
     } else {
       return <p className="pick-track__description">
         Our teams are »cross-functional«. This means that product managers, interaction designers,
@@ -122,4 +126,4 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 }
 
-export default PickTrack;
+export default PickTrack
