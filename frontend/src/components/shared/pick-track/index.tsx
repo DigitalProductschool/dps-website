@@ -126,4 +126,4 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 }
 
-export default PickTrack
+export default PickTrack;
