@@ -24,14 +24,18 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
           {this.renderDescription()}
           <ul className="pick-track__tracks">
             <li className="pick-track__track">
+
+            <a
+              href="https://utum.typeform.com/to/qkkFHF?ref=website&role=pm"
+            >
               <div className="pick-tracks__track__image-wrapper">
+
                 <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
-                <a
-                  href="https://utum.typeform.com/to/qkkFHF?ref=website&role=pm"
-                >
+
                   <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/pm-icon.png" style={active === 'pm' ? { opacity: 0.1 } : {}} />
-                </a>
+
               </div>
+              </a>
               <p className="pick-track__track__description">
                 <b> Product Managers </b> are responsible for defining a product that solves discovered problems
                 and driving decision-making. They also take care of the team's resources.
@@ -45,15 +49,19 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 APPLY AS PM
               </a>
             </li>
+
             <li className="pick-track__track">
+            <a
+              href="https://utum.typeform.com/to/qkkFHF?ref=website&role=ixd"
+            >
               <div className="pick-tracks__track__image-wrapper">
+
                 <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
-                <a
-                  href="https://utum.typeform.com/to/qkkFHF?ref=website&role=ixd"
-                >
+
                 <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ixd-icon.png" style={active === 'ixd' ? { opacity: 0.1 } : {}} />
-                </a>
+
               </div>
+              </a>
               <p className="pick-track__track__description">
                 <b> Interaction Designers </b> understand how users and technology communicate with each other and focus
                 on designing engaging interfaces with well thought out behaviours.
@@ -68,14 +76,17 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </a>
             </li>
             <li className="pick-track__track">
+            <a
+              href="https://utum.typeform.com/to/qkkFHF?ref=website&role=se"
+            >
               <div className="pick-tracks__track__image-wrapper">
+
                 <div className="pick-tracks__track__image pick-tracks__track__image--se" />
-                <a
-                  href="https://utum.typeform.com/to/qkkFHF?ref=website&role=se"
-                >
+
                 <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/se-icon.png" style={active === 'se' ? { opacity: 0.1 } : {}} />
-                </a>
+
               </div>
+              </a>
               <p className="pick-track__track__description">
                 <b> Software Engineers </b> bring ideas to life through coding. They engineer systems that are scalable, secure and usable.
                 They do amazing things that look like magic to others.
@@ -90,14 +101,18 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </a>
             </li>
             <li className="pick-track__track">
+            <a
+              href="https://utum.typeform.com/to/qkkFHF?ref=website&role=ai"
+            >
+
               <div className="pick-tracks__track__image-wrapper">
+
                 <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
-                <a
-                  href="https://utum.typeform.com/to/qkkFHF?ref=website&role=ai"
-                >
-                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}} />
-                </a>
+
+                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}}/>
+
               </div>
+              </a>
               <p className="pick-track__track__description">
                 <b> Artificial Intelligence Engineers </b> use technology to identify data patterns, build self-learning systems and automate repetitive work.
                 By doing this they take a product to a whole new level.
