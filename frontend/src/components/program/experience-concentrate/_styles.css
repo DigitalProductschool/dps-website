@@ -1,6 +1,6 @@
 .experience-concentrate {
   color: white;
-  margin-top: 560px;
+  margin-top: 150px;
   padding-bottom: 120px;
   background-color: var(--deep-cove);
 
@@ -24,14 +24,6 @@
 
 .experience-concentrate__content__description__image {
   margin-top: 18px;
-}
-
-.experience-concentrate__title__image {
-  margin-top: -450px;
-
-  @media(max-width: 620px) {
-    margin-top: -225px;
-  }
 }
 
 .experience-concentrate__content__apply-button {
