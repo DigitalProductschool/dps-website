@@ -7,11 +7,13 @@ import Apply from './components/apply/index';
 import Legal from './components/legal/index';
 import Privacy from './components/privacy/index';
 import ScrollToNav from './utils/scroll-to-nav';
+import CookieWarning from './components/shared/cookie-warning';
 
 export class App extends React.Component {
   render() {
     return (
       <ScrollToNav>
+        <CookieWarning />
         <Switch>
           <Route path="/index" component={Home} />
           <Route path="/our-program" component={Program} />
