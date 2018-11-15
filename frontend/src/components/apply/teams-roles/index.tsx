@@ -12,12 +12,6 @@ class TeamsAndRoles extends React.Component {
               <p className="u-text">
                 Our teams are »cross-functional«. This means that product managers, interaction designers, software engineers and artificial intelligence engineers work together to find out what the user needs and to build the product. Choose YOUR role and apply for Digital Product School!
               </p>
-              <p className="u-text u-text--bold">
-                Currently you can apply for the following batches:
-                <ul>
-                  <li>- Batch #6: January 7 to March 29, 2019</li>
-                </ul>
-              </p>
             </div>
           </div>
         </div>

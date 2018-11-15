@@ -89,7 +89,7 @@ class PrivacyContent extends React.Component {
           <p>Any data subject may, at any time, contact our Data Protection Officer directly with all questions and suggestions concerning data protection.</p>
 
 
-          <h3>4. COOKIES</h3>
+          <h3 id="cookies">4. COOKIES</h3>
 
           <p>
           The Internet pages of the UnternehmerTUM GmbH use cookies. Cookies are text files that are stored in a computer system via an Internet browser.
