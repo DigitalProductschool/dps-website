@@ -43,7 +43,7 @@ Thanks goes to these wonderful people :
                 href="https://github.com/lustoykov"
                 rel="noopener morefferer"
                 target="_blank"> 
-            Lyubomir lustoykov
+            Lyubomir Stoykov 
 </a>
         </td>
     </tr>
