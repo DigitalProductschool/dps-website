@@ -1,66 +1,3 @@
-# Contributors
-Thanks goes to these wonderful people :
-<table>
-<tr> 
-  <td>
-        <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
-        <a
-                href="https://github.com/ankita-sri"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Ankita Srivastava
-</a>
-        </td>
-<td>
-        <img src="https://avatars0.githubusercontent.com/u/25259674?s=460&v=4" width="150px;"/><br />
-        <a
-                href="https://github.com/bhawna333"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Bhawna Saini
-</a>
-        </td>
-        <td>
-        <img src="https://avatars0.githubusercontent.com/u/39758486?s=400&u=ed7af615ce2f4d9460769c381565c4421d2f1452&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/ayamlearning"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Yasin Musa Ayami
-</a>
-        </td>
-        <td> <img src="https://avatars1.githubusercontent.com/u/10283674?s=460&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/mstockerl"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Michael Stockerl
-</a>
-         </td>
-        <td>
-        <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/lustoykov"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Lyubomir Stoykov 
-</a>
-        </td>
-  </td>
-        <td>
-        <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/pranjal2394"
-                rel="noopener morefferer"
-                target="_blank"> 
-            Pranjal
-</a>
-        </td>
-    </tr>
-</table>
-
-
-
 # Website
 
 TODO: Rewrite .js files in .ts files
@@ -135,6 +72,67 @@ The second bundle is referenced in the server-rendered html via `<script type="t
 > If you call ReactDOM.hydrate() on a node that already has this server-rendered markup, React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.
 
 On top, a new hash of the bundle is generated on each change so that the name of the bundle changes to `bundle.${buildhash}.js` and the old (browser-side cached) bundle becomes obsolete.
+
+# Contributors
+Thanks goes to these wonderful people :
+<table>
+<tr> 
+  <td>
+        <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
+        <a
+                href="https://github.com/ankita-sri"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Ankita Srivastava
+</a>
+        </td>
+<td>
+        <img src="https://avatars0.githubusercontent.com/u/25259674?s=460&v=4" width="150px;"/><br />
+        <a
+                href="https://github.com/bhawna333"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Bhawna Saini
+</a>
+        </td>
+        <td>
+        <img src="https://avatars0.githubusercontent.com/u/39758486?s=400&u=ed7af615ce2f4d9460769c381565c4421d2f1452&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/ayamlearning"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Yasin Musa Ayami
+</a>
+        </td>
+        <td> <img src="https://avatars1.githubusercontent.com/u/10283674?s=460&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/mstockerl"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Michael Stockerl
+</a>
+         </td>
+        <td>
+        <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/lustoykov"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Lyubomir Stoykov 
+</a>
+        </td>
+  </td>
+        <td>
+        <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/pranjal2394"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Pranjal
+</a>
+        </td>
+    </tr>
+</table>
 
 
 
