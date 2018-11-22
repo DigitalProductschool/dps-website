@@ -46,6 +46,16 @@ Thanks goes to these wonderful people :
             Lyubomir Stoykov 
 </a>
         </td>
+  </td>
+        <td>
+        <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/pranjal2394"
+                rel="noopener morefferer"
+                target="_blank"> 
+            Pranjal
+</a>
+        </td>
     </tr>
 </table>
 
