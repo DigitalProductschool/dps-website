@@ -104,14 +104,16 @@ Thanks goes to these wonderful people :
             Yasin Musa Ayami
 </a>
         </td>
-        <td> <img src="https://avatars1.githubusercontent.com/u/10283674?s=460&v=4" width="150px;"/><br />
+  </td>
+        <td>
+        <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
          <a
-                href="https://github.com/mstockerl"
+                href="https://github.com/pranjal2394"
                 rel="noopener morefferer"
                 target="_blank"> 
-            Michael Stockerl
+            Pranjal Deep
 </a>
-         </td>
+        </td>
         <td>
         <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
          <a
@@ -121,16 +123,14 @@ Thanks goes to these wonderful people :
             Lyubomir Stoykov 
 </a>
         </td>
-  </td>
-        <td>
-        <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
+         <td> <img src="https://avatars1.githubusercontent.com/u/10283674?s=460&v=4" width="150px;"/><br />
          <a
-                href="https://github.com/pranjal2394"
+                href="https://github.com/mstockerl"
                 rel="noopener morefferer"
                 target="_blank"> 
-            Pranjal
+            Michael Stockerl
 </a>
-        </td>
+         </td>
     </tr>
 </table>
 
