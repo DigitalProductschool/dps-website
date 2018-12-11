@@ -9,8 +9,7 @@ class WhatsNew extends React.Component {
           <div className="whats-new__content__tiles">
             <div className="item-1">
               <a href="https://leaks.digitalproductschool.io/design-thinking-a-creative-way-to-foster-innovation-ab9ef97cd884" className="whats-new__content__tile u-link">
-                <div className="whats-new__content__tile__thumb">
-                  <img src="/assets/home/whats-new/design-thinking.jpg" />
+                <div className="whats-new__content__tile__thumb whats-new__content__tile__thumb--design-thinking">
                 </div>
                 <article>
                   <h4>Design Thinking - a creative way to foster innovation</h4>
@@ -20,13 +19,12 @@ class WhatsNew extends React.Component {
               </a>
             </div>
             <div className="item-2">
-              <a href="https://leaks.digitalproductschool.io/digital-product-school-dps-86f48a7d4d69" className="whats-new__content__tile u-link">
-                <div className="whats-new__content__tile__thumb">
-                  <img src="/assets/home/whats-new/review.jpg" />
+              <a href="https://leaks.digitalproductschool.io/how-should-education-look-like-the-dps-model-7488d5a1567c" className="whats-new__content__tile u-link">
+                <div className="whats-new__content__tile__thumb whats-new__content__tile__thumb--dps-batch5">
                 </div>
                 <article>
-                  <h4>Digital Product School – An Honest Review</h4>
-                  <p>by Tian-Yuan Zhao</p>
+                  <h4>How should education look like? — The DPS Model</h4>
+                  <p>by Ayush Sengupta</p>
                   <span>Read on Medium ...</span>
                 </article>
               </a>
