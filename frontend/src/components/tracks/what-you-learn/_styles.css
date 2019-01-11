@@ -1,0 +1,74 @@
+.wyl-content__info {
+  color: white;
+}
+
+.wyl-content__info__description-box {
+  @media (min-width: 850px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+  } 
+}
+
+.wyl-content__title {
+  font-size: 72px;
+  font-weight: 700;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.wyl-content__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.wyl-content__info__description-box__description {
+  font-size: 18px;
+}
+
+.wyl-content__info__description-box__text p:nth-child(1) {
+  margin: 0;
+}
+
+.wyl-content__info__description-box__text p:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.wyl-content__info__description-box__image {
+  background-image: url('/assets/tracks/what-you-learn.jpg');
+  background-size: cover;
+  background-position: center center;    
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
+  margin-bottom: -70px;
+}
+
+.wyl-content__background {
+  background-color: #00B2FF;
+   @media (min-width: 850px) {
+    position: absolute;
+    top: -100px;
+    left: 15%;
+    right: -10%;
+    bottom: 100px;
+    z-index: -1;
+  } 
+}
+
+.wyl-content__info {
+  background-color: #041A3B;
+
+  @media (min-width: 850px) {
+    width: 90%;
+    position: relative;
+  }
+}
+
+.wyl-content__info-w {
+  @media (min-width: 850px) {
+    box-sizing: border-box;
+    padding-right: 10%
+  }
+}

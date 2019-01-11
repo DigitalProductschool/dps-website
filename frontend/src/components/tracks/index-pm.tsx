@@ -3,6 +3,7 @@ import * as React from 'react';
 import Header from './header/index';
 import Footer from '../shared/footer/index';
 import TrackImage from './track-image/index';
+import WhatYouLearn from './what-you-learn/index';
 
 class TrackPM extends React.Component {
 
@@ -11,6 +12,7 @@ class TrackPM extends React.Component {
       <React.Fragment>
         <Header />
         <TrackImage />
+        <WhatYouLearn />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     )

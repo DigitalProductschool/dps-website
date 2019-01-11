@@ -16,11 +16,6 @@
   height: calc(100% - var(--nav-height-desktop));
   padding-top: 5%;
   padding-bottom: 10%;
-/* 
-  @media (max-width: 1280px) {
-    padding-top: 5%;
-    padding-bottom: 10%;
-  } */
 }
 
 .tracks__header-content__title {
