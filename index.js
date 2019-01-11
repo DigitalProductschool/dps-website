@@ -64,7 +64,7 @@ function htmlTemplate(reactDom, css) {
           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- End Google Tag Manager (noscript) -->
           <div id="app"> ${reactDom} </div>
-          <script type="text/javascript" src="dist/bundle.${buildhash}.js"></script>
+          <script type="text/javascript" src="/dist/bundle.${buildhash}.js"></script>
         </body>
     </html>
   `;

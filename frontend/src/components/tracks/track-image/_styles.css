@@ -1,0 +1,22 @@
+.tracks__track-image-content__image {
+  background-image: url('/assets/tracks/pm/header.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 0;
+  width: 80%;
+  padding-bottom: 30%;
+  margin-top: -8%;
+
+  @media (min-width: 1280px) {
+    margin-top: -10%;
+  }
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+}
+
+.tracks__track-image-content {
+  display: flex;
+  justify-content: center;
+}
