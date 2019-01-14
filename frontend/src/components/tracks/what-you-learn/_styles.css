@@ -11,20 +11,40 @@
 }
 
 .wyl-content__title {
-  font-size: 72px;
   font-weight: 700;
   margin-top: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: calc(32px + 3vw);
+
+  @media (max-width: 850px) { 
+    margin-top: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 72px;
+  }
 }
 
 .wyl-content__subtitle {
-  font-size: 24px;
+  font-size: calc(14px + 0.7vw);
   font-weight: 700;
   margin-bottom: 70px;
+
+  @media (max-width: 850px) { 
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 
-.wyl-content__info__description-box__description {
-  font-size: 18px;
+.wyl-content__info__description-box__text {
+  font-size: calc(10px + 0.6vw);
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .wyl-content__info__description-box__text p:nth-child(1) {
@@ -43,6 +63,7 @@
   height: 0;
   padding-bottom: 65%;
   margin-bottom: -70px;
+  box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.15);
 }
 
 .wyl-content__background {

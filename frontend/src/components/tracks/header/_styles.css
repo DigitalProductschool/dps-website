@@ -15,31 +15,29 @@
   justify-content: center;
   height: calc(100% - var(--nav-height-desktop));
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
 }
 
 .tracks__header-content__title {
   margin: 0;
   color: white;
-  font-size: 64px;
   text-transform: uppercase;
   font-weight: 800;
+  font-size: calc(32px + 3vw);
 
-  @media (max-width: 620px) {
-    font-size: 32px
+  @media (min-width: 1280px) {
+    font-size: 72px;
   }
-
 }
 
 .tracks__header-content__description {
   color: white;
   max-width: var(--max-width);
-  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+  font-size: calc(10px + 0.7vw);
 
-  @media (max-width: 620px) {
-    font-size: 16px
+  @media (min-width: 1280px) {
+    font-size: 20px;
   }
 }
-

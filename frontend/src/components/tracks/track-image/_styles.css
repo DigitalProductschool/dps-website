@@ -6,10 +6,7 @@
   width: 80%;
   padding-bottom: 30%;
   margin-top: -8%;
-
-  @media (min-width: 1280px) {
-    margin-top: -10%;
-  }
+  box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.15);
 
   @media (max-width: 850px) {
     width: 100%;
