@@ -6,6 +6,7 @@ import TrackImage from './track-image/index';
 import WhatYouLearn from './what-you-learn/index';
 import OfferResponsibilities from './offer-responsibilities/index';
 import Expectations from './expectations/index';
+import { or } from './texts/pm';
 
 
 class TrackPM extends React.Component {
@@ -14,7 +15,7 @@ class TrackPM extends React.Component {
       <React.Fragment>
         <Header logo='/assets/tracks/dps-logo-white.png' />
         <TrackImage />
-        <OfferResponsibilities />
+        <OfferResponsibilities or={or} />
         <Expectations />
         <WhatYouLearn />
         <div

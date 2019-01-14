@@ -1,7 +1,14 @@
 import * as React from 'react';
 import ListItem from '../list-item/index';
 
-export default () => {
+interface IORProps {
+  or: {
+    offer: Array<String>,
+    responsibilities: Array<String>,
+  }
+}
+
+export default (props: IORProps) => {
   return (
     <div className="or u-content-wrapper">
       <div className="or__content u-content">
