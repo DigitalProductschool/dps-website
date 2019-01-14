@@ -2,12 +2,16 @@ import * as React from 'react';
 
 import Nav from '../../shared/header/nav/index';
 
-class Header extends React.Component {
+interface IHeaderProps {
+  logo?: string;
+}
+
+class Header extends React.Component<IHeaderProps, {}> {
   render() {
     return (
       <React.Fragment>
         <section className="tracks__header u-content-wrapper">
-          <Nav />
+          <Nav logo={this.props.logo} />
           <div className="tracks__header-content u-content">
             <h1 className="tracks__header-content__title">
               APPLY AS <br /> PRODUCT MANAGER

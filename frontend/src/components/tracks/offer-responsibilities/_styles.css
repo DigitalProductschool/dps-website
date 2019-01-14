@@ -1,0 +1,9 @@
+.or {
+  background-color: #f2f2f2;
+}
+
+.or__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}

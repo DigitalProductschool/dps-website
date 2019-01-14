@@ -34,7 +34,8 @@
 @import url('./components/tracks/header/_styles.css');
 @import url('./components/tracks/track-image/_styles.css');
 @import url('./components/tracks/what-you-learn/_styles.css');
-
+@import url('./components/tracks/offer-responsibilities/_styles.css');
+@import url('./components/tracks/list-item/_styles.css');
 
 html, body, #app {
   font-family: Montserrat;
