@@ -3,14 +3,15 @@
   font-size: 16px;
   margin-bottom: 30px;
   align-items: center;
-
-  @media (max-width: 850px) {
-    font-size: 14px;
-  } 
 }
 
 .hash-list-item__hash {
   font-size: 48px;
   margin-right: 20px;
   color: rgba(37, 37, 37, 0.25);
+  
+  @media (max-width: 850px) {
+    font-size: 36px;
+  } 
 }
+

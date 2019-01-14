@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export default () => {
   return (
-    <div style={{ marginTop: '200px' }}>
+    <div>
       <div className="wyl-content__info">
         <div className="wyl-content__background">
         </div>
