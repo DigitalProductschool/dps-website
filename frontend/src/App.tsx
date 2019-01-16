@@ -22,7 +22,7 @@ export class App extends React.Component {
           <Route path="/apply" component={Apply} />
           <Route path="/legal-disclosure" component={Legal} />
           <Route path="/privacy-policy" component={Privacy} />
-          <Route path="/tracks/pm" component={TrackPM}></Route>
+          <Route path="/tracks/product-management" component={TrackPM}></Route>
         </Switch>
       </ScrollToNav>
     );
