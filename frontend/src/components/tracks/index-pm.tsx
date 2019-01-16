@@ -6,17 +6,21 @@ import TrackImage from './track-image/index';
 import WhatYouLearn from './what-you-learn/index';
 import OfferResponsibilities from './offer-responsibilities/index';
 import Expectations from './expectations/index';
-import { or } from './texts/pm';
+import { or, header, expectations } from './data/pm';
 
-
+/**
+ * The Apply Now button is not abstracted away in its own component, because it's temporary there
+ * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
+ * decide to use different images.
+ */
 class TrackPM extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header logo='/assets/tracks/dps-logo-white.png' />
+        <Header data={header} logo="/assets/tracks/dps-logo-white.png" />
         <TrackImage />
-        <OfferResponsibilities or={or} />
-        <Expectations />
+        <OfferResponsibilities data={or} />
+        <Expectations data={expectations} />
         <WhatYouLearn />
         <div
           className="u-content"
