@@ -1,4 +1,4 @@
-.wwe {
+.expectations {
   padding-top: 100px;
   padding-bottom: 50px;
   margin-bottom: 100px;
@@ -10,7 +10,7 @@
   } 
 }
 
-.wwe__title {
+.expectations__title {
   font-size: 36px;
   text-transform: uppercase;
 
@@ -19,7 +19,7 @@
   } 
 }
 
-.wwe__lists {
+.expectations__lists {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
