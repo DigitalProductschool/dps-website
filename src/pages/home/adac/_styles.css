@@ -1,0 +1,18 @@
+.adac {
+  margin-top: 140px;
+}
+
+.adac__content__desc {
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none solid rgb(0, 0, 0);
+  line-height: 24px;
+  margin-bottom: 22px;
+
+  @media (max-width: 620px) {
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

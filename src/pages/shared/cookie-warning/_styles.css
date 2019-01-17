@@ -1,0 +1,32 @@
+.cookie-warning {
+  background-color: black;
+  height: 250px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  transition: height 0.1s ease-out, opacity 0.2s ease-out;
+
+  &--animate-out {
+    height: 0;
+    opacity: 0;
+  }
+  
+  a {
+    color: white;
+  }
+}
+
+.cookie-warning__description {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.cookie-warning__button {
+  font-size: 16px;
+  width: 170px;
+  height: 35px;
+  font-weight: 500;
+  margin-top: 10px;
+}

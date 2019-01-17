@@ -1,0 +1,63 @@
+@import url('./_variables.css');
+@import url('./_utils.css');
+@import url('./_colors.css');
+
+@import url("./pages/shared/header/nav/_styles.css");
+@import url('./pages/shared/pick-track/_styles.css');
+@import url("./pages/shared/footer/_styles.css");
+@import url("./pages/shared/cookie-warning/_styles.css");
+
+@import url("./pages/home/header/_styles.css");
+@import url("./pages/home/pitch/_styles.css");
+@import url("./pages/home/diverse-teams/_styles.css");
+@import url("./pages/home/experience-matters/_styles.css");
+@import url("./pages/home/user-first/_styles.css");
+@import url('./pages/home/our-program/_styles.css');
+@import url('./pages/home/adac/_styles.css');
+@import url("./pages/home/tool-partner/_styles.css");
+@import url('./pages/home/industry-partners/_styles.css');
+@import url('./pages/home/whats-new/_styles.css');
+
+/* @import url('./components/legal/legal-content/_styles.css');
+@import url('./components/privacy/privacy-content/_styles.css');
+
+@import url('./components/program/header/_styles.css');
+@import url('./components/program/take-opportunity/_styles.css');
+@import url('./components/program/experience-concentrate/_styles.css');
+@import url('./components/program/teams/_styles.css');
+@import url('./components/program/pillars/_styles.css');
+@import url('./components/program/our-approach/_styles.css');
+@import url('./components/program/who-should-apply/_styles.css');
+
+@import url('./components/apply/dps-pitch/_styles.css'); */
+
+html, body, #app {
+  font-family: Montserrat;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* background-color: black; */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.a {
+  cursor: pointer;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 72px;
+
+  @media (max-width: 620px) {
+    font-size: 52px;
+  }
+}
