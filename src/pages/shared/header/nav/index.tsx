@@ -13,12 +13,12 @@ class Nav extends React.Component <INavProps, {}>{
     return (
       <nav className={`nav ${addClass}`}>
         <div className={`nav__content u-content ${addClass}`}>
-          <a href="/index">
+          <a href="/">
             <img className="nav__logo" src={`${logo}`} />
           </a>
           <ul className="nav__menu">
             <li className="nav__menu__item">
-              <a href="/index"> Home </a>
+              <a href="/"> Home </a>
             </li>
             <li className="nav__menu__item">
               <a href="/our-program">

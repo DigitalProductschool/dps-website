@@ -20,6 +20,19 @@
 @import url('./pages/home/industry-partners/_styles.css');
 @import url('./pages/home/whats-new/_styles.css');
 
+@import url('./pages/legal-disclosure/legal-content/_styles.css');
+@import url('./pages/privacy-policy/privacy-content/_styles.css');
+
+@import url('./pages/our-program/header/_styles.css');
+@import url('./pages/our-program/take-opportunity/_styles.css');
+@import url('./pages/our-program/experience-concentrate/_styles.css');
+@import url('./pages/our-program/teams/_styles.css');
+@import url('./pages/our-program/pillars/_styles.css');
+@import url('./pages/our-program/our-approach/_styles.css');
+@import url('./pages/our-program/who-should-apply/_styles.css');
+
+@import url('./pages/apply/dps-pitch/_styles.css');
+
 /* @import url('./components/legal/legal-content/_styles.css');
 @import url('./components/privacy/privacy-content/_styles.css');
 
