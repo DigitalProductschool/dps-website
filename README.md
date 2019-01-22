@@ -112,6 +112,15 @@ Thanks goes to these wonderful people :
 </a>
         </td>
         <td>
+            <img src="https://avatars3.githubusercontent.com/u/45259171?s=460&v=4" width="150px;"/><br />
+            <a
+                href="https://github.com/Annina2806"
+                rel="noopener morefferer"
+                target="_blank"> 
+                Annina Schaupp
+            </a>
+        </td>
+        <td>
         <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
          <a
                 href="https://github.com/lustoykov"
