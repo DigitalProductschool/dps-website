@@ -35,3 +35,7 @@ module.exports = {
     // 'gatsby-plugin-offline',
   ],
 }
+
+
+// pathPrefix: "/Gatsby-DPS/static",
+//     `gatsby-plugin-postcss`,
