@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 interface INavProps {
   addClass?: string;
@@ -13,22 +14,18 @@ class Nav extends React.Component <INavProps, {}>{
     return (
       <nav className={`nav ${addClass}`}>
         <div className={`nav__content u-content ${addClass}`}>
-          <a href="/">
+          <Link to="/">
             <img className="nav__logo" src={`${logo}`} />
-          </a>
+          </Link>
           <ul className="nav__menu">
             <li className="nav__menu__item">
-              <a href="/"> Home </a>
+              <Link to="/"> Home </Link>
             </li>
             <li className="nav__menu__item">
-              <a href="/our-program">
-                Our Program
-              </a>
+              <Link to="/our-program"> Our Program </Link>
             </li>
             <li className="nav__menu__item">
-              <a href="/apply">
-                Apply
-              </a>
+              <Link to="/apply"> Apply </Link>
             </li>
           </ul>
         </div>

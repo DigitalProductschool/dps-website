@@ -1,0 +1,24 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: public/index.html
+  upload: public/index.html
+- url: /home
+  static_files: public/home/index.html
+  upload: public/home/index.html
+- url: /our-program
+  static_files: public/our-program/index.html
+  upload: public/our-program/index.html
+- url: /legal-disclosure
+  static_files: public/legal-disclosure/index.html
+  upload: public/legal-disclosure/index.html
+- url: /privacy-policy
+  static_files: public/privacy-policy/index.html
+  upload: public/privacy-policy/index.html
+- url: /apply
+  static_files: public/apply/index.html
+  upload: public/apply/index.html
+- url: /
+  static_dir: public

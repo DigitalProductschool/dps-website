@@ -7,7 +7,7 @@ class Cover extends React.Component {
     return (
       <React.Fragment>
         <video autoPlay muted loop className="cover__video">
-          <source src={video} type="video/mp4" />
+          <source src="/assets/home/header/headervideo-1680-758.mp4" type="video/mp4" />
         </video>
       </React.Fragment>
     );
