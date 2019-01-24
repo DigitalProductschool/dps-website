@@ -13,7 +13,7 @@ import { or, header, expectations } from './data/pm';
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.
  */
-class TrackPM extends React.Component {
+class TrackIxD extends React.Component {
   render() {
     return (
       <React.Fragment>

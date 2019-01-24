@@ -6,14 +6,14 @@ import TrackImage from './track-image/index';
 import WhatYouLearn from './what-you-learn/index';
 import OfferResponsibilities from './offer-responsibilities/index';
 import Expectations from './expectations/index';
-import { or, header, expectations } from './data/pm';
+import { or, header, expectations } from './data/ai';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.
  */
-class TrackPM extends React.Component {
+class TrackAI extends React.Component {
   render() {
     return (
       <React.Fragment>
