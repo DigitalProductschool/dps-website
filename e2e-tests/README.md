@@ -8,4 +8,4 @@ Only write End-to-End tests for important functionality!!
 
 ## Run tests
 
-`env WEBSITE=https://digitalproductschool.io npm run test:local` e.g. Run all tests against production system
+`env WEBSITE=https://digitalproductschool.io npm test` e.g. Run all tests against production system
