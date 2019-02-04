@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import Header from '../header/index';
+import Header from '../header/_index';
 import Footer from '../../shared/footer/index';
-import TrackImage from '../track-image/index';
-import WhatYouLearn from '../what-you-learn/index';
-import OfferResponsibilities from '../offer-responsibilities/index';
-import Expectations from '../expectations/index';
+import TrackImage from '../track-image/_index';
+import WhatYouLearn from '../what-you-learn/_index';
+import OfferResponsibilities from '../offer-responsibilities/_index';
+import Expectations from '../expectations/_index';
 import { or, header, expectations } from '../../../data/ai';
 
 /**
