@@ -40,6 +40,8 @@
 @import url('./pages/tracks/list-item/_styles.css');
 @import url('./pages/tracks/expectations/_styles.css');
 
+@import url('./pages/tracks/product-management/_styles.css');
+@import url('./pages/tracks/interaction-design/_styles.css');
 
 html, body, #app {
   font-family: Montserrat;

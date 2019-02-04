@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-export default () => {
+export default (props: { className: string }) => {
   return (
     <div>
       <div className="wyl-content__info">
-        <div className="wyl-content__background">
+        <div className={`wyl-content__background  ${props.className}`}>
         </div>
         <div className="u-content-wrapper" style={{ width: '100vw' }}>
           <div className="wyl-content__info-w u-content">

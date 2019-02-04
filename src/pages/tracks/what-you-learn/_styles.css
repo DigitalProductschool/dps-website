@@ -67,7 +67,6 @@
 }
 
 .wyl-content__background {
-  background-color: #00B2FF;
    @media (min-width: 850px) {
     position: absolute;
     top: -100px;

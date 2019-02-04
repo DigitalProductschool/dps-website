@@ -1,8 +1,6 @@
 import React from 'react'
-import Home from './home/index.tsx';
+import Home from './home/index.tsx'
 
-const IndexPage = () => (
-  <Home />
-)
+const IndexPage = () => <Home />
 
 export default IndexPage
