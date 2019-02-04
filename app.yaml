@@ -20,5 +20,17 @@ handlers:
 - url: /apply
   static_files: public/apply/index.html
   upload: public/apply/index.html
+- url: /tracks/software-engineering
+  static_files: public/tracks/software-engineering/index.html
+  upload: public/tracks/software-engineering/index.html
+- url: /tracks/artificial-intelligence
+  static_files: public/tracks/artificial-intelligence/index.html
+  upload: public/tracks/artificial-intelligence/index.html
+- url: /tracks/product-management
+  static_files: public/tracks/product-management/index.html
+  upload: public/tracks/product-management/index.html
+- url: /tracks/interaction-designer
+  static_files: public/tracks/interaction-designer/index.html
+  upload: public/tracks/interaction-designer/index.html
 - url: /
   static_dir: public
