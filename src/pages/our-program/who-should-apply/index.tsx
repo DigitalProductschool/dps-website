@@ -14,7 +14,7 @@ class WhoShouldApply extends React.Component {
               <br /><br />
               However, if you are applying for the roles of software engineer, data scientist or interaction designer, you should have the fundamental skills in your role, e.g. a Bachelor degree.
             </p>
-            <img src="/assets/program/who-should-apply/desc.jpg" className="u-image" />
+            <img alt="should-apply" src="/assets/program/who-should-apply/desc.jpg" className="u-image" />
           </div>
         </div>
       </section>

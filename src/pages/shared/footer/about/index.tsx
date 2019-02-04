@@ -4,7 +4,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <img className="about__logo" src="/assets/shared/dps-logo-white.svg" />
+        <img alt="about-logo" className="about__logo" src="/assets/shared/dps-logo-white.svg" />
         <div className="about__runby">
           DPS is a program run by <a className="about__link" href="https://unternehmertum.de">UnternehmerTUM</a> and part of the <a className="about__link" href="https://mobility.unternehmertum.de">Digital Hub Mobility Munich</a>.
         </div>

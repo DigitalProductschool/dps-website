@@ -32,7 +32,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
                 <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
 
-                  <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/pm-icon.png" style={active === 'pm' ? { opacity: 0.1 } : {}} />
+                  <img alt="pm-icon" className="pick-tracks__track__icon" src="/assets/shared/pick-track/pm-icon.png" style={active === 'pm' ? { opacity: 0.1 } : {}} />
 
               </div>
               </a>
@@ -58,7 +58,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
                 <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
 
-                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ixd-icon.png" style={active === 'ixd' ? { opacity: 0.1 } : {}} />
+                <img alt="ixd-icon" className="pick-tracks__track__icon" src="/assets/shared/pick-track/ixd-icon.png" style={active === 'ixd' ? { opacity: 0.1 } : {}} />
 
               </div>
               </a>
@@ -83,7 +83,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
                 <div className="pick-tracks__track__image pick-tracks__track__image--se" />
 
-                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/se-icon.png" style={active === 'se' ? { opacity: 0.1 } : {}} />
+                <img alt="se-icon" className="pick-tracks__track__icon" src="/assets/shared/pick-track/se-icon.png" style={active === 'se' ? { opacity: 0.1 } : {}} />
 
               </div>
               </a>
@@ -109,7 +109,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
                 <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
 
-                <img className="pick-tracks__track__icon" src="/assets/shared/pick-track/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}}/>
+                <img alt="ai-icon" className="pick-tracks__track__icon" src="/assets/shared/pick-track/ai-icon.png" style={active === 'ai' ? { opacity: 0.1 } : {}}/>
 
               </div>
               </a>

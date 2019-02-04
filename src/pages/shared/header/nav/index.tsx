@@ -15,7 +15,7 @@ class Nav extends React.Component <INavProps, {}>{
       <nav className={`nav ${addClass}`}>
         <div className={`nav__content u-content ${addClass}`}>
           <Link to="/">
-            <img className="nav__logo" src={`${logo}`} />
+            <img alt="nav-logo" className="nav__logo" src={`${logo}`} />
           </Link>
           <ul className="nav__menu">
             <li className="nav__menu__item">

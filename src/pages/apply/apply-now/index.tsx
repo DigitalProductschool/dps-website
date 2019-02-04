@@ -10,7 +10,7 @@ class ApplyNow extends React.Component {
             <p className="u-text">
               You can be the best graduate of all time, but when you go to your first job after uni, you're a newbie. Maybe you have heard that modern tech companies nowadays work in "agile teams" and no longer in departments and divisions.<br/> Instead of top-down management, there are flat hierarchies and the teams organize themselves and their projects on their own. <br/> You also might have heard about "agile", "Scrum" and "Design Thinking". But what's that in reality? How does it work in the real world?
             </p>
-            <img className="apply-now__content__description__image u-image" src="/assets/apply/apply-now-desc.JPG" />
+            <img alt="apply-now-image" className="apply-now__content__description__image u-image" src="/assets/apply/apply-now-desc.JPG" />
           </div>
         </div>
       </section>

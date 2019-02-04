@@ -18,7 +18,7 @@ class OurProgram extends React.Component {
           <ul className="our-program__perks">
             <li className="our-program__perks__item">
               <div className="our-program__perks__item__icon-wrapper">
-              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--first" src="/assets/home/our-program/calendar-icon.png" />
+              <img alt="calendar-icon" className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--first" src="/assets/home/our-program/calendar-icon.png" />
               </div>
               <h4 className="our-program__perks__title">
                 3 Months full-time
@@ -30,7 +30,7 @@ class OurProgram extends React.Component {
             </li>
             <li className="our-program__perks__item">
               <div className="our-program__perks__item__icon-wrapper">
-                <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/home/our-program/scholar-icon.svg" />
+                <img alt="scholar-icon" className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/home/our-program/scholar-icon.svg" />
               </div>
               <h4 className="our-program__perks__title">
                 2,250 EUR SCHOLARSHIP
@@ -41,7 +41,7 @@ class OurProgram extends React.Component {
             </li>
             <li className="our-program__perks__item">
               <div className="our-program__perks__item__icon-wrapper">
-              <img className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--third" src="/assets/home/our-program/network-icon.svg" />
+              <img alt="network-icon" className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--third" src="/assets/home/our-program/network-icon.svg" />
               </div>
               <h4 className="our-program__perks__title">
                 expand your NETWORK

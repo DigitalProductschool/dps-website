@@ -21,7 +21,7 @@ class ExperienceConcentrate extends React.Component {
                 Apply Now
               </a>
             </div>
-            <img className="experience-concentrate__content__description__image u-image" src="/assets/program/experience-concentrate/desc.jpg" />
+            <img alt="experience-concentrate-description-image" className="experience-concentrate__content__description__image u-image" src="/assets/program/experience-concentrate/desc.jpg" />
           </div>
         </div>
       </section>

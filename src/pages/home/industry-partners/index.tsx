@@ -34,7 +34,7 @@ class IndustryPartners extends React.Component {
             the teams with technology, access to data and interview partners.
           </p>
           <ul className="industry-partners__logos">
-            {partnerLogos.map(item => <li key={item} className="industry-partners__logo"> <img src={`/assets/home/industry-partners/${item}`} /> </li> )}
+            {partnerLogos.map(item => <li key={item} className="industry-partners__logo"> <img alt={`industry-partner-logo-${item}`} src={`/assets/home/industry-partners/${item}`} /> </li> )}
           </ul>
         </div>
       </div>
