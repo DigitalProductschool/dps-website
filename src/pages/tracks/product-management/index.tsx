@@ -6,7 +6,7 @@ import TrackImage from '../track-image/index';
 import WhatYouLearn from '../what-you-learn/index';
 import OfferResponsibilities from '../offer-responsibilities/index';
 import Expectations from '../expectations/index';
-import { or, header, expectations } from '../data/pm';
+import { or, header, expectations } from '../../../data/pm';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
