@@ -1,0 +1,24 @@
+.tracks__track-image {
+  background-color: #f2f2f2;
+}
+
+.tracks__track-image-content__image {
+  background-image: url('/assets/tracks/pm/header.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 0;
+  width: 80%;
+  padding-bottom: 30%;
+  margin-top: -8%;
+  box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 850px) {
+    width: 100%;
+    padding-bottom: 60%;
+  }
+}
+
+.tracks__track-image-content {
+  display: flex;
+  justify-content: center;
+}
