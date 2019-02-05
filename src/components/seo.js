@@ -50,6 +50,38 @@ function SEO({ description, lang, meta, keywords, title }) {
                 name: `twitter:description`,
                 content: metaDescription,
               },
+              {
+                name: `instagram:card`,
+                content: `summary`,
+              },
+              {
+                name: `instagram:creator`,
+                content: data.site.siteMetadata.author,
+              },
+              {
+                name: `instagram:title`,
+                content: title,
+              },
+              {
+                name: `instagram:description`,
+                content: metaDescription,
+              },
+              {
+                name: `facebook:card`,
+                content: `summary`,
+              },
+              {
+                name: `facebook:creator`,
+                content: data.site.siteMetadata.author,
+              },
+              {
+                name: `facebook:title`,
+                content: title,
+              },
+              {
+                name: `facebook:description`,
+                content: metaDescription,
+              },
             ]
               .concat(
                 keywords.length > 0

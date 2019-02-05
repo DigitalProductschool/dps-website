@@ -1,9 +1,12 @@
 import * as React from 'react';
+import Seo from '../../../components/seo';
+
 
 class LegalContent extends React.Component {
   render() {
     return (
       <section className="legal u-content-wrapper">
+        <Seo />
         <div className="legal__content u-content">
           <h1>IMPRINT</h1>
 

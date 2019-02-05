@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Seo from '../../../../components/seo';
+
 
 interface INavProps {
   addClass?: string;
@@ -13,6 +15,7 @@ class Nav extends React.Component <INavProps, {}>{
 
     return (
       <nav className={`nav ${addClass}`}>
+        <Seo />
         <div className={`nav__content u-content ${addClass}`}>
           <Link to="/">
             <img alt="nav-logo" className="nav__logo" src={`${logo}`} />

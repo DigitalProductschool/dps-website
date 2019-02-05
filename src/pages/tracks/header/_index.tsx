@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Nav from '../../shared/header/nav/index';
-import { string } from 'prop-types';
+import Seo from '../../../components/seo';
 
 interface IHeaderProps {
   logo?: string;
@@ -21,6 +21,7 @@ class Header extends React.Component<IHeaderProps, {}> {
 
     return (
       <React.Fragment>
+        <Seo />
         <section className={`tracks__header u-content-wrapper ${className}`}>
           <Nav logo={this.props.logo} />
           <div className="tracks__header-content u-content">

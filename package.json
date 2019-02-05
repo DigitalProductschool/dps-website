@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/react": "^16.8.1",
     "autoprefixer": "^9.4.5",
     "cssnano": "^4.1.8",
     "gatsby": "^2.0.76",

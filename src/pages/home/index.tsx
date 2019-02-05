@@ -16,7 +16,6 @@ import Footer from '../shared/footer/index';
 
 class Home extends React.Component {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
-
   render() {
     return (
       <React.Fragment>

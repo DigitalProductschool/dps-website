@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Digital Product School`,
+    description: `DPS is a 3 months training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products.`,
+    author: `@digitalproductschool`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
