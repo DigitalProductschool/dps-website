@@ -9,14 +9,16 @@ function SEO({ description, lang, meta, keywords, title }) {
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description
+          description || data.site.siteMetadata.description;
+        const titleAttr = title || data.site.siteMetadata.title;
         return (
           <Helmet
             htmlAttributes={{
               lang,
+              title: titleAttr,
             }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            title={titleAttr}
+            titleTemplate={`%s`}
             meta={[
               {
                 name: `description`,
@@ -24,7 +26,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:title`,
-                content: title,
+                content: titleAttr,
               },
               {
                 property: `og:description`,
@@ -44,7 +46,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:title`,
-                content: title,
+                content: titleAttr,
               },
               {
                 name: `twitter:description`,
@@ -60,7 +62,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `instagram:title`,
-                content: title,
+                content: titleAttr,
               },
               {
                 name: `instagram:description`,
@@ -76,7 +78,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `facebook:title`,
-                content: title,
+                content: titleAttr,
               },
               {
                 name: `facebook:description`,
@@ -110,7 +112,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

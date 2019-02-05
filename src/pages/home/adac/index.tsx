@@ -8,7 +8,7 @@ class Adac extends React.Component {
           <h3 className="u-title">DPS IN 7 MINUTES</h3>
           <div className="adac__content__desc">Our partner ADAC made a small documentary about DPS. Maybe you have 7 spare minutes to watch it. :-)</div>
           <div className="u-youtube">
-            <iframe src="https://www.youtube-nocookie.com/embed/OPjJJ6jMx5A?rel=0"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/OPjJJ6jMx5A?rel=0" title="video: ADAC about Digital Product School"></iframe>
           </div>
         </div>
       </section>

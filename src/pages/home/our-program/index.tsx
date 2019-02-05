@@ -53,7 +53,7 @@ class OurProgram extends React.Component {
           </ul>
 
           <a className="our-program__button u-button" href="/our-program">
-            Learn more
+            OUR PROGRAM
           </a>
         </div>
       </section>

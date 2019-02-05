@@ -32,7 +32,7 @@ class WhatsNew extends React.Component {
             <div className="item-3">
               <a href="https://www.youtube.com/watch?v=pVikgqTpulg" className="whats-new__content__tile u-link">
                 <div className="whats-new__content__tile__thumb u-youtube">
-                  <iframe src="https://www.youtube.com/embed/pVikgqTpulg?rel=0&amp;showinfo=0"></iframe>
+                  <iframe src="https://www.youtube.com/embed/pVikgqTpulg?rel=0&amp;showinfo=0" title="video: biergarden chat with Nathalie Nahai"></iframe>
                 </div>
                 <article>
                   <h4>Beergarden Chat with Nathalie Nahai</h4>
