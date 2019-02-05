@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "dps-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Digital Product School website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Digital Product School Core Team and Participants",
   "dependencies": {
     "@types/react": "^16.8.1",
     "autoprefixer": "^9.4.5",
