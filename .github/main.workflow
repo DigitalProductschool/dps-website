@@ -19,7 +19,7 @@ action "npm install" {
 action "npm build" {
   needs = ["npm install"]
   uses = "actions/npm@master"
-  args = "build run"
+  args = "run build"
 }
 
 action "Build Docker Image" {
