@@ -3,13 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "export NODE_ENV=DEVELOPMENT && forever stopall && forever --minUptime 1000 --spinSleepTime 1000 -c \"nodemon --exitcrash\" bin/www.js",
+    "watch:frontend": "cd ./frontend && yarn webpack:watch",
+    "watch:backend:ts": "yarn watch:ts",
+    "dev:backend": "export NODE_ENV=DEVELOPMENT && forever stopall && forever --minUptime 1000 --spinSleepTime 1000 -c \"nodemon --exitcrash\" bin/www.js",
+    "dev": "npm-run-all --parallel watch:frontend watch:backend:ts dev:backend",
     "prod": "export NODE_ENV=PRODUCTION && forever stopall && forever --minUptime 1000 --spinSleepTime 1000 -c \"nodemon --exitcrash\" bin/www.js",
     "transpile:ts": "tsc",
     "watch:ts": "tsc -w"
   },
   "dependencies": {
-    "webpack": "4.19.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
@@ -20,10 +22,12 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "webpack": "4.19.1"
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.1",
+    "yarn-run-all": "^3.1.1"
   }
 }

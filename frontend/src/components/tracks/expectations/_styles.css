@@ -1,0 +1,35 @@
+.expectations {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+
+  @media (max-width: 850px) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  } 
+}
+
+.expectations__title {
+  font-size: 36px;
+  text-transform: uppercase;
+
+  @media (max-width: 850px) {
+    font-size: 24px;
+  } 
+}
+
+.expectations__lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+  }
+
+  & ul {
+    margin: 0;
+  }
+}

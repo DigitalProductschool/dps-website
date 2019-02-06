@@ -27,10 +27,7 @@ Run `yarn install` in root and `yarn install` in `frontend/`
 
 # Development
 
-- Go to `frontend/` folder and run `yarn webpack:watch` to create a bundle on each change
-- Run typescript watcher via `yarn watch:ts` in root dir to transpile ts files under `src/` on each change
-- Start development server via `yarn dev` in root dir
-
+- Start development via `yarn dev` in root dir
 
 # Production
 

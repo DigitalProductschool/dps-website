@@ -8,6 +8,8 @@ import Legal from './components/legal/index';
 import Privacy from './components/privacy/index';
 import ScrollToNav from './utils/scroll-to-nav';
 import CookieWarning from './components/shared/cookie-warning';
+import TrackPM from './components/tracks/index-pm';
+
 
 export class App extends React.Component {
   render() {
@@ -20,6 +22,8 @@ export class App extends React.Component {
           <Route path="/apply" component={Apply} />
           <Route path="/legal-disclosure" component={Legal} />
           <Route path="/privacy-policy" component={Privacy} />
+          <Route path="/tracks/product-management" component={TrackPM}></Route>
+          <Route path="/tracks/product-management" component={TrackPM}></Route>
         </Switch>
       </ScrollToNav>
     );

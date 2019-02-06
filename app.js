@@ -40,6 +40,7 @@ app.use('/our-program', indexRouter);
 app.use('/apply', indexRouter);
 app.use('/legal-disclosure', indexRouter);
 app.use('/privacy-policy', indexRouter);
+app.use('/tracks/:trackId(product-management|software-engineering|interaction-design|artificial-intelligence)', indexRouter);
 
 
 // catch 404 and forward to error handler
