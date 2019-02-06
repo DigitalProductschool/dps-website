@@ -15,7 +15,7 @@ spec:
         imagePullPolicy: Always
         name: dpschool-pod
         ports:
-          - containerPort: 5000
+          - containerPort: 80
             name: http
             protocol: TCP
         readinessProbe:
