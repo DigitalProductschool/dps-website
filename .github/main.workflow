@@ -25,7 +25,7 @@ action "npm build" {
 action "Build Docker Image" {
   needs = ["npm build"]
   uses = "actions/docker/cli@master"
-  args = ["build", "-t", "dps-website", "./deployment"]
+  args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
 
