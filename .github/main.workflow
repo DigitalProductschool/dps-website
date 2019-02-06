@@ -5,15 +5,30 @@ workflow "Build and deploy" {
   ]
 }
 
-action "Build Docker Image" {
-  uses = "actions/docker/cli@master"
-  args = ["build", "-t", "dps-website", "./deployment"]
-}
-
 action "Setup Google Cloud" {
   uses = "actions/gcloud/auth@master"
   secrets = ["GCLOUD_AUTH"]
 }
+
+action "npm install" {
+  needs = ["Setup Google Cloud"]
+  uses = "actions/npm@master"
+  args = "install"
+}
+
+action "npm build" {
+  needs = ["npm install"]
+  uses = "actions/npm@master"
+  args = "build run"
+}
+
+action "Build Docker Image" {
+  needs = ["npm build"]
+  uses = "actions/docker/cli@master"
+  args = ["build", "-t", "dps-website", "./deployment"]
+}
+
+
 
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
