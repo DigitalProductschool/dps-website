@@ -94,7 +94,7 @@ action "Install test dependencies" {
 }
 
 action "Run End-to-end tests" {
-  needs = ["Install Test dependencies"]
+  needs = ["Install test dependencies"]
   uses = "actions/npm@master"
   env = {
     WEBSITE = "http://35.242.202.218"
