@@ -52,7 +52,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
             <li className="pick-track__track">
             <a
-              href="/tracks/interaction-designer"
+              href="/tracks/interaction-design"
             >
               <div className="pick-tracks__track__image-wrapper">
 
@@ -68,7 +68,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ixd u-button u-button--reversed"
-                href="/tracks/interaction-designer"
+                href="/tracks/interaction-design"
                 onMouseOver={() => this.setState({ active: 'ixd' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
