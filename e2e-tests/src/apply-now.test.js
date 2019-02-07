@@ -11,7 +11,7 @@ describe('Apply Buttons point to correct page:', function () {
   let page
 
   before(async function () {
-    browser = await puppeteer.launch()
+    browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
     page = await browser.newPage()
   })
 
