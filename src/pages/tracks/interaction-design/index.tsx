@@ -7,6 +7,8 @@ import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
 import { or, header, expectations } from '../../../data/ixd';
+import Apply from '../apply/_index';
+
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -26,22 +28,7 @@ class TrackIxD extends React.Component {
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ixd__wyl" />
-        <div
-          className="u-content"
-          style={{
-            display: "flex",
-            textAlign: "center",
-            justifyContent: "center",
-            marginTop: "200px",
-          }}
-        >
-          <a 
-            className="u-button u-button__apply u-button--reversed" 
-            href="https://utum.typeform.com/to/qkkFHF?role=ixd?ref=website&entry-point=track-page"
-          >
-            Apply Now
-          </a>
-        </div>
+        <Apply track="ixd" />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     )

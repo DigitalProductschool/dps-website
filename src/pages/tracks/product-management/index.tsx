@@ -7,6 +7,8 @@ import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
 import { or, header, expectations } from '../../../data/pm';
+import Apply from '../apply/_index';
+
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -38,6 +40,7 @@ class TrackPM extends React.Component {
             Apply Now
           </a>
         </div>
+        <Apply track="pm" />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     )

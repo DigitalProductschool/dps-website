@@ -10,8 +10,8 @@ function SEO({ description, lang, meta, keywords, title }) {
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description;
-        const titleAttr = title || data.site.siteMetadata.title;
+          description || data.site.siteMetadata.description
+        const titleAttr = title || data.site.siteMetadata.title
         return (
           <Helmet
             htmlAttributes={{
@@ -20,7 +20,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={titleAttr}
             titleTemplate={`%s`}
-            link={[ { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` } ]}
+            link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
+            ]}
             meta={[
               {
                 name: `description`,

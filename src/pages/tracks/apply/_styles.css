@@ -1,0 +1,21 @@
+@media (min-width: 620px) {
+    .tracks__apply-button {
+      width: auto;
+      padding: 0 30px;
+      margin-bottom: -50px;
+    }
+
+    .tracks__apply-button-wrapper {
+      margin-top: 100px;
+    }
+}
+
+.tracks__apply-button { 
+  margin-bottom: -30px;
+}
+
+.tracks__apply-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}

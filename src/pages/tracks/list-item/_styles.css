@@ -8,6 +8,7 @@
 .hash-list-item__hash {
   font-size: 48px;
   margin-right: 20px;
+  font-weight: 600;
   color: rgba(37, 37, 37, 0.25);
   
   @media (max-width: 850px) {

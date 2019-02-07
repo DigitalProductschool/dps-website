@@ -44,6 +44,8 @@
 @import url('./pages/tracks/interaction-design/_styles.css');
 @import url('./pages/tracks/software-engineering/_styles.css');
 @import url('./pages/tracks/artificial-intelligence/_styles.css');
+@import url('./pages/tracks/apply/_styles.css');
+
 
 html, body, #app {
   font-family: Montserrat;
