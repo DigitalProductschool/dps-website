@@ -6,12 +6,12 @@ workflow "Build and deploy" {
 }
 
 action "Setup Google Cloud" {
+  needs = ["Build Docker Image"]
   uses = "actions/gcloud/auth@master"
   secrets = ["GCLOUD_AUTH"]
 }
 
 action "npm install" {
-  needs = ["Setup Google Cloud"]
   uses = "actions/npm@master"
   args = "install"
 }
@@ -27,8 +27,6 @@ action "Build Docker Image" {
   uses = "actions/docker/cli@master"
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
-
-
 
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
