@@ -12,7 +12,7 @@ export default (props: { className: string }) => {
               WHAT YOU LEARN
               </h1>
             <h3 className="wyl-content__subtitle">
-              If you don"t have any experience as a product manager - it"s fine! At DPS you will experience what it means to be a PM in the digital life!
+              If you do not have any experience as a product manager - it is fine! At DPS you will experience what it means to be a PM in the digital life!
               </h3>
             <div className="wyl-content__info__description-box">
               <div className="wyl-content__info__description-box__text">
