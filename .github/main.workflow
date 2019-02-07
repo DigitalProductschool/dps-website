@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Verify GKE deployment"
+    "Run End-to-end tests"
   ]
 }
 
