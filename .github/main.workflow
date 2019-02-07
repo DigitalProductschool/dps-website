@@ -6,7 +6,7 @@ workflow "Build and deploy" {
 }
 
 action "Setup Google Cloud" {
-  needs = ["Build Docker Image"]
+  needs = ["Tag image for GCR"]
   uses = "actions/gcloud/auth@master"
   secrets = ["GCLOUD_AUTH"]
 }
@@ -28,9 +28,16 @@ action "Build Docker Image" {
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
+# Deploy Filter
+action "Deploy branch filter" {
+  needs = ["Build Docker Image"]
+  uses = "actions/bin/filter@master"
+  args = "branch staging"
+}
+
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
-  needs = ["Setup Google Cloud", "Build Docker Image"]
+  needs = [ "Build Docker Image", "Deploy branch filter"]
   env = {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
