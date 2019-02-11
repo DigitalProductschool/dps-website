@@ -28,16 +28,12 @@ action "Build Docker Image" {
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
-<<<<<<< HEAD
-# Deploy Filter
 action "Deploy branch filter" {
   needs = ["Build Docker Image"]
   uses = "actions/bin/filter@master"
   args = "branch staging"
 }
 
-=======
->>>>>>> e2e_tests
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
   needs = [ "Build Docker Image", "Deploy branch filter"]
