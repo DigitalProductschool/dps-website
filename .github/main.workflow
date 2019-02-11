@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Verify GKE deployment"
+    "Run End-to-end tests"
   ]
 }
 
@@ -19,7 +19,7 @@ action "npm install" {
 action "npm build" {
   needs = ["npm install"]
   uses = "actions/npm@master"
-  args = "run build && ls -al"
+  args = "run build"
 }
 
 action "Build Docker Image" {
@@ -28,6 +28,7 @@ action "Build Docker Image" {
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
+<<<<<<< HEAD
 # Deploy Filter
 action "Deploy branch filter" {
   needs = ["Build Docker Image"]
@@ -35,6 +36,8 @@ action "Deploy branch filter" {
   args = "branch staging"
 }
 
+=======
+>>>>>>> e2e_tests
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
   needs = [ "Build Docker Image", "Deploy branch filter"]
@@ -73,7 +76,6 @@ action "Load GKE kube credentials" {
   args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID"
 }
 
-# TODO Add Action to start GitHub Deploy
 action "Deploy to GKE" {
   needs = ["Push image to GCR", "Load GKE kube credentials"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
@@ -93,4 +95,19 @@ action "Verify GKE deployment" {
     DEPLOYMENT_NAME = "dpschool-deployment"
   }
   args = "rollout status deployment/dpschool-deployment"
+}
+
+action "Install test dependencies" {
+  needs = ["Verify GKE deployment"]
+  uses = "actions/npm@master"
+  args = "install --prefix e2e-tests"
+}
+
+action "Run End-to-end tests" {
+  needs = ["Install test dependencies"]
+  uses = "actions/npm@master"
+  env = {
+    WEBSITE = "http://35.242.202.218"
+  }
+  args = "test --prefix e2e-tests"
 }
