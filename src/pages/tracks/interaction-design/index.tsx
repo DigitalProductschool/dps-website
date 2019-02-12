@@ -24,7 +24,7 @@ class TrackIxD extends React.Component {
           className='track-ixd__header'
           logo="/assets/tracks/dps-logo-white.png" 
         />
-        <TrackImage />
+        <TrackImage track="ixd" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ixd__wyl" data={whatyoulearn} />

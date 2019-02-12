@@ -20,7 +20,7 @@ class TrackPM extends React.Component {
     return (
       <React.Fragment>
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-pm__header" />
-        <TrackImage />
+        <TrackImage track="pm" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-pm__wyl" data={whatyoulearn} />

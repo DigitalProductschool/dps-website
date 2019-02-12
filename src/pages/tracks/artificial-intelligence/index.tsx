@@ -19,7 +19,7 @@ class TrackAI extends React.Component {
     return (
       <React.Fragment>
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-ai__header" />
-        <TrackImage />
+        <TrackImage track="ai" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ai__wyl" data={whatyoulearn} />

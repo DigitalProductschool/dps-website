@@ -20,7 +20,7 @@ class TrackSE extends React.Component {
     return (
       <React.Fragment>
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-se__header" />
-        <TrackImage />
+        <TrackImage track="se" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-se__wyl" data={whatyoulearn} />

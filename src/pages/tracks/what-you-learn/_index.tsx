@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default (props: { className: string, data: { firstColumn: string, secondColumn: string, subtitle: string, track: 'pm' | 'se' | 'ixd' | 'ai' } }) => {
+export default (props: { className: string, data: { firstColumn: string, secondColumn: string, subtitle: string, track: string } }) => {
   const imageClassName = `wyl-content__info__description-box__image--${props.data.track}`
   return (
     <div>
