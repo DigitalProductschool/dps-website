@@ -41,12 +41,36 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: `website`,
               },
               {
+                property: `og:image`,
+                content: `https://digitalproductschool.io/assets/shared/dps.png`,
+              },
+              {
+                property: `og:image:type`,
+                content: `image/jpeg`,
+              },
+              {
+                property: `og:image:width`,
+                content: `1200`,
+              },
+              {
+                property: `og:image:height`,
+                content: `630`,
+              },
+              {
+                property: `og:image:alt`,
+                content: `Apply now for DPS and become an experienced digital product maker!`
+              },
+              {
                 name: `twitter:card`,
                 content: `summary`,
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
+                content: `@dpschool_io`,
+              },
+              {
+                name: `twitter:site`,
+                content: `@dpschool_io`,
               },
               {
                 name: `twitter:title`,
@@ -65,6 +89,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: data.site.siteMetadata.author,
               },
               {
+                name: `instagram:site`,
+                content: data.site.siteMetadata.author,
+              },
+              {
                 name: `instagram:title`,
                 content: titleAttr,
               },
@@ -78,6 +106,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `facebook:creator`,
+                content: data.site.siteMetadata.author,
+              },
+              {
+                name: `facebook:site`,
                 content: data.site.siteMetadata.author,
               },
               {
