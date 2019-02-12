@@ -6,7 +6,7 @@ import TrackImage from '../track-image/_index';
 import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
-import { or, header, expectations } from '../../../data/ixd';
+import { or, header, expectations, whatyoulearn } from '../../../data/ixd';
 import Apply from '../apply/_index';
 
 
@@ -27,7 +27,7 @@ class TrackIxD extends React.Component {
         <TrackImage />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-ixd__wyl" />
+        <WhatYouLearn className="track-ixd__wyl" data={whatyoulearn} />
         <Apply track="ixd" />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>

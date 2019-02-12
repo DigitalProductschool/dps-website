@@ -31,3 +31,11 @@ export const expectations = {
     'You are interested in interdisciplanry collaboration and want to learn from other fields',
   ]
 }
+
+export const whatyoulearn = {
+  subtitle: 'You will work in  a interdisciplinary team for three months and build a digital product together with our industry partners.',
+  firstColumn: 'To enrich that experience, the DPS teams are not only solving problems through creating digital products – they also extend their professional knowledge and skills in workshops hold by domain experts from all over the world.',
+  secondColumn: 'During the whole Program the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.',
+  track: 'ixd',
+  
+}

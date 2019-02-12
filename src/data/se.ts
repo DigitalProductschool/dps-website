@@ -34,3 +34,10 @@ export const expectations = {
     'We ❤ them all: frontend-, mobile- or backend developers',
   ],
 }
+
+export const whatyoulearn = {
+  subtitle: 'At DPS you will learn how a state-of-the-art tech start-up builds and continously improves its digital product.',
+  firstColumn: 'You will get in touch with diverse software engineering tools like React and Typescript. Learn about lean and rapid mobile and web application development. You will get in touch with different software testing strategies.',
+  secondColumn: 'You will learn how to build an environment to have a continous delivery of your code and to have an integrated versioning system. You will gain basic understandment of cyber security threads.',
+  track: 'se',
+}

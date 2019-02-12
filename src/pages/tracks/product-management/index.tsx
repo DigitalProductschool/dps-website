@@ -6,7 +6,7 @@ import TrackImage from '../track-image/_index';
 import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
-import { or, header, expectations } from '../../../data/pm';
+import { or, header, expectations, whatyoulearn } from '../../../data/pm';
 import Apply from '../apply/_index';
 
 
@@ -23,7 +23,7 @@ class TrackPM extends React.Component {
         <TrackImage />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-pm__wyl" />
+        <WhatYouLearn className="track-pm__wyl" data={whatyoulearn} />
         <div
           className="u-content"
           style={{

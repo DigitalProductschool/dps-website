@@ -32,3 +32,18 @@ export const expectations = {
     'As a bonus hands-on experience with Deep Learning stuff would be fine :-)',
   ],
 }
+
+export const whatyoulearn = {
+  subtitle: 'At DPS you will learn how a state-of-the-art tech start-up builds and continuously improves its digital product.',
+  firstColumn: 'Tech leadership for AI solutions proof of concept, AI proposals that show the great potential of data-driven applications & Domain expert research and tech feasibility test.',
+  secondColumn: 'Full-stack integration of development of AI solutions and algorithms & Project requirement and roadmap documentation.',
+  track: 'ai'
+}
+
+
+
+
+
+
+
+

@@ -38,4 +38,9 @@ export const expectations = {
   ],
 }
 
-// TODO: Create data const for what you learn section
+export const whatyoulearn = {
+  subtitle: 'If you don not have any experience as a product manager - it is fine! At DPS you will experience what it means to be a PM in the digital life!',
+  firstColumn: 'To enrich that experience, the DPS teams are not only solving problems through creating digital products – they also extend their professional knowledge and skills in workshops hold by domain experts from all over the world.',
+  secondColumn: 'During the whole Program the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.',
+  track: 'pm',
+}
