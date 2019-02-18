@@ -19,7 +19,8 @@ export const or = {
 export const header = {
   title: 'AI Engineer',
   description1: 'Artificial Intelligence (AI) Engineers use algorithms to identify the hidden data structures and dependencies towards building self-learning systems for automatic information extraction. Their contributions enable mimicking our cognitive tasks and solving the user problems with intelligent solutions.',
-  description2: 'As an AI Engineer, you will use data science, machine learning, and engineering to develop pioneering proof-of-concept based on AI that will be the backbone of the next generation of products and services and integrate human-machine cooperation.'
+  description2: 'As an AI Engineer, you will use data science, machine learning, and engineering to develop pioneering proof-of-concept based on AI that will be the backbone of the next generation of products and services and integrate human-machine cooperation.',
+  track: 'ai',
 }
 
 export const expectations = {

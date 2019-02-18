@@ -36,7 +36,7 @@ export default (props: { track: "pm" | "ai" | "se" | "ixd" }) => {
     <div className="tracks__apply-button-wrapper">
       <a
         className="u-button u-button__apply u-button--reversed tracks__apply-button" 
-        href={`https://utum.typeform.com/to/qkkFHF?role=${props.track}&ref=website&entry-point=track-page`}
+        href={`https://utum.typeform.com/to/qkkFHF?role=${props.track}&ref=website&entry-point=track-page-bottom`}
       >
         Apply as {trackName}
       </a>

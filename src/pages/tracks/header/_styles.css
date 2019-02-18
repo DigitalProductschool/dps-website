@@ -38,3 +38,20 @@
     font-size: 20px;
   }
 }
+
+.tracks-header__apply-button-wrapper {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tracks-header__apply-button {
+  margin-bottom: -30px;
+  background: transparent;
+  border-color: white;
+  color: white;
+  @media (min-width: 620px) {
+    width: auto;
+    padding: 0 30px;
+  }
+}

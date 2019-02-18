@@ -42,7 +42,7 @@
 
   &:hover {
     background-color: black;
-    color: var(--cerulean);
+    color: var(--picton-blue);
     border: 4px solid black;
   }
 
@@ -120,7 +120,7 @@ h3.u-title {
     right: 0;
     height: 11px;
     top: 2px;
-    color: var(--cerulean);
+    color: var(--picton-blue);
     content: "";
     display: inline-block;
     z-index: -1;
@@ -133,7 +133,7 @@ h3.u-title {
     height: 11px;
     top: 2px;
     background-color: rgba(3, 184, 229);
-    color: var(--cerulean);
+    color: var(--picton-blue);
     content: "";
     display: inline-block;
   }
@@ -145,7 +145,7 @@ h3.u-title {
     height: 5px;
     bottom: 1px;
     background-color: rgba(3, 184, 229);
-    color: var(--cerulean);
+    color: var(--picton-blue);
     content: "";
     display: inline-block;
     z-index: -1;
