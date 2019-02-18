@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School',
     'Collaboration with local start-ups, industry leaders, researchers and technology',
     'A modern workplace in the rooms of Design Offices Munich, which was designed and build especially for the needs of DPS to work in a creative and inspiring surrounding',
-    'Grants (750 EUR per month)'
+    'Grants (750 EUR per month',
   ],
   responsibilities: [
     'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
@@ -18,8 +18,10 @@ export const or = {
 
 export const header = {
   title: 'Product Manager',
-  description1: 'The Product Manager (PM) makes sure that the team shares a vision regarding the problem to be solved. This starts with identifying possible target groups and driving the problem interviews. PMs are responsible for the product\'s progress, but also ensure that the major risks have been eliminated before the engineers start building it – through lean experiments and excessive usability testing.',
-  description2: 'In our agile product development team you work at the intersection between business and technology to provide the best user experience – in close collaboration with designers and engineers. Together you envision the product, which requires you to research your customers and the problems they have that you’re trying to solve. During the project you will define and iterate the product as you go, solve problems as they pop up and closely manage scope so you can get the right product out on time.'
+  description1: '»A great product manager has the brain of an engineer, the heart of a designer, and the speech of a diplomat.« – Deep Nishar.',
+  description2: 'The Product Manager (PM) makes sure that the team shares a vision regarding the problem to be solved. This starts with identifying possible target groups and driving the problem interviews. PMs are responsible for the product is progress, but also ensure that the major risks have been eliminated before the engineers start building it – through lean experiments and excessive usability testing.',
+  description3: 'In our agile product development team you work at the intersection between business and technology to provide the best user experience – in close collaboration with designers and engineers.',
+  description4: 'Together you envision the product, which requires you to research your customers and the problems they have that you’re trying to solve. During the project you will define and iterate the product as you go, solve problems as they pop up and closely manage scope so you can get the right product out on time.'
 }
 
 export const expectations = {

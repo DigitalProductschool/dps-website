@@ -10,6 +10,8 @@ interface IHeaderProps {
     title: string;
     description1: string;
     description2: string;
+    description3?: string;
+    description4?: string;
   }
 }
 
@@ -34,6 +36,16 @@ class Header extends React.Component<IHeaderProps, {}> {
             <p className="tracks__header-content__description">
               {data.description2}
             </p>
+            {data.description3 && (
+                <p className="tracks__header-content__description">
+                {data.description3}
+              </p>
+            )}
+            {data.description4 && (
+                <p className="tracks__header-content__description">
+                {data.description4}
+              </p>
+            )}
           </div>
         </section>
       </React.Fragment>
