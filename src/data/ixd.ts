@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
     'Collaboration with local start-ups, industry leaders, researchers and technology.',
     'A modern workplace in the rooms of Design Offices Munich, which was designed and build especially for the needs of DPS to work in a creative and inspiring surrounding.',
-    'Grants (750 EUR per month)'
+    'Grants: 750 EUR per month'
   ],
   responsibilities: [
     'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
