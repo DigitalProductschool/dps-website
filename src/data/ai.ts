@@ -35,9 +35,9 @@ export const expectations = {
 }
 
 export const whatyoulearn = {
-  subtitle: 'At DPS you will learn how a state-of-the-art tech start-up builds and continuously improves its digital product.',
-  firstColumn: 'Tech leadership for AI solutions proof of concept, AI proposals that show the great potential of data-driven applications & Domain expert research and tech feasibility test.',
-  secondColumn: 'Full-stack integration of development of AI solutions and algorithms & Project requirement and roadmap documentation.',
+  subtitle: 'The AI track of Digital Product School focuses on tech leadership for AI solutions proof of concept and AI proposals that show the great potential of data-driven applications.',
+  firstColumn: 'The participants also do domain expert research and tech feasibility tests.',
+  secondColumn: 'You will build a full-stack integration for deployment of AI and outline the project requirement documentation.',
   track: 'ai'
 }
 
