@@ -37,8 +37,8 @@ export const expectations = {
 }
 
 export const whatyoulearn = {
-  subtitle: 'At DPS you will learn how a state-of-the-art tech start-up builds and continously improves its digital product.',
-  firstColumn: 'You will get in touch with diverse software engineering tools like React and Typescript. Learn about lean and rapid mobile and web application development. You will get in touch with different software testing strategies.',
-  secondColumn: 'You will learn how to build an environment to have a continous delivery of your code and to have an integrated versioning system. You will gain basic understandment of cyber security threads.',
+  subtitle: 'At Digital Product School, you will get in touch with diverse software engineering tools like React and Typescript and you will learn a lot about rapid mobile and web application development.',
+  firstColumn: 'You also will build an environment to have a continuous delivery of your code and to have an integrated versioning system.',
+  secondColumn: 'In addition to that, we attach importance to software testing and to work out different strategies to do that. Last but not least cybersecurity is a big topic: how to discover potential threats and gain a basic understanding of how to avert them.',
   track: 'se',
 }
