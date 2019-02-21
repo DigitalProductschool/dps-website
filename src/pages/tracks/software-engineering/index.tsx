@@ -8,6 +8,7 @@ import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
 import { or, header, expectations, whatyoulearn } from '../../../data/se';
 import Apply from '../apply/_index';
+import CookieWarning from '../../shared/cookie-warning';
 
 
 /**
@@ -19,6 +20,7 @@ class TrackSE extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-se__header" />
         <TrackImage track="se" />
         <OfferResponsibilities data={or} />

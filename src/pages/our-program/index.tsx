@@ -9,12 +9,14 @@ import OurApproach from './our-approach/index'
 import WhoShouldApply from './who-should-apply/index'
 import PickTrack from '../shared/pick-track/index'
 import Footer from '../shared/footer/index'
+import CookieWarning from '../shared/cookie-warning';
 
 class Program extends React.Component {
 
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header />
         <TakeOpportunity />
         <ExperienceConcentrate />
