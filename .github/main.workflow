@@ -77,8 +77,9 @@ action "Set Google Cloud Defaults" {
   env = {
     PROJECT_ID = "core-228912"
     COMPUTE_ZONE = "europe-west3-a"
+    CLUSTER_NAME = "the-shire"
   }
-  args = "config set project $PROJECT_ID && gcloud config set compute/zone $COMPUTE_ZONE"
+  args = "config set project $PROJECT_ID && gcloud config set compute/zone $COMPUTE_ZONE && gcloud config set container/cluster $CLUSTER_NAME"
 }
 
 action "Deploy to GKE" {
