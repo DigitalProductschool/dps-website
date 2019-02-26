@@ -85,7 +85,7 @@ action "Deploy to GKE" {
 
 action "Verify GKE deployment" {
   needs = ["Deploy to GKE", "Load GKE kube credentials"]
-  uses = "docker://gcr.io/cloud-builders/kubectl"
+  uses = "docker://gcr.io/cloud-builders/kubectl@sha256:3b922178c7463684f7ad8941437687590a96a91e898e51c7afd0d67bb0f0d4c8"
   env = {
     DEPLOYMENT_NAME = "dpschool-deployment"
     CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
