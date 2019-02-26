@@ -68,7 +68,7 @@ action "Load GKE kube credentials" {
     PROJECT_ID = "core-228912"
     CLUSTER_NAME = "the-shire"
   }
-  args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID"
+  args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID && gcloud config set project $PROJECT_ID"
 }
 
 action "Deploy to GKE" {
@@ -84,12 +84,13 @@ action "Deploy to GKE" {
 }
 
 action "Verify GKE deployment" {
-  needs = ["Deploy to GKE", "Load GKE kube credentials"]
-  uses = "docker://gcr.io/cloud-builders/kubectl@sha256:3b922178c7463684f7ad8941437687590a96a91e898e51c7afd0d67bb0f0d4c8"
+  needs = ["Deploy to GKE"]
+  uses = "docker://gcr.io/cloud-builders/kubectl"
   env = {
     DEPLOYMENT_NAME = "dpschool-deployment"
     CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
     CLOUDSDK_CONTAINER_CLUSTER = "the-shire"
+    project = "core-228912"
   }
   args = "rollout status deployment/$DEPLOYMENT_NAME"
 }
