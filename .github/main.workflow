@@ -97,11 +97,6 @@ action "Deploy to GKE" {
 action "Verify GKE deployment" {
   needs = ["Deploy to GKE"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
-  env = {
-    DEPLOYMENT_NAME = "dpschool-deployment"
-    CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
-    CLOUDSDK_CONTAINER_CLUSTER = "the-shire"
-  }
   args = "rollout status deployment/dpschool-deployment"
 }
 
