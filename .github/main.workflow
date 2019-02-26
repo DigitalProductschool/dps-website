@@ -77,7 +77,7 @@ action "Set Google Cloud Defaults" {
   env = {
     PROJECT_ID = "core-228912"
   }
-  args = "gcloud config set project $PROJECT_ID"
+  args = "config set project $PROJECT_ID"
 }
 
 action "Deploy to GKE" {
