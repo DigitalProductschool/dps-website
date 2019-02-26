@@ -93,7 +93,7 @@ action "Verify GKE deployment" {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
   }
-  args = "rollout status deployment/dpschool-deployment"
+  args = "rollout status deployment/dpschool-deployment --project $PROJECT_ID"
 }
 
 action "Install test dependencies" {
