@@ -12,6 +12,7 @@ import IndustryPartners from './industry-partners';
 import WhatsNew from './whats-new';
 import PickTrack from '../shared/pick-track';
 import Footer from '../shared/footer/index';
+import CookieWarning from '../shared/cookie-warning';
 
 
 class Home extends React.Component {
@@ -19,6 +20,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header onContentButtonClick={() => this.forwardedRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} />
         <Pitch forwardedRef={this.forwardedRef} />
         <DiverseTeams />

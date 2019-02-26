@@ -1,10 +1,11 @@
 import * as React from 'react';
 
-export default () => {
+export default (props: { track: 'pm' | 'se' | 'ai' | 'ixd' }) => {
+  const imageClassName = `tracks__track-image-content__image--${props.track}`
   return (
     <div className="tracks__track-image u-content-wrapper">
       <div className="tracks__track-image-content u-content">
-        <div className="tracks__track-image-content__image"></div>
+        <div className={`tracks__track-image-content__image ${imageClassName}`}></div>
       </div>
     </div>
   );

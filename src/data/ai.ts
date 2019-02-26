@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School',
     'Collaboration with the best international start-ups, industry leaders, researchers and technology',
     'A modern workplace in the rooms of Design Offices Munich, which was designed and build especially for the needs of DPS to work in an creative and inspiring surrounding.',
-    'Grants (750 EUR per month)'
+    'Grants: 750 EUR per month'
   ],
   responsibilities: [
     'Driving the product development by AI problem formulations and data-driven applications based on audio, video, text and other sensory data collections',
@@ -19,7 +19,8 @@ export const or = {
 export const header = {
   title: 'AI Engineer',
   description1: 'Artificial Intelligence (AI) Engineers use algorithms to identify the hidden data structures and dependencies towards building self-learning systems for automatic information extraction. Their contributions enable mimicking our cognitive tasks and solving the user problems with intelligent solutions.',
-  description2: 'As an AI Engineer, you will use data science, machine learning, and engineering to develop pioneering proof-of-concept based on AI that will be the backbone of the next generation of products and services and integrate human-machine cooperation.'
+  description2: 'As an AI Engineer, you will use data science, machine learning, and engineering to develop pioneering proof-of-concept based on AI that will be the backbone of the next generation of products and services and integrate human-machine cooperation.',
+  track: 'ai',
 }
 
 export const expectations = {
@@ -32,3 +33,18 @@ export const expectations = {
     'As a bonus hands-on experience with Deep Learning stuff would be fine :-)',
   ],
 }
+
+export const whatyoulearn = {
+  subtitle: 'The AI track of Digital Product School focuses on tech leadership for AI solutions proof of concept and AI proposals that show the great potential of data-driven applications.',
+  firstColumn: 'The participants also do domain expert research and tech feasibility tests.',
+  secondColumn: 'You will build a full-stack integration for deployment of AI and outline the project requirement documentation.',
+  track: 'ai'
+}
+
+
+
+
+
+
+
+

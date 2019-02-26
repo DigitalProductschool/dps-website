@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Verify GKE deployment"
+    "Run End-to-end tests",
   ]
 }
 
@@ -19,7 +19,7 @@ action "npm install" {
 action "npm build" {
   needs = ["npm install"]
   uses = "actions/npm@master"
-  args = "run build && ls -al"
+  args = "run build"
 }
 
 action "Build Docker Image" {
@@ -28,7 +28,6 @@ action "Build Docker Image" {
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
-# Deploy Filter
 action "Deploy branch filter" {
   needs = ["Build Docker Image"]
   uses = "actions/bin/filter@master"
@@ -37,7 +36,7 @@ action "Deploy branch filter" {
 
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
-  needs = [ "Build Docker Image", "Deploy branch filter"]
+  needs = ["Build Docker Image", "Deploy branch filter"]
   env = {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
@@ -50,7 +49,6 @@ action "Set Credential Helper for Docker" {
   uses = "actions/gcloud/cli@master"
   args = ["auth", "configure-docker", "--quiet"]
 }
-
 
 action "Push image to GCR" {
   needs = ["Setup Google Cloud", "Set Credential Helper for Docker", "Tag image for GCR"]
@@ -73,9 +71,19 @@ action "Load GKE kube credentials" {
   args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID"
 }
 
-# TODO Add Action to start GitHub Deploy
+action "Set Google Cloud Defaults" {
+  needs = ["Load GKE kube credentials"]
+  uses = "actions/gcloud/cli@master"
+  env = {
+    PROJECT_ID = "core-228912"
+    COMPUTE_ZONE = "europe-west3-a"
+    CLUSTER_NAME = "the-shire"
+  }
+  args = "config set project $PROJECT_ID && gcloud config set compute/zone $COMPUTE_ZONE && gcloud config set container/cluster $CLUSTER_NAME"
+}
+
 action "Deploy to GKE" {
-  needs = ["Push image to GCR", "Load GKE kube credentials"]
+  needs = ["Push image to GCR", "Set Google Cloud Defaults"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
   env = {
     PROJECT_ID = "core-228912"
@@ -89,8 +97,20 @@ action "Deploy to GKE" {
 action "Verify GKE deployment" {
   needs = ["Deploy to GKE"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
-  env = {
-    DEPLOYMENT_NAME = "dpschool-deployment"
-  }
   args = "rollout status deployment/dpschool-deployment"
+}
+
+action "Install test dependencies" {
+  needs = ["Verify GKE deployment"]
+  uses = "actions/npm@master"
+  args = "install --prefix e2e-tests"
+}
+
+action "Run End-to-end tests" {
+  needs = ["Install test dependencies"]
+  uses = "actions/npm@master"
+  env = {
+    WEBSITE = "http://35.242.202.218"
+  }
+  args = "test --prefix e2e-tests"
 }

@@ -7,7 +7,8 @@ import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
 import Apply from '../apply/_index';
-import { or, header, expectations } from '../../../data/ai';
+import { or, header, expectations, whatyoulearn } from '../../../data/ai';
+import CookieWarning from '../../shared/cookie-warning';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -18,11 +19,12 @@ class TrackAI extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-ai__header" />
-        <TrackImage />
+        <TrackImage track="ai" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-ai__wyl" />
+        <WhatYouLearn className="track-ai__wyl" data={whatyoulearn} />
         <Apply track="ai" />
         <Footer addSectionClass="u-section-margin-top " />
       </React.Fragment>

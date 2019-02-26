@@ -74,8 +74,8 @@
 
   &--pm {
     &:hover {
-      color: var(--cerulean);
-      border-color: var(--cerulean);
+      color: var(--picton-blue);
+      border-color: var(--picton-blue);
     }
   }
 

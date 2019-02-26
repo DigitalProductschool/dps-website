@@ -56,7 +56,22 @@
 }
 
 .wyl-content__info__description-box__image {
-  background-image: url('/assets/tracks/what-you-learn.jpg');
+  &--pm {
+    background-image: url('/assets/tracks/pm/what-you-learn.jpg');
+  }
+
+  &--se {
+    background-image: url('/assets/tracks/se/what-you-learn.jpg');
+  }
+
+  &--ixd {
+    background-image: url('/assets/tracks/ixd/what-you-learn.jpg');
+  }
+
+  &--ai {
+    background-image: url('/assets/tracks/ai/what-you-learn.jpg');
+  }
+
   background-size: cover;
   background-position: center center;    
   width: 100%;

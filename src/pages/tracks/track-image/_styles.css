@@ -3,7 +3,23 @@
 }
 
 .tracks__track-image-content__image {
-  background-image: url('/assets/tracks/pm/header.jpg');
+
+  &--se {
+    background-image: url('/assets/tracks/se/header.jpg');
+  }
+
+  &--pm {
+    background-image: url('/assets/tracks/pm/header.jpg');
+  }
+
+  &--ixd {
+    background-image: url('/assets/tracks/ixd/header.jpg');
+  }
+
+  &--ai {
+    background-image: url('/assets/tracks/ai/header.jpg');
+  }
+  
   background-size: cover;
   background-position: center center;
   height: 0;

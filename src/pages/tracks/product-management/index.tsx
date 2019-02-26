@@ -6,8 +6,9 @@ import TrackImage from '../track-image/_index';
 import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
-import { or, header, expectations } from '../../../data/pm';
+import { or, header, expectations, whatyoulearn } from '../../../data/pm';
 import Apply from '../apply/_index';
+import CookieWarning from '../../shared/cookie-warning';
 
 
 /**
@@ -19,27 +20,12 @@ class TrackPM extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-pm__header" />
-        <TrackImage />
+        <TrackImage track="pm" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-pm__wyl" />
-        <div
-          className="u-content"
-          style={{
-            display: "flex",
-            textAlign: "center",
-            justifyContent: "center",
-            marginTop: "200px",
-          }}
-        >
-          <a 
-            className="u-button u-button__apply u-button--reversed" 
-            href="https://utum.typeform.com/to/qkkFHF?role=pm?ref=website&entry-point=track-page"
-          >
-            Apply Now
-          </a>
-        </div>
+        <WhatYouLearn className="track-pm__wyl" data={whatyoulearn} />
         <Apply track="pm" />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>

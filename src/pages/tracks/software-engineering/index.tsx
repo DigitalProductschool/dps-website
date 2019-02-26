@@ -6,8 +6,9 @@ import TrackImage from '../track-image/_index';
 import WhatYouLearn from '../what-you-learn/_index';
 import OfferResponsibilities from '../offer-responsibilities/_index';
 import Expectations from '../expectations/_index';
-import { or, header, expectations } from '../../../data/se';
+import { or, header, expectations, whatyoulearn } from '../../../data/se';
 import Apply from '../apply/_index';
+import CookieWarning from '../../shared/cookie-warning';
 
 
 /**
@@ -19,11 +20,12 @@ class TrackSE extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <CookieWarning />
         <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-se__header" />
-        <TrackImage />
+        <TrackImage track="se" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-se__wyl" />
+        <WhatYouLearn className="track-se__wyl" data={whatyoulearn} />
         <Apply track="se" />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>

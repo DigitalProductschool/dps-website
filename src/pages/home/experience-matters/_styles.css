@@ -102,11 +102,7 @@
     opacity: 1;
     transition: opacity 0.3s;
 
-    &:hover {
-      opacity: 0.5;
-    }
-
-    & > a > img {
+    & > img {
       width: 150px;
     }
   }
