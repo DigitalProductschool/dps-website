@@ -91,7 +91,7 @@ action "Verify GKE deployment" {
     CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
     CLOUDSDK_CONTAINER_CLUSTER = "the-shire"
   }
-  args = ["rollout status deployment/$DEPLOYMENT_NAME"]
+  args = "rollout status deployment/dpschool-deployment"
 }
 
 action "Install test dependencies" {
