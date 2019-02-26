@@ -68,11 +68,20 @@ action "Load GKE kube credentials" {
     PROJECT_ID = "core-228912"
     CLUSTER_NAME = "the-shire"
   }
-  args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID && gcloud config set project $PROJECT_ID"
+  args = "container clusters get-credentials $CLUSTER_NAME --zone europe-west3-a --project $PROJECT_ID"
+}
+
+action "Set Google Cloud Defaults" {
+  needs = ["Load GKE kube credentials"]
+  uses = "actions/gcloud/cli@master"
+  env = {
+    PROJECT_ID = "core-228912"
+  }
+  args = "gcloud config set project $PROJECT_ID"
 }
 
 action "Deploy to GKE" {
-  needs = ["Push image to GCR", "Load GKE kube credentials"]
+  needs = ["Push image to GCR", "Set Google Cloud Defaults"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
   env = {
     PROJECT_ID = "core-228912"
