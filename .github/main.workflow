@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Run End-to-end tests"
+    "Run End-to-end tests",
   ]
 }
 
@@ -36,7 +36,7 @@ action "Deploy branch filter" {
 
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
-  needs = [ "Build Docker Image", "Deploy branch filter"]
+  needs = ["Build Docker Image", "Deploy branch filter"]
   env = {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
@@ -49,7 +49,6 @@ action "Set Credential Helper for Docker" {
   uses = "actions/gcloud/cli@master"
   args = ["auth", "configure-docker", "--quiet"]
 }
-
 
 action "Push image to GCR" {
   needs = ["Setup Google Cloud", "Set Credential Helper for Docker", "Tag image for GCR"]
@@ -89,6 +88,8 @@ action "Verify GKE deployment" {
   uses = "docker://gcr.io/cloud-builders/kubectl"
   env = {
     DEPLOYMENT_NAME = "dpschool-deployment"
+    CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
+    CLOUDSDK_CONTAINER_CLUSTER = "the-shire"
   }
   args = "rollout status deployment/dpschool-deployment"
 }
