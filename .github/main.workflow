@@ -90,10 +90,8 @@ action "Verify GKE deployment" {
     DEPLOYMENT_NAME = "dpschool-deployment"
     CLOUDSDK_COMPUTE_ZONE = "europe-west3-a"
     CLOUDSDK_CONTAINER_CLUSTER = "the-shire"
-    PROJECT_ID = "core-228912"
-    APPLICATION_NAME = "dps-website"
   }
-  args = "rollout status deployment/$DEPLOYMENT_NAME --project $PROJECT_ID"
+  args = "rollout status deployment/$DEPLOYMENT_NAME"
 }
 
 action "Install test dependencies" {
