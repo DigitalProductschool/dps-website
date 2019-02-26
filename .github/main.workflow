@@ -84,7 +84,7 @@ action "Deploy to GKE" {
 }
 
 action "Verify GKE deployment" {
-  needs = ["Deploy to GKE"]
+  needs = ["Deploy to GKE", "Load GKE kube credentials"]
   uses = "docker://gcr.io/cloud-builders/kubectl"
   env = {
     DEPLOYMENT_NAME = "dpschool-deployment"
@@ -93,7 +93,7 @@ action "Verify GKE deployment" {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
   }
-  args = "rollout status deployment/dpschool-deployment --project $PROJECT_ID"
+  args = "rollout status deployment/$DEPLOYMENT_NAME --project $PROJECT_ID"
 }
 
 action "Install test dependencies" {
