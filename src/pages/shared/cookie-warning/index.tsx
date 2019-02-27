@@ -64,7 +64,7 @@ class CookieWarning extends React.Component<{}, ICookieWarningState> {
               <p className="cookie-warning__description">
                 To help personalize content, measure accesses, and provide a safer experience, 
                 we would like to use cookies. Please click on "I agree" to allow us the collection 
-                of information on and off UnternehmerTUM through cookies. Learn more, 
+                of information on and off Digital Product School through cookies. Learn more, 
                 including about available controls: <a href="/privacy-policy#cookies">Cookies Policy.</a>
               </p>
               <button className="cookie-warning__button u-button" onClick={() => this.setState({ animateOut: true })}>
