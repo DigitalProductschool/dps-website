@@ -1,14 +1,25 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Footer from './shared/footer/index';
+import Nav from './shared/header/nav/index';
+import CookieWarning from './shared/cookie-warning';
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <React.Fragment>
+    <CookieWarning />
+    <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
+    <section className="not-found u-content-wrapper">
+      <div className="not-found__content u-content">
+        <h2 className="u-title">Sad times :(</h2>
+        <div className="apply-now__content__description">
+          <p className="u-text">
+            We are not able to find the page you are looking for.
+          </p>
+        </div>
+      </div>
+    </section>
+    <Footer />
+  </React.Fragment>
 )
 
 export default NotFoundPage
