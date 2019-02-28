@@ -29,8 +29,8 @@ export const expectations = {
     'You are a creative problem solver who is passionate about digging into complex problems to devise new approaches to reach results',
   ],
   secondColumn: [
-    'You have experience and are enthusiastic about working with languages like Python and/or R (C++, JAVA, Scala), and libraries such as NLTK, OpenCV or TonsorFloW',
-    'As a bonus hands-on experience with Deep Learning stuff would be fine :-)',
+    'You have experience and are enthusiastic about working with languages like Python and/or R (C++, JAVA, Scala), and libraries such as NLTK, OpenCV or TensorFloW',
+    'Hands-on experience with Deep Learning stuff would a bonus',
   ],
 }
 
