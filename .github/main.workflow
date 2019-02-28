@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Run End-to-end tests",
+    "Run End-to-end staging tests",
   ]
 }
 
@@ -106,7 +106,7 @@ action "Install test dependencies" {
   args = "install --prefix e2e-tests"
 }
 
-action "Run End-to-end tests" {
+action "Run End-to-end staging tests" {
   needs = ["Install test dependencies"]
   uses = "actions/npm@master"
   env = {
