@@ -17,8 +17,8 @@ export const or = {
 
 export const header = {
   title: 'Software Engineer',
-  description1: 'Software engineers (SE) bring ideas to life through coding. They do amazing things that look like magic to others. It is their responsibility to design and guide the development of applications and systems to make our lifes a little bit easier. They engineer systems that are scalable, secure and usable.',
-  description2: 'As a software engineer in our product team you will work in close collaboration with all other disciplines and experience real agile software development. Depending on the solution, you will have the opportunity to conceptualize, design and build mobile apps, web applications or back-end processes from the get-go. You will work in a fast-paced agile environment focused on delivering quality software products. You will be a key member of a team that builds innovative products that will change people’s lives.',
+  description1: 'Software engineers (SE) bring ideas to life through coding. They do amazing things that look like magic to others. It is their responsibility to design and guide the development of applications and systems to make our lives a little bit easier. They engineer systems that are scalable, secure and usable.',
+  description2: 'As a software engineer in our product team, you will work in close collaboration with all other disciplines and experience real agile software development. Depending on the solution, you will have the opportunity to conceptualize, design and build mobile apps, web applications or back-end processes from the get-go. You will work in a fast-paced agile environment focused on delivering quality software products. You will be a key member of a team that builds innovative products that will change people’s lives.',
   track: 'se',
 }
 
