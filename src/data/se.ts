@@ -2,8 +2,8 @@ export const or = {
   offer: [
     'Working in a diverse team of product managers, interaction designers, AI specialists and fellow software engineers, who want to solve real-world problems building great digital products',
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
-    'Collaboration with the best international start-ups, industry leaders, researchers and technology.',
-    'A modern workplace in the rooms of Design Offices Munich, which was designed and build especially for the needs of DPS to work in an creative and inspiring surrounding.',
+    'Collaboration with the best international start-ups, industry leaders, researchers, and technology.',
+    'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding.',
     'Grants: 750 EUR per month'
   ],
   responsibilities: [
@@ -24,12 +24,12 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
-    'You found your favourite programming language but you have a strong desire to widen your horizon',
+    'You found your favorite programming language but you have a strong desire to widen your horizon',
     'You want to  work in a truly diverse and interdisciplinary team',
     'You have a background in computer science either from a bachelors degree program and/or work experience',
   ],
   secondColumn: [
-    'You want to get in touch with the scrum methodology and experience lean & agile development principles',
+    'You want to get in touch with the Scrum methodology and experience lean & agile development principles',
     'You have good communication skills and you are able to speak with product managers and designers',
     'You can communicate clearly – verbally and written',
     'We ❤ them all: frontend-, mobile- or backend developers',
