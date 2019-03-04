@@ -2,7 +2,7 @@ export const or = {
   offer: [
     'Working in a diverse team of Interaction Designers, Software Developers, AI Experts and fellow Product Managers who are passionate about building great digital products.',
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
-    'Collaboration with local start-ups, industry leaders, researchers and technology.',
+    'Collaboration with local start-ups, industry leaders, researchers, and technology.',
     'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding.',
     'Grants: 750 EUR per month'
   ],
@@ -29,12 +29,12 @@ export const expectations = {
   ],
   secondColumn: [
     'You are interested and knowledgeable in digital trends, technology, and culture',
-    'You are interested in interdisciplanry collaboration and want to learn from other fields',
+    'You are interested in interdisciplinary collaboration and want to learn from other fields',
   ]
 }
 
 export const whatyoulearn = {
-  subtitle: 'You will work in  a interdisciplinary team for three months and build a digital product together with our industry partners.',
+  subtitle: 'You will work in  an interdisciplinary team for three months and build a digital product together with our industry partners.',
   firstColumn: 'To enrich that experience, the DPS teams are not only solving problems through creating digital products – they also extend their professional knowledge and skills in workshops hold by domain experts from all over the world.',
   secondColumn: 'During the whole Program the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.',
   track: 'ixd',
