@@ -31,7 +31,7 @@ export const expectations = {
   secondColumn: [
     'You have experience and are enthusiastic about working with languages like Python and/or R (C++, JAVA, Scala), and libraries such as NLTK, OpenCV or TensorFloW',
     'You have former experience in several AI application projects'
-    'Hands-on experience with Deep Learning stuff would a bonus',
+    'Hands-on experience with Deep Learning stuff would be a bonus',
   ],
 }
 
