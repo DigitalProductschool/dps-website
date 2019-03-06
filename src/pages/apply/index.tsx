@@ -15,7 +15,6 @@ class Apply extends React.Component {
         <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
         <ApplyNow />
         <DPSPitch />
-        <TeamsAndRoles />
         <PickTrack isApplyNowVersion={true} />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
