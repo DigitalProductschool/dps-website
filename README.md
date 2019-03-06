@@ -56,7 +56,6 @@ http://localhost:9000/
 Following are the people who contributed in the development of this website:
 <table>
 <tr>
-
 <td>
         <img src="https://avatars0.githubusercontent.com/u/25259674?s=460&v=4" width="150px;"/><br />
         <a
@@ -65,7 +64,7 @@ Following are the people who contributed in the development of this website:
                 target="_blank">
             Bhawna Saini
 </a>
-        </td>
+</td>
         <td>
         <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
          <a
@@ -75,7 +74,6 @@ Following are the people who contributed in the development of this website:
             Lyubomir Stoykov
 </a>
         </td>
-  </td>
         <td>
         <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
      <a
@@ -93,5 +91,49 @@ Following are the people who contributed in the development of this website:
           Michael Stockerl
         </a>
       </td>
-    </tr>
+      <td> <img src="https://avatars3.githubusercontent.com/u/41467952?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/BastianRieder"
+                rel="noopener morefferer"
+                target="_blank">
+            Bastian Rieder
+        </a>
+     </td>
+
+<td> <img src="https://avatars2.githubusercontent.com/u/5422354?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/Brothman"
+                rel="noopener morefferer"
+                target="_blank">
+            Benji Rothman
+</a>
+         </td>
+
+<td> <img src="https://avatars2.githubusercontent.com/u/39758486?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/ayamlearning"
+                rel="noopener morefferer"
+                target="_blank">
+            Yasin Musa Ayami
+</a>
+         </td>
+
+<td> <img src="https://avatars2.githubusercontent.com/u/45259171?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/Annina2806"
+                rel="noopener morefferer"
+                target="_blank">
+            Annina Schaupp
+</a>
+         </td>
+
+<td> <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
+         <a
+                href="https://github.com/pranjal2394"
+                rel="noopener morefferer"
+                target="_blank">
+            pranjal2394
+</a>
+         </td>
+
 </table>
