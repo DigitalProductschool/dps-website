@@ -2,14 +2,19 @@
 
 Website
 
-## Getting Started
+# Prerequesites
 
-These instructions will get you a copy of the project up and running on your local machine for development and production purposes.
+## Node and npm
+
+`Google install node and npm for your system (windows, mac, linux)`
+
+## Gatsby
+
+`npm install -g gatsby-cli`
 
 
-### Setting up
-
-A step by step series of examples that tell you how to get a development and production environment running
+# Setting Up
+A step by step guide that tell you how to get the development and production environment running
 
 After cloning the repository install the package dependecies using:
 
@@ -17,12 +22,9 @@ After cloning the repository install the package dependecies using:
 npm install
 ```
 
-make sure you have gatsby-cli installed on your system, if not
+# Development
 
-```
-npm install -g gatsby-cli
-```
-
+Make sure you are in the root directory
 Start the development server using
 ```
 gatsby develop
@@ -32,22 +34,65 @@ and visit
 http://localhost:8000/
 ```
 
-To compile your application and make it ready for deployment
+# Production
+
+First compile your application using
 ```
 gatsby build
-```
-and visit
-```
-http://localhost:9000/
 ```
 
 To build for production, use
 ```
 gatsby serve
 ```
+and then visit
+```
+http://localhost:9000/
+```
 
-## Contributors
 
-* **Bhawna Saini**
 
-See also the list of [contributors](https://github.com/DigitalProductschool/website/graphs/contributors) who participated in this project.
+# Contributors
+Following are the people who contributed in the development of this website:
+<table>
+  <tr>
+    <td>
+      <img src="https://avatars0.githubusercontent.com/u/25259674?s=460&v=4" width="150px;"/><br />
+      <a
+        href="https://github.com/bhawna333"
+        rel="noopener morefferer"
+        target="_blank">
+        Bhawna Saini
+      </a>
+    </td>
+
+      <td>
+        <img src="https://avatars0.githubusercontent.com/u/20355307?s=400&v=4" width="150px;"/><br />
+        <a
+          href="https://github.com/lustoykov"
+          rel="noopener morefferer"
+          target="_blank">
+          Lyubomir Stoykov
+        </a>
+      </td>
+
+      <td> <img src="https://avatars1.githubusercontent.com/u/10283674?s=460&v=4" width="150px;"/><br />
+        <a
+          href="https://github.com/mstockerl"
+          rel="noopener morefferer"
+          target="_blank">
+          Michael Stockerl
+        </a>
+      </td>
+
+      <td>
+        <img src="https://avatars3.githubusercontent.com/u/813134?s=400&v=4" width="150px;"/><br />
+        <a
+          href="https://github.com/danielbedo"
+          rel="noopener morefferer"
+          target="_blank">
+          Daniel Bedo
+        </a>
+      </td>
+    </tr>
+</table>
