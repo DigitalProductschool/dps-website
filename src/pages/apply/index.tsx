@@ -3,7 +3,6 @@ import * as React from 'react';
 import Nav from '../shared/header/nav/index';
 import ApplyNow from './apply-now/index';
 import DPSPitch from './dps-pitch/index';
-import TeamsAndRoles from './teams-roles/index';
 import PickTrack from '../shared/pick-track/index';
 import Footer from '../shared/footer/index';
 import CookieWarning from '../shared/cookie-warning';
