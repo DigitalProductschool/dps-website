@@ -25,11 +25,12 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
-    'You have earned an advanced degree in computer science, mathematics, statistics, computational behavioral science, machine learning or related area',
+    'You have a background in computer science, electrical engineering, cognitive science or mathematics with working skills on probability and statistics, signal processing, machine learning or related area',
     'You are a creative problem solver who is passionate about digging into complex problems to devise new approaches to reach results',
   ],
   secondColumn: [
     'You have experience and are enthusiastic about working with languages like Python and/or R (C++, JAVA, Scala), and libraries such as NLTK, OpenCV or TensorFloW',
+    'You have former experience in several AI application projects'
     'Hands-on experience with Deep Learning stuff would a bonus',
   ],
 }
