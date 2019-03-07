@@ -6,7 +6,7 @@ Website
 
 ## Node and npm
 
-`Google install node and npm for your system (windows, mac, linux)`
+` Install node and npm `
 
 ## Gatsby
 
@@ -16,7 +16,7 @@ Website
 # Setting Up
 A step by step guide that tell you how to get the development and production environment running
 
-After cloning the repository install the package dependecies using:
+After cloning the repository install the package dependencies using:
 
 ```
 npm install
@@ -41,7 +41,7 @@ First compile your application using
 gatsby build
 ```
 
-To build for production, use
+To `serve` the production build, use
 ```
 gatsby serve
 ```
