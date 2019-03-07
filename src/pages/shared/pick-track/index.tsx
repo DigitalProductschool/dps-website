@@ -145,7 +145,8 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
       return <p className="pick-track__description">
           There are three batches per year, usually starting in January, May, and September. The application process is ongoing.<br />
           <b>Currently, you can apply for the following batches: <br />
-          # Batch #7: May 2 to July 26, 2019</b>
+          # Batch #7: May 2 to July 26, 2019 <br />
+          # Batch #8: Sept. 10 to Nov. 29, 2019</b>
         </p>;
     } else {
       return <p className="pick-track__description">
