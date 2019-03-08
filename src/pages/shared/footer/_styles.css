@@ -7,7 +7,7 @@
     display: grid;
     width: 100%;
     max-height: var(--max-footer-height);
-    background-color: var(--bigstone);
+    background-color: var(--deep-cove);
     justify-items: center;
 }
 
