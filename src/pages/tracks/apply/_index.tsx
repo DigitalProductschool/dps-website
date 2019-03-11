@@ -32,8 +32,8 @@ export default (props: { track: "pm" | "ai" | "se" | "ixd" }) => {
       <br />
       <p>
         Currently, you can apply for the following batches: <br /><br />
-        # Batch #7: May 2 to July 26, 2019 <br /><br />
-        # Batch #8: Sept. 10 to Nov. 29, 2019
+        # Batch #7: May 2 to July 26, 2019 (Application deadline: March 31, 2019)<br /><br />
+        # Batch #8: Sept. 10 to Nov. 29, 2019 (Application deadline: July 14, 2019)
       </p>
       <div className="tracks__apply-button-wrapper">
         <a
