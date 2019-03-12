@@ -9,7 +9,7 @@ class OurProgram extends React.Component {
             Our Program
           </h3>
           <p className="our-program__description">
-            The Digital Product School is a full-time program lasting 3 months in Munich.
+            The Digital Product School is a full-time training program by UnternehmerTUM in Munich, Europe's biggest Entrepreneurship Center. There are three batches per year, usually starting in January, May, and September, and lasting for 3 months. <br /><br />
             It's your chance to build digital products in a diverse team – to solve real-world
             problems around mobility and transportation. In a realistic start-up environment,
             we grow the next generation of digital product makers.
