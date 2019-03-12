@@ -24,8 +24,7 @@ class OurProgram extends React.Component {
                 3 Months full-time
               </h4>
               <p className="our-program__perks__description">
-                Be part of a unique 3 months full-time training
-                program by UnternehmerTUM, Europe's biggest Entrepreneurship Center. There are three batches per year, usually starting in January, May, and September.
+              DPS is all about working in an agile team. You will work in weekly sprints and proceed with your product every day. To gain these experiences you have to be on-site and continously exchange with your team.  
               </p>
             </li>
             <li className="our-program__perks__item">
