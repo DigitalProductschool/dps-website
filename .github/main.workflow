@@ -61,6 +61,14 @@ action "Push image to GCR" {
   args = ["docker push gcr.io/$PROJECT_ID/$APPLICATION_NAME"]
 }
 
+action "Delete old images from GCR" {
+  needs = ["Push image to GCR"]
+  uses = "./deployment"
+  env = {
+        IMAGE="gcr.io/core-228912/dps-website"
+    }
+}
+
 action "Load GKE kube credentials" {
   needs = ["Setup Google Cloud", "Push image to GCR"]
   uses = "actions/gcloud/cli@master"
