@@ -61,12 +61,6 @@ action "Push image to GCR" {
   args = ["docker push gcr.io/$PROJECT_ID/$APPLICATION_NAME"]
 }
 
-action "Delete old images from GCR" {
-  needs = ["Push image to GCR"]
-  uses = "actions/gcloud/cli@master"
-  runs = ["sh", "-c", "./deployment/entrypoint.sh"] 
-}
-
 action "Load GKE kube credentials" {
   needs = ["Setup Google Cloud", "Push image to GCR"]
   uses = "actions/gcloud/cli@master"
@@ -119,4 +113,10 @@ action "Run End-to-end staging tests" {
     WEBSITE = "http://35.242.202.218"
   }
   args = "test --prefix e2e-tests"
+}
+
+action "Delete old images from GCR" {
+  needs = ["Run End-to-end staging tests"]
+  uses = "actions/gcloud/cli@master"
+  runs = ["sh", "-c", "./deployment/entrypoint.sh"]
 }
