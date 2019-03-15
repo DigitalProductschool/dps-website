@@ -7,17 +7,20 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-set -eou pipefail
-gcloud container images list-tags ${IMAGE} --limit=5 --sort-by=~TIMESTAMP --format='get(digest)' > top5.txt
-gcloud container images list-tags ${IMAGE} --limit=999999 --sort-by=~TIMESTAMP --format='get(digest)' > all.txt
-awk 'NR==FNR{a[$0];next} !($0 in a)' top5.txt all.txt > temp.txt
-declare -i C=0
-IFS=''
-while read digest
-  do (
-       echo $digest "deleted"
-      # gcloud container images delete -q --force-delete-tags "gcr.io/core-228912/dps-website@${digest}"
-     )
-  C=C+1
-  done < temp.txt
- echo "Number of Images deleted: ${C}"
+#!/bin/bash
+set -e
+
+# This could be configured from the outside.
+IMAGE=gcr.io/core-228912/dps-website
+
+# Count total amount of images to delete
+IMAGE_COUNT=$(gcloud container images list-tags ${IMAGE} --limit=999999 --sort-by=TIMESTAMP | grep -v DIGEST | wc -l)
+# We want to always keep the five latest images
+IMAGES_TO_DELETE=$(( $IMAGE_COUNT - 5 ))
+echo $IMAGES_TO_DELETE
+
+echo "Will delete ${IMAGES_TO_DELETE} images"
+for digest in $(gcloud container images list-tags ${IMAGE} --limit=${IMAGES_TO_DELETE} --sort-by=TIMESTAMP --format='get(digest)'); do
+    set -x
+    gcloud container images delete -q --force-delete-tags "${IMAGE}@${digest}"
+done

@@ -63,10 +63,8 @@ action "Push image to GCR" {
 
 action "Delete old images from GCR" {
   needs = ["Push image to GCR"]
-  uses = "./deployment"
-  env = {
-        IMAGE="gcr.io/core-228912/dps-website"
-    }
+  uses = "actions/gcloud/cli@master"
+  runs = ["sh", "-c", "./deployment/entrypoint.sh"] 
 }
 
 action "Load GKE kube credentials" {
