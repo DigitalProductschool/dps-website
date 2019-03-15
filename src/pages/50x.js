@@ -5,7 +5,7 @@ import Nav from './shared/header/nav/index';
 import CookieWarning from './shared/cookie-warning';
 
 
-const NotFoundPage = () => (
+const ServerErrorPage = () => (
   <React.Fragment>
     <CookieWarning />
     <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
@@ -23,4 +23,4 @@ const NotFoundPage = () => (
   </React.Fragment>
 )
 
-export default NotFoundPage
+export default ServerErrorPage
