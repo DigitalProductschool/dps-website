@@ -1,6 +1,4 @@
-# Digital Product School
-
-Website
+# Website Digital Product School
 
 # Prerequesites
 

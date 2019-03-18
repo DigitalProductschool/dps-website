@@ -11,7 +11,7 @@ class Pillars extends React.Component {
             <li className="pillars__list__item">
               <div className="pillars__list__item__icon-wrapper"><img alt="calendar-logo" className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img" src="/assets/program/pillars/calendar.png" /></div>
               <h4 className="pillars__list__item__title">3 Months full-time</h4>
-              <p className="pillars__list__item__description">Be part of a unique 3 months full-time training program by UnternehmerTUM, Europe's biggest Entrepreneurship Center. There are three batches per year, usually starting in January, May, and September.</p>
+              <p className="pillars__list__item__description">DPS is all about working in an agile team. You will work in weekly sprints and proceed with your product every day. To gain these experiences you have to be on-site and continously exchange with your team.</p>
             </li>
             <li className="pillars__list__item">
               <div className="pillars__list__item__icon-wrapper"><img alt="scholarship-logo" className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img" src="/assets/program/pillars/scholarship.png" /></div>
