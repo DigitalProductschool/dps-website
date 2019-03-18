@@ -114,3 +114,9 @@ action "Run End-to-end staging tests" {
   }
   args = "test --prefix e2e-tests"
 }
+
+action "Delete old images from GCR" {
+  needs = ["Run End-to-end staging tests"]
+  uses = "actions/gcloud/cli@master"
+  runs = ["sh", "-c", "./deployment/entrypoint.sh"]
+}
