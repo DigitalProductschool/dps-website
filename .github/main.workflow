@@ -115,8 +115,14 @@ action "Run End-to-end staging tests" {
   args = "test --prefix e2e-tests"
 }
 
+action "Deploy Notification" {
+  needs = "Run End-to-end staging tests"
+  uses = "apex/actions/slack@master"
+  secrets = ["SLACK_WEBHOOK_URL"]
+}
+
 action "Delete old images from GCR" {
-  needs = ["Run End-to-end staging tests"]
+  needs = ["Deploy Notification"]
   uses = "actions/gcloud/cli@master"
   runs = ["sh", "-c", "./deployment/entrypoint.sh"]
 }
