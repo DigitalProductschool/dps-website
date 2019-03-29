@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Run End-to-end staging tests",
+    "Delete old images from GCR",
   ]
 }
 
