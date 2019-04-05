@@ -41,4 +41,5 @@ export const whatyoulearn = {
   firstColumn: 'You also will build an environment to have a continuous delivery of your code and to have an integrated versioning system.',
   secondColumn: 'In addition to that, we attach importance to software testing and to work out different strategies to do that. Last but not least cybersecurity is a big topic: how to discover potential threats and gain a basic understanding of how to avert them.',
   track: 'se',
+  video: 'https://www.youtube-nocookie.com/embed/sO9Jps07rdI',
 }
