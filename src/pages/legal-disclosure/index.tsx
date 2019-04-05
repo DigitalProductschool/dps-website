@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import Nav from '../shared/header/nav/index';
+import Nav from '../../components/shared/header/nav/index';
 import LegalContent from './legal-content/index';
-import Footer from '../shared/footer/index';
-import CookieWarning from '../shared/cookie-warning';
+import Footer from '../../components/shared/footer/index';
+import CookieWarning from '../../components/shared/cookie-warning';
 
 class Legal extends React.Component {
 

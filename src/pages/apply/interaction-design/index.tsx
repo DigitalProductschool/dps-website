@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import Header from '../header/_index';
-import Footer from '../../shared/footer/index';
-import TrackImage from '../track-image/_index';
-import WhatYouLearn from '../what-you-learn/_index';
-import OfferResponsibilities from '../offer-responsibilities/_index';
-import Expectations from '../expectations/_index';
+import Header from '../../../components/tracks/header/_index';
+import Footer from '../../../components/shared/footer/index';
+import TrackImage from '../../../components/tracks/track-image/_index';
+import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
+import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
+import Expectations from '../../../components/tracks/expectations/_index';
 import { or, header, expectations, whatyoulearn } from '../../../data/ixd';
-import Apply from '../apply/_index';
-import CookieWarning from '../../shared/cookie-warning';
+import Apply from '../../../components/tracks/apply/_index';
+import CookieWarning from '../../../components/shared/cookie-warning';
 
 
 /**
@@ -21,10 +21,10 @@ class TrackIxD extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Header 
+        <Header
           data={header}
           className='track-ixd__header'
-          logo="/assets/tracks/dps-logo-white.png" 
+          logo="/assets/tracks/dps-logo-white.png"
         />
         <TrackImage track="ixd" />
         <OfferResponsibilities data={or} />

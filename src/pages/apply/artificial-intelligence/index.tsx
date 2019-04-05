@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import Header from '../header/_index';
-import Footer from '../../shared/footer/index';
-import TrackImage from '../track-image/_index';
-import WhatYouLearn from '../what-you-learn/_index';
-import OfferResponsibilities from '../offer-responsibilities/_index';
-import Expectations from '../expectations/_index';
-import Apply from '../apply/_index';
+import Header from '../../../components/tracks/header/_index';
+import Footer from '../../../components/shared/footer/index';
+import TrackImage from '../../../components/tracks/track-image/_index';
+import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
+import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
+import Expectations from '../../../components/tracks/expectations/_index';
+import Apply from '../../../components/tracks/apply/_index';
 import { or, header, expectations, whatyoulearn } from '../../../data/ai';
-import CookieWarning from '../../shared/cookie-warning';
+import CookieWarning from '../../../components/shared/cookie-warning';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there

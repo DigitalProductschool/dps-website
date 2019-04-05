@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Nav from '../../shared/header/nav/index';
+import Nav from '../../../components/shared/header/nav/index';
 
 class Header extends React.Component {
   render() {

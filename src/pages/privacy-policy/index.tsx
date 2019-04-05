@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import Nav from '../shared/header/nav/index';
+import Nav from '../../components/shared/header/nav/index';
 import PrivacyContent from './privacy-content/index';
-import Footer from '../shared/footer/index';
+import Footer from '../../components/shared/footer/index';
 import Seo from '../../components/seo';
-import CookieWarning from '../shared/cookie-warning';
+import CookieWarning from '../../components/shared/cookie-warning';
 
 class Privacy extends React.Component {
   render() {
