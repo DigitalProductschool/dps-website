@@ -13,6 +13,7 @@ export default (props: { className: string, data: { firstColumn: string, secondC
             title="video: Software Engineering Experiences at Digital Product School"
             src={video}
             allowFullScreen
+            frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
           </iframe>
         </div>
