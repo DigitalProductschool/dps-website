@@ -117,7 +117,8 @@ action "Run End-to-end staging tests" {
 
 action "Deploy Notification" {
   needs = "Run End-to-end staging tests"
-  uses = "apex/actions/slack@master"
+  uses = "actions/slack@master"
+  args = "test test"
   secrets = ["SLACK_WEBHOOK_URL"]
 }
 
