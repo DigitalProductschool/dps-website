@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Footer from './shared/footer/index';
-import Nav from './shared/header/nav/index';
-import CookieWarning from './shared/cookie-warning';
+import Footer from '../components/shared/footer/index';
+import Nav from '../components/shared/header/nav/index';
+import CookieWarning from '../components/shared/cookie-warning';
 
 const NotFoundPage = () => (
   <React.Fragment>

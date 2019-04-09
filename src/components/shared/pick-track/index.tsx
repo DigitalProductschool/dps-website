@@ -26,7 +26,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             <li className="pick-track__track">
 
             <a
-              href="/tracks/product-management/"
+              href="/apply/product-management/"
             >
               <div className="pick-tracks__track__image-wrapper">
 
@@ -42,7 +42,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--pm u-button u-button--reversed"
-                href="/tracks/product-management/"
+                href="/apply/product-management/"
                 onMouseOver={() => this.setState({ active: 'pm' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
@@ -52,7 +52,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
             <li className="pick-track__track">
             <a
-              href="/tracks/interaction-design/"
+              href="/apply/interaction-design/"
             >
               <div className="pick-tracks__track__image-wrapper">
 
@@ -68,7 +68,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ixd u-button u-button--reversed"
-                href="/tracks/interaction-design/"
+                href="/apply/interaction-design/"
                 onMouseOver={() => this.setState({ active: 'ixd' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
@@ -77,7 +77,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             </li>
             <li className="pick-track__track">
             <a
-              href="/tracks/software-engineering/"
+              href="/apply/software-engineering/"
             >
               <div className="pick-tracks__track__image-wrapper">
 
@@ -93,7 +93,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--se u-button u-button--reversed"
-                href="/tracks/software-engineering/"
+                href="/apply/software-engineering/"
                 onMouseOver={() => this.setState({ active: 'se' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
@@ -102,7 +102,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             </li>
             <li className="pick-track__track">
             <a
-              href="/tracks/artificial-intelligence/"
+              href="/apply/artificial-intelligence/"
             >
 
               <div className="pick-tracks__track__image-wrapper">
@@ -119,7 +119,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ai u-button u-button--reversed"
-                href="/tracks/artificial-intelligence/"
+                href="/apply/artificial-intelligence/"
                 onMouseOver={() => this.setState({ active: 'ai' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
@@ -145,7 +145,6 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
       return <p className="pick-track__description">
           There are three batches per year, usually starting in January, May, and September.<br />
           <b>Currently, you can apply for the following batches: <br />
-          # Batch #7: May 2 to July 26, 2019</b> (Application deadline: March 31, 2019)<b><br />
           # Batch #8: Sept. 10 to Nov. 29, 2019</b> (Application deadline: July 14, 2019)
         </p>;
     } else {

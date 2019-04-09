@@ -4,21 +4,21 @@
 @import url('./_utils.css');
 @import url('./_colors.css');
 
-@import url("./pages/shared/header/nav/_styles.css");
-@import url('./pages/shared/pick-track/_styles.css');
-@import url("./pages/shared/footer/_styles.css");
-@import url("./pages/shared/cookie-warning/_styles.css");
+@import url("./components/shared/header/nav/_styles.css");
+@import url('./components/shared/pick-track/_styles.css');
+@import url("./components/shared/footer/_styles.css");
+@import url("./components/shared/cookie-warning/_styles.css");
 
-@import url("./pages/home/header/_styles.css");
-@import url("./pages/home/pitch/_styles.css");
-@import url("./pages/home/diverse-teams/_styles.css");
-@import url("./pages/home/experience-matters/_styles.css");
-@import url("./pages/home/user-first/_styles.css");
-@import url('./pages/home/our-program/_styles.css');
-@import url('./pages/home/adac/_styles.css');
-@import url("./pages/home/tool-partner/_styles.css");
-@import url('./pages/home/industry-partners/_styles.css');
-@import url('./pages/home/whats-new/_styles.css');
+@import url("./components/home/header/_styles.css");
+@import url("./components/home/pitch/_styles.css");
+@import url("./components/home/diverse-teams/_styles.css");
+@import url("./components/home/experience-matters/_styles.css");
+@import url("./components/home/user-first/_styles.css");
+@import url('./components/home/our-program/_styles.css');
+@import url('./components/home/adac/_styles.css');
+@import url("./components/home/tool-partner/_styles.css");
+@import url('./components/home/industry-partners/_styles.css');
+@import url('./components/home/whats-new/_styles.css');
 
 @import url('./pages/legal-disclosure/legal-content/_styles.css');
 @import url('./pages/privacy-policy/privacy-content/_styles.css');
@@ -32,19 +32,18 @@
 @import url('./pages/our-program/who-should-apply/_styles.css');
 
 @import url('./pages/apply/dps-pitch/_styles.css');
+@import url('./pages/apply/product-management/_styles.css');
+@import url('./pages/apply/interaction-design/_styles.css');
+@import url('./pages/apply/software-engineering/_styles.css');
+@import url('./pages/apply/artificial-intelligence/_styles.css');
 
-@import url('./pages/tracks/header/_styles.css');
-@import url('./pages/tracks/track-image/_styles.css');
-@import url('./pages/tracks/what-you-learn/_styles.css');
-@import url('./pages/tracks/offer-responsibilities/_styles.css');
-@import url('./pages/tracks/list-item/_styles.css');
-@import url('./pages/tracks/expectations/_styles.css');
-
-@import url('./pages/tracks/product-management/_styles.css');
-@import url('./pages/tracks/interaction-design/_styles.css');
-@import url('./pages/tracks/software-engineering/_styles.css');
-@import url('./pages/tracks/artificial-intelligence/_styles.css');
-@import url('./pages/tracks/apply/_styles.css');
+@import url('./components/tracks/header/_styles.css');
+@import url('./components/tracks/track-image/_styles.css');
+@import url('./components/tracks/what-you-learn/_styles.css');
+@import url('./components/tracks/offer-responsibilities/_styles.css');
+@import url('./components/tracks/list-item/_styles.css');
+@import url('./components/tracks/expectations/_styles.css');
+@import url('./components/tracks/apply/_styles.css');
 
 
 html, body, #app {

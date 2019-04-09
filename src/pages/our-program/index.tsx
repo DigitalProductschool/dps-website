@@ -7,9 +7,9 @@ import Teams from './teams/index'
 import Pillars from './pillars/index'
 import OurApproach from './our-approach/index'
 import WhoShouldApply from './who-should-apply/index'
-import PickTrack from '../shared/pick-track/index'
-import Footer from '../shared/footer/index'
-import CookieWarning from '../shared/cookie-warning';
+import PickTrack from '../../components/shared/pick-track/index'
+import Footer from '../../components/shared/footer/index'
+import CookieWarning from '../../components/shared/cookie-warning';
 
 class Program extends React.Component {
 

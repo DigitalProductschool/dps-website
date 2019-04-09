@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import Nav from '../shared/header/nav/index';
+import Nav from '../../components/shared/header/nav/index';
 import ApplyNow from './apply-now/index';
-import PickTrack from '../shared/pick-track/index';
-import Footer from '../shared/footer/index';
-import CookieWarning from '../shared/cookie-warning';
+import PickTrack from '../../components/shared/pick-track/index';
+import Footer from '../../components/shared/footer/index';
+import CookieWarning from '../../components/shared/cookie-warning';
 
 class Apply extends React.Component {
   render() {
