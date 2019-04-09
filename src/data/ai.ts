@@ -39,13 +39,6 @@ export const whatyoulearn = {
   subtitle: 'The AI track of Digital Product School focuses on tech leadership for AI solutions proof of concept and AI proposals that show the great potential of data-driven applications.',
   firstColumn: 'The participants also do domain expert research and tech feasibility tests.',
   secondColumn: 'You will build a full-stack integration for deployment of AI and outline the project requirement documentation.',
-  track: 'ai'
+  track: 'ai',
+  video: 'https://www.youtube-nocookie.com/embed/DG3JAMTNVQY',
 }
-
-
-
-
-
-
-
-
