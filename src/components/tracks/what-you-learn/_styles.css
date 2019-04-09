@@ -57,7 +57,7 @@
 
 .wyl-content__info__description-box__image {
   &--pm {
-    background-image: url('/assets/tracks/pm/what-you-learn.jpg');
+    background-image: url('/assets/tracks/pm/dps-product-manager-what-you-learn.jpg');
   }
 
   &--se {
@@ -65,7 +65,7 @@
   }
 
   &--ixd {
-    background-image: url('/assets/tracks/ixd/what-you-learn.jpg');
+    background-image: url('/assets/tracks/ixd/dps-interaction-designer-what-you-learn.jpg');
   }
 
   &--ai {
