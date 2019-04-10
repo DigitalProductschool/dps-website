@@ -117,7 +117,7 @@ action "Run End-to-end staging tests" {
 
 action "Deploy Notification" {
   needs = "Run End-to-end staging tests"
-  uses = "actions/slack@master"
+  uses = "Ilshidur/action-slack@ab5f0955362cfdff2e0f0990f0272624e8cb5d13"
   args = "test test"
   secrets = ["SLACK_WEBHOOK_URL"]
 }
