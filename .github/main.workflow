@@ -28,15 +28,9 @@ action "Build Docker Image" {
   args = ["build", "-t", "dps-website", "-f", "deployment/Dockerfile", "."]
 }
 
-action "Deploy branch filter" {
-  needs = ["Build Docker Image"]
-  uses = "actions/bin/filter@master"
-  args = "branch staging"
-}
-
 action "Tag image for GCR" {
   uses = "actions/docker/tag@master"
-  needs = ["Build Docker Image", "Deploy branch filter"]
+  needs = ["Build Docker Image"]
   env = {
     PROJECT_ID = "core-228912"
     APPLICATION_NAME = "dps-website"
