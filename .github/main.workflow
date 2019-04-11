@@ -1,7 +1,7 @@
 workflow "Build and deploy" {
   on = "push"
   resolves = [
-    "Run End-to-end staging tests",
+    "Delete old images from GCR",
   ]
 }
 
@@ -109,15 +109,27 @@ action "Run End-to-end staging tests" {
   args = "test --prefix e2e-tests"
 }
 
+action "Deploy Notification" {
+  needs = "Run End-to-end staging tests"
+  uses = "rtCamp/action-slack-notify@master"
+  secrets = [
+    "SLACK_WEBHOOK",
+  ]
+  env = {
+    SLACK_TITLE = "\"Post Title\""
+    SLACK_COLOR = "\"#3278BD\""
+    SLACK_USERNAME = "\"deploy-Status\""
+    SLACK_CHANNEL = "\"deploy-notifications\""
+    SLACK_MESSAGE = "\"Post Content :rocket:\""
+  }
+}
+
+
+
 action "Delete old images from GCR" {
-  needs = ["Run End-to-end staging tests"]
+  needs = ["Deploy Notification"]
   uses = "actions/gcloud/cli@master"
   runs = ["sh", "-c", "./deployment/entrypoint.sh"]
 }
 
-action "Deploy Notification" {
-  needs = "Delete old images from GCR"
-  uses = "actions/slack@master"
-  args = "test test"
-  secrets = ["SLACK_WEBHOOK_URL"]
-}
+
