@@ -117,11 +117,17 @@ action "Run End-to-end staging tests" {
 
 action "Deploy Notification" {
   needs = "Run End-to-end staging tests"
-  uses = "Ilshidur/action-slack@ab5f0955362cfdff2e0f0990f0272624e8cb5d13"
-  args = "test message"
+  uses = "rtCamp/action-slack-notify@master"
   secrets = [
     "SLACK_WEBHOOK",
   ]
+  env = {
+    SLACK_TITLE = "\"Post Title\""
+    SLACK_COLOR = "\"#3278BD\""
+    SLACK_USERNAME = "\"deploy-Status\""
+    SLACK_CHANNEL = "\"deploy-notifications\""
+    SLACK_MESSAGE = "\"Post Content :rocket:\""
+  }
 }
 
 action "Delete old images from GCR" {
