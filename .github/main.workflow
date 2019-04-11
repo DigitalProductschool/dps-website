@@ -115,15 +115,15 @@ action "Run End-to-end staging tests" {
   args = "test --prefix e2e-tests"
 }
 
+action "Delete old images from GCR" {
+  needs = ["Run End-to-end staging tests"]
+  uses = "actions/gcloud/cli@master"
+  runs = ["sh", "-c", "./deployment/entrypoint.sh"]
+}
+
 action "Deploy Notification" {
-  needs = "Run End-to-end staging tests"
+  needs = "Delete old images from GCR"
   uses = "actions/slack@master"
   args = "test test"
   secrets = ["SLACK_WEBHOOK_URL"]
-}
-
-action "Delete old images from GCR" {
-  needs = ["Deploy Notification"]
-  uses = "actions/gcloud/cli@master"
-  runs = ["sh", "-c", "./deployment/entrypoint.sh"]
 }
