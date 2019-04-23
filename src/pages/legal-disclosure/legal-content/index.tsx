@@ -22,11 +22,13 @@ class LegalContent extends React.Component {
           </p>
 
           <h3>REPRESENTED BY</h3>
-          <p>Dr. Helmut Schönenberger (CEO)<br />
-          Claudia Frey<br />
-          Stefan Drüssler<br />
-          Thomas Zeller<br />
-          Dr. Andreas Liebl</p>
+          <p>
+            Dr. Helmut Schönenberger (CEO)<br />
+            Claudia Frey<br />
+            Stefan Drüssler<br />
+            Thomas Zeller<br />
+            Dr. Andreas Liebl
+          </p>
 
           <h3>CONTACT INFORMATION</h3>
           <p>+49 89-18 94 69-0<br />
@@ -36,8 +38,8 @@ class LegalContent extends React.Component {
           <h3>REGISTER ENTRY</h3>
           <p>Entry in: Handelsregister<br />
           Register Court: Amtsgericht München<br />
-          Register Number: HRB 184711<br />
-            
+          Register Number: HRB 184711</p>
+
           <h3>VAT NUMBER</h3>
           <p>VAT identification number in accordance with Section 27 a of the German VAT act<br />
           DE 252 789 694</p>
