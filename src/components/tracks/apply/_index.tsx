@@ -27,7 +27,7 @@ export default (props: { track: "pm" | "ai" | "se" | "ixd" }) => {
         BE PART OF DPS 
       </h3>
       <p> 
-        <b> {`Apply now as a ${trackName} at Digital Product School and take in the experience concentrate in digital product development!`} </b>
+        <b> {`Apply now as ${trackName} at Digital Product School and take in the experience concentrate in digital product development!`} </b>
       </p>
       <br />
       <p>
