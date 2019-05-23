@@ -120,6 +120,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 name: `facebook:description`,
                 content: metaDescription,
               },
+              {
+                property: `google-site-verification`,
+                content: `4zjoV-3vBa7xWLagSj2ATnLDmHfHAYClMkSbxg8MdeE`,
+              },
             ]
               .concat(
                 keywords.length > 0
