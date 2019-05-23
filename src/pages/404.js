@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Footer from '../components/shared/footer/index';
-import Nav from '../components/shared/header/nav/index';
-import CookieWarning from '../components/shared/cookie-warning';
+import Footer from '../components/shared/footer/index'
+import Nav from '../components/shared/header/nav/index'
+import CookieWarning from '../components/shared/cookie-warning'
 
 const NotFoundPage = () => (
   <React.Fragment>
     <CookieWarning />
-    <Nav addClass={"nav--black"} logo={"/assets/shared/dps-logo-black.svg"} />
+    <Nav addClass={'nav--black'} logo={'/assets/shared/dps-logo-black.svg'} />
     <section className="not-found u-content-wrapper">
       <div className="not-found__content u-content">
         <h2 className="u-title">Sad times :(</h2>
