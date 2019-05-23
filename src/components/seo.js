@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School.jpg`,
+                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch8.jpg`,
               },
               {
                 property: `og:image:type`,
