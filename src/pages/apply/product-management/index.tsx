@@ -1,15 +1,19 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Header from '../../../components/tracks/header/_index';
-import Footer from '../../../components/shared/footer/index';
-import TrackImage from '../../../components/tracks/track-image/_index';
-import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
-import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
-import Expectations from '../../../components/tracks/expectations/_index';
-import { or, header, expectations, whatyoulearn } from '../../../data/pm';
-import Apply from '../../../components/tracks/apply/_index';
-import CookieWarning from '../../../components/shared/cookie-warning';
-
+import Header from '../../../components/tracks/header/_index'
+import Footer from '../../../components/shared/footer/index'
+import TrackImage from '../../../components/tracks/track-image/_index'
+import WhatYouLearn from '../../../components/tracks/what-you-learn/_index'
+import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index'
+import Expectations from '../../../components/tracks/expectations/_index'
+import {
+  or,
+  header,
+  expectations,
+  whatyoulearn,
+} from '../../../components/apply/data/pm'
+import Apply from '../../../components/tracks/apply/_index'
+import CookieWarning from '../../../components/shared/cookie-warning'
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -21,7 +25,11 @@ class TrackPM extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-pm__header" />
+        <Header
+          data={header}
+          logo="/assets/tracks/dps-logo-white.png"
+          className="track-pm__header"
+        />
         <TrackImage track="pm" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
@@ -33,4 +41,4 @@ class TrackPM extends React.Component {
   }
 }
 
-export default TrackPM;
+export default TrackPM

@@ -1,18 +1,18 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Nav from '../../shared/header/nav/index';
-import Seo from '../../../components/seo';
+import Nav from '../../shared/nav/index'
+import Seo from '../../../components/seo'
 
 interface IHeaderProps {
-  logo?: string;
-  className: string;
+  logo?: string
+  className: string
   data: {
-    title: string;
-    description1: string;
-    description2: string;
-    description3?: string;
-    description4?: string;
-    track: string,
+    title: string
+    description1: string
+    description2: string
+    description3?: string
+    description4?: string
+    track: string
   }
 }
 
@@ -20,7 +20,7 @@ interface IHeaderProps {
 // instead of passing className, data etc by the index.tsx files
 class Header extends React.Component<IHeaderProps, {}> {
   render() {
-    const { data, className } = this.props;
+    const { data, className } = this.props
 
     return (
       <React.Fragment>
@@ -33,24 +33,26 @@ class Header extends React.Component<IHeaderProps, {}> {
             </h1>
             <p className="tracks__header-content__description">
               {data.description1}
-           </p>
+            </p>
             <p className="tracks__header-content__description">
               {data.description2}
             </p>
             {data.description3 && (
-                <p className="tracks__header-content__description">
+              <p className="tracks__header-content__description">
                 {data.description3}
               </p>
             )}
             {data.description4 && (
-                <p className="tracks__header-content__description">
+              <p className="tracks__header-content__description">
                 {data.description4}
               </p>
             )}
             <div className="tracks-header__apply-button-wrapper">
               <a
-                className="u-button u-button__apply u-button--reversed tracks-header__apply-button" 
-                href={`https://utum.typeform.com/to/qkkFHF?role=${data.track}&ref=website&entry-point=track-page-header`}
+                className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+                href={`https://utum.typeform.com/to/qkkFHF?role=${
+                  data.track
+                }&ref=website&entry-point=track-page-header`}
               >
                 Apply as {data.title}
               </a>
@@ -58,8 +60,8 @@ class Header extends React.Component<IHeaderProps, {}> {
           </div>
         </section>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header
