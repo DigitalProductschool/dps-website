@@ -1,0 +1,15 @@
+.application-form-plate {
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  max-width: 780px;
+}
+
+.application-form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

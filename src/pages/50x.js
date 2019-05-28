@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Footer from '../components/shared/footer/index'
-import Nav from '../components/shared/header/nav/index'
+import Nav from '../components/shared/nav/index'
 import CookieWarning from '../components/shared/cookie-warning'
 
 const ServerErrorPage = () => (
