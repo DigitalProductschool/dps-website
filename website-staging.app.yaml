@@ -6,9 +6,35 @@ handlers:
     upload: public/index.html
     secure: always
     expiration: 1s
-  - url: /*
-    expiration: 1s
-    static_dir: public
+
+  - url: /([^.]+)/
+    static_files: public/\1/index.html
+    upload: public/([^.]+)/index.html
     secure: always
+    expiration: 1s
+
+  - url: /([^.]+)
+    static_files: public/\1/index.html
+    upload: public/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /([^.]+)/([^.]+)/
+    static_files: public/\1/\2/index.html
+    upload: public/([^.]+)/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /([^.]+)/([^.]+)
+    static_files: public/\1/\2/index.html
+    upload: public/([^.]+)/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /(.*)
+    static_files: public/\1
+    upload: public/(.*)
+    secure: always
+    expiration: 1s
 
 default_expiration: 1s
