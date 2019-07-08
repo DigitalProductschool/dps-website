@@ -1,0 +1,14 @@
+runtime: nodejs10
+service: default
+handlers:
+  - url: /
+    static_files: public/index.html
+    upload: public/index.html
+    secure: always
+    expiration: 1s
+  - url: /
+    expiration: 10m
+    static_dir: public
+    secure: always
+
+default_expiration: 10m
