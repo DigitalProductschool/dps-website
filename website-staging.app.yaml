@@ -7,30 +7,37 @@ handlers:
     secure: always
     expiration: 1s
 
+  # Attention /? won't work to catch both cases
+  # path and path/, therefore write them separately
+  # matches path/ to path/index.html
   - url: /([^.]+)/
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
     secure: always
     expiration: 1s
 
+  # matches path to path/index.html
   - url: /([^.]+)
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
     secure: always
     expiration: 1s
 
+  # matches path/other/ to path/other/index.html
   - url: /([^.]+)/([^.]+)/
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
     secure: always
     expiration: 1s
 
+  # matches path/other to path/other/index.html
   - url: /([^.]+)/([^.]+)
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
     secure: always
     expiration: 1s
 
+  # catch everything else
   - url: /(.*)
     static_files: public/\1
     upload: public/(.*)
