@@ -6,6 +6,38 @@ handlers:
     upload: public/index.html
     secure: always
     expiration: 1s
+
+  - url: /([^.]+)/
+    static_files: public/\1/index.html
+    upload: public/([^.]+)/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /([^.]+)
+    static_files: public/\1/index.html
+    upload: public/([^.]+)/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /([^.]+)/([^.]+)/
+    static_files: public/\1/\2/index.html
+    upload: public/([^.]+)/([^.]+)/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /([^.]+)/([^.]+)
+    static_files: public/\1/\2/index.html
+    upload: public/([^.]+)/([^.]+)/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /(.*)
+    static_files: public/\1
+    upload: public/(.*)
+    secure: always
+    expiration: 10m
+
+  # Fallback URL
   - url: /
     expiration: 10m
     static_dir: public
