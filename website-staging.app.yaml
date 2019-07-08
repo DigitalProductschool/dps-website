@@ -6,7 +6,7 @@ handlers:
     upload: public/index.html
     secure: always
     expiration: 1s
-  - url: /
+  - url: /*
     expiration: 1s
     static_dir: public
     secure: always
