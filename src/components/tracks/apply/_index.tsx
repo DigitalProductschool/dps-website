@@ -32,7 +32,6 @@ export default (props: { track: "pm" | "ai" | "se" | "ixd" }) => {
       <br />
       <p>
         Currently, you can apply for the following batches: <br /><br />
-        # Batch #8: Sept. 10 to Nov. 29, 2019 (Application deadline: July 14, 2019) <br /><br />
         # Batch #9: Jan. 7 to March 27, 2020 (Application deadline: October 13, 2019)  <br /><br />
         # Batch #10: May 4 to July 24, 2020 (Application phase starts in December 2019) <br /><br />
         # Batch #11: Sept. 8 to Nov. 27, 2020 (Application phase starts in May 2020)
