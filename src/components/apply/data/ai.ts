@@ -14,16 +14,20 @@ export const or = {
     'Applying your scientific knowledge and engineering skills to analyze large volumes of complex data and to develop algorithms to solve complex problems to improve the product',
     'Ensuring agile development principles',
   ],
-}
+};
+
+export const generalTrackInfo = {
+  track: 'ai',
+  name: 'AI Engineer',
+  url: 'ai-engineering',
+};
 
 export const header = {
-  title: 'AI Engineer',
   description1:
     'Artificial Intelligence (AI) Engineers use algorithms to identify the hidden data structures and dependencies towards building self-learning systems for automatic information extraction. Their contributions enable mimicking our cognitive tasks and solving the user problems with intelligent solutions.',
   description2:
     'As an AI Engineer, you will use data science, machine learning, and engineering to develop pioneering proof-of-concept based on AI that will be the backbone of the next generation of products and services and integrate human-machine cooperation.',
-  track: 'ai',
-}
+};
 
 export const expectations = {
   firstColumn: [
@@ -35,7 +39,7 @@ export const expectations = {
     'You have former experience in several AI application projects',
     'Hands-on experience with Deep Learning stuff would be a bonus',
   ],
-}
+};
 
 export const whatyoulearn = {
   subtitle:
@@ -44,6 +48,5 @@ export const whatyoulearn = {
     'The participants also do domain expert research and tech feasibility tests.',
   secondColumn:
     'You will build a full-stack integration for deployment of AI and outline the project requirement documentation.',
-  track: 'ai',
   video: 'https://www.youtube-nocookie.com/embed/DG3JAMTNVQY',
-}
+};

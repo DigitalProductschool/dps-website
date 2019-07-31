@@ -31,4 +31,16 @@
   &--se {
     background-color: var(--hollywoord-cerise);
   }
+
+  &--pm {
+    background-color: var(--picton-blue);
+  }
+
+  &--ixd {
+    background-color: var(--yellow-sea);
+  }
+
+  &--ai {
+    background-color: var(--wisteria);
+  }
 }

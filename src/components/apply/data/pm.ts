@@ -14,10 +14,15 @@ export const or = {
     'Collaborate ​with the other product managers, interaction designers, software- and AI engineers in your team on the journey from the problem to the product',
     'Defining and measuring KPIs for ensuring your product’s success',
   ],
-}
+};
+
+export const generalTrackInfo = {
+  track: 'pm',
+  name: 'Product Manager',
+  url: 'product-management',
+};
 
 export const header = {
-  title: 'Product Manager',
   description1:
     '»A great product manager has the brain of an engineer, the heart of a designer, and the speech of a diplomat.« – Deep Nishar.',
   description2:
@@ -26,8 +31,7 @@ export const header = {
     'In our agile product development team you work at the intersection between business and technology to provide the best user experience – in close collaboration with designers and engineers.',
   description4:
     'Together you envision the product, which requires you to research your customers and the problems they have that you’re trying to solve. During the project you will define and iterate the product as you go, solve problems as they pop up and closely manage scope so you can get the right product out on time.',
-  track: 'pm',
-}
+};
 
 export const expectations = {
   firstColumn: [
@@ -43,7 +47,7 @@ export const expectations = {
     'You are a cross-functional influencer with the ability to build strong relationships between people',
     'You’ve got a good sense for design',
   ],
-}
+};
 
 export const whatyoulearn = {
   subtitle:
@@ -52,5 +56,4 @@ export const whatyoulearn = {
     'To enrich that experience, the DPS teams are not only solving problems through creating digital products – they also extend their professional knowledge and skills in workshops hold by domain experts from all over the world.',
   secondColumn:
     'During the whole Program the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.',
-  track: 'pm',
-}
+};

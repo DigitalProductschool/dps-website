@@ -13,16 +13,20 @@ export const or = {
     'Collaborate ​with the other interaction designers, software engineers, AI specialists and product managers in your team on the journey from the problem to the product',
     'Solving real-world problems through working with several industry partners',
   ],
-}
+};
+
+export const generalTrackInfo = {
+  track: 'ixd',
+  name: 'Interaction Designer',
+  url: 'interaction-design',
+};
 
 export const header = {
-  title: 'Interaction Designer',
   description1:
     'Interaction Designers (IxD) understand how users and technology communicate with each other and focus on designing engaging interfaces with well thought out behaviors. User experience design (UX) is playing a crucial role when developing digital products in a user-centered way. ',
   description2:
     'As an interaction designer, your job is to take responsibility for the design and the usability of your prototype and your product. You will envision user interfaces that are both intuitive and well thought through, so they will delight the user at any stage. You will be a user experience practitioner who enjoys doing user research as well as prototyping and testing. To you »Design Thinking« is not just a buzzword but the key to delivering detailed visual design solutions – for products users love.',
-  track: 'ixd',
-}
+};
 
 export const expectations = {
   firstColumn: [
@@ -33,7 +37,7 @@ export const expectations = {
     'You are interested and knowledgeable in digital trends, technology, and culture',
     'You are interested in interdisciplinary collaboration and want to learn from other fields',
   ],
-}
+};
 
 export const whatyoulearn = {
   subtitle:
@@ -42,5 +46,4 @@ export const whatyoulearn = {
     'To enrich that experience, the DPS teams are not only solving problems through creating digital products – they also extend their professional knowledge and skills in workshops held by domain experts from all over the world.',
   secondColumn:
     'During the whole program, the DPS core team will mentor all participants, give guidance and react to challenges that come up at short notice.',
-  track: 'ixd',
-}
+};

@@ -1,19 +1,20 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import Header from '../../../components/tracks/header/_index'
-import Footer from '../../../components/shared/footer/index'
-import TrackImage from '../../../components/tracks/track-image/_index'
-import WhatYouLearn from '../../../components/tracks/what-you-learn/_index'
-import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index'
-import Expectations from '../../../components/tracks/expectations/_index'
+import Header from '../../../components/tracks/header/_index';
+import Footer from '../../../components/shared/footer/index';
+import TrackImage from '../../../components/tracks/track-image/_index';
+import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
+import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
+import Expectations from '../../../components/tracks/expectations/_index';
 import {
+  generalTrackInfo,
   or,
   header,
   expectations,
   whatyoulearn,
-} from '../../../components/apply/data/ixd'
-import Apply from '../../../components/tracks/apply/_index'
-import CookieWarning from '../../../components/shared/cookie-warning'
+} from '../../../components/apply/data/ixd';
+import Apply from '../../../components/tracks/apply/_index';
+import CookieWarning from '../../../components/shared/cookie-warning';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -26,6 +27,7 @@ class TrackIxD extends React.Component {
       <React.Fragment>
         <CookieWarning />
         <Header
+          track={generalTrackInfo}
           data={header}
           className="track-ixd__header"
           logo="/assets/tracks/dps-logo-white.png"
@@ -34,11 +36,11 @@ class TrackIxD extends React.Component {
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ixd__wyl" data={whatyoulearn} />
-        <Apply track="ixd" />
+        <Apply url={generalTrackInfo.url} name={generalTrackInfo.name} />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default TrackIxD
+export default TrackIxD;

@@ -1,56 +1,48 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import Nav from '../../shared/nav/index'
+import Nav from '../../shared/nav/index';
 
 type trackData = {
-  title: string
-  description1: string
-  description2: string
-}
+  title: string;
+  description1: string;
+  description2: string;
+};
 
 const data: {
-  se: trackData
-  pm: trackData
-  ixd: trackData
-  ai: trackData
+  se: trackData;
+  pm: trackData;
+  ixd: trackData;
+  ai: trackData;
 } = {
   se: {
     title: 'Software Engineer',
     description1:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    description2:
-      'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      'Apply as Software Engineer now and take in the experience concentrate in digital product development',
   },
   ai: {
     title: 'AI Engineer',
     description1:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    description2:
-      'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      'Apply as AI Engineer now and take in the experience concentrate in digital product development',
   },
   pm: {
     title: 'Product Manager',
     description1:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    description2:
-      'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      'Apply as Product Manager now and take in the experience concentrate in digital product development',
   },
   ixd: {
     title: 'Interaction Designer',
     description1:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    description2:
-      'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      'Apply as Interaction Designer now and take in the experience concentrate in digital product development',
   },
-}
+};
 
 interface IHeaderProps {
-  track: 'se' | 'pm' | 'ixd' | 'ai'
+  track: 'se' | 'pm' | 'ixd' | 'ai';
 }
 
 class Header extends React.Component<IHeaderProps, {}> {
   render() {
-    const { track } = this.props
+    const { track } = this.props;
 
     return (
       <section
@@ -65,12 +57,12 @@ class Header extends React.Component<IHeaderProps, {}> {
             {data[track].description1}
           </p>
           <p className="applications__header-content__description">
-            {data[track].description2}
+            Currently, you can apply for the following batches: ADD BATCHES HERE
           </p>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

@@ -94,12 +94,12 @@ export default function Form(props) {
 
   return (
     <div className="u-content-wrapper">
-      <div className="u-content application-form-content">
+      <div className="application-form-content">
         <div className="application-form-plate">
           <form className="application-form" method="POST" action={SUBMIT_URL}>
             <div className="application-form__field-wrapper">
               <label className="application-form__label" htmlFor="name">
-                What is your name name?
+                What is your name?
               </label>
               <input
                 className="application-form__input"
@@ -180,7 +180,6 @@ export default function Form(props) {
                 }
               >
                 <option value="">Please select</option>
-                <option value="8">Batch#8</option>
                 <option value="9">Batch#9</option>
               </select>
             </div>
@@ -356,11 +355,13 @@ export default function Form(props) {
                 />
                 <label htmlFor="consent-radio" className="consent-radio-label">
                   <span className="consent-description">
-                    I agree to the
-                    <a href="https://digitalproductschool.io/privacy-policy">
-                      privacy policy
+                    I agree to the&nbsp;
+                    <a href="/privacy-policy" className="u-link">
+                      <span onclick="event.stopPropagation();">
+                        privacy policy
+                      </span>
                     </a>
-                    of Digital Product Schhool and it's parent company
+                    &nbsp;of Digital Product Schhool and it's parent company
                     UnternehmerTUM GmbH. The data collected through his
                     application form will be deleted at least six months after
                     the beginning of the batch you applied for.
@@ -370,10 +371,10 @@ export default function Form(props) {
             </div>
             <button
               type="submit"
-              className="application-form__submit u-button"
+              className={`application-form__submit application-form__submit--${props.track} u-button`}
               onClick={submitForm}
             >
-              SUBMIT APPLICATION
+              Send your application now!
             </button>
           </form>
         </div>
