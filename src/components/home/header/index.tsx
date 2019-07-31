@@ -1,27 +1,30 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Nav from '../../../components/shared/header/nav/index';
-import Cover from './cover/index';
-import HeaderContent from './header-content/index';
+import Nav from '../../shared/nav/index'
+import Cover from './cover/index'
+import HeaderContent from './header-content/index'
 
 interface IHeaderProps {
-  onContentButtonClick: () => void;
+  onContentButtonClick: () => void
 }
 
 class Header extends React.Component<IHeaderProps, {}> {
   render() {
-    const { onContentButtonClick } = this.props;
+    const { onContentButtonClick } = this.props
 
-    return  (
+    return (
       <React.Fragment>
         <section className="header u-content-wrapper">
           <Nav />
           <Cover />
-          <HeaderContent onContentButtonClick={onContentButtonClick} className="u-content" />
+          <HeaderContent
+            onContentButtonClick={onContentButtonClick}
+            className="u-content"
+          />
         </section>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

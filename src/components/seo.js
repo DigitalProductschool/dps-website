@@ -21,7 +21,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             title={titleAttr}
             titleTemplate={`%s`}
             link={[
-              { rel: 'shortcut icon', type: 'image/svg+xml', href: `${favicon}`, sizes: 'any' },
+              {
+                rel: 'shortcut icon',
+                type: 'image/svg+xml',
+                href: `${favicon}`,
+                sizes: 'any',
+              },
             ]}
             meta={[
               {
@@ -58,7 +63,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image:alt`,
-                content: `Apply now for DPS and become an experienced digital product maker!`
+                content: `Apply now for DPS and become an experienced digital product maker!`,
               },
               {
                 name: `twitter:card`,
