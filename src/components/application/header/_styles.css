@@ -1,0 +1,46 @@
+.applications__header {
+  color: white;
+  padding-bottom: 180px;
+}
+
+.applications__header-content__title {
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: calc(32px + 3vw);
+
+  @media (min-width: 1280px) {
+    font-size: 72px;
+  }
+}
+
+.applications__header-content__description {
+  color: white;
+  max-width: var(--max-width);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: calc(10px + 0.7vw);
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+.applications__header {
+  &--se {
+    background-color: var(--hollywoord-cerise);
+  }
+
+  &--pm {
+    background-color: var(--picton-blue);
+  }
+
+  &--ixd {
+    background-color: var(--yellow-sea);
+  }
+
+  &--ai {
+    background-color: var(--wisteria);
+  }
+}

@@ -1,0 +1,209 @@
+.application-form-plate {
+  text-align: center;
+  padding-top: 55px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  max-width: 780px;
+
+  @media (max-width: 620px) {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
+.application-form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.application-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.application-form__field-wrapper {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.application-form__label {
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.application-form__input {
+  width: 100%;
+  height: 62px;
+  border: 0px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: #f3f3f3;
+
+  &--textarea {
+    height: 150px;
+    padding: 10px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-image: url('/assets/icons/chevron-down-black.svg');
+  background-size: 22px;
+  background-position: 95.7% 50%;
+  background-repeat: no-repeat;
+}
+
+select.application-form__input {
+  height: 64px;
+  background-color: white;
+  border: 5px solid #f3f3f3;
+}
+
+.application-form__input[type='file'] {
+  position: fixed;
+  top: -9999px;
+}
+/*
+.application-form__input[type="file"]:focus ~ .application_form__file-input-overlay {
+  box-shadow: 0 0 5px rgba(102, 158, 241, 1);
+  border: 3px solid rgba(102, 158, 241, 1);
+  border-radius: 3px;
+} */
+
+.application_form__file-input-overlay {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  width: calc(100% - 100px);
+  text-align: left;
+}
+
+.application-form__file-button {
+  width: 90px;
+  height: 62px;
+  position: relative;
+  left: 10px;
+  margin-right: 10px;
+  top: 3px;
+  cursor: pointer;
+  border: 0;
+  &--se {
+    background-color: var(--hollywoord-cerise);
+  }
+}
+
+.scholarship-fieldset,
+.consent-fieldset {
+  border: 0;
+  text-align: left;
+}
+
+#scholarship-1,
+#scholarship-2,
+#consent-radio {
+  opacity: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.scholarship-radio-label,
+.consent-radio-label {
+  position: relative;
+  left: -3px;
+  top: -22px;
+  display: flex;
+}
+
+.scholarship-radio-label::before,
+.consent-radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 4px solid black;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+#scholarship-1:focus + .scholarship-radio-label::before,
+#scholarship-2:focus + .scholarship-radio-label::before,
+#consent-radio:focus + .consent-radio-label::before {
+  border: 4px solid var(--hollywoord-cerise);
+}
+
+#scholarship-1:checked + .scholarship-radio-label::after,
+#scholarship-2:checked + .scholarship-radio-label::after,
+#consent-radio:checked + .consent-radio-label::after {
+  content: '';
+  opacity: 1;
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  margin-right: 15px;
+}
+
+#scholarship-1:focus + .scholarship-radio-label::after,
+#scholarship-2:focus + .scholarship-radio-label::after,
+#consent-radio:focus + .consent-radio-label::after {
+  border-bottom: 2px solid var(--hollywoord-cerise);
+  border-right: 2px solid var(--hollywoord-cerise);
+}
+
+.application-form__submit {
+  margin-top: 30px;
+  margin-bottom: -100px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: content-box;
+  font-size: 16px;
+  font-weight: 700;
+  width: 70%;
+  max-width: 300px;
+  height: 35px;
+  background-color: white;
+  text-transform: uppercase;
+
+  &--se {
+    color: var(--hollywoord-cerise);
+    border: 4px solid var(--hollywoord-cerise);
+  }
+
+  &--pm {
+    color: var(--picton-blue);
+    border: 4px solid var(--picton-blue);
+  }
+
+  &--ixd {
+    color: var(--yellow-sea);
+    border: 4px solid var(--yellow-sea);
+  }
+
+  &--ai {
+    color: var(--wisteria);
+    border: 4px solid var(--wisteria);
+  }
+}
+
+.consent-description {
+  font-weight: 400;
+}
