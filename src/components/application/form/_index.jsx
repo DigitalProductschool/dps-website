@@ -73,7 +73,7 @@ function reducer(state, action) {
 
 const SUBMIT_URL =
   process.env.NODE_ENV === 'development'
-    ? 'http://localhost:8080/'
+    ? 'https://us-central1-dps-website-244212.cloudfunctions.net/handleApplicationForm'
     : 'PROD_URL';
 
 export default function Form(props) {
@@ -369,6 +369,7 @@ export default function Form(props) {
                 </label>
               </fieldset>
             </div>
+            <input type="hidden" name="track" value={`${props.track}`}></input>
             <button
               type="submit"
               className={`application-form__submit application-form__submit--${props.track} u-button`}
