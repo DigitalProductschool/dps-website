@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import favicon from '../../static/assets/favicon.svg'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import favicon from '../../static/assets/favicon.svg';
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -10,8 +10,8 @@ function SEO({ description, lang, meta, keywords, title }) {
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description
-        const titleAttr = title || data.site.siteMetadata.title
+          description || data.site.siteMetadata.description;
+        const titleAttr = title || data.site.siteMetadata.title;
         return (
           <Helmet
             htmlAttributes={{
@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School.jpg`,
+                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch9.jpg`,
               },
               {
                 property: `og:image:type`,
@@ -135,17 +135,17 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           />
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -153,9 +153,9 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
-}
+};
 
-export default SEO
+export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -167,4 +167,4 @@ const detailsQuery = graphql`
       }
     }
   }
-`
+`;
