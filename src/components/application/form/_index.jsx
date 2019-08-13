@@ -96,7 +96,13 @@ export default function Form(props) {
     <div className="u-content-wrapper">
       <div className="application-form-content">
         <div className="application-form-plate">
-          <form className="application-form" method="POST" action={SUBMIT_URL}>
+          <form
+            className="application-form"
+            name="application-form"
+            method="POST"
+            action={SUBMIT_URL}
+            onSubmit={submitForm}
+          >
             <div className="application-form__field-wrapper">
               <label className="application-form__label" htmlFor="name">
                 What is your name?
@@ -113,6 +119,7 @@ export default function Form(props) {
                     payload: { value: e.target.value },
                   })
                 }
+                required
               />
             </div>
             <div className="application-form__field-wrapper">
@@ -131,6 +138,7 @@ export default function Form(props) {
                     payload: { value: e.target.value },
                   })
                 }
+                required
               />
             </div>
             <div className="application-form__field-wrapper">
@@ -150,6 +158,7 @@ export default function Form(props) {
                     payload: { value: e.target.value },
                   })
                 }
+                required
               >
                 <option value="">Please select</option>
                 <option value="student">Student</option>
@@ -178,6 +187,7 @@ export default function Form(props) {
                     payload: { value: e.target.value },
                   })
                 }
+                required
               >
                 <option value="">Please select</option>
                 <option value="9">Batch#9</option>
@@ -200,6 +210,7 @@ export default function Form(props) {
                 ref={fileInputCVRef}
                 tabIndex={-1}
                 id="file-upload"
+                required
               />
               <div
                 className="application-form__input application_form__file-input-overlay"
@@ -228,6 +239,7 @@ export default function Form(props) {
               <fieldset
                 aria-labelledby="scholarship-radiogroup-label"
                 className="scholarship-fieldset"
+                required
               >
                 <input
                   type="radio"
@@ -241,6 +253,7 @@ export default function Form(props) {
                       payload: { value: e.target.value },
                     })
                   }
+                  required
                 />
                 <label
                   htmlFor="scholarship-1"
@@ -260,6 +273,7 @@ export default function Form(props) {
                       payload: { value: e.target.value },
                     })
                   }
+                  required
                 />
                 <label
                   htmlFor="scholarship-2"
@@ -277,6 +291,7 @@ export default function Form(props) {
               <textarea
                 id="heard-from"
                 className="application-form__input application-form__input--textarea"
+                name="application-form"
                 value={state.learnAboutSource}
                 onChange={e =>
                   dispatch({
@@ -284,6 +299,7 @@ export default function Form(props) {
                     payload: { value: e.target.value },
                   })
                 }
+                required
               />
             </div>
             <div className="application-form__field-wrapper">
@@ -352,12 +368,13 @@ export default function Form(props) {
                       payload: { value: e.target.checked },
                     })
                   }
+                  required
                 />
                 <label htmlFor="consent-radio" className="consent-radio-label">
                   <span className="consent-description">
                     I agree to the&nbsp;
                     <a href="/privacy-policy" className="u-link">
-                      <span onclick="event.stopPropagation();">
+                      <span onClick="event.stopPropagation();">
                         privacy policy
                       </span>
                     </a>
@@ -373,7 +390,6 @@ export default function Form(props) {
             <button
               type="submit"
               className={`application-form__submit application-form__submit--${props.track} u-button`}
-              onClick={submitForm}
             >
               Send your application now!
             </button>
