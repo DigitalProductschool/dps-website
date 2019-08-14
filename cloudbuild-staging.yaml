@@ -15,7 +15,7 @@ steps:
         'deploy',
         'website-staging.app.yaml',
         '--project',
-        'dps-website-244212',
+        'dps-website-staging-0',
         '--log-http',
         '--verbosity',
         'debug',
