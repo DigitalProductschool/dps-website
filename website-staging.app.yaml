@@ -7,13 +7,13 @@ handlers:
     secure: always
     expiration: 1s
 
-  - url: /tracks/([^.]+)
+  - url: /tracks/([^.]+)/
     static_files: public/apply/\1/index.html
     upload: public/apply/([^.]+)/index.html
     secure: always
     expiration: 1s
 
-  - url: /tracks/([^.]+)/
+  - url: /tracks/([^.]+)
     static_files: public/apply/\1/index.html
     upload: public/apply/([^.]+)/index.html
     secure: always
