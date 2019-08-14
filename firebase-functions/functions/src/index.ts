@@ -8,8 +8,8 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 
 const trello = new TrelloNodeAPI();
-trello.setApiKey('SET_API_KEY');
-trello.setOauthToken('SET_AUTH_TOKEN');
+trello.setApiKey(functions.config().trello.key);
+trello.setOauthToken(functions.config().trello.token);
 
 exports.createTrelloCard = functions.firestore
   .document(`batches/{batch}/applications/{applicationId}`)
