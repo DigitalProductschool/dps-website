@@ -7,6 +7,18 @@ handlers:
     secure: always
     expiration: 1s
 
+  - url: /tracks/([^.]+)
+    static_files: public/apply/\1/index.html
+    upload: public/apply/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /tracks/([^.]+)/
+    static_files: public/apply/\1/index.html
+    upload: public/apply/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
   # matches path/ to path/index.html
