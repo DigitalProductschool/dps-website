@@ -71,12 +71,8 @@ function reducer(state, action) {
   }
 }
 
-const SUBMIT_URL =
-  process.env.NODE_ENV === 'development'
-    ? 'https://us-central1-dps-website-244212.cloudfunctions.net/handleApplicationForm'
-    : 'PROD_URL';
-
 export default function Form(props) {
+  const SUBMIT_URL = process.env.GATSBY_HANDLE_APPLICATION_ENDPOINT;
   const fileInputCVRef = useRef(null);
   const fileInputCoverLetterRef = useRef(null);
   const [state, dispatch] = useReducer(reducer, initialState);

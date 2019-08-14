@@ -1,23 +1,22 @@
 # Empty
-steps:  
-  - name: "gcr.io/cloud-builders/npm"
-    args: [
-      "install"
-    ]
-  - name: "gcr.io/cloud-builders/npm"
-    args: [
-      "run",
-      "build"
-    ]
-  - name: "gcr.io/cloud-builders/gcloud"
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+    env:
+      [
+        'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://us-central1-dps-website-244212.cloudfunctions.net/handleApplicationForm',
+      ]
+  - name: 'gcr.io/cloud-builders/gcloud'
     args:
       [
-        "app",
-        "deploy",
-        "website-staging.app.yaml",
-        "--project",
-        "dps-website-244212",
-        "--log-http",
-        "--verbosity",
-        "debug",
+        'app',
+        'deploy',
+        'website-staging.app.yaml',
+        '--project',
+        'dps-website-244212',
+        '--log-http',
+        '--verbosity',
+        'debug',
       ]
