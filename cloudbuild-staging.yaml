@@ -6,7 +6,7 @@ steps:
     args: ['run', 'build']
     env:
       [
-        'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://us-central1-dps-website-244212.cloudfunctions.net/handleApplicationForm',
+        'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://europe-west1-dps-website-staging-0.cloudfunctions.net/handleApplicationForm',
       ]
   - name: 'gcr.io/cloud-builders/gcloud'
     args:

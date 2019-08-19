@@ -11,12 +11,17 @@ const trello = new TrelloNodeAPI();
 trello.setApiKey(functions.config().trello.key);
 trello.setOauthToken(functions.config().trello.token);
 
-exports.createTrelloCard = functions.firestore
-  .document(`batches/{batch}/applications/{applicationId}`)
+const defaultRegion = 'europe-west1';
+
+exports.createTrelloCard = functions
+  .region(defaultRegion)
+  .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
     createTrelloCard.handler(snap, trello);
   });
 
-exports.handleApplicationForm = functions.https.onRequest(async (req, res) => {
-  await handleFormSubmit.handler(req, res, admin);
-});
+exports.handleApplicationForm = functions
+  .region(defaultRegion)
+  .https.onRequest(async (req, res) => {
+    await handleFormSubmit.handler(req, res, admin);
+  });
