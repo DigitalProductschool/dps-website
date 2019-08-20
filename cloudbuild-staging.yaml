@@ -2,10 +2,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-  - name: 'devillex/docker-firebase:slim'
-    entrypoint: 'bash'
-    args: ['-c', 'npm install']
-  - name: 'devillex/docker-firebase:slim'
+  - name: 'gcr.io/$PROJECT_ID/firebase'
     entrypoint: 'bash'
     args:
       [
