@@ -4,6 +4,9 @@ steps:
     args: ['install']
   - name: 'devillex/docker-firebase:slim'
     entrypoint: 'bash'
+    args: ['-c', 'npm install']
+  - name: 'devillex/docker-firebase:slim'
+    entrypoint: 'bash'
     args:
       [
         '-c',
