@@ -20,3 +20,11 @@ steps:
         '--verbosity',
         'debug',
       ]
+  - name: 'devillex/docker-firebase'
+    args:
+      ['deploy', '--only', 'functions', '--project', 'dps-website-staging-0']
+    secretEnv: ['ENC_FIREBASE_TOKEN']
+secrets:
+  - FIREBASE_TOKEN: projects/dps-website-staging-0/locations/global/keyRings/website-staging-keyring/cryptoKeys/FIREBASE_TOKEN
+    secretEnv:
+      ENC_FIREBASE_TOKEN: CiQAmACp4umyNCKRsyOPSqFCt4ZMOx/wKJGvbLxal54b9luDE1gSVgCdSnK69Ylbl4WrShdUljGVTXTYyHb/FLs9IpixgXsvpm06L/2w3TOWUAT/UnoL6np2r/GBYcQltzYEp/1aEh8cMORz7guZC7m4Gbvevwihb9mXPW/N
