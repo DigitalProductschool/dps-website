@@ -1,14 +1,93 @@
 import * as React from 'react';
+import { getFirebase } from '../../../../firebase-functions/firebase';
 
 interface IHeaderProps {
   name: string;
   url: string;
 }
 
+function getBatchDate(batchDate) {
+  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+    .format;
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
 // this component will be thrown away, so quick & dirty
 class Apply extends React.Component<IHeaderProps, {}> {
+  constructor(props: IHeaderProps) {
+    super(props);
+    this.state = {
+      batchDetails: [],
+    };
+  }
+
+  componentDidMount() {
+    const firebaseApp = import('firebase/app');
+    const firebaseDatabase = import('firebase/firestore');
+    var currentTime = new Date();
+
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot =>
+          snapshot.forEach(doc =>
+            this.setState(prevState => ({
+              batchDetails: [
+                ...prevState.batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ],
+            }))
+          )
+        );
+    });
+  }
+
   render() {
     const { name, url } = this.props;
+
+    let displayBatch = this.state.batchDetails.map(batch => (
+      <span key={batch.batchID}>
+        <b>
+          {' '}
+          # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to
+          {getBatchDate(batch.endDate)}{' '}
+        </b>{' '}
+        (Application phase: {getBatchDate(batch.appStartDate)}
+        to {getBatchDate(batch.appEndDate)}) <br />
+      </span>
+    ));
 
     return (
       <div className="u-content-wrapper">
@@ -33,10 +112,10 @@ class Apply extends React.Component<IHeaderProps, {}> {
           </p>
           <br />
           <p>
-            Dates and deadlines of the upcoming batches:<br /><br />
-              # Batch #9: Jan. 7 to March 27, 2020 (Application deadline: October 13, 2019)  <br /><br />
-              # Batch #10: May 4 to July 24, 2020 (Application phase starts in October 2019) <br /><br />
-              # Batch #11: Sept. 8 to Nov. 27, 2020 (Application phase starts in February 2020)
+            Dates and deadlines of the upcoming batches:
+            <br />
+            <br />
+            {displayBatch}
           </p>
           <div className="tracks__apply-button-wrapper">
             <a
