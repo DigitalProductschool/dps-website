@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { getFirebase } from '../../../../firebase-functions/firebase';
-import * as moment from 'moment';
 
 interface IHeaderProps {
   name: string;
@@ -9,8 +8,8 @@ interface IHeaderProps {
 
 // this component will be thrown away, so quick & dirty
 class Apply extends React.Component<IHeaderProps, {}> {
-  constructor() {
-    super();
+  constructor(props: IHeaderProps) {
+    super(props);
     this.state = {
       batchDetails: [],
     };
@@ -36,22 +35,10 @@ class Apply extends React.Component<IHeaderProps, {}> {
                 {
                   batchID: doc.id,
                   batchNumber: doc.data().batch,
-                  startDate: doc
-                    .data()
-                    .startDate.toDate()
-                    .toString(),
-                  endDate: doc
-                    .data()
-                    .endDate.toDate()
-                    .toString(),
-                  appStartDate: doc
-                    .data()
-                    .appStartDate.toDate()
-                    .toString(),
-                  appEndDate: doc
-                    .data()
-                    .appEndDate.toDate()
-                    .toString(),
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
                 },
               ],
             }))
@@ -62,13 +49,42 @@ class Apply extends React.Component<IHeaderProps, {}> {
 
   render() {
     const { name, url } = this.props;
+    function getBatchDate(batchDate) {
+      let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+        .format;
+      const monthNames = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+      ];
+      let date = batchDate.toDate();
+      let newdate =
+        monthNames[date.getMonth()] +
+        ' ' +
+        date.getDate() +
+        ', ' +
+        date.getFullYear();
+      return newdate;
+    }
+
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
-        # Batch #{batch.batchNumber}: {moment(batch.startDate).format('ll')} to{' '}
-        {moment(batch.endDate).format('ll')} (Application phase:{' '}
-        {moment(batch.appStartDate).format('ll')} to{' '}
-        {moment(batch.appEndDate).format('ll')}) <br />
-        <br />
+        <b>
+          {' '}
+          # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to
+          {getBatchDate(batch.endDate)}{' '}
+        </b>{' '}
+        (Application phase: {getBatchDate(batch.appStartDate)}
+        to {getBatchDate(batch.appEndDate)}) <br />
       </span>
     ));
 

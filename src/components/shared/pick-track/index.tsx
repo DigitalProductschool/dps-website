@@ -169,22 +169,10 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 {
                   batchID: doc.id,
                   batchNumber: doc.data().batch,
-                  startDate: doc
-                    .data()
-                    .startDate.toDate()
-                    .toString(),
-                  endDate: doc
-                    .data()
-                    .endDate.toDate()
-                    .toString(),
-                  appStartDate: doc
-                    .data()
-                    .appStartDate.toDate()
-                    .toString(),
-                  appEndDate: doc
-                    .data()
-                    .appEndDate.toDate()
-                    .toString(),
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
                 },
               ],
             }))
@@ -194,14 +182,40 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 
   renderDescription() {
+    function getBatchDate(batchDate) {
+      let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+        .format;
+      const monthNames = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+      ];
+      let date = batchDate.toDate();
+      let newdate =
+        monthNames[date.getMonth()] +
+        ' ' +
+        date.getDate() +
+        ', ' +
+        date.getFullYear();
+      return newdate;
+    }
+
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
-        <b>
-          # Batch #{batch.batchNumber}: {moment(batch.startDate).format('ll')}{' '}
-          to {moment(batch.endDate).format('ll')}
-        </b>{' '}
-        (Application phase: {moment(batch.appStartDate).format('ll')} to{' '}
-        {moment(batch.appEndDate).format('ll')}) <br />
+        # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to{' '}
+        {getBatchDate(batch.endDate)} (Application phase:{' '}
+        {getBatchDate(batch.appStartDate)} to {getBatchDate(batch.appEndDate)}){' '}
+        <br />
+        <br />
       </span>
     ));
 
