@@ -6,6 +6,33 @@ interface IHeaderProps {
   url: string;
 }
 
+function getBatchDate(batchDate) {
+  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+    .format;
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
 // this component will be thrown away, so quick & dirty
 class Apply extends React.Component<IHeaderProps, {}> {
   constructor(props: IHeaderProps) {
@@ -49,32 +76,6 @@ class Apply extends React.Component<IHeaderProps, {}> {
 
   render() {
     const { name, url } = this.props;
-    function getBatchDate(batchDate) {
-      let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-        .format;
-      const monthNames = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ];
-      let date = batchDate.toDate();
-      let newdate =
-        monthNames[date.getMonth()] +
-        ' ' +
-        date.getDate() +
-        ', ' +
-        date.getFullYear();
-      return newdate;
-    }
 
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>

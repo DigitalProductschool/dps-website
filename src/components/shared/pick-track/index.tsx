@@ -10,6 +10,33 @@ interface IPickTrackState {
   active: 'pm' | 'se' | 'ai' | 'ixd' | null;
 }
 
+function getBatchDate(batchDate) {
+  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+    .format;
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
 class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   constructor(props: IPickTrackProps) {
     super(props);
@@ -182,33 +209,6 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 
   renderDescription() {
-    function getBatchDate(batchDate) {
-      let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-        .format;
-      const monthNames = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ];
-      let date = batchDate.toDate();
-      let newdate =
-        monthNames[date.getMonth()] +
-        ' ' +
-        date.getDate() +
-        ', ' +
-        date.getFullYear();
-      return newdate;
-    }
-
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
         # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to{' '}
