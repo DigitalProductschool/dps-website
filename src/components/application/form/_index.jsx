@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useRef, useCallback, useReducer } from 'react';
+import { useRef, useCallback, useReducer, useEffect, useState } from 'react';
 
 const initialState = {
   name: '', // string
@@ -74,7 +74,9 @@ function reducer(state, action) {
 export default function Form(props) {
   const SUBMIT_URL = process.env.GATSBY_HANDLE_APPLICATION_ENDPOINT;
   const fileInputCVRef = useRef(null);
+  const uploadCVLabelRef = useRef(null);
   const fileInputCoverLetterRef = useRef(null);
+  const [fileUploadError, setFileUploadError] = useState(null);
   const [state, dispatch] = useReducer(reducer, initialState);
   const clickFileInputCV = useCallback(() => {
     fileInputCVRef.current.click();
@@ -84,9 +86,18 @@ export default function Form(props) {
     fileInputCoverLetterRef.current.click();
   }, []);
 
-  const submitForm = useCallback(e => {
-    // e.preventDefault();
-  }, []);
+  const submitForm = e => {
+    if (!state.cv) {
+      setFileUploadError(true);
+      uploadCVLabelRef.current.scrollIntoView();
+    }
+
+    e.preventDefault();
+  };
+
+  useEffect(() => {
+    setFileUploadError(null);
+  }, [state]);
 
   return (
     <div className="u-content-wrapper">
@@ -190,7 +201,12 @@ export default function Form(props) {
               </select>
             </div>
             <div className="application-form__field-wrapper">
-              <label className="application-form__label" htmlFor="file-upload">
+              <label
+                className="application-form__label"
+                htmlFor="file-upload"
+                ref={uploadCVLabelRef}
+                style={fileUploadError ? { color: 'red' } : null}
+              >
                 Please upload your CV (PDF, max 5MB)
               </label>
               <label />
@@ -201,12 +217,12 @@ export default function Form(props) {
                     payload: { file: e.target.files[0] },
                   })
                 }
+                accept="application/pdf"
                 className="application-form__input"
                 type="file"
                 ref={fileInputCVRef}
                 tabIndex={-1}
                 id="file-upload"
-                required
               />
               <div
                 className="application-form__input application_form__file-input-overlay"
@@ -309,6 +325,7 @@ export default function Form(props) {
               <input
                 className="application-form__input"
                 type="file"
+                accept="application/pdf"
                 ref={fileInputCoverLetterRef}
                 tabIndex={-1}
                 id="file-upload-cover-letter"
@@ -370,7 +387,7 @@ export default function Form(props) {
                   <span className="consent-description">
                     I agree to the&nbsp;
                     <a href="/privacy-policy" className="u-link">
-                      <span onClick="event.stopPropagation();">
+                      <span onClick={e => e.stopPropagation()}>
                         privacy policy
                       </span>
                     </a>
@@ -387,7 +404,7 @@ export default function Form(props) {
               type="submit"
               className={`application-form__submit application-form__submit--${props.track} u-button`}
             >
-              Send your application now!
+              Send your application
             </button>
           </form>
         </div>
