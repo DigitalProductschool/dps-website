@@ -74,3 +74,8 @@ lib
 typings/
 
 node_modules/
+
+
+## Keys
+
+*.key.json

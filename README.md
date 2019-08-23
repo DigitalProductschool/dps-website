@@ -1,57 +1,97 @@
 # Website Digital Product School
 
-# Prerequesites
+# Frontend
 
-## Node and npm
+## Prerequesites
 
-` Install node and npm `
+### Node and npm
 
-## Gatsby
+`Install node and npm`
+
+### Gatsby
 
 `npm install -g gatsby-cli`
 
+## Context
 
-# Setting Up
-A step by step guide that tell you how to get the development and production environment running
+The gatsby frontend resides currently in the root directory. The intention is to move it to e `frontend/` folder.
 
-After cloning the repository install the package dependencies using:
+## Setting Up
 
-```
-npm install
-```
+1. Run `npm install` in the root dir
 
-# Development
+## Development
 
-Make sure you are in the root directory
-Start the development server using
-```
-gatsby develop
-```
-and visit
-```
-http://localhost:8000/
-```
+1. Run `npm run start`
+2. Any environemnt variables go into `.env.development` for local development and into `cloudbuild-prod|staging.yaml` for prod / staging. This is a bit inconsistent, it might be best to move those from `cloudbuild-prod|staging.yaml` in `.env.staging` and `.env.production`, but yolo unless you wanna fix it.
 
-# Production
+## Testing
 
-First compile your application using
-```
-gatsby build
-```
+???
 
-To `serve` the production build, use
-```
-gatsby serve
-```
-and then visit
-```
-http://localhost:9000/
-```
+## Deployment
 
+Any push to staging branch is being deployed via `cloudbuild-staging.yaml` and any push to master branch is being deplopyed via `cloudbuild-prod.yaml`.
 
+# Services / Cloud Functions
+
+## Context
+
+This is work in progress and we're still figuring out what's the best way to develop cloud functions. You can find them under `funtions/`.
+
+## Setting up
+
+Navigate to `functions/` and run `npm run install`.
+
+## Development
+
+1. Running `npm run serve` will start the functions locally. However, those functions connect to `firestore` on the cloud. The other option would be to start `firestore` emulator as well, but for now we like the cloud one, because it provides nice UI and is less hassle to setup. Those functions would connect against our staging `cloud storage` as well.
+
+2. In order to authenticate against `firestore` and `cloud storage`, you need to go to the dps-website-staging project and download the key for `dps-website-staging-0@appspot.gserviceaccount.com` and put it under `functions/` with name `dps-website-staging.firebase.key.json`.
+
+3. Now you can experiment against the functions that run locally and are accessible via localhost, but they access our staging database & storage.
+
+4. For faster iterations, we recommend developing via tests if possible
+
+## Tests
+
+### Unit Tests
+
+We have unit tests under `__test__/`, you could run them via `npm run test` or `npm run test:watch`. Those should test against functionality that's not related to database or storage - mostly pure functions.
+
+### Integration tests
+
+You could find integration tests under `__test__/` and run them via `npm run integrationtest` or `npm run integrationtest:watch`. Those tests would be executed against the `database` and `storage` staging environment.
+
+### Thoughts
+
+Unfortunately, some things such as file uploads are very difficult to test, so we recommend weighting out the benefits of writing tests there and thinking about what to mock.
+
+## How we develop?
+
+1. Write a cloud function
+2. Write unit tests
+3. Write integration tests
+4. Go manually over the flow to see if it works
+5. Deploy the function to staging & make sure it works
+6. Deploy the function to production
+
+## Deployment
+
+We don't have CI yet. You'll need to be logged into gcloud cli and have the appropriate premissions.
+
+### Staging
+
+`npm run deploy:staging`
+
+### Production
+
+`npm run deploy:production`
 
 # Contributors
+
 Following are the people who contributed in the development of this website:
+
 <table>
 <tr>
 <td>

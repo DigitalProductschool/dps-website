@@ -2,14 +2,13 @@ import * as React from 'react';
 import { useRef, useCallback, useReducer, useEffect, useState } from 'react';
 
 const initialState = {
-  name: '', // string
-  email: '', // string
-  batch: '', // number as string, for instance '8', '9', etc
-  learnAboutSource: '', // string, free text
-  describeYourself: '', // string, 'student' | 'graduate' , etc...
-  consent: '', // string, 'true' | 'false'
-  scholarship: '', // string, 'true' | 'false'
-
+  name: 'Hello', // string
+  email: 'hello@example.com', // string
+  batch: '9', // number as string, for instance '8', '9', etc
+  source: 'dasfas', // string, free text
+  userType: 'student', // string, 'student' | 'graduate' , etc...
+  consent: 'true', // string, 'true' | 'false'
+  scholarship: 'true', // string, 'true' | 'false'
   cv: null,
   coverLetter: null,
 };
@@ -55,7 +54,7 @@ function reducer(state, action) {
     case 'CHANGE_LEARN_ABOUT_SOURCE':
       return {
         ...state,
-        learnAboutSource: action.payload.value,
+        source: action.payload.value,
       };
 
     case 'CHANGE_CONSENT':
@@ -92,12 +91,29 @@ export default function Form(props) {
       uploadCVLabelRef.current.scrollIntoView();
     }
 
+    const formData = new FormData();
+
+    for (const key in state) {
+      formData.append(key, state[key]);
+    }
+
+    fetch(SUBMIT_URL, {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => {
+        console.log(response);
+      })
+      .catch(console.log);
+
     e.preventDefault();
   };
 
   useEffect(() => {
     setFileUploadError(null);
   }, [state]);
+
+  console.log(state);
 
   return (
     <div className="u-content-wrapper">
@@ -158,7 +174,8 @@ export default function Form(props) {
               <select
                 className="application-form__input"
                 id="describe-yourself"
-                name="describeYourself"
+                name="userType"
+                value={state.userType}
                 onChange={e =>
                   dispatch({
                     type: 'CHANGE_DESCRIBE_YOURSELF',
@@ -304,7 +321,7 @@ export default function Form(props) {
                 id="heard-from"
                 className="application-form__input application-form__input--textarea"
                 name="application-form"
-                value={state.learnAboutSource}
+                value={state.source}
                 onChange={e =>
                   dispatch({
                     type: 'CHANGE_LEARN_ABOUT_SOURCE',
