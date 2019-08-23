@@ -113,8 +113,6 @@ export default function Form(props) {
     setFileUploadError(null);
   }, [state]);
 
-  console.log(state);
-
   return (
     <div className="u-content-wrapper">
       <div className="application-form-content">

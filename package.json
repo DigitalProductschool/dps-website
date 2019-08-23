@@ -27,7 +27,9 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-inlinesvg": "^0.8.4",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "@firebase/app": "^0.4.15",
+    "@firebase/firestore": "^1.4.11"
   },
   "keywords": [
     "gatsby"

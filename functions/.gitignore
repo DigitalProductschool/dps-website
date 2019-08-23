@@ -69,6 +69,7 @@ lib
 ## Compiled JavaScript files
 **/*.js
 **/*.js.map
+!**/*.test.js
 
 # Typescript v1 declaration files
 typings/
