@@ -36,6 +36,7 @@ describe('handle form submission', () => {
       status: (...args) => res,
       send: async message => {
         assert.equal(message, 'Thank you for your application!');
+        // try to save
         const doc = await admin
           .firestore()
           .collection('batches')
@@ -44,8 +45,9 @@ describe('handle form submission', () => {
           .where('name', '==', 'Max')
           .get();
 
-        assert.equal(doc.size, 1);
+        const size = doc.size;
 
+        // cleanup
         for (let d of doc.docs) {
           await admin
             .firestore()
@@ -55,6 +57,9 @@ describe('handle form submission', () => {
             .doc(d.id)
             .delete();
         }
+
+        // assert after cleanup
+        assert.equal(size, 1);
 
         handleFormSubmit.getRequestDataAndPersistFiles.mockRestore();
         done();
