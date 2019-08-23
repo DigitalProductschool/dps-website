@@ -29,6 +29,26 @@
   .nav--black {
     color: black;
   }
+
+  @media (min-width: 621px) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: visible;
+    }
+  }
+
+  @media (max-width: 620px) {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: visible;
+    }
+  }
 }
 
 .nav__menu {
@@ -45,6 +65,28 @@
   @media (max-width: 310px) {
     font-size: 12px;
   }
+
+  &--mobile {
+    position: fixed;
+    top: 86px;
+    right: -250px;
+    background-color: white;
+    margin: 0;
+    bottom: 0;
+    width: 250px;
+    transition: transform 0.3s;
+    flex-direction: column;
+    display: flex;
+    z-index: 10;
+  }
+
+  &--mobile-open {
+    transform: translateX(-250px);
+  }
+}
+
+.nav__hamburger-icon {
+  width: 30px;
 }
 
 .nav__menu__item {
@@ -58,6 +100,17 @@
 
     &:hover {
       color: var(--picton-blue);
+    }
+  }
+
+  &--mobile {
+    margin: 50px 30px 10px 30px;
+    font-size: 18px;
+  }
+
+  &--mobile {
+    a {
+      color: black;
     }
   }
 }
