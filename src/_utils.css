@@ -1,9 +1,13 @@
+.u-disable-scroll {
+  overflow: hidden;
+}
+
 .u-outline {
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
 
   @media (max-width: 620px) {
-    -webkit-text-stroke: 2px
+    -webkit-text-stroke: 2px;
   }
 
   &--reversed {
@@ -86,25 +90,26 @@ h3.u-title {
 }
 
 .u-youtube {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 
-    iframe, object, embed {
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-    }
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .u-link {
-
   span {
     position: relative;
     color: #000000;
@@ -122,7 +127,7 @@ h3.u-title {
     height: 11px;
     top: 2px;
     color: var(--picton-blue);
-    content: "";
+    content: '';
     display: inline-block;
     z-index: -1;
   }
@@ -135,7 +140,7 @@ h3.u-title {
     top: 2px;
     background-color: rgba(3, 184, 229);
     color: var(--picton-blue);
-    content: "";
+    content: '';
     display: inline-block;
   }
 
@@ -147,7 +152,7 @@ h3.u-title {
     bottom: 1px;
     background-color: rgba(3, 184, 229);
     color: var(--picton-blue);
-    content: "";
+    content: '';
     display: inline-block;
     z-index: -1;
   }
@@ -187,7 +192,7 @@ h3.u-title {
 
 .u-grid-4-6 {
   display: grid;
-  grid-template-columns:4fr 6fr;
+  grid-template-columns: 4fr 6fr;
   grid-gap: 20px;
 
   @media (max-width: 620px) {
@@ -202,7 +207,7 @@ h3.u-title {
 
 .u-grid-6-4 {
   display: grid;
-  grid-template-columns:6fr 4fr;
+  grid-template-columns: 6fr 4fr;
   grid-gap: 20px;
 
   @media (max-width: 620px) {
