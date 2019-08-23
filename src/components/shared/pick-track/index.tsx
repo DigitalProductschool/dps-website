@@ -177,8 +177,8 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 
   componentDidMount() {
-    const firebaseApp = import('firebase/app');
-    const firebaseDatabase = import('firebase/firestore');
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
     var currentTime = new Date();
 
     Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {

@@ -43,8 +43,8 @@ class Apply extends React.Component<IHeaderProps, {}> {
   }
 
   componentDidMount() {
-    const firebaseApp = import('firebase/app');
-    const firebaseDatabase = import('firebase/firestore');
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
     var currentTime = new Date();
 
     Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
