@@ -1,16 +1,16 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
-import Seo from '../../seo'
+import * as React from 'react';
+import { Link } from 'gatsby';
+import Seo from '../../seo';
 
 interface INavProps {
-  addClass?: string
-  logo?: string
+  addClass?: string;
+  logo?: string;
 }
 
 class Nav extends React.Component<INavProps, {}> {
   render() {
-    const addClass = this.props.addClass || ''
-    const logo = this.props.logo || '/assets/shared/dps-logo-white.svg'
+    const addClass = this.props.addClass || '';
+    const logo = this.props.logo || '/assets/shared/dps-logo-white.svg';
 
     return (
       <nav className={`nav ${addClass}`}>
@@ -29,11 +29,14 @@ class Nav extends React.Component<INavProps, {}> {
             <li className="nav__menu__item">
               <Link to="/apply"> Apply </Link>
             </li>
+            <li className="nav__menu__item">
+              <Link to="/faq"> FAQ </Link>
+            </li>
           </ul>
         </div>
       </nav>
-    )
+    );
   }
 }
 
-export default Nav
+export default Nav;
