@@ -23,7 +23,7 @@ The gatsby frontend resides currently in the root directory. The intention is to
 ## Development
 
 1. Run `npm run start`
-2. Any environemnt variables go into `.env.development` for local development and into `cloudbuild-prod|staging.yaml` for prod / staging. This is a bit inconsistent, it might be best to move those from `cloudbuild-prod|staging.yaml` in `.env.staging` and `.env.production`, but yolo unless you wanna fix it.
+2. Any environemnt variables go into `.env.development` for local development and into `cloudbuild-prod|staging.yaml` for prod / staging.
 
 ## Testing
 
@@ -45,13 +45,20 @@ Navigate to `functions/` and run `npm run install`.
 
 ## Development
 
-1. Running `npm run serve` will start the functions locally. However, those functions connect to `firestore` on the cloud. The other option would be to start `firestore` emulator as well, but for now we like the cloud one, because it provides nice UI and is less hassle to setup. Those functions would connect against our staging `cloud storage` as well.
+1. Login in gcloud cli
+2. Setup your local runtime. Under `functions/` run:
 
-2. In order to authenticate against `firestore` and `cloud storage`, you need to go to the dps-website-staging project and download the key for `dps-website-staging-0@appspot.gserviceaccount.com` and put it under `functions/` with name `dps-website-staging.firebase.key.json`.
+`firebase functions:config:get --project dps-website-staging-0 > .runtimeconfig.json`
 
-3. Now you can experiment against the functions that run locally and are accessible via localhost, but they access our staging database & storage.
+This would provide all the configs from google cloud runtime on your local PC so you can run functions locally. Please never commit `.runtimeconfig.json` to git, because this is sensitive information.
 
-4. For faster iterations, we recommend developing via tests if possible
+2. Running `npm run serve` will start the functions locally. However, those functions connect to `firestore` on the cloud. The other option would be to start `firestore` emulator as well, but for now we like the cloud one, because it provides nice UI and is less hassle to setup. Those functions would connect against our staging `cloud storage` as well.
+
+3. In order to authenticate against `firestore` and `cloud storage`, you need to go to the dps-website-staging project and download the key for `dps-website-staging-0@appspot.gserviceaccount.com` and put it under `functions/` with name `dps-website-staging.firebase.key.json`.
+
+4. Now you can experiment against the functions that run locally and are accessible via localhost, but they access our staging database & storage.
+
+5. For faster iterations, we recommend developing via tests if possible
 
 ## Tests
 

@@ -78,5 +78,7 @@ node_modules/
 
 
 ## Keys
-
 *.key.json
+
+# firebase credentials / secrets
+.runtimeconfig.json

@@ -30,5 +30,7 @@ if (functions.config().trello) {
       createTrelloCard.handler(snap, trello);
     });
 } else {
-  console.error('Trello config unavailable');
+  throw new Error(
+    'Please configure firebase environment variables. Look at the readme for more info'
+  );
 }
