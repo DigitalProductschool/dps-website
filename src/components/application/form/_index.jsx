@@ -93,18 +93,22 @@ export default function Form(props) {
 
     const formData = new FormData();
 
+    // put cv & coverLetter at the end of formdata
+    // because our middleware assumes processing of other
+    // key-values first so they can be used when creating
+    // filenames. Yep...
     for (const key in state) {
-      formData.append(key, state[key]);
+      if (key !== 'cv' && key !== 'coverLetter') {
+        formData.append(key, state[key]);
+      }
     }
+    formData.append('coverLetter', state.cv);
+    formData.append('cv', state.cv);
 
     fetch(SUBMIT_URL, {
       method: 'POST',
       body: formData,
-    })
-      .then(response => {
-        console.log(response);
-      })
-      .catch(console.log);
+    });
 
     e.preventDefault();
   };

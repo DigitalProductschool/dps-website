@@ -4,7 +4,7 @@
     "lint": "tslint --project tsconfig.json",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "serve": "concurrently \"npm run build:watch\" \"firebase serve --only functions --project staging\"",
+    "serve": "concurrently \"npm run build:watch\" \"firebase serve --only functions --project dps-website-staging-0\"",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy:production": "firebase deploy --only functions --project dps-website-244212",

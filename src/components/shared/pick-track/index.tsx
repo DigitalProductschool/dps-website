@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { getFirebase } from '../../../../firebase-functions/firebase';
-import * as moment from 'moment';
+import { getFirebase } from '../../../firebase/firebase';
 
 interface IPickTrackProps {
   isApplyNowVersion: boolean;

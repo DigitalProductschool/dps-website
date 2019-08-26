@@ -38,19 +38,20 @@ exports.getRequestDataAndPersistFiles = async (
   return new Promise((resolve, reject) => {
     const busboy = new Busboy({ headers: req.headers });
     const data: { [key: string]: string | Buffer | Promise<any> } = {};
-
     // collect file stream and pipe them to the storage, return promises as values
     busboy.on(
       'file',
       async (fieldname: string, readFileStream: any, filename: string) => {
         const filePromise = new Promise(async (fileResolve, fileReject) => {
           const bucket = STORAGE_BUCKET_URL;
-          const name = `participants/${Date.now()}_${filename}`;
+          const name = `batch-${data.batch}/applications/${
+            data.name
+          }/${Date.now()}_${filename}`;
           const file = {
             bucket,
             name,
           };
-
+          console.log('Saving...', file.bucket, file.name);
           const bucketFile = await database
             .storage()
             .bucket(file.bucket)
