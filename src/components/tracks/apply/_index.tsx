@@ -4,6 +4,7 @@ import { getFirebase } from '../../../../firebase-functions/firebase';
 interface IHeaderProps {
   name: string;
   url: string;
+  track: string;
 }
 
 function getBatchDate(batchDate) {
@@ -75,7 +76,7 @@ class Apply extends React.Component<IHeaderProps, {}> {
   }
 
   render() {
-    const { name, url } = this.props;
+    const { name, url, track } = this.props;
 
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
@@ -120,7 +121,7 @@ class Apply extends React.Component<IHeaderProps, {}> {
           <div className="tracks__apply-button-wrapper">
             <a
               className="u-button u-button__apply u-button--reversed tracks__apply-button"
-              href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=${url}`}
+              href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=track-page-bottom&role=${track}`}
             >
               Apply as {name}
             </a>
