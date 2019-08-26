@@ -14,7 +14,7 @@
 
 ## Context
 
-The gatsby frontend resides currently in the root directory. The intention is to move it to e `frontend/` folder.
+The gatsby frontend resides currently in the root directory. The intention is to move it to a `frontend/` folder.
 
 ## Setting Up
 
