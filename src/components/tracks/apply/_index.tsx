@@ -120,7 +120,7 @@ class Apply extends React.Component<IHeaderProps, {}> {
           <div className="tracks__apply-button-wrapper">
             <a
               className="u-button u-button__apply u-button--reversed tracks__apply-button"
-              href={`/application/${url}`}
+              href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=${url}`}
             >
               Apply as {name}
             </a>
