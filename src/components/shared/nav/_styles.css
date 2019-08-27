@@ -90,16 +90,19 @@
 }
 
 .nav__menu__item {
-  display: inline;
-  margin-left: 18px;
-  margin-right: 18px;
+  position: relative;
+  display: inline-block;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 
   a {
     color: white;
     text-decoration: none;
 
     &:hover {
-      color: var(--picton-blue);
+      color: var(--picton-blue) !important;
     }
   }
 
@@ -139,5 +142,37 @@
 
   @media (max-width: 310px) {
     display: none;
+  }
+}
+
+.tracks-menu {
+  &--desktop {
+    position: absolute;
+    background-color: white;
+    color: black;
+    right: -25px;
+    top: 40px;
+    width: 200px;
+    left: -50px;
+    padding: 30px;
+
+    &--inverted {
+      color: white;
+      background-color: black;
+    }
+  }
+
+  &--desktop::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -10px;
+    left: 82px;
+  }
+
+  &--desktop--inverted::before {
+    border-bottom: 10px solid black;
   }
 }

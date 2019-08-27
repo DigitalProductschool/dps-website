@@ -66,11 +66,53 @@ const CloseIcon = () => (
   </svg>
 );
 
+const TracksMenu = props => {
+  const styles = {
+    color: props.inverted ? 'white' : 'black',
+    paddingBottom: '30px',
+    display: 'block',
+  };
+  let className = 'tracks-menu tracks-menu--desktop ';
+
+  if (props.inverted) {
+    className += 'tracks-menu--desktop--inverted';
+  }
+
+  return (
+    <div
+      className={className}
+      onMouseLeave={props.handleOnMouseLeave}
+      onMouseEnter={props.handleOnMouseEnter}
+    >
+      <Link to="/application/software-engineering" style={styles}>
+        Software Engineer
+      </Link>
+      <Link to="/application/ai-engineering" style={styles}>
+        AI Engineer
+      </Link>
+      <Link to="/application/interaction-design" style={styles}>
+        Interaction Designer
+      </Link>
+      <Link
+        to="/application/product-management"
+        style={{ ...styles, paddingBottom: '0' }}
+      >
+        Product Manager
+      </Link>
+    </div>
+  );
+};
+
 function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
+  const [isMouseOverMenu, setIsMouseOverMenu] = useState(false);
+
+  const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
   const addClass = props.addClass || '';
   const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
+  const invertedTracksMenu = addClass === 'nav--black';
 
   useEffect(() => {
     if (isOpen) {
@@ -84,7 +126,20 @@ function Nav(props) {
     }
   }, [isOpen]);
 
-  console.log({ isOpen, setIsOpen });
+  // dimmed background behind the menu on mobile
+  const Overlay = () => (
+    <div
+      onClick={() => setIsOpen(false)}
+      style={{
+        position: 'fixed',
+        top: '86px',
+        right: 0,
+        left: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0,0,0, 0.56)',
+      }}
+    ></div>
+  );
 
   return (
     <nav className={`nav ${addClass}`}>
@@ -102,6 +157,20 @@ function Nav(props) {
           <li className="nav__menu__item">
             <Link to="/our-program"> Our Program </Link>
           </li>
+          <li
+            className="nav__menu__item"
+            onMouseOver={() => setIsMouseOverTracksLink(true)}
+            onMouseLeave={() => setIsMouseOverTracksLink(false)}
+          >
+            <Link to="/our-program"> Tracks </Link>
+            {isMouseOverTracks && (
+              <TracksMenu
+                inverted={invertedTracksMenu}
+                handleOnMouseEnter={() => setIsMouseOverMenu(true)}
+                handleOnMouseLeave={() => setIsMouseOverMenu(false)}
+              />
+            )}
+          </li>
           <li className="nav__menu__item">
             <Link to="/apply"> Apply </Link>
           </li>
@@ -111,19 +180,7 @@ function Nav(props) {
         </ul>
       </div>
 
-      {isOpen && (
-        <div
-          onClick={() => setIsOpen(false)}
-          style={{
-            position: 'fixed',
-            top: '86px',
-            right: 0,
-            left: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0,0,0, 0.56)',
-          }}
-        ></div>
-      )}
+      {isOpen && <Overlay />}
       <div
         className={`nav__content u-content ${addClass} nav__content--mobile`}
       >
@@ -165,6 +222,7 @@ function Nav(props) {
           >
             <Link to="/our-program"> Our Program </Link>
           </li>
+
           <li
             className="nav__menu__item nav__menu__item--mobile"
             onClick={() => setIsOpen(false)}
