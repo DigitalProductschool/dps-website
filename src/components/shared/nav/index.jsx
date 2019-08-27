@@ -66,7 +66,7 @@ const CloseIcon = () => (
   </svg>
 );
 
-const TracksMenu = props => {
+const MenuDropdownForDesktop = props => {
   const styles = {
     color: props.inverted ? 'white' : 'black',
     paddingBottom: '30px',
@@ -103,6 +103,36 @@ const TracksMenu = props => {
   );
 };
 
+const MenuDropDownForMobile = props => {
+  const styles = {
+    paddingBottom: '30px',
+    display: 'block',
+    fontSize: '14px',
+    paddingLeft: '14px',
+  };
+
+  return (
+    <div className="tracks-menu tracks-menu--mobile">
+      <h4> Tracks </h4>
+      <Link to="/application/software-engineering" style={styles}>
+        Software Engineer
+      </Link>
+      <Link to="/application/ai-engineering" style={styles}>
+        AI Engineer
+      </Link>
+      <Link to="/application/interaction-design" style={styles}>
+        Interaction Designer
+      </Link>
+      <Link
+        to="/application/product-management"
+        style={{ ...styles, paddingBottom: '0' }}
+      >
+        Product Manager
+      </Link>
+    </div>
+  );
+};
+
 function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
@@ -112,7 +142,7 @@ function Nav(props) {
   const addClass = props.addClass || '';
   const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
-  const invertedTracksMenu = addClass === 'nav--black';
+  const invertedMenuDropdownForDesktop = addClass === 'nav--black';
 
   useEffect(() => {
     if (isOpen) {
@@ -164,8 +194,8 @@ function Nav(props) {
           >
             <Link to="/our-program"> Tracks </Link>
             {isMouseOverTracks && (
-              <TracksMenu
-                inverted={invertedTracksMenu}
+              <MenuDropdownForDesktop
+                inverted={invertedMenuDropdownForDesktop}
                 handleOnMouseEnter={() => setIsMouseOverMenu(true)}
                 handleOnMouseLeave={() => setIsMouseOverMenu(false)}
               />
@@ -222,7 +252,9 @@ function Nav(props) {
           >
             <Link to="/our-program"> Our Program </Link>
           </li>
-
+          <li className="nav__menu__item nav__menu__item--mobile">
+            <MenuDropDownForMobile />
+          </li>
           <li
             className="nav__menu__item nav__menu__item--mobile"
             onClick={() => setIsOpen(false)}
