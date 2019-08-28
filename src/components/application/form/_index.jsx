@@ -102,7 +102,7 @@ export default function Form(props) {
         formData.append(key, state[key]);
       }
     }
-    formData.append('coverLetter', state.cv);
+    formData.append('coverLetter', state.coverLetter);
     formData.append('cv', state.cv);
 
     fetch(SUBMIT_URL, {
