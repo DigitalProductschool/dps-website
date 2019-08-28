@@ -12,15 +12,15 @@ const HamburgerIcon = () => (
     <g
       id="Navigation"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="currentColor"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="Home_Navigation_Mobile"
         transform="translate(-618.000000, -78.000000)"
         stroke="currentColor"
-        stroke-width="6"
+        strokeWidth="6"
       >
         <g id="Group" transform="translate(618.000000, 81.000000)">
           <path d="M0,0.5 L60,0.5" id="Line"></path>
@@ -39,15 +39,15 @@ const CloseIcon = () => (
     <g
       id="Navigation"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="Home_Navigation_Mobile_Subnavi-close"
         transform="translate(-624.000000, -80.000000)"
         stroke="currentColor"
-        stroke-width="6"
+        strokeWidth="6"
       >
         <g id="Group" transform="translate(625.566757, 81.066757)">
           <path
