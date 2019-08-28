@@ -13,8 +13,8 @@ export const getFirebase = firebase => {
     return firebaseInstance;
   }
 
-  firebase.initializeApp(config);
-  firebaseInstance = firebase;
+  firebase.firebase.initializeApp(config);
+  firebaseInstance = firebase.firebase;
 
-  return firebase;
+  return firebase.firebase;
 };

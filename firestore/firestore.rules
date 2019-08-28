@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Access database only from firebase functions
+    match /batches/{number}/applications/{id} {
+      allow read: if false;
+      allow write: if false;
+    }
+
+    match /batch-details/{number} {
+      allow read;
+    }
+  }
+}
