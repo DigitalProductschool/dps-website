@@ -10,6 +10,7 @@ const whitelist = [
   'https://dp.school',
   'https://dpschool.io',
   'http://digitalproductschool.io',
+  'https://dps-website-staging-0.appspot.com',
 ];
 const corsOptions = {
   origin: (origin: string, callback: any) => {
