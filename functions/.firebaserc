@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "dps-website-244212"
+    "production": "dps-website-staging-0",
+    "staging": "dps-website-244212",
   }
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getFirebase } from '../../../../firebase-functions/firebase';
+import { getFirebase } from '../../../firebase/firebase';
 
 interface IHeaderProps {
   name: string;
