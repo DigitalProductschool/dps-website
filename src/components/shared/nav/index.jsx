@@ -84,17 +84,17 @@ const MenuDropdownForDesktop = props => {
       onMouseLeave={props.handleOnMouseLeave}
       onMouseEnter={props.handleOnMouseEnter}
     >
-      <Link to="/application/software-engineering" style={styles}>
+      <Link to="/apply/software-engineering" style={styles}>
         Software Engineer
       </Link>
-      <Link to="/application/ai-engineering" style={styles}>
+      <Link to="/apply/artificial-intelligence" style={styles}>
         AI Engineer
       </Link>
-      <Link to="/application/interaction-design" style={styles}>
+      <Link to="/apply/interaction-design" style={styles}>
         Interaction Designer
       </Link>
       <Link
-        to="/application/product-management"
+        to="/apply/product-management"
         style={{ ...styles, paddingBottom: '0' }}
       >
         Product Manager
@@ -114,17 +114,17 @@ const MenuDropDownForMobile = props => {
   return (
     <div className="tracks-menu tracks-menu--mobile">
       <h4> Tracks </h4>
-      <Link to="/application/software-engineering" style={styles}>
+      <Link to="/apply/software-engineering" style={styles}>
         Software Engineer
       </Link>
-      <Link to="/application/ai-engineering" style={styles}>
+      <Link to="/apply/artificial-intelligence" style={styles}>
         AI Engineer
       </Link>
-      <Link to="/application/interaction-design" style={styles}>
+      <Link to="/apply/interaction-design" style={styles}>
         Interaction Designer
       </Link>
       <Link
-        to="/application/product-management"
+        to="/apply/product-management"
         style={{ ...styles, paddingBottom: '0' }}
       >
         Product Manager
@@ -142,7 +142,7 @@ function Nav(props) {
   const addClass = props.addClass || '';
   const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
-  const invertedMenuDropdownForDesktop = addClass === 'nav--black';
+  const inverted = addClass === 'nav--black';
 
   useEffect(() => {
     if (isOpen) {
@@ -192,10 +192,15 @@ function Nav(props) {
             onMouseOver={() => setIsMouseOverTracksLink(true)}
             onMouseLeave={() => setIsMouseOverTracksLink(false)}
           >
-            <Link to="/our-program"> Tracks </Link>
+            <label
+              className={inverted ? `nav__menu__item__tracks--inverted` : ''}
+            >
+              {' '}
+              Tracks{' '}
+            </label>
             {isMouseOverTracks && (
               <MenuDropdownForDesktop
-                inverted={invertedMenuDropdownForDesktop}
+                inverted={inverted}
                 handleOnMouseEnter={() => setIsMouseOverMenu(true)}
                 handleOnMouseLeave={() => setIsMouseOverMenu(false)}
               />

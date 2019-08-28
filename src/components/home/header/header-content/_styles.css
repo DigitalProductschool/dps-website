@@ -13,7 +13,7 @@
 .header-content__title {
   margin: 0;
   color: white;
-  font-size: 84px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 800;
 
@@ -49,9 +49,9 @@
     margin-top: 30px;
   }
 
-    @media (max-width: 620px) {
-      grid-auto-flow: row;
-      grid-template-columns: 1fr;
+  @media (max-width: 620px) {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
   }
 }
 
