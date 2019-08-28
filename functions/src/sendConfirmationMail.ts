@@ -13,9 +13,9 @@ exports.handler = async function(snap: any) {
 
   const OAuth2 = google.auth.OAuth2;
   const APP_NAME = 'Digital Product School';
-  const clientID = functions.config().sender.clientid;
-  const clientSecret = functions.config().sender.clientsecret;
-  const refreshToken = functions.config().sender.refreshtoken;
+  const clientID = functions.config().sender.apiclientid;
+  const clientSecret = functions.config().sender.apiclientsecret;
+  const refreshToken = functions.config().sender.apirefreshtoken;
 
   const oauth2Client = new OAuth2(
     clientID, //client Id
