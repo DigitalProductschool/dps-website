@@ -3,13 +3,13 @@ import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 const initialState = {
-  name: '', // string
-  email: '', // string
-  batch: '', // number as string, for instance '8', '9', etc
-  source: '', // string, free text
-  userType: '', // string, 'student' | 'graduate' , etc...
-  consent: '', // string, 'true' | 'false'
-  scholarship: '', // string, 'true' | 'false'
+  name: 'eqweq', // string
+  email: 'stoykov@unternehmertum.de', // string
+  batch: '9', // number as string, for instance '8', '9', etc
+  source: 'eqweqw', // string, free text
+  userType: 'student', // string, 'student' | 'graduate' , etc...
+  consent: 'true', // string, 'true' | 'false'
+  scholarship: 'true', // string, 'true' | 'false'
   cv: null,
   coverLetter: null,
 };
@@ -120,8 +120,12 @@ export default function Form(props) {
       method: 'POST',
       body: formData,
     })
-      .then(() => {
-        setResponse('success');
+      .then(res => {
+        if (res.status >= 400) {
+          setResponse('failure');
+        } else {
+          setResponse('success');
+        }
       })
       .catch(() => {
         setResponse('failure');
@@ -171,7 +175,7 @@ export default function Form(props) {
               </Link>
             </>
           )}
-          {response === 'error' && (
+          {response === 'failure' && (
             <p>
               Something went wrong on our end. We're sorry. Please contact us at
               hello@dpschool.io
