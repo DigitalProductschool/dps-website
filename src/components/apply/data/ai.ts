@@ -19,7 +19,7 @@ export const or = {
 export const generalTrackInfo = {
   track: 'ai',
   name: 'AI Engineer',
-  url: 'ai-engineering',
+  url: 'artificial-intelligence',
 };
 
 export const header = {

@@ -69,8 +69,16 @@ lib
 ## Compiled JavaScript files
 **/*.js
 **/*.js.map
+!**/*.test.js
 
 # Typescript v1 declaration files
 typings/
 
 node_modules/
+
+
+## Keys
+*.key.json
+
+# firebase credentials / secrets
+.runtimeconfig.json

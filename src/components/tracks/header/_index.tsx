@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Link } from 'gatsby';
 import Nav from '../../shared/nav/index';
 import Seo from '../../../components/seo';
 
@@ -18,6 +18,45 @@ interface IHeaderProps {
     url: string;
   };
 }
+
+export const ApplyButton = (props: {
+  track: string;
+  name: string;
+  className: string;
+}) => {
+  switch (props.track) {
+    case 'se':
+      return (
+        <Link
+          className={props.className}
+          to="/application/software-engineering"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+    case 'ixd':
+      return (
+        <Link className={props.className} to="/application/interaction-design">
+          Apply as {props.name}
+        </Link>
+      );
+    case 'ai':
+      return (
+        <Link
+          className={props.className}
+          to="/application/artificial-intelligence"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+    case 'pm':
+      return (
+        <Link className={props.className} to="/application/product-management">
+          Apply as {props.name}
+        </Link>
+      );
+  }
+};
 
 // HoC would be much more suitable for this abstraction here
 // instead of passing className, data etc by the index.tsx files
@@ -51,12 +90,10 @@ class Header extends React.Component<IHeaderProps, {}> {
               </p>
             )}
             <div className="tracks-header__apply-button-wrapper">
-              <a
+              <ApplyButton
+                {...track}
                 className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-                href={`/application/${track.url}`}
-              >
-                Apply as {track.name}
-              </a>
+              />
             </div>
           </div>
         </section>

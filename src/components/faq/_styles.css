@@ -1,0 +1,46 @@
+.faq {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  @media (max-width: 620px) {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
+}
+
+.faq__content {
+  font-family: Montserrat;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none solid rgb(0, 0, 0);
+  line-height: 28px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  span {
+    line-height: 18px;
+  }
+}
+
+.faq__call {
+  margin-top: 50px;
+  font-weight: 800;
+  font-family: Montserrat;
+  color: var(--bigstone);
+  font-size: 28px;
+  text-decoration: none solid rgb(0, 0, 0);
+  line-height: 28px;
+
+  span {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  span:hover::before {
+    height: 20px;
+  }
+}

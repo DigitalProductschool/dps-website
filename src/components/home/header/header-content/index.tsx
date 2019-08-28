@@ -1,13 +1,14 @@
-import * as React from 'react'
+import * as React from 'react';
+import { Link } from 'gatsby';
 
 interface IHeaderContentProps {
-  className: string
-  onContentButtonClick: () => void
+  className: string;
+  onContentButtonClick: () => void;
 }
 
 class HeaderContent extends React.Component<IHeaderContentProps, {}> {
   render() {
-    const { className, onContentButtonClick } = this.props
+    const { className, onContentButtonClick } = this.props;
 
     return (
       <div className={`${className} header-content`}>
@@ -22,12 +23,9 @@ class HeaderContent extends React.Component<IHeaderContentProps, {}> {
           learn how to build digital products that solve real-world problems.
         </p>
         <div className="header-content__buttons">
-          <a
-            className="u-button u-button__apply"
-            href="https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=header"
-          >
-            Apply Now
-          </a>
+          <Link className="u-button u-button__apply" to="/apply">
+            Apply
+          </Link>
           <button
             className="header-content__buttons__more"
             onClick={onContentButtonClick}
@@ -36,8 +34,8 @@ class HeaderContent extends React.Component<IHeaderContentProps, {}> {
           </button>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default HeaderContent
+export default HeaderContent;

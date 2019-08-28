@@ -10,6 +10,7 @@
   background-size: cover;
 
   @media (max-width: 620px) {
+    margin-top: -12px;
     height: 500px;
     background-size: cover;
     background-position: center center;
@@ -31,7 +32,7 @@
 .our-program__header-content__title {
   margin: 0;
   color: white;
-  font-size: 84px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 800;
 

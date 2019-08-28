@@ -29,6 +29,31 @@
   .nav--black {
     color: black;
   }
+
+  @media (min-width: 621px) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: visible;
+    }
+  }
+
+  @media (max-width: 620px) {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: visible;
+    }
+  }
+
+  &--desktop {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 
 .nav__menu {
@@ -45,27 +70,63 @@
   @media (max-width: 310px) {
     font-size: 12px;
   }
+
+  &--mobile {
+    position: fixed;
+    padding-top: 30px;
+    top: 86px;
+    right: -250px;
+    background-color: white;
+    margin: 0;
+    bottom: 0;
+    width: 250px;
+    transition: transform 0.3s;
+    flex-direction: column;
+    display: flex;
+    z-index: 10;
+    overflow: auto;
+  }
+
+  &--mobile-open {
+    transform: translateX(-250px);
+  }
+}
+
+.nav__hamburger-icon {
+  width: 30px;
 }
 
 .nav__menu__item {
+  position: relative;
   display: inline;
-  margin-left: 18px;
-  margin-right: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 
   a {
     color: white;
     text-decoration: none;
 
     &:hover {
-      color: var(--picton-blue);
+      color: var(--picton-blue) !important;
+    }
+  }
+
+  &--mobile {
+    margin: 15px 30px 0px 30px;
+    font-size: 18px;
+  }
+
+  &--mobile {
+    a {
+      color: black;
     }
   }
 }
 
 .nav__content.nav--black .nav__menu__item {
   display: inline;
-  margin-left: 18px;
-  margin-right: 18px;
 
   a {
     color: black;
@@ -86,5 +147,51 @@
 
   @media (max-width: 310px) {
     display: none;
+  }
+}
+
+.tracks-menu {
+  &--desktop {
+    position: absolute;
+    background-color: white;
+    color: black;
+    right: -25px;
+    top: 40px;
+    width: 200px;
+    left: -50px;
+    padding: 30px;
+
+    &--inverted {
+      color: white;
+      background-color: black;
+    }
+  }
+
+  &--mobile {
+    color: black;
+
+    h4 {
+      margin-top: 0px;
+    }
+  }
+
+  &--desktop::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -10px;
+    left: 82px;
+  }
+
+  &--desktop--inverted::before {
+    border-bottom: 10px solid black;
+  }
+}
+
+.nav__menu__item__tracks {
+  &--inverted {
+    color: black;
   }
 }

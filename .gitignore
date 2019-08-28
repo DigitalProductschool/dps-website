@@ -70,3 +70,9 @@ yarn-error.log
 
 # Intellij Idea
 .idea
+
+# firebase file
+.env.development
+
+# keys
+*.key.json

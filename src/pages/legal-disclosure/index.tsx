@@ -1,13 +1,13 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import Nav from '../../components/shared/nav/index'
-import LegalContent from '../../components/legal-disclosure/legal-content/index'
-import Footer from '../../components/shared/footer/index'
-import CookieWarning from '../../components/shared/cookie-warning'
+import Nav from '../../components/shared/nav/index';
+import LegalContent from '../../components/legal-disclosure/legal-content/index';
+import Footer from '../../components/shared/footer/index';
+import CookieWarning from '../../components/shared/cookie-warning';
 
 class Legal extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -21,8 +21,8 @@ class Legal extends React.Component {
         <LegalContent />
         <Footer />
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default Legal
+export default Legal;

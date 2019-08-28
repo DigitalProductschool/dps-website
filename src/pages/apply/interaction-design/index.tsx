@@ -36,7 +36,11 @@ class TrackIxD extends React.Component {
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ixd__wyl" data={whatyoulearn} />
-        <Apply url={generalTrackInfo.url} name={generalTrackInfo.name} />
+        <Apply
+          url={generalTrackInfo.url}
+          name={generalTrackInfo.name}
+          track={generalTrackInfo.track}
+        />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     );

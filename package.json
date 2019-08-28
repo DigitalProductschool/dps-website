@@ -31,7 +31,8 @@
     "react-helmet": "^5.2.1",
     "react-inlinesvg": "^0.8.4",
     "react-router-dom": "^4.3.1",
-    "tslint": "^5.18.0"
+    "@firebase/app": "^0.4.15",
+    "@firebase/firestore": "^1.4.11"
   },
   "keywords": [
     "gatsby"
@@ -44,7 +45,8 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "installFunctions": "cd functions && npm install"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

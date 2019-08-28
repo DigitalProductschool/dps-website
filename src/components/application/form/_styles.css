@@ -104,6 +104,18 @@ select.application-form__input {
   &--se {
     background-color: var(--hollywoord-cerise);
   }
+
+  &--ai {
+    background-color: var(--wisteria);
+  }
+
+  &--ixd {
+    background-color: var(--yellow-sea);
+  }
+
+  &--pm {
+    background-color: var(--picton-blue);
+  }
 }
 
 .scholarship-fieldset,
