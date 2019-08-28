@@ -4,7 +4,6 @@ import * as TrelloNodeAPI from 'trello-node-api';
 const createTrelloCard = require('./createTrelloCard');
 const handleFormSubmit = require('./handleFormSubmit');
 const admin = require('firebase-admin');
-const serviceAccount = require('../dps-website-staging.firebase.key.json');
 const { isProduction } = require('./constants');
 
 let config = {
@@ -30,7 +29,10 @@ if (isProduction) {
 }
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  // take default credentials for the firebase service account
+  // here's how credentials discovery work:
+  // https://cloud.google.com/docs/authentication/production
+  credential: admin.credential.applicationDefault(),
   ...config,
 });
 
