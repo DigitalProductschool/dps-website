@@ -75,7 +75,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 onMouseOver={() => this.setState({ active: 'pm' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                APPLY AS PM
+                LEARN MORE
               </a>
             </li>
 
@@ -103,7 +103,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 onMouseOver={() => this.setState({ active: 'ixd' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                APPLY AS IxD
+                LEARN MORE
               </a>
             </li>
             <li className="pick-track__track">
@@ -130,7 +130,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 onMouseOver={() => this.setState({ active: 'se' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                APPLY AS SE
+                LEARN MORE
               </a>
             </li>
             <li className="pick-track__track">
@@ -158,7 +158,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 onMouseOver={() => this.setState({ active: 'ai' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                APPLY AS AI
+                LEARN MORE
               </a>
             </li>
           </ul>
