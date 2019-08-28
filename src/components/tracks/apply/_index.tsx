@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { getFirebase } from '../../../firebase/firebase';
+import { ApplyButton } from '../header/_index';
 
 interface IHeaderProps {
   name: string;
@@ -119,12 +120,10 @@ class Apply extends React.Component<IHeaderProps, {}> {
             {displayBatch}
           </p>
           <div className="tracks__apply-button-wrapper">
-            <a
+            <ApplyButton
+              {...this.props}
               className="u-button u-button__apply u-button--reversed tracks__apply-button"
-              href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=track-page-bottom&role=${track}`}
-            >
-              Apply as {name}
-            </a>
+            />
           </div>
         </div>
       </div>

@@ -19,12 +19,16 @@ interface IHeaderProps {
   };
 }
 
-const ApplyButton = (props: { track: string; name: string }) => {
+export const ApplyButton = (props: {
+  track: string;
+  name: string;
+  className: string;
+}) => {
   switch (props.track) {
     case 'se':
       return (
         <Link
-          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          className={props.className}
           to="/application/software-engineering"
         >
           Apply as {props.name}
@@ -32,17 +36,14 @@ const ApplyButton = (props: { track: string; name: string }) => {
       );
     case 'ixd':
       return (
-        <Link
-          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-          to="/application/interaction-design"
-        >
+        <Link className={props.className} to="/application/interaction-design">
           Apply as {props.name}
         </Link>
       );
     case 'ai':
       return (
         <Link
-          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          className={props.className}
           to="/application/artificial-intelligence"
         >
           Apply as {props.name}
@@ -50,10 +51,7 @@ const ApplyButton = (props: { track: string; name: string }) => {
       );
     case 'pm':
       return (
-        <Link
-          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-          to="/application/product-management"
-        >
+        <Link className={props.className} to="/application/product-management">
           Apply as {props.name}
         </Link>
       );
@@ -92,7 +90,10 @@ class Header extends React.Component<IHeaderProps, {}> {
               </p>
             )}
             <div className="tracks-header__apply-button-wrapper">
-              <ApplyButton {...track} />
+              <ApplyButton
+                {...track}
+                className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+              />
             </div>
           </div>
         </section>
