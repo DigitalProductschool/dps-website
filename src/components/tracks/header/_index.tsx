@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Link } from 'gatsby';
 import Nav from '../../shared/nav/index';
 import Seo from '../../../components/seo';
 
@@ -18,6 +18,47 @@ interface IHeaderProps {
     url: string;
   };
 }
+
+const ApplyButton = (props: { track: string; name: string }) => {
+  switch (props.track) {
+    case 'se':
+      return (
+        <Link
+          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          to="/application/software-engineering"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+    case 'ixd':
+      return (
+        <Link
+          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          to="/application/interaction-design"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+    case 'ai':
+      return (
+        <Link
+          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          to="/application/artificial-intelligence"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+    case 'pm':
+      return (
+        <Link
+          className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+          to="/application/product-management"
+        >
+          Apply as {props.name}
+        </Link>
+      );
+  }
+};
 
 // HoC would be much more suitable for this abstraction here
 // instead of passing className, data etc by the index.tsx files
@@ -51,12 +92,7 @@ class Header extends React.Component<IHeaderProps, {}> {
               </p>
             )}
             <div className="tracks-header__apply-button-wrapper">
-              <a
-                className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-                href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=track-page-header&role=${track.track}`}
-              >
-                Apply as {track.name}
-              </a>
+              <ApplyButton {...track} />
             </div>
           </div>
         </section>
