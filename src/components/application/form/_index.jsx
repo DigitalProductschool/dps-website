@@ -2,13 +2,13 @@ import * as React from 'react';
 import { useRef, useCallback, useReducer, useEffect, useState } from 'react';
 
 const initialState = {
-  name: 'Hello', // string
-  email: 'hello@example.com', // string
-  batch: '9', // number as string, for instance '8', '9', etc
-  source: 'dasfas', // string, free text
-  userType: 'student', // string, 'student' | 'graduate' , etc...
-  consent: 'true', // string, 'true' | 'false'
-  scholarship: 'true', // string, 'true' | 'false'
+  name: '', // string
+  email: '', // string
+  batch: '', // number as string, for instance '8', '9', etc
+  source: '', // string, free text
+  userType: '', // string, 'student' | 'graduate' , etc...
+  consent: '', // string, 'true' | 'false'
+  scholarship: '', // string, 'true' | 'false'
   cv: null,
   coverLetter: null,
 };
