@@ -110,7 +110,9 @@ exports.handler = function(request: any, response: any, database: any) {
 
       response.status(200).send('Thank you for your application!');
     } catch (e) {
+      console.log(e);
       console.log(e.message);
+
       response
         .status(500)
         .send(
