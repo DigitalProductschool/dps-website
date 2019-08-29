@@ -24,6 +24,16 @@ export const ApplyButton = (props: {
   name: string;
   className: string;
 }) => {
+  return (
+    <a
+      className={props.className}
+      href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=track-page-bottom&role=${props.track}`}
+    >
+      Apply as {props.name}
+    </a>
+  );
+
+  /*
   switch (props.track) {
     case 'se':
       return (
@@ -56,6 +66,7 @@ export const ApplyButton = (props: {
         </Link>
       );
   }
+  */
 };
 
 // HoC would be much more suitable for this abstraction here
