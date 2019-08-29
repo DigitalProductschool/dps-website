@@ -6,9 +6,11 @@ class Faq extends React.Component {
     return (
       <section className="faq u-content-wrapper">
         <Seo />
+        <div className="faq__header">
+          <h1 className="faq__header-title">ANY UNANSWERED QUESTIONS?</h1>
+          <p className="faq__header-description">Find the answers here!</p>
+        </div>
         <div className="faq__content u-content">
-          <h1>FAQ</h1>
-
           <h2>Is it an online program?</h2>
           <p>
             Digital Product School (DPS) is all about Teamwork. You learn how to
