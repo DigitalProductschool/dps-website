@@ -80,15 +80,16 @@ class Apply extends React.Component<IHeaderProps, {}> {
     const { name, url, track } = this.props;
 
     let displayBatch = this.state.batchDetails.map(batch => (
-      <span key={batch.batchID}>
+      <p key={batch.batchID}>
         <b>
-          # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to&nbsp;
-          {getBatchDate(batch.endDate)}
+          {`#Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
         </b>
-        &nbsp;(Application phase: {getBatchDate(batch.appStartDate)}&nbsp;
-        to&nbsp;
-        {getBatchDate(batch.appEndDate)}) <br />
-      </span>
+        {`(Application phase: ${getBatchDate(
+          batch.appStartDate
+        )} to ${getBatchDate(batch.appEndDate)})`}
+      </p>
     ));
 
     return (

@@ -208,13 +208,16 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
   renderDescription() {
     let displayBatch = this.state.batchDetails.map(batch => (
-      <span key={batch.batchID}>
-        # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to&nbsp;
-        {getBatchDate(batch.endDate)} (Application phase:&nbsp;
-        {getBatchDate(batch.appStartDate)} to {getBatchDate(batch.appEndDate)})
-        <br />
-        <br />
-      </span>
+      <p key={batch.batchID} style={{ fontSize: '16px' }}>
+        <b>
+          {`#Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
+        </b>
+        {`(Application phase: ${getBatchDate(
+          batch.appStartDate
+        )} to ${getBatchDate(batch.appEndDate)})`}
+      </p>
     ));
 
     if (this.props.isApplyNowVersion) {
