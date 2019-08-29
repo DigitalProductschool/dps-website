@@ -176,42 +176,42 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   }
 
   componentDidMount() {
-    // const firebaseApp = import('@firebase/app');
-    // const firebaseDatabase = import('@firebase/firestore');
-    // var currentTime = new Date();
-    // Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
-    //   const database = getFirebase(firebase).firestore();
-    //   database
-    //     .collection('batch-details')
-    //     .where('appEndDate', '>', currentTime)
-    //     .orderBy('appEndDate')
-    //     .get()
-    //     .then(snapshot =>
-    //       snapshot.forEach(doc =>
-    //         this.setState(prevState => ({
-    //           batchDetails: [
-    //             ...prevState.batchDetails,
-    //             {
-    //               batchID: doc.id,
-    //               batchNumber: doc.data().batch,
-    //               startDate: doc.data().startDate,
-    //               endDate: doc.data().endDate,
-    //               appStartDate: doc.data().appStartDate,
-    //               appEndDate: doc.data().appEndDate,
-    //             },
-    //           ],
-    //         }))
-    //       )
-    //     );
-    // });
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
+    var currentTime = new Date();
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot =>
+          snapshot.forEach(doc =>
+            this.setState(prevState => ({
+              batchDetails: [
+                ...prevState.batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ],
+            }))
+          )
+        );
+    });
   }
 
   renderDescription() {
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
-        # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to{' '}
-        {getBatchDate(batch.endDate)} (Application phase:{' '}
-        {getBatchDate(batch.appStartDate)} to {getBatchDate(batch.appEndDate)}){' '}
+        # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to&nbsp;
+        {getBatchDate(batch.endDate)} (Application phase:&nbsp;
+        {getBatchDate(batch.appStartDate)} to {getBatchDate(batch.appEndDate)})
         <br />
         <br />
       </span>

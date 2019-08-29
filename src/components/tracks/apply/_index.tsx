@@ -82,12 +82,12 @@ class Apply extends React.Component<IHeaderProps, {}> {
     let displayBatch = this.state.batchDetails.map(batch => (
       <span key={batch.batchID}>
         <b>
-          {' '}
-          # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to
-          {getBatchDate(batch.endDate)}{' '}
-        </b>{' '}
-        (Application phase: {getBatchDate(batch.appStartDate)}
-        to {getBatchDate(batch.appEndDate)}) <br />
+          # Batch #{batch.batchNumber}: {getBatchDate(batch.startDate)} to&nbsp;
+          {getBatchDate(batch.endDate)}
+        </b>
+        &nbsp;(Application phase: {getBatchDate(batch.appStartDate)}&nbsp;
+        to&nbsp;
+        {getBatchDate(batch.appEndDate)}) <br />
       </span>
     ));
 
@@ -108,8 +108,7 @@ class Apply extends React.Component<IHeaderProps, {}> {
           </h3>
           <p>
             <b>
-              {' '}
-              {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}{' '}
+              {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
             </b>
           </p>
           <br />
