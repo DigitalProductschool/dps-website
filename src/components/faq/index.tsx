@@ -6,7 +6,7 @@ class Faq extends React.Component {
     return (
       <section className="faq u-content-wrapper">
         <Seo />
-        <div className="faq__header">
+        <div className="faq__header u-content">
           <h1 className="faq__header-title">ANY UNANSWERED QUESTIONS?</h1>
           <p className="faq__header-description">Find the answers here!</p>
         </div>

@@ -51,7 +51,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
           <h3 className="pick-track__title u-title"> {this.renderTitle()} </h3>
           {this.renderDescription()}
           <ul className="pick-track__tracks">
-            <li className="pick-track__track">
+            <li key="pm" className="pick-track__track">
               <a href="/apply/product-management/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
@@ -79,7 +79,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </a>
             </li>
 
-            <li className="pick-track__track">
+            <li key="ixd" className="pick-track__track">
               <a href="/apply/interaction-design/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
@@ -106,7 +106,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 LEARN MORE
               </a>
             </li>
-            <li className="pick-track__track">
+            <li key="se" className="pick-track__track">
               <a href="/apply/software-engineering/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--se" />
@@ -133,7 +133,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 LEARN MORE
               </a>
             </li>
-            <li className="pick-track__track">
+            <li key="ai" className="pick-track__track">
               <a href="/apply/artificial-intelligence/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
@@ -208,7 +208,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
 
   renderDescription() {
     let displayBatch = this.state.batchDetails.map(batch => (
-      <p key={batch.batchID} style={{ fontSize: '16px' }}>
+      <span>
         <b>
           {`#Batch #${batch.batchNumber}: ${getBatchDate(
             batch.startDate
@@ -217,7 +217,8 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
         {`(Application phase: ${getBatchDate(
           batch.appStartDate
         )} to ${getBatchDate(batch.appEndDate)})`}
-      </p>
+        <br />
+      </span>
     ));
 
     if (this.props.isApplyNowVersion) {
