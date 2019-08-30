@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "dps-website-staging-0",
+    "staging": "dps-website-244212",
+  }
+}

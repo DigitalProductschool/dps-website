@@ -1,18 +1,17 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Header from './header/index'
-import TakeOpportunity from './take-opportunity/index'
-import ExperienceConcentrate from './experience-concentrate/index'
-import Teams from './teams/index'
-import Pillars from './pillars/index'
-import OurApproach from './our-approach/index'
-import WhoShouldApply from './who-should-apply/index'
+import Header from '../../components/our-program/header/index'
+import TakeOpportunity from '../../components/our-program/take-opportunity/index'
+import ExperienceConcentrate from '../../components/our-program/experience-concentrate/index'
+import Teams from '../../components/our-program/teams/index'
+import Pillars from '../../components/our-program/pillars/index'
+import OurApproach from '../../components/our-program/our-approach/index'
+import WhoShouldApply from '../../components/our-program/who-should-apply/index'
 import PickTrack from '../../components/shared/pick-track/index'
 import Footer from '../../components/shared/footer/index'
-import CookieWarning from '../../components/shared/cookie-warning';
+import CookieWarning from '../../components/shared/cookie-warning'
 
 class Program extends React.Component {
-
   render() {
     return (
       <React.Fragment>
@@ -31,4 +30,4 @@ class Program extends React.Component {
   }
 }
 
-export default Program;
+export default Program

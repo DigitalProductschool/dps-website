@@ -1,23 +1,44 @@
 # Empty
-steps:  
-  - name: "gcr.io/cloud-builders/npm"
-    args: [
-      "install"
-    ]
-  - name: "gcr.io/cloud-builders/npm"
-    args: [
-      "run",
-      "build"
-    ]
-  - name: "gcr.io/cloud-builders/gcloud"
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    id: install_frontend_dep
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    id: install_functions_dep
+    args: ['run', 'installFunctions']
+    waitFor: ['-']
+  - name: 'gcr.io/$PROJECT_ID/firebase'
+    entrypoint: bash
     args:
       [
-        "app",
-        "deploy",
-        "website-staging.app.yaml",
-        "--project",
-        "dps-website-244212",
-        "--log-http",
-        "--verbosity",
-        "debug",
+        '-c',
+        'firebase deploy --only functions --project $PROJECT_ID --token $$ENC_FIREBASE_TOKEN',
       ]
+    secretEnv: ['ENC_FIREBASE_TOKEN']
+    waitFor: ['install_functions_dep']
+  - name: 'gcr.io/cloud-builders/npm'
+    id: gatsby_build
+    args: ['run', 'build']
+    env:
+      [
+        'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://europe-west1-dps-website-staging-0.cloudfunctions.net/handleApplicationForm',
+        'CURR_ENV=staging',
+      ]
+    waitFor: ['install_frontend_dep']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      [
+        'app',
+        'deploy',
+        'website-staging.app.yaml',
+        '--project',
+        '$PROJECT_ID',
+        '--log-http',
+        '--verbosity',
+        'debug',
+      ]
+    waitFor: ['gatsby_build']
+secrets:
+  - kmsKeyName: projects/dps-website-staging-0/locations/global/keyRings/website-staging-keyring/cryptoKeys/FIREBASE_TOKEN
+    secretEnv:
+      ENC_FIREBASE_TOKEN: CiQAmACp4umyNCKRsyOPSqFCt4ZMOx/wKJGvbLxal54b9luDE1gSVgCdSnK69Ylbl4WrShdUljGVTXTYyHb/FLs9IpixgXsvpm06L/2w3TOWUAT/UnoL6np2r/GBYcQltzYEp/1aEh8cMORz7guZC7m4Gbvevwihb9mXPW/N

@@ -7,7 +7,13 @@ import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
 import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
 import Expectations from '../../../components/tracks/expectations/_index';
 import Apply from '../../../components/tracks/apply/_index';
-import { or, header, expectations, whatyoulearn } from '../../../data/ai';
+import {
+  generalTrackInfo,
+  or,
+  header,
+  expectations,
+  whatyoulearn,
+} from '../../../components/apply/data/ai';
 import CookieWarning from '../../../components/shared/cookie-warning';
 
 /**
@@ -20,15 +26,24 @@ class TrackAI extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Header data={header} logo="/assets/tracks/dps-logo-white.png" className="track-ai__header" />
+        <Header
+          track={generalTrackInfo}
+          data={header}
+          logo="/assets/tracks/dps-logo-white.png"
+          className="track-ai__header"
+        />
         <TrackImage track="ai" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ai__wyl" data={whatyoulearn} />
-        <Apply track="ai" />
+        <Apply
+          url={generalTrackInfo.url}
+          name={generalTrackInfo.name}
+          track={generalTrackInfo.track}
+        />
         <Footer addSectionClass="u-section-margin-top " />
       </React.Fragment>
-    )
+    );
   }
 }
 

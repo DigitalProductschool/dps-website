@@ -1,9 +1,21 @@
 runtime: nodejs10
-service: dps-staging
+service: default
 handlers:
   - url: /
     static_files: public/index.html
     upload: public/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /tracks/([^.]+)/
+    static_files: public/apply/\1/index.html
+    upload: public/apply/([^.]+)/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /tracks/([^.]+)
+    static_files: public/apply/\1/index.html
+    upload: public/apply/([^.]+)/index.html
     secure: always
     expiration: 1s
 

@@ -1,51 +1,134 @@
 import * as React from 'react';
+import { getFirebase } from '../../../firebase/firebase';
+import { ApplyButton } from '../header/_index';
 
-const trackNames = {
-  pm: 'Product Manager',
-  ixd: 'Interaction Designer',
-  ai: 'AI Engineer',
-  se: 'Software Engineer',
+interface IHeaderProps {
+  name: string;
+  url: string;
+  track: string;
+}
+
+function getBatchDate(batchDate) {
+  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+    .format;
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
 }
 
 // this component will be thrown away, so quick & dirty
-export default (props: { track: "pm" | "ai" | "se" | "ixd" }) => {
-  let trackName = trackNames[props.track];
+class Apply extends React.Component<IHeaderProps, {}> {
+  constructor(props: IHeaderProps) {
+    super(props);
+    this.state = {
+      batchDetails: [],
+    };
+  }
 
-  return (
-    <div className="u-content-wrapper">
-      <div
-        className="u-content"
-        style={{
-          marginTop: "120px",
-        }}
-      >
-      <h3
-        style={{
-          margin: "50px 0",
-        }}
-      > 
-        BE PART OF DPS 
-      </h3>
-      <p> 
-        <b> {`Apply now as ${trackName} at Digital Product School and take in the experience concentrate in digital product development!`} </b>
+  componentDidMount() {
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
+    var currentTime = new Date();
+
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot =>
+          snapshot.forEach(doc =>
+            this.setState(prevState => ({
+              batchDetails: [
+                ...prevState.batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ],
+            }))
+          )
+        );
+    });
+  }
+
+  render() {
+    const { name, url, track } = this.props;
+
+    let displayBatch = this.state.batchDetails.map(batch => (
+      <p key={batch.batchID}>
+        <b>
+          {`#Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
+        </b>
+        {`(Application phase: ${getBatchDate(
+          batch.appStartDate
+        )} to ${getBatchDate(batch.appEndDate)})`}
       </p>
-      <br />
-      <p>
-        Dates and deadlines of the upcoming batches:<br /><br />
-        # Batch #9: Jan. 7 to March 27, 2020 (Application deadline: October 13, 2019)  <br /><br />
-        # Batch #10: May 4 to July 24, 2020 (Application phase starts in October 2019) <br /><br />
-        # Batch #11: Sept. 8 to Nov. 27, 2020 (Application phase starts in February 2020)
-      </p>
-      <div className="tracks__apply-button-wrapper">
-        <a
-          className="u-button u-button__apply u-button--reversed tracks__apply-button" 
-          href={`https://utum.typeform.com/to/qkkFHF?role=${props.track}&ref=website&entry-point=track-page-bottom`}
+    ));
+
+    return (
+      <div className="u-content-wrapper">
+        <div
+          className="u-content"
+          style={{
+            marginTop: '120px',
+          }}
         >
-          Apply as {trackName}
-        </a>
+          <h3
+            style={{
+              margin: '50px 0',
+            }}
+          >
+            BE PART OF DPS
+          </h3>
+          <p>
+            <b>
+              {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
+            </b>
+          </p>
+          <br />
+          <p>
+            Dates and deadlines of the upcoming batches:
+            <br />
+            <br />
+            {displayBatch}
+          </p>
+          <div className="tracks__apply-button-wrapper">
+            <ApplyButton
+              {...this.props}
+              className="u-button u-button__apply u-button--reversed tracks__apply-button"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  
-  </div>
-  );
+    );
+  }
 }
+
+export default Apply;

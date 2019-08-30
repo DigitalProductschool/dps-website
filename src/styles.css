@@ -4,38 +4,33 @@
 @import url('./_utils.css');
 @import url('./_colors.css');
 
-@import url("./components/shared/header/nav/_styles.css");
+@import url('./components/shared/nav/_styles.css');
 @import url('./components/shared/pick-track/_styles.css');
-@import url("./components/shared/footer/_styles.css");
-@import url("./components/shared/cookie-warning/_styles.css");
+@import url('./components/shared/footer/_styles.css');
+@import url('./components/shared/cookie-warning/_styles.css');
 
-@import url("./components/home/header/_styles.css");
-@import url("./components/home/pitch/_styles.css");
-@import url("./components/home/diverse-teams/_styles.css");
-@import url("./components/home/experience-matters/_styles.css");
-@import url("./components/home/user-first/_styles.css");
+@import url('./components/home/header/_styles.css');
+@import url('./components/home/pitch/_styles.css');
+@import url('./components/home/diverse-teams/_styles.css');
+@import url('./components/home/experience-matters/_styles.css');
+@import url('./components/home/user-first/_styles.css');
 @import url('./components/home/our-program/_styles.css');
 @import url('./components/home/adac/_styles.css');
-@import url("./components/home/tool-partner/_styles.css");
+@import url('./components/home/tool-partner/_styles.css');
 @import url('./components/home/industry-partners/_styles.css');
 @import url('./components/home/whats-new/_styles.css');
 
-@import url('./pages/legal-disclosure/legal-content/_styles.css');
-@import url('./pages/privacy-policy/privacy-content/_styles.css');
+@import url('./components/legal-disclosure/legal-content/_styles.css');
+@import url('./components/privacy-policy/privacy-content/_styles.css');
 
-@import url('./pages/our-program/header/_styles.css');
-@import url('./pages/our-program/take-opportunity/_styles.css');
-@import url('./pages/our-program/experience-concentrate/_styles.css');
-@import url('./pages/our-program/teams/_styles.css');
-@import url('./pages/our-program/pillars/_styles.css');
-@import url('./pages/our-program/our-approach/_styles.css');
-@import url('./pages/our-program/who-should-apply/_styles.css');
-
-@import url('./pages/apply/dps-pitch/_styles.css');
-@import url('./pages/apply/product-management/_styles.css');
-@import url('./pages/apply/interaction-design/_styles.css');
-@import url('./pages/apply/software-engineering/_styles.css');
-@import url('./pages/apply/artificial-intelligence/_styles.css');
+@import url('./components/our-program/header/_styles.css');
+@import url('./components/our-program/take-opportunity/_styles.css');
+@import url('./components/our-program/experience-concentrate/_styles.css');
+@import url('./components/our-program/teams/_styles.css');
+@import url('./components/our-program/pillars/_styles.css');
+@import url('./components/our-program/our-approach/_styles.css');
+@import url('./components/our-program/who-should-apply/_styles.css');
+@import url('./components/apply/dps-pitch/_styles.css');
 
 @import url('./components/tracks/header/_styles.css');
 @import url('./components/tracks/track-image/_styles.css');
@@ -45,8 +40,20 @@
 @import url('./components/tracks/expectations/_styles.css');
 @import url('./components/tracks/apply/_styles.css');
 
+@import url('./components/application/header/_styles.css');
+@import url('./components/application/form/_styles.css');
 
-html, body, #app {
+@import url('./pages/apply/product-management/_styles.css');
+@import url('./pages/apply/interaction-design/_styles.css');
+@import url('./pages/apply/software-engineering/_styles.css');
+@import url('./pages/apply/artificial-intelligence/_styles.css');
+@import url('./pages/application/software-engineering/_styles.css');
+
+@import url('./components/faq/_styles.css');
+
+html,
+body,
+#app {
   font-family: Montserrat;
   width: 100%;
   height: 100%;
