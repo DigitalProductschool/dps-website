@@ -150,11 +150,11 @@ export default function Form(props) {
             <>
               <h4>
                 <span role="img" aria-label="party emojis">
-                  🎉🦄🎉🦄🎉
+                  🎉🦄🎉
                 </span>
                 &nbsp;Thank you for applying at Digital Product School&nbsp;
                 <span role="img" aria-label="party emojis">
-                  🎉🦄🎉🦄🎉
+                  🎉🦄🎉
                 </span>
               </h4>
               <p>
