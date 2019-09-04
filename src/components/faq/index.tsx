@@ -21,7 +21,7 @@ class Faq extends React.Component {
 
           <h2>Is it a full time program?</h2>
           <p>
-            Yes it’s a full time program.You will create new ideas,
+            Yes it’s a full time program. You will create new ideas,
             test assumptions and decide in a team how to go on. Your teammates rely on you. That’s why you are expected to be present at DPS during normal office hours.
 
             
@@ -76,8 +76,7 @@ class Faq extends React.Component {
 
           <h2>Can this program be counted as an internship?</h2>
           <p>
-            Yes it can be but as an enrolled student it also depends on your institution.
-            In the past we have had participants from renowned institutions where they were
+            Yes it can be but as an enrolled student it also depends on your institution. In the past we have had participants from renowned institutions where they were
             able to successfully count it as an internship or earn credits. Please 
             further check on with your institution before applying. We are more than 
             happy to collaborate and provide support. 
@@ -130,8 +129,7 @@ class Faq extends React.Component {
 
           <h2>What is the hiring process?</h2>
           <p>
-            After you apply we shortlist you for one on one online interview with track heads.
-            The interview is more like a conversation to get to know you better and your 
+            After you apply we shortlist you for one on one online interview with track heads. The interview is more like a conversation to get to know you better and your 
             motivation to apply. Also we like to know about your future goals and expectations 
             from our program. Our application process is ongoing.You can apply on our website.
             We try to have a look at your application as soon as you send it but please consider 
