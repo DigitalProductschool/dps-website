@@ -13,20 +13,21 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <h2>Is it an online program?</h2>
           <p>
-            Digital Product School (DPS) is all about Teamwork. You learn how to
-            work together in an interdisciplinary team: how to create ideas, how
-            to structure your work and how to make decisions.We believe that’s
-            only possible when you are physically together in a team
-            space.That’s why we don’t offer it as an online program.
+            Digital Product School(DPS) is all about teamwork.You learn how to work
+            together in an interdisciplinary team and learn how to create ideas, 
+            how to structure your work and how to make decisions.We believe that’s 
+            only possible when you are physically together in a team space that is 
+            why we don’t offer it as an online program.
+
           </p>
 
           <h2>Is it a full time program?</h2>
           <p>
-            Yes it’s a full time program. You will work fast. You will work as a
-            team. You will permanently create new ideas, test assumptions and
-            decide on how to go on. Your teammates rely on you. That’s why you
-            have to be present at DPS the whole day - at least the normal office
-            hours.
+            Yes it’s a full time program.You will create new ideas, 
+            test assumptions and decide in a team how to go on.Your teammates rely on you.
+            That’s why you are expected to be present at DPS during normal office hours.
+
+            
           </p>
 
           <h2>Why should I consider DPS?</h2>
@@ -45,21 +46,22 @@ class Faq extends React.Component {
 
           <h2>What will I do at DPS?</h2>
           <p>
-            You will build a user centric product and service that solves a real
-            world challenge. Also you will get to work in a cross functional
-            team and learn to apply valuable methods and techniques.
-            <br />
-            At DPS you will also get a chance to build a professional network
-            and also exchange cultures with fellow participants from all around
-            the world.
+            You will build a user centric product and service that solves a 
+            real world challenge. Also you will get to work in a cross functional 
+            team and learn to apply valuable methods and techniques.At DPS  you will 
+            also get a chance to build a professional network and also exchange 
+            cultures with fellow participants from all around the world.
+
+      
           </p>
 
           <h2>Am I the right applicant to apply?</h2>
           <p>
-            We welcome students, graduates and early stage professionals who
-            want to change careers or gain experience from all around the world.
-            In case you are employed at the moment and want your company to
-            profit from the concept of customer-centric product development?
+            We welcome students,graduates and early stage professionals who want to change 
+            careers or gain experience from all around the world.In case you are employed at 
+            the moment and want your company to profit from the concept of customer-centric 
+            product development? Check out “Digital Business Lab” where your company can take 
+            part with a own problem space and team.
             Check out{' '}
             <a href="https://digitalbusinesslab.de" className="u-link">
               <span>Digital Business Lab (DBL)</span>
@@ -69,32 +71,28 @@ class Faq extends React.Component {
 
           <h2>What kind of products we develop at Digital Product School?</h2>
           <p>
-            The products developed at the digital product school mostly address
-            the problem space that reflects on subject areas like mobility or
-            create a social impact. However the products can be Business to
-            Business or Business to Consumer as a digital or a physical service.
+            The products developed at the digital product school mostly address the problem 
+            space that reflects on areas like mobility or create a social impact.However 
+            the products can be Business to Business or Business to Consumer as a digital 
+            or a physical service. 
           </p>
 
           <h2>Can this program be counted as an internship?</h2>
           <p>
-            Yes it can be - but as an enrolled student it depends on your
-            university. We have had participants from renowned institutions like
-            the Technical University of Munich and CODE University Berlin where
-            they were able to successfully count it as an internship or earn
-            credits.
-            <br />
-            Please further check in with your institution before applying and we
-            are open to collaborate and provide support.
+            Yes it can be but as an enrolled student it also depends on your institution.
+            In past we have had participants from renowned institutions where they were
+            able to successfully count it as an internship or earn credits.Please 
+            further check on with your institution before applying.We are more than 
+            happy to collaborate and provide support. 
           </p>
 
           <h2>Do you accept applications from non-european countries?</h2>
           <p>
-            We welcome international applications and support the idea of
-            diversity. Depending on the country you are living in it might be
-            more or less difficult to get a visa for the European Union. We will
-            support you with getting it but unfortunately there is no guarantee.
-            It also might take time to get the visa. So if you need one you are
-            advised to apply early in advance!
+            We welcome international applications and support the idea of diversity.
+            Depending on the country you are living in it might be more or less 
+            difficult to get a visa for the European Union.We will support you with 
+            getting it but unfortunately there is no guarantee.It also might take time 
+            to get the visa.So if you need one you are advised to apply early in advance!
           </p>
 
           <h2>Is there any program fee?</h2>
@@ -104,25 +102,22 @@ class Faq extends React.Component {
 
           <h2>Do I get paid?</h2>
           <p>
-            We can offer you stipend of EUR 750.- per month / EUR 2.250.- in
-            total for three months. Just don’t forget to select it in the
-            application process.
+            We offer you a scholarship worth EUR 750.- per month / EUR 2.250.- in total for 
+            three months.Just don’t forget to select it in the application process.
           </p>
 
           <h2>Do you provide accommodation?</h2>
           <p>
-            We currently provide limited accommodation where we consider
-            international applicants as a priority. However after you are
-            accepted we have a slack channel where the DPS community shares
-            accommodation offers from Munich and also we send links to the
-            channels through which you can find suitable accommodation for
-            yourself.
+            We currently provide limited accomodation and consider international applicants 
+            for it as a priority.However after you are accepted we have a slack channel where
+            the DPS community shares housing offers from Munich.Also we send links to the 
+            channels through which you can find suitable accommodation for yourself.
+
             <br />
-            Attention: There are a lot of fraud listings available online that
-            you should be aware of. It is recommended that you don’t make any
-            money transfers to book accommodation without exchanging
-            identification, relevant documents and at least a video meeting from
-            the apartment in offer.
+            Also to bring to your attention that there are a lot of fraud listings available 
+            online that you should be aware of.It is recommended that you don’t make any money 
+            transfers to book accommodation without exchanging identification, relevant documents 
+            and at least a video meeting from the apartment in offer.
           </p>
 
           <h2>Do I need to be enrolled as a student to apply?</h2>
@@ -138,14 +133,14 @@ class Faq extends React.Component {
 
           <h2>What is the hiring process?</h2>
           <p>
-            After you apply we shortlist you for one on one online interview
-            with track heads. The interview is more like a conversation to get
-            to know you better and your motivation to apply. Also we like to
-            know about your future goals and expectations from our program. Our
-            application process is ongoing. You can apply on our website. We try
-            to have a look at your application as soon as you send it, but
-            please consider that we might be covered with training the current
-            batch and need some time to get back on you.
+            After you apply we shortlist you for one on one online interview with track heads.
+            The interview is more like a conversation to get to know you better and your 
+            motivation to apply.Also we like to know about your future goals and expectations 
+            from our program.Our application process is ongoing.You can apply on our website.
+            We try to have a look at your application as soon as you send it but please consider 
+            that we might be covered with training the current batch and need some time to 
+            get back to you.
+
           </p>
 
           <h2>
@@ -153,21 +148,19 @@ class Faq extends React.Component {
             program?
           </h2>
           <p>
-            As a part of a wild team you along with your team own the project
-            and product together. It is up to you and your team to take the
-            project forward and pitch it to an incubation further or keep it as
-            a great learning experience.
-            <br />
-            However if you get to work in a company team the project and the
-            product is in ownership of the company.
+            As a part of a wild team at DPS you along with your team own the project and 
+            the product.It is up to you and your team to take the project forward and pitch 
+            it to an incubation further or keep it as a great learning experience.Where as if 
+            you get to work in a company team the project and the product is in ownership 
+            of the company.
+       
           </p>
 
           <h2>What kind of certificate I will be awarded with?</h2>
           <p>
-            You will earn a certificate stating all the research tools and
-            methods you applied to build the product with your team at the
-            Digital Product School. The certificate will be awarded at the end
-            of the program on an off boarding ceremony.
+            You will be awarded with a certificate at the end of the program in an off 
+            boarding ceremony.The certificate will state all the research methods and tools you 
+            learned and  applied during the program to build a product together in a team.
           </p>
 
           <h2>
