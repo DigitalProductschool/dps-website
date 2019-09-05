@@ -99,7 +99,7 @@ class Faq extends React.Component {
           <h2>Do I get paid?</h2>
           <p>
             We offer you a scholarship worth EUR 750.- per month / EUR 2.250.- in total for 
-            three months.Just don’t forget to select it in the application process.
+            three months. Just don’t forget to select it in the application process.
           </p>
 
           <h2>Do you provide accommodation?</h2>
