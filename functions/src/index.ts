@@ -4,6 +4,7 @@ import * as TrelloNodeAPI from 'trello-node-api';
 const createTrelloCard = require('./createTrelloCard');
 const handleFormSubmit = require('./handleFormSubmit');
 const sendConfirmationMail = require('./sendConfirmationMail');
+const storeTrackingData = require('./storeTrackingData');
 
 const admin = require('firebase-admin');
 const { isProduction } = require('./constants');
@@ -70,3 +71,10 @@ exports.sendConfirmationMail = functions
     sendConfirmationMail.handler(snap);
   });
 
+exports.storeTrackingData = functions
+  .region(defaultRegion)
+  .region(defaultRegion)
+  .firestore.document(`batches/{batch}/applications/{applicationId}`)
+  .onCreate(async (snap, context) => {
+    storeTrackingData.handler(snap);
+  });

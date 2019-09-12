@@ -26,7 +26,7 @@ exports.handler = async function(snap: any) {
   });
 
   const accessToken = oauth2Client.getAccessToken();
-  
+
   const smtpTransport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -53,5 +53,4 @@ exports.handler = async function(snap: any) {
     }
     return 'mail sent';
   });
-
 };
