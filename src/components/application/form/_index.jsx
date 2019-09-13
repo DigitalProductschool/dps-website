@@ -96,9 +96,12 @@ export default function Form(props) {
   }, []);
 
   const submitForm = e => {
+    e.preventDefault();
+
     if (!state.cv) {
       setFileUploadError(true);
       uploadCVLabelRef.current.scrollIntoView();
+      return;
     }
 
     const formData = new FormData();
@@ -134,8 +137,6 @@ export default function Form(props) {
         formWrapperRef.current.scrollIntoView();
         setIsInflightRequest(false);
       });
-
-    e.preventDefault();
   };
 
   useEffect(() => {
@@ -320,7 +321,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label
-                  className="application-form__label"
+                  className={`application-form__label scholarship-radiogroup-label-${props.track}`}
                   id="scholarship-radiogroup-label"
                 >
                   Do you need the grants of 750 EUR per month?
@@ -335,6 +336,7 @@ export default function Form(props) {
                     name="scholarship"
                     value="true"
                     id="scholarship-1"
+                    className={`scholarship-1 scholarship-1-${props.track}`}
                     checked={state.scholarship === 'true'}
                     onChange={e =>
                       dispatch({
@@ -346,7 +348,7 @@ export default function Form(props) {
                   />
                   <label
                     htmlFor="scholarship-1"
-                    className="scholarship-radio-label"
+                    className={`scholarship-radio-label scholarship-radio-label-${props.track}`}
                   >
                     Yes, I need the scholarship.
                   </label>
@@ -355,6 +357,7 @@ export default function Form(props) {
                     name="scholarship"
                     value="false"
                     id="scholarship-2"
+                    className={`scholarship-2 scholarship-2-${props.track}`}
                     checked={state.scholarship === 'false'}
                     onChange={e =>
                       dispatch({
@@ -366,7 +369,7 @@ export default function Form(props) {
                   />
                   <label
                     htmlFor="scholarship-2"
-                    className="scholarship-radio-label"
+                    className={`scholarship-radio-label scholarship-radio-label-${props.track}`}
                   >
                     No, DPS can use the money to help fellow participants to
                     cover their living cost in Munich.
@@ -450,6 +453,7 @@ export default function Form(props) {
                     type="checkbox"
                     name="consent"
                     value="true"
+                    className={`consent-radio consent-radio-${props.track}`}
                     id="consent-radio"
                     checked={state.consent === 'true'}
                     onChange={e =>
@@ -462,7 +466,7 @@ export default function Form(props) {
                   />
                   <label
                     htmlFor="consent-radio"
-                    className="consent-radio-label"
+                    className={`consent-radio-label consent-radio-label-${props.track}`}
                   >
                     <span className="consent-description">
                       I agree to the&nbsp;
@@ -491,6 +495,7 @@ export default function Form(props) {
                 {isInflightRequest && 'SENDING...'}
                 {!isInflightRequest && 'SEND YOUR APPLICATION'}
               </button>
+              {isInflightRequest && <p> This may take a few seconds. </p>}
             </form>
           )}
         </div>
