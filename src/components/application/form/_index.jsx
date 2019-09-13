@@ -3,13 +3,13 @@ import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 const initialState = {
-  name: 'eqweq', // string
-  email: 'stoykov@unternehmertum.de', // string
-  batch: '9', // number as string, for instance '8', '9', etc
-  source: 'eqweqw', // string, free text
-  userType: 'student', // string, 'student' | 'graduate' , etc...
-  consent: 'true', // string, 'true' | 'false'
-  scholarship: 'true', // string, 'true' | 'false'
+  name: '', // string
+  email: '', // string
+  batch: '', // number as string, for instance '8', '9', etc
+  source: '', // string, free text
+  userType: '', // string, 'student' | 'graduate' , etc...
+  consent: '', // string, 'true' | 'false'
+  scholarship: '', // string, 'true' | 'false'
   cv: null,
   coverLetter: null,
 };
