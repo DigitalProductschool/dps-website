@@ -52,6 +52,8 @@ Navigate to `functions/` and run `npm run install`.
 
 This would provide all the configs from google cloud runtime on your local PC so you can run functions locally. Please never commit `.runtimeconfig.json` to git, because this is sensitive information.
 
+1. Authentication: run both `gcloud auth login` followed by `gcloud auth application-default login` so that the local environment has access of default credentials. See [ADC credentials discovery](https://cloud.google.com/docs/authentication/production).
+
 2. Running `npm run serve` will start the functions locally. However, those functions connect to `firestore` on the cloud. The other option would be to start `firestore` emulator as well, but for now we like the cloud one, because it provides nice UI and is less hassle to setup. Those functions would connect against our staging `cloud storage` as well.
 
 3. In order to authenticate against `firestore` and `cloud storage`, you need to go to the dps-website-staging project and download the key for `dps-website-staging-0@appspot.gserviceaccount.com` and put it under `functions/` with name `dps-website-staging.firebase.key.json`.
@@ -61,6 +63,11 @@ This would provide all the configs from google cloud runtime on your local PC so
 5. For faster iterations, we recommend developing via tests if possible
 
 ## Tests
+
+### Authentication
+
+While in development we use [ADC credentials discovery](https://cloud.google.com/docs/authentication/production) via credential: admin.credential.applicationDefault(), I haven't figured out how to use default credentials in tests as well, so we use a file instead.
+In order to authenticate against `firestore` and `cloud storage`, you need to go to the dps-website-staging project and download the key for `dps-website-staging-0@appspot.gserviceaccount.com` and put it under `functions/` with name `dps-website-staging.firebase.key.json`.
 
 ### Unit Tests
 

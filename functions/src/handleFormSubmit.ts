@@ -87,6 +87,11 @@ exports.getRequestDataAndPersistFiles = async (
 
 exports.handler = function(request: any, response: any, database: any) {
   return corsFn(request, response, async () => {
+    if (request.query.keepHot) {
+      response.sendStatus(200);
+      return;
+    }
+
     const data = await exports.getRequestDataAndPersistFiles(request, database);
     const cvPromise = data['cv'] || Promise.resolve(null);
     const coverLetterPromise = data['coverLetter'] || Promise.resolve(null);

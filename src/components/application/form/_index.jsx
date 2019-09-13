@@ -150,11 +150,11 @@ export default function Form(props) {
             <>
               <h4>
                 <span role="img" aria-label="party emojis">
-                  🎉🦄🎉🦄🎉
+                  🎉🦄🎉
                 </span>
                 &nbsp;Thank you for applying at Digital Product School&nbsp;
                 <span role="img" aria-label="party emojis">
-                  🎉🦄🎉🦄🎉
+                  🎉🦄🎉
                 </span>
               </h4>
               <p>
@@ -471,7 +471,7 @@ export default function Form(props) {
                           privacy policy
                         </span>
                       </a>
-                      &nbsp;of Digital Product Schhool and it's parent company
+                      &nbsp;of Digital Product School and it's parent company
                       UnternehmerTUM GmbH. The data collected through his
                       application form will be deleted at least six months after
                       the beginning of the batch you applied for.
