@@ -9,7 +9,7 @@ const whitelist = [
   'http://localhost:8000',
   'https://dp.school',
   'https://dpschool.io',
-  'http://digitalproductschool.io',
+  'https://digitalproductschool.io',
   'https://dps-website-staging-0.appspot.com',
 ];
 const corsOptions = {
