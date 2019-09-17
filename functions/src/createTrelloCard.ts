@@ -1,55 +1,92 @@
-import * as TrelloNodeAPI from 'trello-node-api';
+const isProduction = require('./constants').isProduction;
+const TrelloNodeAPI = require('trello-node-api');
+const functions = require('firebase-functions');
+const FormData = require('form-data');
+const fetch = require('node-fetch');
+const STORAGE_BUCKET_URL = require('./constants').STORAGE_BUCKET_URL;
+const trello = new TrelloNodeAPI();
+const trelloKey = functions.config().trello.key;
+const trelloToken = functions.config().trello.token;
+trello.setApiKey(trelloKey);
+trello.setOauthToken(trelloToken);
 
-function buildTrelloDescription(snap: any) {
-  const needsScholarship: String = snap.data()!.scholarship
+interface ISnap {
+  data: () => {
+    [key: string]: string;
+  };
+}
+
+function buildTrelloDescription(snap: ISnap) {
+  const needsScholarship: String = snap.data().scholarship
     ? 'Yes, I need the scholarship'
     : 'No, DPS can use it to support others';
 
-  return `### ${snap.data()!.name} \n ### ${
-    snap.data()!.userType
-  } \n ### Applies for\n${snap.data()!.track} \n ### Preferred batch\n${
-    snap.data()!.batch
-  } \n ### Email\n${
-    snap.data()!.email
-  } \n ### Do you apply for the scholarship of €750.-/month?\n${needsScholarship} \n ### How did you learn about Digital Product School?\n${
-    snap.data()!.source
-  }`;
+  return `
+  ### ${snap.data()!.name}
+  ${snap.data().userType}
+  ### Applies for
+  ${snap.data().track}
+  ### Preferred batch
+  ${snap.data().batch}
+  ### Email
+  ${snap.data().email}
+  ### Do you apply for the scholarship of €750.-/month?
+  ${needsScholarship}
+  ### How did you learn about Digital Product School?
+  ${snap.data().source}
+  `;
 }
 
-exports.handler = async function(snap: any, trello: TrelloNodeAPI) {
-  //const id: string = snap.data()!.id;
-  const email: string = snap.data()!.email;
-  const name: string = snap.data()!.name;
-  console.log('Firestore Object created');
-  console.log(email);
-  console.log('Calling Trello Api');
-  //listid: 5d42ffb526fc5044ef35c2b6
-  //boardid: 5d42ff6f03d92f20aaddd179
+async function attachCvAndCoverLetter(
+  snap: ISnap,
+  database: any,
+  cardId: string
+) {
+  const data = snap.data();
+  const [bucketFiles] = await database
+    .storage()
+    .bucket(STORAGE_BUCKET_URL)
+    .getFiles({
+      prefix: `batch-${data.batch}/applications/${data.name}/${data.email}`,
+    });
 
+  for (let file of bucketFiles) {
+    const formData = new FormData();
+    const download = await file.download();
+    formData.append('file', download[0], file.name);
+    formData.append('key', trelloKey);
+    formData.append('token', trelloToken);
+
+    await fetch(` https://api.trello.com/1/cards/${cardId}/attachments/`, {
+      method: 'POST',
+      body: formData,
+    });
+  }
+}
+
+exports.handler = async function(snap: ISnap, database: any) {
   const data = {
-    name: name,
+    name: snap.data().name,
     desc: buildTrelloDescription(snap),
     pos: 'top',
-    idList: '5d42ffb526fc5044ef35c2b6', //REQUIRED
+    idList: isProduction
+      ? '5874bcbdbc288138362e8152'
+      : '5d809d6c15e98c4c83075183',
     due: null,
     dueComplete: false,
     idMembers: [],
     idLabels: [],
-    //urlSource: 'https://example.com',
-    //fileSource: 'file',
-    //idCardSource: 'CARD_ID',
     keepFromSource:
       'attachments,checklists,comments,due,labels,members,stickers',
   };
-  let response;
+
+  let response: { id: string } = { id: '' };
   try {
-    console.log('startging to create trello card');
     response = await trello.card.create(data);
-    console.log('trello card created');
+    await attachCvAndCoverLetter(snap, database, response.id);
   } catch (error) {
-    if (error) {
-      console.log('error ', error);
-    }
+    console.log('createTrelloCard, error...', error);
   }
-  console.log('response', response);
 };
+
+export {};

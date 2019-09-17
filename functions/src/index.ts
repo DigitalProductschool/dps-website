@@ -1,5 +1,4 @@
 import * as functions from 'firebase-functions';
-import * as TrelloNodeAPI from 'trello-node-api';
 
 const createTrelloCard = require('./createTrelloCard');
 const handleFormSubmit = require('./handleFormSubmit');
@@ -47,28 +46,43 @@ if (!functions.config().trello) {
   );
 }
 
-const trello = new TrelloNodeAPI();
-trello.setApiKey(functions.config().trello.key);
-trello.setOauthToken(functions.config().trello.token);
-
 exports.handleApplicationForm = functions
   .region(defaultRegion)
   .https.onRequest(async (req, res) => {
-    await handleFormSubmit.handler(req, res, admin);
+    return await handleFormSubmit.handler(req, res, admin);
   });
 
 exports.createTrelloCard = functions
   .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
+  // .https.onRequest(async (req, res) => {
   .onCreate(async (snap, context) => {
-    createTrelloCard.handler(snap, trello);
+    // console.log('yo comen');
+    // const ff = {
+    //   batch: '9',
+    //   consent: 'true',
+    //   coverLetter: 'null',
+    //   cv: {
+    //     bucket: 'dps-website-staging-0.appspot.com',
+    //     name:
+    //       'batch-9/applications/eqweq/1567004235502_Final_Sprint_Review_Infos.pdf',
+    //   },
+    //   email: 'stoykov@unternehmertum.de',
+    //   name: 'Lyubomir Stoykov',
+    //   scholarship: 'true',
+    //   source: 'eqweqw',
+    //   userType: 'student',
+    // };
+    // await createTrelloCard.handler({ data: () => ff }, admin);
+    // return res.status(200).json({ status: 'OK' });
+    await createTrelloCard.handler(snap, admin);
   });
 
 exports.sendConfirmationMail = functions
   .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
-    sendConfirmationMail.handler(snap);
+    return await sendConfirmationMail.handler(snap);
   });
 
 exports.storeTrackingData = functions
@@ -76,5 +90,5 @@ exports.storeTrackingData = functions
   .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
-    storeTrackingData.handler(snap);
+    return await storeTrackingData.handler(snap);
   });

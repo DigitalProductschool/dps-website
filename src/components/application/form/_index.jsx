@@ -115,6 +115,7 @@ export default function Form(props) {
         formData.append(key, state[key]);
       }
     }
+    formData.append('track', props.track);
     formData.append('coverLetter', state.coverLetter);
     formData.append('cv', state.cv);
 
@@ -483,11 +484,6 @@ export default function Form(props) {
                   </label>
                 </fieldset>
               </div>
-              <input
-                type="hidden"
-                name="track"
-                value={`${props.track}`}
-              ></input>
               <button
                 type="submit"
                 className={`application-form__submit application-form__submit--${props.track} u-button`}
