@@ -45,8 +45,8 @@ exports.getRequestDataAndPersistFiles = async (
       async (fieldname: string, readFileStream: any, filename: string) => {
         const filePromise = new Promise(async (fileResolve, fileReject) => {
           const bucket = STORAGE_BUCKET_URL;
-          const name = `batch-${data.batch}/applications/${
-            data.name
+          const name = `batch-${data.batch}/applications/${data.name}/${
+            data.email
           }/${Date.now()}_${filename}`;
           const file = {
             bucket,
