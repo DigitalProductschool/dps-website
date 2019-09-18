@@ -5,7 +5,6 @@ import Nav from '../../shared/nav/index';
 type trackData = {
   title: string;
   description1: string;
-  description2: string;
 };
 
 const data: {
@@ -55,9 +54,6 @@ class Header extends React.Component<IHeaderProps, {}> {
           </h1>
           <p className="applications__header-content__description">
             {data[track].description1}
-          </p>
-          <p className="applications__header-content__description">
-            Currently, you can apply for the following batches: ADD BATCHES HERE
           </p>
         </div>
       </section>
