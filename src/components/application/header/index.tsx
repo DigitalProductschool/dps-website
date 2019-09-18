@@ -52,9 +52,6 @@ class Header extends React.Component<IHeaderProps, {}> {
           <h1 className="applications__header-content__title">
             APPLICATION AS <br /> {data[track].title}
           </h1>
-          <p className="applications__header-content__description">
-            {data[track].description1}
-          </p>
         </div>
       </section>
     );
