@@ -52,7 +52,6 @@ exports.getRequestDataAndPersistFiles = async (
             bucket,
             name,
           };
-          console.log('Saving...', file.bucket, file.name);
 
           const bucketFile = await database
             .storage()

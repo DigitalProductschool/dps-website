@@ -41,8 +41,7 @@ exports.handler = async function(snap: any) {
     from: `${APP_NAME} <application@dpschool.io>`,
     to: `${email}`,
     subject: `Thanks for applying at ${APP_NAME}!`,
-    text: `
-Hi ${name},
+    text: `Hi ${name},
 
 We received your application. Thanks for wanting to be a part of the Digital Product School! 
 
@@ -60,8 +59,7 @@ Lichtenbergstr. 6
 +49891894691232 
 
 www.digitalproductschool.io 
-hello@dpschool.io
-    `,
+hello@dpschool.io`,
   };
 
   smtpTransport.sendMail(mailOptions, (error: any, info: any) => {
