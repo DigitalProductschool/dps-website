@@ -64,14 +64,32 @@ async function attachCvAndCoverLetter(
   }
 }
 
+function getCardId(track: string) {
+  if (!isProduction) {
+    // https://trello.com/b/RNVAchTV/api-test-board
+    return '5d809d6c15e98c4c83075183';
+  }
+
+  if (track === 'pm') {
+    // https://trello.com/b/0XE3F4JY/pm-track-applications
+    return '5c0e4ab452364949dde812b1';
+  }
+
+  if (track === 'ixd') {
+    // https://trello.com/b/XqoNQKp7/ixd-track-applications
+    return '5ca222869b5ec76a56a9fb6a';
+  }
+
+  // https://trello.com/b/f9Dgk2Vj/engineering-applications
+  return '5c3d919c8ec21c71f7b34e94';
+}
+
 exports.handler = async function(snap: ISnap, database: any) {
   const data = {
     name: snap.data().name,
     desc: buildTrelloDescription(snap),
     pos: 'top',
-    idList: isProduction
-      ? '5874bcbdbc288138362e8152'
-      : '5d809d6c15e98c4c83075183',
+    idList: getCardId(snap.data().track),
     due: null,
     dueComplete: false,
     idMembers: [],
