@@ -471,7 +471,11 @@ export default function Form(props) {
                   >
                     <span className="consent-description">
                       I agree to the&nbsp;
-                      <a href="/privacy-policy" className="u-link">
+                      <a
+                        href="/privacy-policy"
+                        className="u-link"
+                        target="_blank"
+                      >
                         <span onClick={e => e.stopPropagation()}>
                           privacy policy
                         </span>
