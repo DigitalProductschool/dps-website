@@ -1,6 +1,7 @@
 export {};
 const { google } = require('googleapis');
 const functions = require('firebase-functions');
+const GenderApi = require('gender-api.com-client');
 
 function getAppDate(appDate: any) {
   const monthNames = [
@@ -51,6 +52,7 @@ exports.handler = async function(snap: any) {
   });
 
   function appendPromise(requestWithoutAuth: any) {
+    console.log('appendpromisee');
     return new Promise((resolve, reject) => {
       const sheets = google.sheets('v4');
       const request = requestWithoutAuth;
@@ -69,14 +71,30 @@ exports.handler = async function(snap: any) {
     });
   }
 
-  await appendPromise({
-    spreadsheetId: '1YdB5St4XUsgB3_7mVi0cGtpGpvv5OC4qSoYu5v2KOzI',
-    range: 'A:G',
-    valueInputOption: 'USER_ENTERED',
-    insertDataOption: 'INSERT_ROWS',
-    resource: {
-      values: [[name, email, batch, track, userType, source, applicationTime]],
-    },
-    auth: oauth2Client,
+  // api used: https://gender-api.com/en/clients
+  const genderApiClient = new GenderApi.Client('VYdUEnwvvPsSKUeFwD');
+  genderApiClient.getByFirstName(name, function(response: any) {
+    console.log(response.gender);
+    void appendPromise({
+      spreadsheetId: '1YdB5St4XUsgB3_7mVi0cGtpGpvv5OC4qSoYu5v2KOzI', //test sheet
+      range: 'A:H',
+      valueInputOption: 'USER_ENTERED',
+      insertDataOption: 'INSERT_ROWS',
+      resource: {
+        values: [
+          [
+            name,
+            email,
+            batch,
+            track,
+            userType,
+            source,
+            applicationTime,
+            response.gender,
+          ],
+        ],
+      },
+      auth: oauth2Client,
+    });
   });
 };
