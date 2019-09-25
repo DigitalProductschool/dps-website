@@ -9,7 +9,7 @@ const whitelist = [
   'http://localhost:8000',
   'https://dp.school',
   'https://dpschool.io',
-  'http://digitalproductschool.io',
+  'https://digitalproductschool.io',
   'https://dps-website-staging-0.appspot.com',
 ];
 const corsOptions = {
@@ -45,14 +45,13 @@ exports.getRequestDataAndPersistFiles = async (
       async (fieldname: string, readFileStream: any, filename: string) => {
         const filePromise = new Promise(async (fileResolve, fileReject) => {
           const bucket = STORAGE_BUCKET_URL;
-          const name = `batch-${data.batch}/applications/${
-            data.name
+          const name = `batch-${data.batch}/applications/${data.name}/${
+            data.email
           }/${Date.now()}_${filename}`;
           const file = {
             bucket,
             name,
           };
-          console.log('Saving...', file.bucket, file.name);
 
           const bucketFile = await database
             .storage()
