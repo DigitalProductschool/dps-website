@@ -2,6 +2,8 @@ import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
+const _5MB = 5242880; // in bytes;
+
 const initialState = {
   name: '', // string
   email: '', // string
@@ -84,7 +86,8 @@ export default function Form(props) {
   const fileInputCoverLetterRef = useRef(null);
   const formWrapperRef = useRef(null);
   const [response, setResponse] = useState();
-  const [fileUploadError, setFileUploadError] = useState(null);
+  const [cvUploadError, setCVUploadError] = useState(null);
+  const [coverLetterUploadError, setCoverLetterUploadError] = useState(null);
   const [isInflightRequest, setIsInflightRequest] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
   const clickFileInputCV = useCallback(() => {
@@ -99,7 +102,7 @@ export default function Form(props) {
     e.preventDefault();
 
     if (!state.cv) {
-      setFileUploadError(true);
+      setCVUploadError(true);
       uploadCVLabelRef.current.scrollIntoView();
       return;
     }
@@ -141,7 +144,8 @@ export default function Form(props) {
   };
 
   useEffect(() => {
-    setFileUploadError(null);
+    setCVUploadError(null);
+    setCoverLetterUploadError(null);
   }, [state]);
 
   return (
@@ -276,7 +280,7 @@ export default function Form(props) {
                   required
                 >
                   <option value="">Please select</option>
-                  <option value="9">Batch#9</option>
+                  <option value="9">Batch #9 (Jan 7 to March 27, 2020)</option>
                 </select>
               </div>
               <div className="application-form__field-wrapper">
@@ -284,18 +288,25 @@ export default function Form(props) {
                   className="application-form__label"
                   htmlFor="file-upload"
                   ref={uploadCVLabelRef}
-                  style={fileUploadError ? { color: 'red' } : null}
+                  style={cvUploadError ? { color: 'red' } : null}
                 >
                   Please upload your CV (PDF, max 5MB)
+                  {cvUploadError && <p> {cvUploadError} </p>}
                 </label>
                 <label />
                 <input
-                  onChange={e =>
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCVUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
                     dispatch({
                       type: 'CHANGE_CV',
                       payload: { file: e.target.files[0] },
-                    })
-                  }
+                    });
+                  }}
                   accept="application/pdf"
                   className="application-form__input"
                   type="file"
@@ -399,9 +410,11 @@ export default function Form(props) {
                 <label
                   className="application-form__label"
                   htmlFor="file-upload-cover-letter"
+                  style={coverLetterUploadError ? { color: 'red' } : {}}
                 >
                   Describe your motivation in a cover letter (Optional, PDF, max
                   5MB)
+                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
                 </label>
                 <input
                   className="application-form__input"
@@ -410,12 +423,18 @@ export default function Form(props) {
                   ref={fileInputCoverLetterRef}
                   tabIndex={-1}
                   id="file-upload-cover-letter"
-                  onChange={e =>
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCoverLetterUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
                     dispatch({
                       type: 'CHANGE_COVER_LETTER',
                       payload: { file: e.target.files[0] },
-                    })
-                  }
+                    });
+                  }}
                 />
                 <div
                   className="application-form__input application_form__file-input-overlay"
@@ -439,7 +458,10 @@ export default function Form(props) {
                   />
                 </button>
               </div>
-              <div className="application-form__field-wrapper">
+              <div
+                className="application-form__field-wrapper"
+                style={{ zIndex: 1 }}
+              >
                 <label
                   className="application-form__label"
                   id="consent-radiogroup-label"
