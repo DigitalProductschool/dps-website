@@ -50,8 +50,13 @@ class Header extends React.Component<IHeaderProps, {}> {
         <Nav logo="/assets/tracks/dps-logo-white.png" />
         <div className="applications__header-content u-content">
           <h1 className="applications__header-content__title">
-            APPLICATION AS <br /> {data[track].title}
+            APPLY AS <br /> {data[track].title}
           </h1>
+          <br />
+          <p>Currently you can apply for the following batches:</p>
+          <p>
+            #Batch #9: Jan 7, 2020 to Mar 27, 2020 (Deadline: October 13, 2019)
+          </p>
         </div>
       </section>
     );
