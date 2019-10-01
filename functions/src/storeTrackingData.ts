@@ -51,31 +51,11 @@ exports.handler = async function(snap: any) {
     refresh_token: refreshToken,
   });
 
-  function appendPromise(requestWithoutAuth: any) {
-    console.log('appendpromisee');
-    return new Promise((resolve, reject) => {
-      const sheets = google.sheets('v4');
-      const request = requestWithoutAuth;
-      return sheets.spreadsheets.values.append(
-        request,
-        (err: any, response: any) => {
-          if (err) {
-            console.log(`The API returned an error: ${err}`);
-            reject(err);
-            return;
-          }
-          resolve(response.data);
-          return;
-        }
-      );
-    });
-  }
-
   // api used: https://gender-api.com/en/clients
   const genderApiClient = new GenderApi.Client('VYdUEnwvvPsSKUeFwD');
-  genderApiClient.getByFirstName(name, function(response: any) {
-    console.log(response.gender);
-    void appendPromise({
+  genderApiClient.getByFirstName(name, function(result: any) {
+    console.log(result.gender);
+    const request = {
       spreadsheetId: '1YdB5St4XUsgB3_7mVi0cGtpGpvv5OC4qSoYu5v2KOzI', //test sheet
       range: 'A:H',
       valueInputOption: 'USER_ENTERED',
@@ -90,11 +70,27 @@ exports.handler = async function(snap: any) {
             userType,
             source,
             applicationTime,
-            response.gender,
+            result.gender,
           ],
         ],
       },
       auth: oauth2Client,
+    };
+
+    new Promise((resolve, reject) => {
+      const sheets = google.sheets('v4');
+      return sheets.spreadsheets.values.append(
+        request,
+        (err: any, response: any) => {
+          if (err) {
+            console.log(`The API returned an error: ${err}`);
+            reject(err);
+            return;
+          }
+          resolve(response.data);
+          return;
+        }
+      );
     });
   });
 };
