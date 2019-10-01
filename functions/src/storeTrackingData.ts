@@ -40,6 +40,8 @@ exports.handler = async function(snap: any) {
   const clientID = functions.config().spreadsheet.clientid;
   const clientSecret = functions.config().spreadsheet.clientsecret;
   const refreshToken = functions.config().spreadsheet.refreshtoken;
+  const genderApiKey = functions.config().spreadsheet.genderapikey;
+  const googleSheetID = functions.config().spreadsheet.id;
 
   const oauth2Client = new OAuth2(
     clientID, //client Id
@@ -52,11 +54,10 @@ exports.handler = async function(snap: any) {
   });
 
   // api used: https://gender-api.com/en/clients
-  const genderApiClient = new GenderApi.Client('VYdUEnwvvPsSKUeFwD');
+  const genderApiClient = new GenderApi.Client(genderApiKey);
   genderApiClient.getByFirstName(name, function(result: any) {
-    console.log(result.gender);
     const request = {
-      spreadsheetId: '1YdB5St4XUsgB3_7mVi0cGtpGpvv5OC4qSoYu5v2KOzI', //test sheet
+      spreadsheetId: googleSheetID, //test sheet
       range: 'A:H',
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
@@ -77,20 +78,14 @@ exports.handler = async function(snap: any) {
       auth: oauth2Client,
     };
 
-    new Promise((resolve, reject) => {
-      const sheets = google.sheets('v4');
-      return sheets.spreadsheets.values.append(
-        request,
-        (err: any, response: any) => {
-          if (err) {
-            console.log(`The API returned an error: ${err}`);
-            reject(err);
-            return;
-          }
-          resolve(response.data);
-          return;
-        }
-      );
+    const sheets = google.sheets('v4');
+    return sheets.spreadsheets.values.append(request, (err: any) => {
+      if (err) {
+        console.log(`The API returned an error: ${err}`);
+        throw err;
+        return;
+      }
+      return;
     });
   });
 };
