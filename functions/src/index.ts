@@ -89,5 +89,5 @@ exports.storeTrackingData = functions
   .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
-    return await storeTrackingData.handler(snap);
+    return await storeTrackingData.handler(snap, context, admin);
   });

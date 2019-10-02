@@ -27,7 +27,7 @@ function getAppDate(appDate: any) {
   return newdate;
 }
 
-exports.handler = async function(snap: any) {
+exports.handler = async function(snap: any, context: any, admin: any) {
   const email: string = snap.data()!.email;
   const name: string = snap.data()!.name;
   const batch: string = snap.data()!.batch;
@@ -35,6 +35,8 @@ exports.handler = async function(snap: any) {
   const track: string = snap.data()!.track;
   const source: string = snap.data()!.source;
   const applicationTime: any = getAppDate(snap.createTime.toDate());
+  const docId = context.params.applicationId;
+  const batchId = context.params.batch;
 
   const OAuth2 = google.auth.OAuth2;
   const clientID = functions.config().spreadsheet.clientid;
@@ -56,6 +58,23 @@ exports.handler = async function(snap: any) {
   // api used: https://gender-api.com/en/clients
   const genderApiClient = new GenderApi.Client(genderApiKey);
   genderApiClient.getByFirstName(name, function(result: any) {
+    admin
+      .firestore()
+      .collection('batches')
+      .doc(batchId)
+      .collection('applications')
+      .doc(docId)
+      .update({
+        applicationDate: applicationTime,
+        gender: result.gender,
+      })
+      .then(function() {
+        console.log('Document successfully updated!');
+      })
+      .catch(function(error: any) {
+        console.log('Error adding document: ', error);
+      });
+
     const request = {
       spreadsheetId: googleSheetID, //test sheet
       range: 'A:H',
