@@ -165,11 +165,12 @@ function Nav(props) {
   }, []);
 
   useEffect(() => {
-    document.addEventListener('cookie-accepted', () => {
+    const f = () => {
       setIsCookieWarning(false);
-    });
+    };
+    document.addEventListener('cookie-accepted', f);
 
-    return () => document.removeEventListener('cookie-accepted');
+    return () => document.removeEventListener('cookie-accepted', f);
   }, []);
 
   let additionalMobileClassToFixCookieLOL = '';
