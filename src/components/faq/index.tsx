@@ -6,10 +6,6 @@ class Faq extends React.Component {
     return (
       <section className="faq u-content-wrapper">
         <Seo />
-        <div className="faq__header u-content">
-          <h1 className="faq__header-title">ANY UNANSWERED QUESTIONS?</h1>
-          <p className="faq__header-description">Find the answers here!</p>
-        </div>
         <div className="faq__content u-content">
           <h2>Is it an online program?</h2>
           <p>
@@ -29,7 +25,7 @@ class Faq extends React.Component {
           </p>
 
           <h2>Why should I consider DPS?</h2>
-          <ol>
+          <ol style={{ paddingLeft: '15px' }}>
             <li>Personal coaching</li>
             <li>
               Professional development by gaining practical work experience
@@ -174,13 +170,17 @@ class Faq extends React.Component {
             We at the Digital Product School do everything that is necessary to
             empower you to connect with suitable job opportunities in future.
           </p>
-        </div>
 
-        <div className="faq__call u-content">
-          <p>
-            Feel free to reach out to us in case of further queries{' '}
-            <a href="mailto:hello@dpschool.io" className="u-link">
-              <span>hello@dpschool.io</span>
+          <p style={{ fontSize: '20px', fontWeight: 900 }}>
+            {`Feel free to reach out to us in case of further queries `}
+            <a
+              href="mailto:hello@dpschool.io"
+              className="u-link"
+              style={{ fontWeight: 900, cursor: 'pointer' }}
+            >
+              <span style={{ zIndex: 1, fontSize: '20px' }}>
+                hello@dpschool.io
+              </span>
             </a>
           </p>
         </div>

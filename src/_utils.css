@@ -219,3 +219,7 @@ h3.u-title {
     margin-top: 18px;
   }
 }
+
+.u-bg-transparent {
+  background-color: transparent !important;
+}

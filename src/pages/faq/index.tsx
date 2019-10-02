@@ -4,6 +4,7 @@ import Nav from '../../components/shared/nav/index';
 import Faq from '../../components/faq/index';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
+import logo from '../../../static/assets/shared/dps-logo-double-white.png';
 
 class Legal extends React.Component {
   componentDidMount() {
@@ -14,10 +15,11 @@ class Legal extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Nav
-          addClass={'nav--black'}
-          logo={'/assets/shared/dps-logo-black.svg'}
-        />
+        <Nav addClass={'u-bg-transparent'} logo={logo} />
+        <section className="faq__navheader">
+          <div className="faq__navheader-overlay"></div>
+          <h3 className="faq__navheader__title">Frequently Asked Questions</h3>
+        </section>
         <Faq />
         <Footer />
       </React.Fragment>

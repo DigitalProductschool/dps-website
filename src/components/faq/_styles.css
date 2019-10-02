@@ -1,12 +1,12 @@
 .faq {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: -200px;
+}
 
-  @media (max-width: 620px) {
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 80px;
-  }
+.faq__content {
+  background-color: white;
+  padding: 40px 65px;
+  max-width: 620px;
+  width: 70%;
 }
 
 .faq__header {
