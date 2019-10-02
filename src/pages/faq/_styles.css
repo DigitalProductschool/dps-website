@@ -1,0 +1,38 @@
+.faq__navheader {
+  max-height: 60vh;
+  height: 600px;
+  position: relative;
+  top: -133px;
+  z-index: -1;
+  background: url(/assets/faq/background.png) center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq__navheader-overlay {
+  background-color: #fea11f;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.faq__navheader__title {
+  text-align: center;
+  padding-top: 75px;
+
+  @media (max-width: 620px) {
+    padding-top: 75px;
+    font-size: 36px;
+  }
+
+  color: white;
+  padding: 20px;
+  font-size: 52px;
+  font-weight: 900;
+  z-index: 1;
+}
