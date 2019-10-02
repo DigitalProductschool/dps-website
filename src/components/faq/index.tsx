@@ -25,7 +25,7 @@ class Faq extends React.Component {
           </p>
 
           <h2>Why should I consider DPS?</h2>
-          <ol>
+          <ol style={{ paddingLeft: '15px' }}>
             <li>Personal coaching</li>
             <li>
               Professional development by gaining practical work experience
