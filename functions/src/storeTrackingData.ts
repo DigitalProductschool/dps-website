@@ -82,7 +82,7 @@ exports.handler = async function(snap: any) {
     return sheets.spreadsheets.values.append(request, (err: any) => {
       if (err) {
         console.log(`The API returned an error: ${err}`);
-        throw err;
+        throw new Error(err);
         return;
       }
       return;
