@@ -49,6 +49,7 @@ class CookieWarning extends React.Component<{}, ICookieWarningState> {
     if (this.state.animateOut && !prevState.animateOut) {
       this.injectGoogleManager();
       localStorage.setItem(cookieKey, 'true');
+      document.dispatchEvent(new Event('cookie-accepted'));
       setTimeout(() => {
         this.setState({ showCookieWarning: false });
       }, 300);
