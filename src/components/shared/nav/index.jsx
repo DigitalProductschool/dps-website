@@ -195,8 +195,7 @@ function Nav(props) {
             <label
               className={inverted ? `nav__menu__item__tracks--inverted` : ''}
             >
-              {' '}
-              Tracks{' '}
+              Tracks
             </label>
             {isMouseOverTracks && (
               <MenuDropdownForDesktop
