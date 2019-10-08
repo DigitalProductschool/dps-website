@@ -137,6 +137,7 @@ function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
   const [isMouseOverMenu, setIsMouseOverMenu] = useState(false);
+  const [isCookieWarning, setIsCookieWarning] = useState(false);
 
   const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
   const addClass = props.addClass || '';
@@ -156,13 +157,35 @@ function Nav(props) {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    const cookieKey = 'dps-cookie-acknowledged';
+    if (!localStorage.getItem(cookieKey)) {
+      setIsCookieWarning(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const f = () => {
+      setIsCookieWarning(false);
+    };
+    document.addEventListener('cookie-accepted', f);
+
+    return () => document.removeEventListener('cookie-accepted', f);
+  }, []);
+
+  let additionalMobileClassToFixCookieLOL = '';
+
+  if (isCookieWarning) {
+    additionalMobileClassToFixCookieLOL = ' nav__menu--mobile--cookie ';
+  }
+
   // dimmed background behind the menu on mobile
   const Overlay = () => (
     <div
       onClick={() => setIsOpen(false)}
       style={{
         position: 'fixed',
-        top: '86px',
+        top: isCookieWarning ? '336px' : '86px',
         right: 0,
         left: 0,
         bottom: 0,
@@ -195,8 +218,7 @@ function Nav(props) {
             <label
               className={inverted ? `nav__menu__item__tracks--inverted` : ''}
             >
-              {' '}
-              Tracks{' '}
+              Tracks
             </label>
             {isMouseOverTracks && (
               <MenuDropdownForDesktop
@@ -241,7 +263,7 @@ function Nav(props) {
           </span>
         )}
         <ul
-          className={`nav__menu nav__menu--mobile ${
+          className={`nav__menu nav__menu--mobile ${additionalMobileClassToFixCookieLOL}  ${
             isOpen ? 'nav__menu--mobile-open' : ''
           }`}
         >
