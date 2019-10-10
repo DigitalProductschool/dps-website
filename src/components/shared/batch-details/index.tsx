@@ -45,19 +45,36 @@ class BatchDetails extends React.Component<BatchDetailsProps> {
   }
 
   render() {
-    let displayAllBatches = this.state.batchDetails.map(batch => (
-      <span>
-        <b>
-          {`#Batch #${batch.batchNumber}: ${getBatchDate(
-            batch.startDate
-          )} to ${getBatchDate(batch.endDate)} `}
-        </b>
-        {`(Application phase: ${getBatchDate(
-          batch.appStartDate
-        )} to ${getBatchDate(batch.appEndDate)})`}
-        <br />
-      </span>
-    ));
+    let displayAllBatches = this.state.batchDetails.map(
+      function(batch) {
+        if (dateCompare(batch.appStartDate))
+          return (
+            <span>
+              <b>
+                {`#Batch #${batch.batchNumber}: ${getBatchDate(
+                  batch.startDate
+                )} to ${getBatchDate(batch.endDate)} `}
+              </b>
+              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
+              <br />
+            </span>
+          );
+        else
+          return (
+            <span>
+              <b>
+                {`#Batch #${batch.batchNumber}: ${getBatchDate(
+                  batch.startDate
+                )} to ${getBatchDate(batch.endDate)} `}
+              </b>
+              {`(Application phase: ${getBatchDate(
+                batch.appStartDate
+              )} to ${getBatchDate(batch.appEndDate)})`}
+              <br />
+            </span>
+          );
+      }.bind(this)
+    );
 
     let displayCurrentBatches = this.state.batchDetails.map(
       function(batch) {
@@ -69,9 +86,7 @@ class BatchDetails extends React.Component<BatchDetailsProps> {
                   batch.startDate
                 )} to ${getBatchDate(batch.endDate)} `}
               </b>
-              {`(Application phase: ${getBatchDate(
-                batch.appStartDate
-              )} to ${getBatchDate(batch.appEndDate)})`}
+              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
               <br />
             </span>
           );
