@@ -15,7 +15,7 @@ class ToolPartner extends React.Component {
               <p> DPS is a program by </p>
               <p> funded by </p>
               <p> in cooperation with </p>
-              <img alt="UnternehmerTUM" title="Digital Product School is a program by UnternehmerTUM" className="tool-partner__content__logo" src="/assets/home/tool-partner/UnternehmerTUM.jpg" />
+              <img alt="UnternehmerTUM" title="Digital Product School is a program by UnternehmerTUM" className="tool-partner__content__logo" src="/assets/home/tool-partner/UnternehmerTUM.png" />
               <img alt="Bavarian Ministry of Economic Affairs, Regional Development and Energy" title="Digital Product School is funded by the Bavarian Ministry of Economic Affairs, Regional Development and Energy" className="tool-partner__content__logo" src="/assets/home/tool-partner/staatsministerium-logo.png" />
               <img alt="Technical University Munich" title="Digital Product School takes place in kooperation with the Technical University Munich (TUM)" className="tool-partner__content__logo" src="/assets/home/tool-partner/tum.png" />
             </div>
