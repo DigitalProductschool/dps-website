@@ -12,11 +12,12 @@ class ToolPartner extends React.Component {
             <img alt="tool-partner-uxpin" className="tool-partner__content__logo" src="/assets/home/tool-partner/uxpin.png" />
             <img alt="tool-partner-github" className="tool-partner__content__logo" src="/assets/home/tool-partner/github.png" />
             <div>
+              <p> DPS is a program by </p>
               <p> funded by </p>
               <p> in cooperation with </p>
+              <img alt="tool-partner-tum.png" className="tool-partner__content__logo" src="/assets/home/tool-partner/tum.png" />
               <img alt="tool-partner-staatsministerium-logo" className="tool-partner__content__logo" src="/assets/home/tool-partner/staatsministerium-logo.png" />
               <img alt="tool-partner-tum.png" className="tool-partner__content__logo" src="/assets/home/tool-partner/tum.png" />
-
             </div>
           </div>
         </div>
