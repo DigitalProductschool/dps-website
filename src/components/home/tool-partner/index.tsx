@@ -12,7 +12,7 @@ class ToolPartner extends React.Component {
             <img alt="tool-partner-uxpin" className="tool-partner__content__logo" src="/assets/home/tool-partner/uxpin.png" />
             <img alt="tool-partner-github" className="tool-partner__content__logo" src="/assets/home/tool-partner/github.png" />
             <div>
-              <h3 className="u-title">TOOL PARTNERS</h3>
+              <h3 className="u-title">TOOL PARTNERS</h3><br>
               <p> a program by </p>
               <p> funded by </p>
               <p> in cooperation with </p>
