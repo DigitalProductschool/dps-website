@@ -5,7 +5,8 @@ class ToolPartner extends React.Component {
     return (
       <section className="tool-partner u-content-wrapper">
         <div className="tool-partner__content u-content">
-          <h3 className="u-title">TOOL PARTNERS</h3>
+          <h3 className="u-title">PARTNERS</h3>
+          <p> Tool Partners </p>
           <div className="tool-partner__content__logos">
             <img alt="tool-partner-eyequant" className="tool-partner__content__logo" src="/assets/home/tool-partner/eyequant.jpg" />
             <img alt="tool-partner-invision" className="tool-partner__content__logo" src="/assets/home/tool-partner/invision.png" />
