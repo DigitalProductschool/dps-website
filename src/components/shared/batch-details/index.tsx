@@ -5,97 +5,101 @@ interface BatchDetailsProps {
   isCurrentOpenApplications: boolean;
 }
 
-function getBatchDate(batchDate) {
-  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-    .format;
-  const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  let date = batchDate.toDate();
-  let newdate =
-    monthNames[date.getMonth()] +
-    ' ' +
-    date.getDate() +
-    ', ' +
-    date.getFullYear();
-  return newdate;
-}
-
-function dateCompare(date) {
-  let today = new Date();
-  let givenDate = date.toDate();
-  return givenDate <= today;
-}
-
 class BatchDetails extends React.Component<BatchDetailsProps> {
   constructor(props: BatchDetailsProps) {
     super(props);
     this.state = { batchDetails: [] };
   }
 
+  getBatchDate(batchDate) {
+    let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+      .format;
+    const monthNames = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+    let date = batchDate.toDate();
+    let newdate =
+      monthNames[date.getMonth()] +
+      ' ' +
+      date.getDate() +
+      ', ' +
+      date.getFullYear();
+    return newdate;
+  }
+
+  isApplicationPhaseOpen(applicationStartDate) {
+    const today = new Date();
+    let givenDate = applicationStartDate.toDate();
+    return givenDate <= today;
+  }
+
   render() {
-    let displayAllBatches = this.state.batchDetails.map(
-      function(batch) {
-        if (dateCompare(batch.appStartDate))
-          return (
-            <span>
-              <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
-                  batch.startDate
-                )} to ${getBatchDate(batch.endDate)} `}
-              </b>
-              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
-              <br />
-            </span>
-          );
-        else
-          return (
-            <span>
-              <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
-                  batch.startDate
-                )} to ${getBatchDate(batch.endDate)} `}
-              </b>
-              {`(Application phase: ${getBatchDate(
-                batch.appStartDate
-              )} to ${getBatchDate(batch.appEndDate)})`}
-              <br />
-            </span>
-          );
-      }.bind(this)
-    );
-
-    let displayCurrentBatches = this.state.batchDetails.map(
-      function(batch) {
-        if (dateCompare(batch.appStartDate))
-          return (
-            <span>
-              <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
-                  batch.startDate
-                )} to ${getBatchDate(batch.endDate)} `}
-              </b>
-              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
-              <br />
-            </span>
-          );
-      }.bind(this)
-    );
-
     if (this.props.isCurrentOpenApplications) {
+      let displayCurrentBatches = this.state.batchDetails.map(
+        function(batch) {
+          if (this.isApplicationPhaseOpen(batch.appStartDate))
+            return (
+              <span>
+                <b>
+                  {`#Batch #${batch.batchNumber}: ${this.getBatchDate(
+                    batch.startDate
+                  )} to ${this.getBatchDate(batch.endDate)} `}
+                </b>
+                {`(Applications open until ${this.getBatchDate(
+                  batch.appEndDate
+                )})`}
+                <br />
+              </span>
+            );
+        }.bind(this)
+      );
+
       return <p>{displayCurrentBatches}</p>;
     } else {
+      let displayAllBatches = this.state.batchDetails.map(
+        function(batch) {
+          if (this.isApplicationPhaseOpen(batch.appStartDate))
+            return (
+              <span>
+                <b>
+                  {`#Batch #${batch.batchNumber}: ${this.getBatchDate(
+                    batch.startDate
+                  )} to ${this.getBatchDate(batch.endDate)} `}
+                </b>
+                {`(Applications open until ${this.getBatchDate(
+                  batch.appEndDate
+                )})`}
+                <br />
+              </span>
+            );
+          else
+            return (
+              <span>
+                <b>
+                  {`#Batch #${batch.batchNumber}: ${this.getBatchDate(
+                    batch.startDate
+                  )} to ${this.getBatchDate(batch.endDate)} `}
+                </b>
+                {`(Application phase: ${this.getBatchDate(
+                  batch.appStartDate
+                )} to ${this.getBatchDate(batch.appEndDate)})`}
+                <br />
+              </span>
+            );
+        }.bind(this)
+      );
+
       return <p>{displayAllBatches}</p>;
     }
   }
