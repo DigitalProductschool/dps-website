@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getFirebase } from '../../../firebase/firebase';
+import BatchDetails from '../../shared/batch-details/index';
 import { ApplyButton } from '../header/_index';
 
 interface IHeaderProps {
@@ -8,89 +8,10 @@ interface IHeaderProps {
   track: string;
 }
 
-function getBatchDate(batchDate) {
-  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-    .format;
-  const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  let date = batchDate.toDate();
-  let newdate =
-    monthNames[date.getMonth()] +
-    ' ' +
-    date.getDate() +
-    ', ' +
-    date.getFullYear();
-  return newdate;
-}
-
 // this component will be thrown away, so quick & dirty
 class Apply extends React.Component<IHeaderProps, {}> {
-  constructor(props: IHeaderProps) {
-    super(props);
-    this.state = {
-      batchDetails: [],
-    };
-  }
-
-  componentDidMount() {
-    const firebaseApp = import('@firebase/app');
-    const firebaseDatabase = import('@firebase/firestore');
-    var currentTime = new Date();
-
-    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
-      const database = getFirebase(firebase).firestore();
-      database
-        .collection('batch-details')
-        .where('appEndDate', '>', currentTime)
-        .orderBy('appEndDate')
-        .get()
-        .then(snapshot =>
-          snapshot.forEach(doc =>
-            this.setState(prevState => ({
-              batchDetails: [
-                ...prevState.batchDetails,
-                {
-                  batchID: doc.id,
-                  batchNumber: doc.data().batch,
-                  startDate: doc.data().startDate,
-                  endDate: doc.data().endDate,
-                  appStartDate: doc.data().appStartDate,
-                  appEndDate: doc.data().appEndDate,
-                },
-              ],
-            }))
-          )
-        );
-    });
-  }
-
   render() {
     const { name, url, track } = this.props;
-
-    let displayBatch = this.state.batchDetails.map(batch => (
-      <p key={batch.batchID}>
-        <b>
-          {`#Batch #${batch.batchNumber}: ${getBatchDate(
-            batch.startDate
-          )} to ${getBatchDate(batch.endDate)} `}
-        </b>
-        {`(Application phase: ${getBatchDate(
-          batch.appStartDate
-        )} to ${getBatchDate(batch.appEndDate)})`}
-      </p>
-    ));
 
     return (
       <div className="u-content-wrapper">
@@ -117,7 +38,7 @@ class Apply extends React.Component<IHeaderProps, {}> {
             Dates and deadlines of the upcoming batches:
             <br />
             <br />
-            {displayBatch}
+            <BatchDetails isCurrentOpenApplications={false} />
           </p>
           <div className="tracks__apply-button-wrapper">
             <ApplyButton
