@@ -87,6 +87,10 @@
     overflow: auto;
   }
 
+  &--mobile--cookie {
+    top: 336px;
+  }
+
   &--mobile-open {
     transform: translateX(-250px);
   }
