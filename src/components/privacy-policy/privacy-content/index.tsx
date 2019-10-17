@@ -34,7 +34,7 @@ class PrivacyContent extends React.Component {
             Internet-based data transmissions may in principle have security
             gaps, so absolute protection may not be guaranteed. For this reason,
             every data subject is free to transfer personal data to us via
-            alternative means, e.g. by telephone.
+            alternative means, e.g. by telephone.<br />
           </p>
           <h3>1. DEFINITIONS</h3>
           <p>
@@ -150,7 +150,7 @@ class PrivacyContent extends React.Component {
             Consent of the data subject is any freely given, specific, informed
             and unambiguous indication of the data subject's wishes by which he
             or she, by a statement or by a clear affirmative action, signifies
-            agreement to the processing of personal data relating to him or her.
+            agreement to the processing of personal data relating to him or her.<br />
           </p>
           <h3>2. NAME AND ADDRESS OF THE CONTROLLER</h3>
           <p>
@@ -178,7 +178,7 @@ class PrivacyContent extends React.Component {
             Website:{' '}
             <a href="https://unternehmertum.de" className="u-link">
               <span>www.unternehmertum.de</span>
-            </a>
+            </a><br />
           </p>
           <h3>3. DATA PROTECTION OFFICER</h3>
           <p>The Data Protection Officer of the controller is:</p>
@@ -206,7 +206,7 @@ class PrivacyContent extends React.Component {
           <p>
             Any data subject may, at any time, contact our Data Protection
             Officer directly with all questions and suggestions concerning data
-            protection.
+            protection.<br />
           </p>
           <h3 id="cookies">4. COOKIES</h3>
           <p>
@@ -245,7 +245,7 @@ class PrivacyContent extends React.Component {
             via an Internet browser or other software programs. This is possible
             in all popular Internet browsers. If the data subject deactivates
             the setting of cookies in the Internet browser used, not all
-            functions of our website may be entirely usable.
+            functions of our website may be entirely usable.<br />
           </p>
           <h3>5. COLLECTION OF GENERAL DATA AND INFORMATION</h3>
           <p>
@@ -276,7 +276,7 @@ class PrivacyContent extends React.Component {
             data security of our enterprise, and to ensure an optimal level of
             protection for the personal data we process. The anonymous data of
             the server log files are stored separately from all personal data
-            provided by a data subject.
+            provided by a data subject.<br />
           </p>
           <h3>6. SUBSCRIPTION TO OUR NEWSLETTERS</h3>
           <p>
@@ -326,7 +326,7 @@ class PrivacyContent extends React.Component {
             corresponding link is found in each newsletter. It is also possible
             to unsubscribe from the newsletter at any time directly on the
             website of the controller, or to communicate this to the controller
-            in a different way.
+            in a different way.<br />
           </p>
           <h3>7. NEWSLETTER-TRACKING</h3>
           <p>
@@ -350,7 +350,7 @@ class PrivacyContent extends React.Component {
             double-opt-in procedure. After a revocation, these personal data
             will be deleted by the controller. The UnternehmerTUM GmbH
             automatically regards a withdrawal from the receipt of the
-            newsletter as a revocation.
+            newsletter as a revocation.<br />
           </p>
           <h3>8. ROUTINE ERASURE AND BLOCKING OF PERSONAL DATA</h3>
           <p>
@@ -364,7 +364,7 @@ class PrivacyContent extends React.Component {
             If the storage purpose is not applicable, or if a storage period
             prescribed by the European legislator or another competent
             legislator expires, the personal data are routinely blocked or
-            erased in accordance with legal requirements.
+            erased in accordance with legal requirements.<br />
           </p>
           <h3>9. RIGHTS OF THE DATA SUBJECT</h3>
           <p>Each data subject shall have the following rights:</p>
@@ -582,7 +582,6 @@ class PrivacyContent extends React.Component {
             2002/58/EC, to use his or her right to object by automated means
             using technical specifications.
           </p>
-               
           <p>
             h) Automated individual decision-making, including profiling. Each
             data subject shall have the right granted by the European legislator
@@ -608,7 +607,6 @@ class PrivacyContent extends React.Component {
             Protection Officer of the unternehmerTUM GmbH or another employee of
             the controller.
           </p>
-               
           <p>
             i) Right to withdraw data protection consent. Each data subject
             shall have the right granted by the European legislator to withdraw
@@ -616,7 +614,7 @@ class PrivacyContent extends React.Component {
             time. If the data subject wishes to exercise the right to withdraw
             the consent, he or she may at any time directly contact our Data
             Protection Officer of the UnternehmerTUM GmbH or another employee of
-            the controller.
+            the controller.<br />
           </p>
           <h3>10. DATA PROTECTION PROVISIONS FACEBOOK</h3>
           <p>
@@ -690,10 +688,45 @@ class PrivacyContent extends React.Component {
             subject. In addition, different configuration options are made
             available to allow the elimination of data transmission to Facebook.
             These applications may be used by the data subject to eliminate a
-            data transmission to Facebook.
+            data transmission to Facebook.<br />
           </p>
           <h3>
-            11. DATA PROTECTION PROVISIONS GOOGLE ANALYTICS (WITH ANONYMIZATION
+            11. Facebook Pixel
+          </h3> 
+          <p>
+          Our website measures conversions using visitor action pixels from Facebook,
+          Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA (“Facebook”)
+          </p>
+          <p>
+          These allow the behavior of site visitors to be tracked after they click on 
+          a Facebook ad to reach the provider’s website. This allows an analysis of the 
+          effectiveness of Facebook advertisements for statistical and market research 
+          purposes and their future optimization.
+          </p>
+          <p>
+          The data collected is anonymous to us as operators of this website and we cannot 
+          use it to draw any conclusions about our users’ identities. However, the data 
+          are stored and processed by Facebook, which may make a connection to your Facebook 
+          profile and which may use the data for its own advertising purposes, as stipulated 
+          in the Facebook privacy policy. This will allow Facebook to display ads both on 
+          Facebook and on third-party sites. We have no control over how this data is used.
+          </p>
+          <p>
+          Check out Facebook’s privacy policy to learn more about protecting your privacy:
+          <a href="https://facebook.com/about/privacy/" className="u-link">
+          <span>https://facebook.com/about/privacy/</span><br />
+          You can also deactivate the custom audiences remarketing feature in the Ads Settings 
+          section at 
+          <a href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen/" className="u-link">
+          <span>https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen/</span>.<br />
+          You will first need to log into Facebook. If you do not have a Facebook account, 
+          you can opt out of usage-based advertising from Facebook on the website of the 
+          European Interactive Digital Advertising Alliance: 
+          <a href="http://www.youronlinechoices.com/de/praferenzmanagement/" className="u-link">
+          <span>http://www.youronlinechoices.com/de/praferenzmanagement/</span>.<br />
+          </p>   
+          <h3>
+            12. DATA PROTECTION PROVISIONS GOOGLE ANALYTICS (WITH ANONYMIZATION
             FUNCTION)
           </h3>
           <p>
@@ -799,9 +832,9 @@ class PrivacyContent extends React.Component {
             <a href="https://www.google.com/analytics/" className="u-link">
               <span>https://www.google.com/analytics/</span>
             </a>
-            .
+            .<br />
           </p>
-          <h3>12. DATA PROTECTION PROVISIONS LINKEDIN</h3>
+          <h3>13. DATA PROTECTION PROVISIONS LINKEDIN</h3>
           <p>
             The controller has integrated components of the LinkedIn Corporation
             on this website. LinkedIn is a web-based social network that enables
@@ -884,9 +917,9 @@ class PrivacyContent extends React.Component {
             >
               <span>https://www.linkedin.com/legal/cookie-policy</span>
             </a>
-            .
+            .<br />
           </p>
-          <h3>13. DATA PROTECTION PROVISIONS TWITTER</h3>
+          <h3>14. DATA PROTECTION PROVISIONS TWITTER</h3>
           <p>
             On this website, the controller has integrated components of
             Twitter. Twitter is a multilingual, publicly-accessible
@@ -949,9 +982,9 @@ class PrivacyContent extends React.Component {
             <a href="https://twitter.com/privacy?lang=en" className="u-link">
               <span>https://twitter.com/privacy?lang=en</span>
             </a>
-            .
+            .<br />
           </p>
-          <h3>14. LEGAL BASIS FOR THE PROCESSING</h3>
+          <h3>15. LEGAL BASIS FOR THE PROCESSING</h3>
           <p>
             Art. 6(1) lit. a GDPR serves as the legal basis for processing
             operations for which we obtain consent for a specific processing
@@ -985,27 +1018,27 @@ class PrivacyContent extends React.Component {
             because they have been specifically mentioned by the European
             legislator. He considered that a legitimate interest could be
             assumed if the data subject is a client of the controller (Recital
-            47 Sentence 2 GDPR).
+            47 Sentence 2 GDPR).<br />
           </p>
           <h3>
-            15. THE LEGITIMATE INTERESTS PURSUED BY THE CONTROLLER OR BY A THIRD
+            16. THE LEGITIMATE INTERESTS PURSUED BY THE CONTROLLER OR BY A THIRD
             PARTY
           </h3>
           <p>
             Where the processing of personal data is based on Article 6(1) lit.
             f GDPR our legitimate interest is to carry out our business in favor
-            of the well-being of all our employees and the shareholders.
+            of the well-being of all our employees and the shareholders.<br />
           </p>
-          <h3>16. PERIOD FOR WHICH THE PERSONAL DATA WILL BE STORED</h3>
+          <h3>17. PERIOD FOR WHICH THE PERSONAL DATA WILL BE STORED</h3>
           <p>
             The criteria used to determine the period of storage of personal
             data is the respective statutory retention period. After expiration
             of that period, the corresponding data is routinely deleted, as long
             as it is no longer necessary for the fulfillment of the contract or
-            the initiation of a contract.
+            the initiation of a contract.<br />
           </p>
           <h3>
-            17. PROVISION OF PERSONAL DATA AS STATUTORY OR CONTRACTUAL
+            18. PROVISION OF PERSONAL DATA AS STATUTORY OR CONTRACTUAL
             REQUIREMENT; REQUIREMENT NECESSARY TO ENTER INTO A CONTRACT;
             OBLIGATION OF THE DATA SUBJECT TO PROVIDE THE PERSONAL DATA;
             POSSIBLE CONSEQUENCES OF FAILURE TO PROVIDE SUCH DATA
@@ -1026,14 +1059,14 @@ class PrivacyContent extends React.Component {
             data is required by law or contract or is necessary for the
             conclusion of the contract, whether there is an obligation to
             provide the personal data and the consequences of non-provision of
-            the personal data.
+            the personal data.<br />
           </p>
-          <h3>18. EXISTENCE OF AUTOMATED DECISION-MAKING</h3>
+          <h3>19. EXISTENCE OF AUTOMATED DECISION-MAKING</h3>
           <p>
             As a responsible company, we do not use automatic decision-making or
-            profiling.
+            profiling.<br />
           </p>
-          <h3>19. ZAPIER</h3>
+          <h3>20. ZAPIER</h3>
           <p>
             To integrate different databases and tools, we use Zapier, a service
             of Zapier Inc., 548 Market St # 62411, San Francisco, California
@@ -1042,9 +1075,9 @@ class PrivacyContent extends React.Component {
             privacy can be found at{' '}
             <a href="https://zapier.com/privacy/" className="u-link">
               <span>https://zapier.com/privacy/</span>
-            </a>
+            </a><br />
           </p>
-          <h3>20.  CRAZY EGG</h3>
+          <h3>21. CRAZY EGG</h3>
           <p>
             We use on our website the web tracking tool Crazy Egg. This service
             is provided by Crazy Egg, Inc., 6220 E. Ridgeview Lane , La Mirada,
@@ -1067,8 +1100,8 @@ class PrivacyContent extends React.Component {
           </p>
           <a href="http://www.crazyegg.com/privacy" className="u-link">
             <span>http://www.crazyegg.com/privacy</span>
-          </a>
-          <h3>21.  TRELLO</h3>
+          </a><br />
+          <h3>22. TRELLO</h3>
           <p>
             We use the web-based project management tool Trello to process the
             applicants' data. We do this to store the applicants' data so our
@@ -1080,11 +1113,12 @@ class PrivacyContent extends React.Component {
             Detailed information about the collecting, processing and usage of
             the data by Trello you can find here:
           </p>
-          <a href="https://trello.com/privacy" className="u-link">
+            <a href="https://trello.com/privacy" className="u-link">
             <span>https://trello.com/privacy</span>
           </a>{' '}
-          abgerufen werden.
-          <h3>22.  TYPEFORM</h3>
+          abgerufen werden.<br />
+            
+          <h3>23. TYPEFORM</h3>
           <p>
             For the retrieval of our applications we use a tool of the spanish
             company Typeform (
