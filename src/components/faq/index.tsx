@@ -41,8 +41,8 @@ class Faq extends React.Component {
           <h2>What will I do at DPS?</h2>
           <p>
             You will build a user centric product and service that solves a real
-            world challenge.Also you will get to work in a cross functional team
-            and learn to apply valuable methods and techniques.
+            world challenge. Also you will get to work in a cross functional
+            team and learn to apply valuable methods and techniques.
             <br />
             At DPS you will also get a chance to build a professional network
             and also exchange cultures with fellow participants from all around
@@ -135,14 +135,14 @@ class Faq extends React.Component {
             with track heads. The interview is more like a conversation to get
             to know you better and your motivation to apply. Also we like to
             know about your future goals and expectations from our program. Our
-            application process is ongoing.You can apply on our website. We try
+            application process is ongoing. You can apply on our website. We try
             to have a look at your application as soon as you send it but please
             consider that we might be covered with training the current batch
             and need some time to get back to you.
           </p>
 
           <h2>
-            What happens to the products I develop together in team during the
+            What happens to the products I develop together in a team during the
             program?
           </h2>
           <p>
@@ -154,7 +154,7 @@ class Faq extends React.Component {
             company.
           </p>
 
-          <h2>What kind of certificate I will be awarded with?</h2>
+          <h2>What kind of certificate will I be awarded?</h2>
           <p>
             You will be awarded with a certificate at the end of the program in
             an off boarding ceremony. The certificate will state all the

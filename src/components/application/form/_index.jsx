@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import { getFirebase } from '../../../firebase/firebase';
 
 const _5MB = 5242880; // in bytes;
 
@@ -79,6 +80,39 @@ function reducer(state, action) {
   }
 }
 
+function getBatchDate(batchDate) {
+  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
+    .format;
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
+function isApplicationPhaseOpen(applicationStartDate) {
+  const today = new Date();
+  let givenDate = applicationStartDate.toDate();
+  return givenDate <= today;
+}
+
 export default function Form(props) {
   const SUBMIT_URL = process.env.GATSBY_HANDLE_APPLICATION_ENDPOINT;
   const fileInputCVRef = useRef(null);
@@ -97,6 +131,8 @@ export default function Form(props) {
   const clickFileInputCoverLetter = useCallback(() => {
     fileInputCoverLetterRef.current.click();
   }, []);
+
+  const [batchDetails, setBatchDetails] = useState([]);
 
   const submitForm = e => {
     e.preventDefault();
@@ -147,6 +183,52 @@ export default function Form(props) {
     setCVUploadError(null);
     setCoverLetterUploadError(null);
   }, [state]);
+
+  useEffect(() => {
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
+    var currentTime = new Date();
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot => {
+          let batchDetails = [];
+          snapshot.forEach(
+            doc =>
+              (batchDetails = [
+                ...batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ])
+          );
+
+          setBatchDetails(batchDetails);
+        });
+    });
+  }, []);
+
+  let displayCurrentBatches = batchDetails.map(
+    function(batch) {
+      if (isApplicationPhaseOpen(batch.appStartDate))
+        return (
+          <option value={batch.batchNumber} key={batch.batchID}>
+            {`Batch #${batch.batchNumber}: ${getBatchDate(
+              batch.startDate
+            )} to ${getBatchDate(batch.endDate)} `}
+          </option>
+        );
+    }.bind(this)
+  );
 
   return (
     <div className="u-content-wrapper">
@@ -279,8 +361,7 @@ export default function Form(props) {
                   }
                   required
                 >
-                  <option value="">Please select</option>
-                  <option value="9">Batch #9 (Jan 7 to March 27, 2020)</option>
+                  {displayCurrentBatches}
                 </select>
               </div>
               <div className="application-form__field-wrapper">

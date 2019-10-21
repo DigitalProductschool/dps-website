@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getFirebase } from '../../../firebase/firebase';
+import BatchDetails from '../batch-details/index';
 
 interface IPickTrackProps {
   isApplyNowVersion: boolean;
@@ -9,37 +9,10 @@ interface IPickTrackState {
   active: 'pm' | 'se' | 'ai' | 'ixd' | null;
 }
 
-function getBatchDate(batchDate) {
-  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-    .format;
-  const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  let date = batchDate.toDate();
-  let newdate =
-    monthNames[date.getMonth()] +
-    ' ' +
-    date.getDate() +
-    ', ' +
-    date.getFullYear();
-  return newdate;
-}
-
 class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
   constructor(props: IPickTrackProps) {
     super(props);
-    this.state = { active: null, batchDetails: [] };
+    this.state = { active: null };
   }
 
   render() {
@@ -175,52 +148,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
     }
   }
 
-  componentDidMount() {
-    const firebaseApp = import('@firebase/app');
-    const firebaseDatabase = import('@firebase/firestore');
-    var currentTime = new Date();
-    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
-      const database = getFirebase(firebase).firestore();
-      database
-        .collection('batch-details')
-        .where('appEndDate', '>', currentTime)
-        .orderBy('appEndDate')
-        .get()
-        .then(snapshot =>
-          snapshot.forEach(doc =>
-            this.setState(prevState => ({
-              batchDetails: [
-                ...prevState.batchDetails,
-                {
-                  batchID: doc.id,
-                  batchNumber: doc.data().batch,
-                  startDate: doc.data().startDate,
-                  endDate: doc.data().endDate,
-                  appStartDate: doc.data().appStartDate,
-                  appEndDate: doc.data().appEndDate,
-                },
-              ],
-            }))
-          )
-        );
-    });
-  }
-
   renderDescription() {
-    let displayBatch = this.state.batchDetails.map(batch => (
-      <span>
-        <b>
-          {`#Batch #${batch.batchNumber}: ${getBatchDate(
-            batch.startDate
-          )} to ${getBatchDate(batch.endDate)} `}
-        </b>
-        {`(Application phase: ${getBatchDate(
-          batch.appStartDate
-        )} to ${getBatchDate(batch.appEndDate)})`}
-        <br />
-      </span>
-    ));
-
     if (this.props.isApplyNowVersion) {
       return (
         <p className="pick-track__description">
@@ -228,7 +156,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
           and September.
           <br />
           <b>Dates and deadlines of the upcoming batches:</b> <br />
-          {displayBatch}
+          <BatchDetails isCurrentOpenApplications={false} />
         </p>
       );
     } else {

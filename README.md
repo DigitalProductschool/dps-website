@@ -62,6 +62,22 @@ This would provide all the configs from google cloud runtime on your local PC so
 
 5. For faster iterations, we recommend developing via tests if possible
 
+## OAuth Credentials
+
+Functions such as sending confirmation mails and storing data into Google sheets require OAuth credentials. The following steps guide you to get the required tokens.
+
+1. Login into `https://console.developers.google.com/` and choose the working project.
+
+2. Then go to the credentials tab, click on `create credentials` and choose `OAuth client id`. You would be redirected to `Create OAuth client ID` screen.
+
+3. Choose `Application type` as `Web application` and then specify the name of your application and for `Authorised redirect URIs` specify `https://developers.google.com/oauthplayground` and press enter (very important). We use oauthplayground to access refresh token. Click on `Save` then `OAuth client` screen would pop up containing `client ID` and `client secret`. Save them as you would require these later to create refresh token.
+
+4. Now visit `https://developers.google.com/oauthplayground/`. Click on the settings tab located in far right and then `OAuth 2.0 configuration` screen would pop up. Choose `Use your own OAuth credentials` option and then specify `OAuth Client ID` and `OAuth Client secret` that you had saved before.
+
+5. Now in the far left, select the scope for the APIs you would like to access and click on authorise APIs. You would be then asked to choose your gmail account and then allow the application to access that account.
+
+6. You would be redirected to the Oauth playground screen and under step 2 click on `Exchange authorization code for tokens` to get your refresh token. Save this refresh token as you would need it in firebase functions to access the APIs. This refresh token helps you to get the access token.
+
 ## Tests
 
 ### Authentication
