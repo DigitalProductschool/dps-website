@@ -31,32 +31,45 @@ class ToolPartner extends React.Component {
               className="tool-partner__content__logo"
               src="/assets/home/tool-partner/github.png"
             />
-            <div>
-              <p> DPS is a program by </p>
-              <p> funded by </p>
-              <p> in cooperation with </p>
-              <img
-                alt="UnternehmerTUM"
-                title="Digital Product School is a program by UnternehmerTUM"
-                className="tool-partner__content__logo"
-                src="/assets/home/tool-partner/UnternehmerTUM.png"
-                style={{
-                  width: '100px',
-                }}
-              />
-              <img
-                alt="Bavarian Ministry of Economic Affairs, Regional Development and Energy"
-                title="Digital Product School is funded by the Bavarian Ministry of Economic Affairs, Regional Development and Energy"
-                className="tool-partner__content__logo"
-                src="/assets/home/tool-partner/staatsministerium-logo.png"
-              />
-              <img
-                alt="Technical University Munich"
-                title="Digital Product School takes place in kooperation with the Technical University Munich (TUM)"
-                className="tool-partner__content__logo"
-                src="/assets/home/tool-partner/tum.png"
-              />
-            </div>
+          </div>
+          <div>
+            <p> DPS is a program funden by</p>
+            <img
+              alt="Bavarian Ministry of Economic Affairs, Regional Development and Energy"
+              title="Digital Product School is funded by the Bavarian Ministry of Economic Affairs, Regional Development and Energy"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/staatsministerium-logo.png"
+              style={{
+                width: '250px',
+              }}
+            />
+            <p
+              style={{
+                marginTop: '25px',
+              }}
+            >
+              in cooperation with
+            </p>
+            <img
+              alt="UnternehmerTUM"
+              title="Digital Product School is a program by UnternehmerTUM"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/UnternehmerTUM.png"
+              style={{
+                width: '100px',
+                marginRight: '20px',
+              }}
+            />
+            <img
+              alt="Technical University Munich"
+              title="Digital Product School takes place in kooperation with the Technical University Munich (TUM)"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/tum.png"
+              style={{
+                width: '250px',
+                marginTop: '20px',
+              }}
+            />
           </div>
         </div>
       </section>
