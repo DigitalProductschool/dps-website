@@ -143,8 +143,7 @@ class PrivacyContent extends React.Component {
             or body other than the data subject, controller, processor and
             persons who, under the direct authority of the controller or
             processor, are authorised to process personal data.
-          </p>
-            
+          </p>          
           <p>
             k. Consent
             <br />
@@ -152,7 +151,6 @@ class PrivacyContent extends React.Component {
             and unambiguous indication of the data subject's wishes by which he
             or she, by a statement or by a clear affirmative action, signifies
             agreement to the processing of personal data relating to him or her.
-            <br />
           </p>
           <h3>2. NAME AND ADDRESS OF THE CONTROLLER</h3>
           <p>
@@ -504,7 +502,6 @@ class PrivacyContent extends React.Component {
             controller restriction of processing where one of the following
             applies:
           </p>
-              
           <p>
             § The accuracy of the personal data is contested by the data
             subject, for a period enabling the controller to verify the accuracy
@@ -525,7 +522,6 @@ class PrivacyContent extends React.Component {
             21(1) of the GDPR pending the verification whether the legitimate
             grounds of the controller override those of the data subject.
           </p>
-               
           <p>
             If one of the aforementioned conditions is met, and a data subject
             wishes to request the restriction of the processing of personal data
@@ -534,7 +530,6 @@ class PrivacyContent extends React.Component {
             The Data Protection Officer of the UnternehmerTUM GmbH or another
             employee will arrange the restriction of the processing.
           </p>
-               
           <p>
             f) Right to data portability. Each data subject shall have the right
             granted by the European legislator, to receive the personal data
@@ -558,7 +553,6 @@ class PrivacyContent extends React.Component {
             at any time contact the Data Protection Officer designated by the
             UnternehmerTUM GmbH or another employee.
           </p>
-               
           <p>
             g) Right to object. Each data subject shall have the right granted
             by the European legislator to object, on grounds relating to his or
@@ -652,7 +646,7 @@ class PrivacyContent extends React.Component {
             browser on the information technology system of the data subject is
             automatically prompted to download display of the corresponding
             Facebook component from Facebook through the Facebook component. An
-            overview of all the Facebook Plug-ins may be accessed under{' '}
+            overview of all the Facebook Plug-ins may be accessed under {' '}
             <a
               href="https://developers.facebook.com/docs/plugins/"
               className="u-link"
@@ -688,7 +682,7 @@ class PrivacyContent extends React.Component {
             our website is made.
             <br />
             The data protection guideline published by Facebook, which is
-            available at{' '}
+            available at {' '}
             <a href="https://facebook.com/about/privacy/" className="u-link">
               <span>https://facebook.com/about/privacy/</span>
             </a>
@@ -699,7 +693,6 @@ class PrivacyContent extends React.Component {
             available to allow the elimination of data transmission to Facebook.
             These applications may be used by the data subject to eliminate a
             data transmission to Facebook.
-            <br />
           </p>
           <h3>11. Facebook Pixel</h3>
           <p>
@@ -726,13 +719,13 @@ class PrivacyContent extends React.Component {
           </p>
           <p>
             Check out Facebook’s privacy policy to learn more about protecting
-            your privacy:
+            your privacy: 
             <a href="https://facebook.com/about/privacy/" className="u-link">
               <span>https://facebook.com/about/privacy/</span>
             </a>
             <br />
             You can also deactivate the custom audiences remarketing feature in
-            the Ads Settings section at
+            the Ads Settings section at 
             <a
               href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen/"
               className="u-link"
@@ -745,7 +738,7 @@ class PrivacyContent extends React.Component {
             You will first need to log into Facebook. If you do not have a
             Facebook account, you can opt out of usage-based advertising from
             Facebook on the website of the European Interactive Digital
-            Advertising Alliance:
+            Advertising Alliance: 
             <a
               href="http://www.youronlinechoices.com/de/praferenzmanagement/"
               className="u-link"
@@ -916,7 +909,7 @@ class PrivacyContent extends React.Component {
             button or not. If such a transmission of information to LinkedIn is
             not desirable for the data subject, then he or she may prevent this
             by logging off from their LinkedIn account before a call-up to our
-            website is made. LinkedIn provides under{' '}
+            website is made. LinkedIn provides under {' '}
             <a
               href="https://www.linkedin.com/psettings/guest-controls"
               className="u-link"
