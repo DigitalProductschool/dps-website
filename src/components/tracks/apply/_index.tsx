@@ -12,7 +12,7 @@ interface IHeaderProps {
 class Apply extends React.Component<IHeaderProps, {}> {
   render() {
     const { name, url, track } = this.props;
-    a;
+
     return (
       <div className="u-content-wrapper">
         <div

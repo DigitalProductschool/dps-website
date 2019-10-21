@@ -40,6 +40,9 @@ class ToolPartner extends React.Component {
                 title="Digital Product School is a program by UnternehmerTUM"
                 className="tool-partner__content__logo"
                 src="/assets/home/tool-partner/UnternehmerTUM.png"
+                style={{
+                  width: '100px',
+                }}
               />
               <img
                 alt="Bavarian Ministry of Economic Affairs, Regional Development and Energy"
