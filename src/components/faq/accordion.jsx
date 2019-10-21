@@ -5,13 +5,17 @@ export default function Accordion(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section>
+    <section
+      style={{
+        borderBottom: '3px solid #D8D8D8',
+      }}
+    >
       <div
+        onClick={() => setIsOpen(!isOpen)}
         style={{
           border: 0,
           cursor: 'pointer',
           display: 'flex',
-          borderBottom: '3px solid #D8D8D8',
         }}
       >
         <h2
@@ -21,16 +25,19 @@ export default function Accordion(props) {
         >
           {props.title}
         </h2>
-        <button
+        <span
           style={{
             fontSize: '35px',
             background: 'white',
             border: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '35px',
           }}
-          onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? '-' : '+'}
-        </button>
+        </span>
       </div>
       <div
         style={{
@@ -40,6 +47,7 @@ export default function Accordion(props) {
         }}
       >
         {props.children}
+        <br />
       </div>
     </section>
   );

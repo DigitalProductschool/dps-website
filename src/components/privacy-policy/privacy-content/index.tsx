@@ -143,8 +143,7 @@ class PrivacyContent extends React.Component {
             or body other than the data subject, controller, processor and
             persons who, under the direct authority of the controller or
             processor, are authorised to process personal data.
-          </p>{' '}
-            
+          </p>
           <p>
             k. Consent
             <br />
@@ -720,7 +719,7 @@ class PrivacyContent extends React.Component {
           </p>
           <p>
             Check out Facebook’s privacy policy to learn more about protecting
-            your privacy:
+            your privacy:{' '}
             <a href="https://facebook.com/about/privacy/" className="u-link">
               <span>https://facebook.com/about/privacy/</span>
             </a>
@@ -739,7 +738,7 @@ class PrivacyContent extends React.Component {
             You will first need to log into Facebook. If you do not have a
             Facebook account, you can opt out of usage-based advertising from
             Facebook on the website of the European Interactive Digital
-            Advertising Alliance:
+            Advertising Alliance:{' '}
             <a
               href="http://www.youronlinechoices.com/de/praferenzmanagement/"
               className="u-link"
