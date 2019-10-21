@@ -41,8 +41,8 @@ class Faq extends React.Component {
           <h2>What will I do at DPS?</h2>
           <p>
             You will build a user centric product and service that solves a real
-            world challenge. Also you will get to work in a cross functional team
-            and learn to apply valuable methods and techniques.
+            world challenge. Also you will get to work in a cross functional
+            team and learn to apply valuable methods and techniques.
             <br />
             At DPS you will also get a chance to build a professional network
             and also exchange cultures with fellow participants from all around

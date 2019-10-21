@@ -1,4 +1,5 @@
 import * as React from 'react';
+import BatchDetails from '../../shared/batch-details/index';
 
 import Nav from '../../shared/nav/index';
 
@@ -54,9 +55,7 @@ class Header extends React.Component<IHeaderProps, {}> {
           </h1>
           <br />
           <p>Currently you can apply for the following batches:</p>
-          <p>
-            #Batch #9: Jan 7, 2020 to Mar 27, 2020 (Deadline: October 13, 2019)
-          </p>
+          <BatchDetails isCurrentOpenApplications={true} />
         </div>
       </section>
     );
