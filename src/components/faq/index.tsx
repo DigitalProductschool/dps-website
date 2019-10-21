@@ -191,7 +191,7 @@ class Faq extends React.Component {
             </p>
           </Accordion>
 
-          <p style={{ fontSize: '20px', fontWeight: 900 }}>
+          <p style={{ fontSize: '20px', fontWeight: 900, marginTop: '30px' }}>
             {`Feel free to reach out to us in case of further queries `}
             <a
               href="mailto:hello@dpschool.io"
