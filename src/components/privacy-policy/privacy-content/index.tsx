@@ -143,7 +143,8 @@ class PrivacyContent extends React.Component {
             or body other than the data subject, controller, processor and
             persons who, under the direct authority of the controller or
             processor, are authorised to process personal data.
-          </p>          
+          </p>{' '}
+            
           <p>
             k. Consent
             <br />
@@ -646,7 +647,7 @@ class PrivacyContent extends React.Component {
             browser on the information technology system of the data subject is
             automatically prompted to download display of the corresponding
             Facebook component from Facebook through the Facebook component. An
-            overview of all the Facebook Plug-ins may be accessed under {' '}
+            overview of all the Facebook Plug-ins may be accessed under{' '}
             <a
               href="https://developers.facebook.com/docs/plugins/"
               className="u-link"
@@ -682,7 +683,7 @@ class PrivacyContent extends React.Component {
             our website is made.
             <br />
             The data protection guideline published by Facebook, which is
-            available at {' '}
+            available at{' '}
             <a href="https://facebook.com/about/privacy/" className="u-link">
               <span>https://facebook.com/about/privacy/</span>
             </a>
@@ -719,13 +720,13 @@ class PrivacyContent extends React.Component {
           </p>
           <p>
             Check out Facebook’s privacy policy to learn more about protecting
-            your privacy: 
+            your privacy:
             <a href="https://facebook.com/about/privacy/" className="u-link">
               <span>https://facebook.com/about/privacy/</span>
             </a>
             <br />
             You can also deactivate the custom audiences remarketing feature in
-            the Ads Settings section at 
+            the Ads Settings section at{' '}
             <a
               href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen/"
               className="u-link"
@@ -738,7 +739,7 @@ class PrivacyContent extends React.Component {
             You will first need to log into Facebook. If you do not have a
             Facebook account, you can opt out of usage-based advertising from
             Facebook on the website of the European Interactive Digital
-            Advertising Alliance: 
+            Advertising Alliance:
             <a
               href="http://www.youronlinechoices.com/de/praferenzmanagement/"
               className="u-link"
@@ -909,7 +910,7 @@ class PrivacyContent extends React.Component {
             button or not. If such a transmission of information to LinkedIn is
             not desirable for the data subject, then he or she may prevent this
             by logging off from their LinkedIn account before a call-up to our
-            website is made. LinkedIn provides under {' '}
+            website is made. LinkedIn provides under{' '}
             <a
               href="https://www.linkedin.com/psettings/guest-controls"
               className="u-link"
