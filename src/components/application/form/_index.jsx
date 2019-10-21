@@ -81,8 +81,6 @@ function reducer(state, action) {
 }
 
 function getBatchDate(batchDate) {
-  let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
-    .format;
   const monthNames = [
     'Jan',
     'Feb',
@@ -217,18 +215,19 @@ export default function Form(props) {
     });
   }, []);
 
-  let displayCurrentBatches = batchDetails.map(
-    function(batch) {
-      if (isApplicationPhaseOpen(batch.appStartDate))
-        return (
-          <option value={batch.batchNumber} key={batch.batchID}>
-            {`Batch #${batch.batchNumber}: ${getBatchDate(
-              batch.startDate
-            )} to ${getBatchDate(batch.endDate)} `}
-          </option>
-        );
-    }.bind(this)
-  );
+  let displayCurrentBatches = batchDetails.map(function(batch) {
+    if (isApplicationPhaseOpen(batch.appStartDate)) {
+      return (
+        <option value={batch.batchNumber} key={batch.batchID}>
+          {`Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
+        </option>
+      );
+    }
+
+    return '';
+  });
 
   return (
     <div className="u-content-wrapper">
