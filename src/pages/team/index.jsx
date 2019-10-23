@@ -12,7 +12,7 @@ class Team extends React.Component {
           <Nav />
           <div className="team__header-content u-content">
             <h1 className="team__header-content__title">
-              WE LIVE AND BREATH UX AND LOVE TO SHARE IT
+              the heart-throbs of innovation
             </h1>
           </div>
         </section>
