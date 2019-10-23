@@ -102,10 +102,7 @@ function Team() {
     <React.Fragment>
       <div id="modal-root"></div>
       <CookieWarning />
-      <section
-        className={`team__header u-content-wrapper`}
-        onClick={() => setIsOpenId(undefined)}
-      >
+      <section className={`team__header u-content-wrapper`}>
         {openId !== undefined && (
           <Modal>
             <h4
@@ -126,7 +123,12 @@ function Team() {
               {members[openId].title}
             </h5>
             <p>{members[openId].description}</p>
-            <button className="u-button u-button--reversed"> close </button>
+            <button
+              className="u-button u-button--reversed"
+              onClick={() => setIsOpenId(undefined)}
+            >
+              close
+            </button>
           </Modal>
         )}
         <Nav />
