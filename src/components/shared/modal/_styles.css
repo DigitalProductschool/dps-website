@@ -1,0 +1,42 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000bf;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: column;
+
+  & p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 23px;
+  }
+
+  & button {
+    margin-top: 30px;
+    width: 150px;
+    text-transform: lowercase;
+    height: 38px;
+    border-width: 2px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
