@@ -10,6 +10,7 @@ export default class Modal extends React.Component {
   }
 
   componentDidMount() {
+    document.getElementsByTagName('body')[0].classList.add('u-disable-scroll');
     modalRoot = document.getElementById('modal-root');
 
     // The portal element is inserted in the DOM tree after
@@ -25,6 +26,9 @@ export default class Modal extends React.Component {
 
   componentWillUnmount() {
     modalRoot.removeChild(this.el);
+    document
+      .getElementsByTagName('body')[0]
+      .classList.remove('u-disable-scroll');
   }
 
   render() {
