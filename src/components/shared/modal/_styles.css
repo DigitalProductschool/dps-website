@@ -53,3 +53,7 @@
     }
   }
 }
+
+.team__card__description {
+  text-align: justify;
+}
