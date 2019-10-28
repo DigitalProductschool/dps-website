@@ -33,43 +33,47 @@ class ToolPartner extends React.Component {
             />
           </div>
           <div>
-            <p> DPS is a program funden by</p>
-            <img
-              alt="Bavarian Ministry of Economic Affairs, Regional Development and Energy"
-              title="Digital Product School is funded by the Bavarian Ministry of Economic Affairs, Regional Development and Energy"
-              className="tool-partner__content__logo"
-              src="/assets/home/tool-partner/staatsministerium-logo.png"
-              style={{
-                width: '250px',
-              }}
-            />
-            <p
-              style={{
-                marginTop: '25px',
-              }}
-            >
-              in cooperation with
-            </p>
-            <img
-              alt="UnternehmerTUM"
-              title="Digital Product School is a program by UnternehmerTUM"
-              className="tool-partner__content__logo"
-              src="/assets/home/tool-partner/UnternehmerTUM.png"
-              style={{
-                width: '100px',
-                marginRight: '20px',
-              }}
-            />
-            <img
-              alt="Technical University Munich"
-              title="Digital Product School takes place in kooperation with the Technical University Munich (TUM)"
-              className="tool-partner__content__logo"
-              src="/assets/home/tool-partner/tum.png"
-              style={{
-                width: '250px',
-                marginTop: '20px',
-              }}
-            />
+            <h3 className="u-title">ENABLERS & SUPPORTERS</h3>
+            <div className="enabler-partner-wrapper">
+              <div className="enabler-partner">
+                <h6>a program by </h6>
+                <img
+                  alt="UnternehmerTUM"
+                  title="Digital Product School is a program by UnternehmerTUM"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/UnternehmerTUM.png"
+                />
+              </div>
+              <div className="enabler-partner">
+                <h6>part of the </h6>
+                <div>
+                  <img
+                    alt="Mobility Hub"
+                    title="Digital Product School is a program by UnternehmerTUM"
+                    className="tool-partner__content__logo"
+                    src="/assets/home/tool-partner/mobilityhub.png"
+                  />
+                </div>
+              </div>
+              <div className="enabler-partner">
+                <h6>part of the </h6>
+                <img
+                  alt="Mobility Hub Ecosystem"
+                  title="Digital Product School is a program by UnternehmerTUM"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/mobilityhubecosystem.png"
+                />
+              </div>
+              <div className="enabler-partner">
+                <h6>in cooperation with </h6>
+                <img
+                  alt="UnternehmerTUM"
+                  title="Digital Product School is a program by UnternehmerTUM"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/tum.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

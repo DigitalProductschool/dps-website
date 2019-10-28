@@ -15,3 +15,33 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.enabler-partner {
+  width: 150px;
+  height: 110px;
+  flex-direction: column;
+  display: inline-flex;
+  position: relative;
+
+  & img {
+    width: 100px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  h6 {
+    padding-left: 25px;
+    margin-top: 0;
+  }
+
+  &::after {
+    content: '';
+    height: 70px;
+    width: 1px;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}
