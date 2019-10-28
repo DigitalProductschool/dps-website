@@ -13,6 +13,13 @@ let members = [
     description: `I have more than 17 years professional experience in applied Artificial Intelligence R&D. I completed my PhD at Swiss Federal Institute of Technology Lausanne on the robustness of machine learning in commercial applications. My contributions were recognized by community awards and granted several million Euros of national & international funding.
 I advise and coach our teams with exploring the AI applications, their feasibility, and risks for problem-solution fits. In a multi-disciplinary setup, I support them with challenges on how a data-driven solution should be developed and evaluated and how to transform the assumptions and data requirements to product vision and market opportunities.`,
     pic: 'afsaneh.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/afsaneh-asaei-490b6621',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Samreen Azam',
@@ -22,6 +29,13 @@ I advise and coach our teams with exploring the AI applications, their feasibili
 I am responsible for assisting the marketing team with communication by reaching out to potential and deserving talents from all around the world with an opportunity like Digital Product School. Also  building a network and sustaining the community of alumni at Digital Product School.
 `,
     pic: 'samreen.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/samreen-azam-803760140/',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Daniel Bedö',
@@ -31,6 +45,13 @@ I am responsible for assisting the marketing team with communication by reaching
 After getting my masters degree in computer science at ELTE in Budapest I worked as a researcher at the university. Later I moved to Germany and worked for different companies in the machine learning and data analytics areas shifting more and more focus also to people management.
 `,
     pic: 'daniel.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/danielbedo/',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Natthagorn Bunnet',
@@ -40,6 +61,13 @@ After getting my masters degree in computer science at ELTE in Budapest I worked
 My role is to organize all events at DPS and throw best batch closing parties. Apart from that I assist the marketing team with operations and I am also your contact person for all matters  like office supplies and access card.
 `,
     pic: 'natt.jpg',
+    social: [
+      {
+        icon: '/assets/icons/insta.svg',
+        link: 'https://www.instagram.com/natt_chanida/',
+        alt: 'instagram',
+      },
+    ],
   },
   {
     name: 'Lorenz Hutterer',
@@ -49,6 +77,13 @@ My role is to organize all events at DPS and throw best batch closing parties. A
 I am taking care of the business side of your project. I support you in any aspects of how to make money with your idea.
 `,
     pic: 'lorenz.jpg',
+    social: [
+      {
+        icon: '/assets/icons/xing.svg',
+        link: 'https://www.xing.com/profile/Lorenz_Hutterer2/cv',
+        alt: 'xing',
+      },
+    ],
   },
   {
     name: 'Steffen Kastner',
@@ -58,6 +93,13 @@ I am taking care of the business side of your project. I support you in any aspe
 I help teams at Digital Product School to discover promising problems and to create ideas that join the dots discovered through user research.  Of course also supporting them to turn those ideas into reality. And I love to stir things up with provoking questions.
 `,
     pic: 'steffen.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/steffen-kastner-177494a9/',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Sascha Rehbock',
@@ -67,6 +109,13 @@ I help teams at Digital Product School to discover promising problems and to cre
 At Digital Product School I focus on helping the DPS Core Team to do an amazing job as well as managing partner relations. Let me know if I can connect you with the UnternehmerTUM network to enhance your experience here at DPS even more.
 `,
     pic: 'sascha.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/sascharehbock/',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Bhawna Saini',
@@ -76,6 +125,13 @@ At Digital Product School I focus on helping the DPS Core Team to do an amazing 
 At DPS, I assist with various software engineering tasks. I learn by trying and failing and then making it work. So that's how I help the teams as well. As I was a participant at DPS, I can support them through what I learnt during my DPS journey. Moreover, if they have any SE queries, I can help them find a way through it.
 `,
     pic: 'bhawna.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/bhawnasaini03',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Bastian Rieder',
@@ -85,6 +141,13 @@ At DPS, I assist with various software engineering tasks. I learn by trying and 
 At DPS I can help you with all Marketing related questions: finding test persons, creating landing pages, running small campaigns to get users on your landing page, creating small advertisements and everything else that helps you to test your hypotheses.
 `,
     pic: 'basti.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/bastian-rieder-marketingmba/',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Annina Schaupp',
@@ -94,6 +157,13 @@ At DPS I can help you with all Marketing related questions: finding test persons
 As your Agile Coach at Digital Product School I support your team to overcome obstacles by having smooth communication. I not only equip you to learn Agile methods but also apply them to have a valuable workflow building a product. 
 `,
     pic: 'annina.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/annina-schaupp-18a913177/v',
+        alt: 'linkedin',
+      },
+    ],
   },
   {
     name: 'Michael Stockerl',
@@ -103,6 +173,13 @@ As your Agile Coach at Digital Product School I support your team to overcome ob
 At Digital Product School I help the teams to identify technical risks in their solution and enable them to come up with a feasible first version of the product. During Code Reviews, I give feedback on code-related issues. In addition to that, I can help teams to improve their overall teamwork.
 `,
     pic: 'michi.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/michael-stockerl-8584a347/',
+        alt: 'linkedin',
+      },
+    ],
   },
 ];
 
@@ -144,9 +221,16 @@ function Card(props) {
       >
         Read more
       </p>
-      <a href="/123" className="team__card__icon">
-        <img src="/assets/icons/linkedin.svg" alt="linkedin-logo"></img>
-      </a>
+      {member.social.map(item => (
+        <a
+          href={item.link}
+          className="team__card__icon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={item.icon} alt={item.alt}></img>
+        </a>
+      ))}
     </li>
   );
 }
