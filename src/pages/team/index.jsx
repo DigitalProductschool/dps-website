@@ -254,6 +254,8 @@ function Team() {
     <React.Fragment>
       <div id="modal-root"></div>
       <CookieWarning />
+
+      <Nav />
       <section className={`team__header u-content-wrapper`}>
         {openId !== undefined && (
           <Modal>
@@ -283,8 +285,18 @@ function Team() {
             </button>
           </Modal>
         )}
-        <Nav />
         <div className="team__header-content u-content">
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              bottom: 0,
+              left: 0,
+              right: 0,
+              backgroundColor: 'rgba(0, 0, 0, 0.56)',
+              zIndex: '-1',
+            }}
+          ></div>
           <h1 className="team__header-content__title">
             the heart-throbs of innovation
           </h1>
