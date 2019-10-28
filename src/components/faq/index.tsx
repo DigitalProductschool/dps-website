@@ -149,14 +149,16 @@ class Faq extends React.Component {
           </Accordion>
 
           <Accordion title="What is the hiring process?">
-            After you apply we shortlist you for one on one online interview
-            with track heads. The interview is more like a conversation to get
-            to know you better and your motivation to apply. Also we like to
-            know about your future goals and expectations from our program. Our
-            application process is ongoing. You can apply on our website. We try
-            to have a look at your application as soon as you send it but please
-            consider that we might be covered with training the current batch
-            and need some time to get back to you.
+            <p>
+              After you apply we shortlist you for one on one online interview
+              with track heads. The interview is more like a conversation to get
+              to know you better and your motivation to apply. Also we like to
+              know about your future goals and expectations from our program.
+              Our application process is ongoing. You can apply on our website.
+              We try to have a look at your application as soon as you send it
+              but please consider that we might be covered with training the
+              current batch and need some time to get back to you.
+            </p>
           </Accordion>
 
           <Accordion

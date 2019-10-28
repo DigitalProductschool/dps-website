@@ -21,6 +21,8 @@ export default function Accordion(props) {
         <h2
           style={{
             flexGrow: '1',
+            textTransform: 'uppercase',
+            fontSize: '20px',
           }}
         >
           {props.title}
@@ -34,6 +36,7 @@ export default function Accordion(props) {
             alignItems: 'center',
             justifyContent: 'center',
             width: '35px',
+            flexShrink: '0',
           }}
         >
           {isOpen ? '-' : '+'}
