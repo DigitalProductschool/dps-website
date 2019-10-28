@@ -489,7 +489,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label htmlFor="heard-from" className="application-form__label">
-                  Where did you learn about Digital Product School?
+                  How did you learn about Digital Product School?
                 </label>
                 <textarea
                   id="heard-from"
