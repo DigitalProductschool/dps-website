@@ -33,8 +33,10 @@ export default class Modal extends React.Component {
 
   render() {
     const modal = (
-      <div className="modal-wrapper">
-        <div className="modal">{this.props.children}</div>
+      <div className="modal-wrapper" onClick={() => this.props.onClose()}>
+        <div className="modal" onClick={e => e.stopPropagation()}>
+          {this.props.children}
+        </div>
       </div>
     );
 
