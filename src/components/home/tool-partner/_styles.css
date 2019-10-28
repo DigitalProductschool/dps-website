@@ -44,4 +44,8 @@
     right: 0;
     top: 30px;
   }
+
+  &:last-child::after {
+    width: 0;
+  }
 }
