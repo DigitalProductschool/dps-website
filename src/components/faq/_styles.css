@@ -1,5 +1,9 @@
 .faq {
-  margin-top: -200px;
+  margin-top: -250px;
+
+  @media (max-width: 620px) {
+    margin-top: -200px;
+  }
 }
 
 .faq__content {
