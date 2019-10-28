@@ -10,7 +10,6 @@ const initialState = {
   email: '', // string
   batch: '', // number as string, for instance '8', '9', etc
   source: '', // string, free text
-  userType: '', // string, 'student' | 'graduate' , etc...
   consent: '', // string, 'true' | 'false'
   scholarship: '', // string, 'true' | 'false'
   cv: null,
@@ -65,12 +64,6 @@ function reducer(state, action) {
       return {
         ...state,
         consent: String(action.payload.value),
-      };
-
-    case 'CHANGE_USER_TYPE':
-      return {
-        ...state,
-        userType: action.payload.value,
       };
 
     default:
@@ -315,32 +308,6 @@ export default function Form(props) {
                 />
               </div>
               <div className="application-form__field-wrapper">
-                <label className="application-form__label" htmlFor="userType">
-                  Which of the following describes you best?
-                </label>
-                <select
-                  className="application-form__input"
-                  id="userType"
-                  name="userType"
-                  value={state.userType}
-                  onChange={e =>
-                    dispatch({
-                      type: 'CHANGE_USER_TYPE',
-                      payload: { value: e.target.value },
-                    })
-                  }
-                  required
-                >
-                  <option value="">Please select</option>
-                  <option value="student">Student</option>
-                  <option value="graduate">Graduate</option>
-                  <option value="phd">PhD</option>
-                  <option value="employee">Employee</option>
-                  <option value="entrepreneur">Entrepreneur</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
                   htmlFor="batch-selection"
@@ -409,6 +376,58 @@ export default function Form(props) {
                   onClick={clickFileInputCV}
                 >
                   <img src="/assets/icons/upload-icon.svg" alt="upload CV" />
+                </button>
+              </div>
+              <div className="application-form__field-wrapper">
+                <label
+                  className="application-form__label"
+                  htmlFor="file-upload-cover-letter"
+                  style={coverLetterUploadError ? { color: 'red' } : {}}
+                >
+                  Describe your motivation in a cover letter (Optional, PDF, max
+                  5MB)
+                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
+                </label>
+                <input
+                  className="application-form__input"
+                  type="file"
+                  accept="application/pdf"
+                  ref={fileInputCoverLetterRef}
+                  tabIndex={-1}
+                  id="file-upload-cover-letter"
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCoverLetterUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
+                    dispatch({
+                      type: 'CHANGE_COVER_LETTER',
+                      payload: { file: e.target.files[0] },
+                    });
+                  }}
+                />
+                <div
+                  className="application-form__input application_form__file-input-overlay"
+                  onClick={clickFileInputCoverLetter}
+                >
+                  {state.coverLetter && (
+                    <span style={{ fontSize: '14px' }}>
+                      {state.coverLetter.name}
+                    </span>
+                  )}
+                  {!state.coverLetter && <>Choose file </>}
+                </div>
+                <button
+                  type="button"
+                  className={`application-form__file-button application-form__file-button--${props.track}`}
+                  onClick={clickFileInputCoverLetter}
+                >
+                  <img
+                    src="/assets/icons/upload-icon.svg"
+                    alt="upload cover letter"
+                  />
                 </button>
               </div>
               <div className="application-form__field-wrapper">
@@ -486,58 +505,7 @@ export default function Form(props) {
                   required
                 />
               </div>
-              <div className="application-form__field-wrapper">
-                <label
-                  className="application-form__label"
-                  htmlFor="file-upload-cover-letter"
-                  style={coverLetterUploadError ? { color: 'red' } : {}}
-                >
-                  Describe your motivation in a cover letter (Optional, PDF, max
-                  5MB)
-                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
-                </label>
-                <input
-                  className="application-form__input"
-                  type="file"
-                  accept="application/pdf"
-                  ref={fileInputCoverLetterRef}
-                  tabIndex={-1}
-                  id="file-upload-cover-letter"
-                  onChange={e => {
-                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
-                      return setCoverLetterUploadError(
-                        'File size should be less than 5MB'
-                      );
-                    }
 
-                    dispatch({
-                      type: 'CHANGE_COVER_LETTER',
-                      payload: { file: e.target.files[0] },
-                    });
-                  }}
-                />
-                <div
-                  className="application-form__input application_form__file-input-overlay"
-                  onClick={clickFileInputCoverLetter}
-                >
-                  {state.coverLetter && (
-                    <span style={{ fontSize: '14px' }}>
-                      {state.coverLetter.name}
-                    </span>
-                  )}
-                  {!state.coverLetter && <>Choose file </>}
-                </div>
-                <button
-                  type="button"
-                  className={`application-form__file-button application-form__file-button--${props.track}`}
-                  onClick={clickFileInputCoverLetter}
-                >
-                  <img
-                    src="/assets/icons/upload-icon.svg"
-                    alt="upload cover letter"
-                  />
-                </button>
-              </div>
               <div
                 className="application-form__field-wrapper"
                 style={{ zIndex: 1 }}
