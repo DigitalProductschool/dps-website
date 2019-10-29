@@ -14,6 +14,7 @@
 .tool-partner__content__logos {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .enabler-partner {
