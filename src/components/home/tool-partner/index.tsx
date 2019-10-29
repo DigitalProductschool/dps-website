@@ -32,7 +32,12 @@ class ToolPartner extends React.Component {
               src="/assets/home/tool-partner/github.png"
             />
           </div>
-          <div>
+          <div
+            style={{
+              marginTop: '120px',
+              marginBottom: '60px',
+            }}
+          >
             <h3 className="u-title">ENABLERS & SUPPORTERS</h3>
             <div className="enabler-partner-wrapper">
               <div className="enabler-partner">

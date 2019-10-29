@@ -22,6 +22,7 @@
   flex-direction: column;
   display: inline-flex;
   position: relative;
+  justify-content: space-evenly;
 
   & img {
     width: 100px;
@@ -37,12 +38,12 @@
 
   &::after {
     content: '';
-    height: 70px;
+    height: 80px;
     width: 1px;
     background-color: #333;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 39px;
   }
 
   &:last-child::after {
