@@ -13,6 +13,7 @@
 
 .modal {
   border-radius: 10px;
+  position: relative;
   width: 500px;
   height: 500px;
   background-color: white;
@@ -25,7 +26,6 @@
 
   & p {
     font-size: 14px;
-    text-align: justify;
     line-height: 23px;
   }
 
@@ -52,8 +52,4 @@
       margin-bottom: 15px;
     }
   }
-}
-
-.team__card__description {
-  text-align: justify;
 }

@@ -5,9 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/team/header.png);
+  background-image: url(/assets/team/header.jpg);
   background-size: cover;
   background-position: center;
+  z-index: -1;
+  padding-top: 133px;
+  margin-top: -133px;
 }
 
 .team__header-content {
@@ -19,7 +22,6 @@
 }
 
 .team__header-content__title {
-  margin: 0;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
@@ -101,6 +103,7 @@
   width: 300px;
 
   & .team__card__profile-image {
+    cursor: pointer;
     border: solid 4px #e7e7e7;
     width: 300px;
     height: 200px;
@@ -113,6 +116,7 @@
   }
 
   & .team__card__icon {
+    z-index: 1;
     width: 15px;
 
     & img {
@@ -122,9 +126,9 @@
 }
 
 .team__card__readmore {
+  cursor: pointer;
   margin: 0;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 10px;
-  cursor: pointer;
 }
