@@ -290,7 +290,9 @@ function Team() {
             >
               {members[openId].title}
             </h5>
-            <p>{members[openId].description}</p>
+            <p
+              dangerouslySetInnerHTML={{ __html: members[openId].description }}
+            ></p>
             <button
               className="u-button u-button--reversed"
               onClick={() => setIsOpenId(undefined)}
@@ -320,7 +322,15 @@ function Team() {
         <div className="team__image-content u-content">
           <div className="team__image-content__image">
             <p>
-Organized as an autonomous team, the Digital Product School core team consists of experts in a roles typically found in a successful startup: Product Management, Design, Software Engineering, Artificial Intelligence (AI), Agile Coaching, Business Development, Marketing and Operations. Before joining DPS they gathered long-standing experience in digital product development while working at tech-startups, big corporates and academia. Together they support, guide and help the teams to develop a user-centric digital product in an agile team.
+              Organized as an autonomous team, the Digital Product School core
+              team consists of experts in a roles typically found in a
+              successful startup: Product Management, Design, Software
+              Engineering, Artificial Intelligence (AI), Agile Coaching,
+              Business Development, Marketing and Operations. Before joining DPS
+              they gathered long-standing experience in digital product
+              development while working at tech-startups, big corporates and
+              academia. Together they support, guide and help the teams to
+              develop a user-centric digital product in an agile team.
             </p>
           </div>
         </div>
