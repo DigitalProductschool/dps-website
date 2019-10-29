@@ -290,7 +290,9 @@ function Team() {
             >
               {members[openId].title}
             </h5>
-            <p>{members[openId].description}</p>
+            <p
+              dangerouslySetInnerHTML={{ __html: members[openId].description }}
+            ></p>
             <button
               className="u-button u-button--reversed"
               onClick={() => setIsOpenId(undefined)}
