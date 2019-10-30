@@ -54,7 +54,7 @@ class ToolPartner extends React.Component {
                 <div>
                   <img
                     alt="Mobility Hub"
-                    title="Digital Product School is a program by UnternehmerTUM"
+                    title="Digital Product School is part of the Digital Hub Mobility by UnternehmerTUM"
                     className="tool-partner__content__logo"
                     src="/assets/home/tool-partner/mobilityhub.png"
                   />
@@ -64,7 +64,7 @@ class ToolPartner extends React.Component {
                 <h6>part of the </h6>
                 <img
                   alt="Mobility Hub Ecosystem"
-                  title="Digital Product School is a program by UnternehmerTUM"
+                  title="Digital Product School is part of the Digital Hub Initiative of the Federal Ministry for Economic Affairs and Energy"
                   className="tool-partner__content__logo"
                   src="/assets/home/tool-partner/mobilityhubecosystem.png"
                 />
@@ -72,8 +72,8 @@ class ToolPartner extends React.Component {
               <div className="enabler-partner">
                 <h6>in cooperation with </h6>
                 <img
-                  alt="UnternehmerTUM"
-                  title="Digital Product School is a program by UnternehmerTUM"
+                  alt="Technical University of Munich (TUM)"
+                  title="Digital Product School is conducted in cooperation with the Technical University of Munich (TUM)"
                   className="tool-partner__content__logo"
                   src="/assets/home/tool-partner/tum.png"
                 />

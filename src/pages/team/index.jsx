@@ -342,7 +342,7 @@ function Team() {
               fontWeight: '900',
             }}
           >
-            OUR TEAM
+            THE DIGITAL PRODUCT SCHOOL CORE TEAM
           </h1>
           <ul className="team__cards">
             {members.map((member, index) => (
