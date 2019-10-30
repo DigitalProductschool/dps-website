@@ -76,3 +76,5 @@ yarn-error.log
 
 # keys
 *.key.json
+
+functions/.runtimeconfig.json
