@@ -5,86 +5,49 @@
 
 .tool-partner__content__logo {
   width: 150px;
-    
-    @media (max-width: 620px) {
-        
+
+  @media (max-width: 620px) {
     width: 100px;
-    }
+  }
 }
 
 .tool-partner__content__logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 2fr;
-  grid-gap: 10px;
-  align-items: flex-start;
-  justify-self: flex-start;
-
-
-  & > div {
-    & img {
-      grid-row-start: 2;
-      width: 250px;
-      margin-right: 50px;     
-      margin-top: 20px;
-      vertical-align: bottom;
-
-    
-    }
-
-    & p {
-      font-size: 14px;
-      line-height: 16px;
-      margin-top: 50px;
-      
-    }
-      
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-start: 2;
-    justify-self: flex-start;
-    width: 234px;
-  }
-    
-
-
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-      "logos-1 logos-2 logos-3 logos-4"
-      "staats-logo staats-logo staats-logo staats-logo";
-
-    & > div {
-      margin-top: 0px;
-      margin-left: 10px;
-      grid-area: staats-logo;
-      justify-self: flex-start;
-    }
-
-    & > a {
-      justify-self: flex-start;
-    }
-  }
-
-  @media (max-width: 620px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-      "logos-1 logos-2"
-      "logos-3 logos-4"
-      "staats-logo staats-logo";
-      
-      
-        & > div {
-         & img {
-           width: 130px;
-           max-width: 130px;     
-           margin-right: 15px;
-           
-   
-
-            } }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.enabler-partner {
+  width: 150px;
+  height: 110px;
+  flex-direction: column;
+  display: inline-flex;
+  position: relative;
+  justify-content: space-evenly;
+
+  & img {
+    width: 100px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  h6 {
+    padding-left: 25px;
+    margin-top: 0;
+  }
+
+  &::after {
+    content: '';
+    height: 80px;
+    width: 1px;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 39px;
+  }
+
+  &:last-child::after {
+    width: 0;
+  }
 }

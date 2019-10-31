@@ -1,4 +1,5 @@
 import * as React from 'react';
+import BatchDetails from '../../shared/batch-details/index';
 
 import Nav from '../../shared/nav/index';
 
@@ -50,8 +51,11 @@ class Header extends React.Component<IHeaderProps, {}> {
         <Nav logo="/assets/tracks/dps-logo-white.png" />
         <div className="applications__header-content u-content">
           <h1 className="applications__header-content__title">
-            APPLICATION AS <br /> {data[track].title}
+            APPLY AS <br /> {data[track].title}
           </h1>
+          <br />
+          <p>Currently you can apply for the following batches:</p>
+          <BatchDetails isCurrentOpenApplications={true} />
         </div>
       </section>
     );

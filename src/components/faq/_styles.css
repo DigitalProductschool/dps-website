@@ -1,11 +1,19 @@
 .faq {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: -250px;
 
   @media (max-width: 620px) {
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 80px;
+    margin-top: -200px;
+  }
+}
+
+.faq__content {
+  background-color: white;
+  padding: 40px 65px;
+  max-width: 620px;
+  width: 70%;
+
+  @media (max-width: 620px) {
+    padding: 40px 40px;
   }
 }
 
@@ -62,7 +70,7 @@
 
   p,
   ol {
-    padding-bottom: 35px;
+    margin-top: 0;
   }
 }
 

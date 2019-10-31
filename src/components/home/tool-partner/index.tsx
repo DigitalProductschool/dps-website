@@ -5,18 +5,79 @@ class ToolPartner extends React.Component {
     return (
       <section className="tool-partner u-content-wrapper">
         <div className="tool-partner__content u-content">
-          <h3 className="u-title">OUR TOOL PARTNERS</h3>
+          <h3 className="u-title">TOOL PARTNERS</h3>
           <div className="tool-partner__content__logos">
-            <img alt="tool-partner-eyequant" className="tool-partner__content__logo" src="/assets/home/tool-partner/eyequant.jpg" />
-            <img alt="tool-partner-invision" className="tool-partner__content__logo" src="/assets/home/tool-partner/invision.png" />
-            <img alt="tool-partner-uxpin" className="tool-partner__content__logo" src="/assets/home/tool-partner/uxpin.png" />
-            <img alt="tool-partner-github" className="tool-partner__content__logo" src="/assets/home/tool-partner/github.png" />
-            <div>
-              <p> funded by </p>
-              <p> in cooperation with </p>
-              <img alt="tool-partner-staatsministerium-logo" className="tool-partner__content__logo" src="/assets/home/tool-partner/staatsministerium-logo.png" />
-              <img alt="tool-partner-tum.png" className="tool-partner__content__logo" src="/assets/home/tool-partner/tum.png" />
-
+            <img
+              alt="Eyequant"
+              title="Eyequant, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/eyequant.jpg"
+            />
+            <img
+              alt="Invision"
+              title="Invision, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/invision.png"
+            />
+            <img
+              alt="UXPIN"
+              title="UXPIN, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/uxpin.png"
+            />
+            <img
+              alt="github"
+              title="github, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/github.png"
+            />
+          </div>
+          <div
+            style={{
+              marginTop: '120px',
+              marginBottom: '60px',
+            }}
+          >
+            <h3 className="u-title">ENABLERS & SUPPORTERS</h3>
+            <div className="enabler-partner-wrapper">
+              <div className="enabler-partner">
+                <h6>a program by </h6>
+                <img
+                  alt="UnternehmerTUM"
+                  title="Digital Product School is a program by UnternehmerTUM"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/UnternehmerTUM.png"
+                />
+              </div>
+              <div className="enabler-partner">
+                <h6>part of the </h6>
+                <div>
+                  <img
+                    alt="Mobility Hub"
+                    title="Digital Product School is part of the Digital Hub Mobility by UnternehmerTUM"
+                    className="tool-partner__content__logo"
+                    src="/assets/home/tool-partner/mobilityhub.png"
+                  />
+                </div>
+              </div>
+              <div className="enabler-partner">
+                <h6>part of the </h6>
+                <img
+                  alt="Mobility Hub Ecosystem"
+                  title="Digital Product School is part of the Digital Hub Initiative of the Federal Ministry for Economic Affairs and Energy"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/mobilityhubecosystem.png"
+                />
+              </div>
+              <div className="enabler-partner">
+                <h6>in cooperation with </h6>
+                <img
+                  alt="Technical University of Munich (TUM)"
+                  title="Digital Product School is conducted in cooperation with the Technical University of Munich (TUM)"
+                  className="tool-partner__content__logo"
+                  src="/assets/home/tool-partner/tum.png"
+                />
+              </div>
             </div>
           </div>
         </div>

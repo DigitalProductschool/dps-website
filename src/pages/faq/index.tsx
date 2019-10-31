@@ -4,8 +4,9 @@ import Nav from '../../components/shared/nav/index';
 import Faq from '../../components/faq/index';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
+import logo from '../../../static/assets/shared/dps-logo-double-white.png';
 
-class Legal extends React.Component {
+class FAQ extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -14,10 +15,18 @@ class Legal extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Nav
-          addClass={'nav--black'}
-          logo={'/assets/shared/dps-logo-black.svg'}
-        />
+        <Nav addClass={'u-bg-transparent'} logo={logo} />
+        <section className="faq__navheader u-content-wrapper">
+          <div className="u-content">
+            <div className="faq__navheader-overlay"></div>
+            <h3
+              className="faq__navheader__title"
+              style={{ position: 'relative' }}
+            >
+              FREQUENTLY ASKED QUESTIONS
+            </h3>
+          </div>
+        </section>
         <Faq />
         <Footer />
       </React.Fragment>
@@ -25,4 +34,4 @@ class Legal extends React.Component {
   }
 }
 
-export default Legal;
+export default FAQ;

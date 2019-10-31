@@ -1,13 +1,15 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import { getFirebase } from '../../../firebase/firebase';
+
+const _5MB = 5242880; // in bytes;
 
 const initialState = {
   name: '', // string
   email: '', // string
   batch: '', // number as string, for instance '8', '9', etc
   source: '', // string, free text
-  userType: '', // string, 'student' | 'graduate' , etc...
   consent: '', // string, 'true' | 'false'
   scholarship: '', // string, 'true' | 'false'
   cv: null,
@@ -64,17 +66,42 @@ function reducer(state, action) {
         consent: String(action.payload.value),
       };
 
-    case 'CHANGE_USER_TYPE':
-      return {
-        ...state,
-        userType: action.payload.value,
-      };
-
     default:
       return {
         ...state,
       };
   }
+}
+
+function getBatchDate(batchDate) {
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
+function isApplicationPhaseOpen(applicationStartDate) {
+  const today = new Date();
+  let givenDate = applicationStartDate.toDate();
+  return givenDate <= today;
 }
 
 export default function Form(props) {
@@ -84,7 +111,8 @@ export default function Form(props) {
   const fileInputCoverLetterRef = useRef(null);
   const formWrapperRef = useRef(null);
   const [response, setResponse] = useState();
-  const [fileUploadError, setFileUploadError] = useState(null);
+  const [cvUploadError, setCVUploadError] = useState(null);
+  const [coverLetterUploadError, setCoverLetterUploadError] = useState(null);
   const [isInflightRequest, setIsInflightRequest] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
   const clickFileInputCV = useCallback(() => {
@@ -95,11 +123,13 @@ export default function Form(props) {
     fileInputCoverLetterRef.current.click();
   }, []);
 
+  const [batchDetails, setBatchDetails] = useState([]);
+
   const submitForm = e => {
     e.preventDefault();
 
     if (!state.cv) {
-      setFileUploadError(true);
+      setCVUploadError(true);
       uploadCVLabelRef.current.scrollIntoView();
       return;
     }
@@ -141,8 +171,56 @@ export default function Form(props) {
   };
 
   useEffect(() => {
-    setFileUploadError(null);
+    setCVUploadError(null);
+    setCoverLetterUploadError(null);
   }, [state]);
+
+  useEffect(() => {
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
+    var currentTime = new Date();
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot => {
+          let batchDetails = [];
+          snapshot.forEach(
+            doc =>
+              (batchDetails = [
+                ...batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ])
+          );
+
+          setBatchDetails(batchDetails);
+        });
+    });
+  }, []);
+
+  let displayCurrentBatches = batchDetails.map(function(batch) {
+    if (isApplicationPhaseOpen(batch.appStartDate)) {
+      return (
+        <option value={batch.batchNumber} key={batch.batchID}>
+          {`Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
+        </option>
+      );
+    }
+
+    return '';
+  });
 
   return (
     <div className="u-content-wrapper">
@@ -230,32 +308,6 @@ export default function Form(props) {
                 />
               </div>
               <div className="application-form__field-wrapper">
-                <label className="application-form__label" htmlFor="userType">
-                  Which of the following describes you best?
-                </label>
-                <select
-                  className="application-form__input"
-                  id="userType"
-                  name="userType"
-                  value={state.userType}
-                  onChange={e =>
-                    dispatch({
-                      type: 'CHANGE_USER_TYPE',
-                      payload: { value: e.target.value },
-                    })
-                  }
-                  required
-                >
-                  <option value="">Please select</option>
-                  <option value="student">Student</option>
-                  <option value="graduate">Graduate</option>
-                  <option value="phd">PhD</option>
-                  <option value="employee">Employee</option>
-                  <option value="entrepreneur">Entrepreneur</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
                   htmlFor="batch-selection"
@@ -275,8 +327,7 @@ export default function Form(props) {
                   }
                   required
                 >
-                  <option value="">Please select</option>
-                  <option value="9">Batch#9</option>
+                  {displayCurrentBatches}
                 </select>
               </div>
               <div className="application-form__field-wrapper">
@@ -284,18 +335,25 @@ export default function Form(props) {
                   className="application-form__label"
                   htmlFor="file-upload"
                   ref={uploadCVLabelRef}
-                  style={fileUploadError ? { color: 'red' } : null}
+                  style={cvUploadError ? { color: 'red' } : null}
                 >
                   Please upload your CV (PDF, max 5MB)
+                  {cvUploadError && <p> {cvUploadError} </p>}
                 </label>
                 <label />
                 <input
-                  onChange={e =>
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCVUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
                     dispatch({
                       type: 'CHANGE_CV',
                       payload: { file: e.target.files[0] },
-                    })
-                  }
+                    });
+                  }}
                   accept="application/pdf"
                   className="application-form__input"
                   type="file"
@@ -318,6 +376,58 @@ export default function Form(props) {
                   onClick={clickFileInputCV}
                 >
                   <img src="/assets/icons/upload-icon.svg" alt="upload CV" />
+                </button>
+              </div>
+              <div className="application-form__field-wrapper">
+                <label
+                  className="application-form__label"
+                  htmlFor="file-upload-cover-letter"
+                  style={coverLetterUploadError ? { color: 'red' } : {}}
+                >
+                  Describe your motivation in a cover letter (Optional, PDF, max
+                  5MB)
+                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
+                </label>
+                <input
+                  className="application-form__input"
+                  type="file"
+                  accept="application/pdf"
+                  ref={fileInputCoverLetterRef}
+                  tabIndex={-1}
+                  id="file-upload-cover-letter"
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCoverLetterUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
+                    dispatch({
+                      type: 'CHANGE_COVER_LETTER',
+                      payload: { file: e.target.files[0] },
+                    });
+                  }}
+                />
+                <div
+                  className="application-form__input application_form__file-input-overlay"
+                  onClick={clickFileInputCoverLetter}
+                >
+                  {state.coverLetter && (
+                    <span style={{ fontSize: '14px' }}>
+                      {state.coverLetter.name}
+                    </span>
+                  )}
+                  {!state.coverLetter && <>Choose file </>}
+                </div>
+                <button
+                  type="button"
+                  className={`application-form__file-button application-form__file-button--${props.track}`}
+                  onClick={clickFileInputCoverLetter}
+                >
+                  <img
+                    src="/assets/icons/upload-icon.svg"
+                    alt="upload cover letter"
+                  />
                 </button>
               </div>
               <div className="application-form__field-wrapper">
@@ -379,7 +489,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label htmlFor="heard-from" className="application-form__label">
-                  Where did you learn about Digital Product School?
+                  How did you learn about Digital Product School?
                 </label>
                 <textarea
                   id="heard-from"
@@ -395,51 +505,11 @@ export default function Form(props) {
                   required
                 />
               </div>
-              <div className="application-form__field-wrapper">
-                <label
-                  className="application-form__label"
-                  htmlFor="file-upload-cover-letter"
-                >
-                  Describe your motivation in a cover letter (Optional, PDF, max
-                  5MB)
-                </label>
-                <input
-                  className="application-form__input"
-                  type="file"
-                  accept="application/pdf"
-                  ref={fileInputCoverLetterRef}
-                  tabIndex={-1}
-                  id="file-upload-cover-letter"
-                  onChange={e =>
-                    dispatch({
-                      type: 'CHANGE_COVER_LETTER',
-                      payload: { file: e.target.files[0] },
-                    })
-                  }
-                />
-                <div
-                  className="application-form__input application_form__file-input-overlay"
-                  onClick={clickFileInputCoverLetter}
-                >
-                  {state.coverLetter && (
-                    <span style={{ fontSize: '14px' }}>
-                      {state.coverLetter.name}
-                    </span>
-                  )}
-                  {!state.coverLetter && <>Choose file </>}
-                </div>
-                <button
-                  type="button"
-                  className={`application-form__file-button application-form__file-button--${props.track}`}
-                  onClick={clickFileInputCoverLetter}
-                >
-                  <img
-                    src="/assets/icons/upload-icon.svg"
-                    alt="upload cover letter"
-                  />
-                </button>
-              </div>
-              <div className="application-form__field-wrapper">
+
+              <div
+                className="application-form__field-wrapper"
+                style={{ zIndex: 1 }}
+              >
                 <label
                   className="application-form__label"
                   id="consent-radiogroup-label"

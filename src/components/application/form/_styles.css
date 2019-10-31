@@ -1,3 +1,7 @@
+textarea {
+  font-family: 'Montserrat';
+}
+
 .application-form-plate {
   text-align: center;
   padding-top: 55px;
@@ -54,7 +58,7 @@
   background-color: #f3f3f3;
 
   &--textarea {
-    height: 150px;
+    height: 62px;
     padding: 10px;
   }
 }

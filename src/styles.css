@@ -8,6 +8,7 @@
 @import url('./components/shared/pick-track/_styles.css');
 @import url('./components/shared/footer/_styles.css');
 @import url('./components/shared/cookie-warning/_styles.css');
+@import url('./components/shared/modal/_styles.css');
 
 @import url('./components/home/header/_styles.css');
 @import url('./components/home/pitch/_styles.css');
@@ -48,6 +49,8 @@
 @import url('./pages/apply/software-engineering/_styles.css');
 @import url('./pages/apply/artificial-intelligence/_styles.css');
 @import url('./pages/application/software-engineering/_styles.css');
+@import url('./pages/faq/_styles.css');
+@import url('./pages/team/_styles.css');
 
 @import url('./components/faq/_styles.css');
 
