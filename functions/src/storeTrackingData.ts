@@ -28,10 +28,8 @@ function getAppDate(appDate: any) {
 }
 
 exports.handler = async function(snap: any, context: any, admin: any) {
-  const email: string = snap.data()!.email;
   const name: string = snap.data()!.name;
   const batch: string = snap.data()!.batch;
-  const userType: string = snap.data()!.userType;
   const track: string = snap.data()!.track;
   const source: string = snap.data()!.source;
   const applicationTime: any = getAppDate(snap.createTime.toDate());
@@ -77,22 +75,11 @@ exports.handler = async function(snap: any, context: any, admin: any) {
 
     const request = {
       spreadsheetId: googleSheetID, //test sheet
-      range: 'A:H',
+      range: 'A:E',
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
       resource: {
-        values: [
-          [
-            name,
-            email,
-            batch,
-            track,
-            userType,
-            source,
-            applicationTime,
-            result.gender,
-          ],
-        ],
+        values: [[batch, track, source, applicationTime, result.gender]],
       },
       auth: oauth2Client,
     };
