@@ -17,6 +17,7 @@ steps:
         'firebase deploy --only functions --project $PROJECT_ID --token $$ENC_FIREBASE_TOKEN',
       ]
     secretEnv: ['ENC_FIREBASE_TOKEN']
+    waitFor: ['install_functions_dep']
 
   - name: 'gcr.io/cloud-builders/npm'
     id: gatsby_build
@@ -35,7 +36,7 @@ steps:
         'deploy',
         'website-prod.app.yaml',
         '--project',
-        'dps-website-244212',
+        '$PROJECT_ID',
         '--log-http',
         '--verbosity',
         'debug',
