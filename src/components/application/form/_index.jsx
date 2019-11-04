@@ -16,6 +16,17 @@ const initialState = {
   coverLetter: null,
 };
 
+function sendConversionAnalytics(track) {
+  if (window.ga) {
+    window.ga('create', 'GTM-5HGJ5CL', 'auto');
+    window.ga('send', 'event', 'application', 'sent', [track]);
+  }
+
+  if (window.fbq) {
+    window.fbq('track', 'Purchase', { track });
+  }
+}
+
 function reducer(state, action) {
   switch (action.type) {
     case 'CHANGE_NAME':
@@ -165,6 +176,7 @@ export default function Form(props) {
         setResponse('failure');
       })
       .finally(() => {
+        sendConversionAnalytics(props.track);
         formWrapperRef.current.scrollIntoView();
         setIsInflightRequest(false);
       });

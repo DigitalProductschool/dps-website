@@ -87,8 +87,7 @@ exports.sendConfirmationMail = functions
 
 exports.storeTrackingData = functions
   .region(defaultRegion)
-  .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
-    return await storeTrackingData.handler(snap);
+    return await storeTrackingData.handler(snap, context, admin);
   });

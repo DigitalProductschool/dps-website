@@ -9,9 +9,9 @@ let members = [
   {
     name: 'Afsaneh Asaei',
     title: 'Head of Artificial Intelligence',
-    shortDescription: `I have more than 17 years professional experience in applied Artificial Intelligence R&D. I completed my PhD at Swiss Federal Institute of Technology Lausanne on the robustness of machine ... `,
-    description: `I have more than 17 years professional experience in applied Artificial Intelligence R&D. I completed my PhD at Swiss Federal Institute of Technology Lausanne on the robustness of machine learning in commercial applications. My contributions were recognized by community awards and granted several million Euros of national & international funding.<br>
-I advise and coach our teams with exploring the AI applications, their feasibility, and risks for problem-solution fits. In a multi-disciplinary setup, I support them with challenges on how a data-driven solution should be developed and evaluated and how to transform the assumptions and data requirements to product vision and market opportunities.`,
+    shortDescription: `I advise and coach our teams in exploring AI applications. `,
+    description: `I have more than 17 years professional experience in applied artificial intelligence research and development. I completed my PhD at the Swiss Federal Institute of Technology, Lausanne, on the robustness of machine learning in commercial applications. My contributions were recognized via community awards and I was granted several million Euros of national & international funding.<br>
+I advise and coach our teams in exploring AI applications, their feasibility and risks during problem-solution fits. In a multi-disciplinary environment, I support the participants to understand how to transform assumptions and data requirements into a product vision, alongside exploring market opportunities and how a data-driven solution should be evaluated. `,
     pic: 'afsaneh.jpg',
     social: [
       {
@@ -24,10 +24,9 @@ I advise and coach our teams with exploring the AI applications, their feasibili
   {
     name: 'Samreen Azam',
     title: 'Junior Marketing & Community Manager',
-    shortDescription: `I previously founded startup projects and worked as a Business Developing Analyst at Rocket Internet GmbH. Later I pursued my Masters in Integrated Design from the Anhalt University ...`,
-    description: `I previously founded startup projects and worked as a Business Developing Analyst at Rocket Internet GmbH. Later I pursued my Masters in Integrated Design from the Anhalt University of  Applied Sciences in Germany. I am also an alumna from Digital Product School batch five 2018. Where as a Product Manager together with my team I built an application to assist parents travelling with their children.<br>
-I am responsible for assisting the marketing team with communication by reaching out to potential and deserving talents from all around the world with an opportunity like Digital Product School. Also  building a network and sustaining the community of alumni at Digital Product School.
-`,
+    shortDescription: `I take care of the social media channels of DPS and the alumni network. `,
+    description: `analyst at Rocket Internet GmbH. Later, I pursued my Masters degree in integrated design from the Anhalt University of Applied Sciences in Germany. I am also an alumna from DPS batch five in 2018. There, as a product manager together with my team, I built an application to assist parents travelling with their children.<br>
+I am responsible for the marketing for Digital Product School: taking ongoing care of the social media channels and reaching out to potential and deserving talents from all around the world who might benefit from the opportunity of attending DPS. I also build the DPS network and sustain the community of alumni. `,
     pic: 'samreen.jpg',
     social: [
       {
@@ -40,9 +39,9 @@ I am responsible for assisting the marketing team with communication by reaching
   {
     name: 'Daniel Bedö',
     title: 'Head of Software Engineering',
-    shortDescription: `After getting my masters degree in computer science at ELTE in Budapest I worked as a researcher at the university. Later I moved to Germany and worked for different companies in the machine ...`,
-    description: `After getting my masters degree in computer science at ELTE in Budapest I worked as a researcher at the university. Later I moved to Germany and worked for different companies in the machine learning and data analytics areas shifting more and more focus also to people management.<br>
-After getting my masters degree in computer science at ELTE in Budapest I worked as a researcher at the university. Later I moved to Germany and worked for different companies in the machine learning and data analytics areas shifting more and more focus also to people management.
+    shortDescription: `I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career.`,
+    description: `After receiving my master’s degree in computer science at ELTE in Budapest, I worked as a researcher at the university. Later, I moved to Germany and worked for different companies in the subject areas of machine learning and data analytics before shifting my focus towards people management.<br>
+During my time at university I accumulated a lot of knowledge in data structures and algorithms, but it was only when I started working within the industry that I realised how much it takes to be a good software engineer. I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career.
 `,
     pic: 'daniel.jpg',
     social: [
@@ -56,10 +55,9 @@ After getting my masters degree in computer science at ELTE in Budapest I worked
   {
     name: 'Natthagorn Bunnet',
     title: 'Team and Event Manager',
-    shortDescription: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich I became Junior Project Manager at the ...`,
-    description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich I became Junior Project Manager at the communication agency SZ Scala. During the last 2,5 years, I acquired project management and marketing skills and how to optimize processes efficiently in particular.<br>
-My role is to organize all events at DPS and throw best batch closing parties. Apart from that I assist the marketing team with operations and I am also your contact person for all matters  like office supplies and access card.
-`,
+    shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
+    description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
+My role is to organize all events at DPS and throw the best batch closing parties. Alongside this, I assist the marketing team with operations and I am also the contact person for all matters like office supplies and access cards. `,
     pic: 'natt.jpg',
     social: [
       {
@@ -72,10 +70,9 @@ My role is to organize all events at DPS and throw best batch closing parties. A
   {
     name: 'Lorenz Hutterer',
     title: 'Business Developer',
-    shortDescription: `I studied Management and Technology at Technische Universität München and hustled in Startups among different industries ...`,
-    description: `I studied Management and Technology at Technische Universität München and hustled in Startups among different industries.<br>
-I am taking care of the business side of your project. I support you in any aspects of how to make money with your idea.
-`,
+    shortDescription: `I help the teams to make money through their ideas.`,
+    description: `I studied management and technology at Technische Universität München and hustled in startups throughout different industries.<br>
+I take care of the business side of projects at DPS and support our teams in how to make money through their ideas. `,
     pic: 'lorenz.jpg',
     social: [
       {
@@ -88,10 +85,9 @@ I am taking care of the business side of your project. I support you in any aspe
   {
     name: 'Steffen Kastner',
     title: 'Head of Product Management',
-    shortDescription: `I am a trained journalist and somehow slipped into Product Management and user research. I helped launching the online stores ...`,
-    description: `I am a trained journalist and somehow slipped into Product Management and user research. I helped launching the online stores for software and toys for Amazon and made products useful to the customers of Weltbild. I developed dozens of digital products for Haymarket Media and established user research at Gutefrage.net<br>
-I help teams at Digital Product School to discover promising problems and to create ideas that join the dots discovered through user research.  Of course also supporting them to turn those ideas into reality. And I love to stir things up with provoking questions.
-`,
+    shortDescription: `I love to stir things up with provocative questions.`,
+    description: `I am a trained journalist who somehow slipped into product management and user research. I launched the online stores for software and toys for Amazon and made products useful to the customers of Weltbild. I went on to develop dozens of digital products for Haymarket Media and established user research at Gutefrage.net.<br>
+I help teams at DPS to spot problems and create ideas that join the dots discovered through user research. I also support them in turning those ideas into reality, plus I love to stir things up with provocative questions. `,
     pic: 'steffen.jpg',
     social: [
       {
@@ -104,10 +100,9 @@ I help teams at Digital Product School to discover promising problems and to cre
   {
     name: 'Sascha Rehbock',
     title: 'Managing Director Digital Product School',
-    shortDescription: `In the last 15 years I helped to successfully develop and launch digital products in various sectors including Automotive, Health Care ... `,
-    description: `In the last 15 years I helped to successfully develop and launch digital products in various sectors including Automotive, Health Care, Manufacturing, and Finance. As a Coach I helped teams to have more impact and discover better ways of working together - from Product Teams to CEOs. Today I run the Digital Product School as Managing Director.<br>
-At Digital Product School I focus on helping the DPS Core Team to do an amazing job as well as managing partner relations. Let me know if I can connect you with the UnternehmerTUM network to enhance your experience here at DPS even more.
-`,
+    shortDescription: `I help the core team to do an amazing job.`,
+    description: `Over the last 15 years I successfully developed and launched digital products in various sectors including automotive, health care, manufacturing, and finance. As a coach, I also helped teams have more impact and discover better ways of working together – from product teams to CEOs. Today, I run DPS as its managing director.<br>
+At DPS,  I focus on helping the core team to do an amazing job as well as managing partner relations. Let me know if I can connect you with the UnternehmerTUM network to enhance your experience at DPS further. `,
     pic: 'sascha.jpg',
     social: [
       {
@@ -120,10 +115,9 @@ At Digital Product School I focus on helping the DPS Core Team to do an amazing 
   {
     name: 'Bhawna Saini',
     title: 'Junior Software Engineer',
-    shortDescription: `I am in the final semester of my masters studies in Computer Science at TUM. Before joining DPS, I worked as a frontend web developer at TUM ...`,
-    description: `I am in the final semester of my masters studies in Computer Science at TUM. Before joining DPS, I worked as a frontend web developer at TUM and HomeFox Gmbh where I gained some skills in ReactJS and VueJS. Then later I was a SE participant in batch #5 at DPS where my team developed a chrome plugin for personalized Google search using VueJS.<br>
-At DPS, I assist with various software engineering tasks. I learn by trying and failing and then making it work. So that's how I help the teams as well. As I was a participant at DPS, I can support them through what I learnt during my DPS journey. Moreover, if they have any SE queries, I can help them find a way through it.
-`,
+    shortDescription: `I help the teams to find a way through any software engineering queries.`,
+    description: `I am in the final semester of my master’s studies in computer science at TUM. Before joining DPS, I worked as a frontend web developer at TUM and HomeFox Gmbh where I gained some skills in ReactJS and VueJS. Later, I was a participant in the software engineering track in batch 5 at DPS where my team developed a chrome plugin for personalized Google searches using VueJS.<br>
+At DPS, I assist with various software engineering tasks. I learn by trying and failing and then making it work: that's how I help the teams, too. As I was a participant at DPS, I support the teams through my own learnings during my DPS journey. Moreover, if participants have any software engineering queries, I help them find a way through. `,
     pic: 'bhawna.jpg',
     social: [
       {
@@ -136,10 +130,9 @@ At DPS, I assist with various software engineering tasks. I learn by trying and 
   {
     name: 'Bastian Rieder',
     title: 'Head of Performance Marketing',
-    shortDescription: `At the DPS I am responsible for the Marketing: Telling the story of DPS and motivating students & graduates to apply. Before joining DPS in February ...`,
-    description: `At the DPS I am responsible for the Marketing: Telling the story of DPS and motivating students & graduates to apply. Before joining DPS in February 2017 I had a small startup in the online advertising business and worked for an advertising agency in Munich for 13 years. I have a Bachelor's degree in Social Sciences and an MBA in Marketing.<br>
-At DPS I can help you with all Marketing related questions: finding test persons, creating landing pages, running small campaigns to get users on your landing page, creating small advertisements and everything else that helps you to test your hypotheses.
-`,
+    shortDescription: `I spread the word about DPS and motivate talents to apply.`,
+    description: `At the DPS I am responsible for marketing: telling the story of DPS and motivating students and graduates to apply. Before joining DPS in February 2017, I had a small startup in the online advertising business and worked for an advertising agency in Munich for 13 years. I have a Bachelor's degree in social sciences and an MBA in marketing.<br>
+At DPS I help the teams with all marketing-related questions: finding test persons, creating landing pages, running small campaigns to get users on the landing page, creating small advertisements, and everything else that helps the teams to test their hypotheses. `,
     pic: 'basti.jpg',
     social: [
       {
@@ -152,10 +145,9 @@ At DPS I can help you with all Marketing related questions: finding test persons
   {
     name: 'Annina Schaupp',
     title: 'Agile Coach',
-    shortDescription: `I am an experienced scrum master. I have a background in business administration from HTWG Constance. Earlier in my career I realised that agile and scrum ...`,
-    description: `I am an experienced scrum master. I have a background in business administration from HTWG Constance. Earlier in my career I realised that agile and scrum methods play a crucial role in product development. This is when I decided to pursue this and become a scrum master. <br>
-As your Agile Coach at Digital Product School I support your team to overcome obstacles by having smooth communication. I not only equip you to learn Agile methods but also apply them to have a valuable workflow building a product. 
-`,
+    shortDescription: `I equip the teams with agile methods and bring them into a meaningful workflow.`,
+    description: `I am an experienced scrum master. I have a background in business administration from HTWG Constance, Germany.  Early in my career I realised that agile and scrum methods play a crucial role in product development. This is when I decided to pursue this topic and become a scrum master.<br>
+As an agile coach at DPS, I support teams to overcome obstacles through practicing smooth communication. I equip them to learn agile methods and also show them how to apply these methods so they can adopt a meaningful workflow when building a product. `,
     pic: 'annina.jpg',
     social: [
       {
@@ -168,10 +160,9 @@ As your Agile Coach at Digital Product School I support your team to overcome ob
   {
     name: 'Michael Stockerl',
     title: 'Head of Software Engineering',
-    shortDescription: `I studied Computer Science at LMU and besides worked part-time at early stage Start-ups. During this time, I figured out that I enjoy working on Data ...`,
-    description: `I studied Computer Science at LMU and besides worked part-time at early stage Start-ups. During this time, I figured out that I enjoy working on Data Engineering topics. After graduation, I joined gutefrage.net and we established the usage of Machine Learning in Germany's biggest Q&A platform.<br>
-At Digital Product School I help the teams to identify technical risks in their solution and enable them to come up with a feasible first version of the product. During Code Reviews, I give feedback on code-related issues. In addition to that, I can help teams to improve their overall teamwork.
-`,
+    shortDescription: `I help teams to identify and overcome technical risks in their solutions.`,
+    description: `I studied computer science at LMU in Munich and, alongside this, worked part time in early-stage startups. During this time, I figured out that I enjoy working on data engineering topics. After graduation, I joined gutefrage.net and we established the use of machine learning in Germany's biggest Q&A platform.<br>
+At DPS, I help teams to identify technical risks in their solution and enable them to come up with a feasible first version of their product. During code reviews, I give feedback on code-related issues. In addition to this, I help groups to improve their overall teamwork. `,
     pic: 'michi.jpg',
     social: [
       {
@@ -322,15 +313,17 @@ function Team() {
         <div className="team__image-content u-content">
           <div className="team__image-content__image">
             <p>
-              Organized as an autonomous team, the Digital Product School core
-              team consists of experts in a roles typically found in a
-              successful startup: Product Management, Design, Software
-              Engineering, Artificial Intelligence (AI), Agile Coaching,
-              Business Development, Marketing and Operations. Before joining DPS
-              they gathered long-standing experience in digital product
-              development while working at tech-startups, big corporates and
-              academia. Together they support, guide and help the teams to
-              develop a user-centric digital product in an agile team.
+              The Digital Product School (DPS) core team consists of an
+              autonomous group of experts in roles typically found in a
+              successful startup: product management, design, software
+              engineering, artificial intelligence (AI), agile coaching,
+              business development, and marketing and operations.
+              <br />
+              Before joining DPS they gained long-term experience in digital
+              product development while working at tech-startups, corporates and
+              in academia. Together they support, guide and help the
+              participants to develop a user-centric digital product in an agile
+              team.
             </p>
           </div>
         </div>
