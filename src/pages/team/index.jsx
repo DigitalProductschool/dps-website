@@ -313,8 +313,17 @@ function Team() {
         <div className="team__image-content u-content">
           <div className="team__image-content__image">
             <p>
-The Digital Product School (DPS) core team consists of an autonomous group of experts in roles typically found in a successful startup: product management, design, software engineering, artificial intelligence (AI), agile coaching, business development, and marketing and operations.<br>
-Before joining DPS they gained long-term experience in digital product development while working at tech-startups, corporates and in academia. Together they support, guide and help the participants to develop a user-centric digital product in an agile team.
+              The Digital Product School (DPS) core team consists of an
+              autonomous group of experts in roles typically found in a
+              successful startup: product management, design, software
+              engineering, artificial intelligence (AI), agile coaching,
+              business development, and marketing and operations.
+              <br />
+              Before joining DPS they gained long-term experience in digital
+              product development while working at tech-startups, corporates and
+              in academia. Together they support, guide and help the
+              participants to develop a user-centric digital product in an agile
+              team.
             </p>
           </div>
         </div>
