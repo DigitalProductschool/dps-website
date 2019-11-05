@@ -121,7 +121,7 @@ export default function Form(props) {
   const uploadCVLabelRef = useRef(null);
   const fileInputCoverLetterRef = useRef(null);
   const formWrapperRef = useRef(null);
-  const [response, setResponse] = useState();
+  const [response, setResponse] = useState('success');
   const [cvUploadError, setCVUploadError] = useState(null);
   const [coverLetterUploadError, setCoverLetterUploadError] = useState(null);
   const [isInflightRequest, setIsInflightRequest] = useState(false);
@@ -240,19 +240,70 @@ export default function Form(props) {
         <div className="application-form-plate" ref={formWrapperRef}>
           {response === 'success' && (
             <>
-              <h4>
-                <span role="img" aria-label="party emojis">
-                  🎉🦄🎉
-                </span>
-                &nbsp;Thank you for applying at Digital Product School&nbsp;
-                <span role="img" aria-label="party emojis">
-                  🎉🦄🎉
-                </span>
-              </h4>
-              <p>
-                You'll receive a confirmation email and we'll get in touch soon.
-                We give our best, but it may take up to 8 weeks.
+              <p style={{ textAlign: 'left' }}>Dear {state.name}</p>
+              <p style={{ textAlign: 'left' }}>
+                thank you for your interest in being part of Digital Product
+                School.
               </p>
+              <p style={{ textAlign: 'left' }}>
+                You applied for Batch {state.batch}. We give our best to
+                evaluate your application, but since a lot of great people want
+                to be part of DPS it may take some time. <br />
+              </p>
+              <p style={{ textAlign: 'left' }}>
+                We will start to evaluate the applications about 12 weeks before
+                the next batch starts and get in touch with you. If you and your
+                skills fit our needs we will invite you to an interview. At the
+                latest four weeks before the batch starts you will know if you
+                are in the next round.
+              </p>
+
+              <p style={{ textAlign: 'left' }}>
+                If you have any questions, just email us at{' '}
+                <a
+                  href="mailto:hello@dpschool.io"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>hello@dpschool.io. </span>
+                </a>{' '}
+                Or stay in touch with us on social media:{' '}
+                <a
+                  href="https://www.instagram.com/digitalproductschool/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Instagram, </span>
+                </a>{' '}
+                <a
+                  href="https://www.facebook.com/digitalproductschool/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Facebook, </span>
+                </a>{' '}
+                <a
+                  href="https://twitter.com/dpschool_io"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Twitter, </span>
+                </a>{' '}
+                <a
+                  href="https://leaks.digitalproductschool.io/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Medium. </span>
+                </a>{' '}
+              </p>
+              <p style={{ textAlign: 'left' }}>Your DPS-Team</p>
+
               <Link
                 to="/"
                 className="u-button"
