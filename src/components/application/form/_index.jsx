@@ -246,7 +246,7 @@ export default function Form(props) {
                 School.
               </p>
               <p style={{ textAlign: 'left' }}>
-                You applied for Batch {state.batch}. We give our best to
+                You applied for batch #{state.batch}. We give our best to
                 evaluate your application, but since a lot of great people want
                 to be part of DPS it may take some time. <br />
               </p>
@@ -284,6 +284,14 @@ export default function Form(props) {
                   rel="noopener noreferrer"
                 >
                   <span style={{ zIndex: 1 }}>Facebook, </span>
+                </a>{' '}
+                <a
+                  href="https://www.linkedin.com/company/digital-product-school/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>LinkedIn, </span>
                 </a>{' '}
                 <a
                   href="https://twitter.com/dpschool_io"
