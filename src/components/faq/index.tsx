@@ -142,7 +142,7 @@ class Faq extends React.Component {
               have to be enrolled as a student to apply, but if you are already
               employed we recommend you apply through our{' '}
               <a href="https://digitalbusinesslab.de" className="u-link">
-                <span tyle={{ zIndex: 1 }}>DBL Program</span>
+                <span style={{ zIndex: 1 }}>DBL Program</span>
               </a>
               .
             </p>
