@@ -18,7 +18,7 @@ const initialState = {
 
 function sendConversionAnalytics(track) {
   if (window.ga) {
-    window.ga('create', 'GTM-5HGJ5CL', 'auto');
+    window.ga('create', 'UA-83926449-2', 'auto');
     window.ga('send', 'event', 'application', 'sent', [track]);
   }
 
