@@ -314,7 +314,7 @@ export default function Form(props) {
 
               <Link
                 to="/"
-                className="u-button"
+                className="u-button u-button--reversed"
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
