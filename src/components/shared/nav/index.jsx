@@ -232,6 +232,9 @@ function Nav(props) {
             <Link to="/apply"> Apply </Link>
           </li>
           <li className="nav__menu__item">
+            <Link to="/team"> Team </Link>
+          </li>
+          <li className="nav__menu__item">
             <Link to="/faq"> FAQ </Link>
           </li>
         </ul>
@@ -287,6 +290,12 @@ function Nav(props) {
             onClick={() => setIsOpen(false)}
           >
             <Link to="/apply"> Apply </Link>
+          </li>
+          <li
+            className="nav__menu__item  nav__menu__item--mobile"
+            onClick={() => setIsOpen(false)}
+          >
+            <Link to="/team">Team</Link>
           </li>
           <li
             className="nav__menu__item nav__menu__item--mobile"

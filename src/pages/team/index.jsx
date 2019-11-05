@@ -61,8 +61,8 @@ My role is to organize all events at DPS and throw the best batch closing partie
     pic: 'natt.jpg',
     social: [
       {
-        icon: '/assets/icons/insta.svg',
-        link: 'https://www.instagram.com/natt_chanida/',
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/natthagorn-bunnet-b77080142/',
         alt: 'instagram',
       },
     ],
