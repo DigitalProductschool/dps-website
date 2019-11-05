@@ -63,9 +63,14 @@ class Faq extends React.Component {
               company to profit from the concept of customer-centric product
               development? Check out “Digital Business Lab” where your company
               can take part with a own problem space and team. Check out{' '}
-              <a href="https://digitalbusinesslab.de" target=”_blank” rel="noopener noreferrer" className="u-link">
+              <a
+                href="https://digitalbusinesslab.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="u-link"
+              >
                 <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
-              </a>{" "}
+              </a>{' '}
               where your company can take part with an own problem space and
               team.
             </p>
@@ -141,7 +146,12 @@ class Faq extends React.Component {
               Students or fresh graduates can be part of DPS. So you do not only
               have to be enrolled as a student to apply, but if you are already
               employed we recommend you apply through our{' '}
-              <a href="https://digitalbusinesslab.de" target=”_blank” rel="noopener noreferrer" className="u-link">
+              <a
+                href="https://digitalbusinesslab.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="u-link"
+              >
                 <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
               </a>
               .
