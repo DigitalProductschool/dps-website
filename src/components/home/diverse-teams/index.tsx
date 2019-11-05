@@ -9,7 +9,7 @@ class DiverseTeams extends React.Component {
         </h3>
         <div className="diverse-teams__content u-content">
           <p className="diverse-teams__content__description">
-            We believe that great products are created by diverse teams. At the Digital Product School, interaction designers, 
+            We believe that great products are created by diverse and crossfunctional teams. At the Digital Product School, interaction designers, 
             software engineers, data scientists and product managers from all over the world are working together across disciplines 
             to create great products in a lean and agile way.
           </p>
