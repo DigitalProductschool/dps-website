@@ -5,7 +5,7 @@
   height: calc(100% - var(--nav-height-desktop));
   padding-bottom: 35px;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     padding-bottom: 20px;
   }
 }
@@ -17,7 +17,7 @@
   text-transform: uppercase;
   font-weight: 800;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     font-size: 32px;
     margin-top: 10px;
   }
@@ -34,7 +34,7 @@
   font-size: 24px;
   font-weight: 700;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     display: none;
   }
 }
@@ -49,9 +49,13 @@
     margin-top: 30px;
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     grid-auto-flow: row;
     grid-template-columns: 1fr;
+
+    & .u-button__apply {
+      width: 100%;
+    }
   }
 }
 
@@ -63,7 +67,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     width: 100%;
   }
 }
@@ -82,7 +86,7 @@
   width: 329px;
   text-transform: uppercase;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     width: 100%;
   }
 

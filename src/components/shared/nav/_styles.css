@@ -6,7 +6,7 @@
   height: var(--nav-height-desktop);
   width: 100%;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     height: var(--nav-height-mobile);
   }
 }
@@ -30,7 +30,7 @@
     color: black;
   }
 
-  @media (min-width: 621px) {
+  @media (min-width: 751px) {
     &--mobile {
       display: none;
     }
@@ -40,7 +40,7 @@
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     &--desktop {
       display: none;
     }
@@ -59,7 +59,7 @@
 .nav__menu {
   padding: 0;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     font-size: 12px;
   }
 
@@ -141,7 +141,7 @@
 .nav__logo {
   height: 49px;
 
-  @media (max-width: 620px) {
+  @media (max-width: 750px) {
     height: 25px;
   }
 
