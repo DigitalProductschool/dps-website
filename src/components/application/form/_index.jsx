@@ -390,6 +390,9 @@ export default function Form(props) {
                   }
                   required
                 >
+                  <option value="" key="-1">
+                    Please select
+                  </option>
                   {displayCurrentBatches}
                 </select>
               </div>
