@@ -64,7 +64,7 @@ class Faq extends React.Component {
               development? Check out “Digital Business Lab” where your company
               can take part with a own problem space and team. Check out{' '}
               <a href="https://digitalbusinesslab.de" className="u-link">
-                <span>Digital Business Lab (DBL)</span>
+                <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
               </a>
               where your company can take part with an own problem space and
               team.

@@ -25,7 +25,7 @@ I advise and coach our teams in exploring AI applications, their feasibility and
     name: 'Samreen Azam',
     title: 'Junior Marketing & Community Manager',
     shortDescription: `I take care of the social media channels of DPS and the alumni network. `,
-    description: `analyst at Rocket Internet GmbH. Later, I pursued my Masters degree in integrated design from the Anhalt University of Applied Sciences in Germany. I am also an alumna from DPS batch five in 2018. There, as a product manager together with my team, I built an application to assist parents travelling with their children.<br>
+    description: `I previously founded startup projects and worked as a business development analyst at Rocket Internet GmbH. Later, I pursued my Masters degree in integrated design from the Anhalt University of Applied Sciences in Germany. I am also an alumna from DPS batch five in 2018. There, as a product manager together with my team, I built an application to assist parents travelling with their children.<br>
 I am responsible for the marketing for Digital Product School: taking ongoing care of the social media channels and reaching out to potential and deserving talents from all around the world who might benefit from the opportunity of attending DPS. I also build the DPS network and sustain the community of alumni. `,
     pic: 'samreen.jpg',
     social: [
@@ -61,8 +61,8 @@ My role is to organize all events at DPS and throw the best batch closing partie
     pic: 'natt.jpg',
     social: [
       {
-        icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/natthagorn-bunnet-b77080142/',
+        icon: '/assets/icons/insta.svg',
+        link: 'https://www.instagram.com/natt_chanida/',
         alt: 'instagram',
       },
     ],
