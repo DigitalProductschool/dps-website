@@ -65,7 +65,7 @@ class Faq extends React.Component {
               can take part with a own problem space and team. Check out{' '}
               <a href="https://digitalbusinesslab.de" className="u-link">
                 <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
-              </a>
+              </a>{" "}
               where your company can take part with an own problem space and
               team.
             </p>
@@ -142,7 +142,7 @@ class Faq extends React.Component {
               have to be enrolled as a student to apply, but if you are already
               employed we recommend you apply through our{' '}
               <a href="https://digitalbusinesslab.de" className="u-link">
-                <span>DBL Program</span>
+                <span style={{ zIndex: 1 }}>DBL Program</span>
               </a>
               .
             </p>
