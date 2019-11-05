@@ -19,7 +19,7 @@ class DiverseTeams extends React.Component {
             </Link>
             ,{" "}
             <Link to="/apply/artificial-intelligence" className="u-link">
-              <span> data scientists </span>
+              <span> artificial intelligence engineers </span>
             </Link>
             , and
             <Link to="/apply/product-management" className="u-link">
