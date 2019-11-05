@@ -317,7 +317,7 @@ function Team() {
               autonomous group of experts in roles typically found in a
               successful startup: product management, design, software
               engineering, artificial intelligence (AI), agile coaching,
-              business development, and marketing and operations.
+              business development, marketing and operations.
               <br />
               Before joining DPS they gained long-term experience in digital
               product development while working at tech-startups, corporates and
