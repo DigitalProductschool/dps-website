@@ -240,7 +240,7 @@ export default function Form(props) {
         <div className="application-form-plate" ref={formWrapperRef}>
           {response === 'success' && (
             <>
-              <p style={{ textAlign: 'left' }}>Dear {state.name}</p>
+              <p style={{ textAlign: 'left' }}>Dear {state.name}, </p>
               <p style={{ textAlign: 'left' }}>
                 thank you for your interest in being part of Digital Product
                 School.
