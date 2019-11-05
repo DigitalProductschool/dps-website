@@ -121,7 +121,7 @@ export default function Form(props) {
   const uploadCVLabelRef = useRef(null);
   const fileInputCoverLetterRef = useRef(null);
   const formWrapperRef = useRef(null);
-  const [response, setResponse] = useState('success');
+  const [response, setResponse] = useState();
   const [cvUploadError, setCVUploadError] = useState(null);
   const [coverLetterUploadError, setCoverLetterUploadError] = useState(null);
   const [isInflightRequest, setIsInflightRequest] = useState(false);
