@@ -23,7 +23,7 @@ function sendConversionAnalytics(track) {
   }
 
   if (window.fbq) {
-    window.fbq('track', 'Purchase', { track });
+    window.fbq('track', 'Purchase', { track, value: 1, currency: 'USD' });
   }
 }
 
