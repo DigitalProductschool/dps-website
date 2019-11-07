@@ -41,8 +41,7 @@ I am responsible for the marketing for Digital Product School: taking ongoing ca
     title: 'Head of Software Engineering',
     shortDescription: `I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career.`,
     description: `After receiving my master’s degree in computer science at ELTE in Budapest, I worked as a researcher at the university. Later, I moved to Germany and worked for different companies in the subject areas of machine learning and data analytics before shifting my focus towards people management.<br>
-During my time at university I accumulated a lot of knowledge in data structures and algorithms, but it was only when I started working within the industry that I realised how much it takes to be a good software engineer. I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career.
-`,
+During my time at university I accumulated a lot of knowledge in data structures and algorithms, but it was only when I started working within the industry that I realised how much it takes to be a good software engineer. I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career. `,
     pic: 'daniel.jpg',
     social: [
       {
@@ -132,7 +131,7 @@ At DPS, I assist with various software engineering tasks. I learn by trying and 
     title: 'Head of Performance Marketing',
     shortDescription: `I spread the word about DPS and motivate talents to apply.`,
     description: `At the DPS I am responsible for marketing: telling the story of DPS and motivating students and graduates to apply. Before joining DPS in February 2017, I had a small startup in the online advertising business and worked for an advertising agency in Munich for 13 years. I have a Bachelor's degree in social sciences and an MBA in marketing.<br>
-At DPS I help the teams with all marketing-related questions: finding test persons, creating landing pages, running small campaigns to get users on the landing page, creating small advertisements, and everything else that helps the teams to test their hypotheses. `,
+I help the teams with all marketing-related questions: finding test persons, creating landing pages, running small campaigns to get users on the landing page, creating small advertisements, and everything else that helps the teams to test their hypotheses. `,
     pic: 'basti.jpg',
     social: [
       {
@@ -147,7 +146,7 @@ At DPS I help the teams with all marketing-related questions: finding test perso
     title: 'Agile Coach',
     shortDescription: `I equip the teams with agile methods and bring them into a meaningful workflow.`,
     description: `I am an experienced scrum master. I have a background in business administration from HTWG Constance, Germany.  Early in my career I realised that agile and scrum methods play a crucial role in product development. This is when I decided to pursue this topic and become a scrum master.<br>
-As an agile coach at DPS, I support teams to overcome obstacles through practicing smooth communication. I equip them to learn agile methods and also show them how to apply these methods so they can adopt a meaningful workflow when building a product. `,
+As an agile coach at DPS, I support teams to overcome obstacles through practicing smooth communication. I equip them to learn agile methods and also show them how to apply these methods so they can adopt a meaningful workflow when building a product.  `,
     pic: 'annina.jpg',
     social: [
       {
@@ -313,17 +312,9 @@ function Team() {
         <div className="team__image-content u-content">
           <div className="team__image-content__image">
             <p>
-              The Digital Product School (DPS) core team consists of an
-              autonomous group of experts in roles typically found in a
-              successful startup: product management, design, software
-              engineering, artificial intelligence (AI), agile coaching,
-              business development, marketing and operations.
+              The Digital Product School (DPS) core team consists of an autonomous group of experts in roles typically found in a successful startup: product management, design, software engineering, artificial intelligence (AI), agile coaching, business development, and marketing and operations.
               <br />
-              Before joining DPS they gained long-term experience in digital
-              product development while working at tech-startups, corporates and
-              in academia. Together they support, guide and help the
-              participants to develop a user-centric digital product in an agile
-              team.
+              Before joining DPS they gained long-term experience in digital product development while working at tech-startups, corporates and in academia. Together they support, guide and help the participants to develop a user-centric digital product in an agile team.
             </p>
           </div>
         </div>
