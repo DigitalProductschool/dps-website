@@ -190,7 +190,9 @@ function Card(props) {
       <h5
         style={{
           marginTop: '10px',
+          textTransform: 'uppercase',
           marginBottom: 0,
+          fontSize: '18px',
         }}
       >
         {member.name}
@@ -198,8 +200,7 @@ function Card(props) {
       <h5
         style={{
           margin: 0,
-          textTransform: 'uppercase',
-          fontSize: '12px',
+          fontSize: '14px',
           marginTop: '2px',
           fontWeight: '300',
         }}
