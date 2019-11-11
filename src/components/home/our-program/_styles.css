@@ -39,7 +39,7 @@
 }
 
 .our-program__perks__title {
-  font-size: 24px;
+  font-size: 20px;
 
   @media (max-width: 620px) {
     font-size: 18px;
