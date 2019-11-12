@@ -25,7 +25,7 @@ class ApplyNow extends React.Component {
             <img
               alt="apply-now-image"
               className="apply-now__content__description__image u-image"
-              src="/assets/apply/apply-now-desc.JPG"
+              src="/assets/apply/dps-apply.jpg"
             />
           </div>
         </div>

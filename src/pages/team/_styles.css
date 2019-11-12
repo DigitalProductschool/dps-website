@@ -80,8 +80,9 @@
 }
 
 .team__image-content__image p {
-  line-height: 25px;
+  line-height: 34px;
   margin: 0;
+  font-size: 18px;
 }
 
 .team__image-content {
