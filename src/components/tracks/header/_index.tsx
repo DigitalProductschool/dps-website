@@ -23,50 +23,13 @@ export const ApplyButton = (props: {
   track: string;
   name: string;
   className: string;
+  url: string;
 }) => {
   return (
-    <a
-      className={props.className}
-      href={`https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=track-page-bottom&role=${props.track}`}
-    >
+    <a className={props.className} href={`/application/${props.url}`}>
       Apply as {props.name}
     </a>
   );
-
-  /*
-  switch (props.track) {
-    case 'se':
-      return (
-        <Link
-          className={props.className}
-          to="/application/software-engineering"
-        >
-          Apply as {props.name}
-        </Link>
-      );
-    case 'ixd':
-      return (
-        <Link className={props.className} to="/application/interaction-design">
-          Apply as {props.name}
-        </Link>
-      );
-    case 'ai':
-      return (
-        <Link
-          className={props.className}
-          to="/application/artificial-intelligence"
-        >
-          Apply as {props.name}
-        </Link>
-      );
-    case 'pm':
-      return (
-        <Link className={props.className} to="/application/product-management">
-          Apply as {props.name}
-        </Link>
-      );
-  }
-  */
 };
 
 // HoC would be much more suitable for this abstraction here

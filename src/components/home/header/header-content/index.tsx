@@ -23,18 +23,9 @@ class HeaderContent extends React.Component<IHeaderContentProps, {}> {
           learn how to build digital products that solve real-world problems.
         </p>
         <div className="header-content__buttons">
-          <a
-            className="u-button u-button__apply"
-            href="https://utum.typeform.com/to/qkkFHF?ref=website&entry-point=header"
-          >
-            Apply
+          <a className="u-button header-content__call-to-action" href="/apply">
+            Choose track & Apply
           </a>
-          <button
-            className="header-content__buttons__more"
-            onClick={onContentButtonClick}
-          >
-            No, I need more info first
-          </button>
         </div>
       </div>
     );
