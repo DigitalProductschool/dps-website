@@ -32,7 +32,8 @@
   max-width: var(--max-width);
   font-weight: 600;
   margin-bottom: 20px;
-  font-size: calc(10px + 0.7vw);
+  font-size: 18px;
+  line-height: 34px;
 
   @media (min-width: 1280px) {
     font-size: 20px;
