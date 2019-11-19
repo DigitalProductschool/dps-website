@@ -24,7 +24,7 @@ class HeaderContent extends React.Component<IHeaderContentProps, {}> {
         </p>
         <div className="header-content__buttons">
           <a className="u-button header-content__call-to-action" href="/apply">
-            Choose track & Apply
+            Apply
           </a>
         </div>
       </div>
