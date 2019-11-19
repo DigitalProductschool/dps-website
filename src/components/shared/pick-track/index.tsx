@@ -44,11 +44,9 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 are responsible for defining a product that solves discovered
                 problems and driving decision-making. They also take care of the
                 team's resources. <br />
-                Learn more about{' '}
                 <a className="u-link" href="/apply/product-management/">
-                  <span>Product Managers</span>
+                  <span>More ...</span>
                 </a>{' '}
-                at DPS.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--pm u-button u-button--reversed"
@@ -81,11 +79,9 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 and focus on designing engaging interfaces with well thought out
                 behaviours.
                 <br />
-                Learn more about{' '}
                 <a className="u-link" href="/apply/interaction-design/">
-                  <span>Interaction Designers</span>
+                  <span>More ...</span>
                 </a>{' '}
-                at DPS.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ixd u-button u-button--reversed"
@@ -117,11 +113,9 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 are scalable, secure and usable. They do amazing things that
                 look like magic to others.
                 <br />
-                Learn more about{' '}
                 <a className="u-link" href="/apply/software-engineering/">
-                  <span>Software Engineers</span>
+                  <span>More ...</span>
                 </a>{' '}
-                at DPS.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--se u-button u-button--reversed"
@@ -150,13 +144,10 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <span>Artificial Intelligence Engineers</span>
                 </a>{' '}
                 use algorithms to identify data patterns, build self-learning
-                systems and automate repetitive work. By doing this they take a
-                product to a whole new level. <br />
-                Learn more about{' '}
+                systems and automate repetitive work.<br />
                 <a className="u-link" href="/apply/artificial-intelligence/">
-                  <span>Artificial Intelligence Engineers</span>
+                  <span>More ...</span>
                 </a>{' '}
-                at DPS.
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ai u-button u-button--reversed"
