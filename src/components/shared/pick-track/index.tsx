@@ -144,7 +144,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <span>Artificial Intelligence Engineers</span>
                 </a>{' '}
                 use algorithms to identify data patterns, build self-learning
-                systems and automate repetitive work.<br />
+                systems, automate repetitive work and take a product to a whole new level.<br />
                 <a className="u-link" href="/apply/artificial-intelligence/">
                   <span>More ...</span>
                 </a>{' '}
