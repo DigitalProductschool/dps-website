@@ -45,7 +45,7 @@ class Header extends React.Component<IHeaderProps, {}> {
           <Nav logo={this.props.logo} />
           <div className="tracks__header-content u-content">
             <h1 className="tracks__header-content__title">
-              APPLY AS <br /> {track.name}
+              {track.name}
             </h1>
             <p className="tracks__header-content__description">
               {data.description1}
