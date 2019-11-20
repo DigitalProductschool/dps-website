@@ -11,10 +11,7 @@ class Apply extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Nav
-          addClass={'nav--black'}
-          logo={'/assets/shared/dps-logo-black.svg'}
-        />
+        <Nav />
         <ApplyNow />
         <PickTrack isApplyNowVersion={true} />
         <Footer addSectionClass="u-section-margin-top" />
