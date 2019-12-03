@@ -3,6 +3,8 @@ import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning/index';
 import Nav from '../../components/shared/nav/index';
 import Modal from '../../components/shared/modal/index';
+import Header from '../../components/shared/header/section';
+import HeaderContent from '../../components/shared/header/content';
 import { useState, useEffect } from 'react';
 
 let members = [
@@ -247,98 +249,84 @@ function Team() {
       <div id="modal-root"></div>
       <CookieWarning />
       <Nav />
-      <section className={`team__header u-content-wrapper`}>
-        {openId !== undefined && (
-          <Modal onClose={() => setIsOpenId(undefined)}>
-            <span
-              style={{
-                position: 'absolute',
-                top: '12px',
-                right: '20px',
-                fontSize: '24px',
-                cursor: 'pointer',
-                fontWeight: 'bold',
-              }}
-              onClick={() => setIsOpenId(undefined)}
-            >
-              x
-            </span>
-            <h4
-              style={{
-                marginBottom: '0',
-              }}
-            >
-              {members[openId].name}
-            </h4>
-            <h5
-              style={{
-                marginTop: '5px',
-                fontWeight: '300',
-                textTransform: 'uppercase',
-                fontSize: '12px',
-              }}
-            >
-              {members[openId].title}
-            </h5>
-            <p
-              dangerouslySetInnerHTML={{ __html: members[openId].description }}
-            ></p>
-            <button
-              className="u-button u-button--reversed"
-              onClick={() => setIsOpenId(undefined)}
-            >
-              close
-            </button>
-          </Modal>
-        )}
-        <div className="team__header-content u-content">
-          <div
+      {openId !== undefined && (
+        <Modal onClose={() => setIsOpenId(undefined)}>
+          <span
             style={{
               position: 'absolute',
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0,
-              backgroundColor: 'rgba(0, 0, 0, 0.56)',
-              zIndex: '-1',
+              top: '12px',
+              right: '20px',
+              fontSize: '24px',
+              cursor: 'pointer',
+              fontWeight: 'bold',
             }}
-          ></div>
-          <h1 className="team__header-content__title">
-            the heart-throbs of innovation
-          </h1>
-        </div>
-      </section>
-      <div className="team__image u-content-wrapper">
-        <div className="team__image-content u-content">
-          <div className="team__image-content__image">
-            <p>
-              The Digital Product School (DPS) core team consists of an autonomous group of experts in roles typically found in a successful startup: product management, design, software engineering, artificial intelligence (AI), agile coaching, business development, and marketing and operations.
-              <br />
-              Before joining DPS they gained long-term experience in digital product development while working at tech-startups, corporates and in academia. Together they support, guide and help the participants to develop a user-centric digital product in an agile team.
-            </p>
-          </div>
-        </div>
-
-        <div className="u-content">
-          <h1
+            onClick={() => setIsOpenId(undefined)}
+          >
+            x
+          </span>
+          <h4
             style={{
-              marginTop: '80px',
-              fontWeight: '900',
+              marginBottom: '0',
             }}
           >
-            THE DIGITAL PRODUCT SCHOOL CORE TEAM
-          </h1>
-          <ul className="team__cards">
-            {members.map((member, index) => (
-              <Card
-                key={index}
-                member={member}
-                setIsOpenId={setIsOpenId}
-                index={index}
-              />
-            ))}
-          </ul>
-        </div>
+            {members[openId].name}
+          </h4>
+          <h5
+            style={{
+              marginTop: '5px',
+              fontWeight: '300',
+              textTransform: 'uppercase',
+              fontSize: '12px',
+            }}
+          >
+            {members[openId].title}
+          </h5>
+          <p
+            dangerouslySetInnerHTML={{ __html: members[openId].description }}
+          ></p>
+          <button
+            className="u-button u-button--reversed"
+            onClick={() => setIsOpenId(undefined)}
+          >
+            close
+          </button>
+        </Modal>
+      )}
+      <Header image="/assets/team/header.jpg">
+        the heart-throbs of innovation
+      </Header>
+      <HeaderContent>
+        The Digital Product School (DPS) core team consists of an autonomous
+        group of experts in roles typically found in a successful startup:
+        product management, design, software engineering, artificial
+        intelligence (AI), agile coaching, business development, and marketing
+        and operations.
+        <br />
+        Before joining DPS they gained long-term experience in digital product
+        development while working at tech-startups, corporates and in academia.
+        Together they support, guide and help the participants to develop a
+        user-centric digital product in an agile team.
+      </HeaderContent>
+
+      <div className="u-content">
+        <h1
+          style={{
+            marginTop: '80px',
+            fontWeight: '900',
+          }}
+        >
+          THE DIGITAL PRODUCT SCHOOL CORE TEAM
+        </h1>
+        <ul className="team__cards">
+          {members.map((member, index) => (
+            <Card
+              key={index}
+              member={member}
+              setIsOpenId={setIsOpenId}
+              index={index}
+            />
+          ))}
+        </ul>
       </div>
 
       <Footer addSectionClass="u-section-margin-top" />
