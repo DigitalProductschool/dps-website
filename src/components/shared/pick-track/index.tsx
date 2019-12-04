@@ -38,17 +38,23 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <b> Product Managers </b> are responsible for defining a product
-                that solves discovered problems and driving decision-making.
-                They also take care of the team's resources.
+                <a className="u-link" href="/apply/product-management/">
+                  <span> Product Managers </span>
+                </a>{' '}
+                are responsible for defining a product that solves discovered
+                problems and driving decision-making. They also take care of the
+                team's resources. <br />
+                <a className="u-link" href="/apply/product-management/">
+                  <span>More ...</span>
+                </a>{' '}
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--pm u-button u-button--reversed"
-                href="/apply/product-management/"
+                href="/application/product-management/"
                 onMouseOver={() => this.setState({ active: 'pm' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                LEARN MORE
+                Apply as PM
               </a>
             </li>
 
@@ -66,17 +72,24 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <b> Interaction Designers </b> understand how users and
-                technology communicate with each other and focus on designing
-                engaging interfaces with well thought out behaviours.
+                <a className="u-link" href="/apply/interaction-design/">
+                  <span>Interaction Designers</span>
+                </a>{' '}
+                understand how users and technology communicate with each other
+                and focus on designing engaging interfaces with well thought out
+                behaviours.
+                <br />
+                <a className="u-link" href="/apply/interaction-design/">
+                  <span>More ...</span>
+                </a>{' '}
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ixd u-button u-button--reversed"
-                href="/apply/interaction-design/"
+                href="/application/interaction-design/"
                 onMouseOver={() => this.setState({ active: 'ixd' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                LEARN MORE
+                Apply as IxD
               </a>
             </li>
             <li key="se" className="pick-track__track">
@@ -93,17 +106,24 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <b> Software Engineers </b> bring ideas to life through coding.
-                They engineer systems that are scalable, secure and usable. They
-                do amazing things that look like magic to others.
+                <a className="u-link" href="/apply/software-engineering/">
+                  <span>Software Engineers</span>
+                </a>{' '}
+                bring ideas to life through coding. They engineer systems that
+                are scalable, secure and usable. They do amazing things that
+                look like magic to others.
+                <br />
+                <a className="u-link" href="/apply/software-engineering/">
+                  <span>More ...</span>
+                </a>{' '}
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--se u-button u-button--reversed"
-                href="/apply/software-engineering/"
+                href="/application/software-engineering/"
                 onMouseOver={() => this.setState({ active: 'se' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                LEARN MORE
+                Apply as SE
               </a>
             </li>
             <li key="ai" className="pick-track__track">
@@ -120,18 +140,22 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <b> Artificial Intelligence Engineers </b> use algorithms to
-                identify data patterns, build self-learning systems and automate
-                repetitive work. By doing this they take a product to a whole
-                new level.
+                <a className="u-link" href="/apply/artificial-intelligence/">
+                  <span>Artificial Intelligence Engineers</span>
+                </a>{' '}
+                use algorithms to identify data patterns, build self-learning
+                systems, automate repetitive work and take a product to a whole new level.<br />
+                <a className="u-link" href="/apply/artificial-intelligence/">
+                  <span>More ...</span>
+                </a>{' '}
               </p>
               <a
                 className="pick-track__track__button pick-track__track__button--ai u-button u-button--reversed"
-                href="/apply/artificial-intelligence/"
+                href="/application/artificial-intelligence/"
                 onMouseOver={() => this.setState({ active: 'ai' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
-                LEARN MORE
+                Apply as AI
               </a>
             </li>
           </ul>
