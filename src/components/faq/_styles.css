@@ -1,8 +1,8 @@
 .faq {
-  margin-top: -250px;
+  margin-top: -8%;
 
   @media (max-width: 620px) {
-    margin-top: -200px;
+    margin-top: -7%;
   }
 }
 
