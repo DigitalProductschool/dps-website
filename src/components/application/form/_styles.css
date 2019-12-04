@@ -58,7 +58,7 @@ textarea {
   background-color: #f3f3f3;
 
   &--textarea {
-    height: 150px;
+    height: 62px;
     padding: 10px;
   }
 }

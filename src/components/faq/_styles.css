@@ -1,5 +1,9 @@
 .faq {
-  margin-top: -200px;
+  margin-top: -250px;
+
+  @media (max-width: 620px) {
+    margin-top: -200px;
+  }
 }
 
 .faq__content {
@@ -7,6 +11,10 @@
   padding: 40px 65px;
   max-width: 620px;
   width: 70%;
+
+  @media (max-width: 620px) {
+    padding: 40px 40px;
+  }
 }
 
 .faq__header {
@@ -47,7 +55,7 @@
 .faq__content {
   font-family: Montserrat;
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none solid rgb(0, 0, 0);
   line-height: 28px;
 
@@ -62,7 +70,7 @@
 
   p,
   ol {
-    padding-bottom: 35px;
+    margin-top: 0;
   }
 }
 

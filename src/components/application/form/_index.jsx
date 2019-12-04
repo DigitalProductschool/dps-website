@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import { getFirebase } from '../../../firebase/firebase';
 
 const _5MB = 5242880; // in bytes;
 
@@ -9,12 +10,22 @@ const initialState = {
   email: '', // string
   batch: '', // number as string, for instance '8', '9', etc
   source: '', // string, free text
-  userType: '', // string, 'student' | 'graduate' , etc...
   consent: '', // string, 'true' | 'false'
   scholarship: '', // string, 'true' | 'false'
   cv: null,
   coverLetter: null,
 };
+
+function sendConversionAnalytics(track) {
+  if (window.ga) {
+    window.ga('create', 'UA-83926449-2', 'auto');
+    window.ga('send', 'event', 'application', 'sent', [track]);
+  }
+
+  if (window.fbq) {
+    window.fbq('track', 'Purchase', { track, value: 1, currency: 'USD' });
+  }
+}
 
 function reducer(state, action) {
   switch (action.type) {
@@ -66,17 +77,42 @@ function reducer(state, action) {
         consent: String(action.payload.value),
       };
 
-    case 'CHANGE_USER_TYPE':
-      return {
-        ...state,
-        userType: action.payload.value,
-      };
-
     default:
       return {
         ...state,
       };
   }
+}
+
+function getBatchDate(batchDate) {
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  let date = batchDate.toDate();
+  let newdate =
+    monthNames[date.getMonth()] +
+    ' ' +
+    date.getDate() +
+    ', ' +
+    date.getFullYear();
+  return newdate;
+}
+
+function isApplicationPhaseOpen(applicationStartDate) {
+  const today = new Date();
+  let givenDate = applicationStartDate.toDate();
+  return givenDate <= today;
 }
 
 export default function Form(props) {
@@ -97,6 +133,8 @@ export default function Form(props) {
   const clickFileInputCoverLetter = useCallback(() => {
     fileInputCoverLetterRef.current.click();
   }, []);
+
+  const [batchDetails, setBatchDetails] = useState([]);
 
   const submitForm = e => {
     e.preventDefault();
@@ -138,6 +176,7 @@ export default function Form(props) {
         setResponse('failure');
       })
       .finally(() => {
+        sendConversionAnalytics(props.track);
         formWrapperRef.current.scrollIntoView();
         setIsInflightRequest(false);
       });
@@ -148,28 +187,134 @@ export default function Form(props) {
     setCoverLetterUploadError(null);
   }, [state]);
 
+  useEffect(() => {
+    const firebaseApp = import('@firebase/app');
+    const firebaseDatabase = import('@firebase/firestore');
+    var currentTime = new Date();
+    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
+      const database = getFirebase(firebase).firestore();
+      database
+        .collection('batch-details')
+        .where('appEndDate', '>', currentTime)
+        .orderBy('appEndDate')
+        .get()
+        .then(snapshot => {
+          let batchDetails = [];
+          snapshot.forEach(
+            doc =>
+              (batchDetails = [
+                ...batchDetails,
+                {
+                  batchID: doc.id,
+                  batchNumber: doc.data().batch,
+                  startDate: doc.data().startDate,
+                  endDate: doc.data().endDate,
+                  appStartDate: doc.data().appStartDate,
+                  appEndDate: doc.data().appEndDate,
+                },
+              ])
+          );
+
+          setBatchDetails(batchDetails);
+        });
+    });
+  }, []);
+
+  let displayCurrentBatches = batchDetails.map(function(batch) {
+    if (isApplicationPhaseOpen(batch.appStartDate)) {
+      return (
+        <option value={batch.batchNumber} key={batch.batchID}>
+          {`Batch #${batch.batchNumber}: ${getBatchDate(
+            batch.startDate
+          )} to ${getBatchDate(batch.endDate)} `}
+        </option>
+      );
+    }
+
+    return '';
+  });
+
   return (
     <div className="u-content-wrapper">
       <div className="application-form-content">
         <div className="application-form-plate" ref={formWrapperRef}>
           {response === 'success' && (
             <>
-              <h4>
-                <span role="img" aria-label="party emojis">
-                  🎉🦄🎉
-                </span>
-                &nbsp;Thank you for applying at Digital Product School&nbsp;
-                <span role="img" aria-label="party emojis">
-                  🎉🦄🎉
-                </span>
-              </h4>
-              <p>
-                You'll receive a confirmation email and we'll get in touch soon.
-                We give our best, but it may take up to 8 weeks.
+              <p style={{ textAlign: 'left' }}>Dear {state.name}, </p>
+              <p style={{ textAlign: 'left' }}>
+                thank you for your interest in being part of Digital Product
+                School.
               </p>
+              <p style={{ textAlign: 'left' }}>
+                You applied for batch #{state.batch}. We give our best to
+                evaluate your application, but since a lot of great people want
+                to be part of DPS it may take some time. <br />
+              </p>
+              <p style={{ textAlign: 'left' }}>
+                We will start to evaluate the applications about 12 weeks before
+                the next batch starts and get in touch with you. If you and your
+                skills fit our needs we will invite you to an interview. At the
+                latest four weeks before the batch starts you will know if you
+                are in the next round.
+              </p>
+
+              <p style={{ textAlign: 'left' }}>
+                If you have any questions, just email us at{' '}
+                <a
+                  href="mailto:hello@dpschool.io"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>hello@dpschool.io. </span>
+                </a>{' '}
+                Or stay in touch with us on social media:{' '}
+                <a
+                  href="https://www.instagram.com/digitalproductschool/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Instagram, </span>
+                </a>{' '}
+                <a
+                  href="https://www.facebook.com/digitalproductschool/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Facebook, </span>
+                </a>{' '}
+                <a
+                  href="https://www.linkedin.com/company/digital-product-school/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>LinkedIn, </span>
+                </a>{' '}
+                <a
+                  href="https://twitter.com/dpschool_io"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Twitter, </span>
+                </a>{' '}
+                <a
+                  href="https://leaks.digitalproductschool.io/"
+                  className="u-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span style={{ zIndex: 1 }}>Medium. </span>
+                </a>{' '}
+              </p>
+              <p style={{ textAlign: 'left' }}>Your DPS-Team</p>
+
               <Link
                 to="/"
-                className="u-button"
+                className="u-button u-button--reversed"
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
@@ -234,32 +379,6 @@ export default function Form(props) {
                 />
               </div>
               <div className="application-form__field-wrapper">
-                <label className="application-form__label" htmlFor="userType">
-                  Which of the following describes you best?
-                </label>
-                <select
-                  className="application-form__input"
-                  id="userType"
-                  name="userType"
-                  value={state.userType}
-                  onChange={e =>
-                    dispatch({
-                      type: 'CHANGE_USER_TYPE',
-                      payload: { value: e.target.value },
-                    })
-                  }
-                  required
-                >
-                  <option value="">Please select</option>
-                  <option value="student">Student</option>
-                  <option value="graduate">Graduate</option>
-                  <option value="phd">PhD</option>
-                  <option value="employee">Employee</option>
-                  <option value="entrepreneur">Entrepreneur</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
                   htmlFor="batch-selection"
@@ -279,8 +398,10 @@ export default function Form(props) {
                   }
                   required
                 >
-                  <option value="">Please select</option>
-                  <option value="9">Batch #9 (Jan 7 to March 27, 2020)</option>
+                  <option value="" key="-1">
+                    Please select
+                  </option>
+                  {displayCurrentBatches}
                 </select>
               </div>
               <div className="application-form__field-wrapper">
@@ -329,6 +450,58 @@ export default function Form(props) {
                   onClick={clickFileInputCV}
                 >
                   <img src="/assets/icons/upload-icon.svg" alt="upload CV" />
+                </button>
+              </div>
+              <div className="application-form__field-wrapper">
+                <label
+                  className="application-form__label"
+                  htmlFor="file-upload-cover-letter"
+                  style={coverLetterUploadError ? { color: 'red' } : {}}
+                >
+                  Describe your motivation in a cover letter (Optional, PDF, max
+                  5MB)
+                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
+                </label>
+                <input
+                  className="application-form__input"
+                  type="file"
+                  accept="application/pdf"
+                  ref={fileInputCoverLetterRef}
+                  tabIndex={-1}
+                  id="file-upload-cover-letter"
+                  onChange={e => {
+                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
+                      return setCoverLetterUploadError(
+                        'File size should be less than 5MB'
+                      );
+                    }
+
+                    dispatch({
+                      type: 'CHANGE_COVER_LETTER',
+                      payload: { file: e.target.files[0] },
+                    });
+                  }}
+                />
+                <div
+                  className="application-form__input application_form__file-input-overlay"
+                  onClick={clickFileInputCoverLetter}
+                >
+                  {state.coverLetter && (
+                    <span style={{ fontSize: '14px' }}>
+                      {state.coverLetter.name}
+                    </span>
+                  )}
+                  {!state.coverLetter && <>Choose file </>}
+                </div>
+                <button
+                  type="button"
+                  className={`application-form__file-button application-form__file-button--${props.track}`}
+                  onClick={clickFileInputCoverLetter}
+                >
+                  <img
+                    src="/assets/icons/upload-icon.svg"
+                    alt="upload cover letter"
+                  />
                 </button>
               </div>
               <div className="application-form__field-wrapper">
@@ -390,7 +563,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label htmlFor="heard-from" className="application-form__label">
-                  Where did you learn about Digital Product School?
+                  How did you learn about Digital Product School?
                 </label>
                 <textarea
                   id="heard-from"
@@ -406,58 +579,7 @@ export default function Form(props) {
                   required
                 />
               </div>
-              <div className="application-form__field-wrapper">
-                <label
-                  className="application-form__label"
-                  htmlFor="file-upload-cover-letter"
-                  style={coverLetterUploadError ? { color: 'red' } : {}}
-                >
-                  Describe your motivation in a cover letter (Optional, PDF, max
-                  5MB)
-                  {coverLetterUploadError && <p> {coverLetterUploadError} </p>}
-                </label>
-                <input
-                  className="application-form__input"
-                  type="file"
-                  accept="application/pdf"
-                  ref={fileInputCoverLetterRef}
-                  tabIndex={-1}
-                  id="file-upload-cover-letter"
-                  onChange={e => {
-                    if (e.target.files[0] && e.target.files[0].size > _5MB) {
-                      return setCoverLetterUploadError(
-                        'File size should be less than 5MB'
-                      );
-                    }
 
-                    dispatch({
-                      type: 'CHANGE_COVER_LETTER',
-                      payload: { file: e.target.files[0] },
-                    });
-                  }}
-                />
-                <div
-                  className="application-form__input application_form__file-input-overlay"
-                  onClick={clickFileInputCoverLetter}
-                >
-                  {state.coverLetter && (
-                    <span style={{ fontSize: '14px' }}>
-                      {state.coverLetter.name}
-                    </span>
-                  )}
-                  {!state.coverLetter && <>Choose file </>}
-                </div>
-                <button
-                  type="button"
-                  className={`application-form__file-button application-form__file-button--${props.track}`}
-                  onClick={clickFileInputCoverLetter}
-                >
-                  <img
-                    src="/assets/icons/upload-icon.svg"
-                    alt="upload cover letter"
-                  />
-                </button>
-              </div>
               <div
                 className="application-form__field-wrapper"
                 style={{ zIndex: 1 }}
