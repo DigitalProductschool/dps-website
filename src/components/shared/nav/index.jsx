@@ -202,6 +202,11 @@ function Nav(props) {
       >
         <Link to="/">
           <img alt="nav-logo" className="nav__logo" src={`${logo}`} />
+          <img
+            alt="nav-logo"
+            className="nav__logo__utum"
+            src="/assets/shared/utumLogo.png"
+          />
         </Link>
         <ul className="nav__menu">
           <li className="nav__menu__item">
@@ -246,6 +251,11 @@ function Nav(props) {
       >
         <Link to="/">
           <img alt="nav-logo" className="nav__logo" src={`${logo}`} />
+          <img
+            alt="nav-logo"
+            className="nav__logo__utum"
+            src="/assets/shared/utumLogo.png"
+          />
         </Link>
         {!isOpen && (
           <span
