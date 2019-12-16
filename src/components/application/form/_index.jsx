@@ -563,7 +563,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label htmlFor="heard-from" className="application-form__label">
-                  How did you learn about Digital Product School?
+                  How did you learn about Digital Product School? (Optional)
                 </label>
                 <textarea
                   id="heard-from"
@@ -576,7 +576,6 @@ export default function Form(props) {
                       payload: { value: e.target.value },
                     })
                   }
-                  required
                 />
               </div>
 
