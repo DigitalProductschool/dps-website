@@ -124,7 +124,7 @@ h3.u-title {
     position: absolute;
     left: 0;
     right: 0;
-    height: 11px;
+    height: 14px;
     top: 2px;
     color: var(--picton-blue);
     content: '';
@@ -136,7 +136,7 @@ h3.u-title {
     position: absolute;
     left: 0;
     right: 0;
-    height: 11px;
+    height: 14px;
     top: 2px;
     background-color: rgba(3, 184, 229);
     color: var(--picton-blue);
@@ -149,7 +149,7 @@ h3.u-title {
     left: 0;
     right: 0;
     height: 5px;
-    bottom: 1px;
+    bottom: -3px;
     background-color: rgba(3, 184, 229);
     color: var(--picton-blue);
     content: '';
