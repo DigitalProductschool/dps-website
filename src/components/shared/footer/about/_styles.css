@@ -23,11 +23,11 @@
 }
 
 .about__logo__utum {
-  height: 53px;
+  height: 64px;
   margin-left: 12px;
 
   @media (max-width: 950px) {
-    height: 32px;
+    height: 37px;
   }
 }
 
