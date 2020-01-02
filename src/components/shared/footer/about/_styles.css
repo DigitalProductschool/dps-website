@@ -22,6 +22,15 @@
   }
 }
 
+.about__logo__utum {
+  height: 64px;
+  margin-left: 12px;
+
+  @media (max-width: 950px) {
+    height: 37px;
+  }
+}
+
 .about__runby {
   height: 54px;
   margin-top: 50px;
