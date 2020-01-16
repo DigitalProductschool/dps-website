@@ -4,7 +4,6 @@ import * as React from 'react';
 const partnerLogos = [
   'audi.jpg',
   'bmw.jpg',
-  'daimler.jpg',
   'fb.jpg',
   'nokia.jpg',
   'sap.jpg',
