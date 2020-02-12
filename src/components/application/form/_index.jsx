@@ -341,6 +341,33 @@ export default function Form(props) {
               onSubmit={submitForm}
             >
               <div className="application-form__field-wrapper">
+                <label
+                  className="application-form__label"
+                  htmlFor="batch-selection"
+                >
+                  Which batch do you want to be part of?
+                </label>
+                <select
+                  className="application-form__input"
+                  id="batch-selection"
+                  name="batch"
+                  value={state.batch}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_BATCH',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                >
+                  <option value="" key="-1">
+                    Please select
+                  </option>
+                  {displayCurrentBatches}
+                </select>
+              </div>
+
+              <div className="application-form__field-wrapper">
                 <label className="application-form__label" htmlFor="name">
                   What is your name?
                 </label>
@@ -378,32 +405,7 @@ export default function Form(props) {
                   required
                 />
               </div>
-              <div className="application-form__field-wrapper">
-                <label
-                  className="application-form__label"
-                  htmlFor="batch-selection"
-                >
-                  Which batch do you want to be part of?
-                </label>
-                <select
-                  className="application-form__input"
-                  id="batch-selection"
-                  name="batch"
-                  value={state.batch}
-                  onChange={e =>
-                    dispatch({
-                      type: 'CHANGE_BATCH',
-                      payload: { value: e.target.value },
-                    })
-                  }
-                  required
-                >
-                  <option value="" key="-1">
-                    Please select
-                  </option>
-                  {displayCurrentBatches}
-                </select>
-              </div>
+
               <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
@@ -563,7 +565,7 @@ export default function Form(props) {
               </div>
               <div className="application-form__field-wrapper">
                 <label htmlFor="heard-from" className="application-form__label">
-                  How did you learn about Digital Product School?
+                  How did you learn about Digital Product School? (Optional)
                 </label>
                 <textarea
                   id="heard-from"
@@ -576,7 +578,6 @@ export default function Form(props) {
                       payload: { value: e.target.value },
                     })
                   }
-                  required
                 />
               </div>
 

@@ -59,8 +59,8 @@
   }
 }
 
-.header-content__buttons__apply {
-  width: 214px;
+.header-content__call-to-action {
+  width: 325px;
   height: 42px;
   text-decoration: none;
   display: flex;
@@ -69,30 +69,5 @@
 
   @media (max-width: 750px) {
     width: 100%;
-  }
-}
-
-.header-content__buttons__more {
-  background-color: transparent;
-  border: 4px solid white;
-  color: white;
-  cursor: pointer;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s, border 0.3s;
-  width: 329px;
-  text-transform: uppercase;
-
-  @media (max-width: 750px) {
-    width: 100%;
-  }
-
-  &:hover {
-    background-color: black;
-    color: var(--picton-blue);
-    border: 4px solid black;
   }
 }

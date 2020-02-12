@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 class ExperienceConcentrate extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class ExperienceConcentrate extends React.Component {
               </p>
               <a
                 className="experience-concentrate__content__apply-button u-button u-button__apply"
-                href="https://digitalproductschool.io/apply/"
+                href="/apply"
               >
                 Apply Now
               </a>
@@ -41,8 +41,8 @@ class ExperienceConcentrate extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default ExperienceConcentrate
+export default ExperienceConcentrate;
