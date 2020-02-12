@@ -24,7 +24,7 @@ class LegalContent extends React.Component {
 
           <h3>REPRESENTED BY</h3>
           <p>
-            Dr. Helmut Schönenberger (CEO)
+            Prof. Dr. Helmut Schönenberger (CEO)
             <br />
             Claudia Frey
             <br />
@@ -52,7 +52,7 @@ class LegalContent extends React.Component {
             <br />
             Register Court: Amtsgericht München
             <br />
-            Register Number: HRB 184711
+            Register Number: HRB 141703
           </p>
 
           <h3>VAT NUMBER</h3>
