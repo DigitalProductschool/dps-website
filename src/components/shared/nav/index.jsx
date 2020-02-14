@@ -138,12 +138,31 @@ function Nav(props) {
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
   const [isMouseOverMenu, setIsMouseOverMenu] = useState(false);
   const [isCookieWarning, setIsCookieWarning] = useState(false);
+  const [navBackground, setNavBackground] = useState(false);
+  const [position, setPosition] = useState(false);
+  const [top, setTop] = useState(false);
+  const [height, setHeight] = useState(false);
 
   const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
   const addClass = props.addClass || '';
   const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
   const inverted = addClass === 'nav--black';
+
+  useEffect(() => {
+    window.addEventListener('scroll', event => {
+      var scrolled = document.scrollingElement.scrollTop;
+      const navBackground = scrolled < 1 ? 'transparent' : 'var(--deep-cove)';
+      const position = scrolled < 1 ? '' : 'fixed';
+      const top = scrolled < 1 ? '' : '0em';
+      const height = scrolled < 1 ? 'var(--nav-height-desktop)' : '70px';
+
+      setNavBackground(navBackground);
+      setPosition(position);
+      setTop(top);
+      setHeight(height);
+    });
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -195,7 +214,15 @@ function Nav(props) {
   );
 
   return (
-    <nav className={`nav ${addClass}`}>
+    <nav
+      className={`nav ${addClass}`}
+      style={{
+        backgroundColor: `${navBackground}`,
+        position: `${position}`,
+        top: `${top}`,
+        height: `${height}`,
+      }}
+    >
       <Seo />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}

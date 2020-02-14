@@ -19,6 +19,7 @@
   justify-content: center;
   padding-top: 5%;
   padding-bottom: 12%;
+  margin-top: 131px;
 }
 
 .apply-now__content__title {
@@ -42,7 +43,7 @@
   margin-top: -8%;
   display: flex;
   box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 0;
   height: 300px;
   padding: 5%;
 

@@ -20,7 +20,7 @@ class BatchDetails extends React.Component<BatchDetailsProps> {
       'Mar',
       'Apr',
       'May',
-      'Jun',
+      'June',
       'Jul',
       'Aug',
       'Sep',

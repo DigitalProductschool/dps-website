@@ -91,7 +91,7 @@ function getBatchDate(batchDate) {
     'Mar',
     'Apr',
     'May',
-    'Jun',
+    'June',
     'Jul',
     'Aug',
     'Sep',

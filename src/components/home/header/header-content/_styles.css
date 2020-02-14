@@ -26,6 +26,9 @@
     margin-bottom: -15px;
   }
 }
+.header-content__title--first {
+  margin-top: 131px;
+}
 
 .header-content__description {
   color: var(--gallery);

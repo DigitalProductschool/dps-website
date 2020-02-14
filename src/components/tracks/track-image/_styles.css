@@ -3,23 +3,26 @@
 }
 
 .tracks__track-image-content__image {
-
   &--se {
     background-image: url('/assets/tracks/se/dps-software-engineer.jpg');
+    z-index: 0;
   }
 
   &--pm {
     background-image: url('/assets/tracks/pm/dps-product-manager.jpg');
+    z-index: 0;
   }
 
   &--ixd {
     background-image: url('/assets/tracks/ixd/dps-interaction-designer.jpg');
+    z-index: 0;
   }
 
   &--ai {
     background-image: url('/assets/tracks/ai/dps-artificial-intelligence.jpg');
+    z-index: 0;
   }
-  
+
   background-size: cover;
   background-position: center center;
   height: 0;

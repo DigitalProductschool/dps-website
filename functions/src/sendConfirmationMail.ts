@@ -41,16 +41,22 @@ exports.handler = async function(snap: any) {
     from: `${APP_NAME} <application@dpschool.io>`,
     to: `${email}`,
     subject: `Thanks for applying at ${APP_NAME}!`,
-    text: `Hi ${name},
+    html: `Hi ${name},
 
 We received your application. Thanks for wanting to be a part of the Digital Product School! 
 
 We will start to evaluate the applications about 12 weeks before the next batch starts and get in touch with you. If you and your skills fit our needs we will invite you to an interview. Latest four weeks before the batch starts you will know if you are in the next round. 
 
-If you have any questions, just email us at hello@dpschool.io 
+If you have any questions, just email us at hello@dpschool.io and stay in touch with us on social media:
 
-Cheers, 
-Sascha 
+<a href="https://www.instagram.com/digitalproductschool/"># Instagram </a>
+<a href="https://www.facebook.com/digitalproductschool/"># Facebook </a>
+<a href="https://www.linkedin.com/company/digital-product-school/"># LinkedIn </a>
+<a href="https://twitter.com/dpschool_io"># Twitter </a>
+<a href="https://twitter.com/dpschool_io"># Medium  </a>
+
+Cheers,
+Michael 
 
 Digital Product School is a project by 
 UnternehmerTUM GmbH 

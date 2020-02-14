@@ -42,7 +42,7 @@
 
 .link_row__social__media {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
   justify-items: right;
   grid-gap: 30px;
 
@@ -57,8 +57,13 @@
   height: 40px;
   fill: #ffffff;
   float: right;
+  text-align: right;
 }
 
 .link_row__social__media__link svg:hover g path {
+  fill: rgb(3, 184, 229) !important;
+}
+
+.link_row__social__media__link svg:hover {
   fill: rgb(3, 184, 229) !important;
 }

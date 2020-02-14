@@ -15,7 +15,7 @@ class FAQ extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Nav addClass={'u-bg-transparent'} logo={logo} />
+        <Nav logo={logo} />
         <section className="faq__navheader u-content-wrapper">
           <div className="u-content">
             <div className="faq__navheader-overlay"></div>

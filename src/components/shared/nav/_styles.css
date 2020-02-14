@@ -5,6 +5,9 @@
   justify-items: center;
   height: var(--nav-height-desktop);
   width: 100%;
+  /*position: fixed;
+  top: 0em; */
+  z-index: 1;
 
   @media (max-width: 750px) {
     height: var(--nav-height-mobile);

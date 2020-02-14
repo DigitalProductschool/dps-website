@@ -41,34 +41,17 @@ class ToolPartner extends React.Component {
             <h3 className="u-title">ENABLERS & SUPPORTERS</h3>
             <div className="enabler-partner-wrapper">
               <div className="enabler-partner">
-                <h6>a program by </h6>
-                <img
-                  alt="UnternehmerTUM"
-                  title="Digital Product School is a program by UnternehmerTUM"
-                  className="tool-partner__content__logo"
-                  src="/assets/home/tool-partner/UnternehmerTUM.png"
-                />
-              </div>
-              <div className="enabler-partner">
                 <h6>part of the </h6>
                 <div>
                   <img
                     alt="Mobility Hub"
                     title="Digital Product School is part of the Digital Hub Mobility by UnternehmerTUM"
                     className="tool-partner__content__logo"
-                    src="/assets/home/tool-partner/mobilityhub.png"
+                    src="/assets/home/tool-partner/newmobilityhub.png"
                   />
                 </div>
               </div>
-              <div className="enabler-partner">
-                <h6>part of the </h6>
-                <img
-                  alt="Mobility Hub Ecosystem"
-                  title="Digital Product School is part of the Digital Hub Initiative of the Federal Ministry for Economic Affairs and Energy"
-                  className="tool-partner__content__logo"
-                  src="/assets/home/tool-partner/mobilityhubecosystem.png"
-                />
-              </div>
+
               <div className="enabler-partner">
                 <h6>in cooperation with </h6>
                 <img

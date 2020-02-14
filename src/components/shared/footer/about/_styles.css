@@ -15,9 +15,10 @@
 .about__logo {
   height: 49px;
   margin-top: 60px;
+  height: 100px;
 
   @media (max-width: 950px) {
-    height: 31px;
+    height: 100px;
     margin-top: 28px;
   }
 }

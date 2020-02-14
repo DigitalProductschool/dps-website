@@ -10,7 +10,7 @@ function getAppDate(appDate: any) {
     'Mar',
     'Apr',
     'May',
-    'Jun',
+    'June',
     'Jul',
     'Aug',
     'Sep',

@@ -19,6 +19,7 @@
   justify-content: center;
   padding-top: 5%;
   padding-bottom: 12%;
+  margin-top: 131px;
 }
 
 .team__header-content__title {
@@ -74,6 +75,7 @@
   z-index: 1;
   height: 300px;
   padding: 5%;
+  z-index: 0;
 
   @media (max-width: 950px) {
     height: inherit;
@@ -103,6 +105,7 @@
   flex-direction: column;
   margin: 20px;
   width: 300px;
+  z-index: 0;
 
   & .team__card__profile-image {
     cursor: pointer;

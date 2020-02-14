@@ -7,12 +7,7 @@ class About extends React.Component {
         <img
           alt="about-logo"
           className="about__logo"
-          src="/assets/shared/dps-logo-white.svg"
-        />
-        <img
-          alt="nav-logo"
-          className="about__logo__utum"
-          src="/assets/shared/UTUM_Logolabel_white_150dpi.png"
+          src="/assets/shared/new-logo-white.png"
         />
         <div className="about__address">
           <a

@@ -9,6 +9,7 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: calc(32px + 3vw);
+  margin-top: 191px;
 
   @media (min-width: 1280px) {
     font-size: 72px;
