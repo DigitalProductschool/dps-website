@@ -6,26 +6,22 @@ import TrackImage from '../../../components/tracks/track-image/_index';
 import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
 import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
 import Expectations from '../../../components/tracks/expectations/_index';
+import Tracks from '../../../components/tracks/apply/_index';
 import {
   generalTrackInfo,
   or,
   header,
   expectations,
   whatyoulearn,
-} from '../../../components/apply/data/pm';
-import Tracks from '../../../components/tracks/apply/_index';
+} from '../../../components/apply/data/ai';
 import CookieWarning from '../../../components/shared/cookie-warning';
-
-/**
- * SHOULD BE DELETED LATER: ALL 4 FOLDERS (AI; ID; SE; PM). Leave just the index.tsx in the next commit.
- */
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.
  */
-class TrackPM extends React.Component {
+class TrackAI extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -34,21 +30,21 @@ class TrackPM extends React.Component {
           track={generalTrackInfo}
           data={header}
           logo="/assets/tracks/dps-logo-white.png"
-          className="track-pm__header"
+          className="track-ai__header"
         />
-        <TrackImage track="pm" />
+        <TrackImage track="ai" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-pm__wyl" data={whatyoulearn} />
+        <WhatYouLearn className="track-ai__wyl" data={whatyoulearn} />
         <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
           track={generalTrackInfo.track}
         />
-        <Footer addSectionClass="u-section-margin-top" />
+        <Footer addSectionClass="u-section-margin-top " />
       </React.Fragment>
     );
   }
 }
 
-export default TrackPM;
+export default TrackAI;

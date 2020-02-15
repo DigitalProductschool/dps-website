@@ -13,8 +13,12 @@ import {
   expectations,
   whatyoulearn,
 } from '../../../components/apply/data/se';
-import Apply from '../../../components/tracks/apply/_index';
+import Tracks from '../../../components/tracks/apply/_index';
 import CookieWarning from '../../../components/shared/cookie-warning';
+
+/**
+ * SHOULD BE DELETED LATER: ALL 4 FOLDERS (AI; ID; SE; PM). Leave just the index.tsx in the next commit.
+ */
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
@@ -36,7 +40,7 @@ class TrackSE extends React.Component {
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-se__wyl" data={whatyoulearn} />
-        <Apply
+        <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
           track={generalTrackInfo.track}

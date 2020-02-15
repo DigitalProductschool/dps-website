@@ -9,7 +9,7 @@ interface IHeaderProps {
 }
 
 // this component will be thrown away, so quick & dirty
-class Apply extends React.Component<IHeaderProps, {}> {
+class Tracks extends React.Component<IHeaderProps, {}> {
   render() {
     const { name, url, track } = this.props;
 
@@ -52,4 +52,4 @@ class Apply extends React.Component<IHeaderProps, {}> {
   }
 }
 
-export default Apply;
+export default Tracks;

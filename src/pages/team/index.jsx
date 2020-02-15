@@ -97,31 +97,34 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     ],
   },
   {
-    name: 'Sascha Rehbock',
-    title: 'Managing Director Digital Product School',
-    shortDescription: `I help the core team to do an amazing job.`,
-    description: `Over the last 15 years I successfully developed and launched digital products in various sectors including automotive, health care, manufacturing, and finance. As a coach, I also helped teams have more impact and discover better ways of working together – from product teams to CEOs. Today, I run DPS as its managing director.<br>
-At DPS,  I focus on helping the core team to do an amazing job as well as managing partner relations. Let me know if I can connect you with the UnternehmerTUM network to enhance your experience at DPS further. `,
-    pic: 'sascha.jpg',
+    name: 'Bela Sinoimeri',
+    title: 'Software Engineer',
+    shortDescription: `I advise and support the teams with my technical expertise.`,
+    description: `I recently graduated from my master’s studies in Electronics Engineering. During my studies I worked as an IT specialist at the Ministry of Finance and Economy. Before joining DPS as a core team member, I was a participant at batch #8 in the Software Engineering track. Me and my team developed a web application for warehouse maintenance and failure prediction.
+     </br>
+    At DPS, I can help teams with various software and hardware engineering tasks. As I was previously a participant at DPS, I can support the teams with my own learnings during my DPS journey and help them to improve their teamwork.`,
+    pic: 'bela.jpg',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/sascharehbock/',
+        link: 'https://www.linkedin.com/in/bsinoimeri/',
         alt: 'linkedin',
       },
     ],
   },
   {
-    name: 'Bhawna Saini',
-    title: 'Junior Software Engineer',
-    shortDescription: `I help the teams to find a way through any software engineering queries.`,
-    description: `I am in the final semester of my master’s studies in computer science at TUM. Before joining DPS, I worked as a frontend web developer at TUM and HomeFox Gmbh where I gained some skills in ReactJS and VueJS. Later, I was a participant in the software engineering track in batch 5 at DPS where my team developed a chrome plugin for personalized Google searches using VueJS.<br>
-At DPS, I assist with various software engineering tasks. I learn by trying and failing and then making it work: that's how I help the teams, too. As I was a participant at DPS, I support the teams through my own learnings during my DPS journey. Moreover, if participants have any software engineering queries, I help them find a way through. `,
-    pic: 'bhawna.jpg',
+    name: 'Marcus Paeschke',
+    title: 'Head of Interaction Design',
+    shortDescription: `I bring compelling interactions to life through advanced prototyping. `,
+    description: `After studying Interface Design in Potsdam, teaching data visualisation and starting the company behind Incom.org I've spent the last 5 years before joining DPS working at IDEO.
+    Apart from a broad experience from design research to strategic design, my particular focus is on prototyping and testing digital products.
+    </br>
+    I help the teams with building a strong value proposition through user research, designing compelling interactions and bringing them to life through advanced prototyping.`,
+    pic: 'marcus.jpg',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/bhawnasaini03',
+        link: 'https://www.linkedin.com/in/marcus-paeschke-66305a55/',
         alt: 'linkedin',
       },
     ],
@@ -312,9 +315,17 @@ function Team() {
         <div className="team__image-content u-content">
           <div className="team__image-content__image">
             <p>
-              The Digital Product School (DPS) core team consists of an autonomous group of experts in roles typically found in a successful startup: product management, design, software engineering, artificial intelligence (AI), agile coaching, business development, and marketing and operations.
+              The Digital Product School (DPS) core team consists of an
+              autonomous group of experts in roles typically found in a
+              successful startup: product management, design, software
+              engineering, artificial intelligence (AI), agile coaching,
+              business development, and marketing and operations.
               <br />
-              Before joining DPS they gained long-term experience in digital product development while working at tech-startups, corporates and in academia. Together they support, guide and help the participants to develop a user-centric digital product in an agile team.
+              Before joining DPS they gained long-term experience in digital
+              product development while working at tech-startups, corporates and
+              in academia. Together they support, guide and help the
+              participants to develop a user-centric digital product in an agile
+              team.
             </p>
           </div>
         </div>

@@ -10,15 +10,15 @@ handlers:
     secure: always
     expiration: 10m
 
-  - url: /tracks/([^.]+)/
-    static_files: public/apply/\1/index.html
-    upload: public/apply/([^.]+)/index.html
+  - url: /apply/([^.]+)/
+    static_files: public/tracks/\1/index.html
+    upload: public/tracks/([^.]+)/index.html
     secure: always
     expiration: 10m
 
-  - url: /tracks/([^.]+)
-    static_files: public/apply/\1/index.html
-    upload: public/apply/([^.]+)/index.html
+  - url: /apply/([^.]+)
+    static_files: public/tracks/\1/index.html
+    upload: public/tracks/([^.]+)/index.html
     secure: always
     expiration: 10m
 

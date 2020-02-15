@@ -17,10 +17,6 @@ import Tracks from '../../../components/tracks/apply/_index';
 import CookieWarning from '../../../components/shared/cookie-warning';
 
 /**
- * SHOULD BE DELETED LATER: ALL 4 FOLDERS (AI; ID; SE; PM). Leave just the index.tsx in the next commit.
- */
-
-/**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.

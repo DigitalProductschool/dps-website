@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Nav from '../../shared/nav/index';
-import Seo from '../../../components/seo';
+import Seo from '../../seo';
 
 interface IHeaderProps {
   logo?: string;

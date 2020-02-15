@@ -84,17 +84,17 @@ const MenuDropdownForDesktop = props => {
       onMouseLeave={props.handleOnMouseLeave}
       onMouseEnter={props.handleOnMouseEnter}
     >
-      <Link to="/apply/software-engineering" style={styles}>
+      <Link to="/tracks/software-engineering" style={styles}>
         Software Engineer
       </Link>
-      <Link to="/apply/artificial-intelligence" style={styles}>
+      <Link to="/tracks/artificial-intelligence" style={styles}>
         AI Engineer
       </Link>
-      <Link to="/apply/interaction-design" style={styles}>
+      <Link to="/tracks/interaction-design" style={styles}>
         Interaction Designer
       </Link>
       <Link
-        to="/apply/product-management"
+        to="/tracks/product-management"
         style={{ ...styles, paddingBottom: '0' }}
       >
         Product Manager
@@ -114,17 +114,17 @@ const MenuDropDownForMobile = props => {
   return (
     <div className="tracks-menu tracks-menu--mobile">
       <h4> Tracks </h4>
-      <Link to="/apply/software-engineering" style={styles}>
+      <Link to="/tracks/software-engineering" style={styles}>
         Software Engineer
       </Link>
-      <Link to="/apply/artificial-intelligence" style={styles}>
+      <Link to="/tracks/artificial-intelligence" style={styles}>
         AI Engineer
       </Link>
-      <Link to="/apply/interaction-design" style={styles}>
+      <Link to="/tracks/interaction-design" style={styles}>
         Interaction Designer
       </Link>
       <Link
-        to="/apply/product-management"
+        to="/tracks/product-management"
         style={{ ...styles, paddingBottom: '0' }}
       >
         Product Manager

@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Digital Product School Core Team and Participants",
   "dependencies": {
+    "@firebase/app": "^0.4.15",
+    "@firebase/firestore": "^1.4.11",
     "@types/react": "^16.8.18",
     "autoprefixer": "^9.5.1",
     "cssnano": "^4.1.10",
@@ -27,10 +29,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-inlinesvg": "^0.8.4",
-    "react-router-dom": "^4.3.1",
-    "@firebase/app": "^0.4.15",
-    "@firebase/firestore": "^1.4.11"
+    "react-inlinesvg": "^0.8.4"
   },
   "keywords": [
     "gatsby"
