@@ -1,24 +1,20 @@
 import * as React from 'react';
 
-import Header from '../../../components/tracks/header/_index';
-import Footer from '../../../components/shared/footer/index';
-import TrackImage from '../../../components/tracks/track-image/_index';
-import WhatYouLearn from '../../../components/tracks/what-you-learn/_index';
-import OfferResponsibilities from '../../../components/tracks/offer-responsibilities/_index';
-import Expectations from '../../../components/tracks/expectations/_index';
+import Header from '../../components/tracks/header/_index';
+import Footer from '../../components/shared/footer/index';
+import TrackImage from '../../components/tracks/track-image/_index';
+import WhatYouLearn from '../../components/tracks/what-you-learn/_index';
+import OfferResponsibilities from '../../components/tracks/offer-responsibilities/_index';
+import Expectations from '../../components/tracks/expectations/_index';
 import {
   generalTrackInfo,
   or,
   header,
   expectations,
   whatyoulearn,
-} from '../../../components/apply/data/pm';
-import Tracks from '../../../components/tracks/apply/_index';
-import CookieWarning from '../../../components/shared/cookie-warning';
-
-/**
- * SHOULD BE DELETED LATER: ALL 4 FOLDERS (AI; ID; SE; PM). Leave just the index.tsx in the next commit.
- */
+} from '../../components/apply/data/pm';
+import Tracks from '../../components/tracks/apply/_index';
+import CookieWarning from '../../components/shared/cookie-warning';
 
 /**
  * The Apply Now button is not abstracted away in its own component, because it's temporary there

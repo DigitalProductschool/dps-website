@@ -25,7 +25,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
           {this.renderDescription()}
           <ul className="pick-track__tracks">
             <li key="pm" className="pick-track__track">
-              <a href="/tracks/product-management/">
+              <a href="/pm/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--pm" />
 
@@ -38,13 +38,13 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <a className="u-link" href="/tracks/product-management/">
+                <a className="u-link" href="/pm/">
                   <span> Product Managers </span>
                 </a>{' '}
                 are responsible for defining a product that solves discovered
                 problems and driving decision-making. They also take care of the
                 team's resources. <br />
-                <a className="u-link" href="/tracks/product-management/">
+                <a className="u-link" href="/pm/">
                   <span>More ...</span>
                 </a>{' '}
               </p>
@@ -59,7 +59,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
             </li>
 
             <li key="ixd" className="pick-track__track">
-              <a href="/tracks/interaction-design/">
+              <a href="/ixd/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--ixd" />
 
@@ -72,14 +72,14 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <a className="u-link" href="/tracks/interaction-design/">
+                <a className="u-link" href="/ixd/">
                   <span>Interaction Designers</span>
                 </a>{' '}
                 understand how users and technology communicate with each other
                 and focus on designing engaging interfaces with well thought out
                 behaviours.
                 <br />
-                <a className="u-link" href="/tracks/interaction-design/">
+                <a className="u-link" href="/ixd/">
                   <span>More ...</span>
                 </a>{' '}
               </p>
@@ -93,7 +93,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </a>
             </li>
             <li key="se" className="pick-track__track">
-              <a href="/tracks/software-engineering/">
+              <a href="/se/">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--se" />
 
@@ -106,14 +106,14 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <a className="u-link" href="/tracks/software-engineering/">
+                <a className="u-link" href="/se/">
                   <span>Software Engineers</span>
                 </a>{' '}
                 bring ideas to life through coding. They engineer systems that
                 are scalable, secure and usable. They do amazing things that
                 look like magic to others.
                 <br />
-                <a className="u-link" href="/tracks/software-engineering/">
+                <a className="u-link" href="/se/">
                   <span>More ...</span>
                 </a>{' '}
               </p>
@@ -127,7 +127,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
               </a>
             </li>
             <li key="ai" className="pick-track__track">
-              <a href="/tracks/artificial-intelligence/">
+              <a href="/ai">
                 <div className="pick-tracks__track__image-wrapper">
                   <div className="pick-tracks__track__image pick-tracks__track__image--ai" />
 
@@ -140,14 +140,14 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 </div>
               </a>
               <p className="pick-track__track__description">
-                <a className="u-link" href="/tracks/artificial-intelligence/">
+                <a className="u-link" href="/ai">
                   <span>Artificial Intelligence Engineers</span>
                 </a>{' '}
                 use algorithms to identify data patterns, build self-learning
                 systems, automate repetitive work and take a product to a whole
                 new level.
                 <br />
-                <a className="u-link" href="/tracks/artificial-intelligence/">
+                <a className="u-link" href="/ai">
                   <span>More ...</span>
                 </a>{' '}
               </p>

@@ -10,19 +10,19 @@ class DiverseTeams extends React.Component {
           <p className="diverse-teams__content__description">
             We believe that great products are created by diverse and
             crossfunctional teams. At the Digital Product School,{' '}
-            <Link to="/tracks/interaction-design" className="u-link">
+            <Link to="/ixd" className="u-link">
               <span> interaction designers </span>
             </Link>
             ,{' '}
-            <Link to="/tracks/software-engineering" className="u-link">
+            <Link to="/se" className="u-link">
               <span> software engineers </span>
             </Link>
             ,{' '}
-            <Link to="/tracks/artificial-intelligence" className="u-link">
+            <Link to="/ai" className="u-link">
               <span> artificial intelligence engineers </span>
             </Link>
             , and
-            <Link to="/tracks/product-management" className="u-link">
+            <Link to="/pm" className="u-link">
               <span> product managers </span>
             </Link>{' '}
             from all over the world are working together across disciplines to
