@@ -116,7 +116,10 @@
     text-decoration: none;
 
     &:hover {
-      color: var(--picton-blue) !important;
+      /* color: var(--picton-blue) !important; */
+      /* color: white !important; */
+      font-size: 120% !important;
+      font-weight: 900 !important;
     }
   }
 

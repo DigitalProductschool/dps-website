@@ -149,7 +149,7 @@ function Nav(props) {
       const navBackground = scrolled < 1 ? 'transparent' : 'var(--deep-cove)';
       const position = scrolled < 1 ? '' : 'fixed';
       const top = scrolled < 1 ? '' : '0em';
-      const height = scrolled < 1 ? 'var(--nav-height-desktop)' : '70px';
+      const height = scrolled < 1 ? 'var(--nav-height-desktop)' : '80px';
 
       setNavBackground(navBackground);
       setPosition(position);
