@@ -242,7 +242,7 @@ export default function Form(props) {
             <>
               <p style={{ textAlign: 'left' }}>Dear {state.name}, </p>
               <p style={{ textAlign: 'left' }}>
-                thank you for your interest in being part of Digital Product
+                Thank you for your interest in being part of Digital Product
                 School.
               </p>
               <p style={{ textAlign: 'left' }}>
@@ -460,6 +460,18 @@ export default function Form(props) {
                   htmlFor="file-upload-cover-letter"
                   style={coverLetterUploadError ? { color: 'red' } : {}}
                 >
+                  {props.track === 'ixd' && (
+                    <span style={{ fontWeight: 'normal', fontSize: '16px' }}>
+                      Please make sure that either your CV or your cover letter
+                      contains <b>examples of your work</b> in the field of
+                      interaction design, UI/UX design or user-centered design.
+                      You can either provide a link or add additional pages in
+                      your PDF.
+                      <br />
+                      <br />
+                      <br />
+                    </span>
+                  )}
                   Describe your motivation in a cover letter (Optional, PDF, max
                   5MB)
                   {coverLetterUploadError && <p> {coverLetterUploadError} </p>}

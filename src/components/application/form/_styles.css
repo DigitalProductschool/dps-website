@@ -14,8 +14,8 @@ textarea {
   max-width: 780px;
 
   @media (max-width: 620px) {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -260,5 +260,9 @@ select.application-form__input {
 }
 
 .consent-description {
+  font-weight: 400;
+}
+
+.notbold {
   font-weight: 400;
 }
