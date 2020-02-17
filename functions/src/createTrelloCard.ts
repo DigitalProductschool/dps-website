@@ -38,7 +38,7 @@ function buildTrelloDescription(snap: ISnap) {
 
   return `
   ### Name 
-
+  ${snap.data().name}
   ### Gender
   ${snap.data().userType}
   ### Applies for
@@ -46,7 +46,7 @@ function buildTrelloDescription(snap: ISnap) {
   ### Preferred batch
   ${snap.data().batch}
   ### Email
-
+  ${snap.data().email}
   ### Do you apply for the scholarship of €750.-/month?
   ${needsScholarship}
   ### How did you learn about Digital Product School?
