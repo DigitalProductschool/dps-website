@@ -64,7 +64,7 @@ async function attachCvAndCoverLetter(
   }
 }
 
-function getCardId(track: string) {
+function getListId(track: string) {
   if (!isProduction) {
     // https://trello.com/b/RNVAchTV/api-test-board
     return '5d809d6c15e98c4c83075183';
@@ -89,7 +89,7 @@ exports.handler = async function(snap: ISnap, database: any) {
     name: snap.data().name,
     desc: buildTrelloDescription(snap),
     pos: 'top',
-    idList: getCardId(snap.data().track),
+    idList: getListId(snap.data().track),
     due: null,
     dueComplete: false,
     idMembers: [],
