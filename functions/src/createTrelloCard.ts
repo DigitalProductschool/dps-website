@@ -37,14 +37,16 @@ function buildTrelloDescription(snap: ISnap) {
     : 'No, DPS can use it to support others';
 
   return `
-  ### ${snap.data()!.name}
+  ### Name 
+
+  ### Gender
   ${snap.data().userType}
   ### Applies for
   ${snap.data().track}
   ### Preferred batch
   ${snap.data().batch}
   ### Email
-  ${snap.data().email}
+
   ### Do you apply for the scholarship of €750.-/month?
   ${needsScholarship}
   ### How did you learn about Digital Product School?
@@ -113,7 +115,7 @@ exports.handler = async function(snap: ISnap, database: any) {
   const labelIdForBatch = getLabelIdForBatch(snap.data().batch);
 
   const data = {
-    name: snap.data().name,
+    name: snap.data().email,
     desc: buildTrelloDescription(snap),
     pos: 'top',
     idList: getListId(snap.data().track),
