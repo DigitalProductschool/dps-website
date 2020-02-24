@@ -35,10 +35,12 @@
   font-weight: 900;
   z-index: 1;
   margin-top: 191px;
+  margin-bottom: 191px;
 
   @media (max-width: 620px) {
     padding-top: 75px;
     font-size: 42px;
     margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
