@@ -5,18 +5,18 @@ const GenderApi = require('gender-api.com-client');
 
 function getAppDate(appDate: any) {
   const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
+    'January',
+    'February',
+    'March',
+    'April',
     'May',
     'June',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
   const newdate =
     appDate.getDate() +

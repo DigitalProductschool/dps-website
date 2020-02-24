@@ -15,18 +15,18 @@ class BatchDetails extends React.Component<BatchDetailsProps> {
     let shortMonthName = new Intl.DateTimeFormat('en-US', { month: 'short' })
       .format;
     const monthNames = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
+      'January',
+      'February',
+      'March',
+      'April',
       'May',
       'June',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
     ];
     let date = batchDate.toDate();
     let newdate =

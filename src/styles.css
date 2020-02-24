@@ -45,10 +45,10 @@
 @import url('./components/application/header/_styles.css');
 @import url('./components/application/form/_styles.css');
 
-@import url('./pages/pm/_styles.css');
-@import url('./pages/ixd/_styles.css');
-@import url('./pages/se/_styles.css');
-@import url('./pages/ai/_styles.css');
+@import url('./pages/tracks/product-management/_styles.css');
+@import url('./pages/tracks/interaction-design/_styles.css');
+@import url('./pages//tracks/software-engineering/_styles.css');
+@import url('./pages/tracks/artificial-intelligence/_styles.css');
 @import url('./pages/application/software-engineering/_styles.css');
 @import url('./pages/faq/_styles.css');
 @import url('./pages/team/_styles.css');

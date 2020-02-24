@@ -68,7 +68,7 @@ My role is to organize all events at DPS and throw the best batch closing partie
   },
   {
     name: 'Lorenz Hutterer',
-    title: 'Business Developer',
+    title: 'Product Lead Digital Business Lab',
     shortDescription: `I help the teams to make money through their ideas.`,
     description: `I studied management and technology at Technische Universität München and hustled in startups throughout different industries.<br>
 I take care of the business side of projects at DPS and support our teams in how to make money through their ideas. `,
@@ -146,7 +146,7 @@ I help the teams with all marketing-related questions: finding test persons, cre
   },
   {
     name: 'Annina Schaupp',
-    title: 'Agile Coach',
+    title: 'Lead Team Development Coach',
     shortDescription: `I equip the teams with agile methods and bring them into a meaningful workflow.`,
     description: `I am an experienced scrum master. I have a background in business administration from HTWG Constance, Germany.  Early in my career I realised that agile and scrum methods play a crucial role in product development. This is when I decided to pursue this topic and become a scrum master.<br>
 As an agile coach at DPS, I support teams to overcome obstacles through practicing smooth communication. I equip them to learn agile methods and also show them how to apply these methods so they can adopt a meaningful workflow when building a product.  `,
@@ -161,7 +161,7 @@ As an agile coach at DPS, I support teams to overcome obstacles through practici
   },
   {
     name: 'Michael Stockerl',
-    title: 'Head of Software Engineering',
+    title: 'Director Digital Product School',
     shortDescription: `I help teams to identify and overcome technical risks in their solutions.`,
     description: `I studied computer science at LMU in Munich and, alongside this, worked part time in early-stage startups. During this time, I figured out that I enjoy working on data engineering topics. After graduation, I joined gutefrage.net and we established the use of machine learning in Germany's biggest Q&A platform.<br>
 At DPS, I help teams to identify technical risks in their solution and enable them to come up with a feasible first version of their product. During code reviews, I give feedback on code-related issues. In addition to this, I help groups to improve their overall teamwork. `,
