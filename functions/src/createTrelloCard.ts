@@ -115,7 +115,7 @@ exports.handler = async function(snap: ISnap, database: any) {
   const labelIdForBatch = getLabelIdForBatch(snap.data().batch);
 
   const data = {
-    name: snap.data().email,
+    name: snap.data().name,
     desc: buildTrelloDescription(snap),
     pos: 'top',
     idList: getListId(snap.data().track),
