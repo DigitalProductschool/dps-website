@@ -23,13 +23,13 @@ handlers:
     expiration: 1s
 
   - url: /pm
-    static_files: public/tracks/\1/index.html
+    static_files: public/tracks/product-management/index.html
     upload: public/tracks/product-management/index.html
     secure: always
     expiration: 1s
 
   - url: /pm/
-    static_files: public/tracks/\1/index.html
+    static_files: public/tracks/product-management/index.html
     upload: public/tracks/product-management/index.html
     secure: always
     expiration: 1s
