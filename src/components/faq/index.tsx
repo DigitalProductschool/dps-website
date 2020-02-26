@@ -171,6 +171,14 @@ class Faq extends React.Component {
             </p>
           </Accordion>
 
+          <Accordion title="Which time zone counts for the application deadline?">
+            <p>
+              The application deadline is on the date stated at 12 pm Central
+              European Time (CET / UTC+1) during winter time and Central
+              European Summer Time (CEST / UTC+2) during summer time.
+            </p>
+          </Accordion>
+
           <Accordion
             title="What happens to the products I develop together in a team during the
             program?"
@@ -204,14 +212,13 @@ class Faq extends React.Component {
           </Accordion>
 
           <p style={{ fontSize: '20px', fontWeight: 900, marginTop: '30px' }}>
-
             {`Feel free to reach out to us in case of further queries `}
             <a
               href="mailto:hello@dpschool.io"
               className="u-link"
               style={{ fontWeight: 900, cursor: 'pointer' }}
             >
-              <span style={{ zIndex: 1, fontSize: '20px' }}>
+              <span style={{ zIndex: 0, fontSize: '20px' }}>
                 hello@dpschool.io
               </span>
             </a>

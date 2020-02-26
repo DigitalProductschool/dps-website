@@ -15,7 +15,7 @@
 }
 
 .nav.nav--black {
-  background-color: white;
+  background-color: white !important;
   border-bottom: solid black 2px;
   z-index: 2;
 }
@@ -144,14 +144,14 @@
 }
 
 .nav__logo {
-  height: 49px;
+  height: 80px;
 
   @media (max-width: 750px) {
-    height: 25px;
+    height: 60px;
   }
 
   @media (max-width: 360px) {
-    height: 20px;
+    height: 40px;
   }
 
   @media (max-width: 310px) {

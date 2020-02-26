@@ -4,7 +4,7 @@ import Nav from '../../components/shared/nav/index';
 import Faq from '../../components/faq/index';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
-import logo from '../../../static/assets/shared/dps-logo-double-white.png';
+import logo from '../../../static/assets/shared/dps-logo-double-white.svg';
 
 class FAQ extends React.Component {
   componentDidMount() {

@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/program/header/header.jpg');
+  background-image: url('/assets/program/header/programheader.jpg');
   background-size: cover;
+  background-position: center;
+  z-index: 1;
 
   @media (max-width: 620px) {
     margin-top: -12px;

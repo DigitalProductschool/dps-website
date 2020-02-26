@@ -240,7 +240,9 @@ export default function Form(props) {
         <div className="application-form-plate" ref={formWrapperRef}>
           {response === 'success' && (
             <>
-              <p style={{ textAlign: 'left' }}>Dear {state.name}, </p>
+              <p style={{ textAlign: 'left', marginTop: '70px' }}>
+                Dear {state.name},{' '}
+              </p>
               <p style={{ textAlign: 'left' }}>
                 Thank you for your interest in being part of Digital Product
                 School.
@@ -266,7 +268,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>hello@dpschool.io. </span>
+                  <span style={{ zIndex: 0 }}>hello@dpschool.io. </span>
                 </a>{' '}
                 Or stay in touch with us on social media:{' '}
                 <a
@@ -275,7 +277,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>Instagram, </span>
+                  <span style={{ zIndex: 0 }}>Instagram, </span>
                 </a>{' '}
                 <a
                   href="https://www.facebook.com/digitalproductschool/"
@@ -283,7 +285,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>Facebook, </span>
+                  <span style={{ zIndex: 0 }}>Facebook, </span>
                 </a>{' '}
                 <a
                   href="https://www.linkedin.com/company/digital-product-school/"
@@ -291,7 +293,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>LinkedIn, </span>
+                  <span style={{ zIndex: 0 }}>LinkedIn, </span>
                 </a>{' '}
                 <a
                   href="https://twitter.com/dpschool_io"
@@ -299,7 +301,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>Twitter, </span>
+                  <span style={{ zIndex: 0 }}>Twitter, </span>
                 </a>{' '}
                 <a
                   href="https://leaks.digitalproductschool.io/"
@@ -307,7 +309,7 @@ export default function Form(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span style={{ zIndex: 1 }}>Medium. </span>
+                  <span style={{ zIndex: 0 }}>Medium. </span>
                 </a>{' '}
               </p>
               <p style={{ textAlign: 'left' }}>Your DPS-Team</p>
@@ -595,7 +597,7 @@ export default function Form(props) {
 
               <div
                 className="application-form__field-wrapper"
-                style={{ zIndex: 1 }}
+                style={{ zIndex: 0 }}
               >
                 <label
                   className="application-form__label"

@@ -29,7 +29,7 @@ class TrackSE extends React.Component {
         <Header
           track={generalTrackInfo}
           data={header}
-          logo="/assets/tracks/dps-logo-white.png"
+          logo="/assets/tracks/dps-logo-white.svg"
           className="track-se__header"
         />
         <TrackImage track="se" />

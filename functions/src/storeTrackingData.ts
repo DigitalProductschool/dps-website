@@ -4,26 +4,23 @@ const functions = require('firebase-functions');
 const GenderApi = require('gender-api.com-client');
 
 function getAppDate(appDate: any) {
-  const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
+  var day = (appDate.getDate() < 10 ? '0' : '') + appDate.getDate();
+  var month =
+    (appDate.getMonth() + 1 < 10 ? '0' : '') + (appDate.getMonth() + 1);
+
   const newdate =
-    appDate.getDate() +
+    appDate.getFullYear() +
     '-' +
-    monthNames[appDate.getMonth()] +
+    month +
     '-' +
-    appDate.getFullYear();
+    day +
+    ' ' +
+    appDate.getHours() +
+    ':' +
+    appDate.getMinutes() +
+    ':' +
+    appDate.getSeconds();
+
   return newdate;
 }
 
