@@ -22,54 +22,6 @@ handlers:
     secure: always
     expiration: 10m
 
-  - url: /pm
-    static_files: public/tracks/product-management/index.html
-    upload: public/tracks/product-management/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /pm/
-    static_files: public/tracks/product-management/index.html
-    upload: public/tracks/product-management/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /se
-    static_files: public/tracks/software-engineering/index.html
-    upload: public/tracks/software-engineering/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /se/
-    static_files: public/tracks/software-engineering/index.html
-    upload: public/tracks/software-engineering/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /ixd
-    static_files: public/tracks/interaction-design/index.html
-    upload: public/tracks/interaction-design/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /ixd/
-    static_files: public/tracks/interaction-design/index.html
-    upload: public/tracks/interaction-design/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /ai
-    static_files: public/tracks/artificial-intelligence/index.html
-    upload: public/tracks/artificial-intelligence/index.html
-    secure: always
-    expiration: 10m
-
-  - url: /ai/
-    static_files: public/tracks/artificial-intelligence/index.html
-    upload: public/tracks/artificial-intelligence/index.html
-    secure: always
-    expiration: 10m
-
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
   # matches path/ to path/index.html
