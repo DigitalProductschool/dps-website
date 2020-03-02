@@ -10,18 +10,22 @@ const trelloToken = functions.config().trello.token;
 trello.setApiKey(trelloKey);
 trello.setOauthToken(trelloToken);
 
-const BATCH_TO_LABEL_ID: Map<string, string> = prepareBatchToLabelIdMap();
+const BATCH_TO_LABEL_ID: Map<
+  string,
+  Map<string, string>
+> = prepareBatchToLabelIdMap();
 
 function prepareBatchToLabelIdMap() {
-  let tmp = new Map();
-
-  tmp.set('10', '5e4a8e67f8a655639d64b317');
-  tmp.set('11', '5e4a8e8e8387dd6dfcb7ad73');
-  tmp.set('12', '5d42ff6faf988c41f21f3203');
-  tmp.set('13', '5e4a8e7eead52b0487b5a660');
-  tmp.set('14', '5d42ff6faf988c41f21f3200');
-  tmp.set('15', '5d42ff6faf988c41f21f3201');
-
+  let tmp = new Map<string, Map<string, string>>();
+  // Create Map from Json file
+  let se = new Map(Object.entries(functions.config().labels.se));
+  tmp.set('se', se);
+  let pm = new Map(Object.entries(functions.config().labels.pm));
+  tmp.set('pm', pm);
+  let ai = new Map(Object.entries(functions.config().labels.ai));
+  tmp.set('ai', ai);
+  let ixd = new Map(Object.entries(functions.config().labels.ixd));
+  tmp.set('ixd', ixd);
   return tmp;
 }
 
@@ -37,9 +41,7 @@ function buildTrelloDescription(snap: ISnap) {
     : 'No, DPS can use it to support others';
 
   return `
-  ### Name 
-  ${snap.data().name}
-  ### Gender
+  ### ${snap.data()!.name}
   ${snap.data().userType}
   ### Applies for
   ${snap.data().track}
@@ -101,18 +103,27 @@ function getListId(track: string) {
   return '5c3d919c8ec21c71f7b34e94';
 }
 
-function getLabelIdForBatch(batch: string): Array<string> {
-  let labelId = BATCH_TO_LABEL_ID.get(batch);
-
-  if (labelId !== undefined) {
-    return [labelId];
-  } else {
-    return [];
+function getLabelIdForTrack(track: string, batch: string): Array<string> {
+  let labelMap = BATCH_TO_LABEL_ID.get(track);
+  {
+    if (labelMap !== undefined) {
+      let labelId = labelMap.get('batch' + batch);
+      if (labelId !== undefined) {
+        return [labelId];
+      } else {
+        return [];
+      }
+    } else {
+      return [];
+    }
   }
 }
 
 exports.handler = async function(snap: ISnap, database: any) {
-  const labelIdForBatch = getLabelIdForBatch(snap.data().batch);
+  const labelIdForBatch = getLabelIdForTrack(
+    snap.data().track,
+    snap.data().batch
+  );
 
   const data = {
     name: snap.data().name,
