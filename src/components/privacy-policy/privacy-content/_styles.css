@@ -16,6 +16,14 @@
   text-decoration: none solid rgb(0, 0, 0);
   line-height: 28px;
 
+  @media (max-width: 400px) {
+    text-align: center;
+    width: 90%;
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
   h1 {
     font-size: 36px;
     font-weight: 800;
@@ -40,4 +48,7 @@
 .u-link span {
   font-size: 15px;
   line-height: 17px;
+  @media (max-width: 400px) {
+    font-size: 3vw;
+  }
 }

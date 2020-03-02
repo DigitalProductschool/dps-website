@@ -743,7 +743,7 @@ class PrivacyContent extends React.Component {
               href="http://www.youronlinechoices.com/de/praferenzmanagement/"
               className="u-link"
             >
-              <span>
+              <span style={{ fontSize: '2.5vw' }}>
                 http://www.youronlinechoices.com/de/praferenzmanagement/
               </span>
             </a>
@@ -886,7 +886,8 @@ class PrivacyContent extends React.Component {
             <a href="https://developer.linkedin.com/plugins" className="u-link">
               <span>https://developer.linkedin.com/plugins</span>
             </a>
-            . During the course of this technical procedure, LinkedIn gains
+            . <br />
+            During the course of this technical procedure, LinkedIn gains
             knowledge of what specific sub-page of our website was visited by
             the data subject.
             <br />
@@ -1147,33 +1148,7 @@ class PrivacyContent extends React.Component {
           <a href="https://trello.com/privacy" className="u-link">
             <span>https://trello.com/privacy</span>
           </a>{' '}
-          abgerufen werden.
           <br />
-          <h3>23. TYPEFORM</h3>
-          <p>
-            For the retrieval of our applications we use a tool of the spanish
-            company Typeform (
-            <a href="https://www.typeform.com" className="u-link">
-              <span>www.typeform.com</span>
-            </a>
-            ). We gather the following data:
-          </p>
-          <p>
-            Name
-            <br />
-            Email address
-          </p>
-          <p>
-            This service is provided by  Typeform S.L., Carrer Doctor Trueta,
-            113-119, Planta 1, 08005 Barcelona.
-          </p>
-          <p>
-            Detailed information about the collecting, processing and usage of
-            the data by Typeform you can find here:
-            <a href="https://admin.typeform.com/to/dwk6gt" className="u-link">
-              <span>https://admin.typeform.com/to/dwk6gt</span>
-            </a>
-          </p>
         </div>
       </section>
     );

@@ -17,6 +17,9 @@
   text-align: center;
   padding-right: 20%;
   height: 87px;
+  @media (max-width: 762px) {
+    padding-right: 0%;
+  }
 }
 
 .pillars__list__item__icon-wrapper__img {

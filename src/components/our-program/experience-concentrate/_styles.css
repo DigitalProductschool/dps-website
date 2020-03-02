@@ -5,7 +5,7 @@
   background-color: var(--deep-cove);
 
   @media (max-width: 620px) {
-    margin-top: 300px;
+    margin-top: 100px;
     padding-bottom: 60px;
   }
 }
