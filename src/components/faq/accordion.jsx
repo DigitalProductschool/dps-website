@@ -21,7 +21,6 @@ export default function Accordion(props) {
         <h2
           style={{
             flexGrow: '1',
-            textTransform: 'uppercase',
             fontSize: '20px',
           }}
         >

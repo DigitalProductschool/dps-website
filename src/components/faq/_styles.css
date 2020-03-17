@@ -32,7 +32,6 @@
 .faq__header-title {
   margin: 0;
   font-size: 80px;
-  text-transform: uppercase;
   font-weight: 800;
 
   @media (max-width: 620px) {

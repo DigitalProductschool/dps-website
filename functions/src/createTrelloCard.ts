@@ -99,8 +99,13 @@ function getListId(track: string) {
     return '5ca222869b5ec76a56a9fb6a';
   }
 
-  // https://trello.com/b/f9Dgk2Vj/engineering-applications
-  return '5c3d919c8ec21c71f7b34e94';
+  if (track === 'ai') {
+    // https://trello.com/b/f9Dgk2Vj/engineering-applications
+    return '5c3d919c8ec21c71f7b34e94';
+  }
+
+  // https://trello.com/b/2WturNOV/se-track-applications
+  return '5e67a1e39932a47debdf9bf7';
 }
 
 function getLabelIdForTrack(track: string, batch: string): Array<string> {
