@@ -15,7 +15,7 @@
   border-radius: 10px;
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 600px;
   background-color: white;
   color: black;
   display: flex;
@@ -30,7 +30,7 @@
   }
 
   & button {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 150px;
     text-transform: lowercase;
     height: 38px;

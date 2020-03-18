@@ -266,6 +266,11 @@ function Team() {
             >
               x
             </span>
+            <img
+              src={`/assets/team/${members[openId].pic}`}
+              className="team__card team__card__profile-image"
+              alt={members[openId].name}
+            ></img>
             <h4
               style={{
                 marginBottom: '0',
