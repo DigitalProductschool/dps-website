@@ -743,7 +743,7 @@ class PrivacyContent extends React.Component {
               href="http://www.youronlinechoices.com/de/praferenzmanagement/"
               className="u-link"
             >
-              <span style={{ fontSize: '2.5vw' }}>
+              <span className="praferenzmanagement">
                 http://www.youronlinechoices.com/de/praferenzmanagement/
               </span>
             </a>
