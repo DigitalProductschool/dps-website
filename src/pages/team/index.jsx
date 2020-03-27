@@ -25,8 +25,8 @@ I advise and coach our teams in exploring AI applications, their feasibility and
     name: 'Samreen Azam',
     title: 'Digital Marketing & Community Manager',
     shortDescription: `I take care of the social media channels of DPS and the alumni network. `,
-    description: `I previously founded startup projects and worked as a business development analyst at Rocket Internet GmbH. Later, I pursued my Masters degree in integrated design from the Anhalt University of Applied Sciences in Germany. I am also an alumna from DPS batch five in 2018. There, as a product manager together with my team, I built an application to assist parents travelling with their children.<br>
-I am responsible for the marketing for Digital Product School: taking ongoing care of the social media channels and reaching out to potential and deserving talents from all around the world who might benefit from the opportunity of attending DPS. I also build the DPS network and sustain the community of alumni. `,
+    description: `I  am responsible for marketing at Digital Product School (DPS) by creating content for our ongoing social media channels and also reaching out to talents from all around the world who might benefit with opportunity like DPS. <br>
+    Apart from that I am currently working on a creative solution to sustain the DPS alumni community. I was part of DPS Batch#5 as a participant myself where I got to work with a team of engineers and built a great product solution. I pursued my Masters degree in Integrated Design from Anhalt University of Applied Sciences, Germany. Also I have previously founded startup projects and worked at Rocket Internet GmbH.`,
     pic: 'samreen.jpg',
     social: [
       {
@@ -268,7 +268,7 @@ function Team() {
             </span>
             <img
               src={`/assets/team/${members[openId].pic}`}
-              className="team__card team__card__profile-image"
+              className="team__modal__profile-image"
               alt={members[openId].name}
             ></img>
             <h4

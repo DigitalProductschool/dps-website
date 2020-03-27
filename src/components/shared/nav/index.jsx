@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import Seo from '../../seo';
 import { useState, useEffect } from 'react';
+import Corona from '../../corona';
 
 // can't use as <img /> because we want to be able to dynamically change
 // the fill color
@@ -224,6 +225,7 @@ function Nav(props) {
       }}
     >
       <Seo />
+      <Corona />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}
       >
