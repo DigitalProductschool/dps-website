@@ -1,8 +1,8 @@
-import React from 'react'
-
-import Footer from '../components/shared/footer/index'
-import Nav from '../components/shared/nav/index'
-import CookieWarning from '../components/shared/cookie-warning'
+import React from 'react';
+import Footer from '../components/shared/footer/index';
+import Nav from '../components/shared/nav/index';
+import CookieWarning from '../components/shared/cookie-warning';
+import '../styles.css';
 
 const NotFoundPage = () => (
   <React.Fragment>
@@ -11,8 +11,13 @@ const NotFoundPage = () => (
     <section className="not-found u-content-wrapper">
       <div className="not-found__content u-content">
         <h2 className="u-title">Sad times :(</h2>
+        <img
+          alt="Annina Sad"
+          className="not-found_content-image"
+          src="/assets/Annina_sad.jpg"
+        />
         <div className="apply-now__content__description">
-          <p className="u-text">
+          <p className="u-text not-found__content-text">
             We are not able to find the page you are looking for.
           </p>
         </div>
@@ -20,6 +25,6 @@ const NotFoundPage = () => (
     </section>
     <Footer />
   </React.Fragment>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

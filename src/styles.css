@@ -87,3 +87,12 @@ h3 {
     font-size: 52px;
   }
 }
+
+.not-found_content-image {
+  width: 80%;
+}
+
+.not-found__content-text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
