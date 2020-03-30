@@ -57,7 +57,7 @@ const Corona = () => {
         >
           In times like these nobody can predict the future. How long will we
           have to work from home? When will we be allowed to travel again?
-          Difficult Questions ... But two things we know for sure: <br /> <br />
+          Difficult questions ... But two things we know for sure: <br /> <br />
           <b>
             DPS will go on! <br />
             We will start the next batches as planned.
