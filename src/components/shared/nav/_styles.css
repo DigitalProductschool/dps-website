@@ -144,10 +144,11 @@
 }
 
 .nav__logo {
-  height: 80px;
-
+  height: 50px;
+  /*  height: 80px;*/
   @media (max-width: 750px) {
-    height: 60px;
+    height: 30px;
+    /*  height: 60px;*/
   }
 
   @media (max-width: 360px) {
