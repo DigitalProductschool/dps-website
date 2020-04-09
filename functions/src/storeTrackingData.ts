@@ -4,8 +4,8 @@ const functions = require('firebase-functions');
 const GenderApi = require('gender-api.com-client');
 
 function getAppDate(appDate: any) {
-  var day = (appDate.getDate() < 10 ? '0' : '') + appDate.getDate();
-  var month =
+  const day = (appDate.getDate() < 10 ? '0' : '') + appDate.getDate();
+  const month =
     (appDate.getMonth() + 1 < 10 ? '0' : '') + (appDate.getMonth() + 1);
 
   const newdate =
