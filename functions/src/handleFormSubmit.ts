@@ -120,7 +120,7 @@ exports.handler = function(request: any, response: any, database: any) {
       response
         .status(500)
         .send(
-          'We are sorry. Something went wrong. Please contact hello@dpschool.io'
+          'We are sorry, Something went wrong. Please contact hello@dpschool.io'
         );
     }
   });
