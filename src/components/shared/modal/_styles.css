@@ -15,7 +15,6 @@
   border-radius: 10px;
   position: relative;
   width: 500px;
-  height: 500px;
   background-color: white;
   color: black;
   display: flex;
@@ -24,13 +23,20 @@
   padding: 40px;
   flex-direction: column;
 
+  & .corona {
+    height: 500px;
+  }
+
+  & .team__modal__profile-image {
+    width: 500px;
+  }
+
   & p {
     font-size: 14px;
     line-height: 23px;
   }
 
   & button {
-    margin-top: 30px;
     width: 150px;
     text-transform: lowercase;
     height: 38px;
@@ -46,6 +52,11 @@
     height: 60%;
     padding: 20px;
     overflow: auto;
+
+    & .team__modal__profile-image {
+      margin-top: 30px;
+      width: 100%;
+    }
 
     & button {
       margin-top: 20px;

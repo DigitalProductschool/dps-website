@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import Seo from '../../seo';
 import { useState, useEffect } from 'react';
+import Corona from '../../corona';
 
 // can't use as <img /> because we want to be able to dynamically change
 // the fill color
@@ -145,7 +146,7 @@ function Nav(props) {
 
   const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
   const addClass = props.addClass || '';
-  const logo = props.logo || '/assets/shared/dps-logo-white.svg';
+  const logo = props.logo || '/assets/dps-corona.png';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
   const inverted = addClass === 'nav--black';
 
@@ -224,6 +225,7 @@ function Nav(props) {
       }}
     >
       <Seo />
+      <Corona />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}
       >

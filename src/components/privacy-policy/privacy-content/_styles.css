@@ -46,9 +46,13 @@
 }
 
 .u-link span {
-  font-size: 15px;
   line-height: 17px;
   @media (max-width: 400px) {
     font-size: 3vw;
+  }
+}
+.praferenzmanagement {
+  @media (max-width: 400px) {
+    font-size: 2.5vw !important;
   }
 }

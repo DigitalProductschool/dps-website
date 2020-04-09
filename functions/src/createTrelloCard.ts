@@ -16,15 +16,15 @@ const BATCH_TO_LABEL_ID: Map<
 > = prepareBatchToLabelIdMap();
 
 function prepareBatchToLabelIdMap() {
-  let tmp = new Map<string, Map<string, string>>();
+  const tmp = new Map<string, Map<string, string>>();
   // Create Map from Json file
-  let se = new Map(Object.entries(functions.config().labels.se));
+  const se = new Map(Object.entries(functions.config().labels.se));
   tmp.set('se', se);
-  let pm = new Map(Object.entries(functions.config().labels.pm));
+  const pm = new Map(Object.entries(functions.config().labels.pm));
   tmp.set('pm', pm);
-  let ai = new Map(Object.entries(functions.config().labels.ai));
+  const ai = new Map(Object.entries(functions.config().labels.ai));
   tmp.set('ai', ai);
-  let ixd = new Map(Object.entries(functions.config().labels.ixd));
+  const ixd = new Map(Object.entries(functions.config().labels.ixd));
   tmp.set('ixd', ixd);
   return tmp;
 }
@@ -36,9 +36,14 @@ interface ISnap {
 }
 
 function buildTrelloDescription(snap: ISnap) {
-  const needsScholarship: String = snap.data().scholarship
-    ? 'Yes, I need the scholarship'
-    : 'No, DPS can use it to support others';
+  let needsScholarship: String = snap.data().scholarship;
+  if (needsScholarship === 'true') {
+    needsScholarship = 'Yes, I need the scholarship';
+  } else if (needsScholarship === 'false') {
+    needsScholarship = 'No, DPS can use it to support others';
+  }
+  console.log(snap.data().scholarship);
+  console.log(needsScholarship);
 
   return `
   ### ${snap.data()!.name}
@@ -69,7 +74,7 @@ async function attachCvAndCoverLetter(
       prefix: `batch-${data.batch}/applications/${data.name}/${data.email}`,
     });
 
-  for (let file of bucketFiles) {
+  for (const file of bucketFiles) {
     const formData = new FormData();
     const download = await file.download();
     formData.append('file', download[0], file.name);
@@ -109,10 +114,10 @@ function getListId(track: string) {
 }
 
 function getLabelIdForTrack(track: string, batch: string): Array<string> {
-  let labelMap = BATCH_TO_LABEL_ID.get(track);
+  const labelMap = BATCH_TO_LABEL_ID.get(track);
   {
     if (labelMap !== undefined) {
-      let labelId = labelMap.get('batch' + batch);
+      const labelId = labelMap.get('batch' + batch);
       if (labelId !== undefined) {
         return [labelId];
       } else {
