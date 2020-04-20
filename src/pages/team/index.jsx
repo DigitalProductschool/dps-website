@@ -97,6 +97,21 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     ],
   },
   {
+    name: 'Tobias Kalkowsky',
+    title: 'Agile Coach',
+    shortDescription: `I build self organized and fast learning teams.`,
+    description: ` After my diploma of media technology I spent a couple of years in the film industry before I completed a management traineeship at Hubert Burda Media and got into classical project management.<br> Meeting Marty Cagan on my way of becoming a product manager was definitely a changing point in my career.
+    My aim is to support the participants and the team members to evolve into a self organized and fast learning team.`,
+    pic: 'tobias.jpg',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://de.linkedin.com/in/tobias-kalkowsky-21b7a4163',
+        alt: 'linkedin',
+      },
+    ],
+  },
+  {
     name: 'Bela Sinoimeri',
     title: 'Software Engineer',
     shortDescription: `I advise and support the teams with my technical expertise.`,

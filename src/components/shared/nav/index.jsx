@@ -146,7 +146,7 @@ function Nav(props) {
 
   const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
   const addClass = props.addClass || '';
-  const logo = props.logo || '/assets/dps-corona.png';
+  const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
   const inverted = addClass === 'nav--black';
 
