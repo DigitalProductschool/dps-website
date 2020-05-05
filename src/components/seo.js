@@ -46,7 +46,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch11.jpg`,
+                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch11_Application-new.jpg`,
               },
               {
                 property: `og:image:type`,
