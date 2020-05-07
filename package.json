@@ -31,7 +31,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-inlinesvg": "^0.8.4"
+    "react-inlinesvg": "^0.8.4",
+    "react-router": "^5.1.2",
+    "react-router-sitemap": "^1.2.0"
   },
   "keywords": [
     "gatsby"
@@ -41,13 +43,20 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
+    "predeploy": "npm run sitemap",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "installFunctions": "cd functions && npm install"
+    "installFunctions": "cd functions && npm install",
+    "sitemap": "babel-node src/sitemap-generator.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "gatsby-disable-404": "^0.2.1",
     "gh-pages": "^2.0.1",
     "husky": "^2.3.0",
     "prettier": "^1.18.2",
