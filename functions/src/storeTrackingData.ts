@@ -41,16 +41,17 @@ exports.handler = async function(snap: any, context: any, admin: any) {
   const googleSheetID = functions.config().spreadsheet.id;
 
   const oauth2Client = new OAuth2(
-    clientID, //client Id
+    clientID, // Client ID
     clientSecret, // Client Secret
-    'https://developers.google.com/oauthplayground' // Redirect URL
+    'https://developers.google.com/oauthplayground' // Redirect Url
   );
 
   oauth2Client.setCredentials({
     refresh_token: refreshToken,
   });
 
-  // api used: https://gender-api.com/en/clients
+  // URL of the API: https://gender-api.com/en/clients
+
   const genderApiClient = new GenderApi.Client(genderApiKey);
   genderApiClient.getByFirstName(name, function(result: any) {
     admin
@@ -61,7 +62,7 @@ exports.handler = async function(snap: any, context: any, admin: any) {
       .doc(docId)
       .update({
         applicationDate: applicationTime,
-        gender: result.gender,
+        gender: result.gender, // Save the gender in firestore
       })
       .then(function() {
         console.log('Document successfully updated!');
@@ -71,7 +72,7 @@ exports.handler = async function(snap: any, context: any, admin: any) {
       });
 
     const request = {
-      spreadsheetId: googleSheetID, //test sheet
+      spreadsheetId: googleSheetID, // ID of the GoogleSheet
       range: 'A:E',
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
@@ -81,12 +82,13 @@ exports.handler = async function(snap: any, context: any, admin: any) {
       auth: oauth2Client,
     };
 
+    // In case of errors
+
     const sheets = google.sheets('v4');
     return sheets.spreadsheets.values.append(request, (err: any) => {
       if (err) {
         console.log(`The API returned an error: ${err}`);
         throw new Error(err);
-        return;
       }
       return;
     });
