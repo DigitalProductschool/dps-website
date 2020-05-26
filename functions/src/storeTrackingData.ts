@@ -61,7 +61,6 @@ exports.handler = async function(snap: any, context: any, admin: any) {
       .collection('applications')
       .doc(docId)
       .update({
-        applicationDate: applicationTime,
         gender: result.gender, // Save the gender in firestore
       })
       .then(function() {
