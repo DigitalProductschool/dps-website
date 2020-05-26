@@ -14,9 +14,9 @@ exports.handler = async function(snap: any) {
   const refreshToken = functions.config().sender.apirefreshtoken;
 
   const oauth2Client = new OAuth2(
-    clientID, //client Id
+    clientID, // Client ID
     clientSecret, // Client Secret
-    'https://developers.google.com/oauthplayground' // Redirect URL
+    'https://developers.google.com/oauthplayground' // Redirect Url
   );
 
   oauth2Client.setCredentials({
@@ -61,7 +61,7 @@ exports.handler = async function(snap: any) {
     hello@dpschool.io`,
   };
 
-  smtpTransport.sendMail(mailOptions, (error: any, info: any) => {
+  smtpTransport.sendMail(mailOptions, (error: any) => {
     if (error) {
       console.log(error.message);
       smtpTransport.close();
