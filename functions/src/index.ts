@@ -31,8 +31,6 @@ if (isProduction) {
 }
 
 admin.initializeApp({
-  // take default credentials for the firebase service account
-  // here's how credentials discovery work:
   // https://cloud.google.com/docs/authentication/production
   credential: admin.credential.applicationDefault(),
   ...config,
@@ -45,44 +43,10 @@ if (!functions.config().trello) {
     'Please configure firebase environment variables. Look at the readme for more info'
   );
 }
-
 exports.handleApplicationForm = functions
   .region(defaultRegion)
   .https.onRequest(async (req, res) => {
     return await handleFormSubmit.handler(req, res, admin);
-  });
-
-exports.createTrelloCard = functions
-  .region(defaultRegion)
-  .firestore.document(`batches/{batch}/applications/{applicationId}`)
-  // .https.onRequest(async (req, res) => {
-  .onCreate(async (snap, context) => {
-    // console.log('yo comen');
-    // const ff = {
-    //   batch: '9',
-    //   consent: 'true',
-    //   coverLetter: 'null',
-    //   cv: {
-    //     bucket: 'dps-website-staging-0.appspot.com',
-    //     name:
-    //       'batch-9/applications/eqweq/1567004235502_Final_Sprint_Review_Infos.pdf',
-    //   },
-    //   email: 'stoykov@unternehmertum.de',
-    //   name: 'Lyubomir Stoykov',
-    //   scholarship: 'true',
-    //   source: 'eqweqw',
-    //   userType: 'student',
-    // };
-    // await createTrelloCard.handler({ data: () => ff }, admin);
-    // return res.status(200).json({ status: 'OK' });
-    await createTrelloCard.handler(snap, admin);
-  });
-
-exports.sendConfirmationMail = functions
-  .region(defaultRegion)
-  .firestore.document(`batches/{batch}/applications/{applicationId}`)
-  .onCreate(async (snap, context) => {
-    return await sendConfirmationMail.handler(snap);
   });
 
 exports.storeTrackingData = functions
@@ -90,4 +54,18 @@ exports.storeTrackingData = functions
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
   .onCreate(async (snap, context) => {
     return await storeTrackingData.handler(snap, context, admin);
+  });
+
+exports.sendConfirmationMail = functions
+  .region(defaultRegion)
+  .firestore.document(`batches/{batch}/applications/{applicationId}`)
+  .onCreate(async snap => {
+    return await sendConfirmationMail.handler(snap);
+  });
+
+exports.createTrelloCard = functions
+  .region(defaultRegion)
+  .firestore.document(`batches/{batch}/applications/{applicationId}`)
+  .onUpdate(async change => {
+    await createTrelloCard.handler(change.after, admin);
   });
