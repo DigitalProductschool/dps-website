@@ -29,44 +29,42 @@ function prepareBatchToLabelIdMap() {
   return tmp;
 }
 
-interface ISnap {
+interface Ichange {
   data: () => {
     [key: string]: string;
   };
 }
 
-function buildTrelloDescription(snap: ISnap) {
-  let needsScholarship: String = snap.data().scholarship;
+function buildTrelloDescription(change: Ichange) {
+  let needsScholarship: String = change.data().scholarship;
   if (needsScholarship === 'true') {
     needsScholarship = 'Yes, I need the scholarship';
   } else if (needsScholarship === 'false') {
     needsScholarship = 'No, DPS can use it to support others';
   }
-  console.log(snap.data().scholarship);
-  console.log(needsScholarship);
-
   return `
-  ### ${snap.data()!.name}
-  ${snap.data().userType}
+  ### ${change.data()!.name}
+  ### Gender
+  ${change.data().gender}
   ### Applies for
-  ${snap.data().track}
+  ${change.data().track}
   ### Preferred batch
-  ${snap.data().batch}
+  ${change.data().batch}
   ### Email
-  ${snap.data().email}
+  ${change.data().email}
   ### Do you apply for the scholarship of €750.-/month?
   ${needsScholarship}
   ### How did you learn about Digital Product School?
-  ${snap.data().source}
+  ${change.data().source}
   `;
 }
 
 async function attachCvAndCoverLetter(
-  snap: ISnap,
+  change: Ichange,
   database: any,
   cardId: string
 ) {
-  const data = snap.data();
+  const data = change.data();
   const [bucketFiles] = await database
     .storage()
     .bucket(STORAGE_BUCKET_URL)
@@ -93,22 +91,18 @@ function getListId(track: string) {
     // https://trello.com/b/RNVAchTV/api-test-board
     return '5d809d6c15e98c4c83075183';
   }
-
   if (track === 'pm') {
     // https://trello.com/b/0XE3F4JY/pm-track-applications
     return '5c0e4ab452364949dde812b1';
   }
-
   if (track === 'ixd') {
     // https://trello.com/b/XqoNQKp7/ixd-track-applications
     return '5ca222869b5ec76a56a9fb6a';
   }
-
   if (track === 'ai') {
     // https://trello.com/b/f9Dgk2Vj/engineering-applications
     return '5c3d919c8ec21c71f7b34e94';
   }
-
   // https://trello.com/b/2WturNOV/se-track-applications
   return '5e67a1e39932a47debdf9bf7';
 }
@@ -129,17 +123,17 @@ function getLabelIdForTrack(track: string, batch: string): Array<string> {
   }
 }
 
-exports.handler = async function(snap: ISnap, database: any) {
+exports.handler = async function(change: Ichange, database: any) {
   const labelIdForBatch = getLabelIdForTrack(
-    snap.data().track,
-    snap.data().batch
+    change.data().track,
+    change.data().batch
   );
 
   const data = {
-    name: snap.data().name,
-    desc: buildTrelloDescription(snap),
+    name: change.data().name,
+    desc: buildTrelloDescription(change),
     pos: 'top',
-    idList: getListId(snap.data().track),
+    idList: getListId(change.data().track),
     due: null,
     dueComplete: false,
     idMembers: [],
@@ -151,7 +145,7 @@ exports.handler = async function(snap: ISnap, database: any) {
   let response: { id: string } = { id: '' };
   try {
     response = await trello.card.create(data);
-    await attachCvAndCoverLetter(snap, database, response.id);
+    await attachCvAndCoverLetter(change, database, response.id);
   } catch (error) {
     console.log('createTrelloCard, error...', error);
   }
