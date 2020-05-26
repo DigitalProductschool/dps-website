@@ -3,8 +3,6 @@ const cors = require('cors');
 const fs = require('fs');
 const STORAGE_BUCKET_URL = require('./constants').STORAGE_BUCKET_URL;
 
-// TODO This should be in own file, because it would be used accross
-// all functions
 const whitelist = [
   'http://localhost:8000',
   'https://dp.school',
@@ -12,6 +10,7 @@ const whitelist = [
   'https://digitalproductschool.io',
   'https://dps-website-staging-0.appspot.com',
 ];
+
 const corsOptions = {
   origin: (origin: string, callback: any) => {
     if (whitelist.includes(origin)) {
