@@ -126,6 +126,8 @@ export default function Form(props) {
   const [coverLetterUploadError, setCoverLetterUploadError] = useState(null);
   const [isInflightRequest, setIsInflightRequest] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  // This will trigger the Input File event in case you click the button
   const clickFileInputCV = useCallback(() => {
     fileInputCVRef.current.click();
   }, []);
@@ -147,10 +149,7 @@ export default function Form(props) {
 
     const formData = new FormData();
 
-    // put cv & coverLetter at the end of formdata
-    // because our middleware assumes processing of other
-    // key-values first so they can be used when creating
-    // filenames. Yep...
+    // put cv & coverLetter at the end of formdata because our middleware assumes processing of other key-values first so they can be used when creating filenames
     for (const key in state) {
       if (key !== 'cv' && key !== 'coverLetter') {
         formData.append(key, state[key]);
