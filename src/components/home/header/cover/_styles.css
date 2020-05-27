@@ -8,7 +8,7 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     display: none;
   }
 }

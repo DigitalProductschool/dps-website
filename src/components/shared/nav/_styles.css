@@ -9,7 +9,7 @@
   top: 0em; */
   z-index: 1;
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     height: var(--nav-height-mobile) !important;
   }
 }
@@ -33,7 +33,7 @@
     color: black;
   }
 
-  @media (min-width: 751px) {
+  @media (min-width: 781px) {
     &--mobile {
       display: none;
     }
@@ -43,7 +43,7 @@
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     &--desktop {
       display: none;
     }
@@ -62,7 +62,7 @@
 .nav__menu {
   padding: 0;
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     font-size: 12px;
   }
 
@@ -146,7 +146,7 @@
 .nav__logo {
   height: 80px;
 
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
     height: 60px;
   }
 

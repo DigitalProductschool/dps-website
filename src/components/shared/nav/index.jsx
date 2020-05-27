@@ -4,8 +4,7 @@ import Seo from '../../seo';
 import { useState, useEffect } from 'react';
 import Corona from '../../corona';
 
-// can't use as <img /> because we want to be able to dynamically change
-// the fill color
+// can't use as <img /> because we want to be able to dynamically change the fill color
 const HamburgerIcon = () => (
   <svg width="30px" height="30px" viewBox="0 0 60 51" version="1.1">
     <title>Group</title>
@@ -67,12 +66,18 @@ const CloseIcon = () => (
   </svg>
 );
 
+const activeStyle = {
+  fontWeight: '900',
+  textShadow: '0.5px 0',
+};
+
 const MenuDropdownForDesktop = props => {
   const styles = {
     color: props.inverted ? 'white' : 'black',
     paddingBottom: '30px',
     display: 'block',
   };
+
   let className = 'tracks-menu tracks-menu--desktop ';
 
   if (props.inverted) {
@@ -85,18 +90,31 @@ const MenuDropdownForDesktop = props => {
       onMouseLeave={props.handleOnMouseLeave}
       onMouseEnter={props.handleOnMouseEnter}
     >
-      <Link to="/tracks/software-engineering/" style={styles}>
+      <Link
+        to="/tracks/software-engineering/"
+        style={styles}
+        activeStyle={activeStyle}
+      >
         Software Engineer
       </Link>
-      <Link to="/tracks/artificial-intelligence/" style={styles}>
+      <Link
+        to="/tracks/artificial-intelligence/"
+        style={styles}
+        activeStyle={activeStyle}
+      >
         AI Engineer
       </Link>
-      <Link to="/tracks/interaction-design/" style={styles}>
+      <Link
+        to="/tracks/interaction-design/"
+        style={styles}
+        activeStyle={activeStyle}
+      >
         Interaction Designer
       </Link>
       <Link
         to="/tracks/product-management/"
         style={{ ...styles, paddingBottom: '0' }}
+        activeStyle={activeStyle}
       >
         Product Manager
       </Link>
@@ -151,7 +169,7 @@ function Nav(props) {
   const inverted = addClass === 'nav--black';
 
   useEffect(() => {
-    window.addEventListener('scroll', event => {
+    window.addEventListener('scroll', () => {
       var scrolled = document.scrollingElement.scrollTop;
       const navBackground = scrolled < 1 ? 'transparent' : 'var(--deep-cove)';
       const position = scrolled < 1 ? '' : 'fixed';
@@ -200,6 +218,7 @@ function Nav(props) {
   }
 
   // dimmed background behind the menu on mobile
+
   const Overlay = () => (
     <div
       onClick={() => setIsOpen(false)}
@@ -234,10 +253,16 @@ function Nav(props) {
         </Link>
         <ul className="nav__menu">
           <li className="nav__menu__item">
-            <Link to="/"> Home </Link>
+            <Link to="/" activeStyle={activeStyle}>
+              {' '}
+              Home{' '}
+            </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to="/our-program"> Our Program </Link>
+            <Link to="/our-program" activeStyle={activeStyle}>
+              {' '}
+              Our Program{' '}
+            </Link>
           </li>
           <li
             className="nav__menu__item"
@@ -258,13 +283,22 @@ function Nav(props) {
             )}
           </li>
           <li className="nav__menu__item">
-            <Link to="/apply"> Apply </Link>
+            <Link to="/apply" activeStyle={activeStyle}>
+              {' '}
+              Apply{' '}
+            </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to="/team"> Team </Link>
+            <Link to="/team" activeStyle={activeStyle}>
+              {' '}
+              Team{' '}
+            </Link>
           </li>
           <li className="nav__menu__item">
-            <Link to="/faq"> FAQ </Link>
+            <Link to="/faq" activeStyle={activeStyle}>
+              {' '}
+              FAQ{' '}
+            </Link>
           </li>
         </ul>
       </div>
