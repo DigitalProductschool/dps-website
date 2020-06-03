@@ -125,8 +125,11 @@ class Faq extends React.Component {
 
           <Accordion title="Do you provide accommodation?">
             <p>
-              We currently provide limited accomodation and consider
-              international applicants for it as a priority. However after you
+              We can support finding housing, but can not provide housing itself. 
+              If someone fails to find housing, we are open to remote participation 
+              as well.
+              <br />
+              However after you
               are accepted we have a slack channel where the DPS community
               shares housing offers from Munich. Also we send links to the
               channels through which you can find suitable accommodation for
