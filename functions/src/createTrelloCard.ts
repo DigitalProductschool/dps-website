@@ -44,7 +44,6 @@ function buildTrelloDescription(change: Ichange) {
   }
   return `
   ### ${change.data()!.name}
-  ### Gender
   ${change.data().gender}
   ### Applies for
   ${change.data().track}
