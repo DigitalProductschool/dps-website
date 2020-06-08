@@ -54,7 +54,7 @@ class Header extends React.Component<IHeaderProps, {}> {
             APPLY AS <br /> {data[track].title}
           </h1>
           <br />
-          <p>Currently you can apply for the following batches:</p>
+          <p>Currently, you can apply for the following batches:</p>
           <BatchDetails isCurrentOpenApplications={true} />
         </div>
       </section>
