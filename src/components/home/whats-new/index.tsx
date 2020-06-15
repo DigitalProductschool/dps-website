@@ -1,4 +1,7 @@
 import * as React from 'react';
+import Medium from './medium/index';
+import Youtube from './youtube/index';
+import Facebook from './facebook/index';
 
 class WhatsNew extends React.Component {
   render() {
@@ -8,45 +11,34 @@ class WhatsNew extends React.Component {
           <h3 className="u-title">WHAT'S NEW</h3>
           <div className="whats-new__content__tiles">
             <div className="item-1">
-              <a href="https://leaks.digitalproductschool.io/design-thinking-a-creative-way-to-foster-innovation-ab9ef97cd884" className="whats-new__content__tile u-link">
-                <div className="whats-new__content__tile__thumb whats-new__content__tile__thumb--design-thinking">
+              <a
+                href="https://www.facebook.com/digitalproductschool/"
+                target="_blank"
+              >
+                <div className="u-link" style={{ paddingBottom: '10px' }}>
+                  <span>On Facebook ...</span>
                 </div>
-                <article>
-                  <h4>Design Thinking - a creative way to foster innovation</h4>
-                  <p>by Denise Wildner</p>
-                  <span>Read on Medium ...</span>
-                </article>
               </a>
+              <Facebook />
             </div>
             <div className="item-2">
-              <a href="https://leaks.digitalproductschool.io/how-should-education-look-like-the-dps-model-7488d5a1567c" className="whats-new__content__tile u-link">
-                <div className="whats-new__content__tile__thumb whats-new__content__tile__thumb--dps-batch5">
+              <a href="https://leaks.digitalproductschool.io/" target="_blank">
+                <div className="u-link" style={{ paddingBottom: '10px' }}>
+                  <span>On Medium ...</span>
                 </div>
-                <article>
-                  <h4>How should education look like? — The DPS Model</h4>
-                  <p>by Ayush Sengupta</p>
-                  <span>Read on Medium ...</span>
-                </article>
               </a>
+              <Medium />
             </div>
             <div className="item-3">
-              <a href="https://www.youtube.com/watch?v=pVikgqTpulg" className="whats-new__content__tile u-link">
-                <div className="whats-new__content__tile__thumb u-youtube">
-                  <iframe
-                    title="video: biergarden chat with Nathalie Nahai" 
-                    src="https://www.youtube-nocookie.com/embed/pVikgqTpulg" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+              <a
+                href="https://www.youtube.com/channel/UCvmerSnTMl2ZeoLtuKoONJQ/videos"
+                target="_blank"
+              >
+                <div className="u-link" style={{ paddingBottom: '10px' }}>
+                  <span>On YouTube ...</span>
                 </div>
-                <article>
-                  <h4>Beergarden Chat with Nathalie Nahai</h4>
-                  <p>
-                    Are tech companies shifting from making people addicted to using their product to serving users in a positive way?
-                  </p>
-                  <span>Watch on our YouTube channel</span>
-                </article>
               </a>
+              <Youtube />
             </div>
           </div>
         </div>
