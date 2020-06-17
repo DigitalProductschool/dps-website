@@ -4,7 +4,7 @@ const createTrelloCard = require('./createTrelloCard');
 const handleFormSubmit = require('./handleFormSubmit');
 const sendConfirmationMail = require('./sendConfirmationMail');
 const storeTrackingData = require('./storeTrackingData');
-
+const whatsnew = require('./whatsnew');
 const admin = require('firebase-admin');
 const { isProduction } = require('./constants');
 
@@ -47,6 +47,18 @@ exports.handleApplicationForm = functions
   .region(defaultRegion)
   .https.onRequest(async (req, res) => {
     return await handleFormSubmit.handler(req, res, admin);
+  });
+
+exports.whatsnewfacebook = functions
+  .region(defaultRegion)
+  .https.onRequest(async (req, res) => {
+    return await whatsnew.facebook(req, res, admin);
+  });
+
+exports.whatsnewyoutube = functions
+  .region(defaultRegion)
+  .https.onRequest(async (req, res) => {
+    return await whatsnew.youtube(req, res, admin);
   });
 
 exports.storeTrackingData = functions
