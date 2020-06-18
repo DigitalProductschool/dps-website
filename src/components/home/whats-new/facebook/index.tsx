@@ -1,5 +1,6 @@
 import * as React from 'react';
 import FacebookCopy from '../../../../../static/assets/home/whats-new/facebook.png';
+import FacebookOG from '../../../../../static/assets/shared/Digital_Product_School_Batch11_Application-new.jpg';
 import moment from 'moment';
 
 class Facebook extends React.Component {
@@ -12,44 +13,51 @@ class Facebook extends React.Component {
 
   componentDidMount = () => {
     fetch(
-      `https://graph.facebook.com/v7.0/digitalproductschool/posts?fields=message,updated_time,full_picture,permalink_url&access_token=${process.env.REACT_APP_FACEBOOK_KEY}`
+      'https://europe-west1-dps-website-staging-0.cloudfunctions.net/whatsnewfacebook'
     )
       .then(res => res.json())
       .then(data => {
-        const res = data.data[0];
-        const thumbnail = res.full_picture;
-        const link = res.permalink_url;
-        const desc = res.message.match(/((.|\n){1,100}\w)\s/)[1] + ' ...';
-        const time = moment(res.updated_time).format('Do MMMM [at] H:mm ');
-        console.log(res);
-        console.log(process.env.REACT_APP_FACEBOOK_KEY);
+        const thumbnail = data.thumbnail;
+        const link = data.link;
+        const desc = data.desc.match(/((.|\n){1,100}\w)\s/)[1] + ' ...';
+        const time = moment(data.time).format('Do MMMM [at] H:mm ');
         this.setState({
           link: link,
           thumbnail: thumbnail,
           desc: desc,
           time: time,
         });
+      })
+      .catch(error => {
+        const thumbnail = FacebookOG;
+        this.setState({
+          thumbnail: thumbnail,
+        });
       });
   };
 
   render() {
     return (
-      <a href={this.state.link} className="whats-new__content__tile u-link">
+      <a
+        href={this.state.link}
+        target="_blank"
+        className="whats-new__content__tile u-link"
+      >
         <div
-          className="whats-new__content__tile__thumb whats-new__content__tile__thumb--design-thinking"
+          className="whats-new__content__tile__thumb"
           style={{ backgroundImage: `url(${this.state.thumbnail})` }}
         ></div>
         <article>
-          <div className="row">
-            <div className="column1">
+          <div className="whats-new__content__facebook">
+            <div className="item-1">
               <img
                 src={FacebookCopy}
-                alt="Girl in a jacket"
+                alt="Facebook DPS"
                 width="35"
                 height="30"
               />
             </div>
-            <div className="column2">
+            <div className="item-2">
               <h4>Digital Product School</h4>
               <p className="whats-new__content__time">{this.state.time}</p>
             </div>
