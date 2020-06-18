@@ -16,6 +16,22 @@
   }
 }
 
+.whats-new__content__rows {
+  display: grid;
+  grid-template-rows: 0fr 2fr;
+}
+
+.item-1 {
+  width: 100%;
+}
+
+.item-2 {
+  width: 100%;
+}
+.item-3 {
+  width: 100%;
+}
+
 .whats-new__content__tile {
   height: 100%;
   background: white;
@@ -29,13 +45,8 @@
   article {
     padding: 12px;
     display: inline-block;
-    height: 200px;
     justify-content: space-between;
     flex-direction: column;
-
-    @media (min-width: 768px) {
-      height: 170px;
-    }
   }
 
   h4 {
@@ -77,33 +88,21 @@
   background-position: center center;
   padding-bottom: 56.25%;
   height: 0;
-
-  &--design-thinking {
-    background-image: url('/assets/home/whats-new/design-thinking.jpg');
-  }
-
-  &--dps-batch5 {
-    background-image: url('/assets/home/whats-new/dps-batch5.jpg');
-  }
 }
 
-.column1 {
-  float: left;
-  width: 10%;
-}
-.column2 {
-  float: right;
-  width: 88%;
-  margin-left: 5px;
-}
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
+.whats-new__content__facebook {
+  display: grid;
+  grid-template-columns: 0fr 2fr;
+  padding-left: 0;
+  grid-gap: 2px;
 }
 
 p.whats-new__content__time {
   margin: 0px;
   font-size: 13px;
   color: gray;
+}
+
+.u-youtube {
+  margin-bottom: 0px !important;
 }
