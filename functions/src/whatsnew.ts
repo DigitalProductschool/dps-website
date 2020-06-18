@@ -50,6 +50,12 @@ exports.youtube = function(request: any, response: any) {
       response.json({ thumbnail: thumbnail, id: id, title: title, desc: desc });
     })
     .catch((err: any) => {
-      console.log('Error: ', err);
+      response.set('Access-Control-Allow-Origin', '*');
+      response.json({
+        desc: 'Mini Stories are very handy when you want to talk about ...',
+        thumbnail: 'https://i.ytimg.com/vi/AAPSTggR_E4/hqdefault.jpg',
+        title: 'What exactly are »Mini Stories«?',
+        id: 'AAPSTggR_E4',
+      });
     });
 };
