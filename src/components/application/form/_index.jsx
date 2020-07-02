@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import { getFirebase } from '../../../firebase/firebase';
+import useBatchDetails from '../../shared/useBatchDetails/index';
 
 const _5MB = 5242880; // in bytes;
 
@@ -136,8 +136,6 @@ export default function Form(props) {
     fileInputCoverLetterRef.current.click();
   }, []);
 
-  const [batchDetails, setBatchDetails] = useState([]);
-
   const submitForm = e => {
     e.preventDefault();
 
@@ -186,38 +184,7 @@ export default function Form(props) {
     setCoverLetterUploadError(null);
   }, [state]);
 
-  useEffect(() => {
-    const firebaseApp = import('@firebase/app');
-    const firebaseDatabase = import('@firebase/firestore');
-    var currentTime = new Date();
-    Promise.all([firebaseApp, firebaseDatabase]).then(([firebase]) => {
-      const database = getFirebase(firebase).firestore();
-      database
-        .collection('batch-details')
-        .where('appEndDate', '>', currentTime)
-        .orderBy('appEndDate')
-        .get()
-        .then(snapshot => {
-          let batchDetails = [];
-          snapshot.forEach(
-            doc =>
-              (batchDetails = [
-                ...batchDetails,
-                {
-                  batchID: doc.id,
-                  batchNumber: doc.data().batch,
-                  startDate: doc.data().startDate,
-                  endDate: doc.data().endDate,
-                  appStartDate: doc.data().appStartDate,
-                  appEndDate: doc.data().appEndDate,
-                },
-              ])
-          );
-
-          setBatchDetails(batchDetails);
-        });
-    });
-  }, []);
+  const batchDetails = useBatchDetails();
 
   let displayCurrentBatches = batchDetails.map(function(batch) {
     if (isApplicationPhaseOpen(batch.appStartDate)) {
