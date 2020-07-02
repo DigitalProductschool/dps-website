@@ -12,8 +12,10 @@ class Facebook extends React.Component {
   };
 
   componentDidMount = () => {
+    // We could add it as env variable so we have a separated cloud function for production/staging
+
     fetch(
-      'https://europe-west1-dps-website-staging-0.cloudfunctions.net/whatsnewfacebook'
+      'https://europe-west1-dps-website-244212.cloudfunctions.net/whatsnewfacebook'
     )
       .then(res => res.json())
       .then(data => {
