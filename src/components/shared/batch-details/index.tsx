@@ -52,7 +52,7 @@ export default function BatchDetails(props) {
           return (
             <span>
               <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
+                {`#Batch#${batch.batchNumber}: ${getBatchDate(
                   batch.startDate
                 )} to ${getBatchDate(batch.endDate)} `}
               </b>
@@ -71,7 +71,7 @@ export default function BatchDetails(props) {
           return (
             <span>
               <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
+                {`#Batch#${batch.batchNumber}: ${getBatchDate(
                   batch.startDate
                 )} to ${getBatchDate(batch.endDate)} `}
               </b>
@@ -83,7 +83,7 @@ export default function BatchDetails(props) {
           return (
             <span>
               <b>
-                {`#Batch #${batch.batchNumber}: ${getBatchDate(
+                {`#Batch#${batch.batchNumber}: ${getBatchDate(
                   batch.startDate
                 )} to ${getBatchDate(batch.endDate)} `}
               </b>
