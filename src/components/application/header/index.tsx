@@ -55,7 +55,9 @@ class Header extends React.Component<IHeaderProps, {}> {
           </h1>
           <br />
           <p>Currently, you can apply for the following batches:</p>
-          <BatchDetails isCurrentOpenApplications={true} />
+          <p className="pick-track__description">
+            <BatchDetails track={track} isCurrentOpenApplications={true} />
+          </p>
         </div>
       </section>
     );

@@ -190,7 +190,7 @@ export default function Form(props) {
     if (isApplicationPhaseOpen(batch.appStartDate)) {
       return (
         <option value={batch.batchNumber} key={batch.batchID}>
-          {`Batch #${batch.batchNumber}: ${getBatchDate(
+          {`Batch#${batch.batchNumber}: ${getBatchDate(
             batch.startDate
           )} to ${getBatchDate(batch.endDate)} `}
         </option>

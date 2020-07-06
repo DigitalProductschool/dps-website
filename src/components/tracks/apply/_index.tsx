@@ -28,15 +28,14 @@ class Tracks extends React.Component<IHeaderProps, {}> {
           >
             BE PART OF DPS
           </h3>
-          <p>
-            <b>
+          <p style={{ marginBottom: '0px' }}>
+            <b className="wyl-content__subtitle">
               {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
             </b>
           </p>
           <br />
-          <p>
+          <p className="pick-track__description">
             Dates and deadlines of the upcoming batches:
-            <br />
             <br />
             <BatchDetails isCurrentOpenApplications={false} />
           </p>

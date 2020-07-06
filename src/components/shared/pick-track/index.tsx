@@ -181,7 +181,9 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
           There are three batches per year, usually starting in January, May,
           and September.
           <br />
-          <b>Dates and deadlines of the upcoming batches:</b> <br />
+          <br />
+          <b>Dates and deadlines of the upcoming batches:</b>
+          <br />
           <BatchDetails isCurrentOpenApplications={false} />
         </p>
       );
