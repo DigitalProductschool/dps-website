@@ -171,12 +171,30 @@ function Nav(props) {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       var scrolled = document.scrollingElement.scrollTop;
-      const navBackground = scrolled < 1 ? 'transparent' : 'var(--deep-cove)';
-      const position = scrolled < 1 ? '' : 'fixed';
-      const top = scrolled < 1 ? '' : '0em';
-      const height = scrolled < 1 ? 'var(--nav-height-desktop)' : '80px';
+      const position = scrolled < 0.1 ? '' : 'fixed';
+      const top = scrolled < 0.1 ? '' : '0em';
+      const height = scrolled < 0.1 ? 'var(--nav-height-desktop)' : '80px';
 
-      setNavBackground(navBackground);
+      switch (props.track) {
+        case 'se':
+          setNavBackground('var(--hollywoord-cerise)');
+          break;
+        case 'ixd':
+          setNavBackground('var(--yellow-sea)');
+          break;
+        case 'ai':
+          setNavBackground('var(--wisteria)');
+          break;
+        case 'pm':
+          setNavBackground('var(--picton-blue)');
+          break;
+        case undefined:
+          const navBackground =
+            scrolled < 0.1 ? 'transparent' : 'var(--deep-cove)';
+          setNavBackground(navBackground);
+          break;
+      }
+
       setPosition(position);
       setTop(top);
       setHeight(height);

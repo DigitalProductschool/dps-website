@@ -1,18 +1,16 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export default (props: {
-  className: string
+  className: string;
   data: {
-    firstColumn: string
-    secondColumn: string
-    subtitle: string
-    track: string
-    video?: string
-  }
+    firstColumn: string;
+    secondColumn: string;
+    subtitle: string;
+    track: string;
+    video?: string;
+  };
 }) => {
-  const imageClassName = `wyl-content__info__description-box__image--${
-    props.data.track
-  }`
+  const imageClassName = `wyl-content__info__description-box__image--${props.data.track}`;
 
   function descriptionBox(video?: string) {
     if (video === undefined) {
@@ -20,10 +18,10 @@ export default (props: {
         <div
           className={`wyl-content__info__description-box__image ${imageClassName}`}
         />
-      )
+      );
     } else {
       return (
-        <div className="u-youtube">
+        <div className="u-youtube wyl-content__info__description-box__image">
           <iframe
             title="video: Software Engineering Experiences at Digital Product School"
             src={video}
@@ -31,7 +29,7 @@ export default (props: {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           />
         </div>
-      )
+      );
     }
   }
 
@@ -54,5 +52,5 @@ export default (props: {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

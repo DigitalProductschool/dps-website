@@ -16,7 +16,7 @@
 }
 
 .tracks__header-content__title {
-  margin: 0;
+  margin-bottom: 20px;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
