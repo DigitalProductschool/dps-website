@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import useBatchDetails from '../../shared/useBatchDetails/index';
+import displayCurrentBatchesDropdown from '../../shared/batch-details/current-batches-dropdown';
 
 const _5MB = 5242880; // in bytes;
 
@@ -84,37 +85,6 @@ function reducer(state, action) {
   }
 }
 
-function getBatchDate(batchDate) {
-  const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  let date = batchDate.toDate();
-  let newdate =
-    monthNames[date.getMonth()] +
-    ' ' +
-    date.getDate() +
-    ', ' +
-    date.getFullYear();
-  return newdate;
-}
-
-function isApplicationPhaseOpen(applicationStartDate) {
-  const today = new Date();
-  let givenDate = applicationStartDate.toDate();
-  return givenDate <= today;
-}
-
 export default function Form(props) {
   const SUBMIT_URL = process.env.GATSBY_HANDLE_APPLICATION_ENDPOINT;
   const fileInputCVRef = useRef(null);
@@ -185,20 +155,7 @@ export default function Form(props) {
   }, [state]);
 
   const batchDetails = useBatchDetails();
-
-  let displayCurrentBatches = batchDetails.map(function(batch) {
-    if (isApplicationPhaseOpen(batch.appStartDate)) {
-      return (
-        <option value={batch.batchNumber} key={batch.batchID}>
-          {`Batch#${batch.batchNumber}: ${getBatchDate(
-            batch.startDate
-          )} to ${getBatchDate(batch.endDate)} `}
-        </option>
-      );
-    }
-
-    return '';
-  });
+  let currentBatchesDropdown = displayCurrentBatchesDropdown(batchDetails);
 
   return (
     <div className="u-content-wrapper">
@@ -331,7 +288,7 @@ export default function Form(props) {
                   <option value="" key="-1">
                     Please select
                   </option>
-                  {displayCurrentBatches}
+                  {currentBatchesDropdown}
                 </select>
               </div>
 
