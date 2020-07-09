@@ -18,7 +18,7 @@ export default function BatchDetails(props) {
         if (isApplicationPhaseOpen(batch.appStartDate))
           return (
             <span>
-              <b>{`# Batch#${batch.batchNumber}:`}</b>
+              <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
                 {`${getBatchDate(batch.startDate)} to ${getBatchDate(
@@ -41,7 +41,7 @@ export default function BatchDetails(props) {
         if (isApplicationPhaseOpen(batch.appStartDate))
           return (
             <span>
-              <b>{`# Batch#${batch.batchNumber}:`}</b>
+              <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
                 {`${getBatchDate(batch.startDate)} to ${getBatchDate(
@@ -57,7 +57,7 @@ export default function BatchDetails(props) {
         else
           return (
             <span>
-              <b>{`# Batch#${batch.batchNumber}:`}</b>
+              <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
                 {`${getBatchDate(batch.startDate)} to ${getBatchDate(

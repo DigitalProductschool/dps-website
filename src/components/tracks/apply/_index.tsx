@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BatchDetails from '../../shared/batch-details/index';
+import BatchDetails from '../../shared/batch-details/batch-details';
 import { ApplyButton } from '../header/_index';
 
 interface IHeaderProps {
@@ -11,30 +11,24 @@ interface IHeaderProps {
 // this component will be thrown away, so quick & dirty
 class Tracks extends React.Component<IHeaderProps, {}> {
   render() {
-    const { name, url, track } = this.props;
+    const { name } = this.props;
 
     return (
       <div className="u-content-wrapper">
         <div
           className="u-content"
           style={{
-            marginTop: '120px',
+            marginTop: '60px',
           }}
         >
-          <h3
-            style={{
-              margin: '50px 0',
-            }}
-          >
-            BE PART OF DPS
-          </h3>
-          <p style={{ marginBottom: '0px' }}>
-            <b className="wyl-content__subtitle">
-              {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
-            </b>
-          </p>
+          <div className="bePart-content__title">BE PART OF DPS</div>
+
+          <b className="bePart-content__subtitle">
+            {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
+          </b>
+
           <br />
-          <p className="pick-track__description">
+          <p className="bePart-content__batchDetails">
             Dates and deadlines of the upcoming batches:
             <br />
             <BatchDetails isCurrentOpenApplications={false} />

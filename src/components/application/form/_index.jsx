@@ -366,9 +366,7 @@ export default function Form(props) {
                   className="application-form__input application_form__file-input-overlay"
                   onClick={clickFileInputCV}
                 >
-                  {state.cv && (
-                    <span style={{ fontSize: '14px' }}>{state.cv.name} </span>
-                  )}
+                  {state.cv && <span>{state.cv.name} </span>}
                   {!state.cv && <>Choose file </>}
                 </div>
                 <button
@@ -425,11 +423,7 @@ export default function Form(props) {
                   className="application-form__input application_form__file-input-overlay"
                   onClick={clickFileInputCoverLetter}
                 >
-                  {state.coverLetter && (
-                    <span style={{ fontSize: '14px' }}>
-                      {state.coverLetter.name}
-                    </span>
-                  )}
+                  {state.coverLetter && <span>{state.coverLetter.name}</span>}
                   {!state.coverLetter && <>Choose file </>}
                 </div>
                 <button

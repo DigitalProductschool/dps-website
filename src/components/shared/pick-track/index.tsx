@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BatchDetails from '../batch-details/index';
+import BatchDetails from '../batch-details/batch-details';
 
 interface IPickTrackProps {
   isApplyNowVersion: boolean;

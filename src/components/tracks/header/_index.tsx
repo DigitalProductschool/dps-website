@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import Nav from '../../shared/nav/index';
 import Seo from '../../seo';
 

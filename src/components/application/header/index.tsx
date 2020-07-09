@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BatchDetails from '../../shared/batch-details/index';
+import BatchDetails from '../../shared/batch-details/batch-details';
 
 import Nav from '../../shared/nav/index';
 
@@ -48,14 +48,16 @@ class Header extends React.Component<IHeaderProps, {}> {
       <section
         className={`applications__header u-content-wrapper applications__header--${track}`}
       >
-        <Nav logo="/assets/tracks/dps-logo-white.svg" />
+        <Nav logo="/assets/tracks/dps-logo-white.svg" track={track} />
         <div className="applications__header-content u-content">
           <h1 className="applications__header-content__title">
             APPLY AS <br /> {data[track].title}
           </h1>
-          <br />
-          <p>Currently, you can apply for the following batches:</p>
-          <p className="pick-track__description">
+
+          <p className="applications__header-content__description">
+            Currently, you can apply for the following batches:{' '}
+          </p>
+          <p className="applications__header-content__batchDetails">
             <BatchDetails track={track} isCurrentOpenApplications={true} />
           </p>
         </div>
