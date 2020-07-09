@@ -13,7 +13,6 @@ const partnerLogos = [
   'IABG.png',
   'infineon.jpg',
   'lhm.jpg',
-  'wirecard.jpg',
 ];
 
 class IndustryPartners extends React.Component {
