@@ -43,8 +43,12 @@ textarea {
   display: block;
   margin-bottom: 10px;
   padding-left: 5px;
-  font-weight: 900;
-  font-size: 17px;
+  font-size: calc(14px + 0.7vw);
+  font-weight: 700;
+
+  @media (min-width: 920px) {
+    font-size: 18px;
+  }
 }
 
 .application-form__input {
@@ -53,9 +57,14 @@ textarea {
   border: 0px;
   padding-left: 10px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: calc(12px + 0.6vw);
   font-weight: 300;
   background-color: #f3f3f3;
+  font-family: Montserrat;
+
+  @media (min-width: 920px) {
+    font-size: 18px;
+  }
 
   &--textarea {
     height: 62px;
@@ -82,12 +91,6 @@ select.application-form__input {
   position: fixed;
   top: -9999px;
 }
-/*
-.application-form__input[type="file"]:focus ~ .application_form__file-input-overlay {
-  box-shadow: 0 0 5px rgba(102, 158, 241, 1);
-  border: 3px solid rgba(102, 158, 241, 1);
-  border-radius: 3px;
-} */
 
 .application_form__file-input-overlay {
   display: inline-flex;
@@ -143,6 +146,11 @@ select.application-form__input {
   left: -3px;
   top: -22px;
   display: flex;
+  font-size: calc(12px + 0.6vw);
+
+  @media (min-width: 920px) {
+    font-size: 18px;
+  }
 }
 
 .scholarship-radio-label::before,

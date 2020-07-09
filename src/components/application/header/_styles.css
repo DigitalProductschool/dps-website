@@ -4,12 +4,12 @@
 }
 
 .applications__header-content__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
   font-size: calc(32px + 3vw);
-  margin-top: 191px;
+  margin-top: 131px;
 
   @media (min-width: 1280px) {
     font-size: 72px;
@@ -18,13 +18,26 @@
 
 .applications__header-content__description {
   color: white;
-  max-width: var(--max-width);
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-size: calc(10px + 0.7vw);
+  font-size: calc(14px + 0.7vw);
+  line-height: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 
-  @media (min-width: 1280px) {
-    font-size: 20px;
+  @media (min-width: 920px) {
+    font-size: 18px;
+  }
+}
+
+.applications__header-content__batchDetails {
+  color: white;
+  font-size: calc(14px + 0.7vw);
+  line-height: 34px;
+  margin-bottom: 40px;
+  line-height: 20px;
+
+  @media (min-width: 920px) {
+    font-size: 18px;
+    line-height: 34px;
   }
 }
 

@@ -16,10 +16,10 @@
 }
 
 .tracks__header-content__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: white;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   font-size: calc(32px + 3vw);
   margin-top: 131px;
 
@@ -31,13 +31,13 @@
 .tracks__header-content__description {
   color: white;
   max-width: var(--max-width);
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: calc(14px+ 0.7vw);
   line-height: 34px;
 
   @media (min-width: 1280px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
