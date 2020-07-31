@@ -1,19 +1,19 @@
-.apply-now {
+.header-section {
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/apply/dps-apply.jpg);
   background-size: cover;
   background-position: center;
+  height: 650px;
   z-index: -1;
   padding-top: 133px;
   margin-top: -133px;
 }
 
-.apply-now__content {
+.header-section__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
   margin-top: 131px;
 }
 
-.apply-now__content__title {
+.header-section__content__title {
   margin: 0;
   color: white;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
   }
 }
 
-.apply-now__image-content__image {
+.header-image-content__text {
   box-sizing: border-box;
   background-color: white;
   font-weight: 600;
@@ -52,13 +52,13 @@
   }
 }
 
-.apply-now__image-content__image p {
+.header-image-content__text p {
   line-height: 34px;
   margin: 0;
   font-size: 18px;
 }
 
-.apply-now__image-content {
+.header-image-content {
   display: flex;
   justify-content: center;
 }

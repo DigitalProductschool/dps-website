@@ -5,6 +5,7 @@ import Faq from '../../components/faq/index';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
 import logo from '../../../static/assets/shared/dps-logo-double-white.svg';
+import Header from '../../components/shared/header/section';
 
 class FAQ extends React.Component {
   componentDidMount() {
@@ -16,17 +17,13 @@ class FAQ extends React.Component {
       <React.Fragment>
         <CookieWarning />
         <Nav logo={logo} />
-        <section className="faq__navheader u-content-wrapper">
-          <div className="u-content">
-            <div className="faq__navheader-overlay"></div>
-            <h3
-              className="faq__navheader__title"
-              style={{ position: 'relative' }}
-            >
-              FREQUENTLY ASKED QUESTIONS
-            </h3>
-          </div>
-        </section>
+        <Header
+          image="/assets/faq/background.jpg"
+          overlayColor="#fea11f"
+          opacity=".65"
+        >
+          FREQUENTLY ASKED QUESTIONS
+        </Header>
         <Faq />
         <Footer />
       </React.Fragment>
