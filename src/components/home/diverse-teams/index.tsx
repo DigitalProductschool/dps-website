@@ -21,7 +21,7 @@ class DiverseTeams extends React.Component {
             <Link to="/tracks/artificial-intelligence" className="u-link">
               <span> artificial intelligence engineers </span>
             </Link>
-            , and
+            , and{' '}
             <Link to="/tracks/product-management" className="u-link">
               <span> product managers </span>
             </Link>{' '}

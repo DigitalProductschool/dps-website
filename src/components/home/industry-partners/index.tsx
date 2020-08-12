@@ -7,7 +7,7 @@ const partnerLogos = [
   'sap.jpg',
   'swm.jpg',
   'adac.jpg',
-  'awtc.jpg',
+  'aisin.png',
   'google.jpg',
   'hamburg.jpg',
   'IABG.png',
