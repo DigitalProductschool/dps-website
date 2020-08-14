@@ -10,7 +10,7 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <Accordion title="Is it an online program?">
             <p>
-              Digital Product School(DPS) is all about teamwork. You learn how
+              Digital Product School (DPS) is all about teamwork. You learn how
               to work together in an interdisciplinary team by creating ideas,
               structuring your work and making decisions. We believe that’s only
               possible when you are physically together in a team space that is
@@ -59,17 +59,17 @@ class Faq extends React.Component {
             <p>
               We welcome students, graduates and early stage professionals who
               want to change careers or gain experience from all around the
-              world. In case you are employed at the moment and want your
-              company to profit from the concept of customer-centric product
-              development? Check out “Digital Business Lab” where your company
-              can take part with a own problem space and team. Check out{' '}
+              world. <br />
+              In case you are employed at the moment and want your company to
+              profit from the concept of customer-centric product development?
+              Check out{' '}
               <a
                 href="https://digitalbusinesslab.de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="u-link"
               >
-                <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
+                <span style={{ zIndex: 0 }}>Digital Business Lab (DBL)</span>
               </a>{' '}
               where your company can take part with an own problem space and
               team.
@@ -117,23 +117,23 @@ class Faq extends React.Component {
 
           <Accordion title="Do I get paid?">
             <p>
-              We offer you a scholarship worth EUR 750.- per month / EUR 2.250.-
-              in total for three months. Just don’t forget to select it in the
-              application process.
+              We offer you a scholarship worth up to EUR 750.- per month / EUR
+              2.250.- in total for three months. Just don’t forget to select it
+              in the application process.
             </p>
           </Accordion>
 
           <Accordion title="Do you provide accommodation?">
             <p>
-              We can support finding housing, but can not provide housing itself. 
-              If someone fails to find housing, we are open to remote participation 
-              as well.
+              We can support finding housing, but can not provide housing
+              itself. If someone fails to find housing, we are open to remote
+              participation as well.
               <br />
-              However after you
-              are accepted we have a slack channel where the DPS community
-              shares housing offers from Munich. Also we send links to the
-              channels through which you can find suitable accommodation for
-              yourself.
+              However after you are accepted we have a slack channel where the
+              DPS community shares housing offers from Munich. Also we send
+              links to the channels through which you can find suitable
+              accommodation for yourself.
+              <br />
               <br />
               Also to bring to your attention that there are a lot of fraud
               listings available online that you should be aware of. It is
@@ -155,7 +155,7 @@ class Faq extends React.Component {
                 rel="noopener noreferrer"
                 className="u-link"
               >
-                <span style={{ zIndex: 1 }}>Digital Business Lab (DBL)</span>
+                <span style={{ zIndex: 0 }}>Digital Business Lab (DBL)</span>
               </a>
               .
             </p>
@@ -214,16 +214,14 @@ class Faq extends React.Component {
             </p>
           </Accordion>
 
-          <p style={{ fontSize: '20px', fontWeight: 900, marginTop: '30px' }}>
+          <p className="faq__title" style={{ marginTop: '40px' }}>
             {`Feel free to reach out to us in case of further queries `}
             <a
               href="mailto:hello@dpschool.io"
               className="u-link"
               style={{ fontWeight: 900, cursor: 'pointer' }}
             >
-              <span style={{ zIndex: 0, fontSize: '20px' }}>
-                hello@dpschool.io
-              </span>
+              <span style={{ zIndex: 0 }}>hello@dpschool.io</span>
             </a>
           </p>
         </div>

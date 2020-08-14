@@ -18,14 +18,7 @@ export default function Accordion(props) {
           display: 'flex',
         }}
       >
-        <h2
-          style={{
-            flexGrow: '1',
-            fontSize: '20px',
-          }}
-        >
-          {props.title}
-        </h2>
+        <h2 className="faq__title">{props.title}</h2>
         <span
           style={{
             fontSize: '35px',
