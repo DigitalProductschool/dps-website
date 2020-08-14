@@ -1,10 +1,10 @@
 .hash-list-item {
   display: flex;
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(12px + 0.4vw);
   margin-bottom: 30px;
   align-items: center;
 
-  @media (min-width: 920px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
   }
 }

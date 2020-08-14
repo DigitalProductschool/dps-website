@@ -40,9 +40,9 @@
 }
 
 .wyl-content__info__description-box__text {
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(12px + 0.4vw);
 
-  @media (min-width: 920px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
   }
 }
