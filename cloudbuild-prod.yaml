@@ -8,17 +8,6 @@ steps:
     id: install_functions_dep
     args: ['run', 'installFunctions']
     waitFor: ['-']
-
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    entrypoint: bash
-    args:
-      [
-        '-c',
-        'firebase deploy --only functions --project $PROJECT_ID --token $$ENC_FIREBASE_TOKEN',
-      ]
-    secretEnv: ['ENC_FIREBASE_TOKEN']
-    waitFor: ['install_functions_dep']
-
   - name: 'gcr.io/cloud-builders/npm'
     id: gatsby_build
     args: ['run', 'build']
@@ -42,8 +31,3 @@ steps:
         'debug',
       ]
     waitFor: ['gatsby_build']
-
-secrets:
-  - kmsKeyName: projects/dps-website-244212/locations/global/keyRings/website-staging/cryptoKeys/website-staging-deploykey
-    secretEnv:
-      ENC_FIREBASE_TOKEN: CiQAV4+1gSE4EixsWcwvMmly1lHUTAFT9XNGfs1Aku2NWtTRvtYSVgANnU3aZCVWo1UX0JZQ6KH3NPnRw6zEKFE3GUr4BzGCGga+Uz8EuqxDSi7+GriRTqKtsC/tEFpAE8cwsGYhi0DrzDykRhzVc+Gtq6QhyISMQa2aegZN
