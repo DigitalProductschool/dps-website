@@ -57,12 +57,12 @@ textarea {
   border: 0px;
   padding-left: 10px;
   box-sizing: border-box;
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(12px + 0.4vw);
   font-weight: 300;
   background-color: #f3f3f3;
   font-family: Montserrat;
 
-  @media (min-width: 920px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
   }
 
@@ -146,9 +146,9 @@ select.application-form__input {
   left: -3px;
   top: -22px;
   display: flex;
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(12px + 0.4vw);
 
-  @media (min-width: 920px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
   }
 }

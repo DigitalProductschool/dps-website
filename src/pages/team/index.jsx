@@ -207,19 +207,11 @@ function Card(props) {
         title={`${member.name}, ${member.title} at Digital Product School`}
         onClick={() => props.setIsOpenId(props.index)}
       ></img>
+      <h5 className="team__name">{member.name}</h5>
       <h5
-        style={{
-          marginTop: '10px',
-          marginBottom: 0,
-          fontSize: '18px',
-        }}
-      >
-        {member.name}
-      </h5>
-      <h5
+        className="team__card__description"
         style={{
           margin: 0,
-          fontSize: '14px',
           marginTop: '2px',
           fontWeight: '300',
         }}
@@ -333,9 +325,9 @@ function Team() {
 
       <div className="u-content">
         <h1
+          className="team__title"
           style={{
             marginTop: '80px',
-            fontWeight: '900',
           }}
         >
           THE DIGITAL PRODUCT SCHOOL CORE TEAM

@@ -54,13 +54,12 @@
 }
 
 .bePart-content__batchDetails {
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(12px + 0.4vw);
   margin-bottom: 40px;
   line-height: 20px;
 
-  @media (min-width: 920px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
-    line-height: 34px;
   }
 }
 

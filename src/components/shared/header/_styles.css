@@ -11,6 +11,10 @@
   z-index: -1;
   padding-top: 133px;
   margin-top: -133px;
+
+  @media (max-width: 780px) {
+    height: 500px;
+  }
 }
 
 .header-section__content {
@@ -55,7 +59,11 @@
 .header-image-content__text p {
   line-height: 34px;
   margin: 0;
-  font-size: 18px;
+  font-size: calc(12px + 0.4vw);
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .header-image-content {

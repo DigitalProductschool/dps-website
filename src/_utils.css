@@ -18,7 +18,7 @@
 .u-content {
   max-width: var(--max-width);
   width: 90%;
-  margin: 0 5%;
+  margin: auto;
 
   @media (max-width: 620px) {
     /* text-align: center; */
