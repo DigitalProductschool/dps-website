@@ -80,12 +80,12 @@ h2.u-title {
 }
 
 h3.u-title {
-  font-size: 36px;
+  font-size: calc(24px + 0.7vw);
   text-transform: uppercase;
   font-weight: 800;
 
-  @media (max-width: 620px) {
-    font-size: 24px;
+  @media (min-width: 1280px) {
+    font-size: 36px;
   }
 }
 
