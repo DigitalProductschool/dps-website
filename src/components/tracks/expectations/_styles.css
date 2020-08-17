@@ -7,16 +7,16 @@
     padding-top: 50px;
     padding-bottom: 25px;
     margin-bottom: 50px;
-  } 
+  }
 }
 
 .expectations__title {
-  font-size: 36px;
+  font-size: calc(14px + 0.7vw);
   text-transform: uppercase;
 
-  @media (max-width: 850px) {
+  @media (min-width: 1280px) {
     font-size: 24px;
-  } 
+  }
 }
 
 .expectations__lists {

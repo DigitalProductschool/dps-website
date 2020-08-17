@@ -40,7 +40,7 @@
 }
 
 .bePart-content__subtitle {
-  font-size: calc(14px + 0.7vw);
+  font-size: calc(12px + 0.4vw);
   font-weight: 700;
   margin-bottom: 70px;
 
@@ -49,7 +49,7 @@
   }
 
   @media (min-width: 1280px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
