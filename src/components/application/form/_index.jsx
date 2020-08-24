@@ -154,7 +154,7 @@ export default function Form(props) {
     setCoverLetterUploadError(null);
   }, [state]);
 
-  const batchDetails = useBatchDetails();
+  const batchDetails = useBatchDetails(props.track);
   let currentBatchesDropdown = displayCurrentBatchesDropdown(batchDetails);
 
   return (

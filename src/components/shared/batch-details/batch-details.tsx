@@ -6,18 +6,19 @@ import getBatchDate from './batch-date';
 
 export default function BatchDetails(props) {
   const [batchDetails, setBatchDetails] = useState([]);
-  const batchDetailsFirebase = useBatchDetails();
+  const track = props.track;
+  const batchDetailsFirebase = useBatchDetails(track);
 
   useEffect(() => {
     setBatchDetails(batchDetailsFirebase);
   }, [batchDetailsFirebase]);
-
+  console.log(props);
   if (props.isCurrentOpenApplications) {
     let displayCurrentBatches = batchDetails.map(
       function(batch) {
         if (isApplicationPhaseOpen(batch.appStartDate))
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -28,19 +29,20 @@ export default function BatchDetails(props) {
               <br className="break" />
               {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
               <br />
+
               <br className="break" />
             </span>
           );
       }.bind(this)
     );
 
-    return <p>{displayCurrentBatches}</p>;
+    return <span>{displayCurrentBatches}</span>;
   } else {
     let displayAllBatches = batchDetails.map(
       function(batch) {
         if (isApplicationPhaseOpen(batch.appStartDate))
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -56,7 +58,7 @@ export default function BatchDetails(props) {
           );
         else
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -75,6 +77,6 @@ export default function BatchDetails(props) {
       }.bind(this)
     );
 
-    return <p>{displayAllBatches}</p>;
+    return <span>{displayAllBatches}</span>;
   }
 }
