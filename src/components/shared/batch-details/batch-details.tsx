@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import useBatchDetails from '../useBatchDetails/index';
+import useBatchDetails from './use-batch-details';
 import isApplicationPhaseOpen from './application-phase';
 import getBatchDate from './batch-date';
+import TrackPhase from './application-track';
 
 export default function BatchDetails(props) {
   const [batchDetails, setBatchDetails] = useState([]);
@@ -12,7 +13,7 @@ export default function BatchDetails(props) {
   useEffect(() => {
     setBatchDetails(batchDetailsFirebase);
   }, [batchDetailsFirebase]);
-  console.log(props);
+
   if (props.isCurrentOpenApplications) {
     let displayCurrentBatches = batchDetails.map(
       function(batch) {
@@ -29,7 +30,6 @@ export default function BatchDetails(props) {
               <br className="break" />
               {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
               <br />
-
               <br className="break" />
             </span>
           );
@@ -40,7 +40,15 @@ export default function BatchDetails(props) {
   } else {
     let displayAllBatches = batchDetails.map(
       function(batch) {
-        if (isApplicationPhaseOpen(batch.appStartDate))
+        let appEndPm = batch.appEndDatePm;
+        let appEndSe = batch.appEndDateSe;
+        let appEndIxd = batch.appEndDateIxd;
+        let appEndAi = batch.appEndDateAi;
+
+        if (
+          isApplicationPhaseOpen(batch.appStartDate) &&
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) != 'allclosed'
+        )
           return (
             <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
@@ -51,12 +59,18 @@ export default function BatchDetails(props) {
                 )} `}
               </b>
               <br className="break" />
-              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
+              {`(Applications open until ${getBatchDate(batch.appEndDate)}`}
+              {`${TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd)})`}
               <br />
               <br className="break" />
             </span>
           );
-        else
+        else if (
+          isApplicationPhaseOpen(batch.appStartDate) &&
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) === 'allclosed'
+        )
+          return ' ';
+        else if (!isApplicationPhaseOpen(batch.appStartDate))
           return (
             <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>

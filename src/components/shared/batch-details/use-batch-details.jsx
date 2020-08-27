@@ -35,6 +35,10 @@ export default function useBatchDetails(props) {
                   endDate: doc.data().endDate,
                   appStartDate: doc.data().appStartDate,
                   appEndDate: doc.get(appEndDate),
+                  appEndDateSe: doc.get('appEndDate-se'),
+                  appEndDatePm: doc.get('appEndDate-pm'),
+                  appEndDateAi: doc.get('appEndDate-ai'),
+                  appEndDateIxd: doc.get('appEndDate-ixd'),
                 },
               ])
           );
