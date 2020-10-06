@@ -18,14 +18,20 @@
 }
 
 .pick-track__description {
-  font-size: 18px;
+  font-size: calc(12px + 0.4vw);
   line-height: 34px;
   margin-bottom: 40px;
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .pick-track__track__description {
-  font-size: 14px;
+  font-size: calc(10px+ 0.4vw);
   line-height: 24px;
+  @media (min-width: 1280px) {
+    font-size: 14px;
+  }
 }
 
 .pick-tracks__track__image {
@@ -36,25 +42,35 @@
 
   &--pm {
     background: linear-gradient(rgba(3, 184, 229, 0.8), rgba(3, 184, 229, 0.8)),
-    url(/assets/shared/pick-track/pm-track-background.jpg) center center / cover no-repeat;
+      url(/assets/shared/pick-track/pm-track-background.jpg) center center /
+        cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--se {
     background: linear-gradient(rgba(221, 4, 165, 0.8), rgba(221, 4, 165, 0.8)),
-    url(/assets/shared/pick-track/se-track-background.jpg) center center / cover no-repeat;
+      url(/assets/shared/pick-track/se-track-background.jpg) center center /
+        cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--ixd {
-    background: linear-gradient(rgba(255, 167, 14, 0.8), rgba(255, 167, 14, 0.8)),
-    url(/assets/shared/pick-track/ixd-track-background.jpg) center center / cover no-repeat;
+    background: linear-gradient(
+        rgba(255, 167, 14, 0.8),
+        rgba(255, 167, 14, 0.8)
+      ),
+      url(/assets/shared/pick-track/ixd-track-background.jpg) center center /
+        cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--ai {
-    background: linear-gradient(rgba(124, 26, 117, 0.8), rgba(124, 26, 117, 0.8)),
-    url(/assets/shared/pick-track/ai-track-background.jpg) center center / cover no-repeat;
+    background: linear-gradient(
+        rgba(124, 26, 117, 0.8),
+        rgba(124, 26, 117, 0.8)
+      ),
+      url(/assets/shared/pick-track/ai-track-background.jpg) center center /
+        cover no-repeat;
     background-blend-mode: multiply;
   }
 }

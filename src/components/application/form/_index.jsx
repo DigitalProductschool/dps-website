@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import useBatchDetails from '../../shared/useBatchDetails/index';
+import useBatchDetails from '../../shared/batch-details/use-batch-details';
 import displayCurrentBatchesDropdown from '../../shared/batch-details/current-batches-dropdown';
 
 const _5MB = 5242880; // in bytes;
@@ -154,7 +154,7 @@ export default function Form(props) {
     setCoverLetterUploadError(null);
   }, [state]);
 
-  const batchDetails = useBatchDetails();
+  const batchDetails = useBatchDetails(props.track);
   let currentBatchesDropdown = displayCurrentBatchesDropdown(batchDetails);
 
   return (

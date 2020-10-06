@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import useBatchDetails from '../useBatchDetails/index';
+import useBatchDetails from './use-batch-details';
 import isApplicationPhaseOpen from './application-phase';
 import getBatchDate from './batch-date';
+import TrackPhase from './application-track';
 
 export default function BatchDetails(props) {
   const [batchDetails, setBatchDetails] = useState([]);
-  const batchDetailsFirebase = useBatchDetails();
+  const track = props.track;
+  const batchDetailsFirebase = useBatchDetails(track);
 
   useEffect(() => {
     setBatchDetails(batchDetailsFirebase);
@@ -17,7 +19,7 @@ export default function BatchDetails(props) {
       function(batch) {
         if (isApplicationPhaseOpen(batch.appStartDate))
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -34,13 +36,21 @@ export default function BatchDetails(props) {
       }.bind(this)
     );
 
-    return <p>{displayCurrentBatches}</p>;
+    return <span>{displayCurrentBatches}</span>;
   } else {
     let displayAllBatches = batchDetails.map(
       function(batch) {
-        if (isApplicationPhaseOpen(batch.appStartDate))
+        let appEndPm = batch.appEndDatePm;
+        let appEndSe = batch.appEndDateSe;
+        let appEndIxd = batch.appEndDateIxd;
+        let appEndAi = batch.appEndDateAi;
+
+        if (
+          isApplicationPhaseOpen(batch.appStartDate) &&
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) != 'allclosed'
+        )
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -49,14 +59,20 @@ export default function BatchDetails(props) {
                 )} `}
               </b>
               <br className="break" />
-              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
+              {`(Applications open until ${getBatchDate(batch.appEndDate)}`}
+              {`${TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd)})`}
               <br />
               <br className="break" />
             </span>
           );
-        else
+        else if (
+          isApplicationPhaseOpen(batch.appStartDate) &&
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) === 'allclosed'
+        )
+          return ' ';
+        else if (!isApplicationPhaseOpen(batch.appStartDate))
           return (
-            <span>
+            <span key={`batch-${batch.batchNumber}`}>
               <b>{`# Batch#${batch.batchNumber}: `}</b>
               <br className="break" />
               <b>
@@ -75,6 +91,6 @@ export default function BatchDetails(props) {
       }.bind(this)
     );
 
-    return <p>{displayAllBatches}</p>;
+    return <span>{displayAllBatches}</span>;
   }
 }

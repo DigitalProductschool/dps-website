@@ -6,16 +6,16 @@
   @media (max-width: 850px) {
     padding-top: 50px;
     padding-bottom: 25px;
-  } 
+  }
 }
 
 .or__title {
-  font-size: 36px;
+  font-size: calc(14px + 0.7vw);
   text-transform: uppercase;
 
-  @media (max-width: 850px) {
+  @media (min-width: 1280px) {
     font-size: 24px;
-  } 
+  }
 }
 
 .or__content {
@@ -25,5 +25,5 @@
 
   @media (max-width: 850px) {
     grid-template-columns: 1fr;
-  } 
+  }
 }
