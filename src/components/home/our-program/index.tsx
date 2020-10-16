@@ -31,10 +31,10 @@ class OurProgram extends React.Component {
                 <img alt="scholar-icon" className="our-program__perks__item__icon-wrapper__img our-program__perks__item__icon-wrapper__img--second" src="/assets/home/our-program/scholar-icon.svg" />
               </div>
               <h4 className="our-program__perks__title">
-                2,250 EUR SCHOLARSHIP
+                Up to € 2,250 SCHOLARSHIP
               </h4>
               <p className="our-program__perks__description">
-                Every applicant who gets accepted will receive a scholarship of 750 EUR per month.
+                Every applicant who gets accepted will receive a scholarship of up to € 750 per month. You can find more about the scholarship in our FAQs.
               </p>
             </li>
             <li className="our-program__perks__item">
