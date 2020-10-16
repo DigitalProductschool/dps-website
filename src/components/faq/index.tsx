@@ -10,11 +10,16 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <Accordion title="Is it an online program?">
             <p>
-              Digital Product School (DPS) is all about teamwork. You learn how
-              to work together in an interdisciplinary team by creating ideas,
-              structuring your work and making decisions. We believe that’s only
-              possible when you are physically together in a team space that is
-              why we don’t offer it as an online program.
+              Yes! A lot changed due to Corona. We didn't think so, but with the right 
+              environment and tools creating ideas, working together in a cross-functional 
+              team, and building an innovative digital product is possible without meeting 
+              in person.
+              <br />
+              This means: You can take part on-site in Munich or remote from all over the 
+              world. All workshops, meetings and processes in the teams are designed 
+              "remote-first", so there are no disadvantages of not being in Germany - 
+              maybe except getting up early or staying up late to sync with your team members' 
+              time zones.
             </p>
           </Accordion>
 
