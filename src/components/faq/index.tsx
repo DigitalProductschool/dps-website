@@ -115,12 +115,36 @@ class Faq extends React.Component {
             </p>
           </Accordion>
 
-          <Accordion title="Do I get paid?">
+ <Accordion title="Do I get paid?">
             <p>
-              We offer you a scholarship worth up to EUR 750.- per month / EUR
-              2.250.- in total for three months. Just don’t forget to select it
-              in the application process.
-            </p>
+              We offer you a scholarship worth up to € 750.- per month / EUR
+              2.250.- in total for three months, depending on the mode of your participation at DPS:
+              <br />
+              <ol style={{ paddingLeft: '15px' }}>
+                 <li>€ 750.- per month if you take part on-site at the DPS office in Munich</li>
+                 <li>€ 500.00.- per month if you take part remotely and live in an{' '}
+              <a
+                href="http://www.oecd.org/about/members-and-partners/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="u-link"
+              >
+                <span style={{ zIndex: 0 }}>OECD country</span>
+              </a>
+              </li>
+              <li>€ 300.- (incl. € 50.00 internet grant) per if you take part remotely and live in country which is not an{' '}
+              <a
+                href="http://www.oecd.org/about/members-and-partners/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="u-link"
+              >
+                <span style={{ zIndex: 0 }}>OECD member</span>
+              </a>.
+              <br />
+              To receive the internet grant you have to proove that you upgraded your internet connection to at least a real bandwidth 10 Mbit/s in download and 2 Mbit/s upload.
+</li>
+           </p>
           </Accordion>
 
           <Accordion title="Do you provide accommodation?">
