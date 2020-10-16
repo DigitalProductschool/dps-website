@@ -32,11 +32,10 @@ class Pillars extends React.Component {
                 />
               </div>
               <h4 className="pillars__list__item__title">
-                2,250 Eur scholarship
+                Up to € 2,250 scholarship
               </h4>
               <p className="pillars__list__item__description">
-                Every applicant who gets accepted will receive a scholarship of
-                750 EUR per month.
+                Every applicant who gets accepted will receive a scholarship of up to € 750 per month. You can find more about the scholarship in our FAQs.
               </p>
             </li>
             <li className="pillars__list__item">
