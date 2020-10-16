@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
     'Collaboration with the best international start-ups, industry leaders, researchers, and technology.',
     'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding.',
-    'Grants: 750 EUR per month',
+    'Grants: up to € 750.- per month',
   ],
   responsibilities: [
     'Collaborate ​with the other software engineers, AI engineers, interaction designers and product managers in your team on the journey from the problem to the product',
