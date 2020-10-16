@@ -205,7 +205,7 @@ class Faq extends React.Component {
 
           <Accordion title="Which time zone counts for the application deadline?">
             <p>
-              The application deadline is on the date stated at 12 pm Central
+              The application deadline is on the date stated at 11:59 pm Central
               European Time (CET / UTC+1) during winter time and Central
               European Summer Time (CEST / UTC+2) during summer time.
             </p>
