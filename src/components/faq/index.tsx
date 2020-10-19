@@ -10,16 +10,16 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <Accordion title="Is it an online program?">
             <p>
-              Yes! A lot changed due to Corona. We didn't think so, but with the right 
-              environment and tools creating ideas, working together in a cross-functional 
-              team, and building an innovative digital product is possible without meeting 
-              in person.
+              Yes! A lot changed due to Corona. We didn't think so, but with the
+              right environment and tools creating ideas, working together in a
+              cross-functional team, and building an innovative digital product
+              is possible without meeting in person.
               <br />
-              This means: You can take part on-site in Munich or remote from all over the 
-              world. All workshops, meetings and processes in the teams are designed 
-              "remote-first", so there are no disadvantages of not being in Germany - 
-              maybe except getting up early or staying up late to sync with your team members' 
-              time zones.
+              This means: You can take part on-site in Munich or remote from all
+              over the world. All workshops, meetings and processes in the teams
+              are designed "remote-first", so there are no disadvantages of not
+              being in Germany - maybe except getting up early or staying up
+              late to sync with your team members' time zones.
             </p>
           </Accordion>
 
@@ -120,36 +120,47 @@ class Faq extends React.Component {
             </p>
           </Accordion>
 
- <Accordion title="Do I get paid?">
+          <Accordion title="Do I get paid?">
             <p>
               We offer you a scholarship worth up to € 750.- per month / €
-              2.250.- in total for three months, depending on the mode of your participation at DPS:
+              2.250.- in total for three months, depending on the mode of your
+              participation at DPS:
               <br />
               <ol style={{ paddingLeft: '15px' }}>
-                 <li>€ 750.- per month if you take part on-site at the DPS office in Munich</li>
-                 <li>€ 500.00.- per month if you take part remotely and live in an{' '}
-              <a
-                href="http://www.oecd.org/about/members-and-partners/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="u-link"
-              >
-                <span style={{ zIndex: 0 }}>OECD country</span>
-              </a>
-              </li>
-              <li>€ 300.- (incl. € 50.00 internet grant) per if you take part remotely and live in country which is not an{' '}
-              <a
-                href="http://www.oecd.org/about/members-and-partners/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="u-link"
-              >
-                <span style={{ zIndex: 0 }}>OECD member</span>
-              </a>.
-              <br />
-              To receive the internet grant you have to proove that you upgraded your internet connection to at least a real bandwidth 10 Mbit/s in download and 2 Mbit/s upload.
-</li>
-           </p>
+                <li>
+                  € 750.- per month if you take part on-site at the DPS office
+                  in Munich
+                </li>
+                <li>
+                  € 500.00.- per month if you take part remotely and live in an{' '}
+                  <a
+                    href="http://www.oecd.org/about/members-and-partners/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="u-link"
+                  >
+                    <span style={{ zIndex: 0 }}>OECD country</span>
+                  </a>
+                </li>
+                <li>
+                  € 300.- (incl. € 50.00 internet grant) per if you take part
+                  remotely and live in country which is not an{' '}
+                  <a
+                    href="http://www.oecd.org/about/members-and-partners/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="u-link"
+                  >
+                    <span style={{ zIndex: 0 }}>OECD member</span>
+                  </a>
+                  .
+                  <br />
+                  To receive the internet grant you have to proove that you
+                  upgraded your internet connection to at least a real bandwidth
+                  10 Mbit/s in download and 2 Mbit/s upload.
+                </li>
+              </ol>
+            </p>
           </Accordion>
 
           <Accordion title="Do you provide accommodation?">
