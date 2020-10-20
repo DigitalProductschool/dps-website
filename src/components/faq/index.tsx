@@ -10,11 +10,16 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <Accordion title="Is it an online program?">
             <p>
-              Digital Product School (DPS) is all about teamwork. You learn how
-              to work together in an interdisciplinary team by creating ideas,
-              structuring your work and making decisions. We believe that’s only
-              possible when you are physically together in a team space that is
-              why we don’t offer it as an online program.
+              Yes! A lot changed due to Corona. We didn't think so, but with the
+              right environment and tools creating ideas, working together in a
+              cross-functional team, and building an innovative digital product
+              is possible without meeting in person.
+              <br />
+              This means: You can take part on-site in Munich or remote from all
+              over the world. All workshops, meetings and processes in the teams
+              are designed "remote-first", so there are no disadvantages of not
+              being in Germany - maybe except getting up early or staying up
+              late to sync with your team members' time zones.
             </p>
           </Accordion>
 
@@ -117,9 +122,44 @@ class Faq extends React.Component {
 
           <Accordion title="Do I get paid?">
             <p>
-              We offer you a scholarship worth up to EUR 750.- per month / EUR
-              2.250.- in total for three months. Just don’t forget to select it
-              in the application process.
+              We offer you a scholarship worth up to € 750.- per month / €
+              2.250.- in total for three months, depending on the mode of your
+              participation at DPS:
+              <br />
+              <ol style={{ paddingLeft: '15px' }}>
+                <li>
+                  € 750.- per month if you take part on-site at the DPS office
+                  in Munich
+                </li>
+                <li>
+                  € 500.00.- per month if you take part remotely and live in an{' '}
+                  <a
+                    href="http://www.oecd.org/about/members-and-partners/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="u-link"
+                  >
+                    <span style={{ zIndex: 0 }}>OECD country</span>
+                  </a>
+                </li>
+                <li>
+                  € 300.- (incl. € 50.00 internet grant) per if you take part
+                  remotely and live in country which is not an{' '}
+                  <a
+                    href="http://www.oecd.org/about/members-and-partners/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="u-link"
+                  >
+                    <span style={{ zIndex: 0 }}>OECD member</span>
+                  </a>
+                  .
+                  <br />
+                  To receive the internet grant you have to proove that you
+                  upgraded your internet connection to at least a real bandwidth
+                  10 Mbit/s in download and 2 Mbit/s upload.
+                </li>
+              </ol>
             </p>
           </Accordion>
 
@@ -176,7 +216,7 @@ class Faq extends React.Component {
 
           <Accordion title="Which time zone counts for the application deadline?">
             <p>
-              The application deadline is on the date stated at 12 pm Central
+              The application deadline is on the date stated at 11:59 pm Central
               European Time (CET / UTC+1) during winter time and Central
               European Summer Time (CEST / UTC+2) during summer time.
             </p>
