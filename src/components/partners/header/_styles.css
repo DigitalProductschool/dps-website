@@ -1,0 +1,13 @@
+.our-program__header-content__description {
+  color: white;
+  max-width: var(--max-width);
+  margin-top: 30px;
+  font-size: calc(12px + 0.4vw);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: none;
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
+}

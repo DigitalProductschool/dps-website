@@ -3,11 +3,8 @@ import * as React from 'react';
 import Header from '../../components/home/header/index';
 import Pitch from '../../components/home/pitch/index';
 import DiverseTeams from '../../components/home/diverse-teams';
-import ExperienceMatter from '../../components/home/experience-matters';
 import UserFirst from '../../components/home/user-first';
 import Adac from '../../components/home/adac';
-import ToolPartner from '../../components/home/tool-partner';
-import IndustryPartners from '../../components/home/industry-partners';
 import WhatsNew from '../../components/home/whats-new';
 import PickTrack from '../../components/shared/pick-track';
 import Footer from '../../components/shared/footer/index';
@@ -29,13 +26,12 @@ class Home extends React.Component {
         />
         <Pitch forwardedRef={this.forwardedRef} />
         <DiverseTeams />
-        <ExperienceMatter />
         <UserFirst />
-        <IndustryPartners />
+
         <PickTrack isApplyNowVersion={false} />
         <WhatsNew />
         <Adac />
-        <ToolPartner />
+
         <Footer />
       </React.Fragment>
     );

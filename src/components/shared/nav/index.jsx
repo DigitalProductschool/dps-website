@@ -2,8 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import Seo from '../../seo';
 import { useState, useEffect } from 'react';
-import Corona from '../../corona';
-
 // can't use as <img /> because we want to be able to dynamically change the fill color
 const HamburgerIcon = () => (
   <svg width="30px" height="30px" viewBox="0 0 60 51" version="1.1">
@@ -262,7 +260,6 @@ function Nav(props) {
       }}
     >
       <Seo />
-      <Corona />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}
       >
@@ -310,6 +307,12 @@ function Nav(props) {
             <Link to="/team" activeStyle={activeStyle}>
               {' '}
               Team{' '}
+            </Link>
+          </li>
+          <li className="nav__menu__item">
+            <Link to="/partners" activeStyle={activeStyle}>
+              {' '}
+              Partners{' '}
             </Link>
           </li>
           <li className="nav__menu__item">
