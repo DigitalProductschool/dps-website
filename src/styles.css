@@ -14,13 +14,15 @@
 @import url('./components/home/header/_styles.css');
 @import url('./components/home/pitch/_styles.css');
 @import url('./components/home/diverse-teams/_styles.css');
-@import url('./components/home/experience-matters/_styles.css');
 @import url('./components/home/user-first/_styles.css');
 @import url('./components/home/our-program/_styles.css');
 @import url('./components/home/adac/_styles.css');
-@import url('./components/home/tool-partner/_styles.css');
-@import url('./components/home/industry-partners/_styles.css');
 @import url('./components/home/whats-new/_styles.css');
+
+@import url('./components/partners/header/_styles.css');
+@import url('./components/partners/experience-matters/_styles.css');
+@import url('./components/partners/industry-partners/_styles.css');
+@import url('./components/partners/tool-partner/_styles.css');
 
 @import url('./components/legal-disclosure/legal-content/_styles.css');
 @import url('./components/privacy-policy/privacy-content/_styles.css');
