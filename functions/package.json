@@ -23,7 +23,7 @@
     "@google-cloud/storage": "^5.3.0",
     "busboy": "^0.3.1",
     "cors": "^2.8.5",
-    "firebase": "^6.4.2",
+    "firebase": "^7.24.0",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.1.0",
     "form-data": "^2.5.1",
@@ -39,9 +39,9 @@
   },
   "devDependencies": {
     "@types/busboy": "^0.2.3",
-    "concurrently": "^4.1.2",
+    "concurrently": "^5.3.0",
     "firebase-functions-test": "^0.1.6",
-    "jest": "^24.9.0",
+    "jest": "^26.6.0",
     "tslint": "^5.12.0",
     "typescript": "^3.2.2"
   },
