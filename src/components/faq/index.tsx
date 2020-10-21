@@ -132,7 +132,7 @@ class Faq extends React.Component {
                   in Munich
                 </li>
                 <li>
-                  € 500.00.- per month if you take part remotely and live in an{' '}
+                  € 500.- per month if you take part remotely and live in an{' '}
                   <a
                     href="http://www.oecd.org/about/members-and-partners/"
                     target="_blank"
@@ -143,7 +143,7 @@ class Faq extends React.Component {
                   </a>
                 </li>
                 <li>
-                  € 300.- (incl. € 50.00 internet grant) per if you take part
+                  € 300.- (incl. € 50.00 internet grant) per month if you take part
                   remotely and live in country which is not an{' '}
                   <a
                     href="http://www.oecd.org/about/members-and-partners/"
