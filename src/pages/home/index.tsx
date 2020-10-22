@@ -9,6 +9,7 @@ import WhatsNew from '../../components/home/whats-new';
 import PickTrack from '../../components/shared/pick-track';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
+import DPSCorona from '../../components/home/dps-corona';
 
 class Home extends React.Component {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
@@ -25,13 +26,13 @@ class Home extends React.Component {
           }
         />
         <Pitch forwardedRef={this.forwardedRef} />
+        <DPSCorona />
+
         <DiverseTeams />
         <UserFirst />
-
         <PickTrack isApplyNowVersion={false} />
         <WhatsNew />
         <Adac />
-
         <Footer />
       </React.Fragment>
     );
