@@ -10,6 +10,8 @@ import PickTrack from '../../components/shared/pick-track';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
 import DPSCorona from '../../components/home/dps-corona';
+import RemoteCollaboration from '../../components/home/remote-collaboration';
+import TheSetting from '../../components/home/the-setting';
 
 class Home extends React.Component {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
@@ -27,7 +29,8 @@ class Home extends React.Component {
         />
         <Pitch forwardedRef={this.forwardedRef} />
         <DPSCorona />
-
+        <RemoteCollaboration />
+        <TheSetting />
         <DiverseTeams />
         <UserFirst />
         <PickTrack isApplyNowVersion={false} />

@@ -1,53 +1,38 @@
 import * as React from 'react';
-
-const partnerLogos = [
-  'bmw.jpg',
-  'facebook.png',
-  'nokia.jpg',
-  'sap.jpg',
-  'swm.jpg',
-  'adac.jpg',
-  'aisin.png',
-  'google.jpg',
-  'hamburg.jpg',
-  'IABG.png',
-  'infineon.jpg',
-  'lhm.jpg',
-];
+import { Link } from 'gatsby';
 
 class TheSetting extends React.Component {
   render() {
     return (
-      <div className="industry-partners u-content-wrapper">
-        <div className="industry-partners u-content">
-          <h3 className="industry-partners__title u-title">
-            Digital Hub Mobility and its Industry Partners
+      <div className="the-setting u-content-wrapper">
+        <div className="the-setting u-content">
+          <h3
+            className="the-setting__title u-title"
+            style={{ textAlign: 'left' }}
+          >
+            THE SETTING
           </h3>
-          <p className="industry-partners__description">
-            The Digital Product School is part of the{' '}
-            <a className="u-link" href="https://mobility.unternehmertum.de/">
-              <span> Digital Hub Mobility </span>
-            </a>{' '}
-            . The Digital Hub Mobility connects companies from the mobility
-            sector with tech-companies. These companies can set challenges for
-            the teams at the Digital Product School. And they provide some of
-            the team members for our so-called »Company Teams«. These teams work
-            with talents like you to find out how far they can get within three
-            months – all the while working lean and agile. Our partners also
-            support the teams with technology, access to data and interview
-            partners.
-          </p>
-          <ul className="industry-partners__logos">
-            {partnerLogos.map(item => (
-              <li key={item} className="industry-partners__logo">
-                {' '}
-                <img
-                  alt={`industry-partner-logo-${item}`}
-                  src={`/assets/home/industry-partners/${item}`}
-                />{' '}
-              </li>
-            ))}
-          </ul>
+          <div className="the-setting__content">
+            <p className="the-setting__description">
+              We found a setting that really works well for DPS: Some people
+              come to the office, split into A/B-groups, others work from all
+              over the world. Even our offsite took place twice with two
+              separate groups! Workshops and sessions are all remote-first:
+              there are no disadvantages if you are not in Munich.
+              <br />
+              <br />
+              And you may not believe it: <b>this also has advantages!</b>{' '}
+              Talents who could not come to Munich can now participate. No more
+              trouble with visas anymore. Higher diversity in the teams! We can
+              talk to users from all over the world. And participants learn for
+              later how remote-work can work!
+              <br /> Interested?{' '}
+              <Link to="/apply" className="u-link">
+                <span>Apply Now </span>
+              </Link>
+            </p>
+            <div className="the-setting-content__image" />
+          </div>
         </div>
       </div>
     );

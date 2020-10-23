@@ -3,13 +3,14 @@ import * as React from 'react';
 class RemoteCollaboration extends React.Component {
   render() {
     return (
-      <div className="industry-partners u-content-wrapper">
-        <div className="industry-partners u-content">
-          <h3 className="industry-partners__title u-title">
+      <div className="remote-collaboration u-content-wrapper">
+        <div className="remote-collaboration u-content">
+          <h3 className="remote-collaboration__title u-title">
             REMOTE COLLABORATION
           </h3>
-          <div className="diverse-teams__content u-content">
-            <p className="diverse-teams__content__description">
+          <div className="remote-collaboration__content">
+            <div className="remote-collaboration-content__image" />
+            <p className="remote-collaboration__description">
               Some months ago we were convinced that this only can happen if
               people from different backgrounds and a big pile of post-its come
               together in a small team space. But the corona pandemic and all
@@ -19,7 +20,6 @@ class RemoteCollaboration extends React.Component {
               remote-setting as well! We meet at Zoom, we collaborate in Miro
               and we manage our to-dos in Jira.
             </p>
-            <div className="content__image" />
           </div>
         </div>
       </div>

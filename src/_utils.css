@@ -190,6 +190,14 @@ h3.u-title {
   }
 }
 
+.u-section-margin-bottom {
+  margin-bottom: 150px;
+
+  @media (max-width: 620px) {
+    margin-bottom: 90px;
+  }
+}
+
 .u-grid-4-6 {
   display: grid;
   grid-template-columns: 4fr 6fr;

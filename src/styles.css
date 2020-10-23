@@ -14,6 +14,9 @@
 @import url('./components/home/header/_styles.css');
 @import url('./components/home/pitch/_styles.css');
 @import url('./components/home/diverse-teams/_styles.css');
+@import url('./components/home/dps-corona/_styles.css');
+@import url('./components/home/remote-collaboration/_styles.css');
+@import url('./components/home/the-setting/_styles.css');
 @import url('./components/home/user-first/_styles.css');
 @import url('./components/home/our-program/_styles.css');
 @import url('./components/home/adac/_styles.css');
@@ -85,7 +88,7 @@ h3 {
   font-size: 72px;
 
   @media (max-width: 620px) {
-    font-size: 52px;
+    font-size: 32px;
   }
 }
 
