@@ -7,9 +7,7 @@ class LegalContent extends React.Component {
       <section className="legal u-content-wrapper">
         <Seo />
         <div className="legal__content u-content">
-          <h1>IMPRINT</h1>
-
-          <h2>LEGAL DISCLOSURE</h2>
+          <h1>LEGAL NOTICE</h1>
 
           <p>Digital Product School is a program run by UnternehmerTUM GmbH.</p>
 
