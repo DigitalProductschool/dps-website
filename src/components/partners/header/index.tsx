@@ -5,7 +5,7 @@ class HeaderPartners extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header image="/assets/partners/header/partnerheader.jpg">
+        <Header image="/assets/partners/header.jpg">
           OUR PARTNERS
           <br />
           <p className="our-program__header-content__description">

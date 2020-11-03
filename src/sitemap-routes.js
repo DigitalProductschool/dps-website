@@ -6,6 +6,7 @@ export default (
     <Route path="/" />
     <Route path="/apply/" />
     <Route path="/faq/" />
+    <Route path="/partners/" />
     <Route path="/application/software-engineering/" />
     <Route path="/application/artificial-intelligence/" />
     <Route path="/application/interaction-design/" />
