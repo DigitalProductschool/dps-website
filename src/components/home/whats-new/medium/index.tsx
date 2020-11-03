@@ -15,6 +15,12 @@ class Medium extends React.Component {
       .then(res => res.json())
       .then(data => {
         const res = data.items[0];
+        var stringified = JSON.stringify(res);
+        var stringified = stringified.replace('&amp;', '&');
+        var jsonObject = JSON.parse(stringified);
+        return jsonObject;
+      })
+      .then(res => {
         const author = res.author;
         const link = res.link;
         const thumbnail = res.thumbnail;
