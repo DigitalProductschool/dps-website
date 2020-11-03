@@ -132,6 +132,10 @@
       color: black;
     }
   }
+
+  @media (max-width: 920px) {
+    padding-left: 0px;
+  }
 }
 
 .nav__content.nav--black .nav__menu__item {

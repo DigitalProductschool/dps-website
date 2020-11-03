@@ -23,10 +23,6 @@
   padding: 40px;
   flex-direction: column;
 
-  & .corona {
-    height: 500px;
-  }
-
   & .team__modal__profile-image {
     width: 500px;
   }

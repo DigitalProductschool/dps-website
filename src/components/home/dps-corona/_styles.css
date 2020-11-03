@@ -1,0 +1,17 @@
+.dps-corona__title {
+  color: black;
+  text-transform: uppercase;
+}
+
+.dps-corona__content {
+  margin-top: 50px;
+
+  @media (max-width: 950px) {
+    margin-top: 0;
+  }
+}
+.dps-corona__description {
+  font-size: 18px;
+
+  line-height: 34px;
+}

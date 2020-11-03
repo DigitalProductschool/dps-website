@@ -1,0 +1,37 @@
+.remote-collaboration__title {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.remote-collaboration__description {
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.remote-collaboration-content__image {
+  background-image: url('/assets/home/remote-collaboration/remote-collaboration.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 367px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.remote-collaboration__content {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 70px;
+  margin-top: 50px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin-top: 0;
+  }
+}
+
+.remote-collaboration__description {
+  font-size: 18px;
+  color: var(--cod-gray);
+  margin-top: 0;
+  line-height: 34px;
+}

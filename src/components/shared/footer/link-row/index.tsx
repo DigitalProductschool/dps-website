@@ -7,7 +7,7 @@ class LinkRow extends React.Component {
     return (
       <div className="link_row u-content">
         <div className="link_row__legal">
-          <Link to="/legal-disclosure"> Impressum – Legal Disclosure </Link>
+          <Link to="/legal-disclosure"> Impressum – Legal Notice </Link>
           <Link to="/privacy-policy"> Privacy Policy </Link>
         </div>
         <div className="link_row__social__media">

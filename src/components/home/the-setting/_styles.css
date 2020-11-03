@@ -1,0 +1,32 @@
+.the-setting__title {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.the-setting-content__image {
+  background-image: url('/assets/home/the-setting/the-setting.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 367px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.the-setting__content {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 70px;
+  margin-top: 50px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin-top: 0;
+  }
+}
+
+.the-setting__description {
+  font-size: 18px;
+  color: var(--cod-gray);
+  margin-top: 0;
+  line-height: 34px;
+}
