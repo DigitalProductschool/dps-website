@@ -8,7 +8,7 @@ class RemoteCollaboration extends React.Component {
           <div className="remote-collaboration__content">
             <div className="remote-collaboration-content__image" />
             <p className="remote-collaboration__description">
-              Some months ago we were convinced that this only can happen if
+              Some months ago we were convinced that real teamwork and innovative digital product development only can happen if
               people from different backgrounds and a big pile of post-its come
               together in a small team space. But the corona pandemic and all
               restrictions associated with it proved us wrong: it also works
