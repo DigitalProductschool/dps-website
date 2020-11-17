@@ -5,9 +5,6 @@ class RemoteCollaboration extends React.Component {
     return (
       <div className="remote-collaboration u-content-wrapper">
         <div className="remote-collaboration u-content">
-          <h3 className="remote-collaboration__title u-title">
-            REMOTE COLLABORATION
-          </h3>
           <div className="remote-collaboration__content">
             <div className="remote-collaboration-content__image" />
             <p className="remote-collaboration__description">
