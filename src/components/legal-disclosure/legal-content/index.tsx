@@ -73,6 +73,8 @@ class LegalContent extends React.Component {
             <br />
             Dr. Andreas Liebl
             <br />
+            <br />
+            <br />
           </p>
 
 
