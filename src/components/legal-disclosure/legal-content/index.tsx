@@ -61,6 +61,22 @@ class LegalContent extends React.Component {
             DE 252 789 694
           </p>
 
+          <h3>Responsible in Accordance with Section 18 Paragraph 2 MStV</h3>
+          <p>
+            Prof. Dr. Helmut Schönenberger (CEO)
+            <br />
+            Claudia Frey
+            <br />
+            Stefan Drüssler
+            <br />
+            Thomas Zeller
+            <br />
+            Dr. Andreas Liebl
+            <br />
+            <br />
+            <br />
+          </p>
+
           <h2>DISCLAIMER</h2>
 
           <h3>ACCOUNTABILITY FOR CONTENT</h3>
