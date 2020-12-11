@@ -6,7 +6,29 @@ const { google } = require('googleapis');
 exports.handler = async function(snap: any) {
   const email: string = snap.data().email;
   const name: string = snap.data().name;
-
+  var track: string = snap.data().track;
+  switch (track) {
+    case 'pm': {
+      track = 'Product Manager';
+      break;
+    }
+    case 'se': {
+      track = 'Software Engineer';
+      break;
+    }
+    case 'ai': {
+      track = 'AI Engineer';
+      break;
+    }
+    case 'ixd': {
+      track = 'Interaction Designer';
+      break;
+    }
+    default: {
+      track = 'DPS';
+      break;
+    }
+  }
   const OAuth2 = google.auth.OAuth2;
   const APP_NAME = 'Digital Product School';
   const clientID = functions.config().sender.apiclientid;
@@ -40,25 +62,36 @@ exports.handler = async function(snap: any) {
   const mailOptions = {
     from: `${APP_NAME} <application@dpschool.io>`,
     to: `${email}`,
-    subject: `Thanks for applying at ${APP_NAME}!`,
+    subject: `Your application at ${APP_NAME}!`,
     html: `Hi ${name}, <br><br>
-    We received your application. Thanks for wanting to be a part of the Digital Product School! <br><br>
-    We will start to evaluate the applications about 12 weeks before the next batch starts and get in touch with you. If you and your skills fit our needs we will invite you to an interview. Latest four weeks before the batch starts you will know if you are in the next round. <br><br>
+    Thanks for your application at Digital Product School! <br><br>
+    We received your application for ${track}. We will start to evaluate the applications about 12 weeks before the next batch starts and get in touch with you. If you and your skills fit our needs we will invite you to an interview. The latest four weeks before the batch starts you will know if you are in the next round. <br><br>
     If you have any questions, just email us at hello@dpschool.io and stay in touch with us on social media: <br><br>
-    <a href="https://www.instagram.com/digitalproductschool/"># Instagram </a><br>
-    <a href="https://www.facebook.com/digitalproductschool/"># Facebook </a><br>
-    <a href="https://www.linkedin.com/company/digital-product-school/"># LinkedIn </a><br>
-    <a href="https://twitter.com/dpschool_io"># Twitter </a><br>
-    <a href="https://twitter.com/dpschool_io"># Medium  </a><br><br>
+    <a href="https://www.facebook.com/digitalproductschool/"># Facebook</a><br>
+    <a href="https://twitter.com/dpschool_io"># Twitter</a><br>
+    <a href="https://www.linkedin.com/company/digital-product-school/"># LinkedIn</a><br>
+    <a href="https://www.instagram.com/digitalproductschool/"># Instagram</a><br>
+    <a href="https://leaks.digitalproductschool.io/"># Medium</a><br><br>
     Cheers,<br>
-    Michael <br><br>
-    Digital Product School is a project by <br>
-    UnternehmerTUM GmbH <br>
-    Lichtenbergstr. 6 <br>
-    85748 Garching bei München <br>
-    +49891894691232 <br><br>
-    www.digitalproductschool.io <br>
-    hello@dpschool.io`,
+    Your DPS Team <br><br><br>
+    --<br><br>
+    Digital Product School<br>
+    by UnternehmerTUM GmbH<br>
+    Lichtenbergstr. 6<br>
+    85748 Garching bei München<br>
+    +49 89-18 94 69-0<br>
+    <a href="https://www.unternehmertum.de/">www.unternehmertum.de</a><br>
+    <a href="https://digitalproductschool.io/">www.digitalproductschool.io</a><br>
+    <a href = "mailto:hello@dpschool.io">hello@dpschool.io</a><br><br>
+
+    <a href="https://www.facebook.com/digitalproductschool/"> Facebook </a>|<a href="https://twitter.com/dpschool_io"> Twitter  </a>|<a href="https://www.linkedin.com/company/digital-product-school/"> LinkedIn </a>|<a href="https://www.instagram.com/digitalproductschool/"> Instagram </a>|<a href="https://leaks.digitalproductschool.io/"> Medium </a><br><br>
+
+    Managing Directors:<br>
+    Prof. Dr. Helmut Schönenberger (CEO), Claudia Frey,<br>
+    Stefan Drüssler, Thomas Zeller, Dr. Andreas Liebl<br>
+    Chairwoman of the supervisory board: Susanne Klatten<br>
+    Register Court, Munich: HRB 141703<br>
+    VAT: DE 252 789 694`,
   };
 
   smtpTransport.sendMail(mailOptions, (error: any) => {
