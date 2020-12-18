@@ -22,6 +22,22 @@ class Faq extends React.Component {
               late to sync with your team members' time zones.
             </p>
           </Accordion>
+          
+          <Accordion title="What do I need to take part remotely?">
+            <p>
+              First of all, a stable internet connection is essential for remote work. 
+              Video calls have to be possible without any stocking, interruptions, and 
+              latency. To guarantee a smooth execution of all events and workshops and 
+              to ensure trouble-free communication between you and your team members, 
+              your connection has to have at least a real bandwidth of 10 Mbit/s in 
+              download and 2 Mbit/s upload.
+              <br />
+              Furthermore, to join video calls and to participate in workshops using a 
+              collaboration tool in parallel we highly recommend a two-screen setup. 
+              This increases working comfort, improves efficiency, and speeds up your 
+              work.
+            </p>
+          </Accordion>
 
           <Accordion title="Is it a full time program?">
             <p>
@@ -157,7 +173,7 @@ class Faq extends React.Component {
                   <br />
                   To receive the internet grant you have to proove that you
                   upgraded your internet connection to at least a real bandwidth
-                  10 Mbit/s in download and 2 Mbit/s upload.
+                  of 10 Mbit/s in download and 2 Mbit/s upload.
                 </li>
               </ol>
             </p>
