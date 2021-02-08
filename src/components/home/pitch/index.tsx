@@ -9,9 +9,11 @@ class Pitch extends React.Component<IPitchProps, {}> {
     const { forwardedRef } = this.props;
 
     return (
-      <div className="pitch u-content-wrapper" ref={forwardedRef}> 
+      <div className="pitch u-content-wrapper" ref={forwardedRef}>
         <h3 className="u-content pitch__content">
-          Build a digital product that users really love. Work in a cross-functional product team. Gain professional experience.<br /> 
+          Build a digital product that users really love. Work in a
+          cross-functional product team. Gain professional experience.
+          <br />
           Be part of our great community of digital product makers!
         </h3>
       </div>

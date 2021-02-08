@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 class Pillars extends React.Component {
   render() {
@@ -35,7 +35,9 @@ class Pillars extends React.Component {
                 Up to € 2,250 scholarship
               </h4>
               <p className="pillars__list__item__description">
-                Every applicant who gets accepted will receive a scholarship of up to € 750 per month. You can find more about the scholarship in our FAQs.
+                Every applicant who gets accepted will receive a scholarship of
+                up to € 750 per month. You can find more about the scholarship
+                in our FAQs.
               </p>
             </li>
             <li className="pillars__list__item">
@@ -102,8 +104,8 @@ class Pillars extends React.Component {
           </ul>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Pillars
+export default Pillars;

@@ -1,5 +1,5 @@
-import * as React from 'react'
-import Seo from '../../seo'
+import * as React from 'react';
+import Seo from '../../seo';
 
 class LegalContent extends React.Component {
   render() {
@@ -60,7 +60,7 @@ class LegalContent extends React.Component {
             <br />
             DE 252 789 694
           </p>
-          
+
           <h3>Responsible in Accordance with Section 18 Paragraph 2 MStV</h3>
           <p>
             Prof. Dr. Helmut Schönenberger (CEO)
@@ -76,7 +76,6 @@ class LegalContent extends React.Component {
             <br />
             <br />
           </p>
-
 
           <h2>DISCLAIMER</h2>
 
@@ -114,8 +113,8 @@ class LegalContent extends React.Component {
           </p>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default LegalContent
+export default LegalContent;
