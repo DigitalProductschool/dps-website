@@ -93,34 +93,53 @@ exports.handler = function(request: any, response: any, database: any) {
     const data = await exports.getRequestDataAndPersistFiles(request, database);
     const cvPromise = data['cv'] || Promise.resolve(null);
     const coverLetterPromise = data['coverLetter'] || Promise.resolve(null);
+    const mandatoryData = [
+      data['name'],
+      data['email'],
+      data['batch'],
+      data['consent'],
+      data['scholarship'],
+      data['track'],
+      data['cv'],
+    ];
+    if (
+      request.method === 'POST' &&
+      mandatoryData.indexOf('') === -1 &&
+      mandatoryData.indexOf(undefined) === -1
+    ) {
+      try {
+        const [cv, coverLetter] = await Promise.all([
+          cvPromise,
+          coverLetterPromise,
+        ]);
 
-    try {
-      const [cv, coverLetter] = await Promise.all([
-        cvPromise,
-        coverLetterPromise,
-      ]);
+        await database
+          .firestore()
+          .collection('batches')
+          .doc(`batch-${data.batch}`)
+          .collection('applications')
+          .add({
+            ...data,
+            cv,
+            coverLetter,
+          });
 
-      await database
-        .firestore()
-        .collection('batches')
-        .doc(`batch-${data.batch}`)
-        .collection('applications')
-        .add({
-          ...data,
-          cv,
-          coverLetter,
-        });
+        response.status(200).send('Thank you for your application!');
+      } catch (e) {
+        console.log(e);
+        console.log(e.message);
 
-      response.status(200).send('Thank you for your application!');
-    } catch (e) {
-      console.log(e);
-      console.log(e.message);
-
-      response
-        .status(500)
+        response
+          .status(500)
+          .send(
+            'We are sorry, Something went wrong. Please contact hello@dpschool.io'
+          );
+      }
+    } else
+      return response
+        .status(400)
         .send(
-          'We are sorry, Something went wrong. Please contact hello@dpschool.io'
+          'We are sorry, Something went wrong from your side. Please contact hello@dpschool.io'
         );
-    }
   });
 };
