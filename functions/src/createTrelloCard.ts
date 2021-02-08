@@ -18,13 +18,21 @@ const BATCH_TO_LABEL_ID: Map<
 function prepareBatchToLabelIdMap() {
   const tmp = new Map<string, Map<string, string>>();
   // Create Map from Json file
-  const se = new Map(Object.entries(functions.config().labels.se));
+  const se: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.se)
+  );
   tmp.set('se', se);
-  const pm = new Map(Object.entries(functions.config().labels.pm));
+  const pm: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.pm)
+  );
   tmp.set('pm', pm);
-  const ai = new Map(Object.entries(functions.config().labels.ai));
+  const ai: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.ai)
+  );
   tmp.set('ai', ai);
-  const ixd = new Map(Object.entries(functions.config().labels.ixd));
+  const ixd: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.ixd)
+  );
   tmp.set('ixd', ixd);
   return tmp;
 }
