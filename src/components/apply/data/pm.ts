@@ -38,7 +38,7 @@ export const expectations = {
     'You own a university degree (business, computer science, psychology or similar)',
     'You’ve got a passion for creating and trying out new things',
     'You are interested and knowledgeable in digital trends, technology, and culture',
-    'You’ve got the ability to thrive under pressure and function effectively in a fast-paced environment and to provide strong leadership',
+    'You’ve got the ability to thrive under pressure and in a in a fast-paced environment and to provide strong leadership',
   ],
   secondColumn: [
     'You have a deep interest in creating and analyzing products and markets',
