@@ -13,7 +13,11 @@ import DPSCorona from '../../components/home/dps-corona';
 import RemoteCollaboration from '../../components/home/remote-collaboration';
 import TheSetting from '../../components/home/the-setting';
 
-class Home extends React.Component {
+interface IHomeProps {
+  headerType: string;
+}
+
+class Home extends React.Component<IHomeProps, {}> {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
   render() {
     return (
@@ -26,6 +30,7 @@ class Home extends React.Component {
               block: 'start',
             })
           }
+          headerType={this.props.headerType}
         />
         <Pitch forwardedRef={this.forwardedRef} />
         <DPSCorona />

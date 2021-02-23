@@ -1,17 +1,9 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
-interface IHeaderContentProps {
-  className: string;
-  onContentButtonClick: () => void;
-}
-
-class HeaderContent extends React.Component<IHeaderContentProps, {}> {
+class HeaderContent extends React.Component {
   render() {
-    const { className, onContentButtonClick } = this.props;
-
     return (
-      <div className={`${className} header-content`}>
+      <div className="u-content header-content">
         <h1 className="header-content__title header-content__title--first">
           Master your project.
         </h1>
