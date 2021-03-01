@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Header from '../../components/home/header/index';
+import HomeHeader from '../../components/home/header/index';
 import Pitch from '../../components/home/pitch/index';
 import DiverseTeams from '../../components/home/diverse-teams';
 import UserFirst from '../../components/home/user-first';
@@ -13,17 +13,17 @@ import DPSCorona from '../../components/home/dps-corona';
 import RemoteCollaboration from '../../components/home/remote-collaboration';
 import TheSetting from '../../components/home/the-setting';
 
-interface IHomeProps {
+interface IHeaderProps {
   headerType: string;
 }
 
-class Home extends React.Component<IHomeProps, {}> {
+class Home extends React.Component<IHeaderProps, {}> {
   private forwardedRef: React.RefObject<HTMLDivElement> = React.createRef();
   render() {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Header
+        <HomeHeader
           onContentButtonClick={() =>
             this.forwardedRef.current.scrollIntoView({
               behavior: 'smooth',

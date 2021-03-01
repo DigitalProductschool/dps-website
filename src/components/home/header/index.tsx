@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import Nav from '../../shared/nav/index';
 import Cover from './cover/index';
-import HeaderImage from '../../shared/header/section';
+import Header from '../../shared/header/section';
 import HeaderContent from './header-content/index';
 
 interface IHeaderProps {
   headerType: string;
 }
 
-class Header extends React.Component<IHeaderProps, {}> {
+class HomeHeader extends React.Component<IHeaderProps, {}> {
   render() {
     return (
       <React.Fragment>
@@ -17,13 +17,15 @@ class Header extends React.Component<IHeaderProps, {}> {
           <Nav />
           {this.props.headerType == 'Video' ? (
             <>
-              <Cover />
-              <HeaderContent />
+              <Header>
+                <Cover />
+                <HeaderContent />
+              </Header>
             </>
           ) : (
-            <HeaderImage image="/assets/home/header/header-big.jpg">
+            <Header image="/assets/home/header/header-big.jpg">
               <HeaderContent />
-            </HeaderImage>
+            </Header>
           )}
         </section>
       </React.Fragment>
@@ -31,4 +33,4 @@ class Header extends React.Component<IHeaderProps, {}> {
   }
 }
 
-export default Header;
+export default HomeHeader;
