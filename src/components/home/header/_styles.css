@@ -15,5 +15,6 @@
     background-image: url('/assets/home/header/header-small.jpg') !important;
     background-size: cover;
     background-position: center center;
+    z-index: 1;
   }
 }

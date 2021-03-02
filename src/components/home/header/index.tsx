@@ -15,17 +15,15 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
       <React.Fragment>
         <section className="header u-content-wrapper">
           <Nav />
-          {this.props.headerType == 'Video' ? (
-            <>
-              <Header>
-                <Cover />
-                <HeaderContent />
-              </Header>
-            </>
-          ) : (
-            <Header image="/assets/home/header/header-big.jpg">
+          {this.props.headerType == 'Photo' ? (
+            <Header image="/assets/home/header/header.jpg">
               <HeaderContent />
             </Header>
+          ) : (
+            <div className="u-content header-content">
+              <Cover />
+              <HeaderContent />
+            </div>
           )}
         </section>
       </React.Fragment>

@@ -10,7 +10,7 @@ export default function Header(props) {
         backgroundImage: 'url(' + props.image + ')',
       }}
     >
-      <div className="u-content">
+      <div className="u-content header-content">
         <div
           style={{
             position: 'absolute',

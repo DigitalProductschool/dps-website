@@ -3,7 +3,7 @@ import * as React from 'react';
 class HeaderContent extends React.Component {
   render() {
     return (
-      <div className="u-content header-content">
+      <>
         <h1 className="header-content__title header-content__title--first">
           Master your project.
         </h1>
@@ -19,7 +19,7 @@ class HeaderContent extends React.Component {
             Apply
           </a>
         </div>
-      </div>
+      </>
     );
   }
 }
