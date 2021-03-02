@@ -22,8 +22,16 @@ export default function Header(props) {
             opacity: opacity,
             zIndex: '-1',
           }}
-        ></div>
+        />
         <h1 className="header-section__content__title">{props.children}</h1>
+        {props.description && (
+          <p className="header-section__content__description">
+            {props.description}
+          </p>
+        )}
+        {props.cta && (
+          <div className="header-section__content__buttons">{props.cta}</div>
+        )}
       </div>
     </section>
   );

@@ -38,6 +38,53 @@
   }
 }
 
+.header-section__content__description {
+  color: white;
+  max-width: var(--max-width);
+  margin-top: 30px;
+  font-size: calc(16px + 0.4vw);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: none;
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.header-section__content__buttons {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 214px auto;
+
+  @media (max-width: 1191px) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 780px) {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+
+    & .u-button__apply {
+      width: 100%;
+    }
+  }
+}
+
+.header-section__content__call-to-action {
+  width: 325px;
+  height: 42px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
+}
+
 .header-image-content__text {
   box-sizing: border-box;
   background-color: white;
