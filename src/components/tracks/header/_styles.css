@@ -20,7 +20,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: calc(32px + 3vw);
+  font-size: calc(32px + 0.3vw);
   margin-top: 131px;
 
   @media (min-width: 1280px) {

@@ -18,6 +18,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'ixd',
   name: 'Interaction Designer',
+  description:
+    'Apply now as Interaction Designer at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'interaction-design',
 };
 

@@ -19,6 +19,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'pm',
   name: 'Product Manager',
+  description:
+    'Apply now as Product Manager at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'product-management',
 };
 

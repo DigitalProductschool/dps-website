@@ -19,6 +19,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'ai',
   name: 'AI Engineer',
+  description:
+    'Apply now as AI Engineer at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'artificial-intelligence',
 };
 

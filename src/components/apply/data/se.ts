@@ -18,6 +18,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'se',
   name: 'Software Engineer',
+  description:
+    'Apply now as Software Engineer at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'software-engineering',
 };
 

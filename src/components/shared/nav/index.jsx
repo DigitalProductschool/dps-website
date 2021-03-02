@@ -111,10 +111,17 @@ const MenuDropdownForDesktop = props => {
       </Link>
       <Link
         to="/tracks/product-management/"
-        style={{ ...styles, paddingBottom: '0' }}
+        style={styles}
         activeStyle={activeStyle}
       >
         Product Manager
+      </Link>
+      <Link
+        to="/tracks/product-marketing-communications-manager/"
+        style={{ ...styles, paddingBottom: '0' }}
+        activeStyle={activeStyle}
+      >
+        Product Marketing & Communications Manager
       </Link>
     </div>
   );
@@ -140,11 +147,14 @@ const MenuDropDownForMobile = props => {
       <Link to="/tracks/interaction-design/" style={styles}>
         Interaction Designer
       </Link>
+      <Link to="/tracks/product-management/" style={styles}>
+        Product Manager
+      </Link>
       <Link
-        to="/tracks/product-management/"
+        to="/tracks/product-marketing-communications-manager/"
         style={{ ...styles, paddingBottom: '0' }}
       >
-        Product Manager
+        Product Marketing & Communications Manager
       </Link>
     </div>
   );
@@ -186,13 +196,15 @@ function Nav(props) {
         case 'pm':
           setNavBackground('var(--picton-blue)');
           break;
+        case 'pmm':
+          setNavBackground('var(--blue)');
+          break;
         case undefined:
           const navBackground =
             scrolled < 0.1 ? 'transparent' : 'var(--deep-cove)';
           setNavBackground(navBackground);
           break;
       }
-
       setPosition(position);
       setTop(top);
       setHeight(height);

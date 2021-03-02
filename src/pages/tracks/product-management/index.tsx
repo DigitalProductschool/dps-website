@@ -39,6 +39,7 @@ class TrackPM extends React.Component {
         <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
+          description={generalTrackInfo.description}
           track={generalTrackInfo.track}
         />
         <Footer addSectionClass="u-section-margin-top" />
