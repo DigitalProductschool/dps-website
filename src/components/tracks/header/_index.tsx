@@ -63,7 +63,7 @@ class Header extends React.Component<IHeaderProps, {}> {
             <div className="tracks-header__apply-button-wrapper">
               {track.track == 'pmm' ? (
                 <a
-                  className="u-button u-button__apply u-button--reversed tracks__apply-button"
+                  className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
                   href="https://utum.typeform.com/to/ZyIceCta"
                   target="_blank"
                 >
