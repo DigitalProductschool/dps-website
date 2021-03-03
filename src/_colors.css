@@ -1,11 +1,12 @@
 :root {
-  --gallery: #EDEDED;
+  --gallery: #ededed;
   --cod-gray: #171717;
-  --black-pearl: #060A26;
+  --black-pearl: #060a26;
   --bigstone: #182542;
-  --hollywoord-cerise: #DD04A4;
-  --yellow-sea: #FFA70E;
-  --wisteria: #4E1A75;
-  --picton-blue: #28C5F3;
+  --hollywoord-cerise: #dd04a4;
+  --yellow-sea: #ffa70e;
+  --wisteria: #4e1a75;
+  --picton-blue: #28c5f3;
+  --blue: #110dac;
   --deep-cove: #071346;
 }

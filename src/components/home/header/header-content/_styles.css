@@ -4,6 +4,7 @@
   justify-content: center;
   height: calc(100% - var(--nav-height-desktop));
   padding-bottom: 35px;
+  text-transform: none;
 
   @media (max-width: 780px) {
     padding-bottom: 20px;
@@ -43,6 +44,7 @@
   margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
+  text-transform: none;
 
   @media (max-width: 780px) {
     display: none;

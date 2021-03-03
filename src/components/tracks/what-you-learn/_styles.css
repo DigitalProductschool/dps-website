@@ -72,6 +72,10 @@
     background-image: url('/assets/tracks/ai/what-you-learn.jpg');
   }
 
+  &--pmm {
+    background-image: url('/assets/tracks/pmm/what-you-learn.jpg');
+  }
+
   background-size: cover;
   background-position: center center;
   width: 100%;

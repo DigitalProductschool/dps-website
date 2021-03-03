@@ -4,6 +4,7 @@ import { ApplyButton } from '../header/_index';
 
 interface IHeaderProps {
   name: string;
+  description: string;
   url: string;
   track: string;
 }
@@ -11,7 +12,7 @@ interface IHeaderProps {
 // this component will be thrown away, so quick & dirty
 class Tracks extends React.Component<IHeaderProps, {}> {
   render() {
-    const { name } = this.props;
+    const { description } = this.props;
 
     return (
       <div className="u-content-wrapper">
@@ -23,9 +24,7 @@ class Tracks extends React.Component<IHeaderProps, {}> {
         >
           <div className="bePart-content__title">BE PART OF DPS</div>
 
-          <b className="bePart-content__subtitle">
-            {`Apply now as ${name} at Digital Product School and take in the experience concentrate in digital product development!`}
-          </b>
+          <b className="bePart-content__subtitle">{description}</b>
 
           <br />
           <p className="bePart-content__batchDetails">

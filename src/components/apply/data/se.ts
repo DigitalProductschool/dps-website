@@ -3,8 +3,8 @@ export const or = {
     'Working in a diverse team of product managers, interaction designers, AI specialists and fellow software engineers, who want to solve real-world problems building great digital products',
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
     'Collaboration with the best international start-ups, industry leaders, researchers, and technology.',
-    'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding.',
-    'Grants: up to € 750.- per month',
+    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
+    'A grant up to € 750.- per month',
   ],
   responsibilities: [
     'Collaborate ​with the other software engineers, AI engineers, interaction designers and product managers in your team on the journey from the problem to the product',
@@ -18,6 +18,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'se',
   name: 'Software Engineer',
+  description:
+    'Apply now as Software Engineer at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'software-engineering',
 };
 

@@ -3,8 +3,8 @@ export const or = {
     'Working in a diverse team of interaction designers, software developers, AI engineers and fellow product managers who are passionate about building great digital products',
     'A unique opportunity to be part of our 3-month training program of the Digital Product School',
     'Collaboration with local start-ups, industry leaders, researchers and technology',
-    'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding',
-    'Grants: up to € 750.- per month',
+    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
+    'A grant up to € 750.- per month',
   ],
   responsibilities: [
     'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
@@ -19,6 +19,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'pm',
   name: 'Product Manager',
+  description:
+    'Apply now as Product Manager at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'product-management',
 };
 
@@ -38,7 +40,7 @@ export const expectations = {
     'You own a university degree (business, computer science, psychology or similar)',
     'You’ve got a passion for creating and trying out new things',
     'You are interested and knowledgeable in digital trends, technology, and culture',
-    'You’ve got the ability to thrive under pressure and function effectively in a fast-paced environment and to provide strong leadership',
+    'You’ve got the ability to thrive under pressure and in a in a fast-paced environment and to provide strong leadership',
   ],
   secondColumn: [
     'You have a deep interest in creating and analyzing products and markets',

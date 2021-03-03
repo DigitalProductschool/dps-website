@@ -2,29 +2,33 @@ import * as React from 'react';
 
 import Nav from '../../shared/nav/index';
 import Cover from './cover/index';
+import Header from '../../shared/header/section';
 import HeaderContent from './header-content/index';
 
 interface IHeaderProps {
-  onContentButtonClick: () => void;
+  headerType: string;
 }
 
-class Header extends React.Component<IHeaderProps, {}> {
+class HomeHeader extends React.Component<IHeaderProps, {}> {
   render() {
-    const { onContentButtonClick } = this.props;
-
     return (
       <React.Fragment>
         <section className="header u-content-wrapper">
           <Nav />
-          <Cover />
-          <HeaderContent
-            onContentButtonClick={onContentButtonClick}
-            className="u-content"
-          />
+          {this.props.headerType == 'Photo' ? (
+            <Header image="/assets/home/header/header.jpg">
+              <HeaderContent />
+            </Header>
+          ) : (
+            <div className="u-content header-content">
+              <Cover />
+              <HeaderContent />
+            </div>
+          )}
         </section>
       </React.Fragment>
     );
   }
 }
 
-export default Header;
+export default HomeHeader;

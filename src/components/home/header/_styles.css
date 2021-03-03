@@ -12,8 +12,9 @@
 
   @media (max-width: 780px) {
     height: 500px;
-    background-image: url('/assets/home/header/header-image.jpg') !important;
+    background-image: url('/assets/home/header/header-small.jpg') !important;
     background-size: cover;
     background-position: center center;
+    z-index: 1;
   }
 }

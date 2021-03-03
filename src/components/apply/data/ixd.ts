@@ -3,8 +3,8 @@ export const or = {
     'Working in a diverse team of Interaction Designers, Software Developers, AI Experts and fellow Product Managers who are passionate about building great digital products.',
     'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
     'Collaboration with local start-ups, industry leaders, researchers, and technology.',
-    'A modern workplace in the rooms of Design Offices Munich, which was designed and built especially for the needs of DPS to work in a creative and inspiring surrounding.',
-    'Grants: up to € 750.- per month',
+    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
+    'A grant up to € 750.- per month',
   ],
   responsibilities: [
     'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
@@ -18,6 +18,8 @@ export const or = {
 export const generalTrackInfo = {
   track: 'ixd',
   name: 'Interaction Designer',
+  description:
+    'Apply now as Interaction Designer at Digital Product School and take in the experience concentrate in digital product development!',
   url: 'interaction-design',
 };
 
