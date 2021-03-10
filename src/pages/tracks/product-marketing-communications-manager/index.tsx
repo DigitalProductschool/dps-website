@@ -12,7 +12,7 @@ import {
   header,
   expectations,
   whatyoulearn,
-} from '../../../components/apply/data/pmm';
+} from '../../../components/apply/data/pmc';
 import Tracks from '../../../components/tracks/apply/_index';
 import CookieWarning from '../../../components/shared/cookie-warning';
 import './_styles.css';
@@ -22,7 +22,7 @@ import './_styles.css';
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.
  */
-class TrackPMM extends React.Component {
+class TrackPMC extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -31,12 +31,12 @@ class TrackPMM extends React.Component {
           track={generalTrackInfo}
           data={header}
           logo="/assets/tracks/dps-logo-white.svg"
-          className="track-pmm__header"
+          className="track-pmc__header"
         />
-        <TrackImage track="pmm" />
+        <TrackImage track="pmc" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-pmm__wyl" data={whatyoulearn} />
+        <WhatYouLearn className="track-pmc__wyl" data={whatyoulearn} />
         {/*  <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
@@ -82,4 +82,4 @@ class TrackPMM extends React.Component {
   }
 }
 
-export default TrackPMM;
+export default TrackPMC;

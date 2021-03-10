@@ -196,7 +196,7 @@ function Nav(props) {
         case 'pm':
           setNavBackground('var(--picton-blue)');
           break;
-        case 'pmm':
+        case 'pmc':
           setNavBackground('var(--blue)');
           break;
         case undefined:
