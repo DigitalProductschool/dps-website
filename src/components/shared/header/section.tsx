@@ -1,6 +1,13 @@
 import * as React from 'react';
 
-export default function Header(props) {
+interface HeaderProps {
+  overlayColor?: string;
+  opacity?: string;
+  image: string;
+  children: React.ReactNode;
+}
+
+export default function Header(props: HeaderProps) {
   const overlayColor = props.overlayColor || 'rgba(0, 0, 0, 0.56)';
   const opacity = props.opacity || '';
   return (

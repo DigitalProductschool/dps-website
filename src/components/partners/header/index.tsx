@@ -1,17 +1,17 @@
 import * as React from 'react';
 import Header from '../../shared/header/section';
+import HeaderContentInside from '../../shared/header/content-inside-header';
 
 class HeaderPartners extends React.Component {
   render() {
     return (
       <React.Fragment>
         <Header image="/assets/partners/header.jpg">
-          OUR PARTNERS
-          <br />
-          <p className="our-program__header-content__description">
-            Digital Product School could not exist without its partners and
-            enablers. Thank you for your contribution!
-          </p>
+          Our Partners
+          <HeaderContentInside
+            description=" Digital Product School could not exist without its partners and
+            enablers. Thank you for your contribution!"
+          />
         </Header>
       </React.Fragment>
     );
