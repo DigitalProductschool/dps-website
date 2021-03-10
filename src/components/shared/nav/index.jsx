@@ -121,7 +121,7 @@ const MenuDropdownForDesktop = props => {
         style={{ ...styles, paddingBottom: '0' }}
         activeStyle={activeStyle}
       >
-        Product Marketing & Communications Manager
+        Product Marketing &amp; Communications Manager
       </Link>
     </div>
   );
@@ -154,7 +154,7 @@ const MenuDropDownForMobile = props => {
         to="/tracks/product-marketing-communications-manager/"
         style={{ ...styles, paddingBottom: '0' }}
       >
-        Product Marketing & Communications Manager
+        Product Marketing &amp; Communications Manager
       </Link>
     </div>
   );
