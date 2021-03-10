@@ -4,7 +4,7 @@ import CookieWarning from '../../components/shared/cookie-warning/index';
 import Nav from '../../components/shared/nav/index';
 import Modal from '../../components/shared/modal/index';
 import Header from '../../components/shared/header/section';
-import HeaderContent from '../../components/shared/header/content';
+import HeaderContentBox from '../../components/shared/header/content-box';
 import { useState, useEffect } from 'react';
 
 let members = [
@@ -310,7 +310,7 @@ function Team() {
       <Header image="/assets/team/header.jpg">
         the heart-throbs of innovation
       </Header>
-      <HeaderContent>
+      <HeaderContentBox>
         The Digital Product School (DPS) core team consists of an autonomous
         group of experts in roles typically found in a successful startup:
         product management, design, software engineering, artificial
@@ -321,7 +321,7 @@ function Team() {
         development while working at tech-startups, corporates and in academia.
         Together they support, guide and help the participants to develop a
         user-centric digital product in an agile team.
-      </HeaderContent>
+      </HeaderContentBox>
 
       <div className="u-content">
         <h1

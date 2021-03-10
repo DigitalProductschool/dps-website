@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Header from '../../shared/header/section';
-import HeaderContent from '../../shared/header/content';
+import HeaderContentBox from '../../shared/header/content-box';
 
 function Link(props) {
   return (
@@ -17,7 +17,7 @@ class ApplyNow extends React.Component {
         <Header image="/assets/apply/dps-apply.jpg">
           Become an experienced digital product maker!
         </Header>
-        <HeaderContent>
+        <HeaderContentBox>
           Digital Product School will show you how you act in an autonomous and
           interdisciplinary team and what "agile", "Scrum" and "Design Thinking"
           and all the other buzzwords mean. You will experience how it is to
@@ -26,7 +26,7 @@ class ApplyNow extends React.Component {
           <br />
           Find out more about <Link href="/our-program">our program</Link> or
           apply now for one of our roles below!
-        </HeaderContent>
+        </HeaderContentBox>
       </React.Fragment>
     );
   }
