@@ -24,6 +24,8 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
             <HeaderContentInside
               description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
               buttonText="Apply"
+              buttonUrl="/apply"
+              target="_self"
             />
           </Header>
         </section>
