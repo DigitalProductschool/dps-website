@@ -15,34 +15,17 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
       <React.Fragment>
         <section className="header u-content-wrapper">
           <Nav />
-          {this.props.headerType == 'Photo' ? (
-            <Header image="/assets/home/header/header.jpg">
-              <HeaderContentInside
-                firstLineTitle="Master your project."
-                secondLineTitle={
-                  <div>
-                    Become<span className="u-outline">experienced.</span>
-                  </div>
-                }
-                description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
-                buttonText="Apply"
-              />
-            </Header>
-          ) : (
-            <div className="u-content header-content">
-              <Cover />
-              <HeaderContentInside
-                firstLineTitle="Master your project."
-                secondLineTitle={
-                  <div>
-                    Become<span className="u-outline">experienced.</span>
-                  </div>
-                }
-                description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
-                buttonText="Apply"
-              />
-            </div>
-          )}
+          <Header
+            image="/assets/home/header/header.jpg"
+            headerType={this.props.headerType}
+          >
+            Master your project. Become
+            <span className="u-outline"> experienced.</span>
+            <HeaderContentInside
+              description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
+              buttonText="Apply"
+            />
+          </Header>
         </section>
       </React.Fragment>
     );

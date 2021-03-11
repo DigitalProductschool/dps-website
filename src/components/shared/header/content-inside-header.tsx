@@ -1,19 +1,13 @@
 import * as React from 'react';
 
 interface HeaderContentInsideProps {
-  firstLineTitle?: string;
-  secondLineTitle?: React.ReactNode;
   description: string;
   buttonText?: string;
 }
 
 export default function HeaderContentInside(props: HeaderContentInsideProps) {
   return (
-    <>
-      <h1 className="header-content__title header-content__title--first">
-        {props.firstLineTitle}
-      </h1>
-      <h1 className="header-content__title">{props.secondLineTitle}</h1>
+    <React.Fragment>
       <p className="header-content__description">{props.description}</p>
       <div className="header-content__buttons">
         {props.buttonText && (
@@ -22,6 +16,6 @@ export default function HeaderContentInside(props: HeaderContentInsideProps) {
           </a>
         )}
       </div>
-    </>
+    </React.Fragment>
   );
 }

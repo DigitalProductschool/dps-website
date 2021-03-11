@@ -25,6 +25,7 @@
   padding: 40px 65px;
   max-width: 620px;
   width: 70%;
+  z-index: 1;
 
   @media (max-width: 620px) {
     padding: 40px 40px;
