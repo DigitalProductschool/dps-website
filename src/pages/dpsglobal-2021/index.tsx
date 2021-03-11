@@ -22,11 +22,11 @@ class Conference extends React.Component {
         <CookieWarning />
         <Nav />
         <HeaderConference url={this.state.conferenceUrl} />
-        {/*  <Welcome />
-        <WhoCanJoin />
+        <Welcome url={this.state.conferenceUrl} />
+        <WhoCanJoin url={this.state.conferenceUrl} />
         <Alumni />
         <Network />
-       <ScheduleSpeakers /> */}
+        <ScheduleSpeakers />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     );
