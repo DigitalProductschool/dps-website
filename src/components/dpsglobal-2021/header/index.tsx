@@ -14,7 +14,7 @@ class HeaderConference extends React.Component<HeaderConferenceProps, {}> {
         <Header image="/assets/dpsglobal-2021/header/conferenceheader.jpg">
           DPS GLOBAL CONFERENCE
           <br />
-          <span className="u-outline"> | MAY 21 &amp; 22</span>
+          <span className="u-outline">MAY 21 &amp; 22, 2021</span>
           <HeaderContentInside
             description="From alumni for alumni: all about carriers and knowledge in digital product development"
             buttonText="Get your ticket here!"
