@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const schedulesFriday = [
   { id: 1, time: '12:30 pm', name: 'Welcome & Introduction' },
-  { id: 2, time: '01:00 pm', name: 'Keynote by Jeff Ghothelf' },
+  { id: 2, time: '01:00 pm', name: 'Keynote by Jeff Gothelf' },
   { id: 3, time: '02:00 pm', name: 'BREAK' },
   { id: 4, time: '02:15 pm', name: 't.b.a. by t.b.a.' },
   { id: 5, time: '03:00 pm', name: 't.b.a. by t.b.a.' },
