@@ -18,7 +18,7 @@ export const or = {
 };
 
 export const generalTrackInfo = {
-  track: 'pmm',
+  track: 'pmc',
   name: 'Product Marketing & Communications Manager',
   description:
     'Apply now for the Digital Media Track at Digital Product School and immerse yourself in product marketing and communication!',
@@ -28,7 +28,7 @@ export const generalTrackInfo = {
 
 export const header = {
   description1:
-    'To be a successful Product Marketing & Communications Manager (PMM) you have to have experience in all fields of marketing and communications. You have to know the product and its  target audience, then how to create a compelling story around it. As a Product Marketing & Communications Manager, you have to also test and develop formats and channels and create and execute a strategy. These are based around data and analytics. And with the help of this data you also control and optimize the success of any given project.',
+    'To be a successful Product Marketing & Communications Manager (PMC) you have to have experience in all fields of marketing and communications. You have to know the product and its  target audience, then how to create a compelling story around it. As a Product Marketing & Communications Manager, you have to also test and develop formats and channels and create and execute a strategy. These are based around data and analytics. And with the help of this data you also control and optimize the success of any given project.',
   description2:
     "In the 3-month training program at Digital Product School, you won't just learn how to do this, you'll do it every day! You will gain valuable hands-on experience for your future professional life.",
 };
@@ -55,5 +55,5 @@ export const whatyoulearn = {
     'After three months, you will be familiar with all relevant topics and techniques of modern (digital) marketing and communications. You will have firsthand experience  of what it is like to work in an agile communications team in a state-of-the-art newsroom to develop solutions in real-time based on most recent user data and market analytics.',
   secondColumn:
     'As a member of the Digital Product School, you will also learn about digital product development (e.g. Agile ways of working and Design Thinking methods) and transfer these to the real world in a marketing and communications team environment.',
-  track: 'pmm',
+  track: 'pmc',
 };

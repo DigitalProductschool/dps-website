@@ -38,7 +38,7 @@ class ToolPartner extends React.Component {
               marginBottom: '60px',
             }}
           >
-            <h3 className="u-title">ENABLERS & SUPPORTERS</h3>
+            <h3 className="u-title">ENABLERS &amp; SUPPORTERS</h3>
             <div className="enabler-partner-wrapper">
               <div className="enabler-partner">
                 <h6>part of the </h6>

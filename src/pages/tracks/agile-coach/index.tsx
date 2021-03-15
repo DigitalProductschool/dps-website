@@ -12,7 +12,7 @@ import {
   header,
   expectations,
   whatyoulearn,
-} from '../../../components/apply/data/pmc';
+} from '../../../components/apply/data/ac';
 import Tracks from '../../../components/tracks/apply/_index';
 import CookieWarning from '../../../components/shared/cookie-warning';
 import './_styles.css';
@@ -22,7 +22,7 @@ import './_styles.css';
  * TrackImage is for now the same for all tracks. It can be later made more flexible if track heads
  * decide to use different images.
  */
-class TrackPMC extends React.Component {
+class TrackAC extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -31,12 +31,12 @@ class TrackPMC extends React.Component {
           track={generalTrackInfo}
           data={header}
           logo="/assets/tracks/dps-logo-white.svg"
-          className="track-pmc__header"
+          className="track-ac__header"
         />
-        <TrackImage track="pmc" />
+        <TrackImage track="ac" />
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
-        <WhatYouLearn className="track-pmc__wyl" data={whatyoulearn} />
+        <WhatYouLearn className="track-ac__wyl" data={whatyoulearn} />
         {/*  <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
@@ -68,7 +68,7 @@ class TrackPMC extends React.Component {
             <div className="tracks__apply-button-wrapper">
               <a
                 className="u-button u-button__apply u-button--reversed tracks__apply-button"
-                href="https://utum.typeform.com/to/ZyIceCta"
+                href={generalTrackInfo.typeform}
                 target="_blank"
               >
                 Apply as {generalTrackInfo.name}
@@ -82,4 +82,4 @@ class TrackPMC extends React.Component {
   }
 }
 
-export default TrackPMC;
+export default TrackAC;

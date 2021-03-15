@@ -23,8 +23,13 @@
     z-index: 0;
   }
 
-  &--pmm {
-    background-image: url('/assets/tracks/pmm/dps-product-marketing-communications-manager.jpg');
+  &--pmc {
+    background-image: url('/assets/tracks/pmc/dps-product-marketing-communications-manager.jpg');
+    z-index: 0;
+  }
+
+  &--ac {
+    background-image: url('/assets/tracks/ac/header.jpg');
     z-index: 0;
   }
 

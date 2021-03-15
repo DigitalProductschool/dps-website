@@ -70,6 +70,30 @@ handlers:
     secure: always
     expiration: 1s
 
+  - url: /pmc
+    static_files: public/tracks/product-marketing-communications-manager/index.html
+    upload: public/tracks/product-marketing-communications-manager/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /pmc/
+    static_files: public/tracks/product-marketing-communications-manager/index.html
+    upload: public/tracks/product-marketing-communications-manager/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /ac
+    static_files: public/tracks/agile-coach/index.html
+    upload: public/tracks/agile-coach/index.html
+    secure: always
+    expiration: 1s
+
+  - url: /ac/
+    static_files: public/tracks/agile-coach/index.html
+    upload: public/tracks/agile-coach/index.html
+    secure: always
+    expiration: 1s
+
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
   # matches path/ to path/index.html
