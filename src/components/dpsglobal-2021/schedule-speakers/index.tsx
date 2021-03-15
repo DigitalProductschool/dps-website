@@ -73,7 +73,6 @@ class Alumni extends React.Component<ScheduleProps, {}> {
             className="u-button u-button__apply u-button--reversed schedule__button"
             href={this.props.url}
             target="_blank"
-            style={{ margin: 'auto' }}
           >
             Get your ticket here!
           </a>

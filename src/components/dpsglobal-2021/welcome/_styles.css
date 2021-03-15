@@ -27,4 +27,7 @@
 
 .welcome__content__title {
   line-height: 70px;
+  @media (max-width: 620px) {
+    line-height: 30px;
+  }
 }

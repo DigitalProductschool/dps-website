@@ -82,6 +82,18 @@ handlers:
     secure: always
     expiration: 10m
 
+  - url: /ac
+    static_files: public/tracks/agile-coach/index.html
+    upload: public/tracks/agile-coach/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /ac/
+    static_files: public/tracks/agile-coach/index.html
+    upload: public/tracks/agile-coach/index.html
+    secure: always
+    expiration: 10m
+
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
   # matches path/ to path/index.html

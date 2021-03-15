@@ -27,6 +27,7 @@
 
 .schedule__button {
   margin-top: 40px;
+  margin: auto;
   width: 504px;
   @media (max-width: 620px) {
     width: 100%;
