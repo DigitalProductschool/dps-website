@@ -11,8 +11,8 @@
 
 .welcome__content__description {
   display: grid;
-  grid-template-columns: 4fr 6fr;
-  grid-gap: 200px;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 100px;
 
   @media (max-width: 950px) {
     grid-template-columns: auto;
@@ -23,4 +23,8 @@
 
 .welcome__content__description__image {
   margin-top: 18px;
+}
+
+.welcome__content__title {
+  line-height: 70px;
 }

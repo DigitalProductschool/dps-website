@@ -1,5 +1,9 @@
 import * as React from 'react';
 
+interface ScheduleProps {
+  url: string;
+}
+
 export const schedulesFriday = [
   { id: 1, time: '12:30 pm', name: 'Welcome & Introduction' },
   { id: 2, time: '01:00 pm', name: 'Keynote by Jeff Ghothelf' },
@@ -23,7 +27,7 @@ export const schedulesSaturday = [
   { id: 8, time: '05:00 pm', name: 'End of conference' },
 ];
 
-class Alumni extends React.Component {
+class Alumni extends React.Component<ScheduleProps, {}> {
   renderTableData(date: { id: number; time: string; name: string }[]) {
     return date.map(
       (schedule: { id: number; time: string; name: string }, index: any) => {
@@ -61,6 +65,18 @@ class Alumni extends React.Component {
               </table>
             </div>
           </div>
+          <h1 className="schedule-speakers__tab__title">
+            <b>Timezone: All times in CEST!</b>
+          </h1>{' '}
+          <br />
+          <a
+            className="u-button u-button__apply u-button--reversed schedule__button"
+            href={this.props.url}
+            target="_blank"
+            style={{ margin: 'auto' }}
+          >
+            Get your ticket here!
+          </a>
         </div>
       </section>
     );

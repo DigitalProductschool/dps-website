@@ -24,3 +24,11 @@
   padding-top: 50px;
   text-align: left;
 }
+
+.schedule__button {
+  margin-top: 40px;
+  width: 504px;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+}
