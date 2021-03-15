@@ -28,6 +28,11 @@
     z-index: 0;
   }
 
+  &--ac {
+    background-image: url('/assets/tracks/ac/header.jpg');
+    z-index: 0;
+  }
+
   background-size: cover;
   background-position: center center;
   height: 0;

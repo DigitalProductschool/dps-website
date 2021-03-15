@@ -76,6 +76,10 @@
     background-image: url('/assets/tracks/pmc/what-you-learn.jpg');
   }
 
+  &--ac {
+    background-image: url('/assets/tracks/ac/what-you-learn.jpg');
+  }
+
   background-size: cover;
   background-position: center center;
   width: 100%;

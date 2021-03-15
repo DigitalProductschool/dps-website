@@ -199,6 +199,9 @@ function Nav(props) {
         case 'pmc':
           setNavBackground('var(--blue)');
           break;
+        case 'ac':
+          setNavBackground('var(--light-gray)');
+          break;
         case undefined:
           const navBackground =
             scrolled < 0.1 ? 'transparent' : 'var(--deep-cove)';

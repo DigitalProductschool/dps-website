@@ -26,7 +26,7 @@ class Conference extends React.Component {
         <WhoCanJoin url={this.state.conferenceUrl} />
         <Alumni />
         <Network />
-        <ScheduleSpeakers />
+        <ScheduleSpeakers url={this.state.conferenceUrl} />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     );
