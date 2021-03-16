@@ -5,6 +5,7 @@ export default (props: {
   data: {
     firstColumn: string;
     secondColumn: string;
+    thirdColumn?: string;
     subtitle: string;
     track: string;
     video?: string;
@@ -46,7 +47,10 @@ export default (props: {
                 <p>{props.data.firstColumn}</p>
                 <p>{props.data.secondColumn}</p>
               </div>
-              {descriptionBox(props.data.video)}
+              <div className="wyl-content__info__description-box__text">
+                {props.data.thirdColumn && <p> {props.data.thirdColumn}</p>}
+                {descriptionBox(props.data.video)}
+              </div>
             </div>
           </div>
         </div>

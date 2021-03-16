@@ -118,10 +118,17 @@ const MenuDropdownForDesktop = props => {
       </Link>
       <Link
         to="/tracks/product-marketing-communications-manager/"
-        style={{ ...styles, paddingBottom: '0' }}
+        style={styles}
         activeStyle={activeStyle}
       >
         Product Marketing &amp; Communications Manager
+      </Link>
+      <Link
+        to="/tracks/agile-coach/"
+        style={{ ...styles, paddingBottom: '0' }}
+        activeStyle={activeStyle}
+      >
+        Agile Team Coach (Beta)
       </Link>
     </div>
   );
@@ -152,9 +159,15 @@ const MenuDropDownForMobile = props => {
       </Link>
       <Link
         to="/tracks/product-marketing-communications-manager/"
-        style={{ ...styles, paddingBottom: '0' }}
+        style={styles}
       >
         Product Marketing &amp; Communications Manager
+      </Link>
+      <Link
+        to="/tracks/product-marketing-communications-manager/"
+        style={{ ...styles, paddingBottom: '0' }}
+      >
+        Agile Team Coach (Beta)
       </Link>
     </div>
   );
@@ -197,10 +210,10 @@ function Nav(props) {
           setNavBackground('var(--picton-blue)');
           break;
         case 'pmc':
-          setNavBackground('var(--blue)');
+          setNavBackground('var(--midnight-blue)');
           break;
         case 'ac':
-          setNavBackground('var(--light-gray)');
+          setNavBackground('var(--ocean-green)');
           break;
         case undefined:
           const navBackground =

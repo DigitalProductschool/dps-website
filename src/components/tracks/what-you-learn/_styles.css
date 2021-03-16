@@ -78,6 +78,7 @@
 
   &--ac {
     background-image: url('/assets/tracks/ac/what-you-learn.jpg');
+    margin-top: 40px;
   }
 
   background-size: cover;
