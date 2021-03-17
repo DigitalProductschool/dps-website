@@ -163,10 +163,7 @@ const MenuDropDownForMobile = props => {
       >
         Product Marketing &amp; Communications Manager
       </Link>
-      <Link
-        to="/tracks/product-marketing-communications-manager/"
-        style={{ ...styles, paddingBottom: '0' }}
-      >
+      <Link to="/tracks/agile-coach/" style={{ ...styles, paddingBottom: '0' }}>
         Agile Team Coach (Beta)
       </Link>
     </div>
