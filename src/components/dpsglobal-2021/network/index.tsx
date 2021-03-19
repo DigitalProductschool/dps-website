@@ -6,7 +6,7 @@ class Network extends React.Component {
       <section className="network u-section-margin-top u-content-wrapper">
         <div className="network__content u-content">
           <h2 className="u-title">
-            DPS Global - Digital Product Schools Alumni Network
+            DPS Global – Digital Product Schools' Alumni Network
           </h2>
           <ul className="network__list">
             <li className="network__list__item">
