@@ -13,6 +13,8 @@ const data: {
   pm: trackData;
   ixd: trackData;
   ai: trackData;
+  pmc: trackData;
+  ac: trackData;
 } = {
   se: {
     title: 'Software Engineer',
@@ -34,10 +36,20 @@ const data: {
     description1:
       'Apply as Interaction Designer now and take in the experience concentrate in digital product development',
   },
+  pmc: {
+    title: 'Product Marketing & Communications Manager',
+    description1:
+      'Apply now for the Digital Media Track at Digital Product School and immerse yourself in product marketing and communication!',
+  },
+  ac: {
+    title: 'Agile Team Coach',
+    description1:
+      'Apply now for the Agile Coaching Track at Digital Product School and immerse yourself in coaching agile teams!',
+  },
 };
 
 interface IHeaderProps {
-  track: 'se' | 'pm' | 'ixd' | 'ai';
+  track: 'se' | 'pm' | 'ixd' | 'ai' | 'pmc' | 'ac';
 }
 
 class Header extends React.Component<IHeaderProps, {}> {

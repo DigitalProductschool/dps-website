@@ -124,6 +124,14 @@ select.application-form__input {
   &--pm {
     background-color: var(--picton-blue);
   }
+
+  &--pmc {
+    background-color: var(--midnight-blue);
+  }
+
+  &--ac {
+    background-color: var(--ocean-green);
+  }
 }
 
 .scholarship-fieldset,
@@ -233,6 +241,20 @@ select.application-form__input {
   border-right: 2px solid var(--wisteria);
 }
 
+.scholarship-1-pmc:focus + .scholarship-radio-label-pmc::after,
+.scholarship-2-pmc:focus + .scholarship-radio-label-pmc::after,
+.consent-radio-pmc:focus + .consent-radio-label-pmc::after {
+  border-bottom: 2px solid var(--midnight-blue);
+  border-right: 2px solid var(--midnight-blue);
+}
+
+.scholarship-1-ac:focus + .scholarship-radio-label-ac::after,
+.scholarship-2-ac:focus + .scholarship-radio-label-ac::after,
+.consent-radio-ac:focus + .consent-radio-label-ac::after {
+  border-bottom: 2px solid var(--ocean--green);
+  border-right: 2px solid var(--ocean-green);
+}
+
 .application-form__submit {
   margin-top: 30px;
   padding: 10px;
@@ -264,6 +286,16 @@ select.application-form__input {
   &--ai {
     color: var(--wisteria);
     border: 4px solid var(--wisteria);
+  }
+
+  &--pmc {
+    color: var(--midnight-blue);
+    border: 4px solid var(--midnight-blue);
+  }
+
+  &--ac {
+    color: var(--ocean-green);
+    border: 4px solid var(--ocean-green);
   }
 }
 
