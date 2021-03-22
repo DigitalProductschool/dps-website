@@ -15,7 +15,6 @@ interface IHeaderProps {
     track: string;
     name: string;
     url: string;
-    typeform?: string;
   };
 }
 
@@ -62,21 +61,10 @@ class Header extends React.Component<IHeaderProps, {}> {
               </p>
             )}
             <div className="tracks-header__apply-button-wrapper">
-              {track.track == 'pmc' || track.track == 'ac' ? (
-                <a
-                  className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-                  href={track.typeform}
-                  target="_blank"
-                >
-                  Apply as {track.name}
-                </a>
-              ) : (
-                <ApplyButton
-                  {...track}
-                  className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
-                />
-              )}
-              {/* We need to change this later with the new form */}
+              <ApplyButton
+                {...track}
+                className="u-button u-button__apply u-button--reversed tracks-header__apply-button"
+              />
             </div>
           </div>
         </section>

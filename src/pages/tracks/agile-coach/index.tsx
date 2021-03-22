@@ -37,45 +37,12 @@ class TrackAC extends React.Component {
         <OfferResponsibilities data={or} />
         <Expectations data={expectations} />
         <WhatYouLearn className="track-ac__wyl" data={whatyoulearn} />
-        {/*  <Tracks
+        <Tracks
           url={generalTrackInfo.url}
           name={generalTrackInfo.name}
           description={generalTrackInfo.description}
           track={generalTrackInfo.track}
-      /> */}
-        <div className="u-content-wrapper">
-          <div
-            className="u-content"
-            style={{
-              marginTop: '60px',
-            }}
-          >
-            <div className="bePart-content__title">BE PART OF DPS</div>
-
-            <b className="bePart-content__subtitle">
-              {generalTrackInfo.description}
-            </b>
-
-            <br />
-            <p className="bePart-content__batchDetails">
-              Dates and deadlines of the upcoming batches:
-              <br />
-              <b className="bePart-content__subtitle">
-                # Batch#13: May 3, 2021 to July 23, 2021
-              </b>{' '}
-              (Applications open until March 19, 2021)
-            </p>
-            <div className="tracks__apply-button-wrapper">
-              <a
-                className="u-button u-button__apply u-button--reversed tracks__apply-button"
-                href={generalTrackInfo.typeform}
-                target="_blank"
-              >
-                Apply as {generalTrackInfo.name}
-              </a>
-            </div>
-          </div>
-        </div>
+        />
         <Footer addSectionClass="u-section-margin-top" />
       </React.Fragment>
     );

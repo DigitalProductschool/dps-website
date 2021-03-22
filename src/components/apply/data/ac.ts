@@ -26,7 +26,7 @@ export const generalTrackInfo = {
   name: 'Agile Team Coach',
   description:
     'Apply now for the Agile Coaching Track at Digital Product School and immerse yourself in coaching agile teams!',
-  typeform: 'https://utum.typeform.com/to/AA8OQGEn',
+  url: 'agile-coach',
 };
 
 export const header = {

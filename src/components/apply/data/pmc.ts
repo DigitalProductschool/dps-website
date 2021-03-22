@@ -23,7 +23,6 @@ export const generalTrackInfo = {
   description:
     'Apply now for the Digital Media Track at Digital Product School and immerse yourself in product marketing and communication!',
   url: 'product-marketing-communications-manager',
-  typeform: 'https://utum.typeform.com/to/ZyIceCta',
 };
 
 export const header = {
