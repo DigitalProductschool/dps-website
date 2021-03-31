@@ -1,11 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 
 class WhoShouldApply extends React.Component {
   render() {
     return (
       <section className="who-should-apply u-section-margin-top u-content-wrapper">
         <div className="who-should-apply__content u-content">
-          <h2 className="u-title">Who should apply</h2>
+          <h2 className="u-title uppercase">Who should apply</h2>
           <div className="who-should-apply__content__description">
             <p className="u-text">
               At DPS it is all about learning: How to discover a proper problem,
@@ -32,8 +32,8 @@ class WhoShouldApply extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default WhoShouldApply
+export default WhoShouldApply;

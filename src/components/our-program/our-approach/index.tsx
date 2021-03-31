@@ -1,11 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 
 class OurApproach extends React.Component {
   render() {
     return (
       <section className="our-approach u-section-margin-top u-content-wrapper">
         <div className="our-approach__content u-content">
-          <h2 className="u-title">Our approach</h2>
+          <h2 className="u-title uppercase">Our approach</h2>
           <p className="u-text u-text--bold">
             According to the Design Thinking Model of the Double Diamond our
             teams discover and validate problems before they search for a
@@ -54,8 +54,8 @@ class OurApproach extends React.Component {
           </ul>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default OurApproach
+export default OurApproach;

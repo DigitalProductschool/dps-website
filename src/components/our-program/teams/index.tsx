@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 class Teams extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class Teams extends React.Component {
             className="teams__title__image u-image"
             src="/assets/program/teams/title.jpg"
           />
-          <h2 className="u-title">Autonomous &amp; Agile teams</h2>
+          <h2 className="u-title uppercase">Autonomous &amp; Agile teams</h2>
           <p className="teams__content__general u-text">
             In a team at DPS product managers, interaction designers, software
             engineers and artificial intelligence specialists work together in
@@ -22,7 +22,7 @@ class Teams extends React.Component {
             The teams experience how to work like a real tech start-up. We
             attach importance on self-organization. We encourage teamwork, but
             also the accountability of each team member for his or her own
-            tasks. 
+            tasks.
             <br />
             <br />
             According to the agile working model and using scrum methods the
@@ -32,7 +32,7 @@ class Teams extends React.Component {
             a team in planning meetings.
           </p>
           <div className="teams__content__companies">
-            <h3 className="u-title">
+            <h3 className="u-title uppercase">
               COMPANY TEAMS: EMPLOYEES &amp; TALENTS TOGETHER
             </h3>
             <div className="teams__content__companies__desc">
@@ -55,7 +55,7 @@ class Teams extends React.Component {
             </div>
           </div>
           <div className="teams__content__wild">
-            <h3 className="u-title">Wild Teams</h3>
+            <h3 className="u-title uppercase">Wild Teams</h3>
             <div className="u-grid-4-6">
               <p className="u-text">
                 Besides the company teams we have teams that consists of
@@ -74,8 +74,8 @@ class Teams extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Teams
+export default Teams;

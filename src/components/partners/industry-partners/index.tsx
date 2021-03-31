@@ -20,7 +20,7 @@ class IndustryPartners extends React.Component {
       <div className="industry-partners u-content-wrapper">
         <div className="industry-partners u-content">
           <h3 className="industry-partners__title u-title">
-            Digital Hub Mobility and its Industry Partners
+            The Digital Hub Mobility and its Industry Partners
           </h3>
           <p className="industry-partners__description">
             The Digital Product School is part of the{' '}

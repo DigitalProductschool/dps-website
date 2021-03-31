@@ -5,7 +5,7 @@ class Alumni extends React.Component {
     return (
       <section className="alumni u-content-wrapper">
         <div className="alumni__content u-content">
-          <h2 className="u-title">Who will you meet?</h2>
+          <h2 className="u-title uppercase">Who will you meet?</h2>
           <div className="alumni__content__description">
             <img
               alt="alumni-description-image"

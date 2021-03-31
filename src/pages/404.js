@@ -10,7 +10,7 @@ const NotFoundPage = () => (
     <Nav addClass={'nav--black'} logo={'/assets/shared/dps-logo-black.svg'} />
     <section className="not-found u-content-wrapper">
       <div className="not-found__content u-content">
-        <h2 className="u-title">Sad times :(</h2>
+        <h2 className="u-title uppercase">Sad times :(</h2>
         <img
           alt="Annina Sad"
           className="not-found_content-image"
