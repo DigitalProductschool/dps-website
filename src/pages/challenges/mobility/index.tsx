@@ -26,6 +26,7 @@ import {
   whydps,
   secondcta,
 } from '../../../components/challenges/data/mobility';
+import IndustryPartners from '../../../components/partners/industry-partners';
 
 class Mobility extends React.Component {
   render() {
@@ -49,6 +50,7 @@ class Mobility extends React.Component {
         <SuccessStories data={successstories} />
         <Process data={process} />
         <Mucl data={mucl} />
+        <IndustryPartners />
         <Pillars title="Why Digital Product School" data={whydps} />;
         <div className="u-section-margin-bottom">
           <BigText data={secondcta} />
