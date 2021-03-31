@@ -1,0 +1,22 @@
+.success__wrapper {
+  overflow: hidden;
+}
+
+.success__icons__wrapper {
+  margin-bottom: 200px;
+}
+.success__cut-out {
+  overflow-y: visible;
+  height: 750px;
+  @media (max-width: 600px) {
+    height: 450px;
+  }
+}
+.success__list__img {
+  width: 100%;
+  height: auto;
+}
+
+.success__content__wrapper {
+  padding: 50px;
+}
