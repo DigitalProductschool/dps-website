@@ -43,7 +43,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
             src="/assets/challenges/mobility/Team.svg"
           />
-          <p className="u-text list-number">01</p>
+          <p className="u-text cutout__list-number">01</p>
           <p className="u-text">{benefit1}</p>
         </div>
 
@@ -54,7 +54,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
             src="/assets/challenges/mobility/Digital.svg"
           />
-          <p className="u-title list-number">02</p>
+          <p className="u-title cutout__list-number">02</p>
           <p className="u-text">{benefit2}</p>
         </div>
 
@@ -65,7 +65,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
             src="/assets/challenges/mobility/Education.svg"
           />
-          <p className="u-text list-number">03</p>
+          <p className="u-text cutout__list-number">03</p>
           <p className="u-text">{benefit3}</p>
         </div>
 
@@ -76,7 +76,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
             src="/assets/challenges/mobility/Network.svg"
           />
-          <p className="u-text list-number">04</p>
+          <p className="u-text cutout__list-number">04</p>
           <p className="u-text">{benefit4}</p>
         </div>
       </Cutout>
