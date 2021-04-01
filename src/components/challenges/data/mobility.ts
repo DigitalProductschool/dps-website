@@ -23,7 +23,7 @@ export const secondstatus = {
     'With its talents, infrastructure, and its methods of building digital products, it can assist companies to become leading innovators in the mobility sector.',
   button: 'Contact Us',
   url: 'https://utum.typeform.com/to/bEvb6JcE',
-  image: '/assets/challenges/mobility/dps-help.png',
+  image: '/assets/challenges/dps-help.png',
 };
 
 export const partnerbenefits = {
@@ -87,7 +87,7 @@ export const process = {
     'That’s the starting point for the core success factor: the <b>DISCOVERY PHASE</b>. For three months, autonomous and cross-functional teams of Product Managers, Agile Coaches, Interaction Designer, Software Engineers, and AI Engineers will build an innovative digital product that solves a real user problem. The process is powered by the best-in-class tools and methods from Design Thinking, Lean Startup and agile product development.',
   description4:
     'In the <b>ROLLOUT PHASE</b>, we support our partners in developing the product and business model and in taking it to market.',
-  image: '/assets/challenges/mobility/road.png',
+  image: '/assets/challenges/road.png',
 };
 
 export const mucl = {
@@ -103,46 +103,46 @@ export const whydps = [
   {
     title: 'Experience',
     description: '12 Batches, 400 Talents 100 Teams',
-    icon: '/assets/challenges/mobility/pillars/Digital.svg',
+    icon: '/assets/challenges/pillars/Digital.svg',
   },
   {
     title: 'Expertise',
     description: 'A core team of experts in their subjects',
-    icon: '/assets/challenges/mobility/pillars/Team.svg',
+    icon: '/assets/challenges/pillars/Team.svg',
   },
   {
     title: 'Ecosystem',
     description: 'Part of Europe’s biggest entrepreneurship center',
-    icon: '/assets/challenges/mobility/pillars/Frame.svg',
+    icon: '/assets/challenges/pillars/Frame.svg',
   },
   {
     title: 'Independence',
     description: 'UnternehmerTUM GmbH is a non-profit organization',
-    icon: '/assets/challenges/mobility/pillars/Group.svg',
+    icon: '/assets/challenges/pillars/Group.svg',
   },
   {
     title: 'Location',
     description:
       'The Munich Urban Colab as the palace where future mobility concepts are developed',
-    icon: '/assets/challenges/mobility/pillars/Location.svg',
+    icon: '/assets/challenges/pillars/Location.svg',
   },
   {
     title: 'Mission',
     description:
       'It’s our mission and passion to shape the world by solving the challenges of the future',
-    icon: '/assets/challenges/mobility/pillars/Goal.svg',
+    icon: '/assets/challenges/pillars/Goal.svg',
   },
   {
     title: 'Partners',
     description:
       'Connection to the mobility sector and beyond to enrich your innovative business model',
-    icon: '/assets/challenges/mobility/pillars/Network.svg',
+    icon: '/assets/challenges/pillars/Network.svg',
   },
   {
     title: 'Talents',
     description:
       '500 applications per batch. The best students and graduates want to join DPS.',
-    icon: '/assets/challenges/mobility/pillars/Education.svg',
+    icon: '/assets/challenges/pillars/Education.svg',
   },
 ];
 

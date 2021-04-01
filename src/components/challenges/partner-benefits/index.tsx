@@ -41,7 +41,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
           <img
             alt="team-icon"
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
-            src="/assets/challenges/mobility/Team.svg"
+            src="/assets/challenges/partner-benefits/Team.svg"
           />
           <p className="u-text cutout__list-number">01</p>
           <p className="u-text">{benefit1}</p>
@@ -52,7 +52,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
           <img
             alt="digital-icon"
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
-            src="/assets/challenges/mobility/Digital.svg"
+            src="/assets/challenges/partner-benefits/Digital.svg"
           />
           <p className="u-title cutout__list-number">02</p>
           <p className="u-text">{benefit2}</p>
@@ -63,7 +63,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
           <img
             alt="education-icon"
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
-            src="/assets/challenges/mobility/Education.svg"
+            src="/assets/challenges/partner-benefits/Education.svg"
           />
           <p className="u-text cutout__list-number">03</p>
           <p className="u-text">{benefit3}</p>
@@ -74,7 +74,7 @@ export default function PartnerBenefits(props: PartnerBenefitsProps) {
           <img
             alt="network-icon"
             className="cutout__icon-wrapper cutout__icon-wrapper__img"
-            src="/assets/challenges/mobility/Network.svg"
+            src="/assets/challenges/partner-benefits/Network.svg"
           />
           <p className="u-text cutout__list-number">04</p>
           <p className="u-text">{benefit4}</p>

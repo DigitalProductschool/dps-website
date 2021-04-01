@@ -47,11 +47,11 @@ export default function SuccessStories(props: SuccessStoriesProps) {
         <div className="success__icons__wrapper">
           <img
             onClick={arrowLeftClick}
-            src="/assets/challenges/mobility/arrow-small-left.svg"
+            src="/assets/challenges/arrow-small-left.svg"
           />
           <img
             onClick={arrowRightClick}
-            src="/assets/challenges/mobility/arrow-small-right.svg"
+            src="/assets/challenges/arrow-small-right.svg"
           />
         </div>
       </Section>
