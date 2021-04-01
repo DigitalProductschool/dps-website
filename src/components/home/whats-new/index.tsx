@@ -8,7 +8,7 @@ class WhatsNew extends React.Component {
     return (
       <section className="whats-new u-content-wrapper u-section-margin-top">
         <div className="whats-new__content u-content">
-          <h3 className="u-title">WHAT'S NEW</h3>
+          <h3 className="u-title uppercase">WHAT'S NEW</h3>
           <div className="whats-new__content__tiles">
             <div className="whats-new__content__rows">
               <div className="item-1 ">

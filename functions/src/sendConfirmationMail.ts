@@ -24,6 +24,14 @@ exports.handler = async function(snap: any) {
       track = 'Interaction Designer';
       break;
     }
+    case 'pmc': {
+      track = 'Product Marketing & Communications Manager';
+      break;
+    }
+    case 'ac': {
+      track = 'Agile Team Coach';
+      break;
+    }
     default: {
       track = 'DPS';
       break;

@@ -46,7 +46,7 @@ class Alumni extends React.Component<ScheduleProps, {}> {
     return (
       <section className="schedule-speakers u-content-wrapper">
         <div className="schedule-speakers__content u-content">
-          <h2 className="u-title"> Schedule &amp; speakers </h2>
+          <h2 className="u-title uppercase"> Schedule &amp; speakers </h2>
           <div className="schedule-speakers__content__description u-text">
             <div>
               <h1 className="schedule-speakers__tab__title">

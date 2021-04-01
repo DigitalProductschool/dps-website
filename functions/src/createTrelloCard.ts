@@ -34,6 +34,14 @@ function prepareBatchToLabelIdMap() {
     Object.entries(functions.config().labels.ixd)
   );
   tmp.set('ixd', ixd);
+  const pmc: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.pmc)
+  );
+  tmp.set('pmc', pmc);
+  const ac: Map<string, string> = new Map(
+    Object.entries(functions.config().labels.ac)
+  );
+  tmp.set('ac', ac);
   return tmp;
 }
 
@@ -98,20 +106,27 @@ function getListId(track: string) {
     // https://trello.com/b/RNVAchTV/api-test-board
     return '5d809d6c15e98c4c83075183';
   }
-  if (track === 'pm') {
-    // https://trello.com/b/0XE3F4JY/pm-track-applications
-    return '5c0e4ab452364949dde812b1';
+
+  switch (track) {
+    case 'pm':
+      // https://trello.com/b/0XE3F4JY/pm-track-applications
+      return '5c0e4ab452364949dde812b1';
+    case 'ixd':
+      // https://trello.com/b/XqoNQKp7/ixd-track-applications
+      return '5ca222869b5ec76a56a9fb6a';
+    case 'ai':
+      // https://trello.com/b/f9Dgk2Vj/engineering-applications
+      return '5c3d919c8ec21c71f7b34e94';
+    case 'pmc':
+      //trello.com/b/xfiIXf5n/dmt-applications
+      return '6037519614923761f5eb2a69';
+    case 'ac':
+      //trello.com/b/MqJeKCbT/ac-applications
+      return '603744010d942b7b915f03ee';
+    default:
+      // https://trello.com/b/2WturNOV/se-track-applications
+      return '5e67a1e39932a47debdf9bf7';
   }
-  if (track === 'ixd') {
-    // https://trello.com/b/XqoNQKp7/ixd-track-applications
-    return '5ca222869b5ec76a56a9fb6a';
-  }
-  if (track === 'ai') {
-    // https://trello.com/b/f9Dgk2Vj/engineering-applications
-    return '5c3d919c8ec21c71f7b34e94';
-  }
-  // https://trello.com/b/2WturNOV/se-track-applications
-  return '5e67a1e39932a47debdf9bf7';
 }
 
 function getLabelIdForTrack(track: string, batch: string): Array<string> {

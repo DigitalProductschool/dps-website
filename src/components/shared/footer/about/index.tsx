@@ -19,11 +19,11 @@ class About extends React.Component {
           <div className="about__address__content">
             Digital Product School
             <br />
-            c/o DesignOffices / UnternehmerTUM
+            c/o UnternehmerTUM GmbH
             <br />
-            Rosenheimer Straße 143C
+            Freddie-Mercury-Straße 5
             <br />
-            81671 Munich
+            80636 Munich
             <br />
             Germany
           </div>

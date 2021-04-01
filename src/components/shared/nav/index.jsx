@@ -69,7 +69,7 @@ const activeStyle = {
   textShadow: '0.5px 0',
 };
 
-const MenuDropdownForDesktop = props => {
+const MenuTracksDropdownForDesktop = props => {
   const styles = {
     color: props.inverted ? 'white' : 'black',
     paddingBottom: '30px',
@@ -134,7 +134,40 @@ const MenuDropdownForDesktop = props => {
   );
 };
 
-const MenuDropDownForMobile = props => {
+const MenuChallengesDropdownForDesktop = props => {
+  const styles = {
+    color: props.inverted ? 'white' : 'black',
+    paddingBottom: '30px',
+    display: 'block',
+  };
+
+  let className = 'tracks-menu tracks-menu--desktop ';
+
+  if (props.inverted) {
+    className += 'tracks-menu--desktop--inverted';
+  }
+
+  return (
+    <div
+      className={className}
+      onMouseLeave={props.handleOnMouseLeave}
+      onMouseEnter={props.handleOnMouseEnter}
+    >
+      <Link to="/challenges/mobility/" style={styles} activeStyle={activeStyle}>
+        Mobility
+      </Link>
+      <Link
+        to="/challenges/healthcare/"
+        style={{ ...styles, paddingBottom: '0' }}
+        activeStyle={activeStyle}
+      >
+        Healthcare
+      </Link>
+    </div>
+  );
+};
+
+const MenuTracksDropDownForMobile = props => {
   const styles = {
     paddingBottom: '30px',
     display: 'block',
@@ -170,17 +203,49 @@ const MenuDropDownForMobile = props => {
   );
 };
 
+const MenuChallengesDropDownForMobile = props => {
+  const styles = {
+    paddingBottom: '30px',
+    display: 'block',
+    fontSize: '14px',
+    paddingLeft: '14px',
+  };
+
+  return (
+    <div className="tracks-menu tracks-menu--mobile">
+      <h4> Challenges </h4>
+      <Link to="/challenges/mobility/" style={styles}>
+        Mobility
+      </Link>
+      <Link
+        to="/challenges/healthcare"
+        style={{ ...styles, paddingBottom: '0' }}
+      >
+        Healthcare
+      </Link>
+    </div>
+  );
+};
+
 function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
-  const [isMouseOverMenu, setIsMouseOverMenu] = useState(false);
+  const [isMouseOverChallengesLink, setIsMouseOverChallengesLink] = useState(
+    false
+  );
+  const [isMouseOverMenuTracks, setIsMouseOverMenuTracks] = useState(false);
+  const [isMouseOverMenuChallenges, setIsMouseOverMenuChallenges] = useState(
+    false
+  );
   const [isCookieWarning, setIsCookieWarning] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
   const [position, setPosition] = useState(false);
   const [top, setTop] = useState(false);
   const [height, setHeight] = useState(false);
 
-  const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenu;
+  const isMouseOverTracks = isMouseOverTracksLink || isMouseOverMenuTracks;
+  const isMouseOverChallenges =
+    isMouseOverChallengesLink || isMouseOverMenuChallenges;
   const addClass = props.addClass || '';
   const logo = props.logo || '/assets/shared/dps-logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
@@ -315,10 +380,10 @@ function Nav(props) {
               Tracks
             </label>
             {isMouseOverTracks && (
-              <MenuDropdownForDesktop
+              <MenuTracksDropdownForDesktop
                 inverted={inverted}
-                handleOnMouseEnter={() => setIsMouseOverMenu(true)}
-                handleOnMouseLeave={() => setIsMouseOverMenu(false)}
+                handleOnMouseEnter={() => setIsMouseOverMenuTracks(true)}
+                handleOnMouseLeave={() => setIsMouseOverMenuTracks(false)}
               />
             )}
           </li>
@@ -333,6 +398,24 @@ function Nav(props) {
               {' '}
               Team{' '}
             </Link>
+          </li>
+          <li
+            className="nav__menu__item"
+            onMouseOver={() => setIsMouseOverChallengesLink(true)}
+            onMouseLeave={() => setIsMouseOverChallengesLink(false)}
+          >
+            <label
+              className={inverted ? `nav__menu__item__tracks--inverted` : ''}
+            >
+              Challenges
+            </label>
+            {isMouseOverChallenges && (
+              <MenuChallengesDropdownForDesktop
+                inverted={inverted}
+                handleOnMouseEnter={() => setIsMouseOverMenuChallenges(true)}
+                handleOnMouseLeave={() => setIsMouseOverMenuChallenges(false)}
+              />
+            )}
           </li>
           <li className="nav__menu__item">
             <Link to="/partners" activeStyle={activeStyle}>
@@ -392,7 +475,7 @@ function Nav(props) {
             <Link to="/our-program"> Our Program </Link>
           </li>
           <li className="nav__menu__item nav__menu__item--mobile">
-            <MenuDropDownForMobile />
+            <MenuTracksDropDownForMobile />
           </li>
           <li
             className="nav__menu__item nav__menu__item--mobile"
@@ -405,6 +488,9 @@ function Nav(props) {
             onClick={() => setIsOpen(false)}
           >
             <Link to="/team">Team</Link>
+          </li>
+          <li className="nav__menu__item nav__menu__item--mobile">
+            <MenuChallengesDropDownForMobile />
           </li>
           <li
             className="nav__menu__item  nav__menu__item--mobile"

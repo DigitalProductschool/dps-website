@@ -5,7 +5,9 @@ class ExperienceConcentrate extends React.Component {
     return (
       <section className="experience-concentrate u-content-wrapper">
         <div className="experience-concentrate__content u-content">
-          <h2 className="u-title">TAKING IN THE EXPERIENCE CONCENTRATE</h2>
+          <h2 className="u-title uppercase">
+            TAKING IN THE EXPERIENCE CONCENTRATE
+          </h2>
           <p className="u-text u-text--bold">
             In just 3 months the participants undergo a highly intensive
             experience. The idea is to let the students live the life of an

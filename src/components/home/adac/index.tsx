@@ -5,7 +5,7 @@ class Adac extends React.Component {
     return (
       <section className="adac u-content-wrapper  u-section-margin-bottom">
         <div className="adac__content u-content">
-          <h3 className="u-title">DPS IN 7 MINUTES</h3>
+          <h3 className="u-title uppercase">DPS IN 7 MINUTES</h3>
           <div className="adac__content__desc">
             Our partner ADAC made a small documentary about DPS. Maybe you have
             7 spare minutes to watch it. :-)

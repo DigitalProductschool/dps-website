@@ -10,6 +10,11 @@
 @import url('./components/shared/cookie-warning/_styles.css');
 @import url('./components/shared/modal/_styles.css');
 @import url('./components/shared/header/_styles.css');
+@import url('./components/shared/components/content/_styles.css');
+@import url('./components/shared/components/cut-out-text/_styles.css');
+@import url('./components/shared/components/pillars/_styles.css');
+@import url('./components/shared/components/big-text/_styles.css');
+@import url('./components/shared/components/text-image/_styles.css');
 
 @import url('./components/home/header/_styles.css');
 @import url('./components/home/pitch/_styles.css');
@@ -44,6 +49,8 @@
 @import url('./components/dpsglobal-2021/alumni/_styles.css');
 @import url('./components/dpsglobal-2021/network/_styles.css');
 @import url('./components/dpsglobal-2021/schedule-speakers/_styles.css');
+
+@import url('./components/challenges/success-stories/__styles.css');
 
 @import url('./components/tracks/header/_styles.css');
 @import url('./components/tracks/track-image/_styles.css');

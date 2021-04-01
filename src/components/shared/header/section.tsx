@@ -16,6 +16,7 @@ export default function Header(props: HeaderProps) {
       className="header-section u-content-wrapper"
       style={{
         backgroundImage: 'url(' + props.image + ')',
+        backgroundPosition: 'top',
       }}
     >
       <div className="u-content header-content">

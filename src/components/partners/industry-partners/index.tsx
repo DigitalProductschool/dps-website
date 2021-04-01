@@ -19,9 +19,9 @@ class IndustryPartners extends React.Component {
     return (
       <div className="industry-partners u-content-wrapper">
         <div className="industry-partners u-content">
-          <h3 className="industry-partners__title u-title">
-            Digital Hub Mobility and its Industry Partners
-          </h3>
+          <h2 className="industry-partners__title u-title uppercase">
+            The Digital Hub Mobility and its Industry Partners
+          </h2>
           <p className="industry-partners__description">
             The Digital Product School is part of the{' '}
             <a className="u-link" href="https://mobility.unternehmertum.de/">

@@ -9,7 +9,7 @@ class WhoCanJoin extends React.Component<WhoCanJoinProps, {}> {
     return (
       <section className="who-can-join u-content-wrapper">
         <div className="who-can-join__content u-content">
-          <h2 className="u-title">Who can join?</h2>
+          <h2 className="u-title uppercase">Who can join?</h2>
           <div className="who-can-join__content__description">
             <p className="u-text">
               The conference is from the alumni of Digital Product School for

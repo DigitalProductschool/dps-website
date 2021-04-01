@@ -36,6 +36,9 @@
   @media (min-width: 1280px) {
     font-size: 72px;
   }
+  @media (max-width: 400px) {
+    font-size: calc(32px + 1vw);
+  }
 }
 
 .header-image-content__text {
