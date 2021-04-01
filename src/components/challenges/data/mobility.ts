@@ -23,7 +23,7 @@ export const secondstatus = {
     'With its talents, infrastructure, and its methods of building digital products, it can assist companies to become leading innovators in the mobility sector.',
   button: 'Contact Us',
   url: 'https://utum.typeform.com/to/bEvb6JcE',
-  image: '/assets/challenges/dps-help.png',
+  image: '/assets/challenges/mobility/dps-help.png',
 };
 
 export const partnerbenefits = {

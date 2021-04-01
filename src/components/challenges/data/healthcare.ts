@@ -47,7 +47,7 @@ export const successstories = [
       'An app called “Arthro-Buddy” that allows patients to easily log and track the efficacy of different treatments. An algorithm evaluates the impact of these treatments and helps patients to recover faster and to get rid of restrictions caused by osteoarthritis.',
   },
   {
-    image: '/assets/challenges/healthcare/success-stories/beatfine.jpg',
+    image: '/assets/challenges/healthcare/success-stories/beat.jpg',
     teamName: 'Batch#10: Team 90 Degrees',
     hmw:
       'How Might we enable patients to know and track the conditions of their cardiovascular system on a regular basis to prevent irreversible damages?',
@@ -94,46 +94,46 @@ export const whydps = [
   {
     title: 'Experience',
     description: '12 Batches, 400 Talents 100 Teams',
-    icon: '/assets/challenges/Digital.svg',
+    icon: '/assets/challenges/pillars/Digital.svg',
   },
   {
     title: 'Expertise',
     description: 'A core team of experts in their subjects',
-    icon: '/assets/challenges/Team.svg',
+    icon: '/assets/challenges/pillars/Team.svg',
   },
   {
     title: 'Ecosystem',
     description: 'Part of Europe’s biggest entrepreneurship center',
-    icon: '/assets/challenges/Frame.svg',
+    icon: '/assets/challenges/pillars/Frame.svg',
   },
   {
     title: 'Independence',
     description: 'UnternehmerTUM GmbH is a non-profit organization',
-    icon: '/assets/challenges/Group.svg',
+    icon: '/assets/challenges/pillars/Group.svg',
   },
   {
     title: 'Location',
     description:
       'The Munich Urban Colab as the palace where future mobility concepts are developed',
-    icon: '/assets/challenges/Location.svg',
+    icon: '/assets/challenges/pillars/Location.svg',
   },
   {
     title: 'Mission',
     description:
       'It’s our mission and passion to shape the world by solving the challenges of the future',
-    icon: '/assets/challenges/Goal.svg',
+    icon: '/assets/challenges/pillars/Goal.svg',
   },
   {
     title: 'Partners',
     description:
       'Connection to the mobility sector and beyond to enrich your innovative business model',
-    icon: '/assets/challenges/Network.svg',
+    icon: '/assets/challenges/pillars/Network.svg',
   },
   {
     title: 'Talents',
     description:
       '500 applications per batch. The best students and graduates want to join DPS.',
-    icon: '/assets/challenges/Education.svg',
+    icon: '/assets/challenges/pillars/Education.svg',
   },
 ];
 

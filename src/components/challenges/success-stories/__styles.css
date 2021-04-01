@@ -9,7 +9,7 @@
   overflow-y: visible;
   height: 750px;
   @media (max-width: 600px) {
-    height: 450px;
+    height: 500px;
   }
 }
 .success__list__img {
