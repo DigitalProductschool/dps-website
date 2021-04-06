@@ -138,7 +138,7 @@ export const whydps = [
 ];
 
 export const secondcta = {
-  title: 'Let’s tackle and solve your mobility-related challenge!',
+  title: 'Let’s tackle and solve your healthcare-related challenge!',
   button: 'Contact Us Now',
   url: 'https://utum.typeform.com/to/OPGBwNkj',
 };
