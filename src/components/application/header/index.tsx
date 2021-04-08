@@ -39,12 +39,12 @@ const data: {
   pmc: {
     title: 'Product Marketing & Communications Manager',
     description1:
-      'Apply now for the Digital Media Track at Digital Product School and immerse yourself in product marketing and communication!',
+      'Apply now as Product Marketing & Communications Manager at Digital Product School and immerse yourself in product marketing and communication!',
   },
   ac: {
     title: 'Agile Team Coach',
     description1:
-      'Apply now for the Agile Coaching Track at Digital Product School and immerse yourself in coaching agile teams!',
+      'Apply now as Agile Team Coach at Digital Product School and immerse yourself in coaching agile teams!',
   },
 };
 
