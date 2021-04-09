@@ -154,14 +154,14 @@ const MenuChallengesDropdownForDesktop = props => {
       onMouseEnter={props.handleOnMouseEnter}
     >
       <Link to="/challenges/mobility/" style={styles} activeStyle={activeStyle}>
-        Mobility
+        Digital Mobility Lab
       </Link>
       <Link
         to="/challenges/healthcare/"
         style={{ ...styles, paddingBottom: '0' }}
         activeStyle={activeStyle}
       >
-        Healthcare
+        Digital Healthcare Lab
       </Link>
     </div>
   );
