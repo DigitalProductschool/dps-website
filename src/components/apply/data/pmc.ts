@@ -21,7 +21,7 @@ export const generalTrackInfo = {
   track: 'pmc',
   name: 'Product Marketing & Communications Manager',
   description:
-    'Apply now for the Digital Media Track at Digital Product School and immerse yourself in product marketing and communication!',
+    'Apply now as Product Marketing & Communications Manager at Product School and immerse yourself in product marketing and communication!',
   url: 'product-marketing-communications-manager',
 };
 
@@ -49,7 +49,7 @@ export const expectations = {
 
 export const whatyoulearn = {
   subtitle:
-    'In the Digital Media Track of DPS, you will learn theory and practically implement all aspects of creating an innovative communication strategy.',
+    'In our training program, you as a Product Marketing & Communications Manager will learn theory and practically implement all aspects of creating an innovative communication strategy.',
   firstColumn:
     'After three months, you will be familiar with all relevant topics and techniques of modern (digital) marketing and communications. You will have firsthand experience  of what it is like to work in an agile communications team in a state-of-the-art newsroom to develop solutions in real-time based on most recent user data and market analytics.',
   secondColumn:
