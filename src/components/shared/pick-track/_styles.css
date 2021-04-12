@@ -4,7 +4,7 @@
 
 .pick-track__tracks {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 100px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   @media (max-width: 620px) {
@@ -73,6 +73,20 @@
         cover no-repeat;
     background-blend-mode: multiply;
   }
+
+  &--ac {
+    background: linear-gradient(rgba(98, 170, 120), rgba(98, 170, 120)),
+      url(/assets/shared/pick-track/ac-track-background.png) center center /
+        cover no-repeat;
+    background-blend-mode: multiply;
+  }
+
+  &--pmc {
+    background: linear-gradient(rgba(95, 103, 201), rgba(95, 103, 201)),
+      url(/assets/shared/pick-track/pmc-track-background.png) center center /
+        cover no-repeat;
+    background-blend-mode: multiply;
+  }
 }
 
 .pick-track__track__button {
@@ -113,6 +127,20 @@
     &:hover {
       color: var(--wisteria);
       border-color: var(--wisteria);
+    }
+  }
+
+  &--ac {
+    &:hover {
+      color: var(--ocean-green);
+      border-color: var(--ocean-green);
+    }
+  }
+
+  &--pmc {
+    &:hover {
+      color: var(--midnight-blue);
+      border-color: var(--midnight-blue);
     }
   }
 }
