@@ -2,31 +2,49 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import favicon from '../../static/assets/favicon.svg';
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({
+  lang,
+  meta,
+  description,
+  title,
+  author,
+  image,
+  keywords,
+  pathname,
+}) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const titleAttr = title || data.site.siteMetadata.title;
+        const metaTitle = title || data.site.siteMetadata.title;
+        const metaAuthor = author || data.site.siteMetadata.author;
+        const metaImage = image || data.site.siteMetadata.image;
+        const metaKeywords = keywords;
+
+        const canonical = pathname
+          ? `${data.site.siteMetadata.url}${pathname}`
+          : null;
+
         return (
           <Helmet
             htmlAttributes={{
               lang,
             }}
-            title={titleAttr}
+            title={metaTitle}
             titleTemplate={`%s`}
-            link={[
-              {
-                rel: 'shortcut icon',
-                type: 'image/svg+xml',
-                href: `${favicon}`,
-                sizes: 'any',
-              },
-            ]}
+            link={
+              canonical
+                ? [
+                    {
+                      rel: 'canonical',
+                      href: canonical,
+                    },
+                  ]
+                : []
+            }
             meta={[
               {
                 name: `description`,
@@ -34,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:title`,
-                content: titleAttr,
+                content: metaTitle,
               },
               {
                 property: `og:description`,
@@ -45,19 +63,19 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: `website`,
               },
               {
-                property: `og:image`,
-                content: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch14_Application.jpg`,
+                property: 'og:image',
+                content: metaImage,
               },
               {
                 property: `og:image:type`,
                 content: `image/jpeg`,
               },
               {
-                property: `og:image:width`,
+                property: 'og:image:width',
                 content: `1200`,
               },
               {
-                property: `og:image:height`,
+                property: 'og:image:height',
                 content: `630`,
               },
               {
@@ -70,15 +88,15 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: `@dpschool_io`,
+                content: data.site.siteMetadata.twitterAuthor,
               },
               {
                 name: `twitter:site`,
-                content: `@dpschool_io`,
+                content: data.site.siteMetadata.twitterAuthor,
               },
               {
                 name: `twitter:title`,
-                content: titleAttr,
+                content: metaTitle,
               },
               {
                 name: `twitter:description`,
@@ -90,15 +108,15 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `instagram:creator`,
-                content: data.site.siteMetadata.author,
+                content: metaAuthor,
               },
               {
                 name: `instagram:site`,
-                content: data.site.siteMetadata.author,
+                content: metaAuthor,
               },
               {
                 name: `instagram:title`,
-                content: titleAttr,
+                content: metaTitle,
               },
               {
                 name: `instagram:description`,
@@ -110,15 +128,15 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `facebook:creator`,
-                content: data.site.siteMetadata.author,
+                content: metaAuthor,
               },
               {
                 name: `facebook:site`,
-                content: data.site.siteMetadata.author,
+                content: metaAuthor,
               },
               {
                 name: `facebook:title`,
-                content: titleAttr,
+                content: metaTitle,
               },
               {
                 name: `facebook:description`,
@@ -130,10 +148,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
             ]
               .concat(
-                keywords.length > 0
+                metaKeywords && metaKeywords.length > 0
                   ? {
                       name: `keywords`,
-                      content: keywords.join(`, `),
+                      content: metaKeywords.join(`, `),
                     }
                   : []
               )
@@ -152,11 +170,14 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
+  description: PropTypes.string,
   title: PropTypes.string,
+  author: PropTypes.string,
+  image: PropTypes.string,
+  keywords: PropTypes.arrayOf(PropTypes.string),
+  pathname: PropTypes.string,
 };
 
 export default SEO;
@@ -168,6 +189,9 @@ const detailsQuery = graphql`
         title
         description
         author
+        twitterAuthor
+        image
+        url
       }
     }
   }
