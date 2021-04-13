@@ -25,6 +25,10 @@
   }
 }
 
+.u-content-margin-bottom {
+  margin-bottom: 4em;
+}
+
 .u-content-wrapper {
   width: 100%;
   display: grid;
@@ -186,6 +190,12 @@ h3.u-title {
 .u-image {
   max-width: 100%;
   height: auto;
+}
+
+.u-image-margin {
+  display: block;
+  max-width: 90%;
+  margin: 50px auto;
 }
 
 .u-section-margin-top {

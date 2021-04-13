@@ -7,7 +7,7 @@ interface PillarsProps {
 
 export default function Pillars(props: PillarsProps) {
   return (
-    <section className="pillars u-section-margin-top u-content-wrapper">
+    <section className="pillars u-content-wrapper">
       <div className="pillars__content u-content">
         <h2 className="u-title uppercase">{props.title}</h2>
         <ul className="pillars__list__4">

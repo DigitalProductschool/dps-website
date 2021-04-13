@@ -78,7 +78,7 @@ export const process = {
     'That’s the starting point for the core success factor: the <b>DISCOVERY PHASE</b>. For three months, autonomous and cross-functional teams of Product Managers, Agile Coaches, Interaction Designer, Software Engineers, and AI Engineers will build an innovative digital product that solves a real user problem. The process is powered by the best-in-class tools and methods from Design Thinking, Lean Startup and agile product development.',
   description4:
     'In the <b>ROLLOUT PHASE</b>, we support our partners in developing the product and business model and in taking it to market.',
-  image: '/assets/challenges/road.png',
+  image: '/assets/challenges/program-overview.svg',
 };
 
 export const mucl = {

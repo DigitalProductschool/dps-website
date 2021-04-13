@@ -39,7 +39,11 @@ export default function Process(props: ProcessProps) {
           className="u-text"
           dangerouslySetInnerHTML={{ __html: description4 }}
         />
-        <img alt="double-diamond" className="u-image" src={image} />
+        <img
+          alt="double-diamond"
+          className="u-image u-image-margin"
+          src={image}
+        />
       </Section>
     </div>
   );

@@ -22,7 +22,7 @@ export default function Mucl(props: MuclProps) {
           minHeight: '50vw',
         }}
       ></div>
-      <Section title={title}>
+      <Section title={title} className="u-content-margin-bottom">
         <p className="u-text">
           {description1}
           <br />

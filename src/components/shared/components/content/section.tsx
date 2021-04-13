@@ -3,7 +3,7 @@ import * as React from 'react';
 export default function Section(props) {
   return (
     <div
-      className={`u-content-wrapper ${props.className}`}
+      className={`u-content-wrapper ${props.className ? props.className : ''}`}
       style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
     >
       <div className="u-content">

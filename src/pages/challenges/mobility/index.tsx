@@ -49,8 +49,8 @@ class Mobility extends React.Component {
         <BigText data={firstcta} />
         <SuccessStories data={successstories} />
         <Process data={process} />
-        <Mucl data={mucl} />
         <IndustryPartners />
+        <Mucl data={mucl} />
         <Pillars title="Why Digital Product School" data={whydps} />;
         <div className="u-section-margin-bottom">
           <BigText data={secondcta} />
