@@ -94,6 +94,30 @@ handlers:
     secure: always
     expiration: 10m
 
+  - url: /mobility
+    static_files: public/challenges/mobility/index.html
+    upload: public/challenges/mobility/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /mobility/
+    static_files: public/challenges/mobility/index.html
+    upload: public/challenges/mobility/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /health
+    static_files: public/challenges/mobility/index.html
+    upload: public/challenges/mobility/index.html
+    secure: always
+    expiration: 10m
+
+  - url: /health/
+    static_files: public/challenges/healthcare/index.html
+    upload: public/challenges/healthcare/index.html
+    secure: always
+    expiration: 10m
+
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
   # matches path/ to path/index.html

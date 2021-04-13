@@ -31,3 +31,4 @@ steps:
         'debug',
       ]
     waitFor: ['gatsby_build']
+timeout: 900s

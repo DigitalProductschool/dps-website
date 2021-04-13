@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Digital Product School`,
-    description: `DPS is a 3 months training program where product managers, interaction designers, software engineers and AI-specialists build innovative digital products.`,
+    description: `DPS is a 3 months training program where 
+    product managers, interaction designers, software engineers
+    and AI-specialists build innovative digital products.`,
     author: `@digitalproductschool`,
+    twitterAuthor: `@dpschool_io`,
+    image: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch14_Application.jpg`,
+    url: `https://digitalproductschool.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,13 +39,12 @@ module.exports = {
       options: {
         siteUrl: `https://digitalproductschool.io`,
       },
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
-
+};
 
 // pathPrefix: "/Gatsby-DPS/static",
 //     `gatsby-plugin-postcss`,

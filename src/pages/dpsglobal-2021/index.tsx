@@ -9,6 +9,7 @@ import ScheduleSpeakers from '../../components/dpsglobal-2021/schedule-speakers/
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
 import Nav from '../../components/shared/nav/index';
+import SEO from '../../components/seo';
 
 class Conference extends React.Component {
   state = {
@@ -21,6 +22,11 @@ class Conference extends React.Component {
       <React.Fragment>
         <CookieWarning />
         <Nav />
+        <SEO
+          title="DPS Conference"
+          image="https://digitalproductschool.io/assets/dpsglobal-2021/header/conferenceheader.jpg"
+          description="The most amazing conference of the year"
+        />
         <HeaderConference url={this.state.conferenceUrl} />
         <Welcome url={this.state.conferenceUrl} />
         <WhoCanJoin url={this.state.conferenceUrl} />
