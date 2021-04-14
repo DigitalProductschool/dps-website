@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useRef, useCallback, useReducer, useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+
 import useBatchDetails from '../../shared/batch-details/use-batch-details';
 import displayCurrentBatchesDropdown from '../../shared/batch-details/current-batches-dropdown';
+import SuccessMessage from './Success';
 
 const _5MB = 5242880; // in bytes;
 
@@ -40,6 +41,42 @@ function reducer(state, action) {
       return {
         ...state,
         email: action.payload.value,
+      };
+
+    case 'CHANGE_GITHUB':
+      return {
+        ...state,
+        github: action.payload.value,
+      };
+
+    case 'CHANGE_LINKEDIN':
+      return {
+        ...state,
+        linkedin: action.payload.value,
+      };
+
+    case 'CHANGE_PROJECT':
+      return {
+        ...state,
+        project: action.payload.value,
+      };
+
+    case 'CHANGE_FRONT':
+      return {
+        ...state,
+        front: action.payload.value,
+      };
+
+    case 'CHANGE_BACK':
+      return {
+        ...state,
+        back: action.payload.value,
+      };
+
+    case 'CHANGE_LEARN':
+      return {
+        ...state,
+        learn: action.payload.value,
       };
 
     case 'CHANGE_CV':
@@ -162,102 +199,7 @@ export default function Form(props) {
       <div className="application-form-content">
         <div className="application-form-plate" ref={formWrapperRef}>
           {response === 'success' && (
-            <>
-              <p style={{ textAlign: 'left', marginTop: '70px' }}>
-                Dear {state.name},{' '}
-              </p>
-              <p style={{ textAlign: 'left' }}>
-                Thank you for your interest in being part of Digital Product
-                School.
-              </p>
-              <p style={{ textAlign: 'left' }}>
-                You applied for Batch#{state.batch}. We give our best to
-                evaluate your application, but since a lot of great people want
-                to be part of DPS it may take some time. <br />
-              </p>
-              <p style={{ textAlign: 'left' }}>
-                We will start to evaluate the applications about 12 weeks before
-                the next batch starts and get in touch with you. If you and your
-                skills fit our needs we will invite you to an interview. At the
-                latest four weeks before the batch starts you will know if you
-                are in the next round.
-              </p>
-
-              <p style={{ textAlign: 'left' }}>
-                If you have any questions, just email us at{' '}
-                <a
-                  href="mailto:hello@dpschool.io"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>hello@dpschool.io. </span>
-                </a>{' '}
-                Or stay in touch with us on social media:{' '}
-                <a
-                  href="https://www.instagram.com/digitalproductschool/"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>Instagram, </span>
-                </a>{' '}
-                <a
-                  href="https://www.facebook.com/digitalproductschool/"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>Facebook, </span>
-                </a>{' '}
-                <a
-                  href="https://www.linkedin.com/company/digital-product-school/"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>LinkedIn, </span>
-                </a>{' '}
-                <a
-                  href="https://twitter.com/dpschool_io"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>Twitter, </span>
-                </a>{' '}
-                <a
-                  href="https://leaks.digitalproductschool.io/"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>Medium, </span>
-                </a>{' '}
-                <a
-                  href="https://www.youtube.com/c/DigitalProductSchool"
-                  className="u-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span style={{ zIndex: 0 }}>Youtube. </span>
-                </a>{' '}
-              </p>
-              <p style={{ textAlign: 'left' }}>Your DPS-Team</p>
-
-              <Link
-                to="/"
-                className="u-button u-button--reversed"
-                style={{
-                  textDecoration: 'none',
-                  padding: '10px',
-                  marginTop: '10px',
-                  display: 'inline-block',
-                }}
-              >
-                back to home
-              </Link>
-            </>
+            <SuccessMessage name={state.name} batch={state.batch} />
           )}
           {response === 'failure' && (
             <p>
@@ -332,6 +274,129 @@ export default function Form(props) {
                   onChange={e =>
                     dispatch({
                       type: 'CHANGE_EMAIL',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="github">
+                  What is your github?
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="github"
+                  name="github"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_GITHUB',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="linkedin">
+                  What is your linkedin?
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="linkedin"
+                  name="linkedin"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_LINKEDIN',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="project">
+                  Tell us about the favourite project you have worked on
+                  (Describe goal, Used technologies etc).
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="project"
+                  name="project"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_POJECT',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="back">
+                  Do you have exprience working on a backend application? (if
+                  yes, explain)
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="back"
+                  name="back"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_BACK',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="front">
+                  Do you have experience building a frontend application (if
+                  yes, explain)
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="front"
+                  name="front"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_FRONT',
+                      payload: { value: e.target.value },
+                    })
+                  }
+                  required
+                />
+              </div>
+
+              <div className="application-form__field-wrapper">
+                <label className="application-form__label" htmlFor="learn">
+                  What do you plan to learn at DPS?
+                </label>
+                <input
+                  className="application-form__input"
+                  type="text"
+                  id="learn"
+                  name="learn"
+                  value={state.name}
+                  onChange={e =>
+                    dispatch({
+                      type: 'CHANGE_LEARN',
                       payload: { value: e.target.value },
                     })
                   }
