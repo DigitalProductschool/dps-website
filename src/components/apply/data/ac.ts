@@ -25,7 +25,7 @@ export const generalTrackInfo = {
   track: 'ac',
   name: 'Agile Team Coach',
   description:
-    'Apply now for the Agile Coaching Track at Digital Product School and immerse yourself in coaching agile teams!',
+    'Apply now as Agile Team Coach at Digital Product School and immerse yourself in coaching agile teams!',
   url: 'agile-coach',
 };
 
