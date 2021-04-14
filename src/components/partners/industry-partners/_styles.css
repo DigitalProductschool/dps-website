@@ -1,6 +1,10 @@
 .industry-partners__title {
   margin-top: 110px;
   margin-bottom: 10px;
+
+  @media (max-width: 620px) {
+    margin-top: 55px;
+  }
 }
 
 .industry-partners__description {
