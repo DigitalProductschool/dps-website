@@ -25,7 +25,7 @@ function SEO({
         const metaKeywords = keywords;
 
         const canonical = pathname
-          ? `${data.site.siteMetadata.url}${pathname}`
+          ? `${data.site.siteMetadata.siteUrl}${pathname}`
           : null;
 
         return (
@@ -191,7 +191,7 @@ const detailsQuery = graphql`
         author
         twitterAuthor
         image
-        url
+        siteUrl
       }
     }
   }

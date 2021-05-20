@@ -7,9 +7,10 @@ module.exports = {
     author: `@digitalproductschool`,
     twitterAuthor: `@dpschool_io`,
     image: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch14_Application.jpg`,
-    url: `https://digitalproductschool.io`,
+    siteUrl: `https://digitalproductschool.io`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-postcss`,
@@ -31,7 +32,7 @@ module.exports = {
         background_color: `#182542`,
         theme_color: `#182542`,
         display: `minimal-ui`,
-        icon: `static/assets/favicon.svg`, // This path is relative to the root of the site.
+        icon: `static/assets/favicon.svg`,
       },
     },
     {
@@ -40,11 +41,5 @@ module.exports = {
         siteUrl: `https://digitalproductschool.io`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 };
-
-// pathPrefix: "/Gatsby-DPS/static",
-//     `gatsby-plugin-postcss`,
