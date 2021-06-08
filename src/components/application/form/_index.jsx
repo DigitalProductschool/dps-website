@@ -44,42 +44,6 @@ function reducer(state, action) {
         email: action.payload.value,
       };
 
-    case 'CHANGE_GITHUB':
-      return {
-        ...state,
-        github: action.payload.value,
-      };
-
-    case 'CHANGE_LINKEDIN':
-      return {
-        ...state,
-        linkedin: action.payload.value,
-      };
-
-    case 'CHANGE_PROJECT':
-      return {
-        ...state,
-        project: action.payload.value,
-      };
-
-    case 'CHANGE_FRONT':
-      return {
-        ...state,
-        front: action.payload.value,
-      };
-
-    case 'CHANGE_BACK':
-      return {
-        ...state,
-        back: action.payload.value,
-      };
-
-    case 'CHANGE_LEARN':
-      return {
-        ...state,
-        learn: action.payload.value,
-      };
-
     case 'CHANGE_CV':
       return {
         ...state,
@@ -281,7 +245,6 @@ export default function Form(props) {
                   required
                 />
               </div>
-              {props.track === 'se' && <SEForm />}
               <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
