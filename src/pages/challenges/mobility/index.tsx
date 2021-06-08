@@ -27,11 +27,17 @@ import {
   secondcta,
 } from '../../../components/challenges/data/mobility';
 import IndustryPartners from '../../../components/partners/industry-partners';
+import SEO from '../../../components/seo';
 
 class Mobility extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <SEO
+          title="DPS - Digital Mobility Lab"
+          description="Solving challenges from the mobility sector with innovative & human-centered digital products."
+          image={header.image}
+        />
         <CookieWarning />
         <Nav />
         <Header image={header.image} overlayColor="rgba(5, 16, 72, 0.56)">
