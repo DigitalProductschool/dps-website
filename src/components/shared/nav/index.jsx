@@ -229,6 +229,7 @@ const MenuChallengesDropDownForMobile = props => {
 };
 
 function Nav(props) {
+  console.log(props);
   const [isOpen, setIsOpen] = useState(false);
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
   const [isMouseOverChallengesLink, setIsMouseOverChallengesLink] = useState(
@@ -350,7 +351,11 @@ function Nav(props) {
         height: `${height}`,
       }}
     >
-      <Seo />
+      <Seo
+        title={props.seoTitle}
+        description={props.seoDescription}
+        image={props.seoImage}
+      />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}
       >

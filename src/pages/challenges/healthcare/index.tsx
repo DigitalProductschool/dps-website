@@ -30,13 +30,12 @@ class Healthcare extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <SEO
-          title="DPS - Digital Healthcare Lab"
-          description="Solving challenges from the healthcare sector with innovative & human-centered digital products."
-          image={header.image}
-        />
         <CookieWarning />
-        <Nav />
+        <Nav
+          seoTitle="DPS - Digital Healthcare Lab"
+          seoDescription="Solving challenges from the healthcare sector with innovative & human-centered digital products."
+          seoImage={header.image}
+        />
         <Header image={header.image} overlayColor="rgba(5, 16, 72, 0.56)">
           {header.title}
           <HeaderContentInside
