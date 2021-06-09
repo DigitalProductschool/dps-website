@@ -1,1 +1,1 @@
-export default process.env.CURR_ENV === 'production';
+export default process.env.GATSBY_ENV === 'production';

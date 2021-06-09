@@ -13,7 +13,7 @@ steps:
     env:
       [
         'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://europe-west1-dps-website-staging-0.cloudfunctions.net/handleApplicationForm',
-        'CURR_ENV=staging',
+        'GATSBY_ENV=staging',
       ]
     waitFor: ['install_frontend_dep']
   - name: 'gcr.io/cloud-builders/gcloud'

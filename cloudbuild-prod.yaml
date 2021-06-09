@@ -14,7 +14,7 @@ steps:
     env:
       [
         'GATSBY_HANDLE_APPLICATION_ENDPOINT=https://europe-west1-dps-website-244212.cloudfunctions.net/handleApplicationForm',
-        'CURR_ENV=production',
+        'GATSBY_ENV=production',
       ]
     waitFor: ['install_frontend_dep']
 
