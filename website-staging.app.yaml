@@ -124,6 +124,7 @@ handlers:
   - url: /([^.]+)/
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
+    require_matching_file: true
     secure: always
     expiration: 1s
 
@@ -131,6 +132,7 @@ handlers:
   - url: /([^.]+)
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
+    require_matching_file: true
     secure: always
     expiration: 1s
 
@@ -138,6 +140,7 @@ handlers:
   - url: /([^.]+)/([^.]+)/
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
+    require_matching_file: true
     secure: always
     expiration: 1s
 
@@ -145,13 +148,20 @@ handlers:
   - url: /([^.]+)/([^.]+)
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
+    require_matching_file: true
     secure: always
     expiration: 1s
 
-  # catch everything else
   - url: /(.*)
     static_files: public/\1
     upload: public/(.*)
+    require_matching_file: true
+    secure: always
+    expiration: 1s
+
+  - url: /(.*)
+    static_files: public/404/index.html
+    upload: public/404/index.html
     secure: always
     expiration: 1s
 
