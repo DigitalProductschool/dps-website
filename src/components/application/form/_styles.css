@@ -84,6 +84,27 @@ textarea {
   }
 }
 
+.dnd-group {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.dnd-item {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  border: 0px;
+  color: #282c34;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.dragging {
+  background-color: white;
+}
+
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;

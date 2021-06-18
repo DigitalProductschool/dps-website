@@ -5,6 +5,7 @@ import useBatchDetails from '../../shared/batch-details/use-batch-details';
 import displayCurrentBatchesDropdown from '../../shared/batch-details/current-batches-dropdown';
 import SuccessMessage from './Success';
 import { SEForm } from './SEForm';
+import { PMCForm } from './PMCForm';
 
 const _5MB = 5242880; // in bytes;
 
@@ -291,6 +292,7 @@ export default function Form(props) {
                   <img src="/assets/icons/upload-icon.svg" alt="upload CV" />
                 </button>
               </div>
+              {props.track === 'pmc' && <PMCForm />}
               <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"
