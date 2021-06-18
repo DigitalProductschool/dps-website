@@ -236,17 +236,6 @@ h3.u-title {
   }
 }
 
-.u-grid-1-6-3 {
-  display: grid;
-  grid-template-columns: 50px 200px 3fr;
-  grid-gap: 20px;
-
-  @media (max-width: 620px) {
-    grid-template-columns: auto;
-    grid-gap: 0;
-  }
-}
-
 .u-grid-4-6 {
   display: grid;
   grid-template-columns: 4fr 6fr;

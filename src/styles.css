@@ -107,3 +107,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}

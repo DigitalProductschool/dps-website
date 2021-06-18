@@ -100,7 +100,10 @@ export default function Form(props) {
   const [isInflightRequest, setIsInflightRequest] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // This will trigger the Input File event in case you click the button
+  const stateCallbackFunction = stateCallback => {
+    state.project = stateCallback.project;
+    state.strengths = stateCallback.strengths;
+  };
   const clickFileInputCV = useCallback(() => {
     fileInputCVRef.current.click();
   }, []);
@@ -117,7 +120,6 @@ export default function Form(props) {
       uploadCVLabelRef.current.scrollIntoView();
       return;
     }
-
     const formData = new FormData();
 
     // put cv & coverLetter at the end of formdata because our middleware assumes processing of other key-values first so they can be used when creating filenames
@@ -292,7 +294,9 @@ export default function Form(props) {
                   <img src="/assets/icons/upload-icon.svg" alt="upload CV" />
                 </button>
               </div>
-              {props.track === 'pmc' && <PMCForm />}
+              {props.track === 'pmc' && (
+                <PMCForm callback={stateCallbackFunction} />
+              )}
               <div className="application-form__field-wrapper">
                 <label
                   className="application-form__label"

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useReducer, useState, useEffect, useRef } from 'react';
 import dots from '../../../../static/assets/dots.svg';
+
 const initialState = {
   project: '',
   strengths: [],
@@ -22,12 +23,14 @@ function reducer(state, action) {
   }
 }
 
-export function PMCForm() {
+export function PMCForm({ callback }) {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    callback(state);
+  });
   const [dragging, setDragging] = useState(false);
-  const [draggingItemIndex, setDraggingItemIndex] = useState(-1);
   const [startPageY, setStartPageY] = useState(0);
-  const [offsetY, setOffsetY] = useState(0);
 
   const [list, setList] = useState([
     'Marketing & Strategy',
@@ -40,80 +43,73 @@ export function PMCForm() {
   const dragItem = useRef();
   const dragItemNode = useRef();
 
-  const handletDragStart = (e, item) => {
-    dragItemNode.current = e.target;
-    dragItemNode.current.addEventListener('dragend', handleDragEnd);
-    dragItem.current = item;
-    setDragging(true);
-  };
-
-  const handleTouchStart = (event, index) => {
-    document.addEventListener('touchmove', event.preventDefault());
-    setDraggingItemIndex(index);
-    setStartPageY(event.touches[0].pageY);
-  };
-
-  const handleTouchEnd = event => {
-    document.removeEventListener('touchmove', event.preventDefault());
-    setDraggingItemIndex(-1);
-    setStartPageY(0);
-  };
-
-  const move = (arr, startIndex, isMoveDown) => {
-    let newArr = arr.slice();
-    let moveItem = newArr.splice(startIndex, 1)[0];
-    if (isMoveDown) {
-      newArr.splice(startIndex + 1, 0, moveItem);
+  const handleDragStart = (event, index) => {
+    dragItemNode.current = event.target;
+    if (event.touches) {
+      dragItemNode.current.addEventListener('touchmove', event);
+      setStartPageY(event.touches[0].pageY);
     } else {
-      newArr.splice(startIndex - 1, 0, moveItem);
+      dragItemNode.current.addEventListener('dragend', handleDragEnd);
     }
-    return newArr;
+    dragItem.current = index;
+    setDragging(true);
+    document.body.classList.add('overflow-hidden');
   };
 
-  const handleTouchMove = event => {
-    let offset = event.touches[0].pageY - startPageY;
-    let draggingIndex = draggingItemIndex;
-    const lineHeight = 40;
-    if (offset > lineHeight && draggingIndex < list.length - 1) {
-      offset -= lineHeight;
-      setList(move(list, draggingIndex, true));
-      setDraggingItemIndex(draggingIndex + 1);
-      setStartPageY(startPageY + lineHeight);
-    } else if (offset < -lineHeight && draggingIndex > 0) {
-      offset += lineHeight;
-      setList(move(list, draggingIndex, false));
-      setDraggingItemIndex(draggingIndex - 1);
-      setStartPageY(startPageY - lineHeight);
-    }
-    setOffsetY(offset);
-  };
-
-  const handleDragEnter = (e, item) => {
-    if (dragItemNode.current !== e.target) {
-      setList(oldList => {
-        let newList = JSON.parse(JSON.stringify(oldList));
-        newList.splice(item, 0, newList.splice(dragItem.current, 1)[0]);
-        dragItem.current = item;
-        console.log(newList);
-        return newList;
-      });
+  const handleDragEnter = (event, index) => {
+    if (event.touches) {
+      let offset = event.touches[0].pageY - startPageY;
+      const lineHeight = 40;
+      if (offset > lineHeight && index < list.length - 1) {
+        offset -= lineHeight;
+        drag(index + 1);
+        setStartPageY(startPageY + lineHeight);
+      } else if (offset < -lineHeight && index > 0) {
+        offset += lineHeight;
+        drag(index - 1);
+        setStartPageY(startPageY - lineHeight);
+      }
+      //   }
+    } else {
+      if (dragItemNode.current !== event.target) {
+        drag(index);
+      }
     }
   };
 
-  const handleDragEnd = e => {
+  const drag = index => {
+    setList(oldList => {
+      let newList = JSON.parse(JSON.stringify(oldList));
+      let moveItem = newList.splice(dragItem.current, 1)[0];
+      newList.splice(index, 0, moveItem);
+      dragItem.current = index;
+      return newList;
+    });
+  };
+
+  const handleDragEnd = event => {
     setDragging(false);
     dragItem.current = null;
-    dragItemNode.current.removeEventListener('dragend', handleDragEnd);
+    if (event.touches) {
+      dragItemNode.current.removeEventListener('touchmove', event);
+      setStartPageY(0);
+    } else {
+      dragItemNode.current.removeEventListener('dragend', handleDragEnd);
+    }
     dragItemNode.current = null;
+    document.body.classList.remove('overflow-hidden');
+    dispatch({
+      type: 'CHANGE_STRENGTHS',
+      payload: { value: list },
+    });
   };
 
   const getStyles = item => {
     if (dragItem.current === item) {
-      return 'dnd-item dragging';
+      return 'application-dnd-item application-dnd-item-dragging';
     }
-    return 'dnd-item';
+    return 'application-dnd-item';
   };
-
   return (
     <>
       <div className="application-form__field-wrapper">
@@ -141,27 +137,25 @@ export function PMCForm() {
         />
       </div>
       <div className="application-form__field-wrapper">
-        <label className="application-form__label" htmlFor="project">
+        <label className="application-form__label" htmlFor="strengths">
           Where are our strengths?
         </label>
         <label className="application-form__smalllabel">
           Please rank the fields below according to the knowledge and skills you
           already have. Drag and drop options.
         </label>
-        <div className="dnd-group" style={{ cursor: 'grab' }}>
+        <div className="application-dnd-group" style={{ cursor: 'grab' }}>
           {list.map((strength, strengthIndex) => (
             <div
-              className={dragging ? getStyles(strengthIndex) : 'dnd-item'}
+              className={
+                dragging ? getStyles(strengthIndex) : 'application-dnd-item'
+              }
               draggable
               key={strength}
-              onTouchStart={e => handleTouchStart(e, strengthIndex)}
-              onTouchEnd={e => {
-                handleTouchEnd(e);
-              }}
-              onTouchMove={e => {
-                handleTouchMove(e);
-              }}
-              onDragStart={e => handletDragStart(e, strengthIndex)}
+              onTouchStart={e => handleDragStart(e, strengthIndex)}
+              onTouchEnd={e => handleDragEnd(e)}
+              onTouchMove={e => handleDragEnter(e, strengthIndex)}
+              onDragStart={e => handleDragStart(e, strengthIndex)}
               onDragEnter={
                 dragging
                   ? e => {
@@ -170,7 +164,7 @@ export function PMCForm() {
                   : null
               }
             >
-              <div className="u-grid-1-6-3">
+              <div className="application-dnd-grid">
                 <div>{strengthIndex + 1}.</div>
                 <div>{strength}</div>
                 <img src={dots} width="10" />
