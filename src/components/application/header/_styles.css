@@ -8,7 +8,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: calc(32px + 3vw);
+  font-size: calc(32px);
   margin-top: 131px;
 
   @media (min-width: 1280px) {

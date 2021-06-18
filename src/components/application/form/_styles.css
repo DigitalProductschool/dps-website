@@ -84,12 +84,23 @@ textarea {
   }
 }
 
-.dnd-group {
+.application-dnd-grid {
+  display: grid;
+  grid-template-columns: 50px 200px 50px;
+  grid-gap: 20px;
+
+  @media (max-width: 620px) {
+    grid-template-columns: 10px 150px 10px;
+    grid-gap: 10px;
+  }
+}
+
+.application-dnd-group {
   background-color: white;
   border-radius: 5px;
   padding: 0.5rem;
 }
-.dnd-item {
+.application-dnd-item {
   background-color: #f3f3f3;
   display: flex;
   justify-content: center;
@@ -101,7 +112,7 @@ textarea {
   margin: 10px;
 }
 
-.dragging {
+.application-dnd-item-dragging {
   background-color: white;
 }
 
@@ -142,6 +153,7 @@ select.application-form__input {
   top: 3px;
   cursor: pointer;
   border: 0;
+
   &--se {
     background-color: var(--hollywoord-cerise);
   }
@@ -333,9 +345,5 @@ select.application-form__input {
 }
 
 .consent-description {
-  font-weight: 400;
-}
-
-.notbold {
   font-weight: 400;
 }
