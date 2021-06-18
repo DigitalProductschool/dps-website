@@ -2,11 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Digital Product School`,
     description: `DPS is a 3 months training program where 
-    product managers, interaction designers, software engineers
-    and AI-specialists build innovative digital products.`,
+    product managers, interaction designers, software engineers,
+    AI-specialists, agile coaches and product marketing managers 
+    gain practical experience by building innovative digital products.`,
     author: `@digitalproductschool`,
     twitterAuthor: `@dpschool_io`,
-    image: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch14_Application.jpg`,
+    image: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch15_Application.jpg`,
     siteUrl: `https://digitalproductschool.io`,
   },
   plugins: [
