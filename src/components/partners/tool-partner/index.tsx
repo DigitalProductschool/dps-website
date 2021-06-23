@@ -20,16 +20,22 @@ class ToolPartner extends React.Component {
               src="/assets/home/tool-partner/invision.png"
             />
             <img
-              alt="UXPIN"
-              title="UXPIN, tool partner of Digital Product School"
-              className="tool-partner__content__logo"
-              src="/assets/home/tool-partner/uxpin.png"
-            />
-            <img
               alt="github"
               title="github, tool partner of Digital Product School"
               className="tool-partner__content__logo"
               src="/assets/home/tool-partner/github.png"
+            />
+            <img
+              alt="TAWNY"
+              title="TAWNY, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/tawny.png"
+            />
+            <img
+              alt="UXPIN"
+              title="UXPIN, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/uxpin.png"
             />
           </div>
           <div

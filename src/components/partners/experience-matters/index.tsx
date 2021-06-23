@@ -25,20 +25,31 @@ class ExperienceMatter extends React.Component {
                 {' '}
                 <img
                   alt="designit-logo"
+                  title="Designit, experience partner of Digital Product School"
                   src="/assets/home/experience-matters/designit.png"
                 />{' '}
               </li>
               <li>
                 {' '}
                 <img
-                  alt="dalabs-logo"
-                  src="/assets/home/experience-matters/dalabs.png"
+                  alt="star-logo"
+                  title="Star, experience partner of Digital Product School"
+                  src="/assets/home/experience-matters/star.png"
+                />{' '}
+              </li>
+              <li>
+                {' '}
+                <img
+                  alt="looping-group-logo"
+                  title="Looping Group, experience partner of Digital Product School"
+                  src="/assets/home/experience-matters/looping-group.png"
                 />{' '}
               </li>
               <li>
                 {' '}
                 <img
                   alt="produktmacher-logo"
+                  title="DieProduktMacher, experience partner of Digital Product School"
                   src="/assets/home/experience-matters/produktmacher.png"
                 />{' '}
               </li>
