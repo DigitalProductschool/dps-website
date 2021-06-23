@@ -143,6 +143,14 @@ function SEO({
                 content: metaDescription,
               },
               {
+                name: `slack:title`,
+                content: metaTitle,
+              },
+              {
+                name: `slack:description`,
+                content: metaDescription,
+              },
+              {
                 property: `google-site-verification`,
                 content: `4zjoV-3vBa7xWLagSj2ATnLDmHfHAYClMkSbxg8MdeE`,
               },
