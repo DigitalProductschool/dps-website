@@ -4,7 +4,13 @@ import { getFirebase } from '../../../firebase/firebase';
 export default function useBatchDetails(props) {
   const [batchDetails, setBatchDetails] = useState([]);
 
-  if (props === 'pm' || props === 'se' || props === 'ai' || props === 'ixd') {
+  if (
+    props === 'pm' ||
+    props === 'se' ||
+    props === 'ai' ||
+    props === 'ixd' ||
+    props === 'ac'
+  ) {
     var appEndDate = 'appEndDate-' + props;
   } else {
     var appEndDate = 'appEndDate';
@@ -39,6 +45,7 @@ export default function useBatchDetails(props) {
                   appEndDatePm: doc.get('appEndDate-pm'),
                   appEndDateAi: doc.get('appEndDate-ai'),
                   appEndDateIxd: doc.get('appEndDate-ixd'),
+                  appEndDateAc: doc.get('appEndDate-ac'),
                 },
               ])
           );

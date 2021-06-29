@@ -44,10 +44,12 @@ export default function BatchDetails(props) {
         let appEndSe = batch.appEndDateSe;
         let appEndIxd = batch.appEndDateIxd;
         let appEndAi = batch.appEndDateAi;
+        let appEndAc = batch.appEndDateAc;
 
         if (
           isApplicationPhaseOpen(batch.appStartDate) &&
-          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) != 'allclosed'
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd, appEndAc) !=
+            'allclosed'
         )
           return (
             <span key={`batch-${batch.batchNumber}`}>
@@ -60,14 +62,21 @@ export default function BatchDetails(props) {
               </b>
               <br className="break" />
               {`(Applications open until ${getBatchDate(batch.appEndDate)}`}
-              {`${TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd)})`}
+              {`${TrackPhase(
+                appEndPm,
+                appEndSe,
+                appEndAi,
+                appEndIxd,
+                appEndAc
+              )})`}
               <br />
               <br className="break" />
             </span>
           );
         else if (
           isApplicationPhaseOpen(batch.appStartDate) &&
-          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) === 'allclosed'
+          TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd, appEndAc) ===
+            'allclosed'
         )
           return ' ';
         else if (!isApplicationPhaseOpen(batch.appStartDate))

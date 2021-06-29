@@ -4,7 +4,13 @@ function isApplicationPhaseClosed(applicationEndDate) {
   if (today > givenDate) return true;
 }
 
-export default function TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) {
+export default function TrackPhase(
+  appEndPm,
+  appEndSe,
+  appEndAi,
+  appEndIxd,
+  appEndAc
+) {
   if (isApplicationPhaseClosed(appEndPm)) {
     var pm = ['PM'];
   } else var pm = [];
@@ -17,7 +23,10 @@ export default function TrackPhase(appEndPm, appEndSe, appEndAi, appEndIxd) {
   if (isApplicationPhaseClosed(appEndIxd)) {
     var ixd = ['IxD'];
   } else var ixd = [];
-  var all = pm.concat(se, ai, ixd);
+  if (isApplicationPhaseClosed(appEndAc)) {
+    var ac = ['AC'];
+  } else var ac = [];
+  var all = pm.concat(se, ai, ixd, ac);
 
   switch (all.length) {
     case 0:
