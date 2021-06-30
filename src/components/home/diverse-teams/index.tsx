@@ -34,7 +34,7 @@ class DiverseTeams extends React.Component {
             that helps them to work together and to reach their full potential as a product team. <br />
             At the same time,{' '}
             <Link to="/tracks/product-marketing-communications-manager" className="u-link">
-              <span> product marketing & communications managers </span>
+              <span> product marketing managers </span>
             </Link>
             form marketing teams and solve specific communication challenges for our company partners.
             <br /> Interested?{' '}
