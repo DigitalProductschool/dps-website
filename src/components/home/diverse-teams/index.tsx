@@ -37,6 +37,10 @@ class DiverseTeams extends React.Component {
               <span> product marketing & communications managers </span>
             </Link>
             form marketing teams and solve specific communication challenges for our company partners.
+            <br /> Interested?{' '}
+             <Link to="/apply" className="u-link">
+               <span>Apply Now!</span>
+             </Link>
           </p>
           <div className="diverse-teams__content__image" />
         </div>
