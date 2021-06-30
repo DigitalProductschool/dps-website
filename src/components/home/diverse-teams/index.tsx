@@ -27,12 +27,12 @@ class DiverseTeams extends React.Component {
             </Link>{' '}
             from all over the world are working together across disciplines to
             create great products in a lean and agile way. <br />
-            They are accompanied by {' '}
+            They are accompanied by{' '}
             <Link to="/tracks/agile-coach" className="u-link">
               <span> agile team coaches </span>
             </Link>
             that helps them to work together and to reach their full potential as a product team. <br />
-            At the same time, {' '}
+            At the same time,{' '}
             <Link to="/tracks/product-marketing-communications-manager" className="u-link">
               <span> product marketing & communications managers </span>
             </Link>
