@@ -9,9 +9,6 @@ import WhatsNew from '../../components/home/whats-new';
 import PickTrack from '../../components/shared/pick-track';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
-import DPSCorona from '../../components/home/dps-corona';
-import RemoteCollaboration from '../../components/home/remote-collaboration';
-import TheSetting from '../../components/home/the-setting';
 
 interface IHeaderProps {
   headerType: string;
@@ -33,9 +30,6 @@ class Home extends React.Component<IHeaderProps, {}> {
           headerType={this.props.headerType}
         />
         <Pitch forwardedRef={this.forwardedRef} />
-        <DPSCorona />
-        <RemoteCollaboration />
-        <TheSetting />
         <DiverseTeams />
         <UserFirst />
         <PickTrack isApplyNowVersion={false} />
