@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 class DiverseTeams extends React.Component {
   render() {
     return (
-      <div className="diverse-teams u-content-wrapper u-section-margin-top">
+      <div className="diverse-teams u-content-wrapper">
         <h3 className="diverse-teams__title u-content">Diverse Teams</h3>
         <div className="diverse-teams__content u-content">
           <p className="diverse-teams__content__description">
