@@ -113,12 +113,23 @@ exports.handler = function(request: any, response: any, database: any) {
           coverLetterPromise,
         ]);
 
+        const id = database
+          .firestore()
+          .collection('batches')
+          .doc(`batch-${data.batch}`)
+          .collection('applications')
+          .doc().id;
+
         await database
           .firestore()
           .collection('batches')
           .doc(`batch-${data.batch}`)
           .collection('applications')
-          .add({
+          .doc(id)
+          .set({
+            id: id,
+            status: 'NEW',
+            gender: 'unknown',
             ...data,
             cv,
             coverLetter,
