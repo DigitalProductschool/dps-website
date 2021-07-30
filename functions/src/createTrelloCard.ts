@@ -58,6 +58,20 @@ function buildTrelloDescription(change: Ichange) {
   } else if (needsScholarship === 'false') {
     needsScholarship = 'No, DPS can use it to support others';
   }
+
+  let project: String = change.data().project;
+  let strengths: String = change.data().project;
+  let pmc: String = ' ';
+
+  if (project && strengths) {
+    pmc = `
+   ### Project
+   ${change.data().project}
+   ### Strengths
+   ${change.data().strengths}
+   `;
+  }
+
   return `
   ### ${change.data()!.name}
   ${change.data().gender}
@@ -71,6 +85,7 @@ function buildTrelloDescription(change: Ichange) {
   ${needsScholarship}
   ### How did you learn about Digital Product School?
   ${change.data().source}
+  ${pmc}
   `;
 }
 
