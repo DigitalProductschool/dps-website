@@ -80,13 +80,13 @@ export const successstories = [
 export const process = {
   title: 'The Road to Success',
   description1:
-    'The process of Human-centered product development consists of three parts: <b> GATHERING </b> data and input about each challenge; <b>DISCOVERING</b> a user problem and creating a solution for it and the <b>ROLLOUT</b> of the product and the business model.',
+    "The process of Human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.",
   description2:
-    'In the <b>GATHERING PHASE</b> a company’s challenge is discussed and framed into a “wouldn’t-it-be-great” question. Then, we form the team of talents who will solve that challenge.',
+    "Together with our partner we start the process with the <b>GATHERING PHASE</b> and discuss the company's challenge. We collect the input of all involved persons or departments and frame the challenge into a “wouldn’t-it-be-great” question. Then, we form a team of talents who will solve that challenge.",
   description3:
-    'That’s the starting point for the core success factor: the <b>DISCOVERY PHASE</b>. For three months, autonomous and cross-functional teams of Product Managers, Agile Coaches, Interaction Designer, Software Engineers, and AI Engineers will build an innovative digital product that solves a real user problem. The process is powered by the best-in-class tools and methods from Design Thinking, Lean Startup and agile product development.',
+    "That’s the starting point for the core success factor: the <b>DISCOVERY PHASE</b>. Autonomous and cross-functional teams of Product Managers, Agile Coaches, Interaction Designers, Software Engineers, and AI Engineers identify a user problem and build an innovative digital product that solves it. The process is powered by the best-in-class tools and methods from Design Thinking, Lean Startup, and agile product development. But they don't just develop the idea, they actually build a Minimal Viable Product (MVP) that they <b>LAUNCH</b> and test with real users in real life in order to gain insights and optimize it.",
   description4:
-    'In the <b>ROLLOUT PHASE</b>, we support our partners in developing the product and business model and in taking it to market.',
+    "After three months, it's time to <b>GROW</b>: we support our partners in developing the product and business model and in taking it to market.",
   image: '/assets/challenges/program-overview.svg',
 };
 
