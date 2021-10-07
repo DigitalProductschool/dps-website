@@ -23,7 +23,7 @@ class About extends React.Component {
             <br />
             Freddie-Mercury-Straße 5
             <br />
-            80636 Munich
+            80797 Munich
             <br />
             Germany
           </div>
