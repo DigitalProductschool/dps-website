@@ -1,7 +1,7 @@
 export const or = {
   offer: [
     'A unique opportunity to be part of our 3-month training program to gain experience',
-    'Get basic theoretical insights and practical experience from day one in all relevant fields of agile team coaching',
+    'Gain exclusive insights and unique practical experience from day one in all relevant fields of agile team coaching by observing several teams in just a couple of weeks.',
     'Get on-the-job training from day one',
     'Receive guidance and support from our experienced members of the DPS Core Team whenever needed',
     'Get individual coaching sessions from the DPS Core Team',
