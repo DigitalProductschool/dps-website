@@ -466,7 +466,7 @@ export default function Form(props) {
                     className={`consent-radio-label consent-radio-label-${props.track}`}
                   >
                     <span className="consent-description">
-                      I agree to the&nbsp;
+                      I agree with the processing of my personal data provided above for the purpose of my application as described in the &nbsp;
                       <a
                         href="/privacy-policy"
                         className="u-link"
@@ -476,10 +476,17 @@ export default function Form(props) {
                           privacy policy
                         </span>
                       </a>
-                      &nbsp;of Digital Product School and its parent company
-                      UnternehmerTUM GmbH. The data collected through his
-                      application form will be deleted at least six months after
-                      the beginning of the batch you applied for.
+                      .&nbsp;Further information on how we process your data and your rights can be found in the &nbsp;
+                     <a
+                        href="/privacy-policy"
+                        className="u-link"
+                        target="_blank"
+                      >
+                        <span onClick={e => e.stopPropagation()}>
+                          privacy policy
+                        </span>
+                      </a>
+                      &nbsp;of UnternehmerTUM GmbH. The data collected through his application form will be deleted at least six months after the beginning of the batch you applied for.
                     </span>
                   </label>
                 </fieldset>
