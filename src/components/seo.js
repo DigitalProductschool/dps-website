@@ -47,40 +47,24 @@ function SEO({
             }
             meta={[
               {
-                name: `description`,
-                content: metaDescription,
+                property: 'og:url',
+                content: 'https://digitalproductschool.io',
               },
               {
-                property: `og:title`,
+                property: 'og:title',
                 content: metaTitle,
               },
               {
-                property: `og:description`,
+                property: 'og:description',
                 content: metaDescription,
               },
               {
-                property: `og:type`,
-                content: `website`,
+                property: 'og:site_name',
+                content: 'Digital Product School',
               },
               {
                 property: 'og:image',
                 content: metaImage,
-              },
-              {
-                property: `og:image:type`,
-                content: `image/jpeg`,
-              },
-              {
-                property: 'og:image:width',
-                content: `1200`,
-              },
-              {
-                property: 'og:image:height',
-                content: `630`,
-              },
-              {
-                property: `og:image:alt`,
-                content: `Apply now for DPS and become an experienced digital product maker!`,
               },
               {
                 name: `twitter:card`,
