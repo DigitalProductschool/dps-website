@@ -47,24 +47,37 @@ function SEO({
             }
             meta={[
               {
+                name: `description`,
+                content: metaDescription,
+              },
+              {
                 property: 'og:url',
                 content: 'https://digitalproductschool.io',
               },
               {
-                property: 'og:title',
+                property: `og:type`,
+                content: `website`,
+              },
+              ,
+              {
+                property: `og:title`,
                 content: metaTitle,
               },
               {
-                property: 'og:description',
+                property: `og:image`,
+                content: metaImage,
+              },
+              {
+                property: `og:description`,
                 content: metaDescription,
               },
               {
-                property: 'og:site_name',
-                content: 'Digital Product School',
+                property: `og:site_name`,
+                content: `Digital Product School`,
               },
               {
-                property: 'og:image',
-                content: metaImage,
+                property: `og:image:alt`,
+                content: `test`,
               },
               {
                 name: `twitter:card`,
