@@ -119,6 +119,26 @@ h3.u-title {
   }
 }
 
+.u-youtube-mucl {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 70%;
+    height: 70%;
+  }
+}
+
 .u-link {
   span {
     position: relative;
