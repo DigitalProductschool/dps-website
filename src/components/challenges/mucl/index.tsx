@@ -6,29 +6,34 @@ interface MuclProps {
     title: string;
     description1: string;
     description2: string;
-    image: string;
+    description3?: string;
   };
 }
 export default function Mucl(props: MuclProps) {
-  const { title, description1, description2, image } = props.data;
+  const { title, description1, description2, description3 } = props.data;
 
   return (
-    <div className="u-grid-5-5 u-section-margin-top">
-      <div
-        style={{
-          backgroundImage: 'url(' + image + ')',
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom center',
-          minHeight: '50vw',
-        }}
-      ></div>
+    <div className="u-section-margin-top u-content u-content-wrapper ">
       <Section title={title} className="u-content-margin-bottom">
         <p className="u-text">
           {description1}
           <br />
+          <br />
           {description2}
+          <br />
+          <br />
+          {description3 ? description3 : null}
         </p>
       </Section>
+      <div className="u-youtube-mucl u-content">
+        <iframe
+          title="video: Virtual Tour: the Mobility Lab at Munich Urban Colab"
+          src="https://www.youtube-nocookie.com/embed/Z4Dhu4XqJMw"
+          width="260"
+          height="315"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
     </div>
   );
 }

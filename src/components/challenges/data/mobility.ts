@@ -80,7 +80,7 @@ export const successstories = [
 export const process = {
   title: 'The Road to Success',
   description1:
-    "The process of Human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.",
+    'The process of Human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.',
   description2:
     "Together with our partner we start the process with the <b>GATHERING PHASE</b> and discuss the company's challenge. We collect the input of all involved persons or departments and frame the challenge into a “wouldn’t-it-be-great” question. Then, we form a team of talents who will solve that challenge.",
   description3:
@@ -93,9 +93,10 @@ export const process = {
 export const mucl = {
   title: 'A unique location: The Munich Urban Colab',
   description1:
-    'The Digital Product School is located in the most creative, dynamic and entrepreneurial nerve center for innovation: The Munich Urban Colab. There, talents, promising entrepreneurs, start-ups, corporate innovators, scientists, and creatives from the most diverse sectors and disciplines work together under one roof.',
+    'As part of the vibrant Munich Urban Colab the mobility ecosystem meets right here. Consisting of start-ups, enterprises, municipalities and many more enthusiasts they find answers to pressing mobility challenges.',
   description2:
-    ' It provides the most modern infrastructure to explore new technologies and use them to build innovative products.',
+    'Mobility items like a hybrid car, an e-cargo bike and train parts are part of the room. They can be involved in all projects and real life testings making it possible to get quicker and better solutions. This location provides the most modern infrastructure to explore new technologies and use them to build innovative products. ',
+  description3: 'The Future Mobility Space is just the place to be in Munich!',
   image: '/assets/challenges/mucl.jpg',
 };
 
