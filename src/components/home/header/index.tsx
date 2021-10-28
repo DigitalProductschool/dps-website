@@ -16,8 +16,8 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
           <Nav />
           {this.props.headerType == 'Photo' ? (
             <Header image="/assets/home/header/header.jpg">
-              Master your project. Become
-              <span className="u-outline"> experienced.</span>
+              We build digital
+              <span className="u-outline"> products.</span>
               <HeaderContentInside
                 description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
                 buttonText="Apply"
@@ -35,8 +35,8 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
               </video>
               <h1 className="header-section__content__title">
                 {' '}
-                Master your project. Become
-                <span className="u-outline"> experienced.</span>
+                We build digital
+                <span className="u-outline"> products.</span>
               </h1>
               <HeaderContentInside
                 description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
