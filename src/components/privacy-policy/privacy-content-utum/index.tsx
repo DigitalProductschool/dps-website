@@ -137,7 +137,7 @@ class PrivacyContent extends React.Component {
             the purposes of the processing.
           </p>
           <p>
-            j. Third party 
+            j. Third party
             <br />
             Third party is a natural or legal person, public authority, agency
             or body other than the data subject, controller, processor and

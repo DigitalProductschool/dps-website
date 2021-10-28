@@ -30,7 +30,7 @@
 @import url('./components/partners/tool-partner/_styles.css');
 
 @import url('./components/legal-disclosure/legal-content/_styles.css');
-@import url('./components/privacy-policy/privacy-content/_styles.css');
+@import url('./components/privacy-policy/_styles.css');
 
 @import url('./components/our-program/header/_styles.css');
 @import url('./components/our-program/take-opportunity/_styles.css');
