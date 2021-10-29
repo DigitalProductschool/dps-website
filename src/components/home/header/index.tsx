@@ -19,7 +19,7 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
               We build
               <span className="u-outline"> digital products.</span>
               <HeaderContentInside
-                description="The Digital Product School is where the best talents from all over the world come togetcher in interdisciplinary teams and build digital products that users really love."
+                description="The Digital Product School is where the best talents from all over the world come together in interdisciplinary teams and learn how to build digital products that users really love."
                 buttonText="Apply"
                 buttonUrl="/apply"
                 target="_self"
@@ -39,7 +39,7 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
                 <span className="u-outline"> digital products.</span>
               </h1>
               <HeaderContentInside
-                description="The Digital Product School is where the best talents from all over the world come togetcher in interdisciplinary teams and build digital products that users really love."
+                description="The Digital Product School is where the best talents from all over the world come together in interdisciplinary teams and learn how to build digital products that users really love."
                 buttonText="Apply"
                 buttonUrl="/apply"
                 target="_self"
