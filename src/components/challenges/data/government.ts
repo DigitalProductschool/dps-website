@@ -1,20 +1,20 @@
 export const header = {
-  title: ' The healthcare sector is becoming digital',
+  title: 'Digital first for public services',
   description:
-    'How might we streamline physicians’ work, optimize systems, improve patient outcomes, reduce human error, and lower costs with new digital products? ',
+    'HMW design public services to be accessible and accepted by every citizen?',
   button: 'Find your solution',
-  url: 'https://utum.typeform.com/to/OPGBwNkj',
-  image: '/assets/challenges/healthcare/header.jpg',
+  url: 'https://utum.typeform.com/to/Y8mIK033',
+  image: '/assets/challenges/government/header.jpg',
 };
 
 export const firststatus = {
-  title: 'Tech-trends and shifting consumer behavior',
+  title: 'Shifting citizen behavior and a heterogeneous user group',
   description1:
-    'While talking about trends in the health industry you may hear about blockchain; 3D-printing; telemedicine; diagnostic artificial intelligence; nanotechnology; predictive healthcare and many more buzzwords. It’s obvious: all fields are massively powered by digitalization. ',
+    'While COVID proved that citizens don’t hesitate to share their private data online, more and more public services become available via the internet. The pandemic contributed to a significantly increased awareness and acceptance of public services online among the citizens. ',
   description2:
-    'Despite the rapid development of these technologies, the fields of application are still heavily restricted by regulation. Instead, the key trends these days are determined by shifts in consumer behavior. By following and shaping these behaviors, the potential for new business is unlocked and becomes accessible.',
+    'Nevertheless, these shifting citizen behaviours need to meet satisfying service offers to leverage the overall e-government potential. As the population consists of various user types - while most of them are not digital natives - these services need to be designed extremely human and user centered. And they clearly need to be both easily accessible and trustworthy.',
   description3:
-    'At Digital Product School, teams take a strictly human-centered approach to develop new products and succeed, armed with the right technical expertise and resources to leverage the power of these rising technologies and data.',
+    'At Digital Product School, teams take a strictly human-centered approach to develop new products and succeed, armed with the right technical expertise and resources to leverage the power of the latest technologies and data.',
   url: '',
 };
 
@@ -32,39 +32,39 @@ export const partnerbenefits = {
 };
 
 export const firstcta = {
-  title: 'You are looking for a digital product or business model?',
-  button: 'Contact Us Now',
-  url: 'https://utum.typeform.com/to/OPGBwNkj',
+  title: 'You are looking for a digital product or service scenario?',
+  button: 'Contact Us',
+  url: 'https://utum.typeform.com/to/Y8mIK033',
 };
 
 export const successstories = [
   {
-    image: '/assets/challenges/healthcare/success-stories/healthinprogress.jpg',
-    teamName: 'Batch#10: Team Health in Progress',
+    image: '/assets/challenges/government/success-stories/highline.jpg',
+    teamName: 'Batch#8: Team HIGHLINE ',
     hmw:
-      'How might we provide patients with knee/hip issues with support throughout their whole treatment?',
+      'How might we help city administrations receive daily updates on changes in road infrastructure layout? ',
     solution:
-      'An app called “Arthro-Buddy” that allows patients to easily log and track the efficacy of different treatments. An algorithm evaluates the impact of these treatments and helps patients to recover faster and to get rid of restrictions caused by osteoarthritis.',
+      'Solution: A smartphone that is mounted on vehicles of orange-color city workers runs an application recording pictures to detect the current infrastructure layout. Limitations, like construction sites, are automatically detected, their impact estimated and displayed on an interactive map for use by the city administration. ',
   },
   {
-    image: '/assets/challenges/healthcare/success-stories/beat.jpg',
-    teamName: 'Batch#10: Team 90 Degrees',
+    image: '/assets/challenges/government/success-stories/futurize.jpg',
+    teamName: 'Batch#9: Team FÜTÜRIZE',
     hmw:
-      'How Might we enable patients to know and track the conditions of their cardiovascular system on a regular basis to prevent irreversible damages?',
+      'How might we enable patients to know and track the conditions of their cardiovascular system on a regular basis to prevent irreversible damages?',
     solution:
-      '“Beatfine”, a mobile app that guides people after surgery and assists them when picking exercises and activities to provide peace of mind. The core feature utilizes a diary for smart journaling to track the rehabilitation process for both doctors and patients.',
-    more: 'Watch their final presentation on Youtube',
-    url: 'https://www.youtube.com/watch?v=7RMcPfLjeYc',
+      'The team developed an AI-powered citizen-participation-platform in order to enable a direct channel between city administration, citizens and politicians. AI helps to prioritize and filter requests from citizens and to evaluate statements and comments by citizens on current decisions. It all together supports the city administration to create an environment that truly meets the citizens’ needs. ',
+    more: 'Learn more about Fütürize',
+    url: 'https://www.munich-startup.de/58718/fuetuerize/',
   },
   {
-    image: '/assets/challenges/healthcare/success-stories/mangoseeds.jpg',
-    teamName: 'Batch#11: Team MangoSeeds',
+    image: '/assets/challenges/government/success-stories/digitalshapers.jpg',
+    teamName: 'Batch#11: Team DIGITAL SHAPERS',
     hmw:
-      "How might we support surgeon's planning procedure by ensuring that the surgeons are presented with just the right amount of information in order to shorten the planning while still allowing them to stay in control.",
+      'How might we provide a fast, simple, comfortable and intuitive online access to public services?',
     solution:
-      'InVue, an AI-powered planning software built to provide spine surgeons with the tools they need to prepare, plan and execute fast and reliably, independent of hospital infrastructure.',
-    more: 'InVue is now part of the start-up Mango Medical ',
-    url: 'https://www.mangomedical.de/',
+      'An end-to-end platform for public services in Bavaria where citizens are guided by a digital assistant through the service procedure. ',
+    more: 'Learn more about Digital Shapers',
+    url: 'https://www.unternehmertum.de/news/digitalministerium-dps ',
   },
 ];
 
@@ -73,7 +73,7 @@ export const process = {
   description1:
     'The process of Human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.',
   description2:
-    "Together with our partner we start the process with the <b>GATHERING PHASE</b> and discuss the company's challenge. We collect the input of all involved persons or departments and frame the challenge into a “wouldn’t-it-be-great” question. Then, we form a team of talents who will solve that challenge.",
+    "In the <b>GATHERING PHASE</b> a company's challenge is discussed and framed into a “wouldn’t-it-be-great” question. We collect the input of all involved persons or departments and frame the challenge into a “wouldn’t-it-be-great” question. Then, we form a team of talents who will solve that challenge.",
   description3:
     "That’s the starting point for the core success factor: the <b>DISCOVERY PHASE</b>. Autonomous and cross-functional teams of Product Managers, Agile Coaches, Interaction Designers, Software Engineers, and AI Engineers identify a user problem and build an innovative digital product that solves it. The process is powered by the best-in-class tools and methods from Design Thinking, Lean Startup, and agile product development. But they don't just develop the idea, they actually build a Minimal Viable Product (MVP) that they <b>LAUNCH</b> and test with real users in real life in order to gain insights and optimize it.",
   description4:
@@ -138,7 +138,7 @@ export const whydps = [
 ];
 
 export const secondcta = {
-  title: 'Let’s tackle and solve your healthcare-related challenge!',
+  title: "Let's build citizen centered public services together!",
   button: 'Contact Us Now',
-  url: 'https://utum.typeform.com/to/OPGBwNkj',
+  url: 'https://utum.typeform.com/to/Y8mIK033',
 };

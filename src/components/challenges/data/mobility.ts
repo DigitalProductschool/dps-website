@@ -103,7 +103,7 @@ export const mucl = {
 export const whydps = [
   {
     title: 'Experience',
-    description: '12 Batches, 400 Talents 100 Teams',
+    description: '14 Batches, 500 Talents 120 Teams',
     icon: '/assets/challenges/pillars/Digital.svg',
   },
   {
