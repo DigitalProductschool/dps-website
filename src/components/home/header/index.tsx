@@ -16,10 +16,10 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
           <Nav />
           {this.props.headerType == 'Photo' ? (
             <Header image="/assets/home/header/header.jpg">
-              Master your project. Become
-              <span className="u-outline"> experienced.</span>
+              We build
+              <span className="u-outline"> digital products.</span>
               <HeaderContentInside
-                description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
+                description="The Digital Product School is where the best talents from all over the world come together in interdisciplinary teams and learn how to build digital products that users really love."
                 buttonText="Apply"
                 buttonUrl="/apply"
                 target="_self"
@@ -35,11 +35,11 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
               </video>
               <h1 className="header-section__content__title">
                 {' '}
-                Master your project. Become
-                <span className="u-outline"> experienced.</span>
+                We build
+                <span className="u-outline"> digital products.</span>
               </h1>
               <HeaderContentInside
-                description="The Digital Product School Munich is where interdisciplinary teams learn how to build digital products that solve real-world problems."
+                description="The Digital Product School is where the best talents from all over the world come together in interdisciplinary teams and learn how to build digital products that users really love."
                 buttonText="Apply"
                 buttonUrl="/apply"
                 target="_self"
