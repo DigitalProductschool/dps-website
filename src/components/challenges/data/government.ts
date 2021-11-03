@@ -1,7 +1,7 @@
 export const header = {
   title: 'Digital first for public services',
   description:
-    'HMW design public services to be accessible and accepted by every citizen?',
+    'How might we design public services to be accessible and accepted by every citizen?',
   button: 'Find your solution',
   url: 'https://utum.typeform.com/to/Y8mIK033',
   image: '/assets/challenges/government/header.jpg',
@@ -21,7 +21,7 @@ export const firststatus = {
 export const partnerbenefits = {
   title: 'Partner benefits',
   description1:
-    'At DPS, we empower the next generation of Human-centered digital product makers. We build digital products to solve real user problems and we create new business opportunities.',
+    'At DPS, we empower the next generation of human-centered digital product makers. We build digital products to solve real user problems and we create new business opportunities.',
   description2:
     'As a partner of the Digital Product School, you will be matched with your own cross-functional product team who will work on your challenge for three months and develop an innovative digital product tailored to your needs.',
   benefit1:
@@ -71,7 +71,7 @@ export const successstories = [
 export const process = {
   title: 'The Road to Success',
   description1:
-    'The process of Human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.',
+    'The process of human-centered product development consists of four parts: <b>GATHERING</b> data and input about each challenge; <b>DISCOVERING</b> a  user problem and creating a solution for it, <b>LAUNCHING</b> the product, and <b>GROWING</b> the business.',
   description2:
     "In the <b>GATHERING PHASE</b> a company's challenge is discussed and framed into a “wouldn’t-it-be-great” question. We collect the input of all involved persons or departments and frame the challenge into a “wouldn’t-it-be-great” question. Then, we form a team of talents who will solve that challenge.",
   description3:
@@ -138,7 +138,7 @@ export const whydps = [
 ];
 
 export const secondcta = {
-  title: "Let's build citizen centered public services together!",
+  title: "Let's build citizen-centered public services together!",
   button: 'Contact Us Now',
   url: 'https://utum.typeform.com/to/Y8mIK033',
 };
