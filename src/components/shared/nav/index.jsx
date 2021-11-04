@@ -159,10 +159,17 @@ const MenuChallengesDropdownForDesktop = props => {
       </Link>
       <Link
         to="/challenges/healthcare/"
-        style={{ ...styles, paddingBottom: '0' }}
+        style={styles}
         activeStyle={activeStyle}
       >
         Digital Healthcare Lab
+      </Link>
+      <Link
+        to="/challenges/government/"
+        style={{ ...styles, paddingBottom: '0' }}
+        activeStyle={activeStyle}
+      >
+        Digital Government
       </Link>
     </div>
   );
@@ -218,11 +225,14 @@ const MenuChallengesDropDownForMobile = props => {
       <Link to="/challenges/mobility/" style={styles}>
         Mobility
       </Link>
+      <Link to="/challenges/healthcare" style={styles}>
+        Healthcare
+      </Link>
       <Link
-        to="/challenges/healthcare"
+        to="/challenges/government"
         style={{ ...styles, paddingBottom: '0' }}
       >
-        Healthcare
+        Government
       </Link>
     </div>
   );

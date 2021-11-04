@@ -113,7 +113,7 @@ class PrivacyContent extends React.Component {
             application process and if accepted to administrate your
             participation in the batch for which you have applied for.
             <br />
-            g) Your data will be stored for a period of 16 months beyond the end
+            g) Your data will be stored for a period of 12 months beyond the end
             of the application process. This is usually done in order to fulfil
             legal obligations or to defend against any claims arising from legal
             regulations. Subsequently, we are obliged to delete or anonymize
