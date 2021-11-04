@@ -50,7 +50,7 @@ export const successstories = [
     image: '/assets/challenges/government/success-stories/futurize.jpg',
     teamName: 'Batch#9: Team FÜTÜRIZE',
     hmw:
-      'How might we enable patients to know and track the conditions of their cardiovascular system on a regular basis to prevent irreversible damages?',
+      'How might we enable the citizens to articulate themselves towards city officials?',
     solution:
       'The team developed an AI-powered citizen-participation-platform in order to enable a direct channel between city administration, citizens and politicians. AI helps to prioritize and filter requests from citizens and to evaluate statements and comments by citizens on current decisions. It all together supports the city administration to create an environment that truly meets the citizens’ needs. ',
     more: 'Learn more about Fütürize',
