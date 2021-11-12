@@ -78,6 +78,6 @@ exports.sendConfirmationMail = functions
 exports.createTrelloCard = functions
   .region(defaultRegion)
   .firestore.document(`batches/{batch}/applications/{applicationId}`)
-  .onUpdate(async change => {
-    await createTrelloCard.handler(change.after, admin);
+  .onCreate(async snap => {
+    await createTrelloCard.handler(snap, admin);
   });
