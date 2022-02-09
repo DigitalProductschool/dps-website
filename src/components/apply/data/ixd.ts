@@ -7,7 +7,7 @@ export const or = {
     'A grant up to € 750.- per month',
   ],
   responsibilities: [
-    'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
+    'Applying suitable user research methodologies and conducting user tests to deliver valuable insights for other team members',
     'Conduct rapid prototyping and product design sketches of different stages of your product to enable your team to continuously implement user testings.',
     'Develop concept sketches, prototypes (low- and high-fidelity) and visual designs in order to create great user experiences',
     'Collaborate ​with the other interaction designers, software engineers, AI specialists and product managers in your team on the journey from the problem to the product',
