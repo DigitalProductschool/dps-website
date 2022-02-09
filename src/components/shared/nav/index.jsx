@@ -239,7 +239,6 @@ const MenuChallengesDropDownForMobile = props => {
 };
 
 function Nav(props) {
-  console.log(props);
   const [isOpen, setIsOpen] = useState(false);
   const [isMouseOverTracksLink, setIsMouseOverTracksLink] = useState(false);
   const [isMouseOverChallengesLink, setIsMouseOverChallengesLink] = useState(

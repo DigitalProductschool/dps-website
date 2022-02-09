@@ -3,6 +3,7 @@
 }
 
 .u-outline {
+  font-family: 'Montserrat Alternates';
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: transparent;
 
