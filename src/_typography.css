@@ -1,0 +1,29 @@
+/* montserrat-alternates - for u-outline */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../static/assets/fonts/Montserrat-Alternates.ttf');
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../static/assets/fonts/Montserrat-Regular.ttf');
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../static/assets/fonts/Montserrat-Bold.ttf');
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../static/assets/fonts/Montserrat-ExtraBold.ttf');
+}
