@@ -6,7 +6,7 @@ class HeaderPartners extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header image="/assets/partners/header.jpg">
+        <Header image="/assets/partners/header.webp">
           Our Partners
           <HeaderContentInside
             description=" Digital Product School could not exist without its partners and

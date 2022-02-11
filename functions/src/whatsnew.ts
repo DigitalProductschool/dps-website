@@ -53,7 +53,7 @@ exports.youtube = function(request: any, response: any) {
       response.set('Access-Control-Allow-Origin', '*');
       response.json({
         desc: 'Mini Stories are very handy when you want to talk about ...',
-        thumbnail: 'https://i.ytimg.com/vi/AAPSTggR_E4/hqdefault.jpg',
+        thumbnail: 'https://i.ytimg.com/vi/AAPSTggR_E4/hqdefault.webp',
         title: 'What exactly are »Mini Stories«?',
         id: 'AAPSTggR_E4',
       });

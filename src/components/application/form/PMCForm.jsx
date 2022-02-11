@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useReducer, useState, useEffect, useRef } from 'react';
-import dots from '../../../../static/assets/dots.svg';
+import dots from '../../../../static/assets/icons/dots.svg';
 
 const initialState = {
   project: '',

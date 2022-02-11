@@ -57,27 +57,27 @@
 
 .wyl-content__info__description-box__image {
   &--pm {
-    background-image: url('/assets/tracks/pm/dps-product-manager-what-you-learn.jpg');
+    background-image: url('/assets/tracks/pm/dps-product-manager-what-you-learn.webp');
   }
 
   &--se {
-    background-image: url('/assets/tracks/se/what-you-learn.jpg');
+    background-image: url('/assets/tracks/se/what-you-learn.webp');
   }
 
   &--ixd {
-    background-image: url('/assets/tracks/ixd/dps-interaction-designer-what-you-learn.jpg');
+    background-image: url('/assets/tracks/ixd/dps-interaction-designer-what-you-learn.webp');
   }
 
   &--ai {
-    background-image: url('/assets/tracks/ai/what-you-learn.jpg');
+    background-image: url('/assets/tracks/ai/what-you-learn.webp');
   }
 
   &--pmc {
-    background-image: url('/assets/tracks/pmc/what-you-learn.jpg');
+    background-image: url('/assets/tracks/pmc/what-you-learn.webp');
   }
 
   &--ac {
-    background-image: url('/assets/tracks/ac/what-you-learn.jpg');
+    background-image: url('/assets/tracks/ac/what-you-learn.webp');
     margin-top: 40px;
   }
 

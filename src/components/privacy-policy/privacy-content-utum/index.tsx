@@ -1096,19 +1096,7 @@ class PrivacyContent extends React.Component {
             profiling.
             <br />
           </p>
-          <h3>20. ZAPIER</h3>
-          <p>
-            To integrate different databases and tools, we use Zapier, a service
-            of Zapier Inc., 548 Market St # 62411, San Francisco, California
-            94104, USA. In this case, customer data can be transmitted with the
-            exception of the payment data. More information about Zapier's
-            privacy can be found at{' '}
-            <a href="https://zapier.com/privacy/" className="u-link">
-              <span>https://zapier.com/privacy/</span>
-            </a>
-            <br />
-          </p>
-          <h3>21. CRAZY EGG</h3>
+          <h3>20. CRAZY EGG</h3>
           <p>
             We use on our website the web tracking tool Crazy Egg. This service
             is provided by Crazy Egg, Inc., 6220 E. Ridgeview Lane , La Mirada,
@@ -1132,23 +1120,6 @@ class PrivacyContent extends React.Component {
           <a href="http://www.crazyegg.com/privacy" className="u-link">
             <span>http://www.crazyegg.com/privacy</span>
           </a>
-          <br />
-          <h3>22. TRELLO</h3>
-          <p>
-            We use the web-based project management tool Trello to process the
-            applicants' data. We do this to store the applicants' data so our
-            staff can evaluate and handle applications.  This service is
-            provided by  Trello, Inc., 55 Broadway, 25th Floor, New York, NY
-            10006, USA.
-          </p>
-          <p>
-            Detailed information about the collecting, processing and usage of
-            the data by Trello you can find here:
-          </p>
-          <a href="https://trello.com/privacy" className="u-link">
-            <span>https://trello.com/privacy</span>
-          </a>{' '}
-          <br />
         </div>
       </section>
     );

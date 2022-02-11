@@ -7,7 +7,7 @@ import CookieWarning from '../components/shared/cookie-warning';
 const ServerErrorPage = () => (
   <React.Fragment>
     <CookieWarning />
-    <Nav addClass={'nav--black'} logo={'/assets/shared/dps-logo-black.svg'} />
+    <Nav addClass={'nav--black'} logo={'/assets/shared/logo-black.svg'} />
     <section className="not-found u-content-wrapper">
       <div className="not-found__content u-content">
         <h2 className="u-title uppercase">Service Unavailable :(</h2>

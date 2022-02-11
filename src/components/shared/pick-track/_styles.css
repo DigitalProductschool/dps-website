@@ -42,14 +42,14 @@
 
   &--pm {
     background: linear-gradient(rgba(3, 184, 229, 0.8), rgba(3, 184, 229, 0.8)),
-      url(/assets/shared/pick-track/pm-track-background.jpg) center center /
+      url(/assets/shared/pick-track/pm-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--se {
     background: linear-gradient(rgba(221, 4, 165, 0.8), rgba(221, 4, 165, 0.8)),
-      url(/assets/shared/pick-track/se-track-background.jpg) center center /
+      url(/assets/shared/pick-track/se-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }
@@ -59,7 +59,7 @@
         rgba(255, 167, 14, 0.8),
         rgba(255, 167, 14, 0.8)
       ),
-      url(/assets/shared/pick-track/ixd-track-background.jpg) center center /
+      url(/assets/shared/pick-track/ixd-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }
@@ -69,21 +69,21 @@
         rgba(124, 26, 117, 0.8),
         rgba(124, 26, 117, 0.8)
       ),
-      url(/assets/shared/pick-track/ai-track-background.jpg) center center /
+      url(/assets/shared/pick-track/ai-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--ac {
     background: linear-gradient(rgba(98, 170, 120), rgba(98, 170, 120)),
-      url(/assets/shared/pick-track/ac-track-background.png) center center /
+      url(/assets/shared/pick-track/ac-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }
 
   &--pmc {
     background: linear-gradient(rgba(95, 103, 201), rgba(95, 103, 201)),
-      url(/assets/shared/pick-track/pmc-track-background.png) center center /
+      url(/assets/shared/pick-track/pmc-track-background.webp) center center /
         cover no-repeat;
     background-blend-mode: multiply;
   }

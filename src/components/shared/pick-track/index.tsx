@@ -31,7 +31,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="pm-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/pm-icon.png"
+                    src="/assets/shared/pick-track/pm-icon.webp"
                     style={active === 'pm' ? { opacity: 0.1 } : {}}
                   />
                 </div>
@@ -64,7 +64,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="ixd-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/ixd-icon.png"
+                    src="/assets/shared/pick-track/ixd-icon.webp"
                     style={active === 'ixd' ? { opacity: 0.1 } : {}}
                   />
                 </div>
@@ -98,7 +98,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="se-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/se-icon.png"
+                    src="/assets/shared/pick-track/se-icon.webp"
                     style={active === 'se' ? { opacity: 0.1 } : {}}
                   />
                 </div>
@@ -132,7 +132,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="ai-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/ai-icon.png"
+                    src="/assets/shared/pick-track/ai-icon.webp"
                     style={active === 'ai' ? { opacity: 0.1 } : {}}
                   />
                 </div>
@@ -166,7 +166,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="ac-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/ac-icon.png"
+                    src="/assets/shared/pick-track/ac-icon.webp"
                     style={active === 'ac' ? { opacity: 0.1 } : {}}
                   />
                 </div>
@@ -201,7 +201,7 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                   <img
                     alt="ai-icon"
                     className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/pmc-icon.png"
+                    src="/assets/shared/pick-track/pmc-icon.webp"
                     style={active === 'pmc' ? { opacity: 0.1 } : {}}
                   />
                 </div>

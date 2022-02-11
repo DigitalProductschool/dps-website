@@ -26,7 +26,7 @@ class ExperienceMatter extends React.Component {
                 <img
                   alt="designit-logo"
                   title="Designit, experience partner of Digital Product School"
-                  src="/assets/home/experience-matters/designit.png"
+                  src="/assets/home/experience-matters/designit.webp"
                 />{' '}
               </li>
               <li>
@@ -34,7 +34,7 @@ class ExperienceMatter extends React.Component {
                 <img
                   alt="star-logo"
                   title="Star, experience partner of Digital Product School"
-                  src="/assets/home/experience-matters/star.png"
+                  src="/assets/home/experience-matters/star.webp"
                 />{' '}
               </li>
               <li>
@@ -42,7 +42,7 @@ class ExperienceMatter extends React.Component {
                 <img
                   alt="looping-group-logo"
                   title="Looping Group, experience partner of Digital Product School"
-                  src="/assets/home/experience-matters/looping-group.png"
+                  src="/assets/home/experience-matters/looping-group.webp"
                 />{' '}
               </li>
               <li>
@@ -50,7 +50,7 @@ class ExperienceMatter extends React.Component {
                 <img
                   alt="produktmacher-logo"
                   title="DieProduktMacher, experience partner of Digital Product School"
-                  src="/assets/home/experience-matters/produktmacher.png"
+                  src="/assets/home/experience-matters/produktmacher.webp"
                 />{' '}
               </li>
             </ul>

@@ -4,7 +4,7 @@ export const header = {
     'How might we provide more efficient, sustainable, and safer means of transport? ',
   button: 'Find your solution',
   url: 'https://utum.typeform.com/to/bEvb6JcE',
-  image: '/assets/challenges/mobility/header.jpg',
+  image: '/assets/challenges/mobility/header.webp',
 };
 
 export const firststatus = {
@@ -23,7 +23,7 @@ export const secondstatus = {
     'With its talents, infrastructure, and its methods of building digital products, it can assist companies to become leading innovators in the mobility sector.',
   button: 'Contact Us',
   url: 'https://utum.typeform.com/to/bEvb6JcE',
-  image: '/assets/challenges/mobility/dps-help.png',
+  image: '/assets/challenges/mobility/dps-help.webp',
 };
 
 export const partnerbenefits = {
@@ -47,7 +47,7 @@ export const firstcta = {
 
 export const successstories = [
   {
-    image: '/assets/challenges/mobility/success-stories/antspot.png',
+    image: '/assets/challenges/mobility/success-stories/antspot.webp',
     teamName: 'BATCH#8: Team ANT.SPOT',
     hmw:
       'How might we help the traffic planner to analyse and better plan changes in the delivery related infrastructure in Hamburg?',
@@ -57,7 +57,7 @@ export const successstories = [
     url: 'http://bit.ly/dpsandlsbg',
   },
   {
-    image: '/assets/challenges/mobility/success-stories/rebels.png',
+    image: '/assets/challenges/mobility/success-stories/rebels.webp',
     teamName: 'BATCH#1: Team GRASSROOT REBELS',
     hmw: 'How might we motivate employees to cycle more?',
     solution:
@@ -66,7 +66,7 @@ export const successstories = [
     url: 'https://www.getmoovster.com/',
   },
   {
-    image: '/assets/challenges/mobility/success-stories/mosa.png',
+    image: '/assets/challenges/mobility/success-stories/mosa.webp',
     teamName: 'BATCH#11: Team MOSA',
     hmw:
       'How might we alert car drivers about approaching cyclist when doing a right turn?',
@@ -97,53 +97,53 @@ export const mucl = {
   description2:
     'Mobility items like a hybrid car, an e-cargo bike and train parts are part of the room. They can be involved in all projects and real life testings making it possible to get quicker and better solutions. This location provides the most modern infrastructure to explore new technologies and use them to build innovative products. ',
   description3: 'The Future Mobility Space is just the place to be in Munich!',
-  image: '/assets/challenges/mucl.jpg',
+  image: '/assets/challenges/mucl.webp',
 };
 
 export const whydps = [
   {
     title: 'Experience',
     description: '14 Batches, 500 Talents 120 Teams',
-    icon: '/assets/challenges/pillars/Digital.svg',
+    icon: '/assets/icons/Digital.svg',
   },
   {
     title: 'Expertise',
     description: 'A core team of experts in their subjects',
-    icon: '/assets/challenges/pillars/Team.svg',
+    icon: '/assets/icons/Team.svg',
   },
   {
     title: 'Ecosystem',
     description: 'Part of Europe’s biggest entrepreneurship center',
-    icon: '/assets/challenges/pillars/Frame.svg',
+    icon: '/assets/icons/Frame.svg',
   },
   {
     title: 'Independence',
     description: 'UnternehmerTUM GmbH is a non-profit organization',
-    icon: '/assets/challenges/pillars/Group.svg',
+    icon: '/assets/icons/Group.svg',
   },
   {
     title: 'Location',
     description:
       'The Munich Urban Colab as the palace where future mobility concepts are developed',
-    icon: '/assets/challenges/pillars/Location.svg',
+    icon: '/assets/icons/Location.svg',
   },
   {
     title: 'Mission',
     description:
       'It’s our mission and passion to shape the world by solving the challenges of the future',
-    icon: '/assets/challenges/pillars/Goal.svg',
+    icon: '/assets/icons/Goal.svg',
   },
   {
     title: 'Partners',
     description:
       'Connection to the mobility sector and beyond to enrich your innovative business model',
-    icon: '/assets/challenges/pillars/Network.svg',
+    icon: '/assets/icons/Network.svg',
   },
   {
     title: 'Talents',
     description:
       '500 applications per batch. The best students and graduates want to join DPS.',
-    icon: '/assets/challenges/pillars/Education.svg',
+    icon: '/assets/icons/Education.svg',
   },
 ];
 

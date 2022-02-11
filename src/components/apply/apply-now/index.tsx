@@ -14,7 +14,7 @@ class ApplyNow extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header image="/assets/apply/dps-apply.jpg">
+        <Header image="/assets/apply/dps-apply.webp">
           Become an experienced digital product maker!
         </Header>
         <HeaderContentBox>

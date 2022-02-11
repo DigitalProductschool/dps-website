@@ -258,7 +258,7 @@ function Nav(props) {
   const isMouseOverChallenges =
     isMouseOverChallengesLink || isMouseOverMenuChallenges;
   const addClass = props.addClass || '';
-  const logo = props.logo || '/assets/shared/dps-logo-white.svg';
+  const logo = props.logo || '/assets/shared/logo-white.svg';
   const menuIconColor = addClass === 'nav--black' ? 'black' : 'white';
   const inverted = addClass === 'nav--black';
 

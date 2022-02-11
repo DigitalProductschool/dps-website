@@ -8,7 +8,7 @@ class Teams extends React.Component {
           <img
             alt="teams"
             className="teams__title__image u-image"
-            src="/assets/program/teams/title.jpg"
+            src="/assets/program/teams/title.webp"
           />
           <h2 className="u-title uppercase">Autonomous &amp; Agile teams</h2>
           <p className="teams__content__general u-text">
@@ -39,7 +39,7 @@ class Teams extends React.Component {
               <img
                 alt="company-teams"
                 className="teams__content__companies__image u-image"
-                src="/assets/program/teams/companies.jpg"
+                src="/assets/program/teams/companies.webp"
               />
               <p className="u-text">
                 In so-called company teams, students, graduates and staff from
@@ -68,7 +68,7 @@ class Teams extends React.Component {
               <img
                 alt="wild-teams"
                 className="teams__content__wild__image u-image"
-                src="/assets/program/teams/wild.jpg"
+                src="/assets/program/teams/wild.webp"
               />
             </div>
           </div>

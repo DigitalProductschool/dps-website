@@ -45,14 +45,8 @@ export default function SuccessStories(props: SuccessStoriesProps) {
           We have enabled and guided many teams on their innovation adventure:{' '}
         </p>
         <div className="success__icons__wrapper">
-          <img
-            onClick={arrowLeftClick}
-            src="/assets/challenges/arrow-small-left.svg"
-          />
-          <img
-            onClick={arrowRightClick}
-            src="/assets/challenges/arrow-small-right.svg"
-          />
+          <img onClick={arrowLeftClick} src="/assets/icons/arrow-left.svg" />
+          <img onClick={arrowRightClick} src="/assets/icons/arrow-right.svg" />
         </div>
       </Section>
       <div

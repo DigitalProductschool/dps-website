@@ -14,10 +14,7 @@ class Legal extends React.Component {
     return (
       <React.Fragment>
         <CookieWarning />
-        <Nav
-          addClass={'nav--black'}
-          logo={'/assets/shared/dps-logo-black.svg'}
-        />
+        <Nav addClass={'nav--black'} logo={'/assets/shared/logo-black.svg'} />
         <LegalContent />
         <Footer />
       </React.Fragment>

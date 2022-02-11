@@ -12,10 +12,7 @@ class Privacy extends React.Component {
       <React.Fragment>
         <Seo />
         <CookieWarning />
-        <Nav
-          addClass={'nav--black'}
-          logo={'/assets/shared/dps-logo-black.svg'}
-        />
+        <Nav addClass={'nav--black'} logo={'/assets/shared/logo-black.svg'} />
         <PrivacyContent />
         <Footer />
       </React.Fragment>

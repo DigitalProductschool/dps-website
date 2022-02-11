@@ -1,6 +1,6 @@
 import * as React from 'react';
-import FacebookCopy from '../../../../../static/assets/home/whats-new/facebook.png';
-import FacebookOG from '../../../../../static/assets/shared/Digital_Product_School_Batch16_Application.jpg';
+import FacebookCopy from '../../../../../static/assets/shared/facebook.webp';
+import FacebookOG from '../../../../../static/assets/shared/Digital_Product_School_Batch16_Application.webp';
 import moment from 'moment';
 
 class Facebook extends React.Component {

@@ -4,7 +4,7 @@ export const header = {
     'How might we streamline physicians’ work, optimize systems, improve patient outcomes, reduce human error, and lower costs with new digital products? ',
   button: 'Find your solution',
   url: 'https://utum.typeform.com/to/OPGBwNkj',
-  image: '/assets/challenges/healthcare/header.jpg',
+  image: '/assets/challenges/healthcare/header.webp',
 };
 
 export const firststatus = {
@@ -39,7 +39,8 @@ export const firstcta = {
 
 export const successstories = [
   {
-    image: '/assets/challenges/healthcare/success-stories/healthinprogress.jpg',
+    image:
+      '/assets/challenges/healthcare/success-stories/health-in-progress.webp',
     teamName: 'Batch#10: Team Health in Progress',
     hmw:
       'How might we provide patients with knee/hip issues with support throughout their whole treatment?',
@@ -47,7 +48,7 @@ export const successstories = [
       'An app called “Arthro-Buddy” that allows patients to easily log and track the efficacy of different treatments. An algorithm evaluates the impact of these treatments and helps patients to recover faster and to get rid of restrictions caused by osteoarthritis.',
   },
   {
-    image: '/assets/challenges/healthcare/success-stories/beat.jpg',
+    image: '/assets/challenges/healthcare/success-stories/beat.webp',
     teamName: 'Batch#10: Team 90 Degrees',
     hmw:
       'How Might we enable patients to know and track the conditions of their cardiovascular system on a regular basis to prevent irreversible damages?',
@@ -57,7 +58,7 @@ export const successstories = [
     url: 'https://www.youtube.com/watch?v=7RMcPfLjeYc',
   },
   {
-    image: '/assets/challenges/healthcare/success-stories/mangoseeds.jpg',
+    image: '/assets/challenges/healthcare/success-stories/mangoseeds.webp',
     teamName: 'Batch#11: Team MangoSeeds',
     hmw:
       "How might we support surgeon's planning procedure by ensuring that the surgeons are presented with just the right amount of information in order to shorten the planning while still allowing them to stay in control.",
@@ -87,53 +88,53 @@ export const mucl = {
     'The Digital Product School is located in the most creative, dynamic and entrepreneurial nerve center for innovation: The Munich Urban Colab. There, talents, promising entrepreneurs, start-ups, corporate innovators, scientists, and creatives from the most diverse sectors and disciplines work together under one roof.',
   description2:
     'It provides the most modern infrastructure to explore new technologies and use them to build innovative products.',
-  image: '/assets/challenges/mucl.jpg',
+  image: '/assets/challenges/mucl.webp',
 };
 
 export const whydps = [
   {
     title: 'Experience',
     description: '14 Batches, 500 Talents 120 Teams',
-    icon: '/assets/challenges/pillars/Digital.svg',
+    icon: '/assets/icons/Digital.svg',
   },
   {
     title: 'Expertise',
     description: 'A core team of experts in their subjects',
-    icon: '/assets/challenges/pillars/Team.svg',
+    icon: '/assets/icons/Team.svg',
   },
   {
     title: 'Ecosystem',
     description: 'Part of Europe’s biggest entrepreneurship center',
-    icon: '/assets/challenges/pillars/Frame.svg',
+    icon: '/assets/icons/Frame.svg',
   },
   {
     title: 'Independence',
     description: 'UnternehmerTUM GmbH is a non-profit organization',
-    icon: '/assets/challenges/pillars/Group.svg',
+    icon: '/assets/icons/Group.svg',
   },
   {
     title: 'Location',
     description:
       'The Munich Urban Colab as the palace where future mobility concepts are developed',
-    icon: '/assets/challenges/pillars/Location.svg',
+    icon: '/assets/icons/Location.svg',
   },
   {
     title: 'Mission',
     description:
       'It’s our mission and passion to shape the world by solving the challenges of the future',
-    icon: '/assets/challenges/pillars/Goal.svg',
+    icon: '/assets/icons/Goal.svg',
   },
   {
     title: 'Partners',
     description:
       'Connection to the mobility sector and beyond to enrich your innovative business model',
-    icon: '/assets/challenges/pillars/Network.svg',
+    icon: '/assets/icons/Network.svg',
   },
   {
     title: 'Talents',
     description:
       '500 applications per batch. The best students and graduates want to join DPS.',
-    icon: '/assets/challenges/pillars/Education.svg',
+    icon: '/assets/icons/Education.svg',
   },
 ];
 

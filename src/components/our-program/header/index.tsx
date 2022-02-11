@@ -6,7 +6,7 @@ class HeaderOurProgram extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header image="/assets/program/header/programheader.jpg">
+        <Header image="/assets/program/header/programheader.webp">
           Our Program
           <HeaderContentInside
             description="You may be skilled in your field, but when you start your career,

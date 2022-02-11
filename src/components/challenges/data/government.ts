@@ -4,7 +4,7 @@ export const header = {
     'How might we design public services to be accessible and accepted by every citizen?',
   button: 'Find your solution',
   url: 'https://utum.typeform.com/to/Y8mIK033',
-  image: '/assets/challenges/government/header.jpg',
+  image: '/assets/challenges/government/header.webp',
 };
 
 export const firststatus = {
@@ -39,7 +39,7 @@ export const firstcta = {
 
 export const successstories = [
   {
-    image: '/assets/challenges/government/success-stories/highline.jpg',
+    image: '/assets/challenges/government/success-stories/highline.webp',
     teamName: 'Batch#8: Team HIGHLINE ',
     hmw:
       'How might we help city administrations receive daily updates on changes in road infrastructure layout? ',
@@ -47,7 +47,7 @@ export const successstories = [
       'Solution: A smartphone that is mounted on vehicles of orange-color city workers runs an application recording pictures to detect the current infrastructure layout. Limitations, like construction sites, are automatically detected, their impact estimated and displayed on an interactive map for use by the city administration. ',
   },
   {
-    image: '/assets/challenges/government/success-stories/futurize.jpg',
+    image: '/assets/challenges/government/success-stories/futurize.webp',
     teamName: 'Batch#9: Team FÜTÜRIZE',
     hmw:
       'How might we enable the citizens to articulate themselves towards city officials?',
@@ -57,7 +57,7 @@ export const successstories = [
     url: 'https://www.munich-startup.de/58718/fuetuerize/',
   },
   {
-    image: '/assets/challenges/government/success-stories/digitalshapers.jpg',
+    image: '/assets/challenges/government/success-stories/digital-shapers.webp',
     teamName: 'Batch#11: Team DIGITAL SHAPERS',
     hmw:
       'How might we provide a fast, simple, comfortable and intuitive online access to public services?',
@@ -87,53 +87,53 @@ export const mucl = {
     'The Digital Product School is located in the most creative, dynamic and entrepreneurial nerve center for innovation: The Munich Urban Colab. There, talents, promising entrepreneurs, start-ups, corporate innovators, scientists, and creatives from the most diverse sectors and disciplines work together under one roof.',
   description2:
     'It provides the most modern infrastructure to explore new technologies and use them to build innovative products.',
-  image: '/assets/challenges/mucl.jpg',
+  image: '/assets/challenges/mucl.webp',
 };
 
 export const whydps = [
   {
     title: 'Experience',
     description: '14 Batches, 500 Talents 120 Teams',
-    icon: '/assets/challenges/pillars/Digital.svg',
+    icon: '/assets/icons/Digital.svg',
   },
   {
     title: 'Expertise',
     description: 'A core team of experts in their subjects',
-    icon: '/assets/challenges/pillars/Team.svg',
+    icon: '/assets/icons/Team.svg',
   },
   {
     title: 'Ecosystem',
     description: 'Part of Europe’s biggest entrepreneurship center',
-    icon: '/assets/challenges/pillars/Frame.svg',
+    icon: '/assets/icons/Frame.svg',
   },
   {
     title: 'Independence',
     description: 'UnternehmerTUM GmbH is a non-profit organization',
-    icon: '/assets/challenges/pillars/Group.svg',
+    icon: '/assets/icons/Group.svg',
   },
   {
     title: 'Location',
     description:
       'The Munich Urban Colab as the palace where future mobility concepts are developed',
-    icon: '/assets/challenges/pillars/Location.svg',
+    icon: '/assets/icons/Location.svg',
   },
   {
     title: 'Mission',
     description:
       'It’s our mission and passion to shape the world by solving the challenges of the future',
-    icon: '/assets/challenges/pillars/Goal.svg',
+    icon: '/assets/icons/Goal.svg',
   },
   {
     title: 'Partners',
     description:
       'Connection to the mobility sector and beyond to enrich your innovative business model',
-    icon: '/assets/challenges/pillars/Network.svg',
+    icon: '/assets/icons/Network.svg',
   },
   {
     title: 'Talents',
     description:
       '500 applications per batch. The best students and graduates want to join DPS.',
-    icon: '/assets/challenges/pillars/Education.svg',
+    icon: '/assets/icons/Education.svg',
   },
 ];
 

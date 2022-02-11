@@ -26,7 +26,7 @@ class WhoShouldApply extends React.Component {
             </p>
             <img
               alt="should-apply"
-              src="/assets/program/who-should-apply/desc.jpg"
+              src="/assets/program/who-should-apply/desc.webp"
               className="u-image"
             />
           </div>

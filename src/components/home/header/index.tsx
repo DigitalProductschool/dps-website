@@ -15,7 +15,7 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
         <section className="header u-content-wrapper">
           <Nav />
           {this.props.headerType == 'Photo' ? (
-            <Header image="/assets/home/header/header.jpg">
+            <Header image="/assets/home/header/header.webp">
               We build
               <span className="u-outline"> digital products.</span>
               <HeaderContentInside
@@ -29,7 +29,7 @@ class HomeHeader extends React.Component<IHeaderProps, {}> {
             <div className="u-content header-content">
               <video autoPlay muted loop className="cover__video">
                 <source
-                  src="/assets/home/header/headervideo-1680-758.mp4"
+                  src="/assets/home/header/headervideo.mp4"
                   type="video/mp4"
                 />
               </video>

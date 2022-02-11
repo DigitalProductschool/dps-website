@@ -14,7 +14,7 @@ let members = [
     shortDescription: `I advise and coach our teams in exploring AI applications. `,
     description: `I have more than 17 years professional experience in applied artificial intelligence research and development. I completed my PhD at the Swiss Federal Institute of Technology, Lausanne, on the robustness of machine learning in commercial applications. My contributions were recognized via community awards and I was granted several million Euros of national & international funding.<br>
 I advise and coach our teams in exploring AI applications, their feasibility and risks during problem-solution fits. In a multi-disciplinary environment, I support the participants to understand how to transform assumptions and data requirements into a product vision, alongside exploring market opportunities and how a data-driven solution should be evaluated. `,
-    pic: 'afsaneh.jpg',
+    pic: 'afsaneh.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -29,7 +29,7 @@ I advise and coach our teams in exploring AI applications, their feasibility and
     shortDescription: `I take care of the social media channels of DPS and the alumni network. `,
     description: `I  am responsible for marketing at Digital Product School (DPS) by creating content for our ongoing social media channels and also reaching out to talents from all around the world who might benefit with opportunity like DPS. <br>
     Apart from that I am currently working on a creative solution to sustain the DPS alumni community. I was part of DPS Batch#5 as a participant myself where I got to work with a team of engineers and built a great product solution. I pursued my Masters degree in Integrated Design from Anhalt University of Applied Sciences, Germany. Also I have previously founded startup projects and worked at Rocket Internet GmbH.`,
-    pic: 'samreen.jpg',
+    pic: 'samreen.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -44,7 +44,7 @@ I advise and coach our teams in exploring AI applications, their feasibility and
     shortDescription: `I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career.`,
     description: `After receiving my master’s degree in computer science at ELTE in Budapest, I worked as a researcher at the university. Later, I moved to Germany and worked for different companies in the subject areas of machine learning and data analytics before shifting my focus towards people management.<br>
 During my time at university I accumulated a lot of knowledge in data structures and algorithms, but it was only when I started working within the industry that I realised how much it takes to be a good software engineer. I hope with my expertise I can help our teams avoid the same mistakes I made at the beginning of my career. `,
-    pic: 'daniel.jpg',
+    pic: 'daniel.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -59,7 +59,7 @@ During my time at university I accumulated a lot of knowledge in data structures
     shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
     description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
 My role is to organize all events at DPS and throw the best batch closing parties. Alongside this, I assist the marketing team with operations and I am also the contact person for all matters like office supplies and access cards. `,
-    pic: 'natt.jpg',
+    pic: 'natt.webp',
     social: [
       {
         icon: '/assets/icons/insta.svg',
@@ -74,7 +74,7 @@ My role is to organize all events at DPS and throw the best batch closing partie
     shortDescription: `I help the teams to make money through their ideas.`,
     description: `I studied management and technology at Technische Universität München and hustled in startups throughout different industries.<br>
 I take care of the business side of projects at DPS and support our teams in how to make money through their ideas. `,
-    pic: 'lorenz.jpg',
+    pic: 'lorenz.webp',
     social: [
       {
         icon: '/assets/icons/xing.svg',
@@ -89,7 +89,7 @@ I take care of the business side of projects at DPS and support our teams in how
     shortDescription: `I love to stir things up with provocative questions.`,
     description: `I am a trained journalist who somehow slipped into product management and user research. I launched the online stores for software and toys for Amazon and made products useful to the customers of Weltbild. I went on to develop dozens of digital products for Haymarket Media and established user research at Gutefrage.net.<br>
 I help teams at DPS to spot problems and create ideas that join the dots discovered through user research. I also support them in turning those ideas into reality, plus I love to stir things up with provocative questions. `,
-    pic: 'steffen.jpg',
+    pic: 'steffen.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -104,7 +104,7 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     shortDescription: `I build self organized and fast learning teams.`,
     description: ` After my diploma of media technology I spent a couple of years in the film industry before I completed a management traineeship at Hubert Burda Media and got into classical project management.<br> Meeting Marty Cagan on my way of becoming a product manager was definitely a changing point in my career.
     My aim is to support the participants and the team members to evolve into a self organized and fast learning team.`,
-    pic: 'tobias.jpg',
+    pic: 'tobias.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -120,7 +120,7 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     description: `I recently graduated from my master’s studies in Electronics Engineering. During my studies I worked as an IT specialist at the Ministry of Finance and Economy. Before joining DPS as a core team member, I was a participant at batch #8 in the Software Engineering track. Me and my team developed a web application for warehouse maintenance and failure prediction.
      </br>
     At DPS, I can help teams with various software and hardware engineering tasks. As I was previously a participant at DPS, I can support the teams with my own learnings during my DPS journey and help them to improve their teamwork.`,
-    pic: 'bela.jpg',
+    pic: 'bela.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -137,7 +137,7 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     Apart from a broad experience from design research to strategic design, my particular focus is on prototyping and testing digital products.
     </br>
     I help the teams with building a strong value proposition through user research, designing compelling interactions and bringing them to life through advanced prototyping.`,
-    pic: 'marcus.jpg',
+    pic: 'marcus.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -152,7 +152,7 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
     shortDescription: `I spread the word about DPS and motivate talents to apply.`,
     description: `At the DPS I am responsible for marketing: telling the story of DPS and motivating students and graduates to apply. Before joining DPS in February 2017, I had a small startup in the online advertising business and worked for an advertising agency in Munich for 13 years. I have a Bachelor's degree in social sciences and an MBA in marketing.<br>
 I help the teams with all marketing-related questions: finding test persons, creating landing pages, running small campaigns to get users on the landing page, creating small advertisements, and everything else that helps the teams to test their hypotheses. `,
-    pic: 'basti.jpg',
+    pic: 'basti.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -167,7 +167,7 @@ I help the teams with all marketing-related questions: finding test persons, cre
     shortDescription: `I equip the teams with agile methods and bring them into a meaningful workflow.`,
     description: `I am an experienced scrum master. I have a background in business administration from HTWG Constance, Germany.  Early in my career I realised that agile and scrum methods play a crucial role in product development. This is when I decided to pursue this topic and become a scrum master.<br>
 As an agile coach at DPS, I support teams to overcome obstacles through practicing smooth communication. I equip them to learn agile methods and also show them how to apply these methods so they can adopt a meaningful workflow when building a product.  `,
-    pic: 'annina.jpg',
+    pic: 'annina.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -182,7 +182,7 @@ As an agile coach at DPS, I support teams to overcome obstacles through practici
     shortDescription: `I help teams to identify and overcome technical risks in their solutions.`,
     description: `I studied computer science at LMU in Munich and, alongside this, worked part time in early-stage startups. During this time, I figured out that I enjoy working on data engineering topics. After graduation, I joined gutefrage.net and we established the use of machine learning in Germany's biggest Q&A platform.<br>
 At DPS, I help teams to identify technical risks in their solution and enable them to come up with a feasible first version of their product. During code reviews, I give feedback on code-related issues. In addition to this, I help groups to improve their overall teamwork. `,
-    pic: 'michi.jpg',
+    pic: 'michi.webp',
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
@@ -307,7 +307,7 @@ function Team() {
           </button>
         </Modal>
       )}
-      <Header image="/assets/team/header.jpg">
+      <Header image="/assets/team/header.webp">
         the heart-throbs of innovation
       </Header>
       <HeaderContentBox>

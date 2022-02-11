@@ -4,7 +4,7 @@ import Nav from '../../components/shared/nav/index';
 import Faq from '../../components/faq/index';
 import Footer from '../../components/shared/footer/index';
 import CookieWarning from '../../components/shared/cookie-warning';
-import logo from '../../../static/assets/shared/dps-logo-double-white.svg';
+import logo from '../../../static/assets/shared/logo-all-white.svg';
 import Header from '../../components/shared/header/section';
 
 class FAQ extends React.Component {
@@ -18,7 +18,7 @@ class FAQ extends React.Component {
         <CookieWarning />
         <Nav logo={logo} />
         <Header
-          image="/assets/faq/background.jpg"
+          image="/assets/faq/background.webp"
           overlayColor="#fea11f"
           opacity=".65"
         >

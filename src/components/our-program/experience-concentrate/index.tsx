@@ -38,7 +38,7 @@ class ExperienceConcentrate extends React.Component {
             <img
               alt="experience-concentrate-description-image"
               className="experience-concentrate__content__description__image u-image"
-              src="/assets/program/experience-concentrate/desc.jpg"
+              src="/assets/program/experience-concentrate/desc.webp"
             />
           </div>
         </div>

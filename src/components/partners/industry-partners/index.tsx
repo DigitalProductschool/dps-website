@@ -1,17 +1,17 @@
 import * as React from 'react';
 
 const partnerLogos = [
-  'bmw.jpg',
-  'nokia.jpg',
-  'sap.jpg',
-  'swm.jpg',
-  'aisin.png',
-  'deutschebahn.png',
-  'google.jpg',
-  'hamburg.jpg',
-  'IABG.png',
-  'infineon.jpg',
-  'lhm.jpg',
+  'bmw.webp',
+  'nokia.webp',
+  'sap.webp',
+  'swm.webp',
+  'aisin.webp',
+  'deutschebahn.webp',
+  'google.webp',
+  'hamburg.webp',
+  'IABG.webp',
+  'infineon.webp',
+  'lhm.webp',
 ];
 
 class IndustryPartners extends React.Component {
