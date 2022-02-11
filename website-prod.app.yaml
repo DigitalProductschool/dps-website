@@ -8,115 +8,115 @@ handlers:
     static_files: public/index.html
     upload: public/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /apply/([^.]+)/
     static_files: public/tracks/\1/index.html
     upload: public/tracks/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /apply/([^.]+)
     static_files: public/tracks/\1/index.html
     upload: public/tracks/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /pm
     static_files: public/tracks/product-management/index.html
     upload: public/tracks/product-management/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /pm/
     static_files: public/tracks/product-management/index.html
     upload: public/tracks/product-management/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /se
     static_files: public/tracks/software-engineering/index.html
     upload: public/tracks/software-engineering/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /se/
     static_files: public/tracks/software-engineering/index.html
     upload: public/tracks/software-engineering/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ixd
     static_files: public/tracks/interaction-design/index.html
     upload: public/tracks/interaction-design/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ixd/
     static_files: public/tracks/interaction-design/index.html
     upload: public/tracks/interaction-design/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ai
     static_files: public/tracks/artificial-intelligence/index.html
     upload: public/tracks/artificial-intelligence/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ai/
     static_files: public/tracks/artificial-intelligence/index.html
     upload: public/tracks/artificial-intelligence/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /pmc
     static_files: public/tracks/product-marketing-communications-manager/index.html
     upload: public/tracks/product-marketing-communications-manager/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /pmc/
     static_files: public/tracks/product-marketing-communications-manager/index.html
     upload: public/tracks/product-marketing-communications-manager/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ac
     static_files: public/tracks/agile-coach/index.html
     upload: public/tracks/agile-coach/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /ac/
     static_files: public/tracks/agile-coach/index.html
     upload: public/tracks/agile-coach/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /mobility
     static_files: public/challenges/mobility/index.html
     upload: public/challenges/mobility/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /mobility/
     static_files: public/challenges/mobility/index.html
     upload: public/challenges/mobility/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /health
     static_files: public/challenges/healthcare/index.html
     upload: public/challenges/healthcare/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   - url: /health/
     static_files: public/challenges/healthcare/index.html
     upload: public/challenges/healthcare/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   # Attention /? won't work to catch both cases
   # path and path/, therefore write them separately
@@ -125,34 +125,34 @@ handlers:
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   # matches path to path/index.html
   - url: /([^.]+)
     static_files: public/\1/index.html
     upload: public/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   # matches path/other/ to path/other/index.html
   - url: /([^.]+)/([^.]+)/
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   # matches path/other to path/other/index.html
   - url: /([^.]+)/([^.]+)
     static_files: public/\1/\2/index.html
     upload: public/([^.]+)/([^.]+)/index.html
     secure: always
-    expiration: 10m
+    expiration: 20m
 
   # catch everything else
   - url: /(.*)
     static_files: public/\1
     upload: public/(.*)
     secure: always
-    expiration: 10m
+    expiration: 20m
 
 default_expiration: 10m
