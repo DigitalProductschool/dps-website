@@ -12,7 +12,7 @@ class Pillars extends React.Component {
                 <img
                   alt="calendar-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/calendar.webp"
+                  src="/assets/icons/calendar.webp"
                 />
               </div>
               <h4 className="pillars__list__item__title">3 Months full-time</h4>
@@ -28,7 +28,7 @@ class Pillars extends React.Component {
                 <img
                   alt="scholarship-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/scholarship.webp"
+                  src="/assets/icons/scholarship.webp"
                 />
               </div>
               <h4 className="pillars__list__item__title">
@@ -45,7 +45,7 @@ class Pillars extends React.Component {
                 <img
                   alt="network-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/network.svg"
+                  src="/assets/icons/network.svg"
                 />
               </div>
               <h4 className="pillars__list__item__title">
@@ -62,7 +62,7 @@ class Pillars extends React.Component {
                 <img
                   alt="agile-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/agile.webp"
+                  src="/assets/icons/agile.webp"
                 />
               </div>
               <h4 className="pillars__list__item__title">Agile &amp; Lean</h4>
@@ -77,7 +77,7 @@ class Pillars extends React.Component {
                 <img
                   alt="scholar-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/scholar.svg"
+                  src="/assets/icons/scholar.svg"
                 />
               </div>
               <h4 className="pillars__list__item__title">Extend your skills</h4>
@@ -92,7 +92,7 @@ class Pillars extends React.Component {
                 <img
                   alt="campus-logo"
                   className="pillars__list__item__icon-wrapper__img pillars__list__item__icon-wrapper__img"
-                  src="/assets/program/pillars/campus.webp"
+                  src="/assets/icons/campus.webp"
                 />
               </div>
               <h4 className="pillars__list__item__title">Modern campus</h4>

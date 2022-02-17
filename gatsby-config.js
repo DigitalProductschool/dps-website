@@ -7,7 +7,7 @@ module.exports = {
     gain practical experience by building innovative digital products.`,
     author: `@digitalproductschool`,
     twitterAuthor: `@dpschool_io`,
-    image: `https://digitalproductschool.io/assets/shared/Digital_Product_School_Batch16_Application.webp`,
+    image: `https://digitalproductschool.io/assets/og/Batch16_Application.jpg`,
     siteUrl: `https://digitalproductschool.io`,
   },
   plugins: [
@@ -20,20 +20,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#182542`,
-        theme_color: `#182542`,
-        display: `minimal-ui`,
-        icon: `static/assets/shared/favicon.svg`,
       },
     },
     {

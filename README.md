@@ -1,52 +1,52 @@
-# Website Digital Product School
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/kGzVkLN/Screenshot-2022-02-11-at-21-19-00.png"  width="200px" alt="logo" border="0"></a>
+  <h3 align="center">Digital Product School</h3>
 
-# Frontend
+  <p align="center">
+    <a href="https://digitalproductschool.io/">View website</a>
+    ·
+    <a href="https://github.com/DigitalProductschool/dps-website/issues">Report Bug</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+        <li><a href="#prerequesites">Prerequisites</a></li>
+        <li><a href="#development">Development</a></li>
+        <li><a href="#oauthcredentials">OAuth Credentials</a></li>
+        <li><a href="#tests">Tests</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+ </ol>
+</details>
 
 ## Prerequesites
 
-### Node and npm
+Node and npm
 
 `Install node and npm`
 
-### Gatsby
+Gatsby
 
 `npm install -g gatsby-cli`
 
-## Context
+## Development
 
-The gatsby frontend resides currently in the root directory. The intention is to move it to a `frontend/` folder.
-
-## Setting Up
+Gatsby
 
 1. Run `npm install` in the root dir
+2. Run `npm run start`
+3. Any environemnt variables go into `.env.development` for local development and into `cloudbuild-prod|staging.yaml` for prod / staging.
 
-## Development
+Cloud Functions
 
-1. Run `npm run start`
-2. Any environemnt variables go into `.env.development` for local development and into `cloudbuild-prod|staging.yaml` for prod / staging.
-
-## Testing
-
-???
-
-## Deployment
-
-Any push to staging branch is being deployed via `cloudbuild-staging.yaml` and any push to master branch is being deplopyed via `cloudbuild-prod.yaml`.
-
-# Services / Cloud Functions
-
-## Context
-
-This is work in progress and we're still figuring out what's the best way to develop cloud functions. You can find them under `funtions/`.
-
-## Setting up
-
-Navigate to `functions/` and run `npm run install`.
-
-## Development
-
-1. Login in gcloud cli
-2. Setup your local runtime. Under `functions/` run:
+1. Navigate to `functions/` and run `npm run install`.
+2. Login in gcloud cli
+3. Setup your local runtime. Under `functions/` run:
 
 `firebase functions:config:get --project dps-website-staging-0 > .runtimeconfig.json`
 
@@ -114,16 +114,29 @@ We don't have CI yet. You'll need to be logged into gcloud cli and have the appr
 
 `npm run deploy:staging`
 
+Any push to staging branch is being deployed via `cloudbuild-staging.yaml`
+
 ### Production
 
 `npm run deploy:production`
 
-# Contributors
+Any push to master branch is being deplopyed via `cloudbuild-prod.yaml`
+
+## Contributors
 
 Following are the people who contributed in the development of this website:
 
 <table>
 <tr>
+<td>
+        <img src="https://avatars.githubusercontent.com/u/51016339?v=4" width="100px;"/><br />
+        <a
+                href="https://github.com/bsinoimeri"
+                rel="noopener morefferer"
+                target="_blank">
+            Bela Sinoimeri
+        </a>
+</td>
 <td>
         <img src="https://avatars0.githubusercontent.com/u/25259674?s=460&v=4" width="150px;"/><br />
         <a
@@ -176,32 +189,4 @@ Following are the people who contributed in the development of this website:
             Benji Rothman
 </a>
          </td>
-
-<td> <img src="https://avatars2.githubusercontent.com/u/39758486?s=400&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/ayamlearning"
-                rel="noopener morefferer"
-                target="_blank">
-            Yasin Musa Ayami
-</a>
-         </td>
-
-<td> <img src="https://avatars2.githubusercontent.com/u/45259171?s=400&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/Annina2806"
-                rel="noopener morefferer"
-                target="_blank">
-            Annina Schaupp
-</a>
-         </td>
-
-<td> <img src="https://avatars3.githubusercontent.com/u/43818253?s=400&v=4" width="150px;"/><br />
-         <a
-                href="https://github.com/pranjal2394"
-                rel="noopener morefferer"
-                target="_blank">
-            pranjal2394
-</a>
-         </td>
-
 </table>
