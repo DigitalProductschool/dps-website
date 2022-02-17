@@ -12,6 +12,7 @@ import PartnerBenefits from '../../../components/challenges/partner-benefits';
 import Process from '../../../components/challenges/process';
 import Mucl from '../../../components/challenges/mucl';
 import SuccessStories from '../../../components/challenges/success-stories';
+import ImageOg from '../../../../static/assets/og/Gov.jpg';
 
 import {
   header,
@@ -33,7 +34,7 @@ class Government extends React.Component {
         <Nav
           seoTitle="DPS - eGovernment"
           seoDescription="Solving challenges from the government sector with innovative & human-centered digital products."
-          seoImage={header.image}
+          seoImage={ImageOg}
         />
         <Header image={header.image} overlayColor="rgba(5, 16, 72, 0.56)">
           {header.title}
