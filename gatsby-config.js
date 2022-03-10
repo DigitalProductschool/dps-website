@@ -7,7 +7,7 @@ module.exports = {
     gain practical experience by building innovative digital products.`,
     author: `@digitalproductschool`,
     twitterAuthor: `@dpschool_io`,
-    image: `https://digitalproductschool.io/assets/og/Batch16_Application.jpg`,
+    image: `https://digitalproductschool.io/assets/og/Batch17_Application.jpg`,
     siteUrl: `https://digitalproductschool.io`,
   },
   plugins: [
