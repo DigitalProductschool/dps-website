@@ -21,7 +21,7 @@
     "gatsby-plugin-typescript": "^3.5.0",
     "gatsby-source-filesystem": "^3.5.0",
     "lint": "^0.7.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "moment": "^2.29.1",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
