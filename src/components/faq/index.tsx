@@ -138,13 +138,13 @@ class Faq extends React.Component {
 
           <Accordion title="Do I get paid?">
             <p>
-              We offer you a scholarship worth up to € 750.- per month / €
+              We offer you a scholarship worth up to € 1,000.- per month / €
               2.250.- in total for three months, depending on the mode of your
               participation at DPS:
               <br />
               <ol style={{ paddingLeft: '15px' }}>
                 <li>
-                  € 750.- per month if you take part on-site at the DPS office
+                  € 1,000.- per month if you take part on-site at the DPS office
                   in Munich
                 </li>
                 <li>
