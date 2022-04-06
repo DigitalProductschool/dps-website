@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School',
     'Collaboration with the best international start-ups, industry leaders, researchers and technology',
     'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 750.- per month',
+    'A grant up to € 1,000.- per month',
   ],
   responsibilities: [
     'Driving the product development by AI problem formulations and data-driven applications based on audio, video, text and other sensory data collections',
