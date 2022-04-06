@@ -49,7 +49,7 @@ class OurProgram extends React.Component {
               </h4>
               <p className="our-program__perks__description">
                 Every applicant who gets accepted will receive a scholarship of
-                up to € 750 per month. You can find more about the scholarship
+                up to € 1.000 per month. You can find more about the scholarship
                 in our FAQs.
               </p>
             </li>
