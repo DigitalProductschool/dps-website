@@ -81,7 +81,7 @@ function buildTrelloDescription(change: Ichange) {
   ${change.data().batch}
   ### Email
   ${change.data().email}
-  ### Do you apply for the scholarship of €750.-/month?
+  ### Do you apply for the scholarship of € 1,000.- per month?
   ${needsScholarship}
   ### How did you learn about Digital Product School?
   ${change.data().source}

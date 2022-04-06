@@ -7,7 +7,7 @@ export const or = {
     'Get individual coaching sessions from the DPS Core Team',
     'Get support from all members of the Agile Coaching Track',
     'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centres in Germany',
-    'A grant of up to € 750 per month for talents',
+    'A grant of up to € 1,000.- per month for talents',
     'Become part of a huge alumni network after DPS',
   ],
   responsibilities: [

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import FacebookCopy from '../../../../../static/assets/shared/facebook.webp';
-import FacebookOG from '../../../../../static/assets/og/Batch16_Application.jpg';
+import FacebookOG from '../../../../../static/assets/og/Batch17_Application.jpg';
 import moment from 'moment';
 
 class Facebook extends React.Component {

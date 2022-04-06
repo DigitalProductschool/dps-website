@@ -4,7 +4,7 @@ export const or = {
     'A unique opportunity to be part of our 3-month training program of the Digital Product School',
     'Collaboration with local start-ups, industry leaders, researchers and technology',
     'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 750.- per month',
+    'A grant up to € 1,000.- per month',
   ],
   responsibilities: [
     'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',

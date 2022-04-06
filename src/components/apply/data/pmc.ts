@@ -5,7 +5,7 @@ export const or = {
     'Receive guidance and support from our experienced partner Looping Group, one of Germany’s leading agencies specialising in data-driven storytelling and brand building',
     'Work in a dedicated “Newsroom” – a space designed and equipped to meet the requirements of all modern communications challenges',
     'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany',
-    'Grants: up to € 750.- per month',
+    'Grants: up to € 1,000.- per month',
   ],
   responsibilities: [
     'Form a team of three– to five Product Marketing & Communications Managers and solve a real communications problem posed by one of our partner companies',
