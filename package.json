@@ -22,7 +22,7 @@
     "gatsby-source-filesystem": "^3.5.0",
     "lint": "^0.7.0",
     "minimist": "^1.2.5",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^7.3.1",
