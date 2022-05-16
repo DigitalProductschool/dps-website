@@ -2,9 +2,7 @@ import * as React from 'react';
 
 class Conference extends React.Component {
   componentDidMount() {
-    window.location.replace(
-      'http://www.globalconference.digitalproductschool.io/'
-    );
+    window.location.replace('https://conference.dpsglobal.io/');
   }
 
   render() {
