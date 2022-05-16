@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import Seo from '../../seo';
 import { useState, useEffect } from 'react';
+import ConferenceModal from '../../conferenceModal';
 
 // can't use as <img /> because we want to be able to dynamically change the fill color
 const HamburgerIcon = () => (
@@ -365,6 +366,7 @@ function Nav(props) {
         description={props.seoDescription}
         image={props.seoImage}
       />
+      <ConferenceModal />
       <div
         className={`nav__content u-content ${addClass} nav__content--desktop`}
       >
