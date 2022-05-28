@@ -1,4 +1,4 @@
-runtime: nodejs10
+runtime: nodejs18
 service: default
 instance_class: B2
 manual_scaling:
