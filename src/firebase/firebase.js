@@ -1,4 +1,6 @@
 import isProduction from '../utils/isProduction';
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
 let config = {
   apiKey: 'AIzaSyB4LM0aCPAXvGBOrgmgWOchxS2QsiXunSg',
@@ -22,14 +24,7 @@ if (isProduction) {
   };
 }
 
-let firebaseInstance;
-export const getFirebase = firebase => {
-  if (firebaseInstance) {
-    return firebaseInstance;
-  }
-
-  firebase.firebase.initializeApp(config);
-  firebaseInstance = firebase.firebase;
-
-  return firebase.firebase;
-};
+// Initialize Firebase
+export const app = initializeApp(config);
+// Initialize Cloud Firestore and get a reference to the service
+export const database = getFirestore(app);
