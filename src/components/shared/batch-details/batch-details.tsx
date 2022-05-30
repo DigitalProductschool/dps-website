@@ -4,6 +4,7 @@ import useBatchDetails from './use-batch-details';
 import isApplicationPhaseOpen from './application-phase';
 import getBatchDate from './batch-date';
 import TrackPhase from './application-track';
+import getCestDate from './date-cest';
 
 export default function BatchDetails(props) {
   const [batchDetails, setBatchDetails] = useState([]);
@@ -28,7 +29,7 @@ export default function BatchDetails(props) {
                 )} `}
               </b>
               <br className="break" />
-              {`(Applications open until ${getBatchDate(batch.appEndDate)})`}
+              {`(Applications open until ${getCestDate(batch.appEndDate)})`}
               <br />
               <br className="break" />
             </span>
@@ -61,7 +62,7 @@ export default function BatchDetails(props) {
                 )} `}
               </b>
               <br className="break" />
-              {`(Applications open until ${getBatchDate(batch.appEndDate)}`}
+              {`(Applications open until ${getCestDate(batch.appEndDate)}`}
               {`${TrackPhase(
                 appEndPm,
                 appEndSe,
