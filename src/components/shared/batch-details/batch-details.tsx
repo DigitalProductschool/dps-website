@@ -62,14 +62,7 @@ export default function BatchDetails(props) {
                 )} `}
               </b>
               <br className="break" />
-              {`(Applications open until ${getCestDate(batch.appEndDate)}`}
-              {`${TrackPhase(
-                appEndPm,
-                appEndSe,
-                appEndAi,
-                appEndIxd,
-                appEndAc
-              )})`}
+              {`(Applications open until ${getCestDate(batch.appEndDate)})`}
               <br />
               <br className="break" />
             </span>
