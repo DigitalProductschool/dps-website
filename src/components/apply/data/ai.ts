@@ -1,18 +1,22 @@
 export const or = {
   offer: [
-    'Working in a diverse team of Interaction Designers, Software Developers, AI Experts and fellow Product Managers who are passionate about building great digital products',
-    'A unique opportunity to be part of our 3-month training program of the Digital Product School',
-    'Collaboration with the best international start-ups, industry leaders, researchers and technology',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 1,000.- per month',
+    'Gain hands-on working experience as an AI Engineer in a cross-functional product team',
+    'Receive intense training in agile working methods by experienced mentors and coaches',
+    'Gain experience in design thinking techniques, agile working methods, and the Lean Start-up methodology',
+    'Improve your soft skills through working in a diverse team',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
   ],
   responsibilities: [
-    'Driving the product development by AI problem formulations and data-driven applications based on audio, video, text and other sensory data collections',
-    'Driving the product development by working with Natural Language Processing, Artificial Intelligence and/or Machine Learning',
-    'Designing and implementing a state-of-the-art AI tech stack',
+    'Build a digital product that solves a real-world challenge',
+    'Drive the product development by AI problem formulations and data-driven applications based on audio, video, text and other sensory data collections',
+    'Work with real data provided by the partners or open data',
+    'Conduct tech feasibility tests',
+    'Drive the product development by working with Natural Language Processing, Artificial Intelligence and/or Machine Learning',
+    'Design and implement a state-of-the-art AI tech stack',
     'Communicating cross-functionally and driving engineering efforts',
-    'Applying your scientific knowledge and engineering skills to analyze large volumes of complex data and to develop algorithms to solve complex problems to improve the product',
-    'Ensuring agile development principles',
+    'Engineer end-to-end data-driven applications',
   ],
 };
 
@@ -33,13 +37,18 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
-    'You have a background in computer science, electrical engineering, cognitive science or mathematics with working skills on probability and statistics, signal processing, machine learning or related area',
-    'You are a creative problem solver who is passionate about digging into complex problems to devise new approaches to reach results',
-  ],
-  secondColumn: [
+    'You have a university degree in electrical or computer engineering, computer science, or other engineering disciplines with additional training and certification in data science, machine learning, or artificial intelligence',
     'You have experience and are enthusiastic about working with languages like Python and/or R (C++, JAVA, Scala), and libraries such as NLTK, OpenCV or TensorFloW',
     'You have former experience in several AI application projects',
     'Hands-on experience with Deep Learning stuff would be a bonus',
+    'You possess excellent teamwork skills and are motivated to grow as an awesome team player',
+  ],
+  secondColumn: [
+    'You are a creative problem solver who is passionate about digging into complex problems to devise new approaches to reach results',
+    'You have excellent communication skills in English',
+    'Full personal commitment. No side project, university course, or exam is acceptable',
+    'You are vailabile for 40 h/week during normal office hours (CET)',
+    'Presence in Munich preferred, remotely possible. A proper technical setup (calm place, microphone & camera) and an excellent & flawless internet connection for video calls are required in a remote setup',
   ],
 };
 
