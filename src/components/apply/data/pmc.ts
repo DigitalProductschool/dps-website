@@ -1,18 +1,20 @@
 export const or = {
   offer: [
-    'Become part of a diverse and international team of prospective communication specialists',
+    'Be part of a diverse and international team of prospective communication specialists',
     'Get theoretical insights and practical experience in all relevant fields of digital marketing and communications',
     'Receive guidance and support from our experienced partner Looping Group, one of Germany’s leading agencies specialising in data-driven storytelling and brand building',
     'Work in a dedicated “Newsroom” – a space designed and equipped to meet the requirements of all modern communications challenges',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany',
-    'Grants: up to € 1,000.- per month',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
   ],
   responsibilities: [
-    'Form a team of three– to five Product Marketing & Communications Managers and solve a real communications problem posed by one of our partner companies',
-    'Develop a communications strategy for a product or service in close coordination with your stakeholders',
-    'Find and analyse data to form your strategy and optimize your measures',
+    'Form a team of three– to five Product Marketing & Communications Managers and solve a real communications problem',
+    'Analyze the market, the competitors and your target group to successfully position your product',
+    'Nail down a communications strategy for a brand, product, or service in close coordination with your stakeholders',
     'Create a compelling story that generates attention with the target audience',
     'Conduct experiments and user research to find the best-performing ways to reach your performance goals',
+    'Find and analyse data to form your strategy and optimize your measures',
     'Produce stunning videos, podcasts, landing pages and other materials',
   ],
 };
@@ -38,12 +40,16 @@ export const expectations = {
     'You have the passion for working hands-on to create and try out new things',
     'You are interested and knowledgeable in digital trends, technology and culture',
     'You’ve got the ability to thrive under pressure and in a in a fast-paced environment',
-  ],
-  secondColumn: [
     'You have a deep interest in working with data and analyzing markets and measures',
     'You’ve got excellent analytical, problem-solving, organizational and interpersonal skills',
+  ],
+  secondColumn: [
     'You know how to communicate clearly – verbally and written - and have the ability to build strong relationships between people',
     'You are a natural problem solver with the willingness to work independently and use your initiative',
+    'You are a distinct team player',
+    'You are fully committed to the program and have a high motivation to solve your challenge',
+    'You are available to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no side projects, etc.)',
+    'You can be on-site in Munich and you are willing to join the office at least three times a week',
   ],
 };
 

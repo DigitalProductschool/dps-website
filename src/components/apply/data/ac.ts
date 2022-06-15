@@ -1,23 +1,22 @@
 export const or = {
   offer: [
-    'A unique opportunity to be part of our 3-month training program to gain experience',
-    'Gain exclusive insights and unique practical experience from day one in all relevant fields of agile team coaching by observing several teams in just a couple of weeks.',
-    'Get on-the-job training from day one',
-    'Receive guidance and support from our experienced members of the DPS Core Team whenever needed',
-    'Get individual coaching sessions from the DPS Core Team',
-    'Get support from all members of the Agile Coaching Track',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centres in Germany',
-    'A grant of up to € 1,000.- per month for talents',
-    'Become part of a huge alumni network after DPS',
+    'Gain hands-on working experience as an Agile Team coach in a cross-functional product team',
+    'Receive intense training in agile working methods by experienced mentors and coaches',
+    'Gain experience in design thinking techniques, agile working methods, and the Lean Start-up methodology',
+    'Improve your soft skills through working in a diverse team',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
+    'Participation full- (40h/week) or part-time (25h/week)',
   ],
   responsibilities: [
-    'You will join a diverse, cross-functional team from day one',
-    'You will participate in lots of workshops',
-    'You will facilitate workshops, retrospectives, planning meetings, daily standups and navigate conflict in your team',
-    'You will practice individual coaching sessions with your team members',
-    'You will shadow DPS Core Team members and participants of the Agile Coaching Track',
-    'You will observe your team, give feedback and offer them methods to improve',
-    'You will take part, measure, learn from day one',
+    'Build a digital product that solves a real-world challenge',
+    'Guide a team through all Tuckman phases',
+    'Facilitate workshops and retrospectives',
+    'Coach teams and individuals',
+    'Analyze and influence group dynamics',
+    'Facilitate conflicts in the team',
+    'Support engineers, designers, and product managers to collaborate in a cross-functional team',
   ],
 };
 
@@ -42,15 +41,15 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
-    'You have the ability for self reflection',
-    'You have excellent communication skills and your English is fluent',
-    'You would like to learn more about how to handle interpersonal and team conflict',
-    'You have a passion for people and social systems',
+    'University degree (psychology, sociology, computer science, business, or similar)',
+    'A certificate as Scum Master, Kanban Coach, etc. or you can document that you have already worked in an agile working team',
+    'Excellent communication skills and your English is fluent',
+    'Full personal commitment and high motivation to support the teams',
   ],
   secondColumn: [
-    'You have already worked in an agile environment and own a agile certificate',
-    'You have a university degree (psychology, sociology, computer science, business or similar)',
-    'You plan a career as an agile coach',
+    'Full-time participation: availability for 40 h/week during normal office hours (CET)',
+    'Part-time participation: High flexibility, since you will work in an agile environment. Mandatory availability Monday 9 am to 5 pm, Tuesday 9 am to 3 pm, and Wednesday 1 to 3 pm',
+    'Presence in Munich preferred, remotely possible. A proper technical setup (calm place, microphone & camera) and an excellent & flawless internet connection for video calls are required in a remote setup',
   ],
 };
 

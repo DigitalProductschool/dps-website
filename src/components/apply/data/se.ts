@@ -1,17 +1,22 @@
 export const or = {
   offer: [
-    'Working in a diverse team of product managers, interaction designers, AI specialists and fellow software engineers, who want to solve real-world problems building great digital products',
-    'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
-    'Collaboration with the best international start-ups, industry leaders, researchers, and technology.',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 1,000.- per month',
+    'Gain hands-on working experience as a Software Engineer in a cross-functional product team',
+    'Receive intense training in agile working methods by experienced mentors and coaches',
+    'Gain experience in design thinking techniques, agile working methods, and the Lean Start-up methodology',
+    'Improve your soft skills through working in a diverse team',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
   ],
   responsibilities: [
-    'Collaborate ​with the other software engineers, AI engineers, interaction designers and product managers in your team on the journey from the problem to the product',
-    'Driving engineering efforts in your team',
-    'Creating software prototypes for the user-validated product',
-    'Choosing the right tools for the job and work after DevOps principles with your team',
-    'Following agile development principles',
+    'Build a digital product that solves a real-world challenge',
+    'Drive engineering efforts in your team',
+    'Apply technologies you don‘t use at university',
+    'Create software prototypes for the user-validated product',
+    'Set up software testing strategies',
+    'Understand cybersecurity threats',
+    'Build an environment to deliver continuously',
+    'Develop fast and with high quality',
   ],
 };
 
@@ -33,13 +38,14 @@ export const header = {
 export const expectations = {
   firstColumn: [
     'You found your favorite programming language but you have a strong desire to widen your horizon',
-    'You want to  work in a truly diverse and interdisciplinary team',
-    'You have a background in computer science either from a bachelors degree program and/or work experience',
+    'We don’t care if you have a university degree as long as you are fluent in at least one programming language',
+    'You have the ability to learn new things fast',
+    'You are a distinct team player and you want to work in a truly diverse and interdisciplinary team',
   ],
   secondColumn: [
     'You want to get in touch with the Scrum methodology and experience lean & agile development principles',
     'You have good communication skills and you are able to speak with product managers and designers',
-    'You can communicate clearly – verbally and written',
+    'The availability to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no parallel jobs, no active semester at the university, etc.)',
     'We ❤ them all: frontend-, mobile- or backend developers',
   ],
 };

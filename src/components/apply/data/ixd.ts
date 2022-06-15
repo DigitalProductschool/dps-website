@@ -1,17 +1,20 @@
 export const or = {
   offer: [
-    'Working in a diverse team of Interaction Designers, Software Developers, AI Experts and fellow Product Managers who are passionate about building great digital products.',
-    'A unique opportunity to be part of our 3-month training program of the Digital Product School.',
-    'Collaboration with local start-ups, industry leaders, researchers, and technology.',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 1,000.- per month',
+    'Gain hands-on working experience as an Interaction Designer in a cross-functional product team',
+    'Receive intense training in agile working methods by experienced mentors and coaches',
+    'Gain experience in design thinking techniques, agile working methods, and the Lean Start-up methodology',
+    'Improve your soft skills through working in a diverse team',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
   ],
   responsibilities: [
-    'Applying suitable user research methodologies and conducting user tests to deliver valuable insights for other team members',
+    'Build a digital product with a great user experience that users really love',
+    'Apply suitable user research methodologies and conduct user tests to deliver valuable insights for other team members',
     'Conduct rapid prototyping and product design sketches of different stages of your product to enable your team to continuously implement user testings.',
     'Develop concept sketches, prototypes (low- and high-fidelity) and visual designs in order to create great user experiences',
-    'Collaborate ​with the other interaction designers, software engineers, AI specialists and product managers in your team on the journey from the problem to the product',
-    'Solving real-world problems through working with several industry partners',
+    'Collaborate with the other interaction designers, software engineers, AI specialists, and product managers in your team on the journey from the problem to the product',
+    'Solve real-world problems through working with several industry partners',
   ],
 };
 
@@ -32,12 +35,14 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
-    'Solving real-world problems through working with several industry partners',
     'You’ve got a passion for creating and trying out new things',
+    'Bachelor’s degree or completed vocational training in interaction design, user experience design, human-computer interaction, UX/UI or a similar field',
+    'You are interested and knowledgeable in digital trends, technology, and culture',
   ],
   secondColumn: [
-    'You are interested and knowledgeable in digital trends, technology, and culture',
-    'You are interested in interdisciplinary collaboration and want to learn from other fields',
+    'You are a distinct team playe',
+    'You are available to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no side projects, etc.)',
+    'You can be on-site in Munich',
   ],
 };
 

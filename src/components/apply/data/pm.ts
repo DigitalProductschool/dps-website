@@ -1,18 +1,23 @@
 export const or = {
   offer: [
-    'Working in a diverse team of interaction designers, software developers, AI engineers and fellow product managers who are passionate about building great digital products',
-    'A unique opportunity to be part of our 3-month training program of the Digital Product School',
-    'Collaboration with local start-ups, industry leaders, researchers and technology',
-    'A state-of-the-art workplace in the new Munich Urban Colab, one of the most creative and dynamic, entrepreneurial and innovative nerve centers  in Germany.',
-    'A grant up to € 1,000.- per month',
+    'Gain hands-on working experience as a Product Manager in a cross-functional product team',
+    'Multiply your personal experience by brain-picking our experienced mentors',
+    'Improve your soft skills through working in a diverse team',
+    'Extend your network into the start-up and tech scene of Munich',
+    'Expand your professional network',
+    'A state-of-the-art workplace in the new Munich Urban Colab',
+    'A certificate after successful completion',
+    'A scholarship of up to € 1,000.- per month',
   ],
   responsibilities: [
-    'Applying suitable user research methodologies and conducting usability tests to deliver valuable insights for other team members',
-    'Conducting user experiments at any stage of the product development process',
+    'Build a digital product that solves a real-world challenge',
+    'Discover user problems by applying suitable user research methodologies',
+    'Prepare and conduct user interviews and user tests',
+    'Drive and navigate a cross-functional team',
     'Defining a product vision and strategy',
-    'Solving real-world problems through working with several industry partners',
-    'Collaborate ​with the other product managers, interaction designers, software- and AI engineers in your team on the journey from the problem to the product',
-    'Defining and measuring KPIs for ensuring your product’s success',
+    'Translate an idea into a product',
+    'Deal with several stakeholders while not losing focus',
+    'Apply innovation mindsets like Design Thinking, Agile and Lean Start-up',
   ],
 };
 
@@ -37,6 +42,7 @@ export const header = {
 
 export const expectations = {
   firstColumn: [
+    'You are motivated to create innovative products that serve people',
     'You own a university degree (business, computer science, psychology or similar)',
     'You’ve got a passion for creating and trying out new things',
     'You are interested and knowledgeable in digital trends, technology, and culture',
@@ -46,8 +52,8 @@ export const expectations = {
     'You have a deep interest in creating and analyzing products and markets',
     'You’ve got excellent analytical, problem-solving, organizational and interpersonal skills',
     'You can communicate clearly – verbally and written',
-    'You are a cross-functional influencer with the ability to build strong relationships between people',
-    'You’ve got a good sense for design',
+    'Aou are a distinct team player',
+    'You are available to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no side projects, etc.)',
   ],
 };
 
