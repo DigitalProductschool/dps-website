@@ -10,16 +10,10 @@ class Faq extends React.Component {
         <div className="faq__content u-content">
           <Accordion title="Is it an online program?">
             <p>
-              Yes! A lot changed due to Corona. We didn't think so, but with the
-              right environment and tools creating ideas, working together in a
-              cross-functional team, and building an innovative digital product
-              is possible without meeting in person.
-              <br />
-              This means: You can take part on-site in Munich or remote from all
-              over the world. All workshops, meetings and processes in the teams
-              are designed "remote-first", so there are no disadvantages of not
-              being in Germany - maybe except getting up early or staying up
-              late to sync with your team members' time zones.
+              No. DPS was born as an on-site program where people with different backgrounds from all over the came together in one office to build digital products, but also to exchange, learn from each other, have fun together, and build new friendships.<br />
+              Corona changed a lot. We moved to a remote setting and it turned out that it worked pretty well and the teams built great products.<br />
+              But something was missing. The spirit was different. That's why we really recommend coming to Munich and taking part in person. Your experience will be much richer than while sitting in front of your laptop! Yes, Munich is expensive, and finding a place to live is not easy, but it's worth it!<br />
+              And yes, if you really can not come to Munich or you do not get a visa remote participation is still possible.
             </p>
           </Accordion>
           
