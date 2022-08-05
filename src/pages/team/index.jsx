@@ -54,7 +54,7 @@ During my time at university I accumulated a lot of knowledge in data structures
     ],
   },
   {
-    name: 'Natthagorn Bunnet',
+    name: 'Natthagorn Murr',
     title: 'Team and Event Manager',
     shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
     description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
