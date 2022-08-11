@@ -29,8 +29,6 @@ class LegalContent extends React.Component {
             Stefan Drüssler
             <br />
             Thomas Zeller
-            <br />
-            Dr. Andreas Liebl
           </p>
 
           <h3>CONTACT INFORMATION</h3>
@@ -70,8 +68,6 @@ class LegalContent extends React.Component {
             Stefan Drüssler
             <br />
             Thomas Zeller
-            <br />
-            Dr. Andreas Liebl
             <br />
             <br />
             <br />
