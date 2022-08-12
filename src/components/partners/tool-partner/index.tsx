@@ -14,6 +14,12 @@ class ToolPartner extends React.Component {
               src="/assets/home/tool-partner/eyequant.webp"
             />
             <img
+              alt="Figma"
+              title="Figma, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/figma.webp"
+            />
+            <img
               alt="Invision"
               title="Invision, tool partner of Digital Product School"
               className="tool-partner__content__logo"
@@ -26,6 +32,12 @@ class ToolPartner extends React.Component {
               src="/assets/home/tool-partner/github.webp"
             />
             <img
+              alt="ProtoPie"
+              title="ProtoPie, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/ProtoPie.webp"
+            />
+            <img
               alt="TAWNY"
               title="TAWNY, tool partner of Digital Product School"
               className="tool-partner__content__logo"
@@ -36,6 +48,12 @@ class ToolPartner extends React.Component {
               title="UXPIN, tool partner of Digital Product School"
               className="tool-partner__content__logo"
               src="/assets/home/tool-partner/uxpin.webp"
+            />
+            <img
+              alt="Webflow"
+              title="Webflow, tool partner of Digital Product School"
+              className="tool-partner__content__logo"
+              src="/assets/home/tool-partner/webflow.webp"
             />
           </div>
           <div

@@ -119,17 +119,10 @@ const MenuTracksDropdownForDesktop = props => {
       </Link>
       <Link
         to="/tracks/product-marketing-communications-manager/"
-        style={styles}
-        activeStyle={activeStyle}
-      >
-        Product Marketing &amp; Communications Manager
-      </Link>
-      <Link
-        to="/tracks/agile-coach/"
         style={{ ...styles, paddingBottom: '0' }}
         activeStyle={activeStyle}
       >
-        Agile Team Coach (Beta)
+        Product Marketing &amp; Communications Manager
       </Link>
     </div>
   );

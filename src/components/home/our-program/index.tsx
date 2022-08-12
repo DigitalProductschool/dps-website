@@ -45,7 +45,7 @@ class OurProgram extends React.Component {
                 />
               </div>
               <h4 className="our-program__perks__title">
-                Up to € 2,250 SCHOLARSHIP
+                Up to € 3,000 SCHOLARSHIP
               </h4>
               <p className="our-program__perks__description">
                 Every applicant who gets accepted will receive a scholarship of

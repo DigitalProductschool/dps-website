@@ -362,7 +362,7 @@ export default function Form(props) {
                   className={`application-form__label scholarship-radiogroup-label-${props.track}`}
                   id="scholarship-radiogroup-label"
                 >
-                  Do you need the grants of up to € 750.- per month?
+                  Do you need the grants of up to € 1,000.- per month?
                 </label>
                 <fieldset
                   aria-labelledby="scholarship-radiogroup-label"

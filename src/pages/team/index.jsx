@@ -54,7 +54,7 @@ During my time at university I accumulated a lot of knowledge in data structures
     ],
   },
   {
-    name: 'Natthagorn Bunnet',
+    name: 'Natthagorn Murr',
     title: 'Team and Event Manager',
     shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
     description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
@@ -109,22 +109,6 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
       {
         icon: '/assets/icons/linkedin.svg',
         link: 'https://de.linkedin.com/in/tobias-kalkowsky-21b7a4163',
-        alt: 'linkedin',
-      },
-    ],
-  },
-  {
-    name: 'Bela Sinoimeri',
-    title: 'Software Engineer',
-    shortDescription: `I advise and support the teams with my technical expertise.`,
-    description: `I recently graduated from my master’s studies in Electronics Engineering. During my studies I worked as an IT specialist at the Ministry of Finance and Economy. Before joining DPS as a core team member, I was a participant at batch #8 in the Software Engineering track. Me and my team developed a web application for warehouse maintenance and failure prediction.
-     </br>
-    At DPS, I can help teams with various software and hardware engineering tasks. As I was previously a participant at DPS, I can support the teams with my own learnings during my DPS journey and help them to improve their teamwork.`,
-    pic: 'bela.webp',
-    social: [
-      {
-        icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/bsinoimeri/',
         alt: 'linkedin',
       },
     ],

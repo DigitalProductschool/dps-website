@@ -6,7 +6,7 @@ interface IPickTrackProps {
 }
 
 interface IPickTrackState {
-  active: 'pm' | 'se' | 'ai' | 'ixd' | 'pmc' | 'ac' | null;
+  active: 'pm' | 'se' | 'ai' | 'ixd' | 'pmc' | null;
 }
 
 class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
@@ -153,40 +153,6 @@ class PickTrack extends React.Component<IPickTrackProps, IPickTrackState> {
                 className="pick-track__track__button pick-track__track__button--ai u-button u-button--reversed"
                 href="/application/artificial-intelligence/"
                 onMouseOver={() => this.setState({ active: 'ai' })}
-                onMouseOut={() => this.setState({ active: null })}
-              >
-                Apply
-              </a>
-            </li>
-
-            <li key="ac" className="pick-track__track">
-              <a href="/tracks/agile-coach/">
-                <div className="pick-tracks__track__image-wrapper">
-                  <div className="pick-tracks__track__image pick-tracks__track__image--ac" />
-                  <img
-                    alt="ac-icon"
-                    className="pick-tracks__track__icon"
-                    src="/assets/shared/pick-track/ac-icon.webp"
-                    style={active === 'ac' ? { opacity: 0.1 } : {}}
-                  />
-                </div>
-              </a>
-              <p className="pick-track__track__description">
-                <a className="u-link" href="/tracks/agile-coach/">
-                  <span> Agile Team Coach </span>
-                </a>{' '}
-                assist cross-functional, diverse teams and help them to become
-                fast-moving and fast learning teams that frequently deliver
-                results.
-                <br />
-                <a className="u-link" href="/tracks/agile-coach/">
-                  <span>More ...</span>
-                </a>{' '}
-              </p>
-              <a
-                className="pick-track__track__button pick-track__track__button--ac u-button u-button--reversed"
-                href="/application/agile-coach/"
-                onMouseOver={() => this.setState({ active: 'ac' })}
                 onMouseOut={() => this.setState({ active: null })}
               >
                 Apply
