@@ -54,21 +54,6 @@ During my time at university I accumulated a lot of knowledge in data structures
     ],
   },
   {
-    name: 'Natthagorn Murr',
-    title: 'Team and Event Manager',
-    shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
-    description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
-My role is to organize all events at DPS and throw the best batch closing parties. Alongside this, I assist the marketing team with operations and I am also the contact person for all matters like office supplies and access cards. `,
-    pic: 'natt.webp',
-    social: [
-      {
-        icon: '/assets/icons/insta.svg',
-        link: 'https://www.instagram.com/natt_chanida/',
-        alt: 'instagram',
-      },
-    ],
-  },
-  {
     name: 'Lorenz Hutterer',
     title: 'Product Lead Digital Business Lab',
     shortDescription: `I help the teams to make money through their ideas.`,
@@ -84,21 +69,6 @@ I take care of the business side of projects at DPS and support our teams in how
     ],
   },
   {
-    name: 'Steffen Kastner',
-    title: 'Head of Product Management',
-    shortDescription: `I love to stir things up with provocative questions.`,
-    description: `I am a trained journalist who somehow slipped into product management and user research. I launched the online stores for software and toys for Amazon and made products useful to the customers of Weltbild. I went on to develop dozens of digital products for Haymarket Media and established user research at Gutefrage.net.<br>
-I help teams at DPS to spot problems and create ideas that join the dots discovered through user research. I also support them in turning those ideas into reality, plus I love to stir things up with provocative questions. `,
-    pic: 'steffen.webp',
-    social: [
-      {
-        icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/steffen-kastner-177494a9/',
-        alt: 'linkedin',
-      },
-    ],
-  },
-  {
     name: 'Tobias Kalkowsky',
     title: 'Agile Coach',
     shortDescription: `I build self organized and fast learning teams.`,
@@ -109,6 +79,36 @@ I help teams at DPS to spot problems and create ideas that join the dots discove
       {
         icon: '/assets/icons/linkedin.svg',
         link: 'https://de.linkedin.com/in/tobias-kalkowsky-21b7a4163',
+        alt: 'linkedin',
+      },
+    ],
+  },
+  {
+    name: 'Steffen Kastner',
+    title: 'Head of Product Management',
+    shortDescription: `I love to stir things up with provocative questions.`,
+    description: `I am a trained journalist who somehow slipped into product management and user research. I launched the online stores for software and toys for Amazon and made products useful to the customers of Weltbild. I went on to develop dozens of digital products for Haymarket Media and established user research at Gutefrage.net.<br>
+    I help teams at DPS to spot problems and create ideas that join the dots discovered through user research. I also support them in turning those ideas into reality, plus I love to stir things up with provocative questions. `,
+    pic: 'steffen.webp',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/steffen-kastner-177494a9/',
+        alt: 'linkedin',
+      },
+    ],
+  },
+  {
+    name: 'Natthagorn Murr',
+    title: 'Product Manager Operations',
+    shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
+    description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
+    My role is to organize all events at DPS and throw the best batch closing parties. Alongside this, I assist the marketing team with operations and I am also the contact person for all matters like office supplies and access cards. `,
+    pic: 'natt.webp',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/natthagorn-murr-b77080142/',
         alt: 'linkedin',
       },
     ],
