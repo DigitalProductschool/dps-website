@@ -100,7 +100,7 @@ I take care of the business side of projects at DPS and support our teams in how
   },
   {
     name: 'Natthagorn Murr',
-    title: 'Team and Event Manager',
+    title: 'Product Manager Operations',
     shortDescription: `I organize all events at DPS and throw the best batch closing parties.`,
     description: `After my dual vocational training as a specialist in media and information services at the publishing house Sueddeutscher Verlag in Munich, I became a junior project manager at the communication agency SZ Scala. During the last 2.5 years, I acquired project management and marketing skills, in particular how to optimize processes efficiently.<br>
     My role is to organize all events at DPS and throw the best batch closing parties. Alongside this, I assist the marketing team with operations and I am also the contact person for all matters like office supplies and access cards. `,
