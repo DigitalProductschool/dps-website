@@ -175,6 +175,21 @@ At DPS, I help teams to identify technical risks in their solution and enable th
       },
     ],
   },
+  {
+    name: 'Brigitte Weber',
+    title: 'Product Management Coach',
+    shortDescription: `I enjoy guiding people throughout their journey to reach hidden potentials and create unique products.`,
+    description: `Product development roller coasters are an essential part of creating new, disruptive, and unique products. I made roller coaster experiences myself working on products for corporates like BMW, SMEs, and start-ups such as Flixbus. My journey as a self-employed coach and trainer for agility, communication, and company culture development also taught me how to set up a running business and find creative solutions to satisfy customers'/users' needs.<br>
+    At DPS, the participants benefit from my passion to guide and support them with a solution-oriented and humorous attitude. `,
+    pic: 'brigitte.webp',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/brigitte-weber-123187105/',
+        alt: 'linkedin',
+      },
+    ],
+  },
 ];
 
 members.sort((m1, m2) => (m1.name > m2.name ? 1 : -1));
