@@ -52,7 +52,7 @@ export const expectations = {
     'You have a deep interest in creating and analyzing products and markets',
     'You’ve got excellent analytical, problem-solving, organizational and interpersonal skills',
     'You can communicate clearly – verbally and written',
-    'Aou are a distinct team player',
+    'You are a distinct team player',
     'You are available to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no side projects, etc.)',
   ],
 };
