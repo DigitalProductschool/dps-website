@@ -29,7 +29,7 @@
     "form-data": "^2.5.1",
     "gender-api.com-client": "^1.0.14",
     "googleapis": "^61.0.0",
-    "node-fetch": "^3.1.1",
+    "node-fetch": "^3.2.10",
     "nodemailer": "^6.6.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
