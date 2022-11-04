@@ -33,7 +33,7 @@ I advise and coach our teams in exploring AI applications, their feasibility and
     social: [
       {
         icon: '/assets/icons/linkedin.svg',
-        link: 'https://www.linkedin.com/in/samreen-azam-803760140/',
+        link: 'https://www.linkedin.com/in/samreen-azam-%F0%9F%9B%B8-803760140/',
         alt: 'linkedin',
       },
     ],
