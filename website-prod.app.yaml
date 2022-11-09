@@ -150,8 +150,8 @@ handlers:
 
   # catch everything else
   - url: /(.*)
-    static_files: public/404/index.html
-    upload: public/404/index.html
+    static_files: public/\1
+    upload: public/(.*)
     secure: always
     expiration: 20m
 
