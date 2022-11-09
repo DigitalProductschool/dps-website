@@ -24,9 +24,11 @@ class LegalContent extends React.Component {
           <p>
             Prof. Dr. Helmut Schönenberger (CEO)
             <br />
+            Stefan Drüssler
+            <br />
             Claudia Frey
             <br />
-            Stefan Drüssler
+            Christian Mohr
             <br />
             Thomas Zeller
           </p>
