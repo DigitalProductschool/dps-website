@@ -152,6 +152,13 @@ handlers:
   - url: /(.*)
     static_files: public/\1
     upload: public/(.*)
+    require_matching_file: true
+    secure: always
+    expiration: 20m
+
+  - url: /(.*)
+    static_files: public/404/index.html
+    upload: public/404/index.html
     secure: always
     expiration: 20m
 
