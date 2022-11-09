@@ -157,8 +157,8 @@ handlers:
     expiration: 20m
 
   - url: /(.*)
-    static_files: public/404/index.html
-    upload: public/404/index.html
+    static_files: public/404.html
+    upload: public/404.html
     secure: always
     expiration: 20m
 
