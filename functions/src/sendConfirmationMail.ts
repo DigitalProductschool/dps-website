@@ -96,7 +96,7 @@ exports.handler = async function(snap: any) {
 
     Managing Directors:<br>
     Prof. Dr. Helmut Schönenberger (CEO), Claudia Frey,<br>
-    Stefan Drüssler, Thomas Zeller<br>
+    Stefan Drüssler, Christian Mohr, Thomas Zeller<br>
     Chairwoman of the supervisory board: Susanne Klatten<br>
     Register Court, Munich: HRB 141703<br>
     VAT: DE 252 789 694`,
