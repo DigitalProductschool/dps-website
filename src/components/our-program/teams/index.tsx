@@ -33,7 +33,7 @@ class Teams extends React.Component {
           </p>
           <div className="teams__content__companies">
             <h3 className="u-title uppercase">
-              COMPANY TEAMS: EMPLOYEES &amp; TALENTS TOGETHER
+              COMPANY PARTNERS &amp; TALENTS TOGETHER
             </h3>
             <div className="teams__content__companies__desc">
               <img
@@ -42,34 +42,23 @@ class Teams extends React.Component {
                 src="/assets/program/teams/companies.webp"
               />
               <p className="u-text">
-                In so-called company teams, students, graduates and staff from
+                The teams work closely with  teams, students, graduates and staff from
                 partner companies explore the realms of modern product
                 development.
                 <br />
-                They tackle a problem space assigned by our partners. But that
-                does not mean they are bound by the constraints a corporate
+                They tackle a problem space assigned by one of our industry partners. 
+                But that does not mean they are bound by the constraints a corporate
                 environment might bring. They enjoy the freedom of discover and
                 validate potential problems before deciding what solution to
                 build.
+                <br />
+                The given challenge is significant for the partner's product range and 
+                business. Therefore, the team will work very closely with the partner's 
+                representatives and will gain deep insights into the company's products,
+                operations, and processes. However, the team is independent in its 
+                decisions. These should always be made on the basis of the findings from 
+                research and user tests.
               </p>
-            </div>
-          </div>
-          <div className="teams__content__wild">
-            <h3 className="u-title uppercase">Wild Teams</h3>
-            <div className="u-grid-4-6">
-              <p className="u-text">
-                Besides the company teams we have teams that consists of
-                graduates only. They are not bound by a problem space set by a
-                partner. Rather, they decide for themselves where they want to
-                look for user problems. The only constraint for them is to solve
-                a problem regarding either mobility or any topic with social
-                impact.
-              </p>
-              <img
-                alt="wild-teams"
-                className="teams__content__wild__image u-image"
-                src="/assets/program/teams/wild.webp"
-              />
             </div>
           </div>
         </div>
