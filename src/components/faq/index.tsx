@@ -142,9 +142,14 @@ class Faq extends React.Component {
           <Accordion title="Do I get paid?">
             <p>
               We offer you a scholarship of € 1,000.- per month for three months; 
-              € 2.250.- in total. <br />
+              € 3.000.- in total.
+              <br />
               Everyone who is accepted to DPS receives the Scholarship. An extra
               separate application is not necessary.
+              <br />
+              You can support the program and waive the payment if you do not need 
+              the scholarship. Please address this in your interview or contact us 
+              separately.
             </p>
           </Accordion>
 
