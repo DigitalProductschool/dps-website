@@ -40,7 +40,7 @@ export const expectations = {
     'You are interested and knowledgeable in digital trends, technology, and culture',
   ],
   secondColumn: [
-    'You are a distinct team playe',
+    'You are a distinct team player',
     'You are available to fully dedicate yourself to the program during the twelve weeks (40h per week during normal business hours (CE(S)T), no side projects, etc.)',
     'You can be on-site in Munich',
   ],

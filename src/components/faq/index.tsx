@@ -8,37 +8,46 @@ class Faq extends React.Component {
       <section className="faq u-content-wrapper">
         <Seo />
         <div className="faq__content u-content">
-          <Accordion title="Is it an online program?">
+          <Accordion title="Where does the DPS take place?">
             <p>
-              No. DPS was born as an on-site program where people with different backgrounds from all over the came together in one office to build digital products, but also to exchange, learn from each other, have fun together, and build new friendships.<br />
-              Corona changed a lot. We moved to a remote setting and it turned out that it worked pretty well and the teams built great products.<br />
-              But something was missing. The spirit was different. That's why we really recommend coming to Munich and taking part in person. Your experience will be much richer than while sitting in front of your laptop! Yes, Munich is expensive, and finding a place to live is not easy, but it's worth it!<br />
-              And yes, if you really can not come to Munich or you do not get a visa remote participation is still possible.
+              The home of the DPS is the {' '}
+                  <a
+                    href="https://www.munich-urban-colab.de/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="u-link"
+                  >
+                    <span style={{ zIndex: 0 }}>Munich Urban Colab</span>
+                  </a>
+              , one of the most creative and 
+              dynamic, entrepreneurial, and innovative nerve centers in Germany. Here you 
+              will develop innovative ideas and new digital products together with your 
+              team in your own team space. 
             </p>
           </Accordion>
           
-          <Accordion title="What do I need to take part remotely?">
+          <Accordion title="Can I participate remotely?">
             <p>
-              First of all, a stable internet connection is essential for remote work. 
-              Video calls have to be possible without any stocking, interruptions, and 
-              latency. To guarantee a smooth execution of all events and workshops and 
-              to ensure trouble-free communication between you and your team members, 
-              your connection has to have at least a real bandwidth of 10 Mbit/s in 
-              download and 2 Mbit/s upload.
-              <br />
-              Furthermore, to join video calls and to participate in workshops using a 
-              collaboration tool in parallel we highly recommend a two-screen setup. 
-              This increases working comfort, improves efficiency, and speeds up your 
-              work.
+              No. DPS is an on-site program where people with different backgrounds from 
+              all over the came together in one office to build digital products, but 
+              also to exchange, learn from each other, have fun together, and build new 
+              friendships.<br />
+              Creativity and innovation count for us. However, new ideas arise primarily 
+              through direct exchange within the team. A strong team may accomplish incredible 
+              feats. To do this, you have to get to know each other and experience first-hand 
+              how to grow as a team, communicate, solve problems and get better week by week. 
+              The best way to do that is to meet face-to-face in one place.<br />
+              That's why it is mandatory to come to Munich for the duration of the DPS.
             </p>
           </Accordion>
 
           <Accordion title="Is it a full time program?">
             <p>
-              Yes it’s a full time program. You will create new ideas, test
-              assumptions and decide in a team how to go on. Your teammates rely
-              on you. That’s why you are expected to be present at DPS during
-              normal office hours.
+              Yes it’s a full time program. You will create new ideas, test assumptions and 
+              decide in a team how to go on. Your teammates rely on you. <br />
+              That’s why you are expected fully dedicate yourself to the program during 
+              the twelve weeks for 40h per week during normal business hours. No side projects,
+              no other jobs, no freelancing, no university classes, no master thesis.
             </p>
           </Accordion>
 
@@ -132,52 +141,22 @@ class Faq extends React.Component {
 
           <Accordion title="Do I get paid?">
             <p>
-              We offer you a scholarship worth up to € 1,000.- per month / €
-              2.250.- in total for three months, depending on the mode of your
-              participation at DPS:
+              We offer you a scholarship of € 1,000.- per month for three months; 
+              € 3.000.- in total.
               <br />
-              <ol style={{ paddingLeft: '15px' }}>
-                <li>
-                  € 1,000.- per month if you take part on-site at the DPS office
-                  in Munich
-                </li>
-                <li>
-                  € 750.- per month if you take part remotely and live in an{' '}
-                  <a
-                    href="http://www.oecd.org/about/members-and-partners/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="u-link"
-                  >
-                    <span style={{ zIndex: 0 }}>OECD country</span>
-                  </a>
-                </li>
-                <li>
-                  € 500.- (incl. € 50.00 internet grant) per month if you take
-                  part remotely and live in country which is not an{' '}
-                  <a
-                    href="http://www.oecd.org/about/members-and-partners/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="u-link"
-                  >
-                    <span style={{ zIndex: 0 }}>OECD member</span>
-                  </a>
-                  .
-                  <br />
-                  To receive the internet grant you have to proove that you
-                  upgraded your internet connection to at least a real bandwidth
-                  of 10 Mbit/s in download and 2 Mbit/s upload.
-                </li>
-              </ol>
+              Everyone who is accepted to DPS receives the Scholarship. An extra
+              separate application is not necessary.
+              <br />
+              You can support the program and waive the payment if you do not need 
+              the scholarship. Please address this in your interview or contact us 
+              separately.
             </p>
           </Accordion>
 
           <Accordion title="Do you provide accommodation?">
             <p>
               We can support finding housing, but can not provide housing
-              itself. If someone fails to find housing, we are open to remote
-              participation as well.
+              itself.
               <br />
               However after you are accepted we have a slack channel where the
               DPS community shares housing offers from Munich. Also we send
