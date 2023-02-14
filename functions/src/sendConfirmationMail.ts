@@ -37,34 +37,16 @@ exports.handler = async function(snap: any) {
       break;
     }
   }
-  const OAuth2 = google.auth.OAuth2;
+  
   const APP_NAME = 'Digital Product School';
-  const clientID = functions.config().sender.apiclientid;
-  const clientSecret = functions.config().sender.apiclientsecret;
-  const refreshToken = functions.config().sender.apirefreshtoken;
-
-  const oauth2Client = new OAuth2(
-    clientID, // Client ID
-    clientSecret, // Client Secret
-    'https://developers.google.com/oauthplayground' // Redirect Url
-  );
-
-  oauth2Client.setCredentials({
-    refresh_token: refreshToken,
-  });
-
-  const accessToken = oauth2Client.getAccessToken();
+  const password = functions.config().sender.password;
 
   const smtpTransport = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      type: 'OAuth2',
-      user: 'application@dpschool.io',
-      clientId: clientID,
-      clientSecret: clientSecret,
-      refreshToken: refreshToken,
-      accessToken: accessToken,
-    },
+      service: 'gmail',
+      auth: {
+          user: 'application@dpschool.io',
+          pass: password,
+      },
   });
 
   const mailOptions = {
