@@ -38,6 +38,21 @@ I advise and coach our teams in exploring AI applications, their feasibility and
       },
     ],
   },
+    {
+    name: 'Natalia Barsova',
+    title: 'Frontend Developer & Coach',
+    shortDescription: `I support teams in everything to do with frontend and mobile development. `,
+    description: `I've been in tech and around more or less my whole life, having written my first program (an illustrated encyclopedia) at the age of 11 in a computer club in my school. I studied informatics and computer science at St. Petersburg State University and then worked on a wide variety of products like banking and document workflow applications. Then came the kids and my parental leave, during which I taught informatics at a school for talented children.  <br>
+    After moving to Germany with my family and being a full-time mom for a while, I relaunched my software engineering career at a startup that created AI-based applications for musicians and later in the health sector. With the current pace of changes in tech, it first felt like Sleeping Beauty, who'd fallen asleep in the times of horse carriages and then woke up to discover airplanes. Here at the DPS, I support teams in their technical challenges, especially in frontend and mobile development.`,
+    pic: 'natalia.webp',
+    social: [
+      {
+        icon: '/assets/icons/linkedin.svg',
+        link: 'https://www.linkedin.com/in/natalia-barsova-47266213/',
+        alt: 'linkedin',
+      },
+    ],
+  },
   {
     name: 'Daniel Bedö',
     title: 'Head of Software Engineering',
